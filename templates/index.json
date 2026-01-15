@@ -1,0 +1,712 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "narrow": true,
+        "padding_top": 60,
+        "padding_bottom": 72
+      }
+    },
+    "homepage_banner_new_9Qpe43": {
+      "type": "homepage-banner-new",
+      "disabled": true,
+      "name": "Homepage Banner New",
+      "settings": {
+        "trust_rating_text": "4.6 Stars",
+        "trust_statement": "Thousands of women trust monthlies",
+        "hero_background": "shopify://shop_images/Frame_513478.png",
+        "headline": "A <em><strong>natural</strong></em> period pain supplement that works.",
+        "subheadline": "Doctor-developed cycle supplement for all your symptoms. Approved by NHS doctors.",
+        "cta_text": "Discover monthlies",
+        "cta_link": "/products/monthlies-periodease-uk",
+        "badge_1": "shopify://shop_images/homebadge1.png",
+        "badge_2": "shopify://shop_images/homebadge2.png",
+        "badge_3": "shopify://shop_images/homebadge3.png",
+        "review_profile_image": "shopify://shop_images/testimonial-image.png",
+        "review_star_image": "shopify://shop_images/starimage.png",
+        "review_rating_text": "4.6 Stars",
+        "review_trust_text": "Thousands of women trust monthlies",
+        "pharmacy_intro": "You can also find us on:",
+        "amazon_shop": "shopify://shop_images/image_418.png",
+        "pharmacy_docmorris": "shopify://shop_images/logo_1.png",
+        "pharmacy_shop": "shopify://shop_images/logo-COM-rebranding.d38cb33a.png"
+      }
+    },
+    "homepage_banner_new_video_qDUfW9": {
+      "type": "homepage-banner-new-video",
+      "name": "Homepage Banner New Video",
+      "settings": {
+        "trust_rating_text": "4.6 Stars",
+        "trust_statement": "Thousands of women trust monthlies",
+        "hero_background_video": "shopify://files/videos/Monthlies Clip compress.mp4",
+        "headline": "A <em><strong>natural</strong></em> period pain supplement that works.",
+        "subheadline": "Doctor-developed cycle supplement for all your symptoms. Approved by NHS doctors.",
+        "cta_text": "Discover monthlies",
+        "cta_link": "",
+        "badge_1": "shopify://shop_images/homebadge1.png",
+        "badge_2": "shopify://shop_images/homebadge2.png",
+        "badge_3": "shopify://shop_images/homebadge3.png",
+        "review_profile_image": "shopify://shop_images/testimonial-image.png",
+        "review_star_image": "shopify://shop_images/starimage.png",
+        "review_rating_text": "4.6 Stars",
+        "review_trust_text": "Thousands of women trust monthlies",
+        "pharmacy_intro": "You can also find us on:",
+        "amazon_shop": "shopify://shop_images/image_418.png",
+        "pharmacy_docmorris": "shopify://shop_images/logo_1.png",
+        "pharmacy_shop": "shopify://shop_images/logo-COM-rebranding.d38cb33a.svg"
+      }
+    },
+    "brand_section_new_hz6yn6": {
+      "type": "brand-section-new",
+      "name": "Brand Logos Section",
+      "settings": {
+        "brand_logo_1": "shopify://shop_images/newbrand1.png",
+        "brand_logo_2": "shopify://shop_images/newbrand2.png",
+        "brand_logo_3": "shopify://shop_images/newbrand3.png",
+        "brand_logo_4": "shopify://shop_images/newbrand4.png"
+      }
+    },
+    "natural_ingredients_section_new_D83nbx": {
+      "type": "natural-ingredients-section-new",
+      "name": "Natural Ingredients",
+      "settings": {
+        "benefit_title": "Living with hormone symptoms isn´t easy",
+        "benefit_img_1": "shopify://shop_images/281024_SteffixMonthlies8345-2_1_bd3ef1bb-f75f-4b45-b3d9-966a76a85707.png",
+        "benefit_icon_1": "shopify://shop_images/cramps_selected.svg",
+        "benefit_text_1": "Never knowing how bad your period will be",
+        "benefit_img_2": "shopify://shop_images/281024_SteffixMonthlies8345-2_1_1.png",
+        "benefit_icon_2": "shopify://shop_images/happy__selected.svg",
+        "benefit_text_2": "Feeling \"off\" for half the month",
+        "benefit_img_3": "shopify://shop_images/281024_SteffixMonthlies8345-2_1_2.png",
+        "benefit_icon_3": "shopify://shop_images/high_energy_selected.svg",
+        "benefit_text_3": "Constantly pushing through low energy",
+        "benefit_img_4": "shopify://shop_images/281024_SteffixMonthlies8345-2_1_3.png",
+        "benefit_icon_4": "shopify://shop_images/clear_skin_selected.svg",
+        "benefit_text_4": "Skin breakouts, bloating and cravings you can´t control"
+      }
+    },
+    "energy_level_new_6jDpKB": {
+      "type": "energy-level-new",
+      "blocks": {
+        "tab_block_gkKzzm": {
+          "type": "tab_block",
+          "settings": {
+            "tab_title": "Cycle",
+            "heading": "🔋 Your energy levels begin to lift",
+            "percent": "91%",
+            "percent_text": "noticed positive changes in all their symptoms*",
+            "percent1": "84%",
+            "percent_text1": "reported less period pain*",
+            "percent2": "78%",
+            "percent_text2": "reduced their use of painkillers*",
+            "percent3": "90%",
+            "percent_text3": "reduction of daily PMS*",
+            "icon_image_1": "shopify://shop_images/Line_a377e664-93a9-4868-8f5a-cc983e2d3159.png",
+            "btn1": "Reduced bloating",
+            "icon_image_2": "shopify://shop_images/Frame.svg",
+            "btn2": "Nutrient absorption",
+            "icon_image_3": "shopify://shop_images/Frame.svg",
+            "btn3": "Fewer energy dips",
+            "icon_image_4": "shopify://shop_images/Line_15.png",
+            "btn4": "More restful sleep",
+            "btn5": "",
+            "btn6": "",
+            "btn7": "",
+            "btn8": "",
+            "btn9": "",
+            "btn10": "",
+            "tab_image": "shopify://shop_images/281024_SteffixMonthlies8345-2_1_b4e52c1d-b893-400f-b777-0f42a05ec01a.png",
+            "mobile_tab_image": "shopify://shop_images/281024_SteffixMonthlies8345-2_1_3_8600ad3c-0912-40a3-b505-a2474d3cb991.png"
+          }
+        },
+        "tab_block_bP7R7P": {
+          "type": "tab_block",
+          "settings": {
+            "tab_title": "Cycle",
+            "heading": "🌸 Your hormones find their natural rhythm, and your symptoms start to ease",
+            "percent": "Cramps",
+            "percent_text": "that lingered accross several days dropped by half*",
+            "percent1": "Bloating",
+            "percent_text1": "eased significantly, with a reduction of 45%*",
+            "percent2": "PMS",
+            "percent_text2": "pain and energy-related symptoms were reduced by more than half*",
+            "percent3": "Mood swings",
+            "percent_text3": "were improved by 91%*",
+            "icon_image_1": "shopify://shop_images/Line_15.png",
+            "btn1": "Improved mental stability",
+            "icon_image_2": "shopify://shop_images/Line_a377e664-93a9-4868-8f5a-cc983e2d3159.png",
+            "btn2": "Reduced menstrual pain",
+            "icon_image_3": "shopify://shop_images/Line_a377e664-93a9-4868-8f5a-cc983e2d3159.png",
+            "btn3": "Fewer mood swings",
+            "icon_image_4": "shopify://shop_images/Line_a377e664-93a9-4868-8f5a-cc983e2d3159.png",
+            "btn4": "Fewer PMS symptoms",
+            "btn5": "",
+            "btn6": "",
+            "btn7": "",
+            "btn8": "",
+            "btn9": "",
+            "btn10": "",
+            "tab_image": "shopify://shop_images/281024_SteffixMonthlies8345-2_1_b4e52c1d-b893-400f-b777-0f42a05ec01a.png",
+            "mobile_tab_image": "shopify://shop_images/281024_SteffixMonthlies8345-2_1_3_35ec2d5e-f757-4c70-98d9-9575294a953c.png"
+          }
+        },
+        "tab_block_fDnVYR": {
+          "type": "tab_block",
+          "settings": {
+            "tab_title": "Cycle",
+            "heading": "✨ Long term stability and support throughout  your cycle",
+            "percent": "85%",
+            "percent_text": "reduction of cramps*",
+            "percent1": "94%",
+            "percent_text1": "reported feeling like themselves again*",
+            "percent2": "97%",
+            "percent_text2": "improvement in mood swings*",
+            "percent3": "90%",
+            "percent_text3": "visibly improved skin breakouts, hair and nails*",
+            "icon_image_1": "shopify://shop_images/Line_a377e664-93a9-4868-8f5a-cc983e2d3159.png",
+            "btn1": "Fewer cramps",
+            "icon_image_2": "shopify://shop_images/Line_15.png",
+            "btn2": "Better sleep",
+            "icon_image_3": "shopify://shop_images/Line_15.png",
+            "btn3": "Increased confidence",
+            "icon_image_4": "shopify://shop_images/Frame.svg",
+            "btn4": "Emotional balance",
+            "icon_image_5": "shopify://shop_images/Frame.svg",
+            "btn5": "Smoother digestion",
+            "btn6": "",
+            "btn7": "",
+            "btn8": "",
+            "btn9": "",
+            "btn10": "",
+            "tab_image": "shopify://shop_images/281024_SteffixMonthlies8345-2_1_b4e52c1d-b893-400f-b777-0f42a05ec01a.png",
+            "mobile_tab_image": "shopify://shop_images/281024_SteffixMonthlies8345-2_1_3_9d9763ee-ca04-4672-9ad1-256264e8af17.png"
+          }
+        },
+        "tab_block_zDmwwm": {
+          "type": "tab_block",
+          "settings": {
+            "tab_title": "Cycle",
+            "heading": "🧘🏼‍♀️ Your body feels fully in balance",
+            "percent": "",
+            "percent_text": "From here on, your body works<br> <i>with you</i>, not against you.",
+            "percent1": "",
+            "percent_text1": "",
+            "percent2": "",
+            "percent_text2": "",
+            "percent3": "",
+            "percent_text3": "",
+            "icon_image_1": "shopify://shop_images/Frame.svg",
+            "btn1": "Minimal cramps",
+            "icon_image_2": "shopify://shop_images/Frame.svg",
+            "btn2": "No more 2pm slush",
+            "icon_image_3": "shopify://shop_images/Frame.svg",
+            "btn3": "Minimal bloating",
+            "icon_image_4": "shopify://shop_images/Frame.svg",
+            "btn4": "No more feeling \"out of balance\"",
+            "icon_image_5": "shopify://shop_images/Frame.svg",
+            "btn5": "No breakouts",
+            "icon_image_6": "shopify://shop_images/Frame.svg",
+            "btn6": "Sustained energy across all cycle",
+            "icon_image_7": "shopify://shop_images/Frame.svg",
+            "btn7": "Everything feels easier to manage",
+            "btn8": "",
+            "btn9": "",
+            "btn10": "",
+            "tab_image": "shopify://shop_images/281024_SteffixMonthlies8345-2_1_b4e52c1d-b893-400f-b777-0f42a05ec01a.png",
+            "mobile_tab_image": "shopify://shop_images/281024_SteffixMonthlies8345-2_1_3_00b53a1a-8d5b-47bb-913c-35ece59386c0.png"
+          }
+        }
+      },
+      "block_order": [
+        "tab_block_gkKzzm",
+        "tab_block_bP7R7P",
+        "tab_block_fDnVYR",
+        "tab_block_zDmwwm"
+      ],
+      "name": "Energy Level Section New",
+      "settings": {
+        "bottom_disclaimer": "<p>*Based on an independent study of 105 women taking the monthlies supplement for 3 months</p>"
+      }
+    },
+    "carefully_selected_ingredients_new_cPWKEE": {
+      "type": "carefully-selected-ingredients-new",
+      "blocks": {
+        "faq_LYAENj": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Superior absorption",
+            "faq_text": "<p>Many vitamins and minerals need to be converted into a “bioactive” form before your body can use them effectively. For some people, this natural process isn’t always efficient due to genetic or metabolic differences.<br/>We use pre-activated nutrients that are already in their active forms, so your body can absorb them more readily. This supports better bioavailability - meaning more of the nutrient reaches your system in a form your body can actually use, minimising wastage.</p>"
+          }
+        },
+        "faq_rUMxry": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Improved effectiveness",
+            "faq_text": "<p> When a supplement is easier to absorb, more of its beneficial compounds make it into your bloodstream and tissues. Lower-quality formulations often pass through the digestive tract with far less impact.<br/>By choosing high-absorption forms, you’re giving your body a better opportunity to achieve healthy nutrient levels and experience the intended benefits.</p>"
+          }
+        },
+        "faq_FHWJ83": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Quicker results",
+            "faq_text": "<p>Efficient absorption allows nutrients to begin working sooner.<br/>This can translate into earlier support for areas such as energy production, mood regulation, or hormonal balance.</p>"
+          }
+        },
+        "faq_TtPdyP": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "No side effects",
+            "faq_text": "<p>Nutrients that are difficult for the body to absorb can place unnecessary strain on digestion, sometimes leading to bloating, nausea, or discomfort.<br/>Our highly absorbable forms require less digestive processing making them gentler and more suitable for individuals with sensitive stomachs.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_LYAENj",
+        "faq_rUMxry",
+        "faq_FHWJ83",
+        "faq_TtPdyP"
+      ],
+      "name": "Carefully Ingredients New",
+      "settings": {
+        "main_heading": "It’s not magic,  it’s <em><strong>science for your cycle.</strong></em>",
+        "main_paragraph_1": "<p><a href=\"/pages/all-ingredients\" title=\"/pages/all-ingredients\">Ingredients’ List</a></p>",
+        "main_paragraph_2": "<p><a href=\"#\" title=\"#\">Clinical Studies</a></p>",
+        "btn_text": "",
+        "btn_url": ""
+      }
+    },
+    "what_inside_new_tD4XyM": {
+      "type": "what-inside-new",
+      "name": "What Inside New",
+      "settings": {
+        "title": "What’s inside?",
+        "description": "monthlies is designed to support balance throughout your whole cycle, not just period week.",
+        "plus_icon": "shopify://shop_images/plus-drin.png",
+        "card1_image": "shopify://shop_images/drinncard1.png",
+        "card1_label": "",
+        "card1_benefit": "Menstrual pain",
+        "card1_link": "/pages/lemon-balm",
+        "card2_image": "shopify://shop_images/drinncard2.png",
+        "card2_label": "",
+        "card2_benefit": "Sleep, Stress & Mood",
+        "card2_link": "/pages/magnesium",
+        "card3_image": "shopify://shop_images/drinncard3.png",
+        "card3_label": "",
+        "card3_benefit": "Energy & Performance",
+        "card3_link": "/pages/vitamin-b2",
+        "card4_image": "shopify://shop_images/drinncard4.png",
+        "card4_label": "",
+        "card4_benefit": "Breakouts, Hair & Nails",
+        "card4_link": "/pages/vitamin-c",
+        "cta_text": "Explore the benefits of monthlies’ ingredients",
+        "cta_link": "/pages/all-ingredients"
+      }
+    },
+    "experience_yourself_new_FLtMFy": {
+      "type": "experience-yourself-new",
+      "name": "Experience Yourself New",
+      "settings": {
+        "title": "Feel the difference  for yourself with <span>monthlies </span>",
+        "subtext": "All you need as a woman for your health and hormones  in 1 easy scoop.",
+        "cta_text": "Discover monthlies’ subscription",
+        "cta_text_mobile": "Discover monthlies subscription",
+        "cta_link": "/products/monthlies-periodease-uk",
+        "product_image": "shopify://shop_images/Group_514145.png",
+        "product_image_mobile": "shopify://shop_images/Group_514145.png",
+        "savings_label": "",
+        "savings_amount": "",
+        "savings_subtext": "",
+        "price_item_1_label": "Cycle guide",
+        "price_item_1_strike": "£26",
+        "price_item_1_value": "Free",
+        "price_item_2_label": "Expert consultation",
+        "price_item_2_strike": "£150",
+        "price_item_2_value": "Free",
+        "price_item_3_label": "Specialised tips for fitness & nutrition",
+        "price_item_3_strike": "£120",
+        "price_item_3_value": "Free",
+        "price_item_4_label": "Delivery",
+        "price_item_4_strike": "£4",
+        "price_item_4_value": "Free",
+        "monthly_price": "<del>£50</del> £29,99/Month <br>limited time offer"
+      }
+    },
+    "take_monthly_tablets_new_zg7tG4": {
+      "type": "take-monthly-tablets-new",
+      "blocks": {
+        "faq_item_WF9b6J": {
+          "type": "faq_item",
+          "settings": {
+            "question": "... use hormonal contraceptives?",
+            "answer": "<p>You can take monthlies while on birth control or hormonal contraceptive pills;<br/>however, it’s essential to understand that the effectiveness of monthlies may<br/>vary since your hormones are already being regulated. Additionally, monthlies<br/>could potentially interact with your hormonal birth control. To ensure safety,<br/>it’s always best to consult your doctor before adding any new supplements to<br/>your routine.</p>"
+          }
+        },
+        "faq_item_4TenEh": {
+          "type": "faq_item",
+          "settings": {
+            "question": "... am undergoing fertility treatment?",
+            "answer": "<p>Fertility treatments often require precise hormonal adjustments.<br/> Please make sure to only take any new supplements, including monthlies, in consultation with your doctor. External supplements may interfere with the intended hormonal changes of your treatment.</p>"
+          }
+        },
+        "faq_item_37kAcE": {
+          "type": "faq_item",
+          "settings": {
+            "question": "... am taking other supplements?",
+            "answer": "<p>It really depends on which other supplements you’re taking and for what reason. Good additions to monthlies can include omega-3 fatty acids, probiotics, or evening primrose oil - depending on your personal needs. Please check with your doctor, or reach out to us in the chat if you’d like more guidance.</p>"
+          }
+        },
+        "faq_item_T4z76H": {
+          "type": "faq_item",
+          "settings": {
+            "question": "... am trying to conceive?",
+            "answer": "<p>Yes, you can take monthlies while you’re trying to conceive. While it isn’t a prenatal supplement, it does include the recommended daily amount of folate for women of childbearing age (400 mcg).  However, it’s important to stop taking monthlies as soon as you find out you’re pregnant.</p>"
+          }
+        },
+        "faq_item_gYNgDg": {
+          "type": "faq_item",
+          "settings": {
+            "question": "... have PCOS?",
+            "answer": "<p>Yes, you can take monthlies if you have PCOS, as there are many ingredients that may benefit those with PCOS. However, monthlies is not meant to treat any medical condition so you should always check with your doctor before incorporating new supplements into your routine. Please also check for possible interactions with your medications (if any).</p>"
+          }
+        },
+        "faq_item_anTznT": {
+          "type": "faq_item",
+          "settings": {
+            "question": "... have endometriosis?",
+            "answer": "<p>Yes, you can take monthlies if you have endometriosis. While monthlies is not a treatment for endometriosis, it’s designed to support menstrual well-being by addressing some of the underlying triggers of period pain, such as hormonal imbalances, prostaglandin overproduction, and nutrient gaps. However, we always recommend you to check with your doctor before adding any new supplements to your routine, and check for possible interactions with medications.</p>"
+          }
+        },
+        "faq_item_6KLYCD": {
+          "type": "faq_item",
+          "settings": {
+            "question": "... am pregnant or breastfeeding?",
+            "answer": "<p> It isn’t recommended to take monthlies while pregnant or breastfeeding, as not all ingredients are considered safe during pregnancy or lactation.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_WF9b6J",
+        "faq_item_4TenEh",
+        "faq_item_37kAcE",
+        "faq_item_T4z76H",
+        "faq_item_gYNgDg",
+        "faq_item_anTznT",
+        "faq_item_6KLYCD"
+      ],
+      "name": "Take Monthly FAQ New",
+      "settings": {
+        "main_heading": "Can I take monthlies if I..."
+      }
+    },
+    "female_health_kit_new_hFiVJA": {
+      "type": "female-health-kit-new",
+      "name": "Female Hormone Kit New",
+      "settings": {
+        "faces_img": "shopify://shop_images/fingerpick-review.png",
+        "test_count": "Over 21M tests since 2023",
+        "title": "Female Hormone Test Kit",
+        "subtitle": "<strong>Best way to complement your monthlies journey</strong><span>Powered by Randox Health</span>",
+        "benefit_1": "<strong>No fingerpick needed</strong>",
+        "benefit_1_sub": "painless Tasso device for blood collection",
+        "benefit_2": "<strong>8 biomarkers tested</strong>",
+        "benefit_3": "<strong>Quick & easy online results</strong>",
+        "benefit_3_sub": "in 7 days",
+        "tick_icon": "shopify://shop_images/tickicon.png",
+        "button_link": "shopify://products/female-hormone-test-kit",
+        "button_text": "Add to Cart",
+        "right_image": "shopify://shop_images/fingerpick-img.png"
+      }
+    },
+    "doctor_details_new_yz34BT": {
+      "type": "doctor-details-new",
+      "blocks": {
+        "team_cBaUEW": {
+          "type": "team",
+          "settings": {
+            "name": "Dr. Ash (ND)",
+            "role": "The science behind monthlies",
+            "profile_image": "shopify://shop_images/281024_SteffixMonthlies8345-2_1_2_274e10f5-2b41-4511-975e-bd9b77ca7b9d.png",
+            "learn_more": "Learn more about Dr. Ash",
+            "short_description": "Helped thousands of women at clinical practice",
+            "full_description": "Detailed info about Ash: I’m a naturopathic doctor from Canada, now based in the UK. I’ve spent years helping women manage their cycles and hormones naturally and have seen how the right nutrients and lifestyle approaches can transform menstrual health. When I met Maria, I realised we shared a vision: to bring science-backed solutions to more women, beyond the clinic, at a scale that could make a real difference. monthlies is that bridge between medical insight, natural solutions, and everyday accessibility."
+          }
+        },
+        "team_RTqkwh": {
+          "type": "team",
+          "settings": {
+            "name": "Maria",
+            "role": "The brain behind monthlies",
+            "profile_image": "shopify://shop_images/WhatsApp_Image_2025-12-29_at_17.40.53.jpg",
+            "learn_more": "Learn more about Maria",
+            "short_description": "Used her business skills to bring the brand to life",
+            "full_description": "Detailed info about Maria:\nI moved from Spain to Germany eight years ago for my master’s and have spent most of my career building and scaling ventures. For me, monthlies is deeply personal. I have lived with period pain for most of my life and was frustrated by how widely neglected this issue has been. I wanted to use my business experience to create a solution that truly works. monthlies is about building more than a product. It is about shaping a brand that empowers women to take control of their well-being through knowledge, science, and proven results."
+          }
+        },
+        "team_pMQwcC": {
+          "type": "team",
+          "settings": {
+            "name": "Jagriti",
+            "role": "The voice behind monthlies",
+            "profile_image": "shopify://shop_images/image.jpg",
+            "learn_more": "Learn more about Jagriti",
+            "short_description": "Brought the brand closer to the audience",
+            "full_description": "Detailed info about Jagriti:\nI moved from India to Germany two years ago and faced the challenges of managing PCOS in a new healthcare system. With years of experience in marketing and communications, I wanted to help build a brand that does more than sell a product. With monthlies, I found that opportunity to create a brand that educates and empowers women with honesty and empathy. My goal is to make monthlies a space where women feel understood, supported, and empowered to take charge of their health through real conversations and practical solutions."
+          }
+        }
+      },
+      "block_order": [
+        "team_cBaUEW",
+        "team_RTqkwh",
+        "team_pMQwcC"
+      ],
+      "name": "Doctor Details New",
+      "settings": {
+        "main_heading": "A global team, one purpose",
+        "sub_heading": "Created by women, for women.",
+        "description": "Three women from three different continents, united by a shared mission to educate, empower, and support women in taking control of their health.",
+        "right_image": "shopify://shop_images/281024_SteffixMonthlies8345-2_1_6c821147-5b00-46a4-93aa-171b5688aa61.png",
+        "mobile_right_image": "shopify://shop_images/281024_SteffixMonthlies8345-2_1_2_f936c526-09d2-46c0-be96-c623683affc5.png"
+      }
+    },
+    "health_expert_new_hEKCQr": {
+      "type": "health-expert-new",
+      "blocks": {
+        "column_HC4WXW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/281024_SteffixMonthlies8345-2_1_c89de15b-5496-4d8c-af6b-8dbaf8f19790.png",
+            "title": "Dr. Ashley Florestal",
+            "title_size": "h3",
+            "text": "<p>Naturopathic Doctor<br/></p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "column_A4KDbV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/281024_SteffixMonthlies8345-2_1_4a54bd4e-363f-4114-baef-08119bda7683.png",
+            "title": "Dr. Maria Obando",
+            "title_size": "h3",
+            "text": "<p>Medical Doctor</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "column_RD9DgR": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/281024_SteffixMonthlies8345-2_1_8c9d5f1d-5e7e-4613-bf51-6a34fbd97150.png",
+            "title": "Dr. Cassandra Paiano",
+            "title_size": "h3",
+            "text": "<p>Naturopathic Doctor</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "column_eWy8qd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/281024_SteffixMonthlies8345-2_1_0e227e18-f7ea-44b7-9e28-619632ca1184.png",
+            "title": "Geneva Carrington",
+            "title_size": "h3",
+            "text": "<p>Nutritional Therapist</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "column_Nffb3P": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/281024_SteffixMonthlies8345-2_1_23fcc022-42f5-465f-8433-bc7dd830bfa5.png",
+            "title": "Dr. Melissa Mastroberardino",
+            "title_size": "h3",
+            "text": "<p>Naturopathic Doctor</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "column_HC4WXW",
+        "column_A4KDbV",
+        "column_RD9DgR",
+        "column_eWy8qd",
+        "column_Nffb3P"
+      ],
+      "name": "Health Expert New",
+      "settings": {
+        "products_to_show": 5,
+        "custom_class": "health_expert health_expert-new-section",
+        "image_ratio": "landscape",
+        "image_position": "center center",
+        "text_alignment": "left",
+        "show_divider": false,
+        "heading": "<em><strong>Developed </strong></em>by women’s health professionals.",
+        "description": "",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "mobile_text_alignment": "left",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 80,
+        "padding_bottom": 36
+      }
+    },
+    "all_features_new_M4BPAV": {
+      "type": "all-features-new",
+      "name": "All Features New",
+      "settings": {
+        "main_image": "shopify://shop_images/Discoverimg.png",
+        "mobile_main_image": "shopify://shop_images/Group_596.png",
+        "heading": "Discover all the features  of our app.",
+        "feature_1": "<strong>Get nutrition, sport, and lifestyle tips</strong> to help bring your hormones into balance.",
+        "feature_2": "<strong>Track </strong>your periods and symptoms extensively",
+        "feature_3": "<strong>Track </strong>your monthlies supplement intake",
+        "feature_4": "<strong>Set </strong>your daily supplement reminder",
+        "feature_5": "<strong>Receive</strong> personalised analyses and recommendations",
+        "feature_6": "<strong>Access research backed</strong> wellness plans, book appointments with experts, & learn all about your hormonal health",
+        "button_link": "/pages/app",
+        "button_text": "Go to the app",
+        "appstore_btn": "shopify://shop_images/Discover-apple.png"
+      }
+    },
+    "custom_text_km84zG": {
+      "type": "custom_text",
+      "name": "Custom Text",
+      "settings": {
+        "custom_class": "cst-review-main-heading review-heading-new",
+        "text": "Don’t take our word for it, <span>take hers!</span>",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1765445861184d8475": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_agg_section_iABrjn": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-agg-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "disabled": true,
+          "settings": {
+            "only_photos": false,
+            "hide_thumbnails": false,
+            "product_handle": "",
+            "aggregated": true,
+            "data-limit": 20,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        },
+        "loox_reviews_loox_card_carousel_section_tmWwgx": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-card-carousel-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "maxWidth": 1100,
+            "borderRadius": 8,
+            "itemsPerView": 4,
+            "mobileItemsPerView": 1,
+            "maxNumberOfCharacters": 100,
+            "imageRatio": "1.25",
+            "reviewerNameColor": "#000000",
+            "textColor": "#000000",
+            "itemBackgroundColor": "#ffffff",
+            "starsColor": "",
+            "starsBackgroundColor": "#ffffff",
+            "arrows_backgroundColor": "#ffffff",
+            "arrows_iconColor": "#9a9a9a",
+            "shadow": "offset-dark",
+            "border_active": false,
+            "border_width": 2,
+            "border_color": "#000000",
+            "productIds": ""
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_agg_section_iABrjn",
+        "loox_reviews_loox_card_carousel_section_tmWwgx"
+      ],
+      "settings": {
+        "include_margins": true,
+        "show_divider": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "instagram_feed_new_Ni9Ex8": {
+      "type": "instagram-feed-new",
+      "name": "Join Community New",
+      "settings": {
+        "heading_main": "Life with monthlies.",
+        "heading_sub": "Join our community.",
+        "hashtag_text": "#bywomenforwomen",
+        "desktop_img_1": "shopify://shop_images/281024_SteffixMonthlies8345-2_2_fd45a5e1-7ae9-4c50-adc0-f8f803e518f9.png",
+        "desktop_img_2": "shopify://shop_images/281024_SteffixMonthlies8345-2_3.png",
+        "desktop_img_3": "shopify://shop_images/281024_SteffixMonthlies8345-2_5.png",
+        "desktop_img_4": "shopify://shop_images/281024_SteffixMonthlies8345-2_4.png",
+        "desktop_img_5": "shopify://shop_images/281024_SteffixMonthlies8345-2_6.png",
+        "mobile_img_1": "shopify://shop_images/281024_SteffixMonthlies8345-2_2_fd45a5e1-7ae9-4c50-adc0-f8f803e518f9.png",
+        "mobile_img_2": "shopify://shop_images/281024_SteffixMonthlies8345-2_3.png",
+        "mobile_img_3": "shopify://shop_images/281024_SteffixMonthlies8345-2_5.png",
+        "mobile_img_4": "shopify://shop_images/281024_SteffixMonthlies8345-2_4.png",
+        "mobile_img_5": "shopify://shop_images/281024_SteffixMonthlies8345-2_6.png",
+        "instagram_icon": "shopify://shop_images/Instagram_png.svg",
+        "instagram_link": "https://www.instagram.com/withmonthlies",
+        "instagram_text": "Follow on Instagram",
+        "tiktok_icon": "shopify://shop_images/tiktok_png.svg",
+        "tiktok_link": "",
+        "tiktok_text": "Follow on TikTok"
+      }
+    },
+    "experience_manageable_CYRBwG": {
+      "type": "experience-manageable",
+      "name": "Experience Manageable New",
+      "settings": {
+        "review_faces": "shopify://shop_images/fingerpick-review.png",
+        "star_image": "shopify://shop_images/starimage.png",
+        "bg_image": "shopify://shop_images/IMG_7398_3.png",
+        "rating_text": "4.6 Stars",
+        "trust_text": "Thousands of women trust monthlies",
+        "hero_heading": "Experience manageable cramps and better  balance after just a few weeks",
+        "button_text": "Buy monthlies",
+        "button_link": "/products/monthlies-periodease-uk"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "homepage_banner_new_9Qpe43",
+    "homepage_banner_new_video_qDUfW9",
+    "brand_section_new_hz6yn6",
+    "natural_ingredients_section_new_D83nbx",
+    "energy_level_new_6jDpKB",
+    "carefully_selected_ingredients_new_cPWKEE",
+    "what_inside_new_tD4XyM",
+    "experience_yourself_new_FLtMFy",
+    "take_monthly_tablets_new_zg7tG4",
+    "female_health_kit_new_hFiVJA",
+    "doctor_details_new_yz34BT",
+    "health_expert_new_hEKCQr",
+    "all_features_new_M4BPAV",
+    "custom_text_km84zG",
+    "1765445861184d8475",
+    "instagram_feed_new_Ni9Ex8",
+    "experience_manageable_CYRBwG"
+  ]
+}

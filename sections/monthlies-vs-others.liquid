@@ -1,0 +1,307 @@
+
+    <section class="cst-vs-compare">
+      {% if section.settings.title != blank %}
+        <h2 class="cst-vs-title">{{ section.settings.title }}</h2>
+      {% endif %}
+
+      {% if section.settings.subtitle != blank %}
+        <h2 class="cst-vs-subtitle">{{ section.settings.subtitle }}</h2>
+      {% endif %}
+
+      <div class="cst-vs-center">
+            <span class="cst-vs-badge">{{ section.settings.vs_text }}</span>
+          </div>
+      <div class="cst-vs-grid">
+    
+        {%- assign left_items = section.blocks | where: 'type', 'left_item' -%}
+        {%- assign right_items = section.blocks | where: 'type', 'right_item' -%}
+    
+        {% if section.settings.left_image != blank or left_items.size > 0 %}
+        <div class="cst-vs-col left-sec">
+          {% if section.settings.left_image != blank %}
+            <div class="cst-vs-product">
+              <img src="{{ section.settings.left_image | image_url: width: 300 }}" alt="{{ section.settings.left_alt | escape }}" />
+            </div>
+          {% endif %}
+    
+          {% if left_items.size > 0 %}
+            <div class="cst-vs-list positive">
+              {% for block in left_items %}
+                {% if block.settings.text != blank %}
+                  <div class="cst-vs-item" {{ block.shopify_attributes }}>
+                    {% if section.settings.positive_icon != blank %}
+                      <img class="cst-vs-icon" src="{{ section.settings.positive_icon | image_url: width: 44 }}" alt="check" />
+                    {% endif %}
+                    <span>{{ block.settings.text }}</span>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+        {% endif %}
+    
+        {% if left_items.size > 0 and right_items.size > 0 %}
+        
+        {% endif %}
+    
+        {% if section.settings.right_image != blank or right_items.size > 0 %}
+        <div class="cst-vs-col right-sec">
+          {% if section.settings.right_image != blank %}
+            <div class="cst-vs-product">
+              <img src="{{ section.settings.right_image | image_url: width: 300 }}" alt="{{ section.settings.right_alt | escape }}" />
+            </div>
+          {% endif %}
+    
+          {% if right_items.size > 0 %}
+            <div class="cst-vs-list negative">
+              {% for block in right_items %}
+                {% if block.settings.text != blank %}
+                  <div class="cst-vs-item" {{ block.shopify_attributes }}>
+                    {% if section.settings.negative_icon != blank %}
+                      <img class="cst-vs-icon" src="{{ section.settings.negative_icon | image_url: width: 44 }}" alt="cross" />
+                    {% endif %}
+                    <span>{{ block.settings.text }}</span>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+        {% endif %}
+    
+      </div>
+    </section>
+
+    
+    <style>
+      div#shopify-section-template--27139801579867__monthlies_vs_others_fytFx3 .cst-vs-badge {
+    top: 55%;
+}
+      div#shopify-section-template--27139801579867__monthlies_vs_others_fytFx3 h2.cst-vs-title {
+        margin-bottom: 20px;
+      }
+
+.cst-vs-compare h2.cst-vs-subtitle {
+    font-size: 24px;
+    color:#404040;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Quicksand' !IMPORTANT;
+    margin-bottom: 30px;
+}
+
+
+      .cst-vs-col.left-sec {
+    flex-direction: row;
+}
+.cst-vs-col.right-sec {
+    flex-direction: row-reverse;
+}
+.cst-vs-compare {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 70px 20px !important;
+  position:relative;
+}
+  .cst-vs-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: #404040;
+}
+.cst-vs-item p {
+    margin: 0;
+    font-size: 18px;
+    color: #404040;
+    font-weight: 600;
+}
+.cst-vs-list.negative .cst-vs-item {
+    background: #FBF1F0;
+}
+.cst-vs-list.positive .cst-vs-item {
+    background: #FAFCFE;
+}
+.cst-vs-list.negative .cst-vs-item:first-child {
+    border-top-right-radius: 20px;
+}
+.cst-vs-list.negative .cst-vs-item:last-child {
+    border-bottom-right-radius: 20px;
+}
+.cst-vs-list.positive .cst-vs-item:first-child {
+    border-top-left-radius: 20px;
+}
+.cst-vs-list.positive .cst-vs-item:last-child {
+    border-bottom-left-radius: 20px;
+}
+.cst-vs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    align-items: center;
+    width: 100%;
+}
+    .cst-vs-col{display:flex;flex-direction:column;align-items:center}
+    .cst-vs-product img{width:auto;height:auto;margin-bottom:24px}
+    .cst-vs-center{  
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    }
+    .cst-vs-badge {
+        width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #2f2f2f;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+      top: 48%;
+    position:absolute;
+  }
+    .cst-vs-list{width:100%;overflow:hidden}
+
+
+    .cst-vs-item {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      padding: 10px 22px;
+      font-size: 16px;
+      line-height: 1.45;
+      color: #2b2b2b;
+      margin-bottom: 8px;
+      height: 83px;
+  }
+    .cst-vs-item+.cst-vs-item{border-top:1px solid rgba(0,0,0,.05)}
+    .cst-vs-icon{width:22px;height:22px;flex-shrink:0;margin-top:2px}
+    @media (max-width:1030px){
+      .cst-vs-item p {
+        font-size: 14px;
+    }
+    }
+    @media (max-width:991px){
+      div#shopify-section-template--27139801579867__monthlies_vs_others_fytFx3 .cst-vs-badge {
+    top: 50%;
+}
+
+ div#shopify-section-template--27139801579867__monthlies_vs_others_aFWE7E span.cst-vs-badge {
+    top: 40%;
+}
+      .cst-vs-compare {
+        padding: 0 20px 50px !important;
+      }
+      .cst-vs-title{
+        font-size:28px;
+        margin-bottom:32px
+      }
+        .cst-vs-product img {
+    height: 100%;
+    margin-bottom: 0;
+    max-width: 173px;
+}
+    }
+    @media (max-width:850px){
+      div#shopify-section-template--27139801579867__monthlies_vs_others_fytFx3 .cst-vs-badge {
+    top: 28%;
+}
+  div#shopify-section-template--27139801579867__monthlies_vs_others_aFWE7E span.cst-vs-badge {
+    top: 20%;
+}
+             .cst-vs-badge {
+        top: 28%;
+        height:40px;
+        width:40px;
+    }
+      .cst-vs-col.right-sec {
+        flex-direction: column;
+    }
+    .cst-vs-grid{
+    align-items:end;
+    }
+    .cst-vs-col.left-sec {
+        flex-direction: column;
+    }
+
+    }
+    @media (max-width:595px){
+      div#shopify-section-template--27139801579867__monthlies_vs_others_fytFx3 .cst-vs-badge {
+    top: 21%;
+}
+div#shopify-section-template--27139801579867__monthlies_vs_others_aFWE7E span.cst-vs-badge {
+    top: 15%;
+}
+      .cst-vs-item p {
+        font-size: 12px;
+    }
+    .cst-vs-item{
+    padding:10px;
+    gap: 5px;
+    }
+    .cst-vs-title{
+    font-size:24px;
+    }
+        .cst-vs-product img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+    .cst-vs-compare h2.cst-vs-subtitle {
+    font-size: 16px;
+}
+    }
+        @media (max-width:480px){
+          div#shopify-section-template--27139801579867__monthlies_vs_others_fytFx3 .cst-vs-badge {
+    top: 25%;
+}
+        .cst-vs-badge {
+        top: 30%;
+    }
+  }
+    </style>
+    
+    {% schema %}
+    {
+      "name": "Monthlies VS Compare",
+      "settings": [
+        {"type": "checkbox", "id": "enable_section", "label": "Enable section", "default": true},
+        {"type": "text", "id": "title", "label": "Section title"},
+        {"type": "text", "id": "subtitle", "label": "Sub Heading"},
+    
+        {"type": "image_picker", "id": "left_image", "label": "Left product image"},
+        {"type": "text", "id": "left_alt", "label": "Left image alt text"},
+    
+        {"type": "image_picker", "id": "right_image", "label": "Right product image"},
+        {"type": "text", "id": "right_alt", "label": "Right image alt text"},
+    
+        {"type": "image_picker", "id": "positive_icon", "label": "Positive icon"},
+        {"type": "image_picker", "id": "negative_icon", "label": "Negative icon"},
+    
+        {"type": "text", "id": "vs_text", "label": "VS badge text", "default": "VS"}
+      ],
+      "blocks": [
+        {
+          "type": "left_item",
+          "name": "Left list item",
+          "settings": [
+            {"type": "richtext", "id": "text", "label": "Text"}
+          ]
+        },
+        {
+          "type": "right_item",
+          "name": "Right list item",
+          "settings": [
+            {"type": "richtext", "id": "text", "label": "Text"}
+          ]
+        }
+      ],
+      "presets": [
+        {"name": "Monthlies VS Compare"}
+      ]
+    }
+    {% endschema %}
+    

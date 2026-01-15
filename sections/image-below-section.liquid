@@ -1,0 +1,90 @@
+{% comment %}
+  Section: What is included
+  Displays heading, subheading/description, and a main image.
+{% endcomment %}
+
+<section class="included-section page-width text-center py-8 {{section.settings.custom_class }}">
+  <div class="included-content max-w-3xl mx-auto">
+    <h2 class="included-heading">
+      {{ section.settings.heading }}
+    </h2>
+    <p class="included-description">
+      {{ section.settings.description }}
+    </p>
+  </div>
+
+  {% if section.settings.main_image != blank %}
+    <div class="included-image mt-8">
+      <img 
+        src="{{ section.settings.main_image | img_url: 'master' }}" 
+        alt="{{ section.settings.heading }}" 
+        class="mx-auto w-full h-auto desktop-only-image"
+      >
+      <img 
+          src="{{ section.settings.mobile_main_image | img_url: 'master' }}" 
+          alt="{{ section.settings.heading }}" 
+          class="mx-auto w-full h-auto mobile-only image"
+      >
+    </div>
+  {% endif %}
+</section>
+
+<style>
+.included-section {
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 40px 20px;
+}
+.included-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.included-heading span {
+  color: #d62828; /* red highlight like in image */
+}
+.included-description {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+</style>
+
+{% schema %}
+{
+  "name": "What is included section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom class"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "image_picker",
+      "id": "main_image",
+      "label": "Main Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_main_image",
+      "label": "Mobile Main Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "What is included section"
+    }
+  ]
+}
+{% endschema %}

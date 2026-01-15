@@ -1,0 +1,71 @@
+{% schema %}
+{
+  "name": "Checkout Iframe",
+  "presets": [{
+    "name": "iFrame block",
+    "category": "Text"
+  }],
+  "settings": [
+    {
+      "type": "text",
+      "id": "iframe_url",
+      "label": "Iframe URL",
+      "default": "https://boortmaltx.com/"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+.checkout-iframe-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 1500px; /* 16:9 Aspect Ratio (Responsive Height) */
+  
+}
+
+.checkout-iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Set iframe height for desktop */
+@media screen and (min-width: 768px) {
+  .checkout-iframe-container iframe {
+    height: 1100px;
+  }
+}
+
+/* Set iframe height for mobile */
+@media screen and (max-width: 767px) {
+  .checkout-iframe-container iframe {
+    height: 75vh;
+  }
+}
+{% endstylesheet %}
+
+{% javascript %}
+/* Optional: JavaScript to interact with the iframe */
+{% endjavascript %}
+
+<div class="checkout-iframe-container">
+  {% assign page_url = request.path %}
+  {% if page_url contains 'go-to-checkout-a-sub' %}
+    <iframe src="https://www.trymonthlies.com/bta/monthlies-sub-a" id="monthliesIframe" style="border:none;"></iframe>
+  {% elsif page_url contains 'go-to-checkout-a-one' %}
+    <iframe src="https://www.trymonthlies.com/bta/monthlies-one-a" id="monthliesIframe" style="border:none;"></iframe>
+  {% elsif page_url contains 'go-to-checkout-b-sub' %}
+    <iframe src="https://www.trymonthlies.com/bta/monthlies-sub-b" id="monthliesIframe" style="border:none;"></iframe>
+  {% elsif page_url contains 'go-to-checkout-b-one' %}
+    <iframe src="https://www.trymonthlies.com/bta/monthlies-one-b" id="monthliesIframe" style="border:none;"></iframe>
+  {% elsif page_url contains 'go-to-checkout-hormonal' %}
+    <iframe src="https://www.trymonthlies.com/bta/monthlies-hormone" id="monthliesIframe" style="border:none;"></iframe>
+  {% else %}
+    <iframe src="https://www.trymonthlies.com/bta/monthlies-sub-b" id="monthliesIframe" style="border:none;"></iframe>
+  {% endif %}
+</div>

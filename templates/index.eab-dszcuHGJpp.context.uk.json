@@ -1,0 +1,44 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "index.eab-dszcuHGJpp.json",
+  "context": {
+    "market": "uk"
+  },
+  "sections": {
+    "image_banner_cg4BHF": {
+      "settings": {},
+      "blocks": {
+        "button_DQBgan": {
+          "settings": {
+            "button_link1": "shopify://products/monthlies-cycle-companion"
+          }
+        }
+      }
+    },
+    "subscription_section_L9W36j": {
+      "settings": {},
+      "blocks": {
+        "slide_yhKE3j": {
+          "settings": {
+            "button_link": "shopify://products/monthlies-cycle-companion",
+            "learn_more": "shopify://products/monthlies-cycle-companion"
+          }
+        },
+        "slide_VL4iQj": {
+          "settings": {
+            "button_link": "shopify://products/monthlies-cycle-companion",
+            "learn_more": "shopify://products/monthlies-cycle-companion"
+          }
+        }
+      }
+    }
+  }
+}

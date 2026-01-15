@@ -1,0 +1,57 @@
+{% assign reviews = shop.metaobjects.review.values %}
+
+{{ 'section-reviews-slider.css' | asset_url | stylesheet_tag }}
+
+<section class="reviews-section">
+  <div class="title-container">
+    <h2 class="title">{{ section.settings.title }}</h2>
+  </div>
+
+  <div class="swiper swiper-reviews !overflow-visible">
+    <div class="swiper-wrapper">
+      {% for review in reviews %}
+        <div class="swiper-slide">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/ReviewStars-{{review.rating.value}}.png?v=1686223477"
+            alt="Stars"
+            class="stars">
+          <p>"{{ review.text.value }}"</p>
+          <span class="name">{{ review.name.value }}, {{ review.age.value }}</span>
+          <span class="date"> January, 2023 </span>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+ 
+<script>
+  new Swiper(".swiper-reviews", {
+    slidesPerView: "auto",
+    loop: true,
+    spaceBetween: 16,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false
+    }
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "Reviews1",
+    "presets": [
+      {
+        "name": "Reviews1",
+        "category": "section"
+      }
+    ],
+    "settings": [
+      {
+        "type": "text",
+        "label": "Title",
+        "default": "Don’t take our word for it, take hers!",
+        "id": "title"
+      }
+    ]
+  }
+{% endschema %}

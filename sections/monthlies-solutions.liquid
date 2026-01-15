@@ -1,0 +1,999 @@
+<section class="solution">
+  <div class="main-section headin">
+    <h2>{{ section.settings['section-heading'] }}</h2>
+    {{ section.settings.description }}
+  </div>
+  <div class="container">
+    <div class="sol1_box">
+      <h2>{{ section.settings.Heading }}</h2>
+      <img src="{{ section.settings.image | img_url: 'master' }}" alt="">
+    </div>
+    <div class="sol2_box">
+      <div>{{ section.settings.paragraph }}</div>
+      <div class="uni-container">
+        <div class="uni">
+          <div class="health_percent">{{ section.settings.percentage_health }}</div>
+          <p>{{ section.settings.improvement_text }}</p>
+        </div>
+        <div class="uni">
+          <div class="health_percent">{{ section.settings.percentage_feeling }}</div>
+          <p>{{ section.settings.feeling_text }}</p>
+        </div>
+      </div>
+      <div class="note">{{ section.settings.note }}</div>
+    </div>
+  </div>
+</section>
+<section class="hormones desktop_dash">
+  <div class="container">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {%- when 'benefits' -%}
+          <div class="happens_box">
+            <div class="upper-box">
+              <div class="balnce">
+                {{ block.settings.benefit_heading }}
+              </div>
+              <div class="hap1">
+                {{ block.settings.benefit_subheading }}
+                <div>{{ block.settings.benefit_text }}</div>
+              </div>
+            </div>
+            <div class="hap2">
+              <div class="flower">
+                <img src="{{ block.settings.help-image | img_url: 'master' }}" alt="">
+                {{ block.settings.help_heading }}
+              </div>
+              <div>
+                {{ block.settings.help_text }}
+                <details class="cst-details">
+                  <summary>
+                    <span id="open">{{ block.settings['read-more'] }}</span>
+                    <span id="close">{{ block.settings['read-less'] }}</span>
+                  </summary>
+
+                  {{ block.settings.help_text1 }}
+                </details>
+              </div>
+            </div>
+          </div>
+      {% endcase %}
+    {% endfor %}
+  </div>
+  <div class="extra-note">{{ section.settings.button }}</div>
+</section>
+<section class="hormones mobile_dash">
+  <div class="container">
+    <!-- Tab Buttons -->
+    <div class="tab-buttons">
+      {% for block in section.blocks %}
+        <button class="tab-btn {% if forloop.first %}active{% endif %}" data-tab="tab{{ forloop.index }}">
+          {{ block.settings.benefit_heading | strip_html }}
+        </button>
+      {% endfor %}
+    </div>
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+      {% for block in section.blocks %}
+        <div class="happens_box tab-panel {% if forloop.first %}active{% endif %}" id="tab{{ forloop.index }}">
+          <div class="upper-box">
+            <div class="balnce">
+              {{ block.settings.benefit_heading }}
+            </div>
+            <div class="hap1">
+              <h3>{{ block.settings.benefit_subheading }}</h3>
+              <div>
+                {{ block.settings.benefit_text }}
+              </div>
+            </div>
+          </div>
+          <div class="hap2">
+            <div class="flower">
+              {% if block.settings['help-image'] != blank %}
+                <img src="{{ block.settings.help-image | image_url }}" alt="">
+              {% endif %}
+              {{ block.settings.help_heading }}
+            </div>
+            <div>
+              {% if block.settings.help_subheading != blank %}
+                <p>
+                  <strong>{{ block.settings.help_subheading }}</strong>
+                </p>
+              {% endif %}
+              <p>{{ block.settings.help_text }}</p>
+              <details>
+                <summary>
+                  <span id="open">{{ block.settings['read-more'] }}</span>
+                  <span id="close">{{ block.settings['read-less'] }}</span>
+                </summary>
+                <p>
+                  {{ block.settings.help_text1 }}
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<script>
+  const buttons = document.querySelectorAll('.tab-btn');
+  const tabs = document.querySelectorAll('.tab-panel');
+
+  buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          tabs.forEach(tab => tab.classList.remove('active'));
+
+          btn.classList.add('active');
+          document.getElementById(btn.dataset.tab).classList.add('active');
+      });
+  });
+</script>
+
+<style>
+  /* read more css 09-07-25 */
+
+  .hormones details {
+      position: relative;
+  }
+
+  .hormones details summary {
+      display: block;
+      cursor: pointer;
+      color: #000;
+      font-weight: bold;
+  }
+
+  .hormones details summary:focus {
+      outline: none;
+  }
+
+  .hormones summary span p {
+      display: inline-block;
+  }
+
+  .hormones details[open] {
+      display: block;
+      padding-bottom: 25px;
+      /* padding-top:10px; */
+      animation: open .2s linear;
+  }
+
+  .hormones details[open] summary {
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+
+  .hormones details #open {
+      padding-left: 5px;
+      text-align: middle;
+  }
+
+  .hormones details #open:after {
+      display: inline-block;
+      position: relative;
+      top: -3px;
+      padding-left: 8px;
+      content: "\00bb";
+      transform: rotate(90deg);
+  }
+
+  .hormones details #close:after {
+      display: inline-block;
+      position: relative;
+      top: 5px;
+      padding-left: 8px;
+      content: "\00bb";
+      transform: rotate(-90deg);
+  }
+
+  .hormones details[open] #open {
+      display: none;
+  }
+
+  .hormones details[open] #open {
+      display: none;
+  }
+
+  .hormones details[open] #open {
+      display: none;
+  }
+
+  .hormones details #close {
+      display: none;
+  }
+
+  .hormones details[open] #open {
+      display: none;
+  }
+
+  .hormones details[open] #open {
+      display: none;
+  }
+
+  .hormones details[open] #close {
+      display: block;
+  }
+
+  .hormones ::-webkit-details-marker {
+      display: none;
+  }
+
+
+
+
+
+  @keyframes open {
+      0% {
+          opacity: 0;
+          transform: translateY(-10px);
+      }
+
+      100% {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+
+  /*new-css-start*/
+  .main-section.headin {
+      padding: 0 20px;
+  }
+
+  .main-section.headin p {
+      text-align: left;
+  }
+
+  /*New-css-end*/
+  .note {
+      text-align: left;
+      display: block;
+      font-size: 15px;
+      font-family: Lora;
+      color: #2a2a2a;
+      line-height: normal;
+  }
+
+  .uni .health_percent p {
+      font-size: 50px;
+      color: #2a2a2a;
+      font-weight: 500;
+      font-family: Lora !important;
+  }
+
+  .uni-container {
+      border-top: 2px solid rgba(227, 227, 227, 1);
+  }
+
+  .solution .container {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .sol1_box {
+      width: 50%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+  }
+
+  section.solution {
+      background: #ecf1f4;
+      padding: 65px 20px 0;
+      background-image: url(https://cdn.shopify.com/s/files/1/0708/7462/8371/files/unnamed_3.png?v=1747397865);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: contain;
+  }
+
+  .sol2_box {
+      width: 50%;
+      background: #fff;
+      text-align: center;
+      height: fit-content;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 7.07px 28.29px #9293934d;
+      max-width: 600px;
+  }
+
+  .sol1_box img {
+      margin-top: 50px;
+      height: 460px;
+      object-fit: contain;
+  }
+
+  .sol2_box p {
+      font-size: 21px;
+      color: #2a2a2a;
+      line-height: 28px;
+      margin-top: 0;
+  }
+
+  .uni {
+      display: flex;
+      align-items: center;
+      text-align: left;
+      gap: 20px;
+      padding: 10px 0;
+      padding-bottom: 0;
+  }
+
+  .sol2_box p:last-child {
+      margin-bottom: 20px;
+  }
+
+  .sol2_box span {
+      text-align: left;
+      display: block;
+      font-size: 16px;
+      font-family: "Quicksand" !important;
+      color: #2a2a2a;
+  }
+
+  .uni span {
+      font-size: 70px;
+      color: #2a2a2a;
+      font-weight: 500;
+      font-family: "Lora" !important;
+  }
+
+  .sol1_box h2 {
+      font-size: 44px;
+      color: #404040;
+      line-height: normal;
+      border-bottom: 3px solid #cb342c;
+      max-width: fit-content;
+      text-align: center;
+      margin: 0 auto;
+  }
+
+  section.hormones.MOBILE_DASH {
+      display: block;
+  }
+
+  .hormones {
+      background: #abd0cd;
+      padding: 80px 0;
+  }
+
+  .hormones .container {
+      display: flex;
+      gap: 60px;
+  }
+
+  .happens_box {
+      /* background: #ffffff38; */
+      text-align: center;
+      /* box-shadow: 0 7.07px 28.29px #9293934d; */
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+  }
+
+  .upper-box {
+      background: #ffffff38;
+      border-radius: 18px 18px 0 0;
+    padding:10px;
+    min-height: 820px;
+    height:100%;
+  }
+
+  .hap2 {
+      background: #fff;
+      padding: 20px;
+      border-radius: 20px;
+      height: 100%;
+      min-height: 440px;
+      margin-top: -20px;
+  }
+
+  .balnce h2,
+  .balnce p {
+      margin: 0;
+      font-size: 30px;
+      line-height: 40px;
+      padding: 10px;
+      font-family: "Quicksand" !important;
+      color: #404040;
+      /* background: #edf6f5; */
+      position: relative;
+      z-index: 1;
+      font-weight: 600;
+  }
+
+  .balnce p {
+      min-height: 97px;
+      padding-bottom: 0;
+  }
+
+  .balnce h2:after,
+  .balnce p:after {
+      /* content: ""; */
+      background-image: url("https://cdn.shopify.com/s/files/1/0708/7462/8371/files/para_before_img.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 60px;
+      left: -22px;
+      top: 0;
+      position: absolute;
+      z-index: -1;
+  }
+
+  .balnce p:after {
+      height: 97px;
+      top: 0;
+      left: -28px;
+  }
+
+  .extra-note a {
+      color: #cb342c;
+  }
+
+  .main-section.headin {
+      text-align: center;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding-bottom: 40px;
+  }
+
+  .extra-note {
+      text-align: center;
+      padding: 40px 0 0;
+  }
+
+  .balnce h2:before,
+  .balnce p:before {
+      /* content: ""; */
+      background-image: url(/cdn/shop/files/para_after_img.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 60px;
+      left: 94%;
+      top: 0;
+      position: absolute;
+      z-index: -1;
+  }
+
+  .flower img {
+      width: 60px;
+  }
+
+  .balnce strong {
+      font-size: 30px;
+      color: #cb342c;
+      font-family: "Lora";
+  }
+
+  .balnce p:before {
+      top: 0;
+      left: 89%;
+      height: 97px;
+  }
+
+
+
+  .hap1 {
+      padding: 20px;
+      min-height: 590px;
+  }
+
+  .hap1 h3 {
+      color: #cb342c;
+      font-size: 24px;
+      font-family: "Quicksand" !important;
+      font-weight: 600;
+  }
+
+  .flower h3 {
+      font-size: 26px;
+      font-family: "Quicksand";
+  }
+
+  .flower {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      align-items: center;
+  }
+
+  .balnce {
+      background-image: url(https://cdn.shopify.com/s/files/1/0708/7462/8371/files/unnamed_9.png?v=1752129866);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: cover;
+  }
+
+  .hap1 p {
+      font-size: 18px;
+      font-family: "Quicksand";
+      color: #2a2a2a;
+      line-height: 28px;
+  }
+
+  .hap2 p {
+      font-size: 18px;
+      font-family: "Quicksand";
+      color: #2a2a2a;
+      line-height: 28px;
+      margin-bottom: 0;
+  }
+
+  .main-section.headin h2 strong {
+      color: #8cbfbd;
+  }
+
+  .main-section.headin h2 {
+      text-align: center;
+      font-size: 26px;
+      font-weight: 600;
+      font-family: 'Quicksand' !important;
+      letter-spacing: 0;
+  }
+
+  button.tab-btn {
+      position: relative;
+  }
+
+  button.tab-btn.active::after {
+      content: '';
+      position: absolute;
+      top: 53%;
+      right: 20px;
+      width: 30px;
+      height: 30px;
+      background: url(https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Group_512913_45b8d212-5ba9-49a5-b1b1-bb9db88876a7.png?v=1747652918);
+      background-repeat: no-repeat;
+      background-size: contain;
+      transform: translateY(-50%);
+  }
+
+  .tab-btn {
+      padding: 12px 55px !important;
+  }
+
+  .happens_box {
+      border-radius: 18px;
+      flex: 1;
+  }
+  @media screen and (max-width:1799px){
+        .hap1 p ,.hap2 p {
+    font-size: 17px;
+}
+    .hap1 {
+    padding: 10px;
+}
+  }
+  @media (max-width: 1599px) {
+    .upper-box {
+    min-height: 750px;
+}
+  }
+  @media (max-width: 1500px) {
+
+      .hap2 {
+          height: auto;
+      }
+
+      .happens_box {
+          justify-content: normal;
+          height: fit-content;
+      }
+    .hap1 p {
+    font-size: 16px;
+}
+  }
+
+  @media (max-width: 1440px) {
+
+      .balnce h2:after,
+      .balnce h2:before {
+          height: 48px;
+      }
+
+      .balnce h2 {
+          font-size: 22px;
+          line-height: normal;
+      }
+
+      .balnce strong {
+          font-size: 22px;
+      }
+
+      .hap1 h3 {
+          font-size: 20px;
+      }
+
+      .balnce p:before {
+          left: 87%;
+      }
+
+      .hormones .container {
+          gap: 45px;
+      }
+          .hap2 {
+        min-height:435px;
+      }
+  }
+  @media screen and (max-width:1399px){
+.upper-box {
+    min-height: 860px;
+}
+  }
+    @media screen and (max-width:1199px){
+.upper-box {
+    min-height: 880px;
+}
+  }
+
+  @media(max-width:1100px) {
+      .balnce h2 {
+          font-size: 20px;
+      }
+
+      .hap1 h3 {
+          font-size: 18px;
+      }
+.hap1 p, .hap2 p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+.upper-box {
+    min-height: 830px;
+}
+    .hormones .container {
+    gap: 30px;
+}
+  }
+
+  @media(max-width:991px) {
+      .sol1_box {
+          width: 100%;
+      }
+
+      .sol2_box {
+          width: 100%;
+          height: unset;
+          max-width: 100%;
+      }
+
+      .sol1_box h2 {
+          font-size: 24px;
+      }
+
+      .sol2_box p {
+          font-size: 16px;
+          line-height: 23px;
+      }
+
+      .note {
+          line-height: 20px;
+      }
+
+      .uni .health_percent p {
+          font-size: 40px;
+      }
+
+      .main-title {
+          font-size: 24px;
+
+      }
+
+      .quote {
+          font-size: 18px;
+      }
+
+      .balnce h2:before {
+          left: 91%;
+      }
+
+      .balnce h2:after {
+          left: -13px;
+      }
+
+      .problem-section {
+          padding: 40px 0px 0px;
+
+      }
+
+      section.solution {
+          padding: 40px 0px;
+      }
+
+      .hormones {
+
+          padding: 0px 0 40px;
+      }
+
+      .flower h3 {
+          font-size: 22px;
+      }
+
+ .hap2 {
+    height: auto;
+    min-height: 570px;
+   padding:10px;
+}
+.hap2  details.cst-details>p {
+    padding-bottom: 15px;
+}
+      .solution .container {
+          display: flex;
+          background: url(https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Background.png?v=1747661981);
+          padding: 0 16px;
+          max-width: 100%;
+          width: 100%;
+          background-size: cover;
+          margin-top: 240px;
+      }
+
+      .happens_box {
+          border-radius: 18px;
+      }
+
+      .sol1_box {
+          width: 100%;
+          margin-top: -250px;
+      }
+    .upper-box {
+    min-height: 1060px;
+}
+    .hormones .container {
+    gap: 16px;
+}
+    .balnce h2 {
+    font-size: 16px;
+}
+  }
+
+  @media(max-width:767px) {
+      .balnce h2:before {
+          left: 98%;
+      }
+
+      section.solution {
+          margin-top: 25px;
+      }
+
+      .upper-box {
+          min-height: auto;
+      }
+
+      .hap1 p:last-child {
+          padding-bottom: 30px;
+      }
+
+      .sol1_box img {
+          margin-top: 40px !important;
+          margin-bottom: 20px;
+      }
+    .hap1 {
+    min-height: 00;
+}
+    .hap2 {
+    min-height: 0;
+}
+
+  }
+
+  @media(max-width:575px) {
+      .balnce strong {
+          font-size: 20px;
+      }
+
+      .uni .health_percent p {
+          font-size: 40px !important;
+      }
+
+      .uni {
+          gap: 3px !important;
+      }
+
+      .balnce h2:before {
+          left: 96%;
+      }
+
+      .balnce h2:after,
+      .balnce h2:before {
+          height: 49px;
+      }
+
+      .sol2_box {
+          margin-top: 40px;
+      }
+
+      .main-section.headin h2 {
+          font-size: 24px;
+      }
+
+      .sol1_box img {
+          height: auto;
+          object-fit: cover;
+          margin-bottom: 0;
+      }
+
+      .hap1 p ,.hap2 p {
+          font-size: 16px;
+          line-height: 23px;
+      }
+
+      .hap2 p {
+          font-size: 16px;
+          line-height: 23px;
+      }
+
+      .balnce h2 {
+          font-size: 23px;
+      }
+
+      .hap1 h3 {
+          font-size: 22px;
+      }
+
+      .main-section.headin p {
+          text-align: left;
+          line-height: 22px;
+          font-size: 16px;
+      }
+
+      .main-section.headin {
+          padding-bottom: 32px;
+      }
+  }
+
+  @media(max-width:350px) {
+      .balnce h2 {
+          font-size: 20px;
+      }
+
+      .hap1 h3 {
+          font-size: 18px;
+      }
+  }
+</style>
+
+{% schema %}
+{
+"name": "Monthlies Solution",
+"class": "cst-monthlies-solutions",
+"settings": [
+{
+"type": "inline_richtext",
+"id": "section-heading",
+"label": "Title"
+},
+{
+"type": "richtext",
+"id": "description",
+"label": "Description"
+},
+{
+"type": "text",
+"id": "Heading",
+"label": "Heading"
+},
+
+{
+"type": "header",
+"content": "Image with text section"
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+},
+{
+"type": "richtext",
+"id": "paragraph",
+"label": "Paragraph"
+},
+{
+"type": "richtext",
+"id": "percentage_health",
+"label": "Health Improvement"
+},
+{
+"type": "richtext",
+"id": "improvement_text",
+"label": "Improvement Text"
+},
+{
+"type": "richtext",
+"id": "percentage_feeling",
+"label": "Reported Feeling"
+},
+{
+"type": "richtext",
+"id": "feeling_text",
+"label": "Reported Feeling Text"
+},
+{
+"type": "text",
+"id": "note",
+"label": "Note"
+},
+{
+"type": "richtext",
+"id": "button",
+"label": "Button"
+}
+],
+"blocks": [
+{
+"type": "benefits",
+"name": "Benefit",
+"settings": [
+{
+"type": "richtext",
+"id": "benefit_heading",
+"label": "Heading"
+},
+{
+"type": "richtext",
+"id": "benefit_subheading",
+"label": "Subheading"
+},
+{
+"type": "richtext",
+"id": "benefit_text",
+"label": "Text"
+},
+{
+"type": "header",
+"content": "How monthlies helps"
+},
+{
+"type": "image_picker",
+"id": "help-image",
+"label": "Image"
+},
+{
+"type": "richtext",
+"id": "help_heading",
+"label": "Heading"
+},
+{
+"type": "richtext",
+"id": "help_subheading",
+"label": "Subheading"
+},
+{
+"type": "richtext",
+"id": "help_text",
+"label": "Text"
+},
+{
+"type": "richtext",
+"id": "help_text1",
+"label": "Read More Text"
+},
+{
+"type": "richtext",
+"id": "read-more",
+"label": "Read More link"
+
+},
+{
+"type": "richtext",
+"id": "read-less",
+"label": "Read Less link"
+
+}
+]
+}
+],
+"presets": [
+{
+"name": "Monthlies Solution"
+}
+]
+}
+{% endschema %}

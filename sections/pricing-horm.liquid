@@ -1,0 +1,620 @@
+{{ 'section-pricing.css' | asset_url | stylesheet_tag }}
+
+<section class="pricing" id="pricing">
+  <div class="pricing-title">
+    <h2>{{ section.settings.title }}</h2>
+  </div>
+  <div class="pricing-subtitle">
+    <p class="subhead">{{ section.settings.text }}</p>
+  </div>
+
+  <div class="pricing-wrapper">
+
+    <div class="product-column" id="product-column-3">
+      <!-- Show product image -->
+      <div class="product-img">
+        {% if section.settings.product3_description != blank %}
+            <div class="product-tag">
+              <div class="product-tag-icon">
+                    {{ icon_svg | default: '' | raw }}
+              </div>
+              <div class="product-tag-description">
+                {{ section.settings.product3_description }}
+              </div>
+            </div>
+          {% endif %}
+        <img
+          src="{{ section.settings.product3_image | img_url: '480x480' }}"
+          alt="{{ section.settings.product1_title }}"
+        >
+      </div>
+
+      <div class="product-content">
+        <div class="horm-step"><span>{{ section.settings.product3_step }}</span></div>
+        <h3>{{ section.settings.product3_bullets_title }}</h3>
+        <!-- Show product title -->
+        <h2>{{ section.settings.product3_title }}</h2>
+
+        <!-- Show product price -->
+        <div class="price">
+          {{ section.settings.product3_price | money }}
+          <span class="compared-price">{{ section.settings.product3_compare_at_price | money }}</span>
+        </div>
+        <!-- Show price per serving -->
+        <div class="servings">
+          {{ section.settings.product3_supply }}
+        </div>
+
+        <!-- Show title for bullets list -->
+
+        <!-- Show bullet list -->
+        <ul class="check-list">
+          {% for j in (1..6) %}
+            {% assign bullet_key = 'product3_bullet' | append: j %}
+            {% assign bullet = section.settings[bullet_key] %}
+            {% if bullet != blank %}
+              <li>{{ bullet }}</li>
+            {% endif %}
+          {% endfor %}
+          <div class="product-disclaimer">
+          <span class="disclaimer-icon">
+            <img src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/bottle.png?v=1695131093" />
+          </span>
+          <p>
+           {{ section.settings.product_disclaimer_text }}
+          </p>
+        </div>
+        </ul>
+
+        
+
+        {% if shop.locale == 'de' %}
+          <a href="/de/products/hormonal-test" id="cta-buyhorm" class="button">
+            {{ section.settings.start_now_text }}
+            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.679688 1.15234L5.67969 6.15234L0.679688 11.1523" stroke="white" stroke-width="1.5"></path>
+            </svg>
+          </a>
+        {% else %}
+          <a href="/products/hormonal-test" id="cta-buyhorm" class="button">
+            {{ section.settings.start_now_text }}
+            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.679688 1.15234L5.67969 6.15234L0.679688 11.1523" stroke="white" stroke-width="1.5"></path>
+            </svg>
+          </a>
+        {% endif %}
+
+        <div class="disclaimer">
+          {{ section.settings.disclaimer3 }}
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product-column" id="product-column-2">
+      <!-- Show product image -->
+      <div class="product-img">
+        {% if section.settings.product2_description != blank %}
+            <div class="product-tag">
+              <div class="product-tag-icon">
+                    {{ icon_svg | default: '' | raw }}
+              </div>
+              <div class="product-tag-description">
+                {{ section.settings.product2_description }}
+              </div>
+            </div>
+          {% endif %}
+        <img
+          src="{{ section.settings.product2_image | img_url: '480x480' }}"
+          alt="{{ section.settings.product2_title }}"
+        >
+      </div>
+
+      <div class="product-content">
+        <div class="horm-step"><span>{{ section.settings.product2_step }}</span></div>
+        <h3>{{ section.settings.product2_bullets_title }}</h3>
+        <h2>{{ section.settings.product2_title }}</h2>
+        <!-- Show product title -->
+
+        <!-- Show product price -->
+        <div class="price">
+          {{ section.settings.product2_price | money }}
+          <span class="compared-price">{{ section.settings.product2_compare_at_price | money }}</span>
+        </div>
+        <!-- Show price per serving -->
+        <div class="servings">
+          {{ section.settings.product2_supply }}
+        </div>
+
+        <!-- Show title for bullets list -->
+
+        <!-- Show bullet list -->
+        <ul class="check-list">
+          {% for j in (1..6) %}
+            {% assign bullet_key = 'product2_bullet' | append: j %}
+            {% assign bullet = section.settings[bullet_key] %}
+            {% if bullet != blank %}
+              <li>{{ bullet }}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+        
+       {% if shop.locale == 'de' %}
+  <a
+    href="/de/products/hormonal-powder?variant=47050174234971&selling_plan=689083973979"
+    id="cta-buyrefill"
+    class="button"
+    onclick="changeButton(event)"
+  >
+    {{ section.settings.start_now_text }}
+    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg" id="buttonIcon">
+      <path d="M0.679688 1.15234L5.67969 6.15234L0.679688 11.1523" stroke="white" stroke-width="1.5"></path>
+    </svg>
+  </a>
+{% else %}
+  <a
+    href="/products/hormonal-powder?variant=47050174234971&selling_plan=689083973979"
+    id="cta-buyrefill"
+    class="button"
+    onclick="changeButton(event)"
+  >
+    {{ section.settings.start_now_text }}
+    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg" id="buttonIcon">
+      <path d="M0.679688 1.15234L5.67969 6.15234L0.679688 11.1523" stroke="white" stroke-width="1.5"></path>
+    </svg>
+  </a>
+{% endif %}
+
+        <div class="disclaimer">
+          {{ section.settings.disclaimer2 }}
+        </div>
+      </div>
+    </div>
+
+    <div class="product-column" id="product-column-1">
+      <!-- Show product image -->
+      <div class="product-img">
+        {% if section.settings.product1_description != blank %}
+            <div class="product-tag">
+              <div class="product-tag-icon">
+                    {{ icon_svg | default: '' | raw }}
+              </div>
+              <div class="product-tag-description">
+                {{ section.settings.product1_description }}
+              </div>
+            </div>
+          {% endif %}
+        <img
+          src="{{ section.settings.product1_image | img_url: '480x480' }}"
+          alt="{{ section.settings.product_title }}"
+        >
+      </div>
+
+      <div class="product-content">
+        <div class="horm-step-combo"><span>{{ section.settings.product1_step }}</span></div>
+        <h3>{{ section.settings.product1_bullets_title }}</h3>
+        <h2>{{ section.settings.product1_title }}</h2>
+        <!-- Show product title -->
+        
+
+        <!-- Show product price -->
+        <div class="price">
+          {{ section.settings.product1_price | money }}
+          <span class="compared-price">{{ section.settings.product1_compare_at_price | money }}</span>
+          {% if section.settings.product1_price_tag != blank %}
+            <span class="price-tag">{{ section.settings.product1_price_tag }}</span>
+          {% endif %}
+        </div>
+        <!-- Show price per serving -->
+        <div class="servings">
+          {{ section.settings.product1_supply }}
+        </div>
+
+        <!-- Show title for bullets list -->
+
+
+        <!-- Show bullet list -->
+        <ul class="check-list">
+          {% for j in (1..6) %}
+            {% assign bullet_key = 'product1_bullet' | append: j %}
+            {% assign bullet = section.settings[bullet_key] %}
+            {% if bullet != blank %}
+              <li>{{ bullet }}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+
+        {% if shop.locale == 'de' %}
+          <a href="/de/products/hormonal-powder?variant=47050174202203" id="cta-buycombo" class="button">
+            {{ section.settings.start_now_text }}
+            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.679688 1.15234L5.67969 6.15234L0.679688 11.1523" stroke="white" stroke-width="1.5"></path>
+            </svg>
+          </a>
+        {% else %}
+          <a href="/products/hormonal-powder?variant=47050174202203" id="cta-buycombo" class="button">
+            {{ section.settings.start_now_text }}
+            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.679688 1.15234L5.67969 6.15234L0.679688 11.1523" stroke="white" stroke-width="1.5"></path>
+            </svg>
+          </a>
+        {% endif %}
+
+        <div class="disclaimer">
+          {{ section.settings.disclaimer }}
+        </div>
+      </div>
+    </div>   
+
+    
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Pricing Horm Pers",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Buy Monthlies today, join the menstrual revolution"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Section Text",
+      "default": "Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "product1_description",
+      "label": "Product 1 Description",
+      "default": "Default description"
+    },
+    {
+      "type": "image_picker",
+      "id": "product1_image",
+      "label": "Product 1 Image"
+    },
+        {
+      "type": "text",
+      "id": "product1_step",
+      "label": "Product 1 Step",
+      "default": "Step 1/2"
+    },
+    {
+      "type": "text",
+      "id": "product1_title",
+      "label": "Product 1 Title",
+      "default": "Default title"
+    },
+    {
+      "type": "text",
+      "id": "product1_price",
+      "label": "Product 1 Price",
+      "default": "0.00"
+    },
+    {
+      "type": "text",
+      "id": "product1_compare_at_price",
+      "label": "Product 1 Compare At Price",
+      "default": "0.00"
+    },
+     {
+      "type": "text",
+      "id": "product1_price_tag",
+      "label": "Product 1 Price Tag",
+      "default": "0.00"
+    },
+    {
+      "type": "text",
+      "id": "product1_supply",
+      "label": "Product 1 Supply",
+      "default": "Default supply"
+    },
+    {
+      "type": "text",
+      "id": "product1_bullets_title",
+      "label": "Product 1 Bullet Points Title",
+      "default": "Your default title here."
+    },
+    {
+      "type": "text",
+      "id": "product1_bullet1",
+      "label": "Product 1 Bullet Point 1"
+    },
+    {
+      "type": "text",
+      "id": "product1_bullet2",
+      "label": "Product 1 Bullet Point 2"
+    },
+    {
+      "type": "text",
+      "id": "product1_bullet3",
+      "label": "Product 1 Bullet Point 3"
+    },
+    {
+      "type": "text",
+      "id": "product1_bullet4",
+      "label": "Product 1 Bullet Point 4"
+    },
+    {
+      "type": "text",
+      "id": "product1_bullet5",
+      "label": "Product 1 Bullet Point 5"
+    },
+    {
+      "type": "text",
+      "id": "product1_bullet6",
+      "label": "Product 1 Bullet Point 6"
+    },
+        {
+      "type": "text",
+      "id": "disclaimer",
+      "label": "Disclaimer",
+      "default": "90-day money back guarantee. No questions asked."
+    },
+    {
+      "type": "text",
+      "id": "product2_description",
+      "label": "Product 2 Description",
+      "default": "Default description"
+    },
+    {
+      "type": "image_picker",
+      "id": "product2_image",
+      "label": "Product 2 Image"
+    },
+    {
+      "type": "text",
+      "id": "product2_step",
+      "label": "Product 2 Step",
+      "default": "Step 2/2"
+    },
+    {
+      "type": "text",
+      "id": "product2_title",
+      "label": "Product 2 Title",
+      "default": "Default title"
+    },
+    {
+      "type": "text",
+      "id": "product2_price",
+      "label": "Product 2 Price",
+      "default": "0.00"
+    },
+    {
+      "type": "text",
+      "id": "product2_compare_at_price",
+      "label": "Product 2 Compare At Price",
+      "default": "0.00"
+    },
+    {
+      "type": "text",
+      "id": "product2_supply",
+      "label": "Product 2 Supply",
+      "default": "Default supply"
+    },
+    {
+      "type": "text",
+      "id": "product2_bullets_title",
+      "label": "Product 2 Bullet Points Title",
+      "default": "Your default title here."
+    },
+    {
+      "type": "text",
+      "id": "product2_bullet1",
+      "label": "Product 2 Bullet Point 1"
+    },
+    {
+      "type": "text",
+      "id": "product2_bullet2",
+      "label": "Product 2 Bullet Point 2"
+    },
+    {
+      "type": "text",
+      "id": "product2_bullet3",
+      "label": "Product 2 Bullet Point 3"
+    },
+    {
+      "type": "text",
+      "id": "product2_bullet4",
+      "label": "Product 2 Bullet Point 4"
+    },
+    {
+      "type": "text",
+      "id": "product2_bullet5",
+      "label": "Product 2 Bullet Point 5"
+    },
+    {
+      "type": "text",
+      "id": "product2_bullet6",
+      "label": "Product 2 Bullet Point 6"
+    },
+        {
+      "type": "text",
+      "id": "disclaimer2",
+      "label": "Disclaimer",
+      "default": "90-day money back guarantee. No questions asked."
+    },
+    {
+      "type": "text",
+      "id": "product3_description",
+      "label": "Product 3 Description",
+      "default": "Default description"
+    },
+    {
+      "type": "image_picker",
+      "id": "product3_image",
+      "label": "Product 3 Image"
+    },
+    {
+      "type": "text",
+      "id": "product3_step",
+      "label": "Product 3 Step",
+      "default": "COMBO"
+    },
+    {
+      "type": "text",
+      "id": "product3_title",
+      "label": "Product 3 Title",
+      "default": "Default title"
+    },
+    {
+      "type": "text",
+      "id": "product3_price",
+      "label": "Product 3 Price",
+      "default": "0.00"
+    },
+    {
+      "type": "text",
+      "id": "product3_compare_at_price",
+      "label": "Product 3 Compare At Price",
+      "default": "0.00"
+    },
+    {
+      "type": "text",
+      "id": "product3_supply",
+      "label": "Product 3 Supply",
+      "default": "Default supply"
+    },
+    {
+      "type": "text",
+      "id": "product3_bullets_title",
+      "label": "Product 3 Bullet Points Title",
+      "default": "Your default title here."
+    },
+    {
+      "type": "text",
+      "id": "product3_bullet1",
+      "label": "Product 3 Bullet Point 1"
+    },
+    {
+      "type": "text",
+      "id": "product3_bullet2",
+      "label": "Product 3 Bullet Point 2"
+    },
+    {
+      "type": "text",
+      "id": "product3_bullet3",
+      "label": "Product 3 Bullet Point 3"
+    },
+    {
+      "type": "text",
+      "id": "product3_bullet4",
+      "label": "Product 3 Bullet Point 4"
+    },
+    {
+      "type": "text",
+      "id": "product3_bullet5",
+      "label": "Product 3 Bullet Point 5"
+    },
+    {
+      "type": "text",
+      "id": "product3_bullet6",
+      "label": "Product 3 Bullet Point 6"
+    },
+    {
+      "type": "text",
+      "id": "product_disclaimer_text",
+      "label": "Product Disclaimer",
+      "default": "Decide later to get your personalised product based on your results for €49.90"
+    },
+    {
+      "type": "select",
+      "id": "selected_variant1",
+      "label": "Select Product Variant 1",
+      "options": [
+        {
+          "value": "47050221879643",
+          "label": "Monthlies"
+        },
+        {
+          "value": "47050218766683",
+          "label": "Tryout"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "selected_variant2",
+      "label": "Select Product Variant 2",
+      "options": [
+        {
+          "value": "47050221879643",
+          "label": "Monthlies"
+        },
+        {
+          "value": "47050218766683",
+          "label": "Tryout"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "selected_variant3",
+      "label": "Select Product Variant 3",
+      "options": [
+        {
+          "value": "47050221879643",
+          "label": "Monthlies"
+        },
+        {
+          "value": "47050218766683",
+          "label": "Tryout"
+        }
+      ]
+    },
+     {
+  "type": "text",
+  "id": "selling_plan",
+  "label": "Selling Plan",
+  "default": "689069883739"
+},
+    {
+      "type": "text",
+      "id": "disclaimer3",
+      "label": "Disclaimer",
+      "default": "90-day money back guarantee. No questions asked."
+    },
+    {
+      "type": "text",
+      "id": "button_id",
+      "label": "Button ID",
+      "default": "cta-"
+    },
+    {
+      "type": "text",
+      "id": "start_now_text",
+      "label": "Start Now Button Text",
+      "default": "Start now"
+    }
+  ], "presets": [
+      {
+        "name": "Pricing Horm"
+      }
+    ]
+}
+{% endschema %}
+
+<script>
+function changeButton(event) {
+  event.preventDefault();
+  
+  var button = event.target.closest('a');
+  var icon = button.querySelector('#buttonIcon');
+  
+  button.textContent = 'Returning customers only. Please take the Hormone Test first.'; // Replace 'New Text' with the text you want
+
+  button.style.backgroundColor = '#E76464';
+  button.style.color = 'white';
+  button.style.fontSize = '16px';
+  button.style.lineHeight = '1.2em';
+
+  // Hide the SVG icon
+  icon.style.display = 'none';
+  
+  // Append icon again to the button
+  button.appendChild(icon);
+}
+</script>

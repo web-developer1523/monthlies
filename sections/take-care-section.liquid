@@ -1,0 +1,150 @@
+<section class="cst-control-sec {{ section.settings.custom_class }}">
+  <div class="container">
+    <img src="{{section.settings.image | image_url }}" alt="Three women smiling" />
+    <div class="text-content">
+      <h2>{{section.settings.heading | replace:'<p>','' |replace:'</p>',''}}</h2>
+      <a href="{{section.settings.button_link }}" class="btn">{{section.settings.button_label }}</a>
+    </div>
+  </div>
+  </section>
+
+  <style>
+    
+.cst-control-sec {
+background-color: #b1d3d3;
+    border-radius: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px 0;
+    max-width: 1440px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-hormone-test-kit .cst-control-sec .container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.product-hormone-test-kit  .cst-control-sec .container img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+.cst-control-sec .text-content {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 40px;
+}
+.cst-control-sec .text-content h2 {
+    margin: 0;
+    color: #2A2A2A;
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-align: left;
+    font-family: Lora !important;
+}
+
+.cst-control-sec .text-content h2 strong {
+    font: inherit;
+    color: #CB342C;
+}
+
+.cst-control-sec .btn {
+    background-color: #cb3d2d;
+    color: white;
+    border: none;
+    border-radius: 45px;
+    padding: 14px 50px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    max-width: max-content;
+    font-size: 16px;
+    margin: 0;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width:989px){
+.product-hormone-test-kit .cst-control-sec .container {
+    grid-template-columns: 1fr;
+}
+.product-hormone-test-kit .cst-control-sec .container img {
+    display: none;
+}
+.cst-control-sec .text-content{
+align-items:center;
+}
+.cst-control-sec{
+        padding: 20px;
+        margin: 10px;
+        border-radius: 0 50px;
+}
+
+@media screen and (max-width:767px){
+.cst-control-sec .text-content {
+    gap: 20px;
+}
+.cst-control-sec{
+        margin: 20px;
+}
+.cst-control-sec .text-content h2{
+    text-align: center;
+}
+}
+@media screen and (max-width:575px){
+.cst-control-sec{
+        border-radius:0 40px;
+}
+}
+}
+  </style>
+  {% schema %}
+{
+  "name": "Take Control Banner",
+  "settings": [
+    {
+    "type": "text",
+    "id": "custom_class",
+    "label": "Custom class"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Banner Image"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Take Control Banner"
+    }
+  ]
+}
+{% endschema %}

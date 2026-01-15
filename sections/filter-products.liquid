@@ -1,0 +1,600 @@
+{{ 'section-filter-products.css' | asset_url | stylesheet_tag }}
+
+{% assign singleProducts = collections["single-products"] %}
+{% assign setProducts = collections["sets"] %}
+
+<div class="filter-collection">
+  <!--<div class="filter-banner">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/banner.png?v=1686649625"
+      alt="banner"
+      class="filter-banner--image">
+
+    <img
+      src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/line.png?v=1686649769"
+      alt="banner-line"
+      class="filter-banner--line">
+  </div>-->
+
+  <div class="page-width">
+    <h1>
+      {{ section.settings.title }}
+    </h1>
+
+    <div class="filter-container">
+      <div class="filter-wrapper">
+        <h4 class="filter-wrapper-title">{{ section.settings.filters_title }}</h4>
+        <p class="filter-wrapper-desc">{{ section.settings.filters_desc }}</p>
+
+        <div class="filter-items">
+          <span class="filter-item filter-tag">{{ section.settings.cramps }}</span>
+          <span class="filter-item filter-tag">{{ section.settings.mood_swings }}</span>
+          <span class="filter-item filter-tag">{{ section.settings.sleep }}</span>
+          <span class="filter-item filter-tag">{{ section.settings.bloating }}</span>
+          <span class="filter-item filter-tag">{{ section.settings.imbalance }}</span>
+          <div class="split"></div>
+          <span class="filter-item filter-set">{{ section.settings.sets }}</span>
+        </div>
+      </div>
+
+      <div class="collection-right">
+        <div class="collection-single-items">
+          {% for product in singleProducts.products %}
+            {% if product.variants.size == 1 %}
+              {% assign tags = product.metafields.custom.pains | replace: '"', '' | replace: '[', '' | replace: ']', '' | split: ',' %}
+              {% assign relief = product.metafields.custom.relief | replace: '"', '' | replace: '[', '' | replace: ']', '' %}
+
+                <div class="collection-single-item">
+                <!--<span class="collection-single-relief">{{ relief }}</span>-->
+
+                <a class="collection-single-item-url" href="{{product.variants.first.url}}">
+                  <div class="collection-single-img">
+                    <img src="{{ product.featured_image | img_url: '1024x1024' }}" alt="{{ product.title }}">
+                  </div>
+
+                  <div class="collection-single-content">
+                    <h5>{{ product.title }}</h5>
+                    <div class="collection-single-reviews">
+                      {% if product.metafields.custom.rating == 1.0 %}
+                        <svg
+                          width="458"
+                          height="80"
+                          viewBox="0 0 458 80"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M39.1462 2.78095C40.0442 0.0170221 43.9545 0.0170274 44.8525 2.78096L52.5515 26.476C52.9531 27.7121 54.105 28.549 55.4047 28.549H80.3191C83.2253 28.549 84.4336 32.2678 82.0825 33.976L61.9263 48.6204C60.8748 49.3843 60.4348 50.7384 60.8365 51.9745L68.5355 75.6695C69.4335 78.4334 66.2701 80.7318 63.9189 79.0236L43.7627 64.3793C42.7113 63.6153 41.2875 63.6153 40.236 64.3793L20.0798 79.0236C17.7286 80.7318 14.5652 78.4334 15.4633 75.6695L23.1623 51.9745C23.5639 50.7384 23.1239 49.3843 22.0724 48.6204L1.91622 33.976C-0.43492 32.2678 0.773413 28.549 3.67958 28.549H28.594C29.8937 28.549 31.0456 27.7121 31.4472 26.476L39.1462 2.78095Z" fill="#FFC000" />
+                          <path d="M132.797 2.78095C133.695 0.0170221 137.605 0.0170274 138.503 2.78096L146.202 26.476C146.604 27.7121 147.755 28.549 149.055 28.549H173.97C176.876 28.549 178.084 32.2678 175.733 33.976L155.577 48.6204C154.525 49.3843 154.085 50.7384 154.487 51.9745L162.186 75.6695C163.084 78.4334 159.92 80.7318 157.569 79.0236L137.413 64.3793C136.362 63.6153 134.938 63.6153 133.886 64.3793L113.73 79.0236C111.379 80.7318 108.216 78.4334 109.114 75.6695L116.813 51.9745C117.214 50.7384 116.774 49.3843 115.723 48.6204L95.5666 33.976C93.2155 32.2678 94.4238 28.549 97.33 28.549H122.244C123.544 28.549 124.696 27.7121 125.098 26.476L132.797 2.78095Z" fill="#DDDDDD" />
+                          <path d="M226.449 2.78095C227.347 0.0170221 231.257 0.0170274 232.155 2.78096L239.854 26.476C240.256 27.7121 241.408 28.549 242.707 28.549H267.622C270.528 28.549 271.736 32.2678 269.385 33.976L249.229 48.6204C248.178 49.3843 247.738 50.7384 248.139 51.9745L255.838 75.6695C256.736 78.4334 253.573 80.7318 251.222 79.0236L231.065 64.3793C230.014 63.6153 228.59 63.6153 227.539 64.3793L207.383 79.0236C205.031 80.7318 201.868 78.4334 202.766 75.6695L210.465 51.9745C210.867 50.7384 210.427 49.3843 209.375 48.6204L189.219 33.976C186.868 32.2678 188.076 28.549 190.982 28.549H215.897C217.196 28.549 218.348 27.7121 218.75 26.476L226.449 2.78095Z" fill="#DDDDDD" />
+                          <path d="M320.099 2.78095C320.997 0.0170221 324.908 0.0170274 325.806 2.78096L333.505 26.476C333.906 27.7121 335.058 28.549 336.358 28.549H361.272C364.178 28.549 365.387 32.2678 363.036 33.976L342.879 48.6204C341.828 49.3843 341.388 50.7384 341.79 51.9745L349.489 75.6695C350.387 78.4334 347.223 80.7318 344.872 79.0236L324.716 64.3793C323.664 63.6153 322.241 63.6153 321.189 64.3793L301.033 79.0236C298.682 80.7318 295.518 78.4334 296.416 75.6695L304.115 51.9745C304.517 50.7384 304.077 49.3843 303.026 48.6204L282.869 33.976C280.518 32.2678 281.727 28.549 284.633 28.549H309.547C310.847 28.549 311.999 27.7121 312.4 26.476L320.099 2.78095Z" fill="#DDDDDD" />
+                          <path d="M413.75 2.78095C414.648 0.0170221 418.558 0.0170274 419.456 2.78096L427.155 26.476C427.557 27.7121 428.709 28.549 430.008 28.549H454.923C457.829 28.549 459.037 32.2678 456.686 33.976L436.53 48.6204C435.478 49.3843 435.038 50.7384 435.44 51.9745L443.139 75.6695C444.037 78.4334 440.874 80.7318 438.522 79.0236L418.366 64.3793C417.315 63.6153 415.891 63.6153 414.84 64.3793L394.683 79.0236C392.332 80.7318 389.169 78.4334 390.067 75.6695L397.766 51.9745C398.167 50.7384 397.727 49.3843 396.676 48.6204L376.52 33.976C374.169 32.2678 375.377 28.549 378.283 28.549H403.198C404.497 28.549 405.649 27.7121 406.051 26.476L413.75 2.78095Z" fill="#DDDDDD" />
+                        </svg>
+                      {% elsif product.metafields.custom.rating == 2.0 %}
+                        <svg
+                          width="458"
+                          height="79"
+                          viewBox="0 0 458 79"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M38.4724 2.07295C39.3704 -0.690986 43.2806 -0.69098 44.1787 2.07295L51.8777 25.768C52.2793 27.0041 53.4312 27.8409 54.7309 27.8409H79.6453C82.5515 27.8409 83.7598 31.5598 81.4087 33.268L61.2525 47.9123C60.201 48.6763 59.761 50.0304 60.1626 51.2664L67.8616 74.9615C68.7597 77.7254 65.5962 80.0238 63.2451 78.3156L43.0889 63.6712C42.0374 62.9073 40.6136 62.9073 39.5622 63.6712L19.406 78.3156C17.0548 80.0238 13.8914 77.7254 14.7894 74.9615L22.4884 51.2664C22.89 50.0304 22.4501 48.6763 21.3986 47.9123L1.24239 33.268C-1.10875 31.5598 0.0995848 27.8409 3.00575 27.8409H27.9202C29.2199 27.8409 30.3717 27.0041 30.7734 25.768L38.4724 2.07295Z" fill="#FFC000" />
+                          <path d="M132.123 2.07295C133.021 -0.690986 136.931 -0.69098 137.829 2.07295L145.528 25.768C145.93 27.0041 147.082 27.8409 148.381 27.8409H173.296C176.202 27.8409 177.41 31.5598 175.059 33.268L154.903 47.9123C153.851 48.6763 153.411 50.0304 153.813 51.2664L161.512 74.9615C162.41 77.7254 159.247 80.0238 156.895 78.3156L136.739 63.6712C135.688 62.9073 134.264 62.9073 133.213 63.6712L113.056 78.3156C110.705 80.0238 107.542 77.7254 108.44 74.9615L116.139 51.2664C116.54 50.0304 116.1 48.6763 115.049 47.9123L94.8928 33.268C92.5416 31.5598 93.75 27.8409 96.6561 27.8409H121.571C122.87 27.8409 124.022 27.0041 124.424 25.768L132.123 2.07295Z" fill="#FFC000" />
+                          <path d="M225.775 2.07295C226.673 -0.690986 230.583 -0.69098 231.481 2.07295L239.18 25.768C239.582 27.0041 240.734 27.8409 242.034 27.8409H266.948C269.854 27.8409 271.063 31.5598 268.711 33.268L248.555 47.9123C247.504 48.6763 247.064 50.0304 247.465 51.2664L255.164 74.9615C256.062 77.7254 252.899 80.0238 250.548 78.3156L230.392 63.6712C229.34 62.9073 227.916 62.9073 226.865 63.6712L206.709 78.3156C204.358 80.0238 201.194 77.7254 202.092 74.9615L209.791 51.2664C210.193 50.0304 209.753 48.6763 208.701 47.9123L188.545 33.268C186.194 31.5598 187.402 27.8409 190.308 27.8409H215.223C216.523 27.8409 217.674 27.0041 218.076 25.768L225.775 2.07295Z" fill="#DDDDDD" />
+                          <path d="M319.425 2.07295C320.324 -0.690986 324.234 -0.69098 325.132 2.07295L332.831 25.768C333.232 27.0041 334.384 27.8409 335.684 27.8409H360.598C363.505 27.8409 364.713 31.5598 362.362 33.268L342.206 47.9123C341.154 48.6763 340.714 50.0304 341.116 51.2664L348.815 74.9615C349.713 77.7254 346.549 80.0238 344.198 78.3156L324.042 63.6712C322.991 62.9073 321.567 62.9073 320.515 63.6712L300.359 78.3156C298.008 80.0238 294.845 77.7254 295.743 74.9615L303.442 51.2664C303.843 50.0304 303.403 48.6763 302.352 47.9123L282.196 33.268C279.844 31.5598 281.053 27.8409 283.959 27.8409H308.873C310.173 27.8409 311.325 27.0041 311.726 25.768L319.425 2.07295Z" fill="#DDDDDD" />
+                          <path d="M413.076 2.07295C413.974 -0.690986 417.884 -0.69098 418.782 2.07295L426.481 25.768C426.883 27.0041 428.035 27.8409 429.334 27.8409H454.249C457.155 27.8409 458.363 31.5598 456.012 33.268L435.856 47.9123C434.805 48.6763 434.365 50.0304 434.766 51.2664L442.465 74.9615C443.363 77.7254 440.2 80.0238 437.849 78.3156L417.692 63.6712C416.641 62.9073 415.217 62.9073 414.166 63.6712L394.009 78.3156C391.658 80.0238 388.495 77.7254 389.393 74.9615L397.092 51.2664C397.494 50.0304 397.054 48.6763 396.002 47.9123L375.846 33.268C373.495 31.5598 374.703 27.8409 377.609 27.8409H402.524C403.823 27.8409 404.975 27.0041 405.377 25.768L413.076 2.07295Z" fill="#DDDDDD" />
+                        </svg>
+                      {% elsif product.metafields.custom.rating == 3.0 %}
+                        <svg
+                          width="458"
+                          height="79"
+                          viewBox="0 0 458 79"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M38.4724 2.07295C39.3704 -0.690986 43.2806 -0.69098 44.1787 2.07295L51.8777 25.768C52.2793 27.0041 53.4312 27.8409 54.7309 27.8409H79.6453C82.5515 27.8409 83.7598 31.5598 81.4087 33.268L61.2525 47.9123C60.201 48.6763 59.761 50.0304 60.1626 51.2664L67.8616 74.9615C68.7597 77.7254 65.5962 80.0238 63.2451 78.3156L43.0889 63.6712C42.0374 62.9073 40.6136 62.9073 39.5622 63.6712L19.406 78.3156C17.0548 80.0238 13.8914 77.7254 14.7894 74.9615L22.4884 51.2664C22.89 50.0304 22.4501 48.6763 21.3986 47.9123L1.24239 33.268C-1.10875 31.5598 0.0995848 27.8409 3.00575 27.8409H27.9202C29.2199 27.8409 30.3717 27.0041 30.7734 25.768L38.4724 2.07295Z" fill="#FFC000" />
+                          <path d="M132.123 2.07295C133.021 -0.690986 136.931 -0.69098 137.829 2.07295L145.528 25.768C145.93 27.0041 147.082 27.8409 148.381 27.8409H173.296C176.202 27.8409 177.41 31.5598 175.059 33.268L154.903 47.9123C153.851 48.6763 153.411 50.0304 153.813 51.2664L161.512 74.9615C162.41 77.7254 159.247 80.0238 156.895 78.3156L136.739 63.6712C135.688 62.9073 134.264 62.9073 133.213 63.6712L113.056 78.3156C110.705 80.0238 107.542 77.7254 108.44 74.9615L116.139 51.2664C116.54 50.0304 116.1 48.6763 115.049 47.9123L94.8928 33.268C92.5416 31.5598 93.75 27.8409 96.6561 27.8409H121.571C122.87 27.8409 124.022 27.0041 124.424 25.768L132.123 2.07295Z" fill="#FFC000" />
+                          <path d="M225.775 2.07295C226.673 -0.690986 230.583 -0.69098 231.481 2.07295L239.18 25.768C239.582 27.0041 240.734 27.8409 242.034 27.8409H266.948C269.854 27.8409 271.063 31.5598 268.711 33.268L248.555 47.9123C247.504 48.6763 247.064 50.0304 247.465 51.2664L255.164 74.9615C256.062 77.7254 252.899 80.0238 250.548 78.3156L230.392 63.6712C229.34 62.9073 227.916 62.9073 226.865 63.6712L206.709 78.3156C204.358 80.0238 201.194 77.7254 202.092 74.9615L209.791 51.2664C210.193 50.0304 209.753 48.6763 208.701 47.9123L188.545 33.268C186.194 31.5598 187.402 27.8409 190.308 27.8409H215.223C216.523 27.8409 217.674 27.0041 218.076 25.768L225.775 2.07295Z" fill="#FFC000" />
+                          <path d="M319.425 2.07295C320.324 -0.690986 324.234 -0.69098 325.132 2.07295L332.831 25.768C333.232 27.0041 334.384 27.8409 335.684 27.8409H360.598C363.505 27.8409 364.713 31.5598 362.362 33.268L342.206 47.9123C341.154 48.6763 340.714 50.0304 341.116 51.2664L348.815 74.9615C349.713 77.7254 346.549 80.0238 344.198 78.3156L324.042 63.6712C322.991 62.9073 321.567 62.9073 320.515 63.6712L300.359 78.3156C298.008 80.0238 294.845 77.7254 295.743 74.9615L303.442 51.2664C303.843 50.0304 303.403 48.6763 302.352 47.9123L282.196 33.268C279.844 31.5598 281.053 27.8409 283.959 27.8409H308.873C310.173 27.8409 311.325 27.0041 311.726 25.768L319.425 2.07295Z" fill="#DDDDDD" />
+                          <path d="M413.076 2.07295C413.974 -0.690986 417.884 -0.69098 418.782 2.07295L426.481 25.768C426.883 27.0041 428.035 27.8409 429.334 27.8409H454.249C457.155 27.8409 458.363 31.5598 456.012 33.268L435.856 47.9123C434.805 48.6763 434.365 50.0304 434.766 51.2664L442.465 74.9615C443.363 77.7254 440.2 80.0238 437.849 78.3156L417.692 63.6712C416.641 62.9073 415.217 62.9073 414.166 63.6712L394.009 78.3156C391.658 80.0238 388.495 77.7254 389.393 74.9615L397.092 51.2664C397.494 50.0304 397.054 48.6763 396.002 47.9123L375.846 33.268C373.495 31.5598 374.703 27.8409 377.609 27.8409H402.524C403.823 27.8409 404.975 27.0041 405.377 25.768L413.076 2.07295Z" fill="#DDDDDD" />
+                        </svg>
+                      {% elsif product.metafields.custom.rating == 4.0 %}
+                        <svg
+                          width="458"
+                          height="79"
+                          viewBox="0 0 458 79"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M38.4724 2.07295C39.3704 -0.690986 43.2806 -0.69098 44.1787 2.07295L51.8777 25.768C52.2793 27.0041 53.4312 27.8409 54.7309 27.8409H79.6453C82.5515 27.8409 83.7598 31.5598 81.4087 33.268L61.2525 47.9123C60.201 48.6763 59.761 50.0304 60.1626 51.2664L67.8616 74.9615C68.7597 77.7254 65.5962 80.0238 63.2451 78.3156L43.0889 63.6712C42.0374 62.9073 40.6136 62.9073 39.5622 63.6712L19.406 78.3156C17.0548 80.0238 13.8914 77.7254 14.7894 74.9615L22.4884 51.2664C22.89 50.0304 22.4501 48.6763 21.3986 47.9123L1.24239 33.268C-1.10875 31.5598 0.0995848 27.8409 3.00575 27.8409H27.9202C29.2199 27.8409 30.3717 27.0041 30.7734 25.768L38.4724 2.07295Z" fill="#FFC000" />
+                          <path d="M132.123 2.07295C133.021 -0.690986 136.931 -0.69098 137.829 2.07295L145.528 25.768C145.93 27.0041 147.082 27.8409 148.381 27.8409H173.296C176.202 27.8409 177.41 31.5598 175.059 33.268L154.903 47.9123C153.851 48.6763 153.411 50.0304 153.813 51.2664L161.512 74.9615C162.41 77.7254 159.247 80.0238 156.895 78.3156L136.739 63.6712C135.688 62.9073 134.264 62.9073 133.213 63.6712L113.056 78.3156C110.705 80.0238 107.542 77.7254 108.44 74.9615L116.139 51.2664C116.54 50.0304 116.1 48.6763 115.049 47.9123L94.8928 33.268C92.5416 31.5598 93.75 27.8409 96.6561 27.8409H121.571C122.87 27.8409 124.022 27.0041 124.424 25.768L132.123 2.07295Z" fill="#FFC000" />
+                          <path d="M225.775 2.07295C226.673 -0.690986 230.583 -0.69098 231.481 2.07295L239.18 25.768C239.582 27.0041 240.734 27.8409 242.034 27.8409H266.948C269.854 27.8409 271.063 31.5598 268.711 33.268L248.555 47.9123C247.504 48.6763 247.064 50.0304 247.465 51.2664L255.164 74.9615C256.062 77.7254 252.899 80.0238 250.548 78.3156L230.392 63.6712C229.34 62.9073 227.916 62.9073 226.865 63.6712L206.709 78.3156C204.358 80.0238 201.194 77.7254 202.092 74.9615L209.791 51.2664C210.193 50.0304 209.753 48.6763 208.701 47.9123L188.545 33.268C186.194 31.5598 187.402 27.8409 190.308 27.8409H215.223C216.523 27.8409 217.674 27.0041 218.076 25.768L225.775 2.07295Z" fill="#FFC000" />
+                          <path d="M319.425 2.07295C320.324 -0.690986 324.234 -0.69098 325.132 2.07295L332.831 25.768C333.232 27.0041 334.384 27.8409 335.684 27.8409H360.598C363.505 27.8409 364.713 31.5598 362.362 33.268L342.206 47.9123C341.154 48.6763 340.714 50.0304 341.116 51.2664L348.815 74.9615C349.713 77.7254 346.549 80.0238 344.198 78.3156L324.042 63.6712C322.991 62.9073 321.567 62.9073 320.515 63.6712L300.359 78.3156C298.008 80.0238 294.845 77.7254 295.743 74.9615L303.442 51.2664C303.843 50.0304 303.403 48.6763 302.352 47.9123L282.196 33.268C279.844 31.5598 281.053 27.8409 283.959 27.8409H308.873C310.173 27.8409 311.325 27.0041 311.726 25.768L319.425 2.07295Z" fill="#FFC000" />
+                          <path d="M413.076 2.07295C413.974 -0.690986 417.884 -0.69098 418.782 2.07295L426.481 25.768C426.883 27.0041 428.035 27.8409 429.334 27.8409H454.249C457.155 27.8409 458.363 31.5598 456.012 33.268L435.856 47.9123C434.805 48.6763 434.365 50.0304 434.766 51.2664L442.465 74.9615C443.363 77.7254 440.2 80.0238 437.849 78.3156L417.692 63.6712C416.641 62.9073 415.217 62.9073 414.166 63.6712L394.009 78.3156C391.658 80.0238 388.495 77.7254 389.393 74.9615L397.092 51.2664C397.494 50.0304 397.054 48.6763 396.002 47.9123L375.846 33.268C373.495 31.5598 374.703 27.8409 377.609 27.8409H402.524C403.823 27.8409 404.975 27.0041 405.377 25.768L413.076 2.07295Z" fill="#DDDDDD" />
+                        </svg>
+                      {% else %}
+                        <svg
+                          width="458"
+                          height="79"
+                          viewBox="0 0 458 79"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M38.4724 2.07295C39.3704 -0.690986 43.2806 -0.69098 44.1787 2.07295L51.8777 25.768C52.2793 27.0041 53.4312 27.8409 54.7309 27.8409H79.6453C82.5515 27.8409 83.7598 31.5598 81.4087 33.268L61.2525 47.9123C60.201 48.6763 59.761 50.0304 60.1626 51.2664L67.8616 74.9615C68.7597 77.7254 65.5962 80.0238 63.2451 78.3156L43.0889 63.6712C42.0374 62.9073 40.6136 62.9073 39.5622 63.6712L19.406 78.3156C17.0548 80.0238 13.8914 77.7254 14.7894 74.9615L22.4884 51.2664C22.89 50.0304 22.4501 48.6763 21.3986 47.9123L1.24239 33.268C-1.10875 31.5598 0.0995848 27.8409 3.00575 27.8409H27.9202C29.2199 27.8409 30.3717 27.0041 30.7734 25.768L38.4724 2.07295Z" fill="#FFC000" />
+                          <path d="M132.123 2.07295C133.021 -0.690986 136.931 -0.69098 137.829 2.07295L145.528 25.768C145.93 27.0041 147.082 27.8409 148.381 27.8409H173.296C176.202 27.8409 177.41 31.5598 175.059 33.268L154.903 47.9123C153.851 48.6763 153.411 50.0304 153.813 51.2664L161.512 74.9615C162.41 77.7254 159.247 80.0238 156.895 78.3156L136.739 63.6712C135.688 62.9073 134.264 62.9073 133.213 63.6712L113.056 78.3156C110.705 80.0238 107.542 77.7254 108.44 74.9615L116.139 51.2664C116.54 50.0304 116.1 48.6763 115.049 47.9123L94.8928 33.268C92.5416 31.5598 93.75 27.8409 96.6561 27.8409H121.571C122.87 27.8409 124.022 27.0041 124.424 25.768L132.123 2.07295Z" fill="#FFC000" />
+                          <path d="M225.775 2.07295C226.673 -0.690986 230.583 -0.69098 231.481 2.07295L239.18 25.768C239.582 27.0041 240.734 27.8409 242.034 27.8409H266.948C269.854 27.8409 271.063 31.5598 268.711 33.268L248.555 47.9123C247.504 48.6763 247.064 50.0304 247.465 51.2664L255.164 74.9615C256.062 77.7254 252.899 80.0238 250.548 78.3156L230.392 63.6712C229.34 62.9073 227.916 62.9073 226.865 63.6712L206.709 78.3156C204.358 80.0238 201.194 77.7254 202.092 74.9615L209.791 51.2664C210.193 50.0304 209.753 48.6763 208.701 47.9123L188.545 33.268C186.194 31.5598 187.402 27.8409 190.308 27.8409H215.223C216.523 27.8409 217.674 27.0041 218.076 25.768L225.775 2.07295Z" fill="#FFC000" />
+                          <path d="M319.425 2.07295C320.324 -0.690986 324.234 -0.69098 325.132 2.07295L332.831 25.768C333.232 27.0041 334.384 27.8409 335.684 27.8409H360.598C363.505 27.8409 364.713 31.5598 362.362 33.268L342.206 47.9123C341.154 48.6763 340.714 50.0304 341.116 51.2664L348.815 74.9615C349.713 77.7254 346.549 80.0238 344.198 78.3156L324.042 63.6712C322.991 62.9073 321.567 62.9073 320.515 63.6712L300.359 78.3156C298.008 80.0238 294.845 77.7254 295.743 74.9615L303.442 51.2664C303.843 50.0304 303.403 48.6763 302.352 47.9123L282.196 33.268C279.844 31.5598 281.053 27.8409 283.959 27.8409H308.873C310.173 27.8409 311.325 27.0041 311.726 25.768L319.425 2.07295Z" fill="#FFC000" />
+                          <path d="M413.076 2.07295C413.974 -0.690986 417.884 -0.69098 418.782 2.07295L426.481 25.768C426.883 27.0041 428.035 27.8409 429.334 27.8409H454.249C457.155 27.8409 458.363 31.5598 456.012 33.268L435.856 47.9123C434.805 48.6763 434.365 50.0304 434.766 51.2664L442.465 74.9615C443.363 77.7254 440.2 80.0238 437.849 78.3156L417.692 63.6712C416.641 62.9073 415.217 62.9073 414.166 63.6712L394.009 78.3156C391.658 80.0238 388.495 77.7254 389.393 74.9615L397.092 51.2664C397.494 50.0304 397.054 48.6763 396.002 47.9123L375.846 33.268C373.495 31.5598 374.703 27.8409 377.609 27.8409H402.524C403.823 27.8409 404.975 27.0041 405.377 25.768L413.076 2.07295Z" fill="#FFC000" />
+                        </svg>
+                      {% endif %}
+
+                      <span>{{ product.metafields.custom.review_amount }} reviews</span>
+                    </div>
+
+                    <div class="collection-single-specs">
+                      <span>{{ product.metafields.custom.capsules }}</span>
+                      |
+                      <span>{{ product.metafields.custom.supply }}</span>
+                    </div>
+
+                    <div class="collection-single-tags">
+                      {% for tag in tags %}
+                        <span class="collection-single-tag">{{ tag }}</span>
+                      {% endfor %}
+                    </div>
+
+                    <div class="collection-single-desc">
+                      {{ product.description }}
+                    </div>
+                  </div>
+                </a>
+
+                <div class="collection-single-content--button">
+                  <add-to-cart class="button button--black button--small" data-variant-id="{{ product.variants.first.id }}">
+                    {{ product.price | money }} - {{ section.settings.add_to_cart }}
+                    <svg
+                      width="7"
+                      height="12"
+                      viewBox="0 0 7 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0.679688 1.15234L5.67969 6.15234L0.679688 11.1523"
+                        stroke="white"
+                        stroke-width="1.5" />
+                    </svg>
+                    <use href="#icon-cart"></svg>
+                  </add-to-cart>
+                </div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+
+          <div class="sets-header">
+            {{ section.settings.discover }}
+            <span>&nbsp;{{ section.settings.below }}</span>
+          </div>
+
+          <div class="collection-set-items">
+            {% for product in setProducts.products %}
+              {% assign tags = product.metafields.custom.pains | replace: '"', '' | replace: '[', '' | replace: ']', '' | split: ',' %}
+              {% assign relief = product.metafields.custom.relief | replace: '"', '' | replace: '[', '' | replace: ']', '' %}
+
+              <div class="collection-set-item" style="background-color: {{ product.metafields.custom.color }};">
+                <a class="" href="{{product.variants.first.url}}">
+                  <img src="{{ product.featured_image | img_url: '1024x1024' }}" alt="{{ product.title }}">
+                </a>
+                <div style="width: 100%;">
+                  <a href="{{product.variants.first.url}}" class="collection-set-content">
+                    <h4>{{ product.title }}</h4>
+                    <div class="collection-set-tags">
+                      {% for tag in tags %}
+                        <span class="collection-set-tag">{{ tag }}</span>
+                      {% endfor %}
+                    </div>
+  
+                    <div class="collection-set-desc">
+                      {{ product.description }}
+                    </div>
+                  </a>
+  
+                  <div class="collection-set-price">
+                    <add-to-cart class="button button--black button--small" data-variant-id="{{ product.variants.first.id }}">
+                      {{ product.price | money }} - {{ section.settings.add_to_cart }}
+                      <svg
+                        width="7"
+                        height="12"
+                        viewBox="0 0 7 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M0.679688 1.15234L5.67969 6.15234L0.679688 11.1523"
+                          stroke="white"
+                          stroke-width="1.5" />
+                      </svg>
+                      <use href="#icon-cart"></svg>
+                    </add-to-cart>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="filter-cta">
+    <div class="filter-cta-images">
+      <img src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Mask_group_5d96e199-9f97-4690-a1fb-45d5f7803d82.png?v=1686676008" alt="image_cta">
+      <img src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Mask_group-1_14184e72-a657-44d4-b9cd-5eb0cead6ff7.png?v=1686676008" alt="image_cta">
+      <img src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Mask_group-2_709b2560-6f76-4c66-ab5f-5e2613ba6012.png?v=1686676008" alt="image_cta">
+    </div>
+
+    <div class="filter-cta-items">
+      <div class="filter-cta-item filter-cta-item--blue">
+        <h2>{{ section.settings.cta_title_1 }}</h2>
+        <p>{{ section.settings.cta_text_1 }}</p>
+
+        <a class="button button--pink" href="{% if localization.language.iso_code != "en" %}/{{ localization.language.iso_code }}{% endif %}/pages/cycle-assessment">
+          {{ section.settings.cta_btn_1 }}
+
+          <svg
+            width="7"
+            height="12"
+            viewBox="0 0 7 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.679688 1.15234L5.67969 6.15234L0.679688 11.1523"
+              stroke="white"
+              stroke-width="1.5" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="filter-cta-item filter-cta-item--peach">
+        <h2>{{ section.settings.cta_title_2 }}</h2>
+        <p>{{ section.settings.cta_text_2 }}</p>
+
+        <a href="{% if localization.language.iso_code != "en" %}/{{ localization.language.iso_code }}{% endif %}/pages/hormonal-test" class="button button--inverted-black">
+          {{ section.settings.cta_btn_2 }}
+          <svg
+            width="7"
+            height="12"
+            viewBox="0 0 7 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.679688 1.15234L5.67969 6.15234L0.679688 11.1523"
+              stroke="white"
+              stroke-width="1.5" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-added">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="#30DA4A"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="feather feather-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+  </svg>
+
+  {{ section.settings.added }}
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var addToCartForms = document.querySelectorAll('.add-to-cart-form');
+
+    addToCartForms.forEach(function(form) {
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        var variantId = form.querySelector('.variant-id').innerHTML;
+
+        fetch('/cart/add.js', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(
+            {
+              items: [
+                {
+                  id: variantId,
+                  quantity: 1
+                }
+              ]
+            }
+          )
+        }).then(async function(response) {
+          document.querySelector(".product-added").classList.add("active");
+
+          setTimeout(() => {
+            document.querySelector(".product-added").classList.remove("active");
+          }, "5000");
+        }).catch(async function(error) {
+          console.error(error);
+        });
+      });
+    });
+  });
+</script>
+
+<script>
+  const filterTags = document.querySelectorAll(".filter-tag");
+  const filterSet = document.querySelector(".filter-set");
+
+  const products = document.querySelectorAll(".collection-single-item");
+  const sets = document.querySelectorAll(".collection-set-item");
+  const productsWrapper = document.querySelector(".collection-single-items");
+
+  let selectedTags = [];
+
+  for (let i = 0; i < filterTags.length; i++) {
+    const filterId = filterTags[i].innerHTML;
+
+    filterTags[i].addEventListener("click", () => {
+      if (selectedTags.includes(filterId)) {
+        for (let j = 0; j < selectedTags.length; j++) {
+          if (selectedTags[j] === filterId) {
+            selectedTags.splice(j, 1);
+          };
+        };
+      } else {
+        selectedTags.push(filterId);
+      };
+
+      for (let j = 0; j < filterTags.length; j++) {
+        if (selectedTags.includes(filterTags[j].innerHTML)) {
+          filterTags[j].classList.add("active");
+        } else {
+          filterTags[j].classList.remove("active");
+        };
+      };
+
+      for (let j = 0; j < products.length; j++) {
+        const productTags = products[j].querySelectorAll(".collection-single-tag");
+
+        let displayProduct = false;
+
+        for (let k = 0; k < productTags.length; k++) {
+          const productTagId = productTags[k].innerHTML;
+
+          if (selectedTags.includes(productTagId)) {
+            displayProduct = true;
+          };
+        };
+
+        if (displayProduct) {
+          products[j].style.display = "block";
+        } else {
+          products[j].style.display = "none";
+        };
+      };
+
+      for (let j = 0; j < sets.length; j++) {
+        const productTags = sets[j].querySelectorAll(".collection-set-tag");
+
+        let displayProduct = false;
+
+        for (let k = 0; k < productTags.length; k++) {
+          const productTagId = productTags[k].innerHTML;
+
+          if (selectedTags.includes(productTagId)) {
+            displayProduct = true;
+          };
+        };
+
+        if (displayProduct) {
+          sets[j].style.display = "block";
+        } else {
+          sets[j].style.display = "none";
+        };
+      };
+
+      if (selectedTags.length === 0) {
+        for (let j = 0; j < products.length; j++) {
+          products[j].style.display = "block";
+        };
+
+        for (let j = 0; j < sets.length; j++) {
+          sets[j].style.display = "block";
+        };
+      };
+    });
+  };
+
+  filterSet.addEventListener("click", () => {
+    if (filterSet.classList.contains("active")) {
+      filterSet.classList.remove("active");
+      productsWrapper.style.display = "grid";
+    } else {
+      filterSet.classList.add("active");
+      productsWrapper.style.display = "none";
+    };
+  });
+
+  const params = new window.URLSearchParams(window.location.search);
+  const urlTag = params.get('tag');
+
+  if (urlTag) {
+    const urlId = urlTag.replace("-", " ");
+    selectedTags.push(urlId);
+
+    for (let i = 0; i < filterTags.length; i++) {
+      if (selectedTags.includes(filterTags[i].innerHTML)) {
+        filterTags[i].classList.add("active");
+      } else {
+        filterTags[i].classList.remove("active");
+      };
+    }
+
+    for (let j = 0; j < products.length; j++) {
+      const productTags = products[j].querySelectorAll(".collection-single-tag");
+
+      let displayProduct = false;
+
+      for (let k = 0; k < productTags.length; k++) {
+        const productTagId = productTags[k].innerHTML;
+
+        if (selectedTags.includes(productTagId)) {
+          displayProduct = true;
+        };
+      };
+
+      if (displayProduct) {
+        products[j].style.display = "block";
+      } else {
+        products[j].style.display = "none";
+      };
+    };
+
+    for (let j = 0; j < sets.length; j++) {
+      const productTags = sets[j].querySelectorAll(".collection-set-tag");
+
+      let displayProduct = false;
+
+      for (let k = 0; k < productTags.length; k++) {
+        const productTagId = productTags[k].innerHTML;
+
+        if (selectedTags.includes(productTagId)) {
+          displayProduct = true;
+        };
+      };
+
+      if (displayProduct) {
+        sets[j].style.display = "block";
+      } else {
+        sets[j].style.display = "none";
+      };
+    };
+  };
+</script>
+
+{% schema %}
+  {
+    "name": "filter-products",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Rather pick your own products?"
+      },
+      {
+        "type": "text",
+        "id": "filters_title",
+        "label": "Filters title",
+        "default": "Filter by symptoms"
+      },
+      {
+        "type": "text",
+        "id": "filters_desc",
+        "label": "Filters description",
+        "default": "Find the products that help soothe your symptoms"
+      },
+      {
+        "type": "text",
+        "label": "Cramps",
+        "id": "cramps",
+        "default": "cramps"
+      }, {
+        "type": "text",
+        "label": "Mood Swings",
+        "id": "mood_swings",
+        "default": "mood swings"
+      }, {
+        "type": "text",
+        "label": "Sleep",
+        "id": "sleep",
+        "default": "sleep"
+      }, {
+        "type": "text",
+        "label": "Bloating",
+        "id": "bloating",
+        "default": "bloating"
+      }, {
+        "type": "text",
+        "label": "Imbalance",
+        "id": "imbalance",
+        "default": "imbalance"
+      }, {
+        "type": "text",
+        "label": "Sets",
+        "id": "sets",
+        "default": "Sets"
+      }, {
+        "type": "text",
+        "id": "discover",
+        "label": "Discover",
+        "default": "Discover all our curated sets"
+      }, {
+        "type": "text",
+        "id": "below",
+        "label": "below",
+        "default": "below"
+      }, {
+        "type": "text",
+        "id": "all_title",
+        "label": "Filters all",
+        "default": "All"
+      }, {
+        "type": "text",
+        "id": "set_title",
+        "label": "Filters sets",
+        "default": "Sets"
+      }, {
+        "type": "text",
+        "id": "cta_title_1",
+        "label": "Title",
+        "default": "Not sure which products you need?"
+      }, {
+        "type": "text",
+        "id": "cta_text_1",
+        "label": "Text",
+        "default": "Take our quiz we will find out exactly what fits your needs"
+      }, {
+        "type": "text",
+        "id": "cta_btn_1",
+        "label": "Button",
+        "default": "Take the quiz"
+      }, {
+        "type": "text",
+        "id": "cta_title_2",
+        "label": "Title",
+        "default": "Want to know more about your cycle?"
+      }, {
+        "type": "text",
+        "id": "cta_text_2",
+        "label": "Text",
+        "default": "Our at-home hormonal test provides a simple and convenient solution for anyone seeking insights into their hormonal balance."
+      }, {
+        "type": "text",
+        "id": "cta_btn_2",
+        "label": "Button",
+        "default": "Buy hormonal test"
+      }, {
+        "type": "text",
+        "id": "add_to_cart",
+        "label": "Add to cart",
+        "default": "Add to cart"
+      }, {
+        "type": "text",
+        "id": "added",
+        "label": "Product added",
+        "default": "Successfully added to your basket"
+      }
+    ],
+    "presets": [
+      {
+        "name": "filter-products"
+      }
+    ]
+  }
+{% endschema %}

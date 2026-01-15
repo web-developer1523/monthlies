@@ -1,0 +1,481 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image-banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Empowering you to take control of your cycle",
+            "heading_size": "h0",
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>No. Period pain is not normal. And no. You're not alone.</p>",
+            "text_size": "typeset3",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "custom_css": [
+        ".banner__heading {color: #fff !important;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/About_us.png",
+        "image_position": "center center",
+        "text_box_position": "middle-center",
+        "text_alignment": "center",
+        "image_ratio": "400px",
+        "show_text_box": false,
+        "full_width": true,
+        "show_divider": false,
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "400px",
+        "stack_images_on_mobile": false,
+        "show_text_below": false,
+        "colors_button_label": "#1a1b18",
+        "colors_button_background": "#ffffff",
+        "colors_text": "#ffffff",
+        "colors_overlay": "#ffffff",
+        "colors_overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "narrow": true,
+        "padding_top": 60,
+        "padding_bottom": 72
+      }
+    },
+    "rich-text-0": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We're committed to making your periods better with science-backed, all-natural solutions designed to nurture your body and provide real relief and holistic wellbeing.</p>",
+            "text_size": "typeset3",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "mobile_text_alignment": "center",
+        "horizontal_content": false,
+        "narrow": true,
+        "show_divider": false,
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image-with-text-0": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Our mission",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Every month, 1,8 billion women across our planet experience menstruation. Among them, around 80% will face period pain at least once in their lifetime.<br/><br/>For us, that’s not just a statistic—it's deeply personal.<br/><br/>Monthlies was born in 2020, when our founders, Ashley and Maria, set out to change the way we think about and treat period pain. They envisioned a world where menstrual care went beyond just painkillers or hormone treatments with all-natural, science-backed, holistic solutions that bring real relief. A severely unmet need for many of us.<br/><br/>Since then, we’ve had our share of challenges and victories alike, and after three years of dedicated research, hard work and development, we’re proud to have helped over 2000 women.<br/><br/>Thank you for your trust, your belief in our ever-growing team, and above all, your belief in the possibility of a better solution. It’s your support that’s made Monthlies the platform it is today. We're excited to stand by your side, empowering you to navigate your menstrual cycle with confidence, comfort, and ease.<br/><br/>Lots of love,<br/>Ashley and Maria</p>",
+            "text_size": "typeset2",
+            "secondary_color": true
+          }
+        },
+        "505fd670-8cca-4fc1-ac5c-aae68274a61e": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Our goal is to empower women by educating them about the natural remedies and techniques that can help them manage their menstrual pain.</p>",
+            "text_size": "typeset2",
+            "secondary_color": true
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "505fd670-8cca-4fc1-ac5c-aae68274a61e"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/AdobeStock_227252206_1.webp",
+        "image_position": "center center",
+        "layout": "image_first",
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "550px",
+        "enlarge_content": true,
+        "full_width": false,
+        "show_divider": false,
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image-with-text-1": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Mission & Values",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Monthlies, we understand that every woman's experience is unique, and we've made it our mission to support and nurture you with a holistic solution.<br/><br/>We’re challenging the myth that period pain is normal and unavoidable, continuously raising the bar for menstrual care beyond just painkillers.<br/><br/>With that goal in mind, we’ve embarked on a journey to redefine your menstrual experience with research-backed, natural solutions that provide genuine relief, empowering you to thrive at every stage of your cycle.</p>",
+            "text_size": "typeset2",
+            "secondary_color": true
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/AdobeStock_427032931_1.jpg",
+        "image_position": "center center",
+        "layout": "text_first",
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "500px",
+        "enlarge_content": true,
+        "full_width": false,
+        "show_divider": false,
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "2f40bc42-aabd-4a16-a58b-9669e29b3e9a": {
+      "type": "image-with-text",
+      "blocks": {
+        "f3aecfc8-29b3-4a18-b4e7-53442c9bc8e6": {
+          "type": "heading",
+          "settings": {
+            "heading": "At the heart of Monthlies:",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "e4510ad6-e3ba-4b18-9e5f-3734b8e8b409": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>100% Commitment</strong><br/><br/>We’ve walked the path, felt the pain, and found relief. Now we’re sharing the solutions we believe in with you.<br/><br/><strong>High-quality standards</strong><br/><br/>We use only science-backed, top-tier ingredients because we believe in maintaining a standard as high as your trust in us.<br/><br/><strong>Inclusive community</strong><br/><br/>Monthlies thrives on the belief that true healing flourishes within a supportive community. Our platform, a refuge for all genders, is built on diversity, fostering dialogue, growth, and positive change.</p>",
+            "text_size": "typeset2",
+            "secondary_color": true
+          }
+        },
+        "eaf39315-5199-4073-b28a-e56bd14424eb": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Our goal is to empower women by educating them about the natural remedies and techniques that can help them manage their menstrual pain.</p>",
+            "text_size": "typeset2",
+            "secondary_color": true
+          }
+        }
+      },
+      "block_order": [
+        "f3aecfc8-29b3-4a18-b4e7-53442c9bc8e6",
+        "e4510ad6-e3ba-4b18-9e5f-3734b8e8b409",
+        "eaf39315-5199-4073-b28a-e56bd14424eb"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/0B5A6806.jpg",
+        "image_position": "center center",
+        "layout": "image_first",
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "450px",
+        "enlarge_content": true,
+        "full_width": false,
+        "show_divider": false,
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "52872848-ee61-4839-a69c-7e3a1cf2e4b2": {
+      "type": "image-with-text",
+      "blocks": {
+        "65ffe24d-94fa-404c-b191-52117009f726": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Approach",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "8536ea09-27ac-4235-a508-cb7622f01539": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Monthlies, we understand that menstrual care is not one-size-fits-all. Start your journey by taking our quiz, designed to provide personalised guidance, daily habit tips, and product suggestions from female experts who truly understand.<br/><br/><strong>Our Pledge to You:<br/></strong><br/><strong>✓</strong> Customised, Expert Guidance: We'll be with you every step of the way, offering advice tailored to your unique needs.<br/><br/><strong>✓ </strong>Personalised, Natural, and Premium Quality Products: We select only the finest natural formulations, curated just for you.<br/><br/><strong>✓</strong> Reliable Pain Relief: Our solutions work, and you can depend on them when you need them most.<br/><br/><strong>✓ </strong>Outstanding Customer Service and Fast Shipping: Your satisfaction is our priority. We're here to serve you with quick responses and speedy deliveries</p>",
+            "text_size": "typeset2",
+            "secondary_color": true
+          }
+        }
+      },
+      "block_order": [
+        "65ffe24d-94fa-404c-b191-52117009f726",
+        "8536ea09-27ac-4235-a508-cb7622f01539"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Group_299_3951a7df-ca6b-4a8b-a067-acfbf3eef063.png",
+        "image_position": "center center",
+        "layout": "text_first",
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "adapt",
+        "enlarge_content": true,
+        "full_width": false,
+        "show_divider": false,
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image-with-text-2": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Meet our team",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’re an all-female team of Naturopathic Doctors committed to empowering women to take control of their menstrual health and thrive at every stage of their cycle.<br/><br/>We believe in the healing power of natural remedies, having personally observed their transformative impact on the lives of our patients. Through Monthlies, we’re spreading awareness of these natural alternatives and making them more accessible to women around the globe. </p>",
+            "text_size": "typeset2",
+            "secondary_color": true
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Frame_40047.webp",
+        "image_position": "center center",
+        "layout": "text_first",
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "adapt",
+        "enlarge_content": true,
+        "full_width": false,
+        "show_divider": false,
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "617910de-a840-498c-b2c5-fb38e84ad8c6": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--19196975939931__617910de-a840-498c-b2c5-fb38e84ad8c6-168917862211bd46af-0": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "title_size": "h3",
+            "text": "<p>\"I kept being given prescriptions for painkillers or antidepressants for my period pain rather than the proper hormone check-up I needed. As a naturopath, I knew there had to be a better solution. That’s what inspired the idea behind Monthlies.”<br/></p>",
+            "button_label": "- Ashley",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "template--19196975939931__617910de-a840-498c-b2c5-fb38e84ad8c6-168917862211bd46af-1": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "title_size": "h3",
+            "text": "<p>\"Period pain was so taboo for me, and I knew so little about it. I couldn’t have imagined that a summer night chat with Ashley would lead to Monthlies. Today, our platform is helping countless women overcome period pain. It’s been an incredible journey of empowerment.”<br/></p>",
+            "button_label": "- Maria",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19196975939931__617910de-a840-498c-b2c5-fb38e84ad8c6-168917862211bd46af-0",
+        "template--19196975939931__617910de-a840-498c-b2c5-fb38e84ad8c6-168917862211bd46af-1"
+      ],
+      "settings": {
+        "image_ratio": "landscape",
+        "image_position": "center center",
+        "text_alignment": "left",
+        "show_divider": false,
+        "heading": "A quote from our founders",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "mobile_text_alignment": "left",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image-with-text-overlay": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Fun closing",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We look forward to helping you navigate your menstrual cycle with comfort and ease.</p>",
+            "text_size": "typeset3",
+            "secondary_color": false
+          }
+        },
+        "button": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "See our products",
+            "button_link": "shopify://collections/all",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/AdobeStock_306169108.png",
+        "image_position": "center center",
+        "text_box_position": "flex-start",
+        "text_alignment": "left",
+        "image_ratio": "550px",
+        "full_width": true,
+        "show_divider": false,
+        "mobile_text_box_position": "image_first",
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "500px",
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_overlay": "#fff5f5",
+        "colors_overlay_opacity": 92,
+        "padding_top": 32,
+        "padding_bottom": 0
+      }
+    },
+    "empty-space": {
+      "type": "empty-space",
+      "settings": {
+        "desktop_height": 0,
+        "mobile_height": 48
+      }
+    }
+  },
+  "order": [
+    "image-banner",
+    "main",
+    "rich-text-0",
+    "image-with-text-0",
+    "image-with-text-1",
+    "2f40bc42-aabd-4a16-a58b-9669e29b3e9a",
+    "52872848-ee61-4839-a69c-7e3a1cf2e4b2",
+    "image-with-text-2",
+    "617910de-a840-498c-b2c5-fb38e84ad8c6",
+    "image-with-text-overlay",
+    "empty-space"
+  ]
+}

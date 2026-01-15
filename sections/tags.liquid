@@ -1,0 +1,63 @@
+{{ 'section-tags.css' | asset_url | stylesheet_tag }}
+
+<div class="tags page-width">
+  {% if localization.language.iso_code == "de" %}
+  <a href="/de/collections/all?tag={{ section.settings.pain_1 }}">{{ section.settings.pain_1 }}</a>
+  <a href="/de/collections/all?tag={{ section.settings.pain_2 }}">{{ section.settings.pain_2 }}</a>
+  <a href="/de/collections/all?tag={{ section.settings.pain_3 }}">{{ section.settings.pain_3 }}</a>
+  <a href="/de/collections/all?tag={{ section.settings.pain_4 }}">{{ section.settings.pain_4 }}</a>
+  <a href="/de/collections/all?tag={{ section.settings.pain_5 }}">{{ section.settings.pain_5 }}</a>
+{% else %}
+  <a href="/collections/all?tag={{ section.settings.pain_1 | downcase }}">{{ section.settings.pain_1 }}</a>
+  <a href="/collections/all?tag={{ section.settings.pain_2 | downcase }}">{{ section.settings.pain_2 }}</a>
+  <a href="/collections/all?tag={{ section.settings.pain_3 | downcase }}">{{ section.settings.pain_3 }}</a>
+  <a href="/collections/all?tag={{ section.settings.pain_4 | downcase }}">{{ section.settings.pain_4 }}</a>
+  <a href="/collections/all?tag={{ section.settings.pain_5 | downcase }}">{{ section.settings.pain_5 }}</a>
+{% endif %}
+
+</div>
+
+
+{% schema %}
+  {
+    "name": "tags",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Pain",
+        "id": "pain_1",
+        "default": "Cramps"
+      },
+      {
+        "type": "text",
+        "label": "Pain",
+        "id": "pain_2",
+        "default": "Mood Swings"
+      },
+      {
+        "type": "text",
+        "label": "Pain",
+        "id": "pain_3",
+        "default": "Sleep"
+      },
+      {
+        "type": "text",
+        "label": "Pain",
+        "id": "pain_4",
+        "default": "Bloating"
+      }, {
+        "type": "text",
+        "label": "Pain",
+        "id": "pain_5",
+        "default": "Imbalance"
+      }
+    ],
+    "presets": [
+      {
+        "name": "tags"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,72 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "product.new-custom-product.json",
+  "context": {
+    "market": "germany"
+  },
+  "sections": {
+    "new_custom_product_pizi8Y": {
+      "settings": {},
+      "blocks": {
+        "image_with_text_TeaNEx": {
+          "disabled": true,
+          "settings": {}
+        },
+        "recharge_subscriptions_subscription_widget_v2_UNkKAF": {
+          "disabled": false,
+          "settings": {}
+        },
+        "price_tzJDWA": {
+          "disabled": true,
+          "settings": {}
+        }
+      }
+    },
+    "monthlies_vs_others_Uk4N7k": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {}
+    },
+    "monthlies_vs_others_aFWE7E": {
+      "settings": {},
+      "blocks": {
+        "left_item_GF6tRb": {
+          "disabled": true,
+          "settings": {}
+        },
+        "right_item_jWEAcL": {
+          "disabled": true,
+          "settings": {}
+        }
+      }
+    }
+  },
+  "order": [
+    "new_custom_product_pizi8Y",
+    "energy_level_tMpykK",
+    "energy_level_new_KrjknR",
+    "why_monthlies_comparison_HRUbng",
+    "monthlies_vs_others_aFWE7E",
+    "monthlies_vs_others_Uk4N7k",
+    "carefully_selected_ingredients_Rgby7L",
+    "what_experts_say_nMVkdi",
+    "health_expert_new_tAJFVp",
+    "why_monthlies_comparison_aMFV6P",
+    "monthlies_vs_others_fytFx3",
+    "take_monthly_tablets_6NKEm9",
+    "take_monthly_tablets_new_xmMEae",
+    "money_back_guarantee_EKy6Gq",
+    "custom_text_NywnH6",
+    "17636317918613a4c9",
+    "main",
+    "product-recommendations"
+  ]
+}

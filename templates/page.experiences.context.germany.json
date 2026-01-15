@@ -1,0 +1,65 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "page.experiences.json",
+  "context": {
+    "market": "germany"
+  },
+  "sections": {
+    "image_with_text_AiEtLT": {
+      "settings": {},
+      "blocks": {
+        "text_XkTLAh": {
+          "settings": {
+            "text": "<p>Discover what monthlies customers are <em>saying.</em></p>"
+          }
+        }
+      }
+    },
+    "1758893070694ae298": {
+      "type": "apps",
+      "disabled": false,
+      "settings": {
+        "include_margins": true,
+        "show_divider": false,
+        "header-134ff26254a45cb07fd3543095fcbf36": null,
+        "padding_top": 36,
+        "padding_bottom": 36
+      },
+      "blocks": {
+        "loox_reviews_loox_agg_section_NrdmV": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-agg-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "disabled": false,
+          "settings": {
+            "only_photos": false,
+            "hide_thumbnails": false,
+            "product_handle": "",
+            "aggregated": true,
+            "data-limit": 20,
+            "maxwidth": 1080,
+            "is_sample": true,
+            "paragraph-790c17de81303088eae1a031ff172d2c": null,
+            "paragraph-dadc897ad967eb686c3b5c35a1707193": null
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_agg_section_NrdmV"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_AiEtLT",
+    "1758893070694ae298",
+    "review_exp_z4YiAV",
+    "rich_text_ACWtbA"
+  ]
+}

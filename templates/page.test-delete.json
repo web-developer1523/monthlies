@@ -1,0 +1,91 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "narrow": true,
+        "padding_top": 60,
+        "padding_bottom": 72
+      }
+    },
+    "8d48bbf2-49ab-40de-b17d-bcdccac87476": {
+      "type": "reviews-slider",
+      "settings": {
+        "title": "Don’t take our word for it, take hers!"
+      }
+    },
+    "image_with_text_DBAXAc": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_6dDKXW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Personalised cycle support at your fingertips.",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_bLXVPJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Track your cycle and combine your supplement intake with personalised guidance to <strong>help reduce your  menstrual symptoms.</strong></p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "button_hJwdbR": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_6dDKXW",
+        "text_bLXVPJ",
+        "button_hJwdbR"
+      ],
+      "settings": {
+        "custom_class": "",
+        "image": "shopify://shop_images/Hero_section.png",
+        "image_position": "center center",
+        "layout": "text_first",
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "650px",
+        "enlarge_content": false,
+        "full_width": false,
+        "show_divider": false,
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "8d48bbf2-49ab-40de-b17d-bcdccac87476",
+    "image_with_text_DBAXAc"
+  ]
+}

@@ -1,0 +1,64 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "product.subscription-uk-2.json",
+  "context": {
+    "market": "uk"
+  },
+  "sections": {
+    "new_main_product_HmJCx8": {
+      "settings": {},
+      "blocks": {
+        "recharge_subscriptions_subscription_widget_v2_9DVm7F": {
+          "settings": {
+            "badge_text": "Save 30%",
+            "benefits": "<ul><li>You save 30%</li><li>Cycle Guide</li><li>Exercise & Nutrition Recommendations</li><li>One on One Doctor Consultation</li><li>90-DAY money back guarantee</li><li>Free Shipping</li></ul>",
+            "onetime_drawbacks": "<ul><li>You save 30%</li><li>One on One Doctor Consultation</li><li>90-DAY money back guarantee</li></ul>"
+          }
+        }
+      }
+    },
+    "health_expert_HamgKV": {
+      "settings": {},
+      "blocks": {
+        "column_VGdKzA": {
+          "settings": {
+            "title": "Dr. Ashley Florestal",
+            "text": "<p>B. Comm, ND, Canadian College of Naturopathic Medicine, Concordia University</p>"
+          }
+        },
+        "column_P6eBzJ": {
+          "settings": {
+            "title": "Fr. Dr. Maria Obando",
+            "text": "<p>MD, Esp, IFMCP- Los Andes University</p>"
+          }
+        },
+        "column_bC8gEc": {
+          "settings": {
+            "title": "Dr. Geneva Carrington",
+            "text": "<p>DipNT, mANP, The College of Naturopathic Medicine, London</p>"
+          }
+        },
+        "column_rWxdyk": {
+          "settings": {
+            "text": "<p>RHN, ND, Canada College of Natural Nutrition, Concordia University</p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_bC8gEc",
+        "column_VGdKzA",
+        "column_P6eBzJ",
+        "column_rWxdyk",
+        "column_PPhaLA"
+      ]
+    }
+  }
+}

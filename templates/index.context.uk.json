@@ -1,0 +1,41 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "index.json",
+  "context": {
+    "market": "uk"
+  },
+  "sections": {
+    "homepage_banner_new_9Qpe43": {
+      "settings": {
+        "subheadline": "Doctor-developed cycle supplement for all your symptoms.",
+        "pharmacy_intro": "Approved by NHS doctors",
+        "amazon_shop": "shopify://shop_images/Frame_ffbbb5ee-41dc-45c8-9888-d1fffa4a9019.svg"
+      },
+      "blocks": {}
+    },
+    "doctor_details_new_yz34BT": {
+      "settings": {},
+      "blocks": {},
+      "block_order": [
+        "team_cBaUEW",
+        "team_RTqkwh",
+        "team_pMQwcC"
+      ]
+    },
+    "homepage_banner_new_video_qDUfW9": {
+      "settings": {
+        "pharmacy_intro": "Approved by NHS doctors",
+        "amazon_shop": "shopify://shop_images/Frame_bdbb670d-519e-4f55-a632-6811291846de.svg"
+      },
+      "blocks": {}
+    }
+  }
+}

@@ -1,0 +1,226 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "176823204866233549": {
+      "type": "_blocks",
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "ai_gen_block_5b5d6e3_RHPyN": {
+          "type": "ai_gen_block_5b5d6e3",
+          "disabled": false,
+          "settings": {
+            "header-c92924383a79270fc17401100911c27e": null,
+            "badge_text": "Safe for ages 13+",
+            "badge_size": 13,
+            "badge_bg_color": "#252a31",
+            "badge_text_color": "#ffffff",
+            "header-45841ab579d7eb281144a115d6eb0c3c": null,
+            "title": "For mums and teens",
+            "title_size": 42,
+            "subtitle": "Loved by mums supporting daughters with painful periods and hormonal symptoms",
+            "subtitle_size": 17,
+            "header-832d29fea142d02a5f0008ad9387368c": null,
+            "image_1": "shopify://shop_images/WhatsApp_Image_2026-01-12_at_18.54.36_5d0f2cbc-6117-49c0-bbda-7aa552b9ccd9.jpg",
+            "show_second_image": true,
+            "image_2": "shopify://shop_images/Background_f1013c11-a6f0-4358-82c7-bad9fb2dc55c.png",
+            "image_border_radius": 20,
+            "header-7644d5d0afaa6326fcdfea44bc7b0189": null,
+            "review_1_text": "My daughter's cramps have improved so much since starting Monthlies. As a mum, it's such a relief to see her feeling better during her period.",
+            "review_1_author": "Sarah M.",
+            "header-cf4aa6a826d40908d9898294795d863e": null,
+            "review_2_text": "Finally something natural that actually works for my teenage daughter. Her mood swings and pain are so much better. Highly recommend for young women!",
+            "review_2_author": "Emma L.",
+            "header-33b061eb0b89f1a282db7e90197cf357": null,
+            "review_text_size": 15,
+            "author_size": 14,
+            "review_bg_color": "#f9f9f9",
+            "review_border_radius": 20,
+            "star_color": "#ffb503",
+            "header-b4a42d500fb2d99cc9d9924fb07f2222": null,
+            "show_professional_badge": true,
+            "professional_badge_text": "Created by women's health professionals",
+            "professional_text_size": 14,
+            "professional_badge_bg": "#ffffff",
+            "professional_text_color": "#252a31",
+            "header-a1f2defc6b5e43ce64c9982b870dfa76": null,
+            "background_color": "#ffffff",
+            "text_color": "#252a31",
+            "accent_color": "#abd0cd"
+          }
+        }
+      },
+      "block_order": [
+        "ai_gen_block_5b5d6e3_RHPyN"
+      ]
+    },
+    "new_custom_product_pizi8Y": {
+      "settings": {},
+      "blocks": {
+        "title_N3RJFa": {
+          "settings": {
+            "tagline": "<strong>Feel like yourself again, Every day of your cycle.</strong>"
+          }
+        },
+        "richtext_block_JRp7fh": {
+          "settings": {
+            "richtext_block": "<ul><li>Reduced cramps, less bloating, steadier moods and more energy.</li><li>Tackles painful periods plus brain fog, fatigue and breakouts that wreck your confidence.</li><li>Designed for every phase of your cycle, not just period week.</li><li>The only supplement with tested results in an independent study & approved by NHS doctors.</li><li>One daily drink. No pill or painkillers.</li></ul>"
+          }
+        },
+        "image_with_text_TeaNEx": {
+          "settings": {
+            "desc2": "<p>Many women are offered quick fixes, like the pill, that mask symptoms and come with side effects instead of supporting full cycle health. monthlies is specifically designed to act on the root causes and make your body feel at its best, all month long. <br/></p>"
+          }
+        },
+        "guarantee_block_zm7BR7": {
+          "settings": {
+            "guarantee_text": "Try it for 90 days. If you don’t feel a difference, you don’t pay.",
+            "guarantee_link_text": "Information"
+          }
+        },
+        "review_quote_block_YDW7mc": {
+          "settings": {
+            "review_quote": "<strong>\"This product has made me believe that I can live a normal life on my periods.\"</strong>",
+            "review_author": "<strong>- Jimmy, 31</strong>",
+            "sub_review_text": "+ Thousands of women trust monthlies",
+            "review_photo_1": "shopify://shop_images/b4rpqhgtu7vjr1ahcabx_e28f1961-b207-465f-b4a7-9cdb04734c62.webp",
+            "review_photo_4": "shopify://shop_images/Background_f72df9d7-8967-4060-82ad-91390a666b7d.png"
+          }
+        }
+      }
+    },
+    "energy_level_new_KrjknR": {
+      "settings": {
+        "bottom_disclaimer": "<p>*Based on an independent study of 105 women (20 to 45) using the monthlies supplement.</p>"
+      },
+      "blocks": {
+        "tab_block_TGxjwC": {
+          "settings": {
+            "percent_text": "noticed positive changes in their symptoms*",
+            "percent_text1": "reported less period pain*",
+            "percent_text2": "reduced their use of painkillers*",
+            "percent3": "90%",
+            "percent_text3": "reduction of daily PMS*"
+          }
+        },
+        "tab_block_LEz3DW": {
+          "settings": {
+            "percent": "Cramps",
+            "percent_text": "that lingered accross several days dropped by half*",
+            "percent1": "Bloating",
+            "percent_text1": "eased significantly, with a reduction of 45%",
+            "percent2": "PMS",
+            "percent_text2": "pain and energy-related symptoms were reduced by more than half*",
+            "percent3": "Mood swings",
+            "percent_text3": "were improved by 91%*"
+          }
+        },
+        "tab_block_xUYDxE": {
+          "settings": {
+            "percent": "85%",
+            "percent_text": "reduction of cramps*",
+            "percent1": "94%",
+            "percent_text1": "reported feeling like themselves again*",
+            "percent2": "97%",
+            "percent_text2": "improvement in mood swings*",
+            "percent_text3": "visibly improved skin breakouts, hair and nails*"
+          }
+        },
+        "tab_block_y4676W": {
+          "settings": {
+            "btn1": "Minimal cramps & bloating & PMS",
+            "btn2": "No more 2pm slush",
+            "btn3": "No more feeling \"out of balance\"",
+            "btn5": "Glowing skin, hair & nails",
+            "btn6": "Sustained energy accross all cycle",
+            "btn7": "Everything feels easier to manage",
+            "btn4": "Improved athletic performance"
+          }
+        }
+      }
+    },
+    "monthlies_vs_others_Uk4N7k": {
+      "settings": {},
+      "blocks": {
+        "right_item_jkkMNG": {
+          "settings": {
+            "text": "<p>Inconvenient</p>"
+          }
+        },
+        "right_item_93mxnF": {
+          "settings": {
+            "text": "<p>Expensive or low quality</p>"
+          }
+        }
+      }
+    },
+    "carefully_selected_ingredients_Rgby7L": {
+      "settings": {},
+      "blocks": {
+        "ingredient_yGx4Wc": {
+          "settings": {
+            "ingredient_title": "Menstrual pain"
+          }
+        }
+      }
+    },
+    "monthlies_vs_others_aFWE7E": {
+      "settings": {},
+      "blocks": {
+        "left_item_d8CRJA": {
+          "settings": {
+            "text": "<p>Made in the UK</p>"
+          }
+        },
+        "right_item_aqB3D9": {
+          "settings": {
+            "text": "<p>Not tested in a 3 months study</p>"
+          }
+        }
+      }
+    },
+    "take_monthly_tablets_6NKEm9": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {}
+    },
+    "take_monthly_tablets_new_xmMEae": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {}
+    }
+  },
+  "context": {
+    "market": "uk"
+  },
+  "parent": "product.new-custom-product.json",
+  "order": [
+    "new_custom_product_pizi8Y",
+    "energy_level_tMpykK",
+    "176823204866233549",
+    "energy_level_new_KrjknR",
+    "why_monthlies_comparison_HRUbng",
+    "monthlies_vs_others_Uk4N7k",
+    "carefully_selected_ingredients_Rgby7L",
+    "monthlies_vs_others_aFWE7E",
+    "what_experts_say_nMVkdi",
+    "health_expert_new_tAJFVp",
+    "why_monthlies_comparison_aMFV6P",
+    "monthlies_vs_others_fytFx3",
+    "take_monthly_tablets_6NKEm9",
+    "take_monthly_tablets_new_xmMEae",
+    "money_back_guarantee_EKy6Gq",
+    "custom_text_NywnH6",
+    "17636317918613a4c9",
+    "main",
+    "product-recommendations"
+  ]
+}

@@ -1,0 +1,1852 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "empty-space": {
+      "type": "empty-space",
+      "disabled": true,
+      "settings": {
+        "desktop_height": 36,
+        "mobile_height": 16
+      }
+    },
+    "new_main_product_HmJCx8": {
+      "type": "new-main-product",
+      "blocks": {
+        "title_zRkdmm": {
+          "type": "title",
+          "settings": {
+            "title_size": "h2",
+            "tagline": "All you need <strong>for health and hormones</strong> in 1 easy scoop. ",
+            "star_img": "shopify://shop_images/Frame_513453.png",
+            "rating_count": "4.6",
+            "show_price": false,
+            "price_size": "medium"
+          }
+        },
+        "custom_liquid_jQLCpm": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": ""
+          }
+        },
+        "rating_jTDMJV": {
+          "type": "rating",
+          "settings": {}
+        },
+        "description_Vd8GBH": {
+          "type": "description",
+          "settings": {}
+        },
+        "image_text_KaLR3m": {
+          "type": "image-text",
+          "settings": {
+            "class_sec": "product_feacture new",
+            "text_image": "<p><a href=\"https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Ingredients_EN.png?v=1739437663\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Ingredients_EN.png?v=1739437663\">See ingredients</a></p>",
+            "text_image1": "<p><a href=\"https://cdn.shopify.com/s/files/1/0708/7462/8371/files/studies_final.pdf?v=1731106438\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0708/7462/8371/files/studies_final.pdf?v=1731106438\">Clinical studies</a></p>",
+            "data-target2": "descriptions",
+            "text_image2": "<p>Description</p>",
+            "data-target3": "benefits",
+            "text_image3": "<p>Benefits</p>",
+            "data-target4": "what-makes-it-different",
+            "text_image4": "<p>What makes it different</p>",
+            "data-target5": "direction",
+            "text_image5": "<p>Directions</p>",
+            "data-target6": "ingredients",
+            "text_image6": "<p>Ingredients</p>",
+            "data-target7": "",
+            "text_image7": "",
+            "btn1": "",
+            "btn_text1": "",
+            "btn_icon1": "",
+            "btn2": "",
+            "btn_text2": "",
+            "btn_icon2": ""
+          }
+        },
+        "icon_text_cnhtkt": {
+          "type": "icon-text",
+          "disabled": true,
+          "settings": {
+            "class_sec1": "",
+            "text_icon_image": "shopify://shop_images/Icon_1_15ac77bc-d3f8-4837-91de-aa6726746a98.png",
+            "text_icon": "<p>Use for 3 months for optimal results</p>",
+            "text_icon_image1": "shopify://shop_images/Icon_1_15ac77bc-d3f8-4837-91de-aa6726746a98.png",
+            "text_icon1": "<p>Start any day of your cycle </p>",
+            "text_icon_image2": "shopify://shop_images/Icon_1_15ac77bc-d3f8-4837-91de-aa6726746a98.png",
+            "text_icon2": "<p>No sugar added, paleo & keto diet friendly</p>",
+            "text_icon3": "",
+            "text_icon4": "",
+            "text_icon5": ""
+          }
+        },
+        "image_text_UNT4dz": {
+          "type": "image-text",
+          "settings": {
+            "class_sec": "ultra_feacture new for_desktop",
+            "text_image_image": "shopify://shop_images/Vitamins_31e940a1-1bcf-4b00-8bb6-ab98db55f631.png",
+            "text_image": "<p>26+ vitamins, minerals and nutrients</p>",
+            "text_image_image1": "shopify://shop_images/Clinically-proven_ingredients_2418b1e1-962a-4ef7-a197-09d102f56819.png",
+            "text_image1": "<p><strong>Science-backed</strong> </p>",
+            "text_image_image2": "shopify://shop_images/Vegan.png",
+            "data-target2": "",
+            "text_image2": "<p>Vegan, nut-free, gluten free</p>",
+            "text_image_image3": "shopify://shop_images/Vegan_a5430a78-bea3-4cb5-8ace-4b29a8abaa16.png",
+            "data-target3": "",
+            "text_image3": "<p>Start any day of your cycle</p>",
+            "text_image_image4": "shopify://shop_images/Frame_513481.png",
+            "data-target4": "",
+            "text_image4": "<p>3 months for optimal results</p>",
+            "text_image_image5": "shopify://shop_images/Frame_513482.png",
+            "data-target5": "",
+            "text_image5": "<p>No sugar added, paleo & keto friendly</p>",
+            "data-target6": "",
+            "text_image6": "",
+            "data-target7": "",
+            "text_image7": "",
+            "btn1": "",
+            "btn_text1": "",
+            "btn_icon1": "",
+            "btn2": "",
+            "btn_text2": "",
+            "btn_icon2": ""
+          }
+        },
+        "recharge_subscriptions_subscription_widget_v2_9DVm7F": {
+          "type": "shopify://apps/recharge-subscriptions/blocks/subscription-widget-v2/371eed76-0b44-4869-9813-730372ea378e",
+          "settings": {}
+        },
+        "buy_buttons_ciAMnT": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": false
+          }
+        },
+        "image_text_hUV8DA": {
+          "type": "image-text",
+          "settings": {
+            "class_sec": "ultra_feacture new for_mobile",
+            "text_image_image": "shopify://shop_images/Vitamins_31e940a1-1bcf-4b00-8bb6-ab98db55f631.png",
+            "text_image": "<p>26+ vitamins, minerals and nutrients</p>",
+            "text_image_image1": "shopify://shop_images/Clinically-proven_ingredients_2418b1e1-962a-4ef7-a197-09d102f56819.png",
+            "text_image1": "<p><strong>Science-backed</strong> </p>",
+            "text_image_image2": "shopify://shop_images/Vegan.png",
+            "data-target2": "",
+            "text_image2": "<p>Vegan, nut-free, gluten free</p>",
+            "text_image_image3": "shopify://shop_images/Vegan_a5430a78-bea3-4cb5-8ace-4b29a8abaa16.png",
+            "data-target3": "",
+            "text_image3": "<p>Start any day of your cycle</p>",
+            "text_image_image4": "shopify://shop_images/Frame_513481.png",
+            "data-target4": "",
+            "text_image4": "<p>3 months for optimal results</p>",
+            "text_image_image5": "shopify://shop_images/Frame_513482.png",
+            "data-target5": "",
+            "text_image5": "<p>No sugar added, paleo & keto friendly</p>",
+            "data-target6": "",
+            "text_image6": "",
+            "data-target7": "",
+            "text_image7": "",
+            "btn1": "",
+            "btn_text1": "",
+            "btn_icon1": "",
+            "btn2": "",
+            "btn_text2": "",
+            "btn_icon2": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_zRkdmm",
+        "custom_liquid_jQLCpm",
+        "rating_jTDMJV",
+        "description_Vd8GBH",
+        "image_text_KaLR3m",
+        "icon_text_cnhtkt",
+        "image_text_UNT4dz",
+        "recharge_subscriptions_subscription_widget_v2_9DVm7F",
+        "buy_buttons_ciAMnT",
+        "image_text_hUV8DA"
+      ],
+      "settings": {
+        "custom_class": "new_product_temp",
+        "enable_sticky_info": true,
+        "media_position": "left",
+        "media_size": "medium",
+        "gallery_layout": "thumbnail_slider",
+        "image_ratio": "landscape",
+        "show_thumbnails": false,
+        "hide_variants": false,
+        "enable_image_zoom": true,
+        "enable_video_looping": true,
+        "mobile_image_ratio": "square",
+        "show_mobile_thumbnails": true,
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1",
+            "show_price": false,
+            "price_size": "small"
+          }
+        },
+        "custom_liquid_rFBPyJ": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": ""
+          }
+        },
+        "automizely_product_reviews_product_page_star_widget_FKJEE7": {
+          "type": "shopify://apps/aftership-product-reviews/blocks/product_page_star_widget/beb80d6c-6526-44ce-8946-4a762954ca6d",
+          "disabled": true,
+          "settings": {
+            "block_alignment": "center",
+            "star_and_font_size": 20
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {}
+        },
+        "description_JBxcpn": {
+          "type": "description",
+          "settings": {}
+        },
+        "image_text_6qWnUi": {
+          "type": "image-text",
+          "settings": {
+            "class_sec": "product_feacture new",
+            "text_image": "<p><a href=\"https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Mobile_ingredients_f29714bf-63ad-45f8-bee5-4adecb0ee0d4.png?v=1731320586\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Mobile_ingredients_f29714bf-63ad-45f8-bee5-4adecb0ee0d4.png?v=1731320586\">See ingredients</a></p>",
+            "text_image1": "<p><a href=\"https://cdn.shopify.com/s/files/1/0708/7462/8371/files/studies_final.pdf?v=1731106438\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0708/7462/8371/files/studies_final.pdf?v=1731106438\">Clinical studies</a></p>",
+            "text_image2": "<p>Description</p>",
+            "text_image3": "<p>Benefits</p>",
+            "text_image4": "<p>What makes it different</p>",
+            "text_image5": "<p>Directions</p>",
+            "text_image6": "<p>Ingredients</p>",
+            "text_image7": "",
+            "text_image8": "",
+            "text_image9": "",
+            "text_image10": "",
+            "btn1": "",
+            "btn_text1": "",
+            "btn_icon1": "",
+            "btn2": "",
+            "btn_text2": "",
+            "btn_icon2": ""
+          }
+        },
+        "automizely_product_reviews_product_page_main_widget_wpVqB4": {
+          "type": "shopify://apps/aftership-product-reviews/blocks/product_page_main_widget/beb80d6c-6526-44ce-8946-4a762954ca6d",
+          "disabled": true,
+          "settings": {}
+        },
+        "sticky_cart": {
+          "type": "sticky_cart",
+          "settings": {
+            "show_quantity_selector": false
+          }
+        },
+        "image_text_aqqpMD": {
+          "type": "image-text",
+          "settings": {
+            "class_sec": "ultra_feacture new",
+            "text_image_image": "shopify://shop_images/Vitamins_31e940a1-1bcf-4b00-8bb6-ab98db55f631.png",
+            "text_image": "<p>26+ vitamins, minerals and nutrients</p>",
+            "text_image_image1": "shopify://shop_images/Clinically-proven_ingredients_2418b1e1-962a-4ef7-a197-09d102f56819.png",
+            "text_image1": "<p><strong>Science-backed</strong> </p>",
+            "text_image_image2": "shopify://shop_images/Vegan.png",
+            "text_image2": "<p>Vegan, nut-free, gluten free</p>",
+            "text_image_image3": "shopify://shop_images/Vegan_a5430a78-bea3-4cb5-8ace-4b29a8abaa16.png",
+            "text_image3": "<p>Start any day of your cycle</p>",
+            "text_image_image4": "shopify://shop_images/Frame_513481.png",
+            "text_image4": "<p>3 months for optimal results</p>",
+            "text_image_image5": "shopify://shop_images/Frame_513482.png",
+            "text_image5": "<p>No sugar added, paleo & keto friendly</p>",
+            "text_image6": "",
+            "text_image7": "",
+            "text_image8": "",
+            "text_image9": "",
+            "text_image10": "",
+            "btn1": "",
+            "btn_text1": "",
+            "btn_icon1": "",
+            "btn2": "",
+            "btn_text2": "",
+            "btn_icon2": ""
+          }
+        },
+        "recharge_subscriptions_subscription_widget_bPjMtM": {
+          "type": "shopify://apps/recharge-subscriptions/blocks/subscription-widget/371eed76-0b44-4869-9813-730372ea378e",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "custom_liquid_YDY98M": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"subscription active monthly\">\n    <div> \n       <div> \n        <h4 class=\"GBP\"> £60.00/month </h4>\n        <h4 class=\"euro\"> €59.99/month </h4>\n        <h3 class=\"GBP\"> £40.00/month </h3>\n        <h3 class=\"euro\"> €39.99/month </h3>\n        <p class=\"en\"> Tax included. Paid Monthly. </p>\n        <p class=\"german\"> Inklusive Steuer. Monatliches Abo. </p>\n        </div>\n         <div class=\"red_box\">\n         <p class=\"en\">Subscribe to <b> save 33% </b> <span> <b class=\"GBP\"> 1,33£ per serving! </b> <b class=\"euro\"> 1,33€ per serving! </b> </span></p>\n          <p class=\"german\">Abo abschließen und 33% sparen.  \n <span> <b class=\"GBP\"> 1,33£ pro Portion! </b> <b class=\"euro\"> 1,33€ pro Portion! </b> </span></p> </div>\n    </div>\n    <div>\n      <span class=\"pt\">\n      <p> <img src=\"https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Icon_1_15ac77bc-d3f8-4837-91de-aa6726746a98.png?v=1725862556\" /> <i class=\"en\"> Cycle guide </i> <i class=\"german\"> Zyklus-Ratgeber  </i></p>\n      <p> <img src=\"https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Icon_1_15ac77bc-d3f8-4837-91de-aa6726746a98.png?v=1725862556\" /> <i class=\"en\"> Exercise & nutrition recommendations </i> <i class=\"german\">Bewegungs- und Ernährungsempfehlungen  </i> </p>\n      <p> <img src=\"https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Icon_1_15ac77bc-d3f8-4837-91de-aa6726746a98.png?v=1725862556\" />  <i class=\"en\"> One-on-one doctor consultation</i> <i class=\"german\"> Persönliche Beratung durch Gesundheitsexperten </i> </p>\n      <p> <img src=\"https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Icon_1_15ac77bc-d3f8-4837-91de-aa6726746a98.png?v=1725862556\" />  <i class=\"en\"> 90-DAY money back guarantee</i> <i class=\"german\"> 90-TAGE Geld-zurück-Garantie</i> </p>   \n    <p>  <img src=\"https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Icon_1_15ac77bc-d3f8-4837-91de-aa6726746a98.png?v=1725862556\" />  <i class=\"en\">  Free Express Shipping </i> <i class=\"german\"> Kostenloser Expressversand </i> </p>    \n      <span>\n    </div>\n</div>\n\n<div class=\"subscription single-purchase\">\n    <div> \n        <div>\n        <h3 class=\"GBP\"> £60.00 </h3>\n        <h3 class=\"euro\"> €59.99 </h3>\n        <p class=\"en\"> Tax included. </p>\n        <p class=\"german\"> Inklusive Steuer. Einmaliger Kauf. </p>\n        </div>\n        <div class=\"red_box\"> <p class=\"en\"> <b class=\"GBP\"> 1,99£ per serving! </b> <b class=\"euro\"> 1,99€ per serving! </b> </p> <p class=\"german\"> <b class=\"euro\"> 1,99€ pro Portion! </b> <b class=\"GBP\"> 1,99£ pro Portion! </b></p> </div>\n    </div>\n    <div>\n    <span class=\"pt\">\n      <p> <img src=\"https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Icon_1_15ac77bc-d3f8-4837-91de-aa6726746a98.png?v=1725862556\" /> <i class=\"en\">  Single purchase </i> <i class=\"german\"> Einmaliger Kauf  </i> </p>\n<p><img src=\"https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Icon_1_15ac77bc-d3f8-4837-91de-aa6726746a98.png?v=1725862556\" /> <i class=\"en\"> Cycle guide</i> <i class=\"german\"> Zyklus-Ratgeber  </i> </p>\n      <p> <img src=\"https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Icon_1_15ac77bc-d3f8-4837-91de-aa6726746a98.png?v=1725862556\" /> <i class=\"en\">  Exercise & nutrition recommendations</i> <i class=\"german\"> Bewegungs- und Ernährungsempfehlungen  </i> </p>\n      <p> <img src=\"https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Icon_2_30f2a35a-d2c2-4ee0-b23b-0b2a23ffe7b8.png?v=1725862556\" /> <i class=\"en\"> One-on-one consultation</i> <i class=\"german\">Persönliche Beratung </i>  </p>\n  <p> <img src=\"https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Icon_2_30f2a35a-d2c2-4ee0-b23b-0b2a23ffe7b8.png?v=1725862556\" /> <i class=\"en\">  90-DAY money back guarantee </i> <i class=\"german\"> 90-TAGE Geld-zurück-Garantie</i> </p>  \n\n      </span>  \n    </div>\n</div>"
+          }
+        },
+        "buy_buttons_8ptAXB": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": false
+          }
+        },
+        "custom_liquid_NnNxKM": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<script>\n  window.addEventListener('load', function() {\n  var _learnq = window._learnq || [];\n  function addedToCart() {\n   fetch(`${window.location.origin}/cart.js`)\n   .then(res => res.clone().json().then(data => {\n    var cart = {\n      total_price: data.total_price/100,\n      $value: data.total_price/100,\n      total_discount: data.total_discount,\n      original_total_price: data.original_total_price/100,\n      items: data.items\n    }\n    if (item !== 'undefined') {\n      cart = Object.assign(cart, item)\n    }\n    if (klAjax) {\n       _learnq.push(['track', 'Added to Cart', cart]);\n       klAjax = false;\n      }\n   }))\n  };\n  (function (ns, fetch) {\n    ns.fetch = function() {\n      const response = fetch.apply(this, arguments);\n      response.then(res => {\n        if (`${window.location.origin}/cart/add.js`\n          .includes(res.url) && res.url !== '') {\n              addedToCart()\n        }\n      });\n      return response\n     }\n  }(window, window.fetch));\n  var klAjax = true;\n  var atcButtons = document.querySelectorAll(\"form[action*='/cart/add'] button[type='submit']\");\n  for (var i = 0; i < atcButtons.length; i++) { \n    atcButtons[i].addEventListener(\"click\", function() {\n      if (klAjax) {\n        _learnq.push(['track', 'Added to Cart', item]);\n        klAjax = false;\n      }\n    })\n  }\n  });\n</script>"
+          }
+        },
+        "image_text_hAwFMN": {
+          "type": "image-text",
+          "disabled": true,
+          "settings": {
+            "class_sec": "delivery",
+            "text_image_image": "shopify://shop_images/Shipping.svg",
+            "text_image": "<p>Free delivery to DE & UK</p>",
+            "text_image1": "<p>Skip a month or cancel any time</p>",
+            "text_image2": "",
+            "text_image3": "",
+            "text_image4": "",
+            "text_image5": "",
+            "text_image6": "",
+            "text_image7": "",
+            "text_image8": "",
+            "text_image9": "",
+            "text_image10": "",
+            "btn1": "",
+            "btn_text1": "",
+            "btn_icon1": "",
+            "btn2": "",
+            "btn_text2": "",
+            "btn_icon2": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "custom_liquid_rFBPyJ",
+        "automizely_product_reviews_product_page_star_widget_FKJEE7",
+        "rating",
+        "description_JBxcpn",
+        "image_text_6qWnUi",
+        "automizely_product_reviews_product_page_main_widget_wpVqB4",
+        "sticky_cart",
+        "image_text_aqqpMD",
+        "recharge_subscriptions_subscription_widget_bPjMtM",
+        "custom_liquid_YDY98M",
+        "buy_buttons_8ptAXB",
+        "custom_liquid_NnNxKM",
+        "image_text_hAwFMN"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".product__heading {font-weight: 500;}",
+        ".rc-widget {display: none !important;}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_position": "left",
+        "media_size": "medium",
+        "gallery_layout": "thumbnail_slider",
+        "image_ratio": "landscape",
+        "show_thumbnails": false,
+        "hide_variants": false,
+        "enable_image_zoom": true,
+        "enable_video_looping": true,
+        "mobile_image_ratio": "square",
+        "show_mobile_thumbnails": true,
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "1730556966706fff07": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true,
+        "show_divider": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1724932348294de745": {
+      "type": "apps",
+      "blocks": {
+        "recharge_subscriptions_subscription_widget_Q9F9qt": {
+          "type": "shopify://apps/recharge-subscriptions/blocks/subscription-widget/371eed76-0b44-4869-9813-730372ea378e",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "recharge_subscriptions_subscription_widget_Q9F9qt"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true,
+        "show_divider": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "show_divider": true,
+        "heading": "Discover our products",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "image_position": "center center",
+        "enable_image_fill": false,
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": true,
+        "show_quick_buy": false,
+        "enable_quick_view": true,
+        "enable_color_swatches": true,
+        "enable_countdown": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "discover_monthlies_7AHaFz": {
+      "type": "Discover-monthlies",
+      "blocks": {
+        "slide_nPAG9V": {
+          "type": "Slide",
+          "settings": {
+            "image": "shopify://shop_images/Iconsss.png",
+            "heading": "Hormonal balance*",
+            "dsc": "<p>Support <strong>natural hormone regulation</strong>, boosting daily vitality and resilience for cycle well-being.</p>",
+            "back_heading": "How?",
+            "back_dsc": "<p>*Formula contain <strong>B6 </strong>which contributes to regulation and maintenance of hormonal activity.</p>"
+          }
+        },
+        "slide_BDNgJ8": {
+          "type": "Slide",
+          "settings": {
+            "image": "shopify://shop_images/Icon_702fcb16-c23d-4104-87fd-1980998054d9.png",
+            "heading": "Menstrual pain support*",
+            "dsc": "<p>Powerful blend of ingredients to <strong>soften cramps, fatigue and discomfort*</strong> associated with your menstrual cycle.</p>",
+            "back_heading": "How?",
+            "back_dsc": "<p>*Formula contains <strong>B Blend, Lemon Balm, Turmeric, Iron, Magnesium</strong> that help reduce menstrual symptoms.</p>"
+          }
+        },
+        "slide_33jfxJ": {
+          "type": "Slide",
+          "settings": {
+            "image": "shopify://shop_images/Icons.png",
+            "heading": "Mood regulation*",
+            "dsc": "<p>Helps <strong>manage mood swings</strong> and <strong>restore </strong>your body's natural resilience.</p>",
+            "back_heading": "How?",
+            "back_dsc": "<p>*Formula contains <strong>Lemon Balm</strong> which contributes to emotional balance and general wellbeing.</p>"
+          }
+        },
+        "slide_AWtEUf": {
+          "type": "Slide",
+          "settings": {
+            "image": "shopify://shop_images/Iconss.png",
+            "heading": "Energy boost*",
+            "dsc": "<p>Vital nutrients and adaptogens to <strong>combat fatigue and enhance vitality</strong> at every phase of your cycle.</p>",
+            "back_heading": "How?",
+            "back_dsc": "<p>*Formula contains <strong>B1, B2,B3, B5, B6, B12, Vit C, Biotin</strong> which contribute to normal energy-yielding metabolism.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_nPAG9V",
+        "slide_BDNgJ8",
+        "slide_33jfxJ",
+        "slide_AWtEUf"
+      ],
+      "disabled": true,
+      "settings": {
+        "custom_class": "painkiller",
+        "Title": "",
+        "section_description": "Discover how our <strong>natural formula</strong> ingredients contribute to <strong>different benefits</strong>.",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "scrolling_promotion_mUxyWz": {
+      "type": "scrolling-promotion",
+      "blocks": {
+        "image_aPWBkW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Sun_Logo.png",
+            "height": 60,
+            "link": ""
+          }
+        },
+        "image_qQEaHn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Daily_Express_Logo.png",
+            "height": 40,
+            "link": ""
+          }
+        },
+        "announcement_UTydV3": {
+          "type": "announcement",
+          "settings": {
+            "icon": "none",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "text": "As Featured In:",
+            "text_size": 30,
+            "link": ""
+          }
+        },
+        "image_ricDwp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Mirror_Logo.png",
+            "height": 40,
+            "link": ""
+          }
+        },
+        "image_rTTCMW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Star_Logo.png",
+            "height": 40,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_aPWBkW",
+        "image_qQEaHn",
+        "announcement_UTydV3",
+        "image_ricDwp",
+        "image_rTTCMW"
+      ],
+      "settings": {
+        "direction": "left",
+        "speed": 1.6,
+        "show_divider": false,
+        "use_custom_colors": false,
+        "colors_icon": "#ffffff",
+        "colors_text": "#1a1b18",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "product_faqnw_Q9aDqy": {
+      "type": "product_faqnw",
+      "blocks": {
+        "left_mn7V8h": {
+          "type": "left",
+          "settings": {
+            "acc_id1": "descriptions",
+            "accordion_heading1": "Why take monthlies?",
+            "dsc1": "<ul><li><strong>Wondering \"why do I get pain?\" <br/></strong>Period pain, also known as dysmenorrhea, is normally caused by prostaglandins - hormone-like chemicals found all over the body. The prostaglandins in the female reproductive tract help to regulate ovulation, menstruation, and labor. Prostaglandins cause the muscles of the uterus to contract - and this causes the pain you experience just before, and during your period. Those who have more prostaglandins usually experience more period pain. <strong>You can lower it by supporting your body with nutrient supplementation, diet, and lifestyle changes, thus improving your period pain for good! </strong> </li></ul><p></p><ul><li><strong>Factors Contributing:</strong> In today’s world, we are faced with heightened stress, hormone-disrupting chemicals, and nutrient-depleted food - f<strong>actors that can contribute to hormonal imbalances causing period pain and related symptoms </strong>such as cramps, bloating, mood swings, low energy, etc. </li><li>When pain begins, it's often too late to act naturally; which is why women have traditionally turned to painkillers that offer <strong>only</strong> temporary relief. <strong>We, however, refuse to accept that women should rely on quick fixes for life—or that menstrual pain should be seen as \"normal</strong>\". Our goal was to create a natural solution that addresses the root causes, offering long-term relief and empowering women to take control of their cycle and invest in their next period. </li></ul><p>Healthy hormones require a steady supply of essential nutrients, along with supportive lifestyle habits, to function at their best.<strong> That's why, after treating over 500 women and observing menstrual issues for over 10 years, our health experts </strong>came together to create monthlies— a supplement tailored to replenish nutrient stores, support hormone balance, address menstrual symptoms, and promote overall well-being. </p><p><strong>monthiles, a combination of 26+ ingredients with a carefully selected blend of vitamins, minerals, plant extracts, and nutrients, focused on addressing period pain and hormonal health from all angles, </strong>encouraging women to stop normalising period pain and PMS.  <br/></p>"
+          }
+        },
+        "left_p6Eh8w": {
+          "type": "left",
+          "settings": {
+            "acc_id1": "How to take it",
+            "accordion_heading1": "How to take it",
+            "dsc1": "<p>Taking monthlies is simple and convenient. Add one scoop (7.4 grams) to 300ml of water or your favourite beverage once a day.</p><p>For optimal results, we <strong>recommend taking it in the morning, ideally with food,</strong> as it can provide a gentle energy boost that supports you through your day. monthlies has a naturally pleasant taste, so water works perfectly! </p><p><strong>Taking it daily can help build nutrient reserves in the body and deliver the best benefits across your cycle.  </strong></p><p>Although you will see results after just weeks, waiting three months for full product effects is essential because hormones work through intricate feedback loops and need time to adapt to changes. Female hormones typically operate on monthly cycles, so it can take two to three cycles for your body to adjust fully to any new hormonal pattern. </p>"
+          }
+        },
+        "left_XkhVmH": {
+          "type": "left",
+          "settings": {
+            "acc_id1": "what-makes-it-different",
+            "accordion_heading1": "What makes it different?",
+            "dsc1": "<p>Women of reproductive age often need a range of <strong>essential nutrients to maintain hormonal balance and general wellness</strong>, yet clinical data shows that many adult women are deficient in key nutrients like Folate, Choline, Vitamin D, and Iron. monthlies not only helps replenish these critical nutrients, but also includes a blend of clinically-backed ingredients such as Ginger, Zinc, Chormium, Choline, Vitamin B6, Calcium, Inositol, Turmeric, Lemon Balm to support menstrual health. </p><p>monthlies is a one-of-a-kind supplement solution, specifically designed to support your menstrual cycle and overall health. </p><p>This powerful formula is crafted to support menstrual pain and other symptoms, reduce stress, improve sleep, boost energy, improve mood, support blood sugar regulation, support digestion, enhance skin and hair health giving you comprehensive care in one supplement*. </p><p> Even more reasons to choose monthlies! </p><ul><li><span style=\"text-decoration:underline\">All you need: </span>26+ ingredients combined in 1 scoop per day, so no need to invest in multiple supplements for the same benefits </li><li><span style=\"text-decoration:underline\">Highly absorbable ingredients</span>: We used vitamins like Folate, B6, B12 in their active (methylated) forms for superior absorption and quality </li><li><span style=\"text-decoration:underline\">Superior sourcing:</span> We have partnered with UK labs that have transparent and trusted sourcing </li><li><span style=\"text-decoration:underline\">CGMP Certified: </span>We only work with CGMP certified supplier and manufacturers </li><li><span style=\"text-decoration:underline\">Natural ingredients:</span> We strive to always use natural ingredients with as little additives as possible </li><li><span style=\"text-decoration:underline\">Designd by experts: </span>Created by a diverse team of female health experts with 10+ years of clinical knowledge and experience of helping over 500 women </li><li><span style=\"text-decoration:underline\">Science meets clinical expertise: </span>Our formula merges science-backed ingredients with clinical expert knowledge </li><li><span style=\"text-decoration:underline\">Third- party tested:</span> for all dietary preferences: vegan, dairy- free, nut-free, gluten-free </li></ul>"
+          }
+        },
+        "right_w3eznD": {
+          "type": "right",
+          "settings": {
+            "acc_id": "isthisproductforme",
+            "accordion_heading": "How does the formula work?",
+            "dsc": "<p>We, at monthlies, understand that menstrual pain is often caused by a range of factors that disrupt hormone balance. That’s why, our supplement works from within, replenishing essential nutrients with highly<br/>absorbable ingredients, so your body can use them to the fullest. </p><p>It includes <strong>key nutrients and plant extracts that support natural processes to tackle inflammation, optimise hormone metabolism, and promote efficient hormone elimination*.</strong></p><p><br/>Together, these elements help balance hormones and ease common menstrual symptoms - leading to a smoother, more comfortable cycle. <br/><br/>Plus, <strong>monthlies’ holistic formula supports overall health, enhancing skin, hair, mood, and energy levels* — helping you feel your best every day.</strong></p>"
+          }
+        },
+        "right_4JyJAQ": {
+          "type": "right",
+          "settings": {
+            "acc_id": "direction",
+            "accordion_heading": "Directions",
+            "dsc": "<ul><li>Mix 1 scoop (7.4 grams) of monthlies powder in 300ml of water or liquid of choice.  </li><li>We recommend taking this product in the morning with food </li><li>We recommend taking this product for 3 months to see full results </li><li>Do not exceed the recommended daily dose  </li><li>Safe for all stages of life: menstruation, perimenopause, menopause </li><li>Food supplements should not be used as a substitute for a balanced diet and healthy lifestyle </li><li>This product is not recommended for children, pregnant or breastfeeding women </li><li>If you are taking a medication, have a thyroid condition, or under the super medical supervision, please speak with your doctor before using monthlies  </li><li>Speak to your doctor before taking monthlies if you are taking the birth control pill or any other medication </li><li>Store in a cool dry place away from moisture and direct sunlight </li><li>Keep out of reach of children </li><li>Do not use if the seal is broken or if the bottle has been opened  </li><li>This product contains 30 servings per bottle, a 1-month supply </li></ul><p> </p>"
+          }
+        },
+        "right_fmXVBa": {
+          "type": "right",
+          "settings": {
+            "acc_id": "benefits",
+            "accordion_heading": "Benefits",
+            "dsc": "<p>We recognise that the menstrual cycle affects much more than just period pain. It influences everything from sleep and digestion to mood, energy, and skin. That’s why we created a product that not only helps with symptoms but also supports your body’s natural processes, reduces period discomfort, and enhances overall health. </p><p>Here are some key benefits of our formula, along with the ingredients that make it possible: </p><ul><li><strong>Hormone Support: Vitamin </strong>B6 </li><li><strong>Energy Production</strong>: Magnesium, B Vitamins, and Iron </li><li><strong>Anti-Inflammatory</strong>: Turmeric </li><li><strong>Mood</strong>: Lemon Balm, B6 </li><li><strong>Digestion</strong>: Aniseed </li><li><strong>Sleep</strong>: Lemon Balm </li><li><strong>Blood Sugar Support</strong>: Chromium </li><li><strong>Skin, Hair and Nail: </strong>Vitamin A, Vitamin C, Biotin, and Zinc </li><li><strong>Immune Health:</strong> Vitamin A, Vitamin C, Selenium, Zinc </li></ul><p> </p><p>Our formula comes in a delicious tropical-flavored powder that easily mixes with water. </p><p>Why choose powder? To include all these potent ingredients in capsules, you'd need to take around 16 every day! The powder medium allows us to deliver a holistic solution that supports your entire body, rather than just masking symptoms like a painkiller. </p><p> </p><p>Alongside our powerful formula, we provide hormone education, personalised nutrition guidance, and practical lifestyle tips to help support your body’s journey to a healthier period. Our goal is to empower you to take control of your hormonal health, experience lasting changes, and feel your best every day. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "left_mn7V8h",
+        "left_p6Eh8w",
+        "left_XkhVmH",
+        "right_w3eznD",
+        "right_4JyJAQ",
+        "right_fmXVBa"
+      ],
+      "settings": {
+        "heading": "",
+        "custom_class": "Product-detail-faq"
+      }
+    },
+    "image_collaps_tab_4JPKBc": {
+      "type": "image-collaps-tab",
+      "blocks": {
+        "collapsible_row_GUNBaT": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Crafted with Care, Backed by Science.",
+            "row_content": "<p>We design every product with female health experts, using research-driven formulation to meet your unique needs. Our approach prioritises safety, effectiveness, and innovation.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_jjgRrw": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Clean and Natural Ingredients",
+            "row_content": "<p>Our supplement is made with only natural, premium ingredients in their high absorbable format. It’s vegan, gluten-free, soy-free, lactose-free, and free from artificial colours and flavours—providing pure nourishment without compromise.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_YPTdfg": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Quality You Can Trust",
+            "row_content": "<p>Proudly manufactured in the UK, in a GMP-certified facility, and third-party tested for purity and safety. Every step reflects our commitment to excellence and transparency.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_GUNBaT",
+        "collapsible_row_jjgRrw",
+        "collapsible_row_YPTdfg"
+      ],
+      "settings": {
+        "custom_class": "uk",
+        "open_first_collapsible_row": false,
+        "narrow": false,
+        "show_divider": false,
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "left_image": "shopify://shop_images/mothlies-bottle-with-logos.png",
+        "mobile_img": "shopify://shop_images/mothlies-bottle-with-logos.png",
+        "heading1": "Setting Standards <strong>for Better Health</strong>",
+        "link1": "",
+        "linktext1": "",
+        "linkicon1": "",
+        "link2": "",
+        "linktext2": "",
+        "linkicon2": "",
+        "padding_top": 80,
+        "padding_bottom": 4
+      }
+    },
+    "image_with_collapsible_content_ALJMYJ": {
+      "type": "image-with-collapsible-content",
+      "blocks": {
+        "collapsible_row_K7YK8f": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Crafted with Care, Backed by Science.",
+            "row_content": "<p>We design every product with female health experts, using research-driven formulation to meet your unique needs. Our approach prioritises safety, effectiveness, and innovation.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_eiezNm": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Clean and Natural Ingredients",
+            "row_content": "<p>Our supplement is made with only natural, premium ingredients in their high absorbable format. It’s vegan, gluten-free, soy-free, lactose-free, and free from artificial colours and flavours—providing pure nourishment without compromise.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_geyRWw": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Quality You Can Trust",
+            "row_content": "<p>Proudly manufactured in the UK, in a GMP-certified facility, and third-party tested for purity and safety. Every step reflects our commitment to excellence and transparency.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_K7YK8f",
+        "collapsible_row_eiezNm",
+        "collapsible_row_geyRWw"
+      ],
+      "disabled": true,
+      "settings": {
+        "custom_class": "",
+        "open_first_collapsible_row": false,
+        "narrow": false,
+        "show_divider": false,
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "left_image": "shopify://shop_images/mothlies-bottle-with-logos.png",
+        "heading1": "Setting Standards <strong>for Better Health</strong>",
+        "link1": "",
+        "linktext1": "",
+        "linkicon1": "",
+        "link2": "",
+        "linktext2": "",
+        "linkicon2": "",
+        "padding_top": 80,
+        "padding_bottom": 0
+      }
+    },
+    "why_powder_accordions_4drMDW": {
+      "type": "why-powder-accordions",
+      "blocks": {
+        "faq_RXwmRh": {
+          "type": "faq",
+          "settings": {
+            "acc_id": "",
+            "icon_round": "shopify://shop_images/Lemon_Balm.png",
+            "accordion_heading": "Lemon Balm",
+            "small_description": "<p>An ancient aromatic herb prized for its calming and antispasmodic properties.</p>",
+            "dsc": "<ul><li>An ancient aromatic herb prized for its calming and antispasmodic properties, Lemon Balm has been scientifically proven to reduce mild anxiety symptoms by up to 36% .</li><li>Its ability to <strong>alleviate menstrual cramps and bloating</strong> makes it a powerful natural remedy for period pain.</li><li> It also improves mood, digestion, and cognitive function, providing holistic support during PMS and beyond.</li></ul>"
+          }
+        },
+        "faq_qhdrjA": {
+          "type": "faq",
+          "settings": {
+            "acc_id": "",
+            "icon_round": "shopify://shop_images/Inositol.png",
+            "accordion_heading": "Inositol",
+            "small_description": "<p>A carbohydrate essential for hormonal balance, cell signalling, and metabolic health.</p>",
+            "dsc": "<ul><li>A carbohydrate essential for hormonal balance, cell signalling, and metabolic health, Inositol plays a vital role in improving ovarian health and menstrual regularity. Extensively studied for its effectiveness in individuals with PCOS, it <strong>reduces androgen levels, enhances ovulatory function, and shortens irregular cycle lengths.</strong></li><li>Research has shown Inositol can even outperform Metformin in improving hormonal balance and insulin sensitivity, making it a safe and natural solution for restoring menstrual health and alleviating cycle-related symptoms.</li></ul>"
+          }
+        },
+        "faq_RkpaTV": {
+          "type": "faq",
+          "settings": {
+            "acc_id": "",
+            "icon_round": "shopify://shop_images/Broccoli.png",
+            "accordion_heading": "Broccoli Seed Extract",
+            "small_description": "<p>Derived from nutrient-rich broccoli sprouts, this ingredient is packed with glucoraphanin, a precursor to sulforaphane.</p>",
+            "dsc": "<ul><li>Derived from nutrient-rich broccoli sprouts, this ingredient is packed with glucoraphanin, a precursor to sulforaphane. Sulforaphane supports liver detoxification by enhancing the metabolism and excretion of excess hormones, reducing estrogen dominance, and alleviating PMS symptoms.</li><li>With its <strong>strong anti-inflammatory and antioxidant effects</strong>, studies show it can reduce oxidative stress by 60-70%, making it essential for balancing hormones and supporting overall well-being.</li></ul>"
+          }
+        },
+        "faq_F9bEW9": {
+          "type": "faq",
+          "settings": {
+            "acc_id": "",
+            "icon_round": "shopify://shop_images/Flaxseeds.png",
+            "accordion_heading": "Flaxseed",
+            "small_description": "<p>Rich in phytoestrogens (lignans) and omega-3 fatty acids, Flaxseed helps balance estrogen levels.</p>",
+            "dsc": "<ul><li>Rich in phytoestrogens (lignans) and omega-3 fatty acids, Flaxseed <strong>helps balance estrogen levels to ease symptoms of PMS, PCOS, and menopause.</strong></li><li>The omega-3s reduce inflammation and support hormone production, while its high fiber content promotes bowel regularity and aids in the excretion of excess hormones.</li><li>Studies have shown regular flaxseed consumption can reduce hot flashes by up to 57%, making it a cornerstone for long-term hormonal health and comfort.</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_RXwmRh",
+        "faq_qhdrjA",
+        "faq_RkpaTV",
+        "faq_F9bEW9"
+      ],
+      "settings": {
+        "custom_class": "reverse",
+        "second_heading": "Your <strong>journey </strong>towards a pain-free period.",
+        "button_lab1": "For references and/or sources, see the clinical studies",
+        "btn_icon1": "<svg width=\"18\" height=\"18\" viewbox=\"0 0 18 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M7.46154 3H1V17H15V10.5385\" stroke=\"#CB342C\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M8 10L17 1M17 1H11M17 1V7\" stroke=\"#CB342C\" stroke-width=\"1.5\" stroke-linecap=\"round\"></path>\n</svg>",
+        "button_url1": "https://cdn.shopify.com/s/files/1/0708/7462/8371/files/studies_final.pdf?v=1731106438",
+        "image_ratio": "landscape",
+        "image_position": "center center",
+        "text_alignment": "left",
+        "show_divider": false,
+        "heading": "It’s not magic, it's <strong>science.</strong>",
+        "description": "Healthy hormones require a steady supply of essential nutrients to function at their best. <strong>Learn how our science-backed ingredients work.</strong>",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "min_count": "30",
+        "mid_count": "60",
+        "max_count": "90",
+        "count": "30",
+        "title1": "<p>Experience the progress</p>",
+        "text1": "<p><strong>In 30 days</strong>, you'll start noticing the powder's impact, with <strong> </strong>boosted energy and a gentle uplift in your mood.</p>",
+        "title2": "<p>Unleash inner vitality</p>",
+        "text2": "<p>In 60-days, you see <strong>tangible results:</strong> menstrual symptoms are mitigated, skin gains a healthy radiance, and smoothed out period-related bloating and water retention.</p>",
+        "title3": "<p>Thrive in harmony</p>",
+        "text3": "<p>In 90 days, <strong> you’ll feel reduced discomfort, and will enjoy </strong> a more regular cycle, heightened vitality and performance, radiant skin, and stable moods.</p>",
+        "mobile_text_alignment": "left",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "why_powder_VbAN7k": {
+      "type": "why-powder",
+      "blocks": {
+        "column_xmnLLH": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "title_size": "h3",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "column_xmnLLH"
+      ],
+      "disabled": true,
+      "settings": {
+        "custom_class": "reverse",
+        "second_heading": "Your monthlies <strong>journey.</strong>",
+        "image_ratio": "adapt",
+        "image_position": "center center",
+        "text_alignment": "left",
+        "show_divider": false,
+        "heading": "It’s not magic, it`s <strong>science</strong><em>.</em>",
+        "description": "Healthy hormones require a steady supply of essential nutrients, along with supportive lifestyle habits, to function at their best.               That's why, <strong>after treating over 500 women and observing menstrual issues for over 10 years,</strong> our clinicians came together to create monthlies— a supplement tailored to replenish nutrient stores, support hormone balance, address menstrual symptoms, and promote overall well-being.",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "min_count": "30",
+        "mid_count": "60",
+        "max_count": "90",
+        "count": "30",
+        "title1": "<p>Experience the progress</p>",
+        "text1": "<p><strong>In 30 days</strong>, you'll start noticing the powder's impact, with <strong> </strong>boosted energy and a gentle uplift in your mood.</p>",
+        "title2": "<p>Unleash inner vitality</p>",
+        "text2": "<p>In 60-days, you see <strong>tangible results:</strong> menstrual symptoms are mitigated, skin gains a healthy radiance, and you get balanced energy.</p>",
+        "title3": "<p>Thrive in harmony</p>",
+        "text3": "<p>In 90 days, <strong> you’ll feel reduced discomfort, and will enjoy </strong> a more regular cycle, heightened vitality and performance, radiant skin, and stable moods.</p>",
+        "de_title1": "<p>Spüre die Verbesserung</p>",
+        "de_text1": "<p><strong>Nach 30 Tagen</strong> wirst du die Wirkung des Pulvers erstmals spüren: mehr Energie und eine leichte Stimmungsaufhellung.</p>",
+        "de_title2": "<p>Entfessle innere Vitalität</p>",
+        "de_text2": "<p>In 60 Tagen wirst du spürbare <strong>Veränderungen bemerken: </strong>Menstruationsbeschwerden sind gelindert, deine Haut strahlt gesund und deine Energie ist ausgeglichen.</p>",
+        "de_title3": "<p>Blühe in Harmonie auf</p>",
+        "de_text3": "<p>In 90 Tagen wirst du dich über einen regelmäßigeren Zyklus, mehr Vitalität und Leistungsfähigkeit, strahlende Haut und ausgeglichene Stimmung freuen.</p>",
+        "mobile_text_alignment": "left",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_AiWN47": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_7WxYyz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/4.3_2.png",
+            "title": "Monthlies",
+            "title_size": "h3",
+            "text": "<ul><li><strong>Tackles root cause</strong>, offering <em>lasting results</em></li><li><strong>Natural</strong> ingredients</li><li><strong>Beyond period pain</strong><br/><em>(e.g. bloating, skin, mood balance)</em></li><li><strong>Sustainable results</strong> after 90-day regimen</li><li><strong>No side effects</strong></li></ul><p></p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "column_TAQaD3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/unsplash_hw7vFngTqNk_f86d4900-8e56-4bb4-ac51-fd423e640080.png",
+            "title": "Pain killers",
+            "title_size": "h3",
+            "text": "<ol><li><strong>Temporary</strong> numbness</li><li><strong>Not natural</strong></li><li>Targets <strong>only pain</strong></li><li><strong>Short term</strong> solution</li><li>Potential <strong>side effects</strong></li></ol>",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "column_7WxYyz",
+        "column_TAQaD3"
+      ],
+      "settings": {
+        "custom_class": "no_pain",
+        "image_ratio": "adapt",
+        "image_position": "center center",
+        "text_alignment": "left",
+        "show_divider": false,
+        "heading": "Say <strong>No</strong> to Painkillers:",
+        "description": "<p>Discover the power of <strong>our</strong> <strong>natural</strong> <strong>solution</strong>.</p>",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "mobile_text_alignment": "left",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "health_expert_HamgKV": {
+      "type": "health-expert",
+      "blocks": {
+        "column_VGdKzA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group_51c61ace-f92c-4c03-89a7-e0900be94aeb.png",
+            "title": "Dr. Ashley Florestal, ND",
+            "title_size": "h3",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "column_P6eBzJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Image_1_e286a779-ad68-4924-b755-3087d82765ea.png",
+            "title": "Dr.  Maria Obando, MD",
+            "title_size": "h3",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "column_bC8gEc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Geneva_rounded.png",
+            "title": "Dr. Geneva Carrington, ND",
+            "title_size": "h3",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "column_rWxdyk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group_7c446263-c740-4377-ab80-d2ea2f2ab069.png",
+            "title": "Melissa Mastroberardino, RHN",
+            "title_size": "h3",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "column_PPhaLA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group_f7bd1080-63b8-4edd-908d-bd703b73708d.png",
+            "title": "Dr. Cassandra Paiano, BSc,ND",
+            "title_size": "h3",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "column_VGdKzA",
+        "column_P6eBzJ",
+        "column_bC8gEc",
+        "column_rWxdyk",
+        "column_PPhaLA"
+      ],
+      "settings": {
+        "products_to_show": 5,
+        "custom_class": "health_expert product_health_team",
+        "image_ratio": "landscape",
+        "image_position": "center center",
+        "text_alignment": "left",
+        "show_divider": false,
+        "heading": "Meet our <em>women’s health</em> team.",
+        "description": "",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "mobile_text_alignment": "left",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "review_FqHYHr": {
+      "type": "review",
+      "blocks": {
+        "reviews_dcMbcp": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>I’ve been using Monthlies and am beyond impressed. For years, I thought period pain was something I had to live with—it disrupted my life so much that even basic tasks felt impossible. Now, not only is the pain completely gone, but I also feel more energized, sleep better, and notice improved performance in my daily life. It’s amazing to finally live without suffering. Highly recommend!</p>",
+            "name": "Claudia",
+            "age": "28"
+          }
+        },
+        "reviews_JiByER": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>Would strongly recommend! I'm just finishing my second month and I can only say that my symptoms have reduced dramatically. After quitting my birth control pills, my pain got back and i needed to take painkillers all the time. To be honest, i completely lost the faith that something else could help. I can only say, very worth the price. Thanks monthlies for bringing my life back!</p>",
+            "name": "Elizabeta",
+            "age": "33"
+          }
+        },
+        "reviews_eq74Ef": {
+          "type": "reviews",
+          "settings": {
+            "rating": "4",
+            "dsc": "<p>My period has now started and it has been the least painful and least messy one I've had in years - I had no pms symptoms to the point I was wondering if my period was even coming! I had some very mild cramping, that was only noticeable because I wasn't doing anything and then took half an aspirin the next day for a little bit of a backache. I'm very happy right now. </p>",
+            "name": "Victoria",
+            "age": ""
+          }
+        },
+        "reviews_JdNQNg": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>1 month trying Monthlies and I still have some minor symptoms, but the energy boost was mind blowing</p>",
+            "name": "Jessica",
+            "age": ""
+          }
+        },
+        "reviews_ga6jMB": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>Experienced heavy period pain for a couple of years now. Monthlies has helped me to reduce the physical strain of my periods. My hair and nails are fuller. </p>",
+            "name": "Rachel",
+            "age": ""
+          }
+        },
+        "reviews_XN8WAL": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>A total Game-Changer for My Cycle!</p><p>I can’t say enough good things about Monthlies! After just a few weeks of taking this supplement, I’ve noticed a significant improvement in how I feel during my cycle. The cramps that used to keep me curled up on the couch are now much more manageable, and the bloating I dreaded every month has drastically reduced.<br/><br/>One of the things I love most is the natural formula. It feels great knowing I’m putting high-quality ingredients into my body, and it’s clear that a lot of thought went into creating something so effective. I also feel more balanced overall—fewer mood swings and way more energy, even during my toughest days.<br/><br/>If you struggle with any of the usual period symptoms, Monthlies is worth a try. It’s become an essential part of my routine, and I can’t imagine going through a cycle without it now!</p>",
+            "name": "Maria",
+            "age": "29"
+          }
+        },
+        "reviews_mYyedc": {
+          "type": "reviews",
+          "settings": {
+            "rating": "Johanna",
+            "dsc": "<p>I've been taking the powder for 2 weeks now, I feel energised and my cramps are still there but so much less painful</p>",
+            "name": "",
+            "age": ""
+          }
+        },
+        "reviews_GPWjeq": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>Amazing!</p><p>This has improved my energy levels and makes me ready to start the day. Bloating and cramps has reduced as well. I will not go back to tablets again 😊</p>",
+            "name": "Audrey",
+            "age": ""
+          }
+        },
+        "reviews_j7MQ3K": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>I've been using monthlies every morning for about a month now and I'm already seeing great results! I have been looking for something for my hormonal health for a long time as I suffer a lot from period pains. These have already reduced significantly and I generally have a lot more energy in everyday life. A plus point is also my skin, which has improved a lot. All in all a great product and highly recommended!</p>",
+            "name": "Karys",
+            "age": ""
+          }
+        },
+        "reviews_GTr7Np": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>Really informative and explains a lot of the symptoms I feel every month! I've been using monthlies for over 2 months now and have seen a huge reduction in symptoms around my period. This guide explains why really well. </p>",
+            "name": "customer",
+            "age": ""
+          }
+        },
+        "reviews_rPVt7j": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>This product is one of the best I’ve tried! Compared to all the other brands I’ve tried, the smell is lovely and the taste is a lot better. Delivery was super quick too. I’d highly recommend it.</p>",
+            "name": "Monifah",
+            "age": ""
+          }
+        },
+        "reviews_m7m3wg": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>It really works!<br/>I've been taking monthlies for just over a month now and even outside of my period I feel less bloated and have more energy during the day. During my period I normally get very painful cramps and bad skin breakouts but with monthlies I didn't experience any this month! It was so refreshing to not have to constantly take ibuprofen to function. It's also one of the best tasting supplements I've had. I'd definitely recommend this product to anyone who experiences painful and annoying period symptoms.</p>",
+            "name": "Megan",
+            "age": "27"
+          }
+        },
+        "reviews_ETQVeG": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>Bin sehr zufrieden damit</p><p>Ich hatte lange mit starken Menstruationsschmerzen zu kämpfen, die mich sehr eingeschränkt haben. Mit Monthlies, sind die Beschwerden deutlich erträglicher, und ich fühle mich wieder viel besser. Dieses Produkt hat mein Leben während der Periode viel leichter gemacht. Absolut empfehlenswert!</p>",
+            "name": "C. Ionita",
+            "age": "31"
+          }
+        },
+        "reviews_G4Rd4b": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>Ich habe so vieles gegen meine Periodenschmerzen probiert, aber nichts hat wirklich geholfen – bis ich Monthlies entdeckt habe. Das Produkt wirkt unglaublich gut, und die gesamte Erfahrung war top: schnelle Lieferung, tolles Packaging und eine super persönliche Beratung. Es macht endlich einen echten Unterschied, und ich bin so dankbar dafür. Absolute Empfehlung!</p>",
+            "name": "Bea",
+            "age": "28"
+          }
+        },
+        "reviews_CXVMYW": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>I’m in the first month and I noticed my hair is in a better than ever, it is growing and glowing. Also, my nails are the strongest they have been in years.I can also tell I feel more energized and I am sleeping better. Now looking forward to the next weeks I am confident I will notice other benefits connected to my cycle.</p>",
+            "name": "Mariana",
+            "age": ""
+          }
+        },
+        "reviews_LNLaJQ": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>This supplement has significantly improved my quality of life. The biggest benefits for me are 1) reduction in bloating 2) stabilized mood, and 3) less hair loss. Overall I now feel more physically balanced. Many thanks, Monthlies!</p>",
+            "name": "Louise",
+            "age": ""
+          }
+        },
+        "reviews_JdYUbJ": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<h6>Had to give it a try! Never knew a natural AND powerful alternative like this even existed</h6><p>I honestly find it pretty shocking how much my cycle affects everyday life... During my period, I end up taking so many ibuprofen, which I know isn’t great.<br/><br/>I came across Monthlies and didn’t even know there was a natural alternative. Had to give it a try since it’s not only supposed to help with my pain, but also boost energy (which is great, especially since I do a lot of sports) and more 👀. I love that it's a brand run by women who really get it 🙏🏼.<br/><br/>I’ve been using the powder for about a week and a half, so I can’t give a full review yet (will update after the three months). But so far, the delivery was fast, the packaging is really nice and feels premium, and the taste is great. I actually look forward to my daily morning routine and I'm really curious to see how to goes :)</p>",
+            "name": "Sarah",
+            "age": "28"
+          }
+        },
+        "reviews_Cnag9A": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>Great product, you immediately make something for yourself; the packaging of both the bottle and the package is very pretty and packed with a lot of attention</p>",
+            "name": "Viktoria",
+            "age": ""
+          }
+        },
+        "reviews_TAmCKc": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>Finally sth that works. And I love the Consulting options.</p>",
+            "name": "Beate",
+            "age": ""
+          }
+        },
+        "reviews_nQCgwt": {
+          "type": "reviews",
+          "settings": {
+            "rating": "4",
+            "dsc": "<p>After three months of Monthlies powder I feel energized, less bloated and ready to keep going</p>",
+            "name": "Alexandra",
+            "age": "37"
+          }
+        },
+        "reviews_Q7V8iT": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>Thank you. monthlies!<br/>This supplement has significantly improved my quality of life. The biggest benefits for me are 1) reduction in bloating 2) stabilized mood, and 3) less hair loss. Overall I now feel more physically balanced. Many thanks, Monthlies!</p>",
+            "name": "Louise W.",
+            "age": "31"
+          }
+        },
+        "reviews_MK3neF": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>\"Monthlies has truly been a game changer. It’s been 1 month and I feel that my energy levels have gone really up\"</p>",
+            "name": "Mel",
+            "age": "29"
+          }
+        },
+        "reviews_EhrXEN": {
+          "type": "reviews",
+          "settings": {
+            "rating": "4",
+            "dsc": "<p>\"1 month trying Monthlies and I still have some minor symptoms, but the energy boost was mind blowing\"</p>",
+            "name": "Jessica",
+            "age": "36"
+          }
+        },
+        "reviews_hUCYJ7": {
+          "type": "reviews",
+          "settings": {
+            "rating": "4",
+            "dsc": "<p>\"1 month trying Monthlies and I still have some minor symptoms, but the energy boost was mind blowing\"</p>",
+            "name": "Jessica",
+            "age": "36"
+          }
+        },
+        "reviews_39RHBB": {
+          "type": "reviews",
+          "settings": {
+            "rating": "4",
+            "dsc": "<p>\"I've been taking the powder for 2 weeks now, I feel energised and my cramps are still there but so much less painful.\"</p>",
+            "name": "Johanna",
+            "age": "43"
+          }
+        },
+        "reviews_fJQjxx": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>\"I cannot express how IMPRESSED I am about my period pain reduction.\"</p>",
+            "name": "Maria",
+            "age": "29"
+          }
+        },
+        "reviews_qariRL": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>\"Thoroughly impressed! From the moment I received the package, I knew I was in for a treat.\"</p>",
+            "name": "Mia",
+            "age": "42"
+          }
+        },
+        "reviews_iLtPJp": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>\"I took Monthlies for one month and my physical symptoms were significantly reduced.\"</p>",
+            "name": "Morganne",
+            "age": "46"
+          }
+        },
+        "reviews_q34rya": {
+          "type": "reviews",
+          "settings": {
+            "rating": "4",
+            "dsc": "<p>\"At first I was sceptical, but after just two months, my period has been more manageable\"</p>",
+            "name": "Naira",
+            "age": "32"
+          }
+        },
+        "reviews_3w3A6R": {
+          "type": "reviews",
+          "settings": {
+            "rating": "4",
+            "dsc": "<p>\"Just 1 day of period pain instead of 4 and way less disturbing during the day! Incredibly happy :)\"</p>",
+            "name": "Robin",
+            "age": "22"
+          }
+        },
+        "reviews_yynpnm": {
+          "type": "reviews",
+          "settings": {
+            "rating": "4",
+            "dsc": "<p>\"Thanks to Monthlies, I no longer feel held back. I’ve never felt better.\"</p>",
+            "name": "Stefanie",
+            "age": "44"
+          }
+        }
+      },
+      "block_order": [
+        "reviews_dcMbcp",
+        "reviews_JiByER",
+        "reviews_eq74Ef",
+        "reviews_JdNQNg",
+        "reviews_ga6jMB",
+        "reviews_XN8WAL",
+        "reviews_mYyedc",
+        "reviews_GPWjeq",
+        "reviews_j7MQ3K",
+        "reviews_GTr7Np",
+        "reviews_rPVt7j",
+        "reviews_m7m3wg",
+        "reviews_ETQVeG",
+        "reviews_G4Rd4b",
+        "reviews_CXVMYW",
+        "reviews_LNLaJQ",
+        "reviews_JdYUbJ",
+        "reviews_Cnag9A",
+        "reviews_TAmCKc",
+        "reviews_nQCgwt",
+        "reviews_Q7V8iT",
+        "reviews_MK3neF",
+        "reviews_EhrXEN",
+        "reviews_hUCYJ7",
+        "reviews_39RHBB",
+        "reviews_fJQjxx",
+        "reviews_qariRL",
+        "reviews_iLtPJp",
+        "reviews_q34rya",
+        "reviews_3w3A6R",
+        "reviews_yynpnm"
+      ],
+      "settings": {
+        "title": "Don’t take our word for it, <strong>take hers!</strong>",
+        "link": "shopify://pages/experiences",
+        "btn": "",
+        "class": "review-home-sec right-radius"
+      }
+    },
+    "multicolumn_UWAWLP": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_fkMzmB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group_bc109ec9-ed36-40e5-8879-83fea9994add.png",
+            "title": "",
+            "title_size": "h3",
+            "text": "",
+            "button_label": "16 Capsules",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "column_UQcRKM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group_ac0872ea-7fc5-445f-aa4c-bd275738d94a.png",
+            "title": "",
+            "title_size": "h3",
+            "text": "",
+            "button_label": "1 Scoop",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "column_fkMzmB",
+        "column_UQcRKM"
+      ],
+      "settings": {
+        "custom_class": "new_powder_section",
+        "image_ratio": "landscape",
+        "image_position": "center center",
+        "text_alignment": "center",
+        "show_divider": false,
+        "heading": "<em>Why </em>a powder <em>?</em>",
+        "description": "<p>To fit all of our amazing ingredients in a capsule you would have to take 16. We have simplified it for you in <strong>just 1 scoop.</strong></p>",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "mobile_text_alignment": "left",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 72,
+        "padding_bottom": 20
+      }
+    },
+    "4a5f350c-ca25-4f8a-8da1-b327a2d65624": {
+      "type": "reviews-slider-powder",
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-weight: 500;}"
+      ],
+      "settings": {
+        "title": "Don’t take our word for it, <strong>take hers!</strong>",
+        "link": "",
+        "btn": "",
+        "class": ""
+      }
+    },
+    "review_tU4NCm": {
+      "type": "review",
+      "blocks": {
+        "reviews_TK8ACK": {
+          "type": "reviews",
+          "settings": {
+            "rating": "4",
+            "dsc": "<p>\"After three months of Monthlies powder I feel energized, less debloated and ready to keep going\"</p>",
+            "name": "Alexandra",
+            "age": "37"
+          }
+        },
+        "reviews_DKYFWQ": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>\"Monthlies has truly been a game changer. It’s been 1 month and I feel that my energy levels have gone really up\"</p>",
+            "name": "Mel",
+            "age": "29"
+          }
+        },
+        "reviews_WQmdbq": {
+          "type": "reviews",
+          "settings": {
+            "rating": "4",
+            "dsc": "<p>\"1 month trying Monthlies and I still have some minor symptoms, but the energy boost was mind blowing\"</p>",
+            "name": "Jessica",
+            "age": "36"
+          }
+        },
+        "reviews_gQdLqU": {
+          "type": "reviews",
+          "settings": {
+            "rating": "4",
+            "dsc": "<p>\"I've been taking the powder for 2 weeks now, I feel energised and my cramps are still there but so much less painful.\"</p>",
+            "name": "Johanna",
+            "age": "43"
+          }
+        },
+        "reviews_AdM7QQ": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>\"I cannot express how IMPRESSED I am about my period pain reduction.\"</p>",
+            "name": "Maria",
+            "age": "29"
+          }
+        },
+        "reviews_KPRtNe": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>\"Thoroughly impressed! From the moment I received the package, I knew I was in for a treat.\"</p>",
+            "name": "Mia",
+            "age": "42"
+          }
+        },
+        "reviews_MWcbnM": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>\"I took Monthlies for one month and my physical symptoms were significantly reduced.\"</p>",
+            "name": "Morganne",
+            "age": "46"
+          }
+        },
+        "reviews_9KHRA3": {
+          "type": "reviews",
+          "settings": {
+            "rating": "4",
+            "dsc": "<p>\"At first I was sceptical, but after just two months, my period has been more manageable\"</p>",
+            "name": "Naira",
+            "age": "32"
+          }
+        },
+        "reviews_rWLqQ6": {
+          "type": "reviews",
+          "settings": {
+            "rating": "4",
+            "dsc": "<p>\"Just 1 day of period pain instead of 4 and way less disturbing during the day! Incredibly happy :)\"</p>",
+            "name": "Robin",
+            "age": "22"
+          }
+        },
+        "reviews_bU8kL7": {
+          "type": "reviews",
+          "settings": {
+            "rating": "4",
+            "dsc": "<p>\"Thanks to Monthlies, I no longer feel held back. I’ve never felt better.\"</p>",
+            "name": "Stefanie",
+            "age": "44"
+          }
+        }
+      },
+      "block_order": [
+        "reviews_TK8ACK",
+        "reviews_DKYFWQ",
+        "reviews_WQmdbq",
+        "reviews_gQdLqU",
+        "reviews_AdM7QQ",
+        "reviews_KPRtNe",
+        "reviews_MWcbnM",
+        "reviews_9KHRA3",
+        "reviews_rWLqQ6",
+        "reviews_bU8kL7"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Don’t take our word for it, <strong>take hers!</strong>",
+        "link": "shopify://pages/experiences",
+        "btn": "",
+        "class": "review-home-sec right-radius"
+      }
+    },
+    "doctors_review_zwrDH8": {
+      "type": "doctors_review",
+      "blocks": {
+        "reviews_YAwfWC": {
+          "type": "reviews",
+          "settings": {
+            "review_title": "",
+            "dsc": "Working with Ashley was a wonderful experience. I came to see her for my acne, period pain, hormonal balance and terrible digestive issues during my luteal phase. She helped me with all my symptoms, and I am now having the best periods I have ever had.",
+            "name": "Melissa"
+          }
+        },
+        "reviews_M9ya3z": {
+          "type": "reviews",
+          "settings": {
+            "review_title": "",
+            "dsc": "Once I understood that proper supplementation is the perfect tool to accompany my diet and take care of my health, I managed to find in my cycle the regularity and dynamism that can transform lives. Together with Dr. Angie I have learned that understanding how my body changes throughout the month allows me to adjust my work, my rhythm of life to what my body needs.",
+            "name": "Monica"
+          }
+        },
+        "reviews_yfjVeK": {
+          "type": "reviews",
+          "settings": {
+            "review_title": "",
+            "dsc": "My main concern when it comes to my menstrual cycle is not knowing when it’s gonna show up Working alongside Geneva has provided me a healthy balance diet tips to help regulate my flow.",
+            "name": "Milan"
+          }
+        },
+        "reviews_bizWCc": {
+          "type": "reviews",
+          "settings": {
+            "review_title": "",
+            "dsc": "Being a high-performance athlete, my energy demands are different depending on the time of the competition, and in the sports world, no one cares if you are in your day or not, many times you compete with pain or discomfort. With Dr. Angie this was transformed, she has taught me to give my body the nutrients it needs in each phase of my period, not only to increase my potential but also to live my cycle as an ally.",
+            "name": "Maribel"
+          }
+        },
+        "reviews_jPT7Rq": {
+          "type": "reviews",
+          "settings": {
+            "review_title": "",
+            "dsc": "Ashley herself is also amazing. She is intuitive, knowledgeable, compassionate, and empathetic. She helped me with my period, hormones and adopt a healthier lifestyle in a very easy and non-intrusive way.",
+            "name": "Alyssia"
+          }
+        },
+        "reviews_Emj6fa": {
+          "type": "reviews",
+          "settings": {
+            "review_title": "",
+            "dsc": "I grew up with very severe cramping. The level of cramps throughout my cycle Has gradually become more manageable. The advice that has been provided by Geneva, has led me to feel very hopeful to a comfortable cycle in the future.",
+            "name": "Paige"
+          }
+        },
+        "reviews_p7EWpK": {
+          "type": "reviews",
+          "settings": {
+            "review_title": "",
+            "dsc": "Ashley is extremely knowledgeable helped me tremendously with my heavy periods, hormonal health, and period pain. I am forever grateful. ",
+            "name": "Pamela"
+          }
+        },
+        "reviews_CLBehU": {
+          "type": "reviews",
+          "settings": {
+            "review_title": "",
+            "dsc": "I know that my cycle is changing, I have the feeling that soon I am going to end my reproductive life. Together with Dr. Angie I have understood that supporting the functioning of my hormones is important from beginning to end, supplementing me in the right way has meant that I do not have bother some symptoms, that my energy remains high and that my transition is going in the most positive way.",
+            "name": "Claudia"
+          }
+        },
+        "reviews_mVdFG6": {
+          "type": "reviews",
+          "settings": {
+            "review_title": "",
+            "dsc": "I suffer with very heavy periods during menstrual cycle. Geneva is an amazing therapist. Very supportive and a great listener. I am very pleased with her recommendations.",
+            "name": "Jade"
+          }
+        },
+        "reviews_jxhdp3": {
+          "type": "reviews",
+          "settings": {
+            "review_title": "",
+            "dsc": "Ashley provided me with important knowledge on how my body and cycle work in a way that is simple and easy to understand. I have learned more about women's health in the last 6 months with Ashley than I know in my entire life.",
+            "name": "Allie"
+          }
+        },
+        "reviews_YXWCFz": {
+          "type": "reviews",
+          "settings": {
+            "review_title": "",
+            "dsc": "Thank you, Geneva, I can’t recommend you highly enough.  Your expertise and personalised approach have been a real game changer for me. After struggling with hormonal imbalances, your guidance and support has helped me regain balance and I’m finally at a place where I can feel like myself again. You have been incredibly knowledgeable, compassionate and have really taken the time to truly understand my needs. The plan you tailored for me has had such a positive impact on my health and well-being. Thank you again.",
+            "name": "Amynah"
+          }
+        },
+        "reviews_ewH4ez": {
+          "type": "reviews",
+          "settings": {
+            "review_title": "",
+            "dsc": "Ashley has been wonderful at guiding me through a healthier journey to better hormones and fertility. I have learned so much about my body and feel better with the changes recommended.",
+            "name": "Mary"
+          }
+        }
+      },
+      "block_order": [
+        "reviews_YAwfWC",
+        "reviews_M9ya3z",
+        "reviews_yfjVeK",
+        "reviews_bizWCc",
+        "reviews_jPT7Rq",
+        "reviews_Emj6fa",
+        "reviews_p7EWpK",
+        "reviews_CLBehU",
+        "reviews_mVdFG6",
+        "reviews_jxhdp3",
+        "reviews_YXWCFz",
+        "reviews_ewH4ez"
+      ],
+      "settings": {
+        "title": "<strong>Healing Journeys</strong> : From Our Health Experts to You",
+        "link": "",
+        "btn": "",
+        "class": "doctore-review"
+      }
+    },
+    "product_faq_tPH4tG": {
+      "type": "Product-faq",
+      "blocks": {
+        "left_U8xBjD": {
+          "type": "left",
+          "settings": {
+            "accordion_heading1": "I’m using a hormonal contraceptive",
+            "dsc1": "<p>While you can certainly take Monthlies powder for its potential benefits, it's important to note that hormonal contraceptives, such as implants and pills, can affect hormone levels.  </p><p>Since hormonal contraceptives regulate your hormone balance, the efficacy of the powder might be compromised by the contraceptive method you are using.</p>"
+          }
+        },
+        "left_78AnJL": {
+          "type": "left",
+          "settings": {
+            "accordion_heading1": "I’m on a fertility treatment",
+            "dsc1": "<p>Fertility treatments often involve precise hormone manipulation.</p><p>It's vital to recognise that introducing new supplements, including the Monthlies powder, should be done under the guidance of your healthcare provider. The introduction of external supplements could potentially disrupt the intended hormonal adjustments of the treatment.</p>"
+          }
+        },
+        "left_4BR8xr": {
+          "type": "left",
+          "settings": {
+            "accordion_heading1": "I’m already taking supplements",
+            "dsc1": "<p>If you're currently using any medication or have been prescribed supplements for specific vitamin deficiencies, it's essential to consult your healthcare provider before incorporating Monthlies into your daily regimen.  </p><p>The Monthlies powder blend is designed to provide a fundamental level of hormone support, aiming to fulfil your body's requirements. This implies that you might not need to acquire extra vitamin and mineral supplements to address foundational hormone balance needs.</p>"
+          }
+        },
+        "right_Bt4xyP": {
+          "type": "right",
+          "settings": {
+            "accordion_heading": "I have PCOS",
+            "dsc": "<p>PCOS is a reproductive disorder characterised by the presence of cysts on the ovaries, elevated testosterone levels, and irregular periods. To be diagnosed with PCOS, a patient must exhibit at least 2 out of these 3 symptoms. However, several other symptoms are commonly associated with PCOS, including insulin resistance, difficulty losing weight, excess hair growth, hair loss, and depression.</p><p>If you're diagnosed with PCOS, then you're probably in more pain than our natural solutions can soothe all by themselves.</p><p>However, the blend of ingredients aims to support overall hormone balance, potentially benefiting those with endometriosis. <strong>It's advisable to consult our experts to determine the best approach for your unique needs.</strong></p>"
+          }
+        },
+        "right_L8j6xV": {
+          "type": "right",
+          "settings": {
+            "accordion_heading": "I have endometriosis",
+            "dsc": "<p>Endometriosis is a medical condition that occurs when tissue resembling the uterine lining grows outside the womb, often in areas such as the ovaries or fallopian tubes. This condition can cause intense pain during a woman's menstrual cycle and, for some, even when they're not menstruating.</p><p>Diagnosis of endometriosis can be challenging, resulting in an average duration of 6-10 years before receiving an accurate diagnosis.</p><p>If you're diagnosed with endometriosis, then you're probably in more pain than our natural solutions can soothe all by themselves.</p><p>However, the blend of ingredients aims to support overall hormone balance, potentially benefiting those with endometriosis. <strong>It's advisable to consult our experts to determine the best  approach for your unique needs.</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "left_U8xBjD",
+        "left_78AnJL",
+        "left_4BR8xr",
+        "right_Bt4xyP",
+        "right_L8j6xV"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "heading": "<p>Can I take <strong>monthlies </strong>if....?</p>"
+      }
+    },
+    "product_bottom_faq_hhq647": {
+      "type": "product-bottom-faq",
+      "blocks": {
+        "left_6WrLgq": {
+          "type": "left",
+          "settings": {
+            "accordion_heading1": "I’m using a hormonal contraceptive",
+            "dsc1": "<p>While you can certainly take Monthlies powder for its potential benefits, it's important to note that hormonal contraceptives, such as implants and pills, can affect hormone levels.  </p><p>Since hormonal contraceptives regulate your hormone balance, the efficacy of the powder might be compromised by the contraceptive method you are using.</p>"
+          }
+        },
+        "left_pePbY6": {
+          "type": "left",
+          "settings": {
+            "accordion_heading1": "I’m on a fertility treatment",
+            "dsc1": "<p>Fertility treatments often involve precise hormone manipulation.</p><p>It's vital to recognise that introducing new supplements, including the Monthlies powder, should be done under the guidance of your healthcare provider. The introduction of external supplements could potentially disrupt the intended hormonal adjustments of the treatment.</p>"
+          }
+        },
+        "left_Whw3MP": {
+          "type": "left",
+          "settings": {
+            "accordion_heading1": "I’m already taking supplements",
+            "dsc1": "<p>It depends on what other supplements you are taking and why. Good complements to monthlies could be Omega-3s, Probiotics, and Evening Primrose<br/>oil, depending on your specific needs. Please consult your doctor or reach out to us in chat for more information.</p>"
+          }
+        },
+        "right_jJrCAD": {
+          "type": "right",
+          "settings": {
+            "accordion_heading": "I have PCOS",
+            "dsc": "<p>Yes, you can take monthlies if you have PCOS, as there are many ingredients that may benefit those with PCOS. </p><p>However, monthlies is not meant to treat any disease, so you should always check with your doctor before incorporating new supplements into your routine. Also, check for possible interactions with your medications (if any).</p>"
+          }
+        },
+        "right_mKU3mh": {
+          "type": "right",
+          "settings": {
+            "accordion_heading": "I have endometriosis",
+            "dsc": "<p>Yes, you can take monthlies if you have endometriosis. However, monthlies is a natural supplement and not designed to treat any illness. Always ask your doctor before adding any new supplements to your routine, and check for possible interactions with medications.</p>"
+          }
+        },
+        "right_MTMG8w": {
+          "type": "right",
+          "settings": {
+            "accordion_heading": "I am breastfeeding or pregnant",
+            "dsc": "<p>It is not recommended to take monthlies if you are<br/>breastfeeding or pregnant, </p>"
+          }
+        },
+        "left_hba7R6": {
+          "type": "left",
+          "settings": {
+            "accordion_heading1": "I am trying to get pregnant",
+            "dsc1": "<p>Yes, you can take monthlies if you are trying to get pregnant. Although monthlies is not a prenatal supplement, it does have the recommended dose of folate for those of reproductive age (400 mcg). It’s important to remember to stop monthlies once you find out you are pregnant</p>"
+          }
+        }
+      },
+      "block_order": [
+        "left_6WrLgq",
+        "left_pePbY6",
+        "left_Whw3MP",
+        "right_jJrCAD",
+        "right_mKU3mh",
+        "right_MTMG8w",
+        "left_hba7R6"
+      ],
+      "settings": {
+        "heading": "<p>Can I take <strong>monthlies </strong>if....?</p>"
+      }
+    },
+    "faq_insta_TBNxY9": {
+      "type": "Faq-insta",
+      "blocks": {
+        "socialicons_gHR9tj": {
+          "type": "Socialicons",
+          "settings": {
+            "social_image": "shopify://shop_images/Instagram.png",
+            "soical_text": "Connect on Instagram",
+            "social_link": "https://www.instagram.com/withmonthlies"
+          }
+        },
+        "socialicons_3hUP8a": {
+          "type": "Socialicons",
+          "settings": {
+            "social_image": "shopify://shop_images/tiktok.png",
+            "soical_text": "Connect on TikTok",
+            "social_link": "https://www.tiktok.com/@withmonthlies"
+          }
+        },
+        "faq_NbJGfG": {
+          "type": "faq",
+          "settings": {
+            "en_title": "Our mission",
+            "en_content": "<p>At Monthlies, we aim to help all women tackle their menstrual symptoms better, while providing the best possible care for their overall well-being. Above all, this means getting \"WOW\" results.</p>",
+            "de_title": "Unsere Mission",
+            "de_content": "<p>Wir bei Monthlies möchten allen Frauen helfen, ihre Menstruationsbeschwerden besser in den Griff zu bekommen, und gleichzeitig bestmögliche für ihr allgemeines Wohlbefinden zu sorgen. Das bedeutet vor allem, \"WOW\"-Ergebnisse zu erzielen.</p>"
+          }
+        },
+        "faq_dmyN7K": {
+          "type": "faq",
+          "settings": {
+            "en_title": "Our expertise",
+            "en_content": "<p>Our team of female experts and in-house naturopathic doctors, are dedicated to putting science first in everything we do. We pride ourselves in our product curation and development focused on research.<br/>We deliver natural premium formulas that target menstrual care and holistic health. </p>",
+            "de_title": "Unsere Expertise",
+            "de_content": "<p>Unser Team aus Expertinnen und hauseigenen naturheilkundlichen Ärzten setzt konsequent auf Wissenschaft in allem, was wir tun. Wir sind stolz auf unsere forschungsbasierte Produktkuration und -entwicklung. Wir liefern natürliche Premium-Formeln, die auf Menstruationspflege und die ganzheitliche Gesundheit abzielen.</p>"
+          }
+        },
+        "faq_VzH36B": {
+          "type": "faq",
+          "settings": {
+            "en_title": "Our delivery policy",
+            "en_content": "<p>We currently offer shipping throughout Germany and UK.<br/>                      We strive to ship and deliver your order as quickly and efficiently as possible.<br/><br/>                      our order will be processed within 1-2 business days, after which you will receive a confirmation email with a tracking number. From there, our standard shipping times range from 3-5 business days.<br/>                      If you have any questions, please write to us at <a href=\"mailto:hi@withmonthlies.com;\"><strong> hi@withmonthlies.com </strong></a></p>",
+            "de_title": "Unsere Lieferbedingungen",
+            "de_content": "<p>Wir bieten derzeit Versand in ganz Deutschland und Großbritannien an. Wir bemühen uns, so schnell und effizient wie möglich zu versenden und zu liefern. Deine Bestellung wird innerhalb von 1-2 Werktagen bearbeitet, danach erhältst du eine Bestätigungsmail mit einer Tracking-Nummer. Von da an betragen unsere Standardlieferzeiten 3-5 Werktage. Wenn du Fragen hast, schreibe uns bitte an <a href=\"mailto:hi@withmonthlies.com\"><strong> hi@withmonthlies.com </strong></a></p>"
+          }
+        },
+        "faq_JF36n9": {
+          "type": "faq",
+          "settings": {
+            "en_title": "Why Monthlies",
+            "en_content": "<p>As a team of women’s health experts, our mission is to revolutionize women's health by offering better choices women deserve. We created a natural, convenient alternative to painkillers. After countless iterations and feedback, we've developed an all-natural solution that helps manage period pain and supports overall health.<br/><br/>At Monthlies, we support not just period pain but also all the other things affected by our hormones like overall health, hair, skin, moods, sleep, energy, digestion, and sports performance. We believe in superior quality ingredients and holistic care, empowering you to conquer period worries and focus on achieving your dreams, one month at a time!</p>",
+            "de_title": "Warum Monthlies",
+            "de_content": "<p>Als Team von Frauengesundheitsexperten möchten wir die Frauengesundheit revolutionieren, indem wir bessere Möglichkeiten anbieten, die Frauen verdienen. Wir haben eine natürliche, praktische Alternative zu Schmerzmitteln entwickelt. Nach zahlreichen Anpassungen und Rückmeldungen haben wir eine rein natürliche Lösung entwickelt, die bei Regelschmerzen hilft und die allgemeine Gesundheit unterstützt. Bei Monthlies kümmern wir uns nicht nur um Menstruationsschmerzen, sondern auch um alle anderen Aspekte, die von unseren Hormonen beeinflusst werden, wie allgemeine Gesundheit, Haare, Haut, Stimmung, Schlaf, Energie, Verdauung und sportliche Leistung. Wir setzen auf hochwertige Inhaltsstoffe und ganzheitliche Pflege, damit du deine Periodenbeschwerden besiegen und dich auf die Verwirklichung deiner Träume konzentrieren kannst - Monat für Monat!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "socialicons_gHR9tj",
+        "socialicons_3hUP8a",
+        "faq_NbJGfG",
+        "faq_dmyN7K",
+        "faq_VzH36B",
+        "faq_JF36n9"
+      ],
+      "settings": {
+        "heading": "<p>FAQs</p>",
+        "sub_heading": "<p>Life with Monthlies. </p><p><strong>Join</strong> our community<em>.</em></p>",
+        "left_sub_heading": "",
+        "left_description": "",
+        "insta_feed": "shopify://shop_images/Images.png",
+        "insta_component_img": "shopify://shop_images/Vector_352_5eae4503-b8e9-4030-abe1-aec92fbf3c64.png",
+        "button_label": "Button label",
+        "button_link": "",
+        "description": "We've carefully chosen <strong>premium ingredients</strong> that work in harmony, offering a complete and holistic solution to <strong>enhance women's health</strong> while addressing every facet of menstrual well-being."
+      }
+    }
+  },
+  "order": [
+    "empty-space",
+    "new_main_product_HmJCx8",
+    "main",
+    "1730556966706fff07",
+    "1724932348294de745",
+    "product-recommendations",
+    "discover_monthlies_7AHaFz",
+    "scrolling_promotion_mUxyWz",
+    "product_faqnw_Q9aDqy",
+    "image_collaps_tab_4JPKBc",
+    "image_with_collapsible_content_ALJMYJ",
+    "why_powder_accordions_4drMDW",
+    "why_powder_VbAN7k",
+    "multicolumn_AiWN47",
+    "health_expert_HamgKV",
+    "review_FqHYHr",
+    "multicolumn_UWAWLP",
+    "4a5f350c-ca25-4f8a-8da1-b327a2d65624",
+    "review_tU4NCm",
+    "doctors_review_zwrDH8",
+    "product_faq_tPH4tG",
+    "product_bottom_faq_hhq647",
+    "faq_insta_TBNxY9"
+  ]
+}

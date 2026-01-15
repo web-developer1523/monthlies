@@ -1,0 +1,217 @@
+{{ 'section-pricetesting.css' | asset_url | stylesheet_tag }}
+
+<section class="pricing" id="pricing">
+  <div class="pricing-title">
+    <h2>{{ section.settings.title }}</h2>
+  </div>
+  <div class="pricing-subtitle">
+    <p class="subhead">{{ section.settings.text }}</p>
+  </div>
+
+  <div class="pricing-wrapper">
+
+    <div class="product-column" id="product-column-2">
+      <!-- Fetch the selected product -->
+      {% assign product = all_products[section.settings.product2] %}
+    
+      <!-- Show product image -->
+      <div class="product-img">
+        <img src="{{ product.featured_image | img_url: '480x480' }}" alt="{{ product.title }}">
+      </div>
+    
+      <div class="product-content">
+        <!-- Show product title -->
+        <h2>{{ product.title }}</h2>
+        <!-- Show product price -->
+        <div class="price">
+          {{ product.price | money }} <span class="per_month">{{ product.metafields.custom.per_month }}</span>
+          {% if product.compare_at_price > product.price %}
+            <span class="compared-price">{{ product.compare_at_price | money }}</span>
+          {% endif %}
+          {% if product.metafields.custom.price_period != blank %}
+            <span class="">{{ product.metafields.custom.price_period }}</span>
+          {% endif %}
+
+          {% if product.metafields.custom.supply %}
+                    <span class="servings">
+            {{ product.metafields.custom.supply }}
+                    </span>
+          {% endif %}
+
+          {% comment %}
+            {% if product.metafields.custom.price_tag != blank %}
+              <span class="price-tag">{{ product.metafields.custom.price_tag }}</span>
+            {% endif %} 
+          {% endcomment %}
+          
+        </div>
+        {% comment %}
+        <!-- Show price per serving -->
+        <div class="servings">
+          {% if product.metafields.custom.price_per_serving %}
+            {{ product.metafields.custom.price_per_serving }}
+          {% endif %}
+        </div>
+        {% endcomment %}
+        
+        <!-- Show product description -->
+        <p>{{ product.description }}</p>
+    
+        <!-- Show bullet list -->
+        <ul class="check-list">
+          {% for j in (1..7) %}
+            {% assign usp_key = 'usp' | append: j %}
+            {% assign usp_value = product.metafields.custom[usp_key] %}
+        
+            {% if usp_value != blank %}
+              <li>{{ usp_value }}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+    
+    
+<a href="/pages/{{ product.metafields.custom.checkout_page }}" id="cta-price-oneoff" class="button">
+  {{ product.metafields.custom.cta }} 
+  <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0.679688 1.15234L5.67969 6.15234L0.679688 11.1523" stroke="white" stroke-width="1.5"></path>
+  </svg>
+</a>
+        
+        
+  <div class="disclaimer">
+      {% if product.metafields.custom.disclaimer_1 %}
+        {{ product.metafields.custom.disclaimer_1 }}
+      {% endif %}<br />
+      {% if product.metafields.custom.disclaimer_2 %}
+        {{ product.metafields.custom.disclaimer_2 }}
+      {% endif %}
+    </div>
+      </div>
+    </div>
+
+    <div class="product-column" id="product-column-3">
+  <!-- Fetch the selected product -->
+  {% assign product = all_products[section.settings.product3] %}
+
+  <!-- Show product image -->
+       {% if section.settings.limited %}
+          <span class="limited">
+            {{ section.settings.limited }}
+          </span>
+      {% endif %}
+  <div class="product-img">
+    <img src="{{ product.featured_image | img_url: '480x480' }}" alt="{{ product.title }}">
+  </div>
+
+  <div class="product-content">
+    <!-- Show product title -->
+    <h2>{{ product.title }}</h2>
+    <!-- Show product price -->
+    <div class="price">
+      {{ product.price | money }} <span class="per_month">{{ product.metafields.custom.per_month }}</span>
+      {% if product.compare_at_price > product.price %} 
+        <span class="compared-price">{{ product.compare_at_price | money }}</span>
+      {% endif %}
+            {% if product.metafields.custom.supply %}
+            <span class="servings">
+              {{ product.metafields.custom.supply }}
+            </span>
+      {% endif %}
+      {% if product.metafields.custom.price_period != blank %}
+        <span class="">{{ product.metafields.custom.price_period }}</span>
+      {% endif %}
+      {% comment %}
+        {% if product.metafields.custom.price_tag != blank %}
+          <span class="price-tag">{{ product.metafields.custom.price_tag }}</span>
+        {% endif %} 
+      {% endcomment %}
+    </div>
+    {% comment %}
+    <!-- Show price per serving -->
+    <div class="servings">
+      {% if product.metafields.custom.price_per_serving %}
+        {{ product.metafields.custom.price_per_serving }}
+      {% endif %}
+    </div>
+    {% endcomment %}
+    
+    <!-- Show product description -->
+    <p>{{ product.description }}</p>
+
+    <!-- Show bullet list -->
+    <ul class="check-list">
+      {% for j in (1..7) %}
+        {% assign usp_key = 'usp' | append: j %}
+        {% assign usp_value = product.metafields.custom[usp_key] %}
+    
+        {% if usp_value != blank %}
+          <li>{{ usp_value }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+<a href="/pages/{{ section.settings.selected_page }}" id="cta-price" class="button">
+  {{ product.metafields.custom.cta }} 
+  <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0.679688 1.15234L5.67969 6.15234L0.679688 11.1523" stroke="white" stroke-width="1.5"></path>
+  </svg>
+</a>
+    
+    <div class="disclaimer">
+      {% if product.metafields.custom.disclaimer_1 %}
+        {{ product.metafields.custom.disclaimer_1 }}
+      {% endif %}<br />
+      {% if product.metafields.custom.disclaimer_2 %}
+        {{ product.metafields.custom.disclaimer_2 }}
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+  
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Price Testing Block",
+  "presets": [{
+        "name": "Price Testing Block",
+        "category": "Text"
+      }],
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Buy Monthlies today, join the menstrual revolution"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Section Text",
+      "default": "Subtitle"
+    },
+     {
+      "type": "text",
+      "id": "limited",
+      "label": "Section Text",
+      "default": "Limited time offer"
+    },
+    {
+  "type": "product",
+  "id": "product2",
+  "label": "Select Product 2"
+},  {
+  "type": "page",
+  "id": "selected_page",
+  "label": "Select a Page"
+},
+    {
+  "type": "product",
+  "id": "product3",
+  "label": "Select Product 3"
+}
+    
+  ]
+}
+{% endschema %}

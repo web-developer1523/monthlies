@@ -1,0 +1,112 @@
+<style>
+  .for_mobile {display:none;}
+  @media screen and (max-width:989px) {
+     .for_mobile {display:block;}
+     .for_desktop {display:none;}
+  }
+</style>
+ 
+ <div id="chat_with_us"  class="{{ section.settings.custom_class }} page-width{% if section.settings.narrow %} page-width--inner{% endif %}">
+   <div class="right_col"> 
+     <img class="for_desktop" 
+      data-class="LazyLoad" 
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" 
+      data-src="{{ section.settings.image | img_url: '1600x' }}" />
+     {% if section.settings.img_text %}
+        <p class="img_text"> {{ section.settings.img_text }} </p>
+     {% endif %}
+   </div>
+   <div class="left-col rich-text section--padding ">
+      <div class="heading ">
+       <h2> {{ section.settings.Title }}</h2>
+        <span>{{ section.settings.dsc }}</span>
+         <img class="for_mobile"
+          data-class="LazyLoad" 
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  
+          data-src="{{ section.settings.mobile_image | img_url: '500x' }}">
+      </div>
+       <a onclick="GorgiasChat.open();" id="cta-buynowben" class="button button--black">
+                     {{ section.settings.button_label | escape }} 
+                  </a>
+       </div>
+   
+  </div>
+
+{% schema %}
+  {
+    "name": "Chat With Us",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "custom_class",
+        "label": "Custom Class"
+      },
+      {
+        "type": "richtext",
+        "id": "Title",
+        "label": "Heading"
+      },
+      {
+        "type": "richtext",
+        "id": "dsc",
+        "label": "Description"
+      },
+       {
+        "type": "image_picker",
+        "id": "mobile_image",
+        "label": "Mobile Image"
+      },
+       {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "img_text",
+        "label": "Text Image"
+      },
+       {
+          "type": "text",
+          "id": "button_label",
+          "default": "Button label",
+          "label": "t:sections.all.button_label.label",
+          "info": "t:sections.all.button_label.info"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "t:sections.all.button_link.label"
+        },
+      {
+        "type": "header",
+        "content": "t:sections.all.padding.header.content"
+      }, {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "t:sections.all.padding.padding_top.unit",
+        "label": "t:sections.all.padding.padding_top.label",
+        "default": 36
+      }, {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "t:sections.all.padding.padding_bottom.unit",
+        "label": "t:sections.all.padding.padding_bottom.label",
+        "default": 36
+      }
+    ],
+    "presets": [
+      {
+        "name": "Chat With Us"
+      }
+    ]
+  }
+{% endschema %}

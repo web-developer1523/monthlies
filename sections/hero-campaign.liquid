@@ -1,0 +1,117 @@
+{{ 'section-hero-campaign.css' | asset_url | stylesheet_tag }}
+
+<div class="hero">
+  <div class="page-width">
+    <div class="hero-container">
+      <div class="hero-content">
+        <img
+          class="hero-icon"
+          src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/icon.png?v=1681241572"
+          alt="Icoon">
+
+        <h1>{{ section.settings.title }}</h1>
+        <p>{{ section.settings.text }}</p>
+
+        <div class="hero-buttons">
+          <a
+            href="{{ section.settings.url_1 }}"
+            id="cta-buynowhero"
+            class="button button--black">
+            {{ section.settings.label_1 }}
+            <svg
+              width="7"
+              height="12"
+              viewBox="0 0 7 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.679688 1.15234L5.67969 6.15234L0.679688 11.1523"
+                stroke="white"
+                stroke-width="1.5" />
+            </svg>
+          </a>
+          {% if section.settings.label_2 != blank %}
+  <a href="{{ section.settings.url_2 }}" id="cta-startquiz" class="button button--inverted-white">
+    {{ section.settings.label_2 }}
+    <svg
+      width="7"
+      height="12"
+      viewBox="0 0 7 12"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M0.679688 1.15234L5.67969 6.15234L0.679688 11.1523"
+        stroke="white"
+        stroke-width="1.5" />
+    </svg>
+  </a>
+{% endif %}
+
+        </div>
+
+        <span>{{ section.settings.label }}</span>
+      </div>
+
+                <!--
+           <div class="hero-visual">
+      <img src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Monthlies_powder.png?v=1691100063" alt="Visual">
+      </div>-->
+                <div class="hero-visual">
+<img
+        src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Hero-product_04d4bc2b-cbf1-42db-9352-bed692a30fca.webp?v=1694265812"
+        alt="Visual"></div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "hero campaign",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Title",
+        "default": "Empower Your Cycle, Naturally",
+        "id": "title"
+      },
+      {
+        "type": "text",
+        "label": "Text",
+        "default": "Take control of your menstrual pain with our premium natural formulas and personalised guidance, designed by female experts",
+        "id": "text"
+      },
+      {
+        "type": "text",
+        "label": "Label",
+        "default": "80% of our customers feel better in 30 days",
+        "id": "label"
+      },
+      {
+        "type": "url",
+        "label": "URL primary button",
+        "id": "url_1"
+      }, {
+        "type": "text",
+        "label": "Label primary button",
+        "id": "label_1",
+        "default": "Take the quiz"
+      }, {
+        "type": "url",
+        "label": "URL secondary button",
+        "id": "url_2"
+      }, {
+        "type": "text",
+        "label": "Label secondary button",
+        "id": "label_2",
+        "default": "Discover all products"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Hero Campaign"
+      }
+    ]
+  }
+{% endschema %}

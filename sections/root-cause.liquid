@@ -1,0 +1,86 @@
+{{ 'section-root-cause.css' | asset_url | stylesheet_tag }}
+
+<div class="root-cause" id="app">
+  <div class="page-width">
+    <div class="root-container">
+
+      <div class="root-content">
+        <h2>{{ section.settings.title }}</h2>
+        <p>{{ section.settings.text }}</p>
+
+        <div class="science-buttons">
+          <a href="{{ section.settings.url_2 }}" id="cta-app" class="button button--black">
+            {{ section.settings.label_2 }}
+            <svg
+              width="7"
+              height="12"
+              viewBox="0 0 7 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.679688 1.15234L5.67969 6.15234L0.679688 11.1523"
+                stroke="white"
+                stroke-width="1.5" />
+            </svg>
+          </a>
+          <img class="store-imgs" id="img-appstore" src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/App_Download.png?v=1699607652" />
+        </div>
+      </div>
+      <div class="img-container">
+        <img src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Monthlies_App.png?v=1699607653" alt="Monthlies App">
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "root-cause",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Label",
+        "default": "SCIENCE - BACKED",
+        "id": "label"
+      },
+      {
+        "type": "text",
+        "label": "Title",
+        "default": "Find the root cause of your menstrual pain",
+        "id": "title"
+      },
+      {
+        "type": "richtext",
+        "label": "Text",
+        "default": "<p>Get an even deeper understanding of your body’s needs with our at-home hormonal saliva test. A simple and convenient way to gain more insight into your hormonal balance to tailor your solution better.</p>",
+        "id": "text"
+      },
+      {
+        "type": "url",
+        "label": "Primary button - URL",
+        "id": "url_1"
+      }, {
+        "type": "text",
+        "label": "Primary button - Label",
+        "default": "Know more",
+        "id": "label_1"
+      }, {
+        "type": "url",
+        "label": "Secondary button - URL",
+        "id": "url_2"
+      }, {
+        "type": "text",
+        "label": "Secondary button - Label",
+        "default": "Know more",
+        "id": "label_2"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Root Cause"
+      }
+    ]
+  }
+{% endschema %}

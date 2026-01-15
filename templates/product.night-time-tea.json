@@ -1,0 +1,748 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "empty-space": {
+      "type": "empty-space",
+      "settings": {
+        "desktop_height": 36,
+        "mobile_height": 16
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "text": "1 month supply | Instant relief",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h2",
+            "show_price": false,
+            "price_size": "medium"
+          }
+        },
+        "7bb0f2fc-bd0a-4ce4-b7db-47c5f18b0e91": {
+          "type": "shopify://apps/aftership-product-reviews/blocks/product_page_star_widget/beb80d6c-6526-44ce-8946-4a762954ca6d",
+          "settings": {
+            "block_alignment": "flex-start"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "price_size": "medium",
+            "show_badges": true
+          }
+        },
+        "countdown": {
+          "type": "countdown",
+          "settings": {
+            "heading": "Hurry up ! Sale end in:",
+            "number_size": "compact",
+            "colors_heading": "#da3f3f",
+            "colors_text": "#da3f3f",
+            "colors_background": "#ffeeee"
+          }
+        },
+        "edf70d5e-d74b-463d-9eac-2a9cf65b38dd": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "text": "Our Night Tea is a soothing blend of natural herbs and spices that are known to promote relaxation, reduce stress and support thyroid hormone production.",
+            "text_style": "body"
+          }
+        },
+        "c6a4dbc1-8dba-44e8-906d-000160b7767e": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "text": "YOU CAN FIND THIS PRODUCT IN THE NIGHT TIME SET",
+            "text_style": "uppercase"
+          }
+        },
+        "cdd2d001-4ac5-4d59-a371-396362241780": {
+          "type": "separator",
+          "settings": {}
+        },
+        "07955a58-2b4b-4a97-b387-b3870a0698ab": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "text": "THIS PRODUCT WILL ALLEVIATE THE FOLLOWING SYMPTOMS:",
+            "text_style": "uppercase"
+          }
+        },
+        "9b958e3d-3cb3-4dcd-96bb-db5ddffa1e35": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "text": "✓ Stress",
+            "text_style": "body"
+          }
+        },
+        "a6c1ab6d-2b27-4f4f-b4f3-67398e79198c": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "text": "✓ Trouble sleeping",
+            "text_style": "body"
+          }
+        },
+        "f56c0aed-b649-4fae-94c4-2ad66b65e58d": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "text": "✓ Fatigue",
+            "text_style": "body"
+          }
+        },
+        "3251e4bb-6824-4b4c-af9e-ebb2e08e1d73": {
+          "type": "separator",
+          "settings": {}
+        },
+        "5a420f66-f0f5-4ba9-919f-4bdcf5f15582": {
+          "type": "text",
+          "settings": {
+            "icon": "heart",
+            "text": "YOUR BEST PERIOD IN 90 DAYS OR YOUR MONEY BACK.",
+            "text_style": "uppercase"
+          }
+        },
+        "4dafaddc-63b6-45d5-929d-2608d141d4f0": {
+          "type": "image",
+          "settings": {
+            "height": 20,
+            "link": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": true,
+            "swatch_type": "round",
+            "size_chart": ""
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        },
+        "collapsible_tab-0": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "icon": "check_mark",
+            "heading": "Benefits",
+            "content": "<ul><li><span style=\"text-decoration:underline\">Relief of cramps</span>: Calcium can help to relax the muscles in the uterus, which can provide relief from cramps</li></ul><p></p><ul><li><span style=\"text-decoration:underline\">Regulate hormones</span>: Calcium can help to regulate hormones such as estrogen and progesterone, which can help to reduce period pain</li></ul><p></p><ul><li><span style=\"text-decoration:underline\">Build strong bones</span>: Calcium is essential for building strong bones, and having adequate levels of calcium can help to reduce the risk of osteoporosis, a condition that can lead to bone pain and fractures</li></ul><p></p><ul><li><span style=\"text-decoration:underline\">Prevent Premenstrual Syndrome (PMS)</span>: Calcium can also help to prevent PMS by reducing the severity of symptoms, such as cramps, bloating, and headaches</li></ul><p></p><ul><li><span style=\"text-decoration:underline\">Natural remedy</span>: Calcium is a natural and safe way to alleviate period pain, it can be obtained through diet or supplements</li></ul><p></p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab-1": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "icon": "leaf",
+            "heading": "INGREDIENTS",
+            "content": "<ul><li>Calcium</li><li>Vitamin D3</li></ul>",
+            "page": ""
+          }
+        },
+        "1dbe7d81-e74c-4283-abf9-817def03f96a": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "icon": "serving_dish",
+            "heading": "USE",
+            "content": "<p><strong>Optimal usage</strong> </p><p>We recommend 2 capsules per day</p>",
+            "page": ""
+          }
+        },
+        "db44e15e-302b-4fce-89b9-0c1cf2a12bf2": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "icon": "gluten_free",
+            "heading": "DIETARY INFORMATION",
+            "content": "<ul><li>Suitable for vegetarians</li><li>Lactose-free</li><li>Gluten-free</li></ul>",
+            "page": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": false
+          }
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "settings": {
+            "inventory_threshold": 20,
+            "show_inventory_transfer": true,
+            "color_scheme": "accent-3"
+          }
+        },
+        "related_buttons": {
+          "type": "related_buttons",
+          "disabled": true,
+          "settings": {
+            "show_icons": false
+          }
+        },
+        "sticky_cart": {
+          "type": "sticky_cart",
+          "settings": {
+            "show_quantity_selector": false
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "7bb0f2fc-bd0a-4ce4-b7db-47c5f18b0e91",
+        "rating",
+        "price",
+        "countdown",
+        "edf70d5e-d74b-463d-9eac-2a9cf65b38dd",
+        "c6a4dbc1-8dba-44e8-906d-000160b7767e",
+        "cdd2d001-4ac5-4d59-a371-396362241780",
+        "07955a58-2b4b-4a97-b387-b3870a0698ab",
+        "9b958e3d-3cb3-4dcd-96bb-db5ddffa1e35",
+        "a6c1ab6d-2b27-4f4f-b4f3-67398e79198c",
+        "f56c0aed-b649-4fae-94c4-2ad66b65e58d",
+        "3251e4bb-6824-4b4c-af9e-ebb2e08e1d73",
+        "5a420f66-f0f5-4ba9-919f-4bdcf5f15582",
+        "4dafaddc-63b6-45d5-929d-2608d141d4f0",
+        "variant_picker",
+        "description",
+        "collapsible_tab-0",
+        "collapsible_tab-1",
+        "1dbe7d81-e74c-4283-abf9-817def03f96a",
+        "db44e15e-302b-4fce-89b9-0c1cf2a12bf2",
+        "buy_buttons",
+        "inventory_status",
+        "related_buttons",
+        "sticky_cart"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_position": "left",
+        "media_size": "small",
+        "gallery_layout": "thumbnail_slider",
+        "image_ratio": "square",
+        "show_thumbnails": true,
+        "hide_variants": true,
+        "enable_image_zoom": true,
+        "enable_video_looping": false,
+        "mobile_image_ratio": "adapt",
+        "show_mobile_thumbnails": true,
+        "padding_top": 0,
+        "padding_bottom": 100
+      }
+    },
+    "scrolling-promotion": {
+      "type": "scrolling-promotion",
+      "blocks": {
+        "announcement-0": {
+          "type": "announcement",
+          "settings": {
+            "icon": "none",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "text": "FREE SHIPPING on all orders",
+            "text_size": 16,
+            "link": ""
+          }
+        },
+        "announcement-1": {
+          "type": "announcement",
+          "settings": {
+            "icon": "none",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "text": "30 day MONEY BACK GUARANTEE",
+            "text_size": 16,
+            "link": ""
+          }
+        },
+        "announcement-3": {
+          "type": "announcement",
+          "settings": {
+            "icon": "none",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "text": "10% OFF in your first order | Use code: NEWMONTHLIES10",
+            "text_size": 16,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement-0",
+        "announcement-1",
+        "announcement-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "direction": "left",
+        "speed": 2.5,
+        "show_divider": false,
+        "use_custom_colors": true,
+        "colors_icon": "#f1ff34",
+        "colors_text": "#212326",
+        "colors_background": "#f2f2f2",
+        "gradient_background": "",
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "ae1c8576-825a-478b-9509-c898d3a66280": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18308929126718__ae1c8576-825a-478b-9509-c898d3a66280-168060164600cd063a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Key advantages",
+            "heading_size": "h2",
+            "heading_tag": "h2"
+          }
+        },
+        "template--18308929126718__ae1c8576-825a-478b-9509-c898d3a66280-168060164600cd063a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our Night Time tea is the perfect way to wind down after a long day and prepare for a restful night's sleep.<br/><br/>It contains oat, valerian, chamomile and lavender, which contribute to relaxation and help maintain a healthy sleep. It also contains lime flowers, which promote a good and healthy night’s rest. </p><p><strong><br/>Night Time Tea</strong></p><p><strong>✓ </strong>Contains ingredients with soothing and calming properties</p><p><strong>✓ </strong>Promotes relaxation and reduces stress</p><p></p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18308929126718__ae1c8576-825a-478b-9509-c898d3a66280-168060164600cd063a-0",
+        "template--18308929126718__ae1c8576-825a-478b-9509-c898d3a66280-168060164600cd063a-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Mask_group.webp",
+        "image_position": "center center",
+        "layout": "image_first",
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "600px",
+        "enlarge_content": false,
+        "full_width": false,
+        "show_divider": false,
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 56,
+        "padding_bottom": 36
+      }
+    },
+    "d8e06245-1144-4aec-aec0-b4660cbe9e70": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18308929126718__d8e06245-1144-4aec-aec0-b4660cbe9e70-168060164600cd063a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ingredients",
+            "heading_size": "h2",
+            "heading_tag": "h2"
+          }
+        },
+        "template--18308929126718__d8e06245-1144-4aec-aec0-b4660cbe9e70-168060164600cd063a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Oat flower(30%), licorice root, chamomile flower, lavender flower (14%), lime flower (10%), valerian root, tulsi leaf.</p><p></p><h5><span style=\"text-decoration:underline\"><em><br/></em></span><em>Organic </em><em><strong> │ </strong></em><em> </em><em><strong> </strong></em><em>Vegan </em><em><strong>│ </strong></em><em> </em><em><strong> </strong></em><em>Kosher </em><em><strong>│ </strong></em><em> </em><em><strong> </strong></em><em>Caffeine free</em></h5>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18308929126718__d8e06245-1144-4aec-aec0-b4660cbe9e70-168060164600cd063a-0",
+        "template--18308929126718__d8e06245-1144-4aec-aec0-b4660cbe9e70-168060164600cd063a-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/0B5A6046.png",
+        "image_position": "center center",
+        "layout": "text_first",
+        "text_box_position": "bottom",
+        "text_alignment": "left",
+        "image_ratio": "600px",
+        "enlarge_content": false,
+        "full_width": false,
+        "show_divider": false,
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "400px",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "fa5632d6-4adb-41c1-96d3-360630b7c049": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18308929126718__fa5632d6-4adb-41c1-96d3-360630b7c049-168060164600cd063a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "How to use",
+            "heading_size": "h2",
+            "heading_tag": "h2"
+          }
+        },
+        "template--18308929126718__fa5632d6-4adb-41c1-96d3-360630b7c049-168060164600cd063a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Our Night Time Tea contains 20 tea bags.</strong></p><ul><li>We recommend taking a cup or 2  when you feel you will have trouble sleeping.</li></ul><p>Pour 250 ml of freshly boiled water over the teabag. Allow to infuse for 7 minutes - or longer for a stronger flavour. And, enjoy!</p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18308929126718__fa5632d6-4adb-41c1-96d3-360630b7c049-168060164600cd063a-0",
+        "template--18308929126718__fa5632d6-4adb-41c1-96d3-360630b7c049-168060164600cd063a-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/0B5A6037.png",
+        "image_position": "center center",
+        "layout": "image_first",
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "600px",
+        "enlarge_content": false,
+        "full_width": false,
+        "show_divider": false,
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ed43f145-b7d9-474f-b38e-9a4ab8b15f5c": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18308929126718__ed43f145-b7d9-474f-b38e-9a4ab8b15f5c-168060164600cd063a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "We’re empowering you to take control of your cycle. Naturally.",
+            "heading_size": "h2",
+            "heading_tag": "h2"
+          }
+        },
+        "template--18308929126718__ed43f145-b7d9-474f-b38e-9a4ab8b15f5c-168060164600cd063a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Our products are designed with your comfort in mind.</strong></p><p>We use only high-quality, natural ingredients that have been clinically proven to support your menstrual cycle.</p><p>Whether you need instant or long-term relief, our products are designed to do more than just easing pain.</p><p>We aim to help you transform your relationship with pain and regain control over your symptoms.<br/></p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18308929126718__ed43f145-b7d9-474f-b38e-9a4ab8b15f5c-168060164600cd063a-0",
+        "template--18308929126718__ed43f145-b7d9-474f-b38e-9a4ab8b15f5c-168060164600cd063a-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/AdobeStock_227252206.webp",
+        "image_position": "center center",
+        "layout": "text_first",
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "600px",
+        "enlarge_content": false,
+        "full_width": false,
+        "show_divider": false,
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_divider": true,
+        "heading": "Discover our products",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "image_position": "center center",
+        "enable_image_fill": false,
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": true,
+        "show_quick_buy": false,
+        "enable_quick_view": true,
+        "enable_color_swatches": true,
+        "enable_countdown": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "guarantees": {
+      "type": "guarantees",
+      "blocks": {
+        "guarantee-0": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "leaf",
+            "icon_size": "large",
+            "custom_icon": "",
+            "title": "Natural alternatives",
+            "title_size": "h3",
+            "text": "<p>Natural ingredients to ease your menstrual symptoms during your entire cycle.</p>"
+          }
+        },
+        "guarantee-1": {
+          "type": "guarantee",
+          "disabled": true,
+          "settings": {
+            "icon": "fire",
+            "icon_size": "large",
+            "custom_icon": "",
+            "title": "Short- & long-term relief",
+            "title_size": "h3",
+            "text": "<p>We help you feel your best during your entire cycle</p>"
+          }
+        },
+        "guarantee-2": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "eye",
+            "icon_size": "large",
+            "custom_icon": "",
+            "title": "Backed by science",
+            "title_size": "h3",
+            "text": "<p>Our recommendations and proposed sets are based on scientific research and evidence.</p>"
+          }
+        },
+        "guarantee-3": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "heart",
+            "icon_size": "large",
+            "custom_icon": "",
+            "title": "By women, for women",
+            "title_size": "h3",
+            "text": "<p>Our women’s health experts select natural products with premium formulas.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "guarantee-0",
+        "guarantee-1",
+        "guarantee-2",
+        "guarantee-3"
+      ],
+      "settings": {
+        "layout": "default",
+        "column_alignment": "left",
+        "horizontal_content": false,
+        "full_width": false,
+        "show_divider": false,
+        "heading": "Take control of your cycle",
+        "heading_size": "h2",
+        "heading_tag": "h2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "use_custom_colors": false,
+        "colors_icon": "#ffffff",
+        "colors_text": "#1a1b18",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 72,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible-content": {
+      "type": "collapsible-content",
+      "blocks": {
+        "question-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Our mission",
+            "row_content": "<p>At Monthlies, we aim to help all women have a pain-free period, while providing the best possible care for their overall well-being. Above all, this means getting \"WOW\" results.<br/></p>",
+            "page": ""
+          }
+        },
+        "question-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Our expertise",
+            "row_content": "<p>Our team of female experts and in-house naturopathic doctors, is dedicated to putting science first in everything we do. We pride ourselves on product curation and development focused on research.</p><p>We deliver natural products with premium formulas that target specific period pains and cycle needs.</p>",
+            "page": ""
+          }
+        },
+        "question-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Our delivery policy",
+            "row_content": "<p>We currently offer shipping throughout Germany and France. </p><p>We strive to ship and deliver your order as quickly and efficiently as possible.</p><p>Your order will be processed within 1-2 business days at which time you will receive a confirmation email with a tracking number. From there, our standard shipping times range from 3-5 business days.</p><p><em>If you have any questions, please write to us at info@monthlies.com</em></p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "question-0",
+        "question-1",
+        "question-2"
+      ],
+      "settings": {
+        "open_first_collapsible_row": false,
+        "narrow": true,
+        "show_divider": false,
+        "heading": "FAQs",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "84d8abb4-fa29-413a-8cf4-17500eaeb9a9": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--18297717260606__84d8abb4-fa29-413a-8cf4-17500eaeb9a9-167932798684227e83-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "This is for you if...",
+            "row_content": "<p>...</p><p></p><p><strong>KEY ADVANTAGES:</strong></p><p><strong>Green tea </strong></p><p><strong>✓</strong> Improves energy levels</p><p><strong>Broccoli Extract </strong></p><p><strong>✓ </strong>Contains 10% of sulforaphane, a natural compound that will help reduce inflammation and balance hormones</p><p><strong>Heat Patches</strong></p><p><strong>✓ </strong>Self-adhesive that warms up to 8 hours</p><p><strong>✓ </strong>Provides heat therapy for effective menstrual pain relief</p><p><strong>B Complex </strong></p><p><strong>✓</strong> Reduces fatigue</p><p><strong>✓ </strong>Helps adopt a normal nervous system function</p>",
+            "page": ""
+          }
+        },
+        "template--18297717260606__84d8abb4-fa29-413a-8cf4-17500eaeb9a9-167932798684227e83-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What's inside the box",
+            "row_content": "<p><strong>Broccoli Extract </strong>(<em>60 capsules)</em></p><p><span style=\"text-decoration:underline\">Ingredients</span></p><p><em>100% Broccoli Extract, from which 10% is sulforaphane.</em></p><p><span style=\"text-decoration:underline\">Dietary information:</span></p><ul><li>100% natural </li><li>Lactose Free </li><li>Gluten Free </li><li>Vegan </li><li>GMO Free </li></ul><p></p><p><strong>Ginger </strong>(3 patches with a size of 22 x 9.5 cm)</p><p><span style=\"text-decoration:underline\">Ingredients</span></p><p><em>Iron powder, water, activated carbon, wood flour, salt</em></p><p><strong>Radiance Tea</strong> (<em>20 tea bags)</em></p><p><span style=\"text-decoration:underline\">Ingredients</span></p><p><em>Vitamins B1, B2,B3,B5, B6, B12</em></p><p><span style=\"text-decoration:underline\">Dietary information:</span></p><ul><li>Soy Free</li><li>Lactose Free </li><li>Gluten Free </li><li>Vegan </li><li>Suitable for breastfeeding and pregnant women</li></ul>",
+            "page": ""
+          }
+        },
+        "template--18297717260606__84d8abb4-fa29-413a-8cf4-17500eaeb9a9-167932798684227e83-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How to take the products",
+            "row_content": "<p><strong>Green tea </strong></p><ul><li>1 cup of tea per day</li></ul><p><strong>Broccoli Extract </strong></p><ul><li>2 capsules per day</li></ul><p><strong>Heat Patches</strong></p><ul><li>Whenever you feel cramps, back or belly pain.</li></ul><p>The heat patch is very flexible and can be glued directly to the skin.</p><p><strong>B Complex </strong></p><ul><li>1 capsule per day during your whole cycle</li></ul>",
+            "page": ""
+          }
+        },
+        "effa36d4-ce4c-4ef1-9c24-c8c1241c4404": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Reviews",
+            "row_content": "<p>There's any reviews at this moment for this set.</p><p>If you have any feedback, please send us an email to <em>info@withmonthlies.com</em></p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18297717260606__84d8abb4-fa29-413a-8cf4-17500eaeb9a9-167932798684227e83-0",
+        "template--18297717260606__84d8abb4-fa29-413a-8cf4-17500eaeb9a9-167932798684227e83-1",
+        "template--18297717260606__84d8abb4-fa29-413a-8cf4-17500eaeb9a9-167932798684227e83-2",
+        "effa36d4-ce4c-4ef1-9c24-c8c1241c4404"
+      ],
+      "disabled": true,
+      "settings": {
+        "open_first_collapsible_row": false,
+        "narrow": false,
+        "show_divider": false,
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "p",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "disabled": true,
+      "settings": {
+        "show_divider": false,
+        "heading": "Recently Viewed",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "image_ratio": "portrait",
+        "image_position": "center center",
+        "enable_image_fill": true,
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "show_quick_buy": true,
+        "enable_quick_view": true,
+        "enable_color_swatches": true,
+        "enable_countdown": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "empty-space",
+    "main",
+    "scrolling-promotion",
+    "ae1c8576-825a-478b-9509-c898d3a66280",
+    "d8e06245-1144-4aec-aec0-b4660cbe9e70",
+    "fa5632d6-4adb-41c1-96d3-360630b7c049",
+    "ed43f145-b7d9-474f-b38e-9a4ab8b15f5c",
+    "product-recommendations",
+    "guarantees",
+    "collapsible-content",
+    "84d8abb4-fa29-413a-8cf4-17500eaeb9a9",
+    "recently-viewed-products"
+  ]
+}

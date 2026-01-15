@@ -1,0 +1,74 @@
+{% assign reviews = shop.metaobjects.review_powder.values %}
+
+{{ 'section-reviews-slider.css' | asset_url | stylesheet_tag }}
+
+<section class="reviews-section {{ section.settings.class }}">
+  <div class="control_width">
+  <div class="title-container">
+    <h2 class="title h1">{{ section.settings.title }}</h2>
+  </div>
+
+  <div class="swiper swiper-reviews !overflow-visible">
+    <div class="swiper-wrapper">
+      {% for review_powder in reviews %}
+        <div class="swiper-slide">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/ReviewStars-{{review_powder.rating.value}}.png?v=1686223477"
+            alt="Stars"
+            class="stars">
+          <p>"{{ review_powder.text.value }}"</p>
+          <span class="name">{{ review_powder.name.value }}, {{ review_powder.age.value }}</span>
+           <span class="date"> January, 2023 </span>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <a href="{{ section.settings.link }}" class="see_all_reviews en">{% if section.settings.btn != blank %} {{ section.settings.btn }} {% else %} Show all experiences {% endif %}<img src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Arrows_3.png?v=1722572084" /></a>
+  <a href="{{ section.settings.link }}" class="see_all_reviews german">{% if section.settings.btn != blank %} {{ section.settings.btn }} {% else %} Alle Erfahrungen anzeigen {% endif %}<img src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Arrows_3.png?v=1722572084" /></a>
+  
+  </div>
+</section>
+
+<script>
+  new Swiper(".swiper-reviews", {
+    slidesPerView: "auto",
+    loop: false,
+    spaceBetween: 16
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "Reviews Powder",
+    "presets": [
+      {
+        "name": "Reviews Powder",
+        "category": "section"
+      }
+    ],
+    "settings": [
+      {
+        "type": "inline_richtext",
+        "label": "Title",
+        "default": "Don’t take our word for it, take hers!",
+        "id": "title"
+      },
+      {
+        "type": "url",
+        "label": "Redirect Link",
+        "id": "link"
+      },
+      {
+        "type": "text",
+        "label": "Button Text",
+        "id": "btn"
+      },
+      {
+        "type": "text",
+        "label": "Add Custom Class",
+        "id": "class"
+      }
+      
+    ]
+  }
+{% endschema %}

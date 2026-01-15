@@ -1,0 +1,72 @@
+{{ 'section-control-banner.css' | asset_url | stylesheet_tag }}
+
+<section class="control-banner">
+  <img src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Frame_334.jpg?v=1681305085&width=1500" alt="image">
+  <div class="page-width">
+    <h2>{{ section.settings.title }}</h2>
+    <div class="buttons">
+      <a
+        href="{% if localization.language.iso_code != "en" %}/{{ localization.language.iso_code }}{% endif %}/pages/cycle-assessment"
+        id="cta-bottom"
+        class="button button--black">
+        {{ section.settings.label_1 }}
+        <svg
+          width="7"
+          height="12"
+          viewBox="0 0 7 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0.679688 1.15234L5.67969 6.15234L0.679688 11.1523"
+            stroke="white"
+            stroke-width="1.5" />
+        </svg>
+      </a>
+      <a href="{% if localization.language.iso_code != "en" %}/{{ localization.language.iso_code }}{% endif %}/collections/all" class="button button--inverted-black">
+        {{ section.settings.label_2 }}
+        <svg
+          width="7"
+          height="12"
+          viewBox="0 0 7 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0.679688 1.15234L5.67969 6.15234L0.679688 11.1523"
+            stroke="white"
+            stroke-width="1.5" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "control-banner",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Title",
+        "default": "Take control of your cycle",
+        "id": "title"
+      }, {
+        "type": "text",
+        "label": "Button Label 1",
+        "id": "label_1",
+        "default": "Take the quiz"
+      }, {
+        "type": "text",
+        "label": "Button Label 2",
+        "id": "label_2",
+        "default": "Discover all products"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Control Banner"
+      }
+    ]
+  }
+{% endschema %}

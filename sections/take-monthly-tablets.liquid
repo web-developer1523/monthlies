@@ -1,0 +1,162 @@
+<section class="kann-ich-monthlies-einnehmen">
+  <div class="container">
+    <div class="kann-ich-monthlies-einnehmen-inner">
+      <h2>{{ section.settings.main_heading }}</h2>
+    </div>
+
+    <div class="kann-ich-monthlies-einnehmen-content">
+      <div class="faq-box">
+        {% for block in section.blocks %}
+          <div class="faq-item">
+            <div class="faq-header">
+              <span>{{ block.settings.question }}</span>
+              <div class="svg-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" viewBox="0 0 18 11" fill="none">
+                  <path d="M16.7148 0.69873L8.71484 8.89385L0.714843 0.69873" stroke="#404040" stroke-width="2"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="faq-content">
+              {{ block.settings.answer }}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .kann-ich-monthlies-einnehmen {
+    background: #ecf1f4;
+    border-radius: 20px;
+    padding: 96px 0px 96px 0px;
+    margin: 0 auto;
+    max-width: 1320px;
+}
+
+      .kann-ich-monthlies-einnehmen-inner h2 {
+          color: #404040;
+          text-align: center;
+          font-family: "Lora", serif;
+          font-size: 40px;
+          letter-spacing: -0.02em;
+          font-weight: 600;
+          line-height:30px;
+
+      }
+
+      .kann-ich-monthlies-einnehmen-content {
+          width: 100%;
+          max-width: 630px;
+          margin: 0 auto;
+      }
+      .svg-wrapper {
+        width: 44px !important;
+        height: 44px;
+        background: #ecf1f4;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+      .faq-header svg {
+        transition: transform 0.3s ease;
+    }
+
+    .faq-header svg.rotate {
+        transform: rotate(180deg);
+    }
+
+    .faq-content {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.35s ease;
+    }
+  @media (max-width:991px) {
+      .kann-ich-monthlies-einnehmen-inner h2 {
+
+          font-size: 24px;
+
+      }
+      .kann-ich-monthlies-einnehmen-inner h2 br {
+          display: none;
+      }
+      .kann-ich-monthlies-einnehmen {
+      padding: 56px 0px 56px 0px;
+  }
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const items = document.querySelectorAll('.faq-item');
+
+    items.forEach((item) => {
+      const header = item.querySelector('.faq-header');
+      const content = item.querySelector('.faq-content');
+      const svg = item.querySelector('svg');
+
+      header.addEventListener('click', () => {
+        // Close other items
+        items.forEach((other) => {
+          if (other !== item) {
+            other.classList.remove('active');
+            other.querySelector('.faq-content').style.maxHeight = '0';
+            other.querySelector('svg').classList.remove('rotate');
+          }
+        });
+
+        // Toggle this item
+        item.classList.toggle('active');
+
+        if (item.classList.contains('active')) {
+          content.style.maxHeight = content.scrollHeight + 'px';
+          svg.classList.add('rotate');
+        } else {
+          content.style.maxHeight = '0';
+          svg.classList.remove('rotate');
+        }
+      });
+    });
+  });
+</script>
+{% schema %}
+{
+  "name": "Take Monthly Tablet FAQ",
+  "settings": [
+    {
+      "type": "html",
+      "id": "main_heading",
+      "label": "Main Heading",
+      "default": "Kann ich monthlies einnehmen, wenn ich…"
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "faq_item",
+      "name": "FAQ Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "... ein hormonelles Verhütungsmittel benutze?"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Take Monthly Tablet FAQ",
+      "category": "FAQ"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,1230 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "710a7183-c779-4e02-bb4e-f165421167aa": {
+      "type": "hero-campaign",
+      "custom_css": [
+        "h1 {font-weight: 500;}"
+      ],
+      "settings": {
+        "title": "Get a grip on your menstrual cycle",
+        "text": "Science-backed food supplement to overcome your menstrual symptoms and enhance your emotional wellbeing all month long.",
+        "label": "★★★★☆ 85% satisfaction after 90 days",
+        "url_1": "#buynow",
+        "label_1": "Buy now",
+        "url_2": "#pricing",
+        "label_2": "Discover all products"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "narrow": true,
+        "padding_top": 60,
+        "padding_bottom": 72
+      }
+    },
+    "ce304de2-f0cd-4159-8797-a215450aa944": {
+      "type": "campaign-hero-2",
+      "disabled": true,
+      "settings": {
+        "title": "Say goodbye to period pain",
+        "text": "Science-backed food supplement to reclaim your energy and comfort all month long",
+        "btn": "Order now",
+        "btn_url": "",
+        "satisfaction": "★★★★☆ 80% of customer satisfaction"
+      }
+    },
+    "1462b1e5-4c10-4a1c-8109-5e6bdb47c90e": {
+      "type": "statistics",
+      "custom_css": [
+        ".stats-container {background: #fff;}"
+      ],
+      "settings": {
+        "percentage_1": "85%",
+        "text_1": "of women became symptom-free in 3 months",
+        "percentage_2": "80%",
+        "text_2": "of women quit taking monthly painkillers",
+        "percentage_3": "70%",
+        "text_3": "of women felt improvements in just one month"
+      }
+    },
+    "3beefa49-e472-4273-b741-73ff228fee9c": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19262625481051__3beefa49-e472-4273-b741-73ff228fee9c-1689156720f82b3c73-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "A superpowder for a worry-free cycle",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "template--19262625481051__3beefa49-e472-4273-b741-73ff228fee9c-1689156720f82b3c73-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’re on a mission to fix the hormonal imbalances that cause mood swings, tiredness and stress that keep you from being in harmony in every phase of your cycle.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "template--19262625481051__3beefa49-e472-4273-b741-73ff228fee9c-1689156720f82b3c73-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19262625481051__3beefa49-e472-4273-b741-73ff228fee9c-1689156720f82b3c73-0",
+        "template--19262625481051__3beefa49-e472-4273-b741-73ff228fee9c-1689156720f82b3c73-1",
+        "template--19262625481051__3beefa49-e472-4273-b741-73ff228fee9c-1689156720f82b3c73-2"
+      ],
+      "custom_css": [
+        "h2 {font-weight: 500;}"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "narrow": false,
+        "show_divider": false,
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 60,
+        "padding_bottom": 36
+      }
+    },
+    "924f1989-f1cb-47cb-b2f1-fcb8e2067894": {
+      "type": "image-with-text-custom",
+      "blocks": {
+        "template--19262625481051__924f1989-f1cb-47cb-b2f1-fcb8e2067894-16890734270f03180a-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "A no-nonsense superpowder for a healthy hormonal equilibrium",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "a787618b-a5cf-49b6-985c-3b6c0d16ef93": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Subheading",
+            "subheading_size": "h5",
+            "secondary_color": false
+          }
+        },
+        "template--19262625481051__924f1989-f1cb-47cb-b2f1-fcb8e2067894-16890734270f03180a-1": {
+          "type": "text",
+          "settings": {
+            "text": "Mood regulation",
+            "text-description": "<p>Our supplement helps manage mood swings and restore your natural resilience.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false,
+            "icon_svg": "<svg width=\"33\" height=\"43\" viewbox=\"0 0 33 43\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M24.5466 12.3365C26.4435 10.7857 27.6565 8.42839 27.6565 5.79288V4.56839H23.7254C22.4988 4.56839 21.3325 4.83141 20.2796 5.30357C19.8561 4.12602 19.1737 3.02145 18.2318 2.07957L16.5 0.347656L14.7683 2.07949C13.8264 3.02145 13.144 4.12594 12.7206 5.30349C11.6677 4.83133 10.5014 4.56831 9.27478 4.56831H5.34351V5.7928C5.34351 8.42831 6.55649 10.7856 8.45339 12.3364C3.70041 15.1135 0.5 20.2702 0.5 26.161C0.5 34.9834 7.67755 42.161 16.5 42.161C25.3224 42.161 32.5 34.9834 32.5 26.161C32.5 20.2703 29.2995 15.1136 24.5466 12.3365ZM23.7253 7.01737H25.0819C24.7097 8.80545 23.5386 10.3028 21.9608 11.1212C20.8253 10.7077 19.63 10.4199 18.3919 10.2735C19.3898 8.34162 21.4051 7.01737 23.7253 7.01737ZM16.5 3.81117C17.3226 4.63378 17.8696 5.62839 18.1437 6.68015C17.5022 7.24578 16.9465 7.9066 16.5 8.64088C16.0535 7.9066 15.4978 7.24578 14.8563 6.68015C15.1304 5.62831 15.6774 4.6337 16.5 3.81117ZM7.91812 7.01737H9.27469C11.5949 7.01737 13.6102 8.34162 14.6081 10.2735C13.37 10.42 12.1747 10.7077 11.0392 11.1212C9.46139 10.3028 8.2902 8.80545 7.91812 7.01737ZM2.94898 26.161C2.94898 21.579 5.23535 17.5215 8.72669 15.0677C8.18914 16.1907 7.88775 17.4474 7.88775 18.7733C7.88775 23.5221 11.7512 27.3855 16.5 27.3855C19.8984 27.3855 22.6633 30.1504 22.6633 33.5488C22.6633 36.9472 19.8984 39.7121 16.5 39.7121C9.02792 39.7121 2.94898 33.6331 2.94898 26.161ZM24.2733 37.2544C24.8109 36.1314 25.1122 34.8747 25.1122 33.5488C25.1122 28.8 21.2488 24.9366 16.5 24.9366C13.1016 24.9366 10.3367 22.1717 10.3367 18.7733C10.3367 15.3748 13.1016 12.61 16.5 12.61C23.9721 12.61 30.051 18.689 30.051 26.161C30.051 30.7431 27.7647 34.8006 24.2733 37.2544Z\" fill=\"#252A31\"></path>\n<path d=\"M16.5 29.8753C14.4744 29.8753 12.8265 31.5232 12.8265 33.5488C12.8265 35.5743 14.4744 37.2223 16.5 37.2223C18.5256 37.2223 20.1735 35.5743 20.1735 33.5488C20.1735 31.5232 18.5256 29.8753 16.5 29.8753ZM16.5 34.7733C15.8248 34.7733 15.2755 34.224 15.2755 33.5488C15.2755 32.8736 15.8248 32.3243 16.5 32.3243C17.1752 32.3243 17.7245 32.8736 17.7245 33.5488C17.7245 34.224 17.1752 34.7733 16.5 34.7733Z\" fill=\"#252A31\"></path>\n<path d=\"M16.5 15.0998C14.4744 15.0998 12.8265 16.7477 12.8265 18.7733C12.8265 20.7988 14.4744 22.4468 16.5 22.4468C18.5256 22.4468 20.1735 20.7988 20.1735 18.7733C20.1735 16.7477 18.5256 15.0998 16.5 15.0998ZM16.5 19.9978C15.8248 19.9978 15.2755 19.4485 15.2755 18.7733C15.2755 18.0981 15.8248 17.5488 16.5 17.5488C17.1752 17.5488 17.7245 18.0981 17.7245 18.7733C17.7245 19.4485 17.1752 19.9978 16.5 19.9978Z\" fill=\"#252A31\"></path>\n</svg>"
+          }
+        },
+        "0cf3b66e-d573-4423-9fbe-85388dd21943": {
+          "type": "text",
+          "settings": {
+            "text": "Boosts energy",
+            "text-description": "<p>Vital nutrients and adaptogens to combat fatigue and enhance your vitality at every phase of your cycle.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false,
+            "icon_svg": "<svg width=\"33\" height=\"33\" viewbox=\"0 0 33 33\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M25.021 5.63533L24.9856 5.59998L25.021 5.63533L26.1523 4.50365C26.4454 4.21053 26.9203 4.21054 27.2133 4.50349L28.3445 5.63469C28.6373 5.9275 28.6374 6.4024 28.3446 6.69518L28.3757 6.72622L28.3446 6.69519L27.2133 7.82687C26.9203 8.11983 26.4453 8.11996 26.1523 7.82702L25.0211 6.69582C24.7283 6.40301 24.7282 5.92811 25.021 5.63533ZM6.84752 28.1917L6.88181 28.2259L6.84752 28.1917C6.55456 28.4848 6.07967 28.4848 5.78672 28.1918L4.65552 27.0606C4.36271 26.7678 4.36257 26.2929 4.65535 26.0001L4.62079 25.9656L4.65536 26.0001L5.78672 24.8684C6.07967 24.5755 6.55458 24.5755 6.84753 24.8683L7.97872 25.9995C8.27153 26.2923 8.27167 26.7672 7.97888 27.06L8.01424 27.0953L7.97888 27.06L6.84752 28.1917ZM25.0213 25.9995L24.9891 25.9674L25.0213 25.9995L26.1525 24.8683C26.4454 24.5753 26.9203 24.5753 27.2133 24.8684L27.2447 24.837L27.2133 24.8684L28.3446 26.0001C28.6374 26.2931 28.6374 26.7678 28.3445 27.0606L28.3798 27.096L28.3445 27.0606L27.2133 28.1918C26.9203 28.4848 26.4454 28.4848 26.1525 28.1917L26.1171 28.227L26.1525 28.1917L25.0211 27.06C24.7283 26.767 24.7283 26.2923 25.0213 25.9995ZM5.78688 7.82687L5.78688 7.82687L4.65552 6.69519C4.65552 6.69519 4.65552 6.69519 4.65552 6.69518C4.36272 6.40223 4.36272 5.92748 4.65568 5.63453L5.78687 4.50333C6.07966 4.21055 6.55456 4.21053 6.84752 4.50364L6.84752 4.50365L7.97888 5.63532C7.97888 5.63532 7.97888 5.63532 7.97888 5.63533C8.27169 5.92829 8.27167 6.40302 7.97873 6.69581L7.97872 6.69582L6.84752 7.82702L6.84752 7.82703C6.55474 8.11996 6.07969 8.11982 5.78688 7.82687ZM16.5 27.4977C10.3526 27.4977 5.35 22.4959 5.35 16.3477C5.35 10.1994 10.3526 5.19766 16.5 5.19766C22.6474 5.19766 27.65 10.1994 27.65 16.3477C27.65 22.4959 22.6474 27.4977 16.5 27.4977ZM16.5 8.29766C12.0615 8.29766 8.45 11.9092 8.45 16.3477C8.45 20.7861 12.0615 24.3977 16.5 24.3977C20.9385 24.3977 24.55 20.7861 24.55 16.3477C24.55 11.9092 20.9385 8.29766 16.5 8.29766ZM17.3 3.49766H15.7C15.2859 3.49766 14.95 3.1618 14.95 2.74766V1.14766C14.95 0.73351 15.2859 0.397656 15.7 0.397656H17.3C17.7141 0.397656 18.05 0.73351 18.05 1.14766V2.74766C18.05 3.1618 17.7141 3.49766 17.3 3.49766ZM15.7 32.2977C15.2859 32.2977 14.95 31.9618 14.95 31.5477V29.9477C14.95 29.5335 15.2859 29.1977 15.7 29.1977H17.3C17.7141 29.1977 18.05 29.5335 18.05 29.9477V31.5477C18.05 31.9618 17.7141 32.2977 17.3 32.2977H15.7ZM31.7 17.8977H30.1C29.6859 17.8977 29.35 17.5618 29.35 17.1477V15.5477C29.35 15.1335 29.6859 14.7977 30.1 14.7977H31.7C32.1141 14.7977 32.45 15.1335 32.45 15.5477V17.1477C32.45 17.5618 32.1141 17.8977 31.7 17.8977ZM2.9 17.8977H1.3C0.885854 17.8977 0.55 17.5618 0.55 17.1477V15.5477C0.55 15.1335 0.885854 14.7977 1.3 14.7977H2.9C3.31415 14.7977 3.65 15.1335 3.65 15.5477V17.1477C3.65 17.5618 3.31415 17.8977 2.9 17.8977Z\" fill=\"#252A31\" stroke=\"#FFF5F5\" stroke-width=\"0.1\"></path>\n</svg>"
+          }
+        },
+        "a8290f09-9548-4222-8012-157831597128": {
+          "type": "text",
+          "settings": {
+            "text": "Easy to use",
+            "text-description": "<p>Mix one scoop with water every day to thrive every stage of your menstrual cycle.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false,
+            "icon_svg": "<svg width=\"33\" height=\"39\" viewbox=\"0 0 33 39\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M31.4765 22.9234C31.0264 22.4734 30.4749 22.1616 29.8737 22.0086C30.1502 20.8635 29.8424 19.6047 28.9502 18.7125C28.4914 18.2536 27.9355 17.9499 27.3481 17.8002C27.6091 16.7212 27.3676 15.4457 26.4234 14.5015C26.1066 14.1847 25.7434 13.9426 25.3556 13.7731L28.9507 10.1785C30.3141 8.81346 30.3166 6.60382 28.9502 5.23758C27.5855 3.87282 25.3757 3.87045 24.0088 5.23758L12.7945 16.4519L12.1387 13.6098C11.7622 11.9772 10.5275 10.6759 8.91663 10.214C7.30612 9.75196 5.56959 10.2012 4.3849 11.3865C4.38475 11.3866 4.3846 11.3868 4.38438 11.3869C4.17585 11.5957 4.0585 11.8792 4.05879 12.1743L4.07265 26.0056L0.825696 29.2526C0.391434 29.6869 0.391434 30.3909 0.825696 30.8252L7.97189 37.9714C8.18035 38.18 8.46324 38.2972 8.75813 38.2972H19.1041C20.3551 38.2972 21.5315 37.8097 22.4166 36.9246L31.4764 27.8648C32.8243 26.5181 32.858 24.303 31.4765 22.9234ZM25.5814 20.2849C26.0781 19.7882 26.8816 19.7889 27.3777 20.2849C27.8729 20.7802 27.8729 21.586 27.3777 22.0813L24.8508 24.6081C24.3533 25.1056 23.5496 25.1032 23.0548 24.6083C22.5595 24.1127 22.5594 23.3068 23.0545 22.8117L25.5814 20.2849ZM21.482 21.2392C20.9868 21.7344 20.181 21.7341 19.6857 21.2392C19.1904 20.744 19.1904 19.9381 19.6857 19.4429L23.0545 16.074C23.5502 15.5785 24.356 15.5791 24.8508 16.074C25.3476 16.5707 25.3468 17.3745 24.8508 17.8703L24.8506 17.8705C24.8508 17.8703 21.482 21.2392 21.482 21.2392ZM20.8442 35.3519C20.3858 35.8103 19.7517 36.0731 19.1042 36.0731H9.21879L3.18456 30.0388L5.97138 27.252C6.18021 27.0431 6.29734 26.7599 6.29712 26.4645L6.28333 12.6863C6.866 12.2811 7.60754 12.152 8.30348 12.3518C9.13754 12.5909 9.77677 13.2645 9.97166 14.1096L11.0789 18.9068C11.1265 19.1131 11.2312 19.2969 11.3756 19.4416C11.3757 19.442 12.2181 20.2849 12.2181 20.2849C14.1065 22.1733 14.1065 25.2459 12.2181 27.1343C11.7839 27.5686 11.7839 28.2726 12.2181 28.7069C12.6524 29.1412 13.3566 29.141 13.7907 28.7069C16.5462 25.9514 16.5462 21.4679 13.7907 18.7125L13.7349 18.6566L25.5815 6.81006C26.0896 6.30174 26.8941 6.3265 27.3777 6.81013C27.8734 7.30585 27.8737 8.10965 27.3777 8.60641L18.1132 17.8703C16.7508 19.2326 16.7508 21.4494 18.1134 22.812C18.7641 23.4623 19.6093 23.8012 20.4634 23.8304C20.4927 24.6845 20.8317 25.5299 21.482 26.1806C22.1322 26.8309 22.977 27.17 23.8308 27.1995C23.8608 28.0874 24.2197 28.9178 24.8503 29.5485C25.1627 29.8612 25.5243 30.1065 25.9173 30.279L20.8442 35.3519ZM29.9043 26.2917C29.9041 26.2919 29.904 26.2921 29.9038 26.2922L28.2192 27.9769C27.7296 28.467 26.9245 28.4782 26.4234 27.9764C25.9236 27.4767 25.9313 26.6727 26.4237 26.1803L28.1081 24.496C28.6079 23.9962 29.4117 24.004 29.9043 24.4965C30.407 24.9984 30.3928 25.8039 29.9043 26.2917Z\" fill=\"black\"></path>\n<path d=\"M12.3313 7.32987C12.9454 7.32987 13.4433 6.832 13.4433 6.21789V1.45376C13.3845 -0.0216018 11.2776 -0.0204898 11.2194 1.45376V6.21797C11.2194 6.83207 11.7172 7.32987 12.3313 7.32987Z\" fill=\"black\"></path>\n<path d=\"M6.7809 7.00421C7.21516 7.43854 7.91934 7.43839 8.35345 7.00421C8.78771 6.56994 8.78771 5.86592 8.35345 5.43166L7.16245 4.24066C6.72827 3.8064 6.02417 3.8064 5.5899 4.24066C5.15564 4.67492 5.15564 5.37895 5.5899 5.81321L6.7809 7.00421Z\" fill=\"black\"></path>\n<path d=\"M17.8819 7.00421L19.0729 5.81321C19.5071 5.37895 19.5071 4.67492 19.0729 4.24066C18.6387 3.8064 17.9346 3.8064 17.5003 4.24066L16.3093 5.43166C15.875 5.86592 15.875 6.56994 16.3093 7.00421C16.7436 7.43854 17.4477 7.43839 17.8819 7.00421Z\" fill=\"black\"></path>\n</svg>"
+          }
+        },
+        "fd9ad02e-08d4-4bba-ae7f-e1232386a1f1": {
+          "type": "text",
+          "settings": {
+            "text": "Lasting results",
+            "text-description": "<p>Feel results after one month of consistent use, best results start from a 3-month regimen.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false,
+            "icon_svg": "<svg width=\"33\" height=\"33\" viewbox=\"0 0 33 33\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5.49975 29.8977H5.54975V29.8477V24.9727V24.9227H5.49975H2.99987H2.94987V24.9727V29.8477V29.8977H2.99987H5.49975ZM16.0452 29.8977H16.0952V29.8477V17.5978V17.5478H16.0452H13.5453H13.4953V17.5978V29.8477V29.8977H13.5453H16.0452ZM21.9164 10.7823V10.7323H21.8664H19.9838C19.0103 10.7323 18.4426 9.63042 19.0053 8.83762L24.6381 0.90333C25.105 0.245418 26.1049 0.212965 26.5949 0.903386L32.2269 8.83768C32.7904 9.63145 32.2205 10.7323 31.2484 10.7323H29.366H29.316V10.7823V31.0977C29.316 31.7604 28.7788 32.2977 28.116 32.2977H23.1163C22.4536 32.2977 21.9164 31.7604 21.9164 31.0977V10.7823ZM26.8661 29.8977H26.9161V29.8477V9.53229C26.9161 8.8696 27.4533 8.3323 28.116 8.3323H28.8283H28.9251L28.8691 8.25336L25.6571 3.72841L25.6164 3.67098L25.5756 3.72841L22.3633 8.25336L22.3073 8.3323H22.4041H23.1163C23.779 8.3323 24.3162 8.8696 24.3162 9.53229V29.8477V29.8977H24.3662H26.8661ZM1.74994 22.5228H6.74968C7.41241 22.5228 7.94962 23.06 7.94962 23.7228V31.0977C7.94962 31.7604 7.41241 32.2977 6.74968 32.2977H1.74994C1.08721 32.2977 0.55 31.7604 0.55 31.0977V23.7228C0.55 23.06 1.08721 22.5228 1.74994 22.5228ZM12.2953 15.1479H17.2951C17.9578 15.1479 18.495 15.6851 18.495 16.3478V31.0977C18.495 31.7604 17.9578 32.2977 17.2951 32.2977H12.2953C11.6326 32.2977 11.0954 31.7604 11.0954 31.0977V16.3478C11.0954 15.6851 11.6326 15.1479 12.2953 15.1479Z\" fill=\"#252A31\" stroke=\"#FFF5F5\" stroke-width=\"0.1\"></path>\n</svg>"
+          }
+        },
+        "template--19262625481051__924f1989-f1cb-47cb-b2f1-fcb8e2067894-16890734270f03180a-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Buy now",
+            "button_link": "#pricing",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19262625481051__924f1989-f1cb-47cb-b2f1-fcb8e2067894-16890734270f03180a-0",
+        "a787618b-a5cf-49b6-985c-3b6c0d16ef93",
+        "template--19262625481051__924f1989-f1cb-47cb-b2f1-fcb8e2067894-16890734270f03180a-1",
+        "0cf3b66e-d573-4423-9fbe-85388dd21943",
+        "a8290f09-9548-4222-8012-157831597128",
+        "fd9ad02e-08d4-4bba-ae7f-e1232386a1f1",
+        "template--19262625481051__924f1989-f1cb-47cb-b2f1-fcb8e2067894-16890734270f03180a-2"
+      ],
+      "custom_css": [
+        "h2 {font-weight: 500;}",
+        ".image-with-text__grid {justify-content: center;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/drink-desktop.jpg",
+        "image_position": "20% 0",
+        "layout": "image_first",
+        "text_box_position": "top",
+        "text_alignment": "left",
+        "image_ratio": "750px",
+        "enlarge_content": false,
+        "full_width": false,
+        "show_divider": false,
+        "image_mobile": "shopify://shop_images/drink-mobile.jpg",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "200px",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "721469e7-c6b0-472f-a8fb-14741c380eac": {
+      "type": "guarantees",
+      "blocks": {
+        "07cb31c5-1f95-487a-be6b-870e8f391b2f": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "large",
+            "custom_icon": "<svg width=\"40\" height=\"40\" viewbox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M40 18.3701L35.7929 12.2087L28.7152 14.0718L26.9716 18.689V4.91653L19.9191 0L13.0414 4.92613V18.7234L11.2847 14.0719L4.20707 12.2088L0 18.3701L4.86499 31.2524L0.832993 32.6216V40H39.1801V32.6216L35.1366 31.2484L40 18.3701ZM30.5291 29.6838L33.9139 20.7209L36.8286 20.1178L32.9105 30.4925L30.5291 29.6838ZM20.0065 35.8002L16.4545 30.636H23.5586L20.0065 35.8002ZM25.6257 31.7808L28.4879 37.6393H21.5961L25.6257 31.7808ZM18.4169 37.6393H11.525L14.3872 31.7808L18.4169 37.6393ZM36.7158 17.731L33.5391 18.3883L31.5825 15.7572L34.7912 14.9126L36.7158 17.731ZM29.937 17.4865L31.719 19.8828L28.3031 28.9279L26.9715 28.4757V25.3389L29.937 17.4865ZM24.6238 24.9505V28.2753H21.1804V9.88138L24.6238 7.68235V24.9056L24.609 24.9449L24.6238 24.9505ZM19.9374 2.88535L23.6756 5.49135L20.0065 7.83453L16.317 5.47829L19.9374 2.88535ZM15.3892 7.68235L18.8326 9.88138V28.2753H15.3892V24.9456L15.391 24.9449L15.3892 24.94V7.68235ZM13.0415 28.4757L11.6984 28.9318L8.28101 19.8828L10.063 17.4865L13.0415 25.3734V28.4757ZM5.20879 14.9126L8.4175 15.7572L6.46086 18.3883L3.28423 17.731L5.20879 14.9126ZM3.17138 20.1178L6.08607 20.7209L9.47243 29.6877L7.09092 30.4965L3.17138 20.1178ZM3.18077 34.316L11.9954 31.3225L8.90936 37.6393H3.18077V34.316ZM36.8323 37.6393H31.1036L28.0176 31.3226L36.8322 34.3161V37.6393H36.8323Z\" fill=\"#252A31\"></path>\n</svg>",
+            "title": "Alleviates menstrual pain",
+            "title_size": "h2",
+            "text": "<p>Powerful blend of ingredients to soothe cramps and discomfort associated with your menstrual cycle.</p>"
+          }
+        },
+        "1f612c48-8d36-4260-b2b1-27c58036a5f9": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "large",
+            "custom_icon": "<svg width=\"34\" height=\"41\" viewbox=\"0 0 34 41\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M32.0762 13.886C30.808 12.558 28.9633 11.96 27.1422 12.2864C25.1294 12.6472 23.9941 14.0025 22.9924 15.1981C22.3259 15.9937 21.6964 16.7451 20.8763 17.1269C20.1025 17.4873 19.5498 17.1619 19.2893 16.9359C18.7508 16.4686 18.5413 15.7101 18.7555 15.0036C18.9209 14.4583 19.1214 13.8969 19.3336 13.3026C20.0702 11.2402 20.905 8.90261 20.4171 6.53508C19.912 4.08434 18.2148 2.04487 15.877 1.0796C13.5475 0.117598 10.916 0.36386 8.8379 1.73838C7.22321 2.80624 5.918 4.56843 5.06327 6.83447C4.12018 9.33513 3.65602 11.478 3.64461 13.3852C3.63008 15.8165 4.62091 18.1834 6.36294 19.8791C7.74339 21.223 8.83875 22.8265 9.57308 24.5484C9.56348 24.5597 9.55418 24.5713 9.54496 24.583C8.18818 24.0611 6.64725 23.786 5.12569 24.0468C0.457277 24.8719 -1.24616 31.1459 2.32557 34.3614C3.48257 35.4381 4.89803 35.7013 6.13004 35.8167C7.19634 35.9165 8.65672 36.0533 9.49722 36.7637C10.2524 37.402 10.7034 38.3606 10.7034 39.3281C10.7034 39.9753 11.2281 40.5 11.8753 40.5H20.5916C21.2388 40.5 21.7635 39.9753 21.7635 39.3281V38.0091C21.6688 32.3631 25.6064 27.771 29.5953 24.0289C30.408 23.2281 31.2485 22.4 32.0395 21.5612C34.0919 19.3849 34.108 16.0136 32.0762 13.886ZM30.3344 19.9528C29.7449 20.5778 29.1177 21.2058 28.4943 21.8223C27.8307 21.4647 27.2198 20.998 26.6753 20.4277C26.2282 19.9597 25.4864 19.9426 25.0183 20.3895C24.5503 20.8366 24.5331 21.5784 24.9801 22.0465C25.5268 22.6189 26.1265 23.114 26.7716 23.5276C25.5404 24.7608 24.3281 26.0396 23.2591 27.4355C21.674 27.2259 20.4197 26.4136 19.8121 25.1969C19.5228 24.6178 18.8187 24.3829 18.24 24.672C17.661 24.9612 17.4259 25.665 17.7151 26.2441C18.5207 27.8571 19.9882 29.0147 21.8358 29.5322C21.7653 29.6515 21.6941 29.7704 21.6261 29.8916C20.1562 32.5146 19.3955 35.3602 19.4196 38.1559H12.9198C12.1077 34.6968 9.31096 33.6481 6.34848 33.4828C5.14296 33.3699 4.44004 33.1272 3.92236 32.6455C3.03622 31.8207 2.59784 30.5665 2.77824 29.3722C3.0106 27.8339 4.13877 26.5938 5.52173 26.3566C7.28986 26.0538 9.20213 26.8348 10.4624 27.6896C10.4648 27.7275 10.4666 27.7642 10.4673 27.7977C10.4856 28.5814 10.1879 29.4516 9.65028 30.1849C9.26768 30.707 9.38058 31.4403 9.90255 31.823C10.4193 32.2031 11.1557 32.0959 11.5406 31.5706C13.4301 29.0604 12.9162 26.2968 11.7435 23.6639C10.9005 21.6752 9.56816 19.7282 7.99762 18.1994C6.70991 16.9459 5.97753 15.1962 5.98823 13.399C5.99769 11.8294 6.38638 10.0233 7.17321 7.88608C9.21408 9.27067 11.5621 9.84976 13.8733 9.35935C14.5053 9.21981 14.9046 8.59432 14.765 7.96233C14.6254 7.33019 13.9995 6.93096 13.368 7.07057C11.6969 7.4395 9.77958 6.94244 8.20216 5.73934C8.68601 4.97345 9.31628 4.23154 10.1306 3.693C11.5803 2.73428 13.3486 2.57138 14.9822 3.24571C16.6 3.91379 17.7735 5.32018 18.1213 7.00784C18.5675 9.16114 17.3695 11.6683 16.656 13.8685C15.6296 14.0257 14.3752 13.7256 13.7192 13.1026C13.2421 12.6656 12.5007 12.698 12.0634 13.1753C10.7387 14.8591 13.9443 16.0606 15.2215 16.1858C15.3173 16.1986 16.3884 16.2627 16.3853 16.2436C16.7547 18.756 19.4897 20.4334 21.8657 19.2515C24.3608 18.1855 25.2504 15.04 27.5556 14.5934C28.5854 14.409 29.668 14.758 30.381 15.5046C31.5514 16.7302 31.531 18.6841 30.3344 19.9528Z\" fill=\"#252A31\"></path>\n</svg>",
+            "title": "Boosts energy",
+            "title_size": "h2",
+            "text": "<p>Vital nutrients and adaptogens to combat fatigue and enhance your vitality during menstruation.</p>"
+          }
+        },
+        "07b69029-1792-496c-a1f7-c98e652594da": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "large",
+            "custom_icon": "<svg width=\"42\" height=\"40\" viewbox=\"0 0 42 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M26.8849 11.7532H29.2388V14.1071H26.8849V11.7532Z\" fill=\"#252A31\"></path>\n<path d=\"M22.1771 31.7614H29.2388V29.4075H24.531V27.0536H29.2388V24.6997H24.531V22.3458H29.2388V19.9918H22.1771V31.7614Z\" fill=\"#252A31\"></path>\n<path d=\"M22.1771 15.284H24.531V17.6379H22.1771V15.284Z\" fill=\"#252A31\"></path>\n<path d=\"M25.9335 0C22.732 3.57675 20.0985 6.87881 17.8218 10.0681C15.9027 6.59963 12.9469 2.9645 10.292 0C7.33328 3.30354 0.991943 10.8556 0.991943 15.3006C0.991943 20.6259 5.48962 24.9121 10.8672 24.5823C10.8621 24.6983 10.8587 24.813 10.8587 24.9252C10.8587 33.2375 17.6212 40 25.9335 40C34.2458 40 41.0083 33.2376 41.0083 24.9253C41.0083 17.8455 30.685 5.30679 25.9335 0ZM10.292 22.2468C6.46186 22.2468 3.34584 19.1308 3.34584 15.3006C3.34584 12.1894 8.29178 5.93819 10.2921 3.56396C12.2932 5.93866 17.238 12.1904 17.238 15.3006C17.2381 19.1308 14.1221 22.2468 10.292 22.2468ZM25.9335 37.6462C18.9192 37.6462 13.2126 31.9396 13.2126 24.9253C13.2126 24.6718 13.232 24.3996 13.2693 24.112C16.9417 22.8678 19.592 19.388 19.592 15.3007C19.592 14.5059 19.3878 13.5746 18.9819 12.5118C21.6426 8.66079 24.5287 5.19114 25.9373 3.54921C30.1685 8.45043 38.6544 19.4177 38.6544 24.9253C38.6544 31.9396 32.9479 37.6462 25.9335 37.6462Z\" fill=\"#252A31\"></path>\n</svg>",
+            "title": "Easy to use",
+            "title_size": "h2",
+            "text": "<p>Mix one scoop with water every day to thrive every stage of your menstrual cycle.</p>"
+          }
+        },
+        "a1a2e578-8786-42a3-ae41-ff043f135574": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "large",
+            "custom_icon": "<svg width=\"40\" height=\"40\" viewbox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M26.7643 11.0657C27.9627 11.0657 28.9343 10.0941 28.9343 8.89564C28.9343 7.69715 27.9627 6.72559 26.7643 6.72559C25.5658 6.72559 24.5942 7.69715 24.5942 8.89564C24.5942 10.0941 25.5658 11.0657 26.7643 11.0657Z\" fill=\"#252A31\"></path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M29.1317 0.00909235C32.6153 -0.0748162 35.5698 0.441554 37.0163 0.754576L37.0279 0.757093C37.5688 0.878819 38.0641 1.15162 38.4563 1.54374C38.8484 1.93583 39.1211 2.43118 39.2429 2.97218L39.2455 2.98375C39.5586 4.43029 40.0749 7.38465 39.9909 10.8684C39.9072 14.3435 39.2238 18.4449 37.0497 22.1034C34.8507 25.8042 31.1873 28.9454 25.3658 30.5375C21.7196 31.5349 17.2489 31.9196 11.7781 31.4837C12.0608 33.5801 12.4592 35.83 12.9872 38.2439C13.1579 39.0244 12.6636 39.7955 11.883 39.9662C11.1025 40.1371 10.3313 39.6426 10.1606 38.8621C9.56093 36.1205 9.1191 33.5634 8.82082 31.1791C6.43654 30.881 3.87957 30.4392 1.13789 29.8394C0.357356 29.6686 -0.137004 28.8976 0.0337149 28.1171C0.20444 27.3364 0.975588 26.8421 1.75613 27.0128C4.17004 27.5408 6.41989 27.9393 8.51642 28.2219C8.08047 22.7511 8.4652 18.2804 9.46244 14.6343C11.0546 8.81279 14.1958 5.14933 17.8966 2.95025C21.5552 0.776204 25.6565 0.0927983 29.1317 0.00909235ZM11.448 28.5521C16.9191 29.0402 21.225 28.6704 24.6025 27.7467C29.7194 26.3472 32.7559 23.6654 34.5624 20.6253C36.3939 17.5433 37.0217 13.9863 37.0983 10.7986C37.1747 7.62791 36.7037 4.92114 36.4197 3.60603C36.4181 3.59986 36.4149 3.5942 36.4103 3.58967C36.4059 3.58522 36.4003 3.58202 36.3944 3.58035C35.0793 3.29638 32.3724 2.82526 29.2014 2.90165C26.0137 2.97844 22.4567 3.60611 19.3747 5.43761C16.3346 7.24408 13.6528 10.2806 12.2533 15.3975C11.3296 18.775 10.9598 23.081 11.448 28.5521Z\" fill=\"#252A31\"></path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M17.382 3.57911C18.181 3.59084 18.8192 4.24798 18.8074 5.04689C18.7762 7.1744 19.1719 9.2866 19.9712 11.2585C20.7705 13.2304 21.9572 15.022 23.4609 16.5274C24.9647 18.0327 26.755 19.2212 28.7261 20.0225C30.6973 20.8238 32.809 21.2217 34.9365 21.1926C35.7355 21.1817 36.3919 21.8206 36.4029 22.6195C36.4138 23.4183 35.775 24.0748 34.976 24.0858C32.4617 24.1201 29.966 23.6498 27.6365 22.7028C25.307 21.7558 23.1911 20.3512 21.414 18.5722C19.6367 16.7932 18.2344 14.6759 17.2897 12.3454C16.3452 10.015 15.8774 7.51876 15.9143 5.00443C15.926 4.20552 16.5831 3.56739 17.382 3.57911Z\" fill=\"#252A31\"></path>\n</svg>",
+            "title": "Lasting results",
+            "title_size": "h2",
+            "text": "<p>Witness noticeable improvements after a consistent 3 month regimen.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "07cb31c5-1f95-487a-be6b-870e8f391b2f",
+        "1f612c48-8d36-4260-b2b1-27c58036a5f9",
+        "07b69029-1792-496c-a1f7-c98e652594da",
+        "a1a2e578-8786-42a3-ae41-ff043f135574"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2,.h2 {font-weight: 500;}"
+      ],
+      "settings": {
+        "layout": "default",
+        "column_alignment": "center",
+        "horizontal_content": false,
+        "full_width": true,
+        "show_divider": false,
+        "heading": "A no-nonsense superpowder for a healthy hormonal equilibrium",
+        "heading_size": "h1",
+        "heading_tag": "h2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "use_custom_colors": false,
+        "colors_icon": "#ffffff",
+        "colors_text": "#1a1b18",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "3f310764-aee5-4be4-baf8-b42065926901": {
+      "type": "rich-text",
+      "blocks": {
+        "ae057cac-a7f0-4dee-9796-53ebbf6ba951": {
+          "type": "heading",
+          "settings": {
+            "heading": "One convenient daily scoop, 30+ ingredients, mix with 150ml of water",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "701962be-2cd7-47c4-9f68-2b6830457a74": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our dietary supplement contains a synergistic blend of vitamins, herbs, and nutrients that support healthy estrogen metabolism, promoting hormone balance.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "cd1fb637-bde4-4ac0-8987-24b1fb2426bd": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "ae057cac-a7f0-4dee-9796-53ebbf6ba951",
+        "701962be-2cd7-47c4-9f68-2b6830457a74",
+        "cd1fb637-bde4-4ac0-8987-24b1fb2426bd"
+      ],
+      "custom_css": [
+        "h2 {font-weight: 500;}"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "narrow": false,
+        "show_divider": false,
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ffe622cb-092f-4f23-9f21-29b09fd9210b": {
+      "type": "tab-collage",
+      "blocks": {
+        "template--19196975382875__ffe622cb-092f-4f23-9f21-29b09fd9210b-16890033429483d8a2-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Powder.png",
+            "image_position": "center center",
+            "heading": "Minerals",
+            "description": "<p>Magnesium</p><ul><li>Reduces irritability</li><li>Regulates mood</li><li>Relaxes muscles reducing anxiety and other period discomfort</li></ul><p><br/>Calcium</p><ul><li>Supports healthy mood disturbances, nerves and muscles.</li><li>Enriched with Vitamin D3 regulates low mood</li></ul><p><br/>And many more</p>",
+            "button_label": "",
+            "button_link": "#buynow",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        },
+        "b1e49ac4-612f-4bbb-a742-52c1100b111b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Powder.png",
+            "image_position": "center center",
+            "heading": "Vitamins",
+            "description": "<p>Vitamin B6</p><ul><li>Regulates serotonin production, improving mood</li><li>Helps reduce premenstrual mood symptoms such as depression and irritability</li><li>Aids chemical pathways that support brain health</li></ul><p></p><p>Vitamin B3</p><ul><li>Plays a role in serotonin synthesis, improving mood</li><li>Supports energy production, reducing fatigue</li><li>Helps alleviate headaches</li></ul><p></p><p>Vitamin E</p><ul><li>Provides antioxidant properties, reducing oxidative stress and mood disturbances</li><li>Supports hormonal balance</li></ul><p><br/>And many more</p>",
+            "button_label": "",
+            "button_link": "#buynow",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        },
+        "6c4861a7-1607-4876-92a1-ec069a501a6c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Powder.png",
+            "image_position": "center center",
+            "heading": "Nutrients",
+            "description": "<p>Choline</p><p></p><ul><li>Supports healthy neurotransmitter function, contributing to mood balance</li><li>Supports mood regulation</li></ul><p><br/>And many more<br/></p>",
+            "button_label": "",
+            "button_link": "#buynow",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        },
+        "906e6531-da40-4bc4-9648-23ec44e80781": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Powder.png",
+            "image_position": "center center",
+            "heading": "Plant Extracts",
+            "description": "<p>Linseed Extract<br/></p><ul><li>Rich in omega 3 fatty acids</li><li>Supports mood regulation </li><li>Acts as an anti-inflammatory agent</li></ul><p><br/>And many more</p>",
+            "button_label": "",
+            "button_link": "#buynow",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        },
+        "552d3786-3592-4c97-9fef-5bb5ddc37932": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Powder.png",
+            "image_position": "center center",
+            "heading": "Essential Vitamins & Nutrients",
+            "description": "<ul><li>Energizes the body</li><li>Supports brain health</li><li>Aids in protein, fat, and carbohydrate metabolism</li></ul>",
+            "button_label": "",
+            "button_link": "#buynow",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        },
+        "fa413571-53f3-46a0-97de-0a7517024021": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Powder.png",
+            "image_position": "center center",
+            "heading": "Omega-3 Fatty Acids",
+            "description": "<ul><li>Vital for brain health</li><li>Helps reduce inflammation</li><li>Supports heart health</li><li>Regulates blood vessel function</li></ul>",
+            "button_label": "",
+            "button_link": "#buynow",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        },
+        "9273edea-f9f9-48ae-85b4-175d3c9c4bab": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Powder.png",
+            "image_position": "center center",
+            "heading": "Other ingredients to support hormonal balance",
+            "description": "<p></p><ul><li>Vitamin A, D, K, C, E</li><li>Kodzu extract</li><li>Folate</li></ul><p><br/>And many more</p>",
+            "button_label": "",
+            "button_link": "#buynow",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19196975382875__ffe622cb-092f-4f23-9f21-29b09fd9210b-16890033429483d8a2-0",
+        "b1e49ac4-612f-4bbb-a742-52c1100b111b",
+        "6c4861a7-1607-4876-92a1-ec069a501a6c",
+        "906e6531-da40-4bc4-9648-23ec44e80781",
+        "552d3786-3592-4c97-9fef-5bb5ddc37932",
+        "fa413571-53f3-46a0-97de-0a7517024021",
+        "9273edea-f9f9-48ae-85b4-175d3c9c4bab"
+      ],
+      "custom_css": [
+        ".tab-collage[data-accordion] .tab-collage__desc {padding: 0.8rem 1rem 2.8rem 0rem;}",
+        ".tab-collage__desc ul {padding-inline-start: 20px;}",
+        "h2 {font-weight: 500;}",
+        ".tab-collage[data-accordion] .tab-collage__heading {font-weight: 500; font-size: 1.9rem;}"
+      ],
+      "settings": {
+        "layout": "text_first",
+        "text_box_position": "top",
+        "text_alignment": "left",
+        "image_ratio": "adapt",
+        "make_collapsible_rows": true,
+        "full_width": false,
+        "show_divider": false,
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "button_label": "Buy now",
+        "button_link": "#pricing",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#252a31",
+        "colors_border": "#d2d5d9",
+        "colors_background": "#fff5f5",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "5b0e295c-c3b4-4faa-9c69-9318d575da35": {
+      "type": "guarantees",
+      "blocks": {
+        "template--19196975382875__5b0e295c-c3b4-4faa-9c69-9318d575da35-1688998892c4a77990-0": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "large",
+            "custom_icon": "<svg width=\"40\" height=\"40\" viewbox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M40 18.3701L35.7929 12.2087L28.7152 14.0718L26.9716 18.689V4.91653L19.9191 0L13.0414 4.92613V18.7234L11.2847 14.0719L4.20707 12.2088L0 18.3701L4.86499 31.2524L0.832993 32.6216V40H39.1801V32.6216L35.1366 31.2484L40 18.3701ZM30.5291 29.6838L33.9139 20.7209L36.8286 20.1178L32.9105 30.4925L30.5291 29.6838ZM20.0065 35.8002L16.4545 30.636H23.5586L20.0065 35.8002ZM25.6257 31.7808L28.4879 37.6393H21.5961L25.6257 31.7808ZM18.4169 37.6393H11.525L14.3872 31.7808L18.4169 37.6393ZM36.7158 17.731L33.5391 18.3883L31.5825 15.7572L34.7912 14.9126L36.7158 17.731ZM29.937 17.4865L31.719 19.8828L28.3031 28.9279L26.9715 28.4757V25.3389L29.937 17.4865ZM24.6238 24.9505V28.2753H21.1804V9.88138L24.6238 7.68235V24.9056L24.609 24.9449L24.6238 24.9505ZM19.9374 2.88535L23.6756 5.49135L20.0065 7.83453L16.317 5.47829L19.9374 2.88535ZM15.3892 7.68235L18.8326 9.88138V28.2753H15.3892V24.9456L15.391 24.9449L15.3892 24.94V7.68235ZM13.0415 28.4757L11.6984 28.9318L8.28101 19.8828L10.063 17.4865L13.0415 25.3734V28.4757ZM5.20879 14.9126L8.4175 15.7572L6.46086 18.3883L3.28423 17.731L5.20879 14.9126ZM3.17138 20.1178L6.08607 20.7209L9.47243 29.6877L7.09092 30.4965L3.17138 20.1178ZM3.18077 34.316L11.9954 31.3225L8.90936 37.6393H3.18077V34.316ZM36.8323 37.6393H31.1036L28.0176 31.3226L36.8322 34.3161V37.6393H36.8323Z\" fill=\"#252A31\"></path>\n</svg>",
+            "title": "Minerals",
+            "title_size": "h2",
+            "text": "<ul><li>Enhances enzyme activity</li><li>Supports nerve function</li><li>Boosts bone health</li><li>Maintains nervous system functions</li></ul>"
+          }
+        },
+        "template--19196975382875__5b0e295c-c3b4-4faa-9c69-9318d575da35-1688998892c4a77990-1": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "large",
+            "custom_icon": "<svg width=\"34\" height=\"41\" viewbox=\"0 0 34 41\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M32.0762 13.886C30.808 12.558 28.9633 11.96 27.1422 12.2864C25.1294 12.6472 23.9941 14.0025 22.9924 15.1981C22.3259 15.9937 21.6964 16.7451 20.8763 17.1269C20.1025 17.4873 19.5498 17.1619 19.2893 16.9359C18.7508 16.4686 18.5413 15.7101 18.7555 15.0036C18.9209 14.4583 19.1214 13.8969 19.3336 13.3026C20.0702 11.2402 20.905 8.90261 20.4171 6.53508C19.912 4.08434 18.2148 2.04487 15.877 1.0796C13.5475 0.117598 10.916 0.36386 8.8379 1.73838C7.22321 2.80624 5.918 4.56843 5.06327 6.83447C4.12018 9.33513 3.65602 11.478 3.64461 13.3852C3.63008 15.8165 4.62091 18.1834 6.36294 19.8791C7.74339 21.223 8.83875 22.8265 9.57308 24.5484C9.56348 24.5597 9.55418 24.5713 9.54496 24.583C8.18818 24.0611 6.64725 23.786 5.12569 24.0468C0.457277 24.8719 -1.24616 31.1459 2.32557 34.3614C3.48257 35.4381 4.89803 35.7013 6.13004 35.8167C7.19634 35.9165 8.65672 36.0533 9.49722 36.7637C10.2524 37.402 10.7034 38.3606 10.7034 39.3281C10.7034 39.9753 11.2281 40.5 11.8753 40.5H20.5916C21.2388 40.5 21.7635 39.9753 21.7635 39.3281V38.0091C21.6688 32.3631 25.6064 27.771 29.5953 24.0289C30.408 23.2281 31.2485 22.4 32.0395 21.5612C34.0919 19.3849 34.108 16.0136 32.0762 13.886ZM30.3344 19.9528C29.7449 20.5778 29.1177 21.2058 28.4943 21.8223C27.8307 21.4647 27.2198 20.998 26.6753 20.4277C26.2282 19.9597 25.4864 19.9426 25.0183 20.3895C24.5503 20.8366 24.5331 21.5784 24.9801 22.0465C25.5268 22.6189 26.1265 23.114 26.7716 23.5276C25.5404 24.7608 24.3281 26.0396 23.2591 27.4355C21.674 27.2259 20.4197 26.4136 19.8121 25.1969C19.5228 24.6178 18.8187 24.3829 18.24 24.672C17.661 24.9612 17.4259 25.665 17.7151 26.2441C18.5207 27.8571 19.9882 29.0147 21.8358 29.5322C21.7653 29.6515 21.6941 29.7704 21.6261 29.8916C20.1562 32.5146 19.3955 35.3602 19.4196 38.1559H12.9198C12.1077 34.6968 9.31096 33.6481 6.34848 33.4828C5.14296 33.3699 4.44004 33.1272 3.92236 32.6455C3.03622 31.8207 2.59784 30.5665 2.77824 29.3722C3.0106 27.8339 4.13877 26.5938 5.52173 26.3566C7.28986 26.0538 9.20213 26.8348 10.4624 27.6896C10.4648 27.7275 10.4666 27.7642 10.4673 27.7977C10.4856 28.5814 10.1879 29.4516 9.65028 30.1849C9.26768 30.707 9.38058 31.4403 9.90255 31.823C10.4193 32.2031 11.1557 32.0959 11.5406 31.5706C13.4301 29.0604 12.9162 26.2968 11.7435 23.6639C10.9005 21.6752 9.56816 19.7282 7.99762 18.1994C6.70991 16.9459 5.97753 15.1962 5.98823 13.399C5.99769 11.8294 6.38638 10.0233 7.17321 7.88608C9.21408 9.27067 11.5621 9.84976 13.8733 9.35935C14.5053 9.21981 14.9046 8.59432 14.765 7.96233C14.6254 7.33019 13.9995 6.93096 13.368 7.07057C11.6969 7.4395 9.77958 6.94244 8.20216 5.73934C8.68601 4.97345 9.31628 4.23154 10.1306 3.693C11.5803 2.73428 13.3486 2.57138 14.9822 3.24571C16.6 3.91379 17.7735 5.32018 18.1213 7.00784C18.5675 9.16114 17.3695 11.6683 16.656 13.8685C15.6296 14.0257 14.3752 13.7256 13.7192 13.1026C13.2421 12.6656 12.5007 12.698 12.0634 13.1753C10.7387 14.8591 13.9443 16.0606 15.2215 16.1858C15.3173 16.1986 16.3884 16.2627 16.3853 16.2436C16.7547 18.756 19.4897 20.4334 21.8657 19.2515C24.3608 18.1855 25.2504 15.04 27.5556 14.5934C28.5854 14.409 29.668 14.758 30.381 15.5046C31.5514 16.7302 31.531 18.6841 30.3344 19.9528Z\" fill=\"#252A31\"></path>\n</svg>",
+            "title": "Ginger",
+            "title_size": "h2",
+            "text": "<ul><li>Eases menstrual pain</li><li>Acts as an anti-inflammatory agent</li><li>Supports joint health and overall wellness</li></ul>"
+          }
+        },
+        "fe809f26-1cbd-42ce-b67a-37a6aeb8c89a": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "large",
+            "custom_icon": "<svg width=\"42\" height=\"40\" viewbox=\"0 0 42 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M26.8849 11.7532H29.2388V14.1071H26.8849V11.7532Z\" fill=\"#252A31\"></path>\n<path d=\"M22.1771 31.7614H29.2388V29.4075H24.531V27.0536H29.2388V24.6997H24.531V22.3458H29.2388V19.9918H22.1771V31.7614Z\" fill=\"#252A31\"></path>\n<path d=\"M22.1771 15.284H24.531V17.6379H22.1771V15.284Z\" fill=\"#252A31\"></path>\n<path d=\"M25.9335 0C22.732 3.57675 20.0985 6.87881 17.8218 10.0681C15.9027 6.59963 12.9469 2.9645 10.292 0C7.33328 3.30354 0.991943 10.8556 0.991943 15.3006C0.991943 20.6259 5.48962 24.9121 10.8672 24.5823C10.8621 24.6983 10.8587 24.813 10.8587 24.9252C10.8587 33.2375 17.6212 40 25.9335 40C34.2458 40 41.0083 33.2376 41.0083 24.9253C41.0083 17.8455 30.685 5.30679 25.9335 0ZM10.292 22.2468C6.46186 22.2468 3.34584 19.1308 3.34584 15.3006C3.34584 12.1894 8.29178 5.93819 10.2921 3.56396C12.2932 5.93866 17.238 12.1904 17.238 15.3006C17.2381 19.1308 14.1221 22.2468 10.292 22.2468ZM25.9335 37.6462C18.9192 37.6462 13.2126 31.9396 13.2126 24.9253C13.2126 24.6718 13.232 24.3996 13.2693 24.112C16.9417 22.8678 19.592 19.388 19.592 15.3007C19.592 14.5059 19.3878 13.5746 18.9819 12.5118C21.6426 8.66079 24.5287 5.19114 25.9373 3.54921C30.1685 8.45043 38.6544 19.4177 38.6544 24.9253C38.6544 31.9396 32.9479 37.6462 25.9335 37.6462Z\" fill=\"#252A31\"></path>\n</svg>",
+            "title": "Essential Vitamins & Nutrients",
+            "title_size": "h2",
+            "text": "<ul><li>Energizes the body</li><li>Supports brain health</li><li>Aids in protein, fat, and carbohydrate metabolism</li></ul>"
+          }
+        },
+        "7265c965-9e8c-4a3b-9bfc-9c8a796a031c": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "large",
+            "custom_icon": "<svg width=\"40\" height=\"40\" viewbox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M26.7643 11.0657C27.9627 11.0657 28.9343 10.0941 28.9343 8.89564C28.9343 7.69715 27.9627 6.72559 26.7643 6.72559C25.5658 6.72559 24.5942 7.69715 24.5942 8.89564C24.5942 10.0941 25.5658 11.0657 26.7643 11.0657Z\" fill=\"#252A31\"></path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M29.1317 0.00909235C32.6153 -0.0748162 35.5698 0.441554 37.0163 0.754576L37.0279 0.757093C37.5688 0.878819 38.0641 1.15162 38.4563 1.54374C38.8484 1.93583 39.1211 2.43118 39.2429 2.97218L39.2455 2.98375C39.5586 4.43029 40.0749 7.38465 39.9909 10.8684C39.9072 14.3435 39.2238 18.4449 37.0497 22.1034C34.8507 25.8042 31.1873 28.9454 25.3658 30.5375C21.7196 31.5349 17.2489 31.9196 11.7781 31.4837C12.0608 33.5801 12.4592 35.83 12.9872 38.2439C13.1579 39.0244 12.6636 39.7955 11.883 39.9662C11.1025 40.1371 10.3313 39.6426 10.1606 38.8621C9.56093 36.1205 9.1191 33.5634 8.82082 31.1791C6.43654 30.881 3.87957 30.4392 1.13789 29.8394C0.357356 29.6686 -0.137004 28.8976 0.0337149 28.1171C0.20444 27.3364 0.975588 26.8421 1.75613 27.0128C4.17004 27.5408 6.41989 27.9393 8.51642 28.2219C8.08047 22.7511 8.4652 18.2804 9.46244 14.6343C11.0546 8.81279 14.1958 5.14933 17.8966 2.95025C21.5552 0.776204 25.6565 0.0927983 29.1317 0.00909235ZM11.448 28.5521C16.9191 29.0402 21.225 28.6704 24.6025 27.7467C29.7194 26.3472 32.7559 23.6654 34.5624 20.6253C36.3939 17.5433 37.0217 13.9863 37.0983 10.7986C37.1747 7.62791 36.7037 4.92114 36.4197 3.60603C36.4181 3.59986 36.4149 3.5942 36.4103 3.58967C36.4059 3.58522 36.4003 3.58202 36.3944 3.58035C35.0793 3.29638 32.3724 2.82526 29.2014 2.90165C26.0137 2.97844 22.4567 3.60611 19.3747 5.43761C16.3346 7.24408 13.6528 10.2806 12.2533 15.3975C11.3296 18.775 10.9598 23.081 11.448 28.5521Z\" fill=\"#252A31\"></path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M17.382 3.57911C18.181 3.59084 18.8192 4.24798 18.8074 5.04689C18.7762 7.1744 19.1719 9.2866 19.9712 11.2585C20.7705 13.2304 21.9572 15.022 23.4609 16.5274C24.9647 18.0327 26.755 19.2212 28.7261 20.0225C30.6973 20.8238 32.809 21.2217 34.9365 21.1926C35.7355 21.1817 36.3919 21.8206 36.4029 22.6195C36.4138 23.4183 35.775 24.0748 34.976 24.0858C32.4617 24.1201 29.966 23.6498 27.6365 22.7028C25.307 21.7558 23.1911 20.3512 21.414 18.5722C19.6367 16.7932 18.2344 14.6759 17.2897 12.3454C16.3452 10.015 15.8774 7.51876 15.9143 5.00443C15.926 4.20552 16.5831 3.56739 17.382 3.57911Z\" fill=\"#252A31\"></path>\n</svg>",
+            "title": "Omega-3 Fatty Acids",
+            "title_size": "h2",
+            "text": "<ul><li>Vital for brain health</li><li>Helps reduce inflammation</li><li>Supports heart health</li><li>Regulates blood vessel function</li></ul>"
+          }
+        },
+        "9a20587d-c397-48d0-bdce-07cf14887353": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "large",
+            "custom_icon": "<svg width=\"38\" height=\"39\" viewbox=\"0 0 38 39\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M17.5156 26.1782V20.9829H12.3203C11.5004 20.9829 10.8359 20.3184 10.8359 19.4986C10.8359 18.679 11.5004 18.0142 12.3203 18.0142H17.5156V12.8189C17.5156 11.9993 18.1801 11.3345 19 11.3345C19.8199 11.3345 20.4844 11.9993 20.4844 12.8189V18.0142H25.6797C26.4996 18.0142 27.1641 18.679 27.1641 19.4986C27.1641 20.3184 26.4996 20.9829 25.6797 20.9829H20.4844V26.1782C20.4844 26.9981 19.8199 27.6626 19 27.6626C18.1801 27.6626 17.5156 26.9981 17.5156 26.1782ZM32.435 6.06496C28.8465 2.47636 24.075 0.5 19 0.5C13.925 0.5 9.15355 2.47636 5.56496 6.06496C1.97636 9.65355 0 14.425 0 19.5C0 24.575 1.97636 29.3465 5.56496 32.935C9.15355 36.5236 13.925 38.5 19 38.5C22.4744 38.5 25.8739 37.5531 28.8311 35.7617C29.5324 35.337 29.7565 34.4243 29.3318 33.7233C28.907 33.022 27.9941 32.7979 27.2931 33.2226C24.7998 34.7328 21.9319 35.5313 19 35.5313C10.1604 35.5313 2.96875 28.3396 2.96875 19.5C2.96875 10.6604 10.1604 3.46875 19 3.46875C27.8396 3.46875 35.0313 10.6604 35.0313 19.5C35.0313 22.661 34.0913 25.7376 32.313 28.3978C31.8572 29.0791 32.0405 30.0011 32.7221 30.4568C33.4034 30.9123 34.3253 30.7291 34.7811 30.0478C36.8867 26.8978 38 23.2504 38 19.5C38 14.425 36.0236 9.65355 32.435 6.06496Z\" fill=\"#252A31\"></path>\n</svg>",
+            "title": "Other ingredients to support hormonal balance",
+            "title_size": "h2",
+            "text": "<ul><li>Choline & Inositol</li><li>Broccoli Extract & Sulforaphane</li><li>Sleep Supplement Ingredients</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19196975382875__5b0e295c-c3b4-4faa-9c69-9318d575da35-1688998892c4a77990-0",
+        "template--19196975382875__5b0e295c-c3b4-4faa-9c69-9318d575da35-1688998892c4a77990-1",
+        "fe809f26-1cbd-42ce-b67a-37a6aeb8c89a",
+        "7265c965-9e8c-4a3b-9bfc-9c8a796a031c",
+        "9a20587d-c397-48d0-bdce-07cf14887353"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-weight: 500;}"
+      ],
+      "settings": {
+        "layout": "default",
+        "column_alignment": "left",
+        "horizontal_content": false,
+        "full_width": false,
+        "show_divider": false,
+        "heading": "One scoop, 30+ ingredients, mixed with 150ml of water.",
+        "heading_size": "h1",
+        "heading_tag": "h2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "use_custom_colors": false,
+        "colors_icon": "#ffffff",
+        "colors_text": "#1a1b18",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "db62e5b8-4a3b-4504-8759-89986f26e704": {
+      "type": "reviews-slider-powder",
+      "custom_css": [
+        "h2 {font-weight: 500;}"
+      ],
+      "settings": {
+        "title": "Don’t take our word for it, take hers!"
+      }
+    },
+    "c2e759ee-eab6-425e-874f-4223082fc963": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--19196975382875__c2e759ee-eab6-425e-874f-4223082fc963-16889988586c64d07e-0": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "title_size": "h3",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "template--19196975382875__c2e759ee-eab6-425e-874f-4223082fc963-16889988586c64d07e-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "title_size": "h3",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "template--19196975382875__c2e759ee-eab6-425e-874f-4223082fc963-16889988586c64d07e-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "title_size": "h3",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19196975382875__c2e759ee-eab6-425e-874f-4223082fc963-16889988586c64d07e-0",
+        "template--19196975382875__c2e759ee-eab6-425e-874f-4223082fc963-16889988586c64d07e-1",
+        "template--19196975382875__c2e759ee-eab6-425e-874f-4223082fc963-16889988586c64d07e-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_ratio": "square",
+        "image_position": "center center",
+        "text_alignment": "left",
+        "show_divider": false,
+        "heading": "Multicolumn",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "mobile_text_alignment": "left",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cd800f86-638e-44f9-a5cd-025c09feed16": {
+      "type": "featured-product",
+      "blocks": {
+        "5147bc0d-b19a-438f-9411-a06891130576": {
+          "type": "title",
+          "settings": {
+            "title_size": "h2",
+            "title_tag": "h2",
+            "show_price": false,
+            "price_size": "medium"
+          }
+        },
+        "3a9145df-0432-4865-be92-c0a2ceec58f5": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {}
+        },
+        "c246bf3a-b44d-41b9-8dc0-1015a4fb90b7": {
+          "type": "countdown",
+          "disabled": true,
+          "settings": {
+            "heading": "Hurry up ! Sale end in:",
+            "number_size": "compact",
+            "colors_heading": "#da3f3f",
+            "colors_text": "#da3f3f",
+            "colors_background": "#feeeee"
+          }
+        },
+        "c74be271-acad-4cd6-9123-9b8b39617bb2": {
+          "type": "price",
+          "settings": {
+            "price_size": "medium",
+            "show_badges": true
+          }
+        },
+        "96d73b8b-18d7-4835-8cf5-9d698a441a95": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "text": "€ 1,16 / serving",
+            "text_style": "subtitle"
+          }
+        },
+        "dea48a60-6cac-4671-a202-453756237634": {
+          "type": "text",
+          "settings": {
+            "icon": "check_mark",
+            "text": "30 Servings of Monthlies mix",
+            "text_style": "body"
+          }
+        },
+        "a1b2e9b3-3d6a-4574-a6fc-62318147a5db": {
+          "type": "text",
+          "settings": {
+            "icon": "check_mark",
+            "text": "30 Servings of Monthlies mix",
+            "text_style": "body"
+          }
+        },
+        "8eedf554-9032-454e-a501-b1e6e92177a0": {
+          "type": "text",
+          "settings": {
+            "icon": "check_mark",
+            "text": "30 Servings of Monthlies mix",
+            "text_style": "body"
+          }
+        },
+        "8c5608be-0607-419f-9e6a-b9f17d7758a9": {
+          "type": "text",
+          "settings": {
+            "icon": "check_mark",
+            "text": "30 Servings of Monthlies mix",
+            "text_style": "body"
+          }
+        },
+        "ee2ed211-da5a-476d-a163-d939cf31c199": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "show_dynamic_checkout": false
+          }
+        },
+        "dee89147-2aff-4f9b-992a-ad82c63ccbcd": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "text": "90-day money back guarantee",
+            "text_style": "subtitle"
+          }
+        },
+        "5847e6a9-1920-419b-a24c-33e31a1f8c96": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "show_variant_labels": false,
+            "picker_type": "button",
+            "enable_color_swatches": false,
+            "swatch_type": "round",
+            "size_chart": ""
+          }
+        },
+        "7ca9e24b-e0bf-47f1-a7c4-378e160ffcae": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "cb26242c-2a34-4ea8-ab52-6cd370730bae": {
+          "type": "read_more",
+          "disabled": true,
+          "settings": {
+            "show_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "5147bc0d-b19a-438f-9411-a06891130576",
+        "3a9145df-0432-4865-be92-c0a2ceec58f5",
+        "c246bf3a-b44d-41b9-8dc0-1015a4fb90b7",
+        "c74be271-acad-4cd6-9123-9b8b39617bb2",
+        "96d73b8b-18d7-4835-8cf5-9d698a441a95",
+        "dea48a60-6cac-4671-a202-453756237634",
+        "a1b2e9b3-3d6a-4574-a6fc-62318147a5db",
+        "8eedf554-9032-454e-a501-b1e6e92177a0",
+        "8c5608be-0607-419f-9e6a-b9f17d7758a9",
+        "ee2ed211-da5a-476d-a163-d939cf31c199",
+        "dee89147-2aff-4f9b-992a-ad82c63ccbcd",
+        "5847e6a9-1920-419b-a24c-33e31a1f8c96",
+        "7ca9e24b-e0bf-47f1-a7c4-378e160ffcae",
+        "cb26242c-2a34-4ea8-ab52-6cd370730bae"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-weight: 500;}"
+      ],
+      "settings": {
+        "product": "estrogen-detox",
+        "layout": "media_first",
+        "full_width": false,
+        "show_divider": false,
+        "hide_variants": false,
+        "enable_image_zoom": false,
+        "enable_video_looping": false,
+        "image_ratio": "adapt",
+        "image_position": "center center",
+        "enable_layered_images": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "011db143-269c-48ec-a23a-a393064faf7d": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19076063363419__011db143-269c-48ec-a23a-a393064faf7d-16869213509a2cfe03-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Quality products",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "template--19076063363419__011db143-269c-48ec-a23a-a393064faf7d-16869213509a2cfe03-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our premium formulas are expertly designed to tackle your symptoms with high-quality natural, gluten-free, lactose-free, and organic ingredients.</p><p> Handpicked by experts for effective relief and hormonal balance, our formulas ensure a harmonious, side-effect-free experience.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "template--19076063363419__011db143-269c-48ec-a23a-a393064faf7d-16869213509a2cfe03-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Take the quiz",
+            "button_link": "shopify://pages/cycle-assessment",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19076063363419__011db143-269c-48ec-a23a-a393064faf7d-16869213509a2cfe03-0",
+        "template--19076063363419__011db143-269c-48ec-a23a-a393064faf7d-16869213509a2cfe03-1",
+        "template--19076063363419__011db143-269c-48ec-a23a-a393064faf7d-16869213509a2cfe03-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Quality_products.png",
+        "image_position": "center center",
+        "layout": "text_first",
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "adapt",
+        "enlarge_content": false,
+        "full_width": false,
+        "show_divider": false,
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "3a774272-2034-4e79-9512-4f2538f43f81": {
+      "type": "experts",
+      "disabled": true,
+      "settings": {
+        "title": "Our experts",
+        "text": "<p>We recommend t</p>",
+        "url": "",
+        "label": "Take the quiz",
+        "name_1": "Dr. Smith",
+        "field_1": "Field of expertise",
+        "text_1": "We are a team of women experts specialised in hormonal balance, menstrual health and natural solutions. Take our cycle quiz for personalized recommendations based on your symptoms. Check in with us to find what works for you!",
+        "name_2": "Dr. Thomson",
+        "field_2": "Field of expertise",
+        "text_2": "We are a team of women experts specialised in hormonal balance, menstrual health and natural solutions. Take our cycle quiz for personalized recommendations based on your symptoms. Check in with us to find what works for you!",
+        "name_3": "Dr. Odesza",
+        "field_3": "Field of expertise",
+        "text_3": "We are a team of women experts specialised in hormonal balance, menstrual health and natural solutions. Take our cycle quiz for personalized recommendations based on your symptoms. Check in with us to find what works for you!"
+      }
+    },
+    "6805be15-c858-4284-ae44-e8707ab0e852": {
+      "type": "pricing",
+      "custom_css": [
+        "#product-column-1 {display: none !important;}"
+      ],
+      "settings": {
+        "title": "Buy Monthlies today, join the cycle care revolution",
+        "text": "Your daily dose combines 30+ key ingredients to boost hormonal balance and improve menstrual wellness.",
+        "product1_bullets_title": "Try out Monthlies",
+        "product1_bullet1": "15 servings of Monthlies mix",
+        "product1_bullet2": "Ships once",
+        "product1_bullet3": "Cycle guide",
+        "product1_bullet4": "Exercise & Nutrition recommendations",
+        "product1_bullet5": "",
+        "product1_bullet6": "",
+        "product2_bullets_title": "Best for kickstarting your new hormonal balance habit",
+        "product2_bullet1": "30 servings of Monthlies",
+        "product2_bullet2": "Ships once",
+        "product2_bullet3": "Cycle guide",
+        "product2_bullet4": "Exercise & Nutrition recommendations",
+        "product2_bullet5": "",
+        "product2_bullet6": "",
+        "product3_bullets_title": "Best for sustaining your hormonal balance habit",
+        "product3_bullet1": "30 servings per month",
+        "product3_bullet2": "Delivered monthly",
+        "product3_bullet3": "",
+        "product3_bullet4": "1:1 Expert health consultation",
+        "product3_bullet5": "Cycle guide",
+        "product3_bullet6": "Exercise & Nutrition recommendations"
+      }
+    },
+    "ab3bc8a2-af3f-48c3-9ad8-6cb753cda193": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19262625481051__ab3bc8a2-af3f-48c3-9ad8-6cb753cda193-168910620831700c90-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Half of your life is spent in a menstrual cycle that you don’t fully understand",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "template--19262625481051__ab3bc8a2-af3f-48c3-9ad8-6cb753cda193-168910620831700c90-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our cycle affects us daily, beyond menstruation. Understanding its phases and hormonal fluctuations will help unlock the cycle wellbeing you’re looking for.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "template--19262625481051__ab3bc8a2-af3f-48c3-9ad8-6cb753cda193-168910620831700c90-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19262625481051__ab3bc8a2-af3f-48c3-9ad8-6cb753cda193-168910620831700c90-0",
+        "template--19262625481051__ab3bc8a2-af3f-48c3-9ad8-6cb753cda193-168910620831700c90-1",
+        "template--19262625481051__ab3bc8a2-af3f-48c3-9ad8-6cb753cda193-168910620831700c90-2"
+      ],
+      "custom_css": [
+        "h2 {font-weight: 500;}"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "narrow": false,
+        "show_divider": false,
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 60,
+        "padding_bottom": 36
+      }
+    },
+    "34554ed7-693e-4737-b179-90cd09605f22": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19262625481051__34554ed7-693e-4737-b179-90cd09605f22-16891914277dea981b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Free cycle guide",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "template--19262625481051__34554ed7-693e-4737-b179-90cd09605f22-16891914277dea981b-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover the powerful impact of daily choices on your hormones along with practical tips to navigate towards cycle wellbeing.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "template--19262625481051__34554ed7-693e-4737-b179-90cd09605f22-16891914277dea981b-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Download for free",
+            "button_link": "https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Cycle_Guide_Monthlies.pdf?v=1689353222",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19262625481051__34554ed7-693e-4737-b179-90cd09605f22-16891914277dea981b-0",
+        "template--19262625481051__34554ed7-693e-4737-b179-90cd09605f22-16891914277dea981b-1",
+        "template--19262625481051__34554ed7-693e-4737-b179-90cd09605f22-16891914277dea981b-2"
+      ],
+      "custom_css": [
+        "h2 {font-weight: 500;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Frame_39989.png",
+        "image_position": "center center",
+        "layout": "image_first",
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "adapt",
+        "enlarge_content": false,
+        "full_width": false,
+        "show_divider": false,
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "5b11d092-f40f-46bc-bebf-413592a4c425": {
+      "type": "usp",
+      "custom_css": [
+        ".usp-holder {background: #bcddb8;}"
+      ],
+      "settings": {
+        "title": "Painkillers aren’t your only option. Try natural solutions",
+        "title_1": "Instant & long-term relief",
+        "text_1": "",
+        "title_2": "Backed by research",
+        "text_2": "",
+        "title_3": "By women, for women",
+        "text_3": ""
+      }
+    },
+    "f5a93b26-8e28-4262-bcb1-66af14984b5a": {
+      "type": "experts-campaign",
+      "custom_css": [
+        "#cta-experts,.cta-play-video-expert {display: none !important;}"
+      ],
+      "settings": {
+        "title": "Our experts",
+        "text": "<p>With years of experience helping women overcome menstrual pain and discomfort, our mission is to provide you with the tailored solutions you need to thrive at every stage of your cycle.</p>",
+        "url": "",
+        "label": "Take the quiz",
+        "name_1": "Dr. Ashley Florestal",
+        "field_1": "Licensed Naturopath",
+        "text_1": "Ashley focusses on women's health, hormones and fertility. She helps patients achieve hormonal balance, prepare for pregnancy, and optimize their health through her clinical practice and ongoing education.",
+        "name_2": "Dr. Cassandra Paiano",
+        "field_2": "Licensed Naturopath",
+        "text_2": "Cassandra uses an evidence-based approach to diagnose and treat disease. She holds a Doctor of Naturopathy degree from CCNM, Toronto, and has an undergraduate degree in Nutritional Sciences from Ryerson University.",
+        "name_3": "Melissa Mastroberardino",
+        "field_3": "Registered Holistic Nutritionist (RHN)",
+        "text_3": "Melissa specialises in hormonal and digestive health. She studied at the Canadian School of Natural Nutrition and helps women uncover imbalances and deficiencies to improve their overall well-being through customised protocols."
+      }
+    },
+    "f89a8eb5-9bb6-4c6a-8eb5-930e9a2c4dcb": {
+      "type": "faq",
+      "blocks": {
+        "template--19262625481051__f89a8eb5-9bb6-4c6a-8eb5-930e9a2c4dcb-168910636519dba81f-0": {
+          "type": "question",
+          "settings": {
+            "title": "What is Monthlies?",
+            "text": "<p>We're a group of women dedicated to the idea that you deserve more than just painkillers to relieve menstrual discomfort. Drawing from extensive research and expertise, we've developed Monthlies – a carefully formulated blend of minerals, vitamins, plant extracts, and more, providing an all-in-one solution for menstrual discomfort, and overall health.  Our powder provides genuine relief, empowering you to thrive at every stage of your cycle.As an all-female team of naturopathic doctors, we are passionate about empowering women to take control of their menstrual health. We have witnessed firsthand the transformative impact of natural remedies on our patients' lives.</p>"
+          }
+        },
+        "template--19262625481051__f89a8eb5-9bb6-4c6a-8eb5-930e9a2c4dcb-168910636519dba81f-1": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19262625481051__f89a8eb5-9bb6-4c6a-8eb5-930e9a2c4dcb-168910636519dba81f-0",
+        "template--19262625481051__f89a8eb5-9bb6-4c6a-8eb5-930e9a2c4dcb-168910636519dba81f-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "narrow": true,
+        "secondary_background": false,
+        "show_divider": false,
+        "heading": "FAQs",
+        "heading_size": "h0",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ad0e9a57-c99d-4709-8388-2b106409ff5a": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--19262625481051__ad0e9a57-c99d-4709-8388-2b106409ff5a-1689197180f20b374f-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is Monthlies?",
+            "row_content": "<p>We're a group of women dedicated to the idea that you deserve more than just painkillers to relieve menstrual discomfort. <br/><br/>Drawing from extensive research and expertise, we've developed Monthlies – a carefully formulated blend of minerals, vitamins, plant extracts, and more, providing an all-in-one solution for menstrual discomfort, and overall health.  <br/><br/>Our powder provides genuine relief, empowering you to thrive at every stage of your cycle.<br/><br/>As an all-female team of naturopathic doctors, we are passionate about empowering women to take control of their menstrual health. <br/><br/>We have witnessed firsthand the transformative impact of natural remedies on our patients' lives.</p>",
+            "page": ""
+          }
+        },
+        "template--19262625481051__ad0e9a57-c99d-4709-8388-2b106409ff5a-1689197180f20b374f-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is Monthlies right for me?",
+            "row_content": "<ul><li>You're tired of being vulnerable, and emotionally unstable due to hormonal imbalances<br/></li><li>You want to be resilient and find calm, no matter what moment of your cycle you are<br/></li><li>You want to improve your overall health<br/></li><li>You want to feel energised</li></ul><p></p><ul><li>You're ready to take control of your cycle wellbeing<br/></li><li>You believe in the power of natural remedies and want to explore research-backed alternatives.</li></ul><p></p><p>Join us on this transformative journey towards a pain-free and empowered menstrual experience. </p>",
+            "page": ""
+          }
+        },
+        "685f7f4a-2356-4693-ac2f-6c74fa099fb4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I use the powder?",
+            "row_content": "<p>Using the powder is easy! <br/><br/>Simply mix 1 scoop of powder with water, juice, or your preferred beverage. <br/><br/>Consume it daily as directed for optimal results. <br/><br/>It’s recommended to take it with food during the morning.It's convenient and hassle-free, fitting seamlessly into your daily routine.</p>",
+            "page": ""
+          }
+        },
+        "d3261cfc-a447-4ad0-abf1-553511c76560": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "When can I expect to see results?",
+            "row_content": "<p>While individual results may vary, 70% of our clients report noticeable improvements in their menstrual symptoms from the third month of taking the powder regularly. </p><p>Consistency is key, so it's important to continue using the product as instructed.</p>",
+            "page": ""
+          }
+        },
+        "23738499-e5c7-44f1-b0cd-2e8d7ab9c2d1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are there any side effects?",
+            "row_content": "<p>Our powder is made with carefully selected natural ingredients, minimizing the risk of adverse side effects. <br/><br/>However, it's always recommended to review the ingredient list and consult with your healthcare provider if you have specific concerns or pre-existing medical conditions.<br/><br/>It's advisable to consult with your healthcare provider before combining our powder with other supplements or medications. <br/><br/>They can provide personalized guidance based on your individual health needs and ensure compatibility.</p>",
+            "page": ""
+          }
+        },
+        "23b85301-950f-45d0-8c6b-62d30a1960cd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How much does Monthlies cost?",
+            "row_content": "<p>We offer different options:</p><ul><li>Single Pack: €59.90 for one powder pot.</li><li>Subscription: €49.90 delivered monthly to your doorstep, + exclusive perks.</li></ul><p></p><p>Invest in your menstrual health and experience the transformative benefits of our powder. Choose the option that fits your needs and embrace a pain-free cycle.</p>",
+            "page": ""
+          }
+        },
+        "template--19262625481051__ad0e9a57-c99d-4709-8388-2b106409ff5a-1689197180f20b374f-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you offer guarantees or refunds?",
+            "row_content": "<p>We stand behind the quality and effectiveness of our products. </p><p>That's why we offer a 90-day money-back guarantee. </p><p>If you're not satisfied with your purchase, simply reach out to our customer support team within 90 days, and we'll assist you with a refund.</p>",
+            "page": ""
+          }
+        },
+        "template--19262625481051__ad0e9a57-c99d-4709-8388-2b106409ff5a-1689197180f20b374f-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is Monthlies a subscription?",
+            "row_content": "<p>Yes, Monthlies offers both subscription and one-time purchase options.</p><p>By subscribing, you can enjoy a price reduction and take advantage of many membership services, such an expert consultation.<br/><br/>While the one-time purchase allows you to buy without committing to a recurring subscription.</p>",
+            "page": ""
+          }
+        },
+        "953671b4-e62a-4d68-966b-6bcda8f005f6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does it take to receive my Monthlies package?",
+            "row_content": "<p>Shipping can take up to 10 days.If you have any questions, please let us know at info@withmonthlies.com.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19262625481051__ad0e9a57-c99d-4709-8388-2b106409ff5a-1689197180f20b374f-0",
+        "template--19262625481051__ad0e9a57-c99d-4709-8388-2b106409ff5a-1689197180f20b374f-1",
+        "685f7f4a-2356-4693-ac2f-6c74fa099fb4",
+        "d3261cfc-a447-4ad0-abf1-553511c76560",
+        "23738499-e5c7-44f1-b0cd-2e8d7ab9c2d1",
+        "23b85301-950f-45d0-8c6b-62d30a1960cd",
+        "template--19262625481051__ad0e9a57-c99d-4709-8388-2b106409ff5a-1689197180f20b374f-3",
+        "template--19262625481051__ad0e9a57-c99d-4709-8388-2b106409ff5a-1689197180f20b374f-2",
+        "953671b4-e62a-4d68-966b-6bcda8f005f6"
+      ],
+      "settings": {
+        "open_first_collapsible_row": false,
+        "narrow": true,
+        "show_divider": false,
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "b00244a3-d985-4559-af46-b1d4980f75bb": {
+      "type": "offer-banner",
+      "settings": {
+        "title": "Get a grip on your menstrual cycle today",
+        "text": "90-day money back guarantee",
+        "url_1": "#pricing",
+        "label_1": "Buy now"
+      }
+    }
+  },
+  "order": [
+    "710a7183-c779-4e02-bb4e-f165421167aa",
+    "main",
+    "ce304de2-f0cd-4159-8797-a215450aa944",
+    "1462b1e5-4c10-4a1c-8109-5e6bdb47c90e",
+    "3beefa49-e472-4273-b741-73ff228fee9c",
+    "924f1989-f1cb-47cb-b2f1-fcb8e2067894",
+    "721469e7-c6b0-472f-a8fb-14741c380eac",
+    "3f310764-aee5-4be4-baf8-b42065926901",
+    "ffe622cb-092f-4f23-9f21-29b09fd9210b",
+    "5b0e295c-c3b4-4faa-9c69-9318d575da35",
+    "db62e5b8-4a3b-4504-8759-89986f26e704",
+    "c2e759ee-eab6-425e-874f-4223082fc963",
+    "cd800f86-638e-44f9-a5cd-025c09feed16",
+    "011db143-269c-48ec-a23a-a393064faf7d",
+    "3a774272-2034-4e79-9512-4f2538f43f81",
+    "6805be15-c858-4284-ae44-e8707ab0e852",
+    "ab3bc8a2-af3f-48c3-9ad8-6cb753cda193",
+    "34554ed7-693e-4737-b179-90cd09605f22",
+    "5b11d092-f40f-46bc-bebf-413592a4c425",
+    "f5a93b26-8e28-4262-bcb1-66af14984b5a",
+    "f89a8eb5-9bb6-4c6a-8eb5-930e9a2c4dcb",
+    "ad0e9a57-c99d-4709-8388-2b106409ff5a",
+    "b00244a3-d985-4559-af46-b1d4980f75bb"
+  ]
+}

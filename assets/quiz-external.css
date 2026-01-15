@@ -1,0 +1,31 @@
+/* External quiz css 
+
+.c6232061d2ffaaf19ee071a88b946db5dc1a2a4a3 {
+  background: #ff0099 !important;
+}
+
+.oct-quiz-rich-text {
+  font-weight: bold !important;
+  color: #ff0099 !important;
+}
+.c43ba46024903784f8b45cb12db8ae9ac944c5ca3 {
+  overflow: hidden !important;
+  height: 150px !important;
+}
+.c43ba46024903784f8b45cb12db8ae9ac944c5ca3:hover,
+.c43ba46024903784f8b45cb12db8ae9ac944c5ca3:active {
+  height: 300px !important;
+}
+*/
+
+.c312721ebe97898865d6ac1026f4c452f4e7c89f3 {
+  display: flex !important;
+  overflow-x: auto !important;
+}
+.c312721ebe97898865d6ac1026f4c452f4e7c89f3 img {
+  margin-right: 15px !important;
+}
+
+.c312721ebe97898865d6ac1026f4c452f4e7c89f3::-webkit-scrollbar {
+  display: none;
+}

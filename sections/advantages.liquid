@@ -1,0 +1,463 @@
+{{ 'section-advantages.css' | asset_url | stylesheet_tag }}
+
+<div class="page-width">
+  <div class="advantages">
+    <h2 class="advantages-title">
+      {{ section.settings.title }}
+    </h2>
+    <p class="advantages-text">
+      {{ section.settings.text }}
+    </p>
+
+    <div class="advantages-wrapper">
+      <div class="advantages-wrapper-row advantages-wrapper-row--head">
+        <div class="advantages-wrapper-column advantages-wrapper-column--head advantages-wrapper-column--title"></div>
+
+        <div class="advantages-wrapper-column advantages-wrapper-column--head">
+          <svg
+            width="88"
+            height="13"
+            viewBox="0 0 88 13"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.08334 12.7249L2.02652 1.99471L6.66669 12.7249H8.12503L12.7652 1.99471L12.7084 12.7249H14.7728V0H11.7235L7.42427 9.85317L3.06819 0H0V12.7249H2.08334Z" fill="black" />
+            <path d="M29.832 12.7249H31.8017V7.51455C31.8017 5.89815 32.6919 4.79762 34.6237 4.78042C36.6313 4.76323 37.351 5.96693 37.351 7.65212V12.7249H39.3396V7.23942C39.3396 5.2963 38.4684 3.12963 35.173 3.09524C33.3358 3.07804 32.1805 3.85185 31.6881 4.81482V3.37037H29.832V12.7249Z" fill="black" />
+            <path d="M42.6113 12.7249H44.581V4.76323H46.5696V3.37037H44.581V0L42.6113 0V3.37037H40.7552V4.76323H42.6113V12.7249Z" fill="black" />
+            <path d="M48.0502 12.7249H50.0199V7.44577C50.0199 6.80952 50.2093 6.13889 50.6449 5.64021C51.0616 5.14153 51.7812 4.78042 52.8229 4.78042C53.8456 4.78042 54.5275 5.08995 54.982 5.60582C55.3987 6.12169 55.5691 6.86111 55.5691 7.7037V12.7249H57.5578V7.61772C57.5578 6.32804 57.3116 5.21032 56.6676 4.40212C56.0048 3.57672 54.982 3.09524 53.3722 3.09524C52.0275 3.07804 50.6259 3.57672 50.0199 4.67725V0H48.0502V12.7249Z" fill="black" />
+            <path d="M60.0908 12.7249H62.0605V0H60.0908V12.7249Z" fill="black" />
+            <path d="M64.6407 1.89153H66.6104V0H64.6407V1.89153ZM64.6407 12.7249H66.6104V3.37037H64.6407V12.7249Z" fill="black" />
+            <path d="M79.2664 8.61508C79.4369 7.05026 78.9255 5.58862 77.7134 4.4709C76.7285 3.59392 75.3838 3.09524 73.9065 3.09524C70.7815 3.09524 68.4709 5.38227 68.4709 8.06481C68.4709 10.541 70.5543 13 73.9255 13C74.9671 13 75.9899 12.7421 76.8611 12.209C77.7323 11.6931 78.452 10.9193 78.9444 9.88757H76.899C76.3308 10.8677 75.3081 11.4696 73.9255 11.4696C72.3724 11.4696 70.5543 10.5066 70.4596 8.61508H79.2664ZM70.4974 7.22222C70.5921 5.94973 71.899 4.62566 73.9065 4.62566C75.8573 4.59127 77.2209 5.98413 77.3156 7.22222H70.4974Z" fill="black" />
+            <path d="M87.6905 5.81217C87.539 3.73148 85.6829 3.09524 84.2624 3.09524C82.3874 3.09524 80.7965 4.16138 80.7965 5.93254C80.8155 7.34259 81.9518 7.96164 83.3912 8.35714C85.2283 8.90741 86.0049 9.21693 86.0238 10.1455C86.0238 10.9365 85.2852 11.5384 84.3382 11.5384C83.5996 11.5384 82.5958 11.1601 82.52 10.0251H80.5692C80.6639 12.1574 82.6905 13 84.3193 13C86.3647 13 88.0314 11.7619 87.9935 9.93915C87.9367 7.92725 86.2132 7.51455 84.6412 7.11905C83.5427 6.84392 82.8041 6.5 82.7662 5.76058C82.7473 5.14153 83.2776 4.55688 84.2435 4.55688C85.2473 4.53968 85.7397 5.08995 85.7397 5.81217H87.6905Z" fill="black" />
+            <path d="M16.6855 6.94924C16.6855 9.62366 18.8684 12.7055 22.0624 12.7055C25.2564 12.7055 27.4191 9.62366 27.4191 6.94924C27.4191 4.27483 25.2564 3.7824 22.0624 3.7824C18.8684 3.7824 16.6855 4.27482 16.6855 6.93092V6.94924ZM19.646 7.4483C19.646 5.45165 20.2472 4.68524 22.0624 4.68524C23.8775 4.68524 24.284 5.45165 24.284 7.4483C24.284 9.44496 23.8775 10.9287 22.0624 10.9287C20.2472 10.9287 19.646 9.44495 19.646 7.46662V7.4483Z" fill="black" />
+          </svg>
+        </div>
+
+        <div class="advantages-wrapper-column advantages-wrapper-column--head">
+          {{ section.settings.other_companies }}
+        </div>
+      </div>
+
+      <div class="advantages-wrapper-row">
+        <div class="advantages-wrapper-column advantages-wrapper-column--title">
+          {{ section.settings.analysis }}
+        </div>
+
+        <div class="advantages-wrapper-column">
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle
+              cx="15"
+              cy="15"
+              r="15"
+              fill="#74CC6C" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M24 10.6195L12.3173 22L6 15.6996L7.68199 14.0993L12.3369 18.7418L22.3375 9L24 10.6195Z"
+              fill="white" />
+          </svg>
+
+          {{ section.settings.analysis2 }}
+        </div>
+
+        <div class="advantages-wrapper-column advantages-wrapper-column--disable">
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle
+              cx="15"
+              cy="15"
+              r="14.5"
+              fill="white"
+              stroke="#FFC4C4" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M20.9995 11.1538L11.6524 20.501L10 18.8486L19.3472 9.50143L20.9995 11.1538Z"
+              fill="#F1AFB1" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M19.3473 20.4995L10.0001 11.1524L11.6525 9.5L20.9996 18.8472L19.3473 20.4995Z"
+              fill="#F1AFB1" />
+          </svg>
+
+          {{ section.settings.analysis3 }}
+        </div>
+      </div>
+      <div class="advantages-wrapper-row">
+        <div class="advantages-wrapper-column advantages-wrapper-column--title">
+          {{ section.settings.convenient }}
+        </div>
+
+        <div class="advantages-wrapper-column">
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle
+              cx="15"
+              cy="15"
+              r="15"
+              fill="#74CC6C" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M24 10.6195L12.3173 22L6 15.6996L7.68199 14.0993L12.3369 18.7418L22.3375 9L24 10.6195Z"
+              fill="white" />
+          </svg>
+
+          {{ section.settings.convenient2 }}
+        </div>
+
+        <div class="advantages-wrapper-column advantages-wrapper-column--disable">
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle
+              cx="15"
+              cy="15"
+              r="14.5"
+              fill="white"
+              stroke="#FFC4C4" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M20.9995 11.1538L11.6524 20.501L10 18.8486L19.3472 9.50143L20.9995 11.1538Z"
+              fill="#F1AFB1" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M19.3473 20.4995L10.0001 11.1524L11.6525 9.5L20.9996 18.8472L19.3473 20.4995Z"
+              fill="#F1AFB1" />
+          </svg>
+
+          {{ section.settings.convenient3 }}
+        </div>
+      </div>
+      <div class="advantages-wrapper-row">
+        <div class="advantages-wrapper-column advantages-wrapper-column--title">
+          {{ section.settings.easy }}
+        </div>
+
+        <div class="advantages-wrapper-column">
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle
+              cx="15"
+              cy="15"
+              r="15"
+              fill="#74CC6C" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M24 10.6195L12.3173 22L6 15.6996L7.68199 14.0993L12.3369 18.7418L22.3375 9L24 10.6195Z"
+              fill="white" />
+          </svg>
+
+          {{ section.settings.easy2 }}
+        </div>
+
+        <div class="advantages-wrapper-column advantages-wrapper-column--disable">
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle
+              cx="15"
+              cy="15"
+              r="14.5"
+              fill="white"
+              stroke="#FFC4C4" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M20.9995 11.1538L11.6524 20.501L10 18.8486L19.3472 9.50143L20.9995 11.1538Z"
+              fill="#F1AFB1" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M19.3473 20.4995L10.0001 11.1524L11.6525 9.5L20.9996 18.8472L19.3473 20.4995Z"
+              fill="#F1AFB1" />
+          </svg>
+
+          {{ section.settings.easy3 }}
+        </div>
+      </div>
+
+      <div class="advantages-wrapper-row">
+        <div class="advantages-wrapper-column advantages-wrapper-column--title">
+          {{ section.settings.secure }}
+        </div>
+
+        <div class="advantages-wrapper-column">
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle
+              cx="15"
+              cy="15"
+              r="15"
+              fill="#74CC6C" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M24 10.6195L12.3173 22L6 15.6996L7.68199 14.0993L12.3369 18.7418L22.3375 9L24 10.6195Z"
+              fill="white" />
+          </svg>
+
+          {{ section.settings.secure2 }}
+        </div>
+
+        <div class="advantages-wrapper-column advantages-wrapper-column--disable">
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle
+              cx="15"
+              cy="15"
+              r="14.5"
+              fill="white"
+              stroke="#FFC4C4" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M20.9995 11.1538L11.6524 20.501L10 18.8486L19.3472 9.50143L20.9995 11.1538Z"
+              fill="#F1AFB1" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M19.3473 20.4995L10.0001 11.1524L11.6525 9.5L20.9996 18.8472L19.3473 20.4995Z"
+              fill="#F1AFB1" />
+          </svg>
+
+          {{ section.settings.secure3 }}
+        </div>
+      </div>
+
+      <div class="advantages-wrapper-row">
+        <div class="advantages-wrapper-column advantages-wrapper-column--title">
+          {{ section.settings.certified }}
+        </div>
+
+        <div class="advantages-wrapper-column">
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle
+              cx="15"
+              cy="15"
+              r="15"
+              fill="#74CC6C" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M24 10.6195L12.3173 22L6 15.6996L7.68199 14.0993L12.3369 18.7418L22.3375 9L24 10.6195Z"
+              fill="white" />
+          </svg>
+
+          {{ section.settings.certified2 }}
+        </div>
+
+        <div class="advantages-wrapper-column advantages-wrapper-column--disable">
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle
+              cx="15"
+              cy="15"
+              r="14.5"
+              fill="white"
+              stroke="#FFC4C4" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M20.9995 11.1538L11.6524 20.501L10 18.8486L19.3472 9.50143L20.9995 11.1538Z"
+              fill="#F1AFB1" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M19.3473 20.4995L10.0001 11.1524L11.6525 9.5L20.9996 18.8472L19.3473 20.4995Z"
+              fill="#F1AFB1" />
+          </svg>
+
+          {{ section.settings.certified3 }}
+        </div>
+      </div>
+    </div>
+
+    {% if section.settings.button != blank %}
+  <div class="how-it-works-buttons">
+    <a
+      href="{{ section.settings.url }}"
+      id="cta-how-it-works-horm"
+      class="button button--black">
+      {{ section.settings.button }}
+
+      <svg
+        width="7"
+        height="12"
+        viewBox="0 0 7 12"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0.679688 1.15234L5.67969 6.15234L0.679688 11.1523"
+          stroke="white"
+          stroke-width="1.5" />
+      </svg>
+    </a>
+          
+  </div>
+{% endif %}
+
+          
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Advantages",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Why take the Monthlies hormone test"
+      },
+      {
+        "type": "text",
+        "id": "text",
+        "label": "Text",
+        "default": "Everything you need to quickly and easily understand your cycle in a convenient self-test package."
+      },
+      {
+        "type": "text",
+        "id": "button",
+        "label": "Button",
+        "default": "Order now"
+      },{
+        "type": "url",
+        "label": "Button URL",
+        "id": "btn_url"
+      },
+      {
+        "type": "text",
+        "id": "other_companies",
+        "default": "Other testing companies",
+        "label": "Other testing companies"
+      }, {
+        "type": "text",
+        "id": "analysis",
+        "default": "Comprehensive Analysis",
+        "label": "Comprehensive Analysis"
+      }, {
+        "type": "text",
+        "id": "analysis2",
+        "default": "Complete look at 6 critical hormones",
+        "label": "Complete look at 6 critical hormones"
+      }, {
+        "type": "text",
+        "id": "analysis3",
+        "default": "Limited hormone panels",
+        "label": "Limited hormone panels"
+      }, {
+        "type": "text",
+        "id": "easy",
+        "default": "Easy to understand results",
+        "label": "Easy to understand results"
+      }, {
+        "type": "text",
+        "id": "easy2",
+        "default": "Detailed & understandable report",
+        "label": "Detailed & understandable report"
+      }, {
+        "type": "text",
+        "id": "easy3",
+        "default": "Complex results",
+        "label": "Complex results"
+      }, {
+        "type": "text",
+        "id": "convenient",
+        "default": "Convenient Sampling",
+        "label": "Convenient Sampling"
+      }, {
+        "type": "text",
+        "id": "convenient2",
+        "default": "Efficient & non-invasive saliva testing",
+        "label": "Efficient & non-invasive saliva testing"
+      }, {
+        "type": "text",
+        "id": "convenient3",
+        "default": "Limited hormone panels",
+        "label": "Limited hormone panels"
+      }, {
+        "type": "text",
+        "id": "secure",
+        "default": "Secure data",
+        "label": "Secure data"
+      }, {
+        "type": "text",
+        "id": "secure2",
+        "default": "Data stored securely",
+        "label": "Data stored securely"
+      }, {
+        "type": "text",
+        "id": "secure3",
+        "default": "Data security practices may vary",
+        "label": "Data security practices may vary"
+      }, {
+        "type": "text",
+        "id": "certified",
+        "default": "Certified Labs",
+        "label": "Certified Labs"
+      }, {
+        "type": "text",
+        "id": "certified2",
+        "default": "CLIA-certified labs, high standards",
+        "label": "CLIA-certified labs, high standards"
+      }, {
+        "type": "text",
+        "id": "certified3",
+        "default": "Reliability of the tests may vary",
+        "label": "Reliability of the tests may vary"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Advantages"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,329 @@
+<div class="cst-fingerpick">
+    <section class="hormone-section">
+        <div class="hormone-wrapper">
+            <!-- RIGHT IMAGE -->
+            <div class="hormone-right">
+                {% if section.settings.right_image != blank %}
+                    <img class="product-main-img" src="{{ section.settings.right_image | image_url }}" alt="Product">
+                {% endif %}
+            </div>
+            <!-- LEFT CONTENT -->
+            <div class="hormone-left">
+<div class="hormone-test">
+                {% if section.settings.faces_img != blank %}
+                    <img class="faces-img" src="{{ section.settings.faces_img | image_url }}" alt="users">
+                {% endif %}
+
+                {% if section.settings.test_count != blank %}
+                    <p class="test-count">{{ section.settings.test_count }}</p>
+                {% endif %}
+                </div>
+                {% if section.settings.title != blank %}
+                    <h2 class="title">{{ section.settings.title }}</h2>
+                {% endif %}
+
+                {% if section.settings.subtitle != blank %}
+                    <p class="subtitle">{{ section.settings.subtitle }}</p>
+                {% endif %}
+
+                <ul class="benefit-list">
+
+                    {% if section.settings.benefit_1 != blank %}
+                        <li>
+                            {% if section.settings.tick_icon != blank %}
+                                <img src="{{ section.settings.tick_icon | image_url }}" alt="tick">
+                            {% endif %}
+                            {{ section.settings.benefit_1 }}
+                            {% if section.settings.benefit_1_sub != blank %}
+                                <span>– {{ section.settings.benefit_1_sub }}</span>
+                            {% endif %}
+                        </li>
+                    {% endif %}
+
+                    {% if section.settings.benefit_2 != blank %}
+                        <li>
+                            {% if section.settings.tick_icon != blank %}
+                                <img src="{{ section.settings.tick_icon | image_url }}" alt="tick">
+                            {% endif %}
+                            {{ section.settings.benefit_2 }}
+                        </li>
+                    {% endif %}
+
+                    {% if section.settings.benefit_3 != blank %}
+                        <li>
+                            {% if section.settings.tick_icon != blank %}
+                                <img src="{{ section.settings.tick_icon | image_url }}" alt="tick">
+                            {% endif %}
+                            {{ section.settings.benefit_3 }}
+                            {% if section.settings.benefit_3_sub != blank %}
+                                <span>{{ section.settings.benefit_3_sub }}</span>
+                            {% endif %}
+                        </li>
+                    {% endif %}
+                </ul>
+
+                {% if section.settings.button_text != blank %}
+                    <a href="{{ section.settings.button_link }}" class="add-to-cart-btn">
+                        {{ section.settings.button_text }}
+                    </a>
+                {% endif %}
+            </div>
+
+
+
+        </div>
+    </section>
+</div>
+
+<style>
+    .cst-fingerpick {
+    background: #ABD0CD;
+    border-top-right-radius: 120px;
+}
+    .cst-fingerpick  .hormone-test.appco_bg {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+    .cst-fingerpick .hormone-section {
+    padding: 50px 20px 0 0 !important;
+    max-width: 1440px;
+    margin: 0 auto;
+    }
+
+    .cst-fingerpick .hormone-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        max-width: 1440px;
+        margin: auto;
+        gap: 40px;
+    }
+
+    /* LEFT SIDE */
+    .cst-fingerpick .hormone-left {
+        max-width: 550px;
+    }
+
+   
+.cst-fingerpick .faces-img {
+    width: 100%;
+    max-width: 70px;
+}
+
+ .cst-fingerpick .test-count {
+    font-size: 12px;
+    color: #404040;
+    font-weight: 500;
+    margin: 0 !important;
+}
+
+  .cst-fingerpick .title {
+    font-size: 40px;
+    font-weight: 600;
+    color: #404040;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+   .cst-fingerpick .subtitle {
+    font-size: 16px;
+    line-height: 22px;
+    color: #404040;
+    margin-bottom: 10px;
+}
+
+.cst-fingerpick .subtitle span {
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+}
+    .cst-fingerpick .benefit-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+ .cst-fingerpick .benefit-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+    .cst-fingerpick .benefit-list li img {
+        width: 18px;
+        margin-top: 3px;
+    }
+
+    .cst-fingerpick .benefit-list li span {
+        font-weight: 400;
+    }
+
+    /* BUTTON */
+.cst-fingerpick .add-to-cart-btn {
+    display: inline-block;
+    margin-top: 25px;
+    background: #d73828;
+    padding: 14px 40px;
+    color: #fff;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.2s;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+    .cst-fingerpick .add-to-cart-btn:hover {
+        opacity: 0.8;
+    }
+
+    /* RIGHT IMAGE */
+    .cst-fingerpick .product-main-img {
+         width: 100%;
+    display: block;
+    }
+
+    /* MOBILE */
+    @media (max-width: 1200px) {
+    .cst-fingerpick .title{
+          font-size: 34px;
+    }
+    }
+    @media (max-width: 991px) {
+        .cst-fingerpick .hormone-left{
+            padding-bottom: 20px;
+        }
+       .cst-fingerpick .hormone-section {
+        padding: 50px 20px 0 !important;
+    }
+    }
+    @media (max-width: 768px) {
+        .cst-fingerpick .hormone-left{
+               padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 0;
+        }
+                  .cst-fingerpick .hormone-section {
+        padding: 50px 0 0 !important;
+    }
+            .cst-fingerpick .product-main-img {
+       width: 100%;
+        }
+
+        .cst-fingerpick .add-to-cart-btn {
+            width: 100%;
+            text-align: center;
+        }
+         body .cst-fingerpick .hormone-wrapper {
+        flex-direction: column-reverse;
+        text-align: left;
+        align-items: baseline;
+    }
+        .cst-fingerpick .title {
+            font-size: 30px;
+        }
+    }
+       @media (max-width: 575px) {
+        .cst-fingerpick .hormone-left{
+    margin: 0 auto;
+        }
+    .cst-fingerpick .title {
+            font-size: 24px;
+        }
+        .cst-fingerpick .benefit-list li{
+        flex-wrap:wrap;
+            gap: 0;
+        }
+        .cst-fingerpick .benefit-list li img {
+    margin-right: 8px;
+}
+.cst-fingerpick .hormone-right {
+    margin-right: 105px;
+}
+.percent-inner p {
+    font-size: 12px;
+}
+    }
+</style>
+{% schema %}
+{
+    "name": "Female Hormone Kit New",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "faces_img",
+        "label": "Faces Image"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "test_count",
+        "label": "Test count text",
+        "default": "Over 21M tests since 2023"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "title",
+        "label": "Main Title",
+        "default": "Female Hormone Test Kit"
+      },
+      {
+        "type": "html",
+        "id": "subtitle",
+        "label": "Subtitle"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "benefit_1",
+        "label": "Benefit 1 text"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "benefit_1_sub",
+        "label": "Benefit 1 sub-text"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "benefit_2",
+        "label": "Benefit 2 text"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "benefit_3",
+        "label": "Benefit 3 text"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "benefit_3_sub",
+        "label": "Benefit 3 sub-text"
+      },
+      {
+        "type": "image_picker",
+        "id": "tick_icon",
+        "label": "Tick icon"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button Link"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "Add to Cart"
+      },
+      {
+        "type": "image_picker",
+        "id": "right_image",
+        "label": "Right Side Product Image"
+      }
+    ],
+    "presets": [
+        {
+            "name": "Female Hormone Kit New"
+        }
+    ]
+  }  
+{% endschema %}

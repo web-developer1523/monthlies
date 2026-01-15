@@ -1,0 +1,1149 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "ad8adf1e-18fd-4fc5-87a5-2b66d741c3df": {
+      "type": "video-hero-custom",
+      "blocks": {
+        "1b24f290-8eb3-41c0-9332-2a9e105d45f6": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<img src=\"https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Hormone_Cutout.png?v=1695196423\" class=\"hero-horm-packshot\"/>"
+          }
+        },
+        "template--19734002368859__ad8adf1e-18fd-4fc5-87a5-2b66d741c3df-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tackle the root cause of your menstrual pain",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "template--19734002368859__ad8adf1e-18fd-4fc5-87a5-2b66d741c3df-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Analyse your hormones to create your personalised daily food supplement. Alleviate menstrual symptoms and thrive all month long.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "template--19734002368859__ad8adf1e-18fd-4fc5-87a5-2b66d741c3df-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop now",
+            "button_link": "shopify://products/hormonal-test",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        },
+        "6f550619-cae6-488b-a401-2c8d520d95a9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>★★★★☆ 85%  satisfaction in  90 days</p><p></p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "1b24f290-8eb3-41c0-9332-2a9e105d45f6",
+        "template--19734002368859__ad8adf1e-18fd-4fc5-87a5-2b66d741c3df-heading-1",
+        "template--19734002368859__ad8adf1e-18fd-4fc5-87a5-2b66d741c3df-text-1",
+        "template--19734002368859__ad8adf1e-18fd-4fc5-87a5-2b66d741c3df-button-1",
+        "6f550619-cae6-488b-a401-2c8d520d95a9"
+      ],
+      "custom_css": [
+        ".banner__box :last-child:is(.button) {margin-top: 0;}"
+      ],
+      "settings": {
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/eeb6aa236eeb4a33bf751f4deba08a21.mp4",
+        "text_box_position": "middle-left",
+        "text_alignment": "left",
+        "image_ratio": "550px",
+        "show_text_box": false,
+        "full_width": true,
+        "show_divider": false,
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "250px",
+        "show_text_below": true,
+        "colors_button_label": "#1a1b18",
+        "colors_button_background": "#ffffff",
+        "colors_text": "#ffffff",
+        "colors_overlay": "#000000",
+        "colors_overlay_opacity": 28,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "button_link2": "shopify://pages/cycle-assessment",
+        "label2": "Is this for me?"
+      }
+    },
+    "hormonal-hero": {
+      "type": "hormonal-hero",
+      "disabled": true,
+      "custom_css": [
+        ".hormonal-hero--content h1 {font-weight: 500;}"
+      ],
+      "settings": {
+        "title": "Tackle the root cause of your menstrual pain",
+        "dynamic_hero_image": "shopify://shop_images/hormonal-hero.png",
+        "text": "Analyse your hormones to create your personalised daily food supplement. Alleviate menstrual symptoms and thrive all month long.",
+        "btn": "Shop now",
+        "btn2": "Is this for me?",
+        "btn_url": "shopify://products/hormonal-test",
+        "satisfaction": "★★★★☆ 85%  satisfaction in  90 days"
+      }
+    },
+    "491b4978-4906-4b6c-afe6-fcce17539edc": {
+      "type": "pains-banner",
+      "settings": {
+        "pain": "Cramps",
+        "pain_2": "Mood Swings",
+        "pain_3": "Sleep",
+        "pain_4": "Bloating"
+      }
+    },
+    "statistics": {
+      "type": "statistics",
+      "custom_css": [
+        ".stats-container {background: #fff;}",
+        ".stats-hero {padding: px 0 30px;}"
+      ],
+      "settings": {
+        "hero": "",
+        "subtitle": "",
+        "percentage_1": "85%",
+        "text_1": "of women become symptom-free in 3 months",
+        "percentage_2": "81%",
+        "text_2": "of women quit taking painkillers every cycle when using monthlies",
+        "percentage_3": "70%",
+        "text_3": "of women feel improvements in just one month"
+      }
+    },
+    "how-it-works-hormonal": {
+      "type": "how-it-works-hormonal",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "title": "How it works",
+        "step_1_image": "shopify://shop_images/test.png",
+        "title_1": "1. Test your hormone balance",
+        "text_1": "Order your saliva test, follow the instructions to quickly and easily collect your saliva sample, and ship it back to us for free.",
+        "disclaimer_1": "",
+        "step_1_url": "",
+        "step_1_btn_label": "Learn more",
+        "step_2_image": "shopify://shop_images/results.png",
+        "title_2": "2. Get your results",
+        "text_2": "Receive your test results and a formula that meets your needs. Connect with experts to discuss results and cycle goals.",
+        "disclaimer_2": "",
+        "step_2_url": "",
+        "step_2_btn_label": "Learn more",
+        "step_3_image": "shopify://shop_images/Step_3_Hormonal.png",
+        "title_3": "3. Thrive on your formula",
+        "text_3": "Get your personalised formula at your doorstep. Achieve hormonal balance and thrive in every stage of your cycle.",
+        "disclaimer_3": "",
+        "step_3_url": "",
+        "step_3_btn_label": "Learn more",
+        "url": "shopify://products/hormonal-powder",
+        "label": "Shop now"
+      }
+    },
+    "549167e9-0c6d-4498-868c-05aadd06b5e0": {
+      "type": "featured-product",
+      "blocks": {
+        "a25c28bd-d9a7-4667-922d-55ff66b6b912": {
+          "type": "image",
+          "settings": {
+            "height": 20,
+            "link": ""
+          }
+        },
+        "template--19546142867803__549167e9-0c6d-4498-868c-05aadd06b5e0-title-1": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "title_size": "h2",
+            "title_tag": "h2",
+            "show_price": false,
+            "price_size": "medium"
+          }
+        },
+        "template--19546142867803__549167e9-0c6d-4498-868c-05aadd06b5e0-rating-1": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {}
+        },
+        "template--19546142867803__549167e9-0c6d-4498-868c-05aadd06b5e0-countdown-1": {
+          "type": "countdown",
+          "disabled": true,
+          "settings": {
+            "heading": "Hurry up ! Sale end in:",
+            "number_size": "compact",
+            "colors_heading": "#da3f3f",
+            "colors_text": "#da3f3f",
+            "colors_background": "#feeeee"
+          }
+        },
+        "template--19546142867803__549167e9-0c6d-4498-868c-05aadd06b5e0-price-1": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "price_size": "medium",
+            "show_badges": true
+          }
+        },
+        "template--19546142867803__549167e9-0c6d-4498-868c-05aadd06b5e0-variant_picker-1": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": true,
+            "swatch_type": "round",
+            "size_chart": ""
+          }
+        },
+        "template--19546142867803__549167e9-0c6d-4498-868c-05aadd06b5e0-buy_buttons-1": {
+          "type": "buy_buttons",
+          "disabled": true,
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": true
+          }
+        },
+        "template--19546142867803__549167e9-0c6d-4498-868c-05aadd06b5e0-share-1": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "template--19546142867803__549167e9-0c6d-4498-868c-05aadd06b5e0-read_more-1": {
+          "type": "read_more",
+          "disabled": true,
+          "settings": {
+            "show_icon": false
+          }
+        },
+        "56353f3c-7d28-4061-9a83-7c71cea86574": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "heading": "Collapsible row",
+            "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.</p><p>Ex: Shipping and return policies, size guides, and other common questions.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "a25c28bd-d9a7-4667-922d-55ff66b6b912",
+        "template--19546142867803__549167e9-0c6d-4498-868c-05aadd06b5e0-title-1",
+        "template--19546142867803__549167e9-0c6d-4498-868c-05aadd06b5e0-rating-1",
+        "template--19546142867803__549167e9-0c6d-4498-868c-05aadd06b5e0-countdown-1",
+        "template--19546142867803__549167e9-0c6d-4498-868c-05aadd06b5e0-price-1",
+        "template--19546142867803__549167e9-0c6d-4498-868c-05aadd06b5e0-variant_picker-1",
+        "template--19546142867803__549167e9-0c6d-4498-868c-05aadd06b5e0-buy_buttons-1",
+        "template--19546142867803__549167e9-0c6d-4498-868c-05aadd06b5e0-share-1",
+        "template--19546142867803__549167e9-0c6d-4498-868c-05aadd06b5e0-read_more-1",
+        "56353f3c-7d28-4061-9a83-7c71cea86574"
+      ],
+      "disabled": true,
+      "settings": {
+        "product": "your-cycle-goals",
+        "layout": "media_first",
+        "full_width": false,
+        "show_divider": false,
+        "hide_variants": false,
+        "enable_image_zoom": false,
+        "enable_video_looping": true,
+        "image_ratio": "adapt_first",
+        "image_position": "center center",
+        "enable_layered_images": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "14794aeb-1af0-4135-b938-d88af90914bb": {
+      "type": "rich-text",
+      "blocks": {
+        "fc963dab-b9b2-4db6-9008-eb7ce7985e48": {
+          "type": "heading",
+          "settings": {
+            "heading": "Painkillers aren't your only option. Get your natural solution.",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "6743ec76-1c10-4ed2-840f-d3dfe85ca18f": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’re on a mission to address the hormonal imbalances that cause cramps, bloating, mood swings, tiredness and stress that keep you from experiencing harmony in every phase of your cycle.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "61fa75ee-1bf6-4f81-8a13-df58aa62dde7": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "fc963dab-b9b2-4db6-9008-eb7ce7985e48",
+        "6743ec76-1c10-4ed2-840f-d3dfe85ca18f",
+        "61fa75ee-1bf6-4f81-8a13-df58aa62dde7"
+      ],
+      "custom_css": [
+        "h2 {font-weight: 500;}"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "narrow": false,
+        "show_divider": false,
+        "use_custom_colors": true,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#fff5f5",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "8e3628a4-7391-4178-9d00-ce7089f845ca": {
+      "type": "image-with-text-custom",
+      "blocks": {
+        "template--19546142867803__8e3628a4-7391-4178-9d00-ce7089f845ca-heading-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "template--19546142867803__8e3628a4-7391-4178-9d00-ce7089f845ca-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Painkillers aren't your only option. Get your natural solution.",
+            "text-description": "<p>We’re on a mission to fix the hormonal imbalances that cause mood swings, tiredness and stress that keep you from being in harmony in every phase of your cycle.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false,
+            "icon_svg": "SVG icon"
+          }
+        },
+        "d7900906-9e57-436e-8a33-eced5f5ac00d": {
+          "type": "text",
+          "settings": {
+            "text": "Relief from menstrual symptoms",
+            "text-description": "<p>Diminish the specific physical and emotional symptoms you experience during your cycle.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false,
+            "icon_svg": "<svg width=\"33\" height=\"33\" viewbox=\"0 0 33 33\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M24.771 5.63533L24.7356 5.59998L24.771 5.63533L25.9023 4.50365C26.1954 4.21053 26.6703 4.21054 26.9633 4.50349L28.0945 5.63469C28.3873 5.9275 28.3874 6.4024 28.0946 6.69518L28.13 6.73054L28.0946 6.69519L26.9633 7.82687C26.6703 8.11983 26.1953 8.11996 25.9023 7.82702L24.7711 6.69582C24.4783 6.40301 24.4782 5.92811 24.771 5.63533ZM7.72888 27.06L7.76424 27.0953L7.72888 27.06L6.59752 28.1917L6.63288 28.227L6.59751 28.1917C6.30456 28.4848 5.82967 28.4848 5.53672 28.1918L4.40552 27.0606C4.11271 26.7678 4.11257 26.2929 4.40535 26.0001L4.37 25.9648L4.40536 26.0001L5.53672 24.8684C5.82967 24.5755 6.30458 24.5755 6.59753 24.8683L7.72872 25.9995C8.02153 26.2923 8.02167 26.7672 7.72888 27.06ZM24.7713 25.9995L24.7359 25.9641L24.7713 25.9995L25.9025 24.8683C26.1954 24.5753 26.6703 24.5753 26.9633 24.8684L26.9986 24.8331L26.9633 24.8684L28.0946 26.0001C28.3874 26.2931 28.3874 26.7678 28.0945 27.0606L28.1298 27.096L28.0945 27.0606L26.9633 28.1918C26.6703 28.4848 26.1954 28.4848 25.9025 28.1917L25.8671 28.227L25.9025 28.1917L24.7711 27.06C24.4783 26.767 24.4783 26.2923 24.7713 25.9995ZM5.53688 7.82687L5.53688 7.82687L4.40552 6.69519C4.11272 6.40223 4.11272 5.92749 4.40568 5.63453L5.53688 4.50333C5.82966 4.21055 6.30455 4.21053 6.59752 4.50364L6.59752 4.50365L7.72888 5.63532C7.72888 5.63532 7.72888 5.63532 7.72888 5.63533C8.02169 5.92829 8.02167 6.40302 7.72873 6.69581L7.72872 6.69582L6.59752 7.82702L6.59751 7.82703C6.30474 8.11996 5.82969 8.11982 5.53688 7.82687ZM16.25 27.4977C10.1026 27.4977 5.1 22.4959 5.1 16.3477C5.1 10.1994 10.1026 5.19766 16.25 5.19766C22.3974 5.19766 27.4 10.1994 27.4 16.3477C27.4 22.4959 22.3974 27.4977 16.25 27.4977ZM16.25 8.29766C11.8115 8.29766 8.2 11.9092 8.2 16.3477C8.2 20.7861 11.8115 24.3977 16.25 24.3977C20.6885 24.3977 24.3 20.7861 24.3 16.3477C24.3 11.9092 20.6885 8.29766 16.25 8.29766ZM17.05 3.49766H15.45C15.0359 3.49766 14.7 3.1618 14.7 2.74766V1.14766C14.7 0.73351 15.0359 0.397656 15.45 0.397656H17.05C17.4641 0.397656 17.8 0.73351 17.8 1.14766V2.74766C17.8 3.1618 17.4641 3.49766 17.05 3.49766ZM15.45 32.2977C15.0359 32.2977 14.7 31.9618 14.7 31.5477V29.9477C14.7 29.5335 15.0359 29.1977 15.45 29.1977H17.05C17.4641 29.1977 17.8 29.5335 17.8 29.9477V31.5477C17.8 31.9618 17.4641 32.2977 17.05 32.2977H15.45ZM31.45 17.8977H29.85C29.4359 17.8977 29.1 17.5618 29.1 17.1477V15.5477C29.1 15.1335 29.4359 14.7977 29.85 14.7977H31.45C31.8641 14.7977 32.2 15.1335 32.2 15.5477V17.1477C32.2 17.5618 31.8641 17.8977 31.45 17.8977ZM2.65 17.8977H1.05C0.635854 17.8977 0.3 17.5618 0.3 17.1477V15.5477C0.3 15.1335 0.635854 14.7977 1.05 14.7977H2.65C3.06415 14.7977 3.4 15.1335 3.4 15.5477V17.1477C3.4 17.5618 3.06415 17.8977 2.65 17.8977Z\" fill=\"#252A31\" stroke=\"#FFF5F5\" stroke-width=\"0.1\"></path>\n</svg>"
+          }
+        },
+        "5b2fcc52-75c6-4ad0-9309-d10a82f311b4": {
+          "type": "text",
+          "settings": {
+            "text": "Boosts energy",
+            "text-description": "<p>Combat fatigue and enhance your vitality during every phase of your cycle.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false,
+            "icon_svg": "<svg width=\"33\" height=\"33\" viewbox=\"0 0 33 33\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5.24975 29.8977H5.29975V29.8477V24.9727V24.9227H5.24975H2.74987H2.69987V24.9727V29.8477V29.8977H2.74987H5.24975ZM15.7952 29.8977H15.8452V29.8477V17.5978V17.5478H15.7952H13.2953H13.2453V17.5978V29.8477V29.8977H13.2953H15.7952ZM21.6664 10.7823V10.7323H21.6164H19.7338C18.7604 10.7323 18.1926 9.63042 18.7553 8.83762L24.3881 0.90333C24.855 0.245418 25.8549 0.212965 26.3449 0.903386L26.3857 0.874448L26.3449 0.90339L31.9769 8.83768C32.5404 9.63145 31.9705 10.7323 30.9984 10.7323H29.116H29.066V10.7823V31.0977C29.066 31.7604 28.5288 32.2977 27.866 32.2977H22.8663C22.2036 32.2977 21.6664 31.7604 21.6664 31.0977V10.7823ZM26.6161 29.8977H26.6661V29.8477V9.53229C26.6661 8.8696 27.2033 8.3323 27.866 8.3323H28.5783H28.6751L28.6191 8.25336L25.4071 3.72841L25.3664 3.67098L25.3256 3.72841L22.1133 8.25336L22.0573 8.3323H22.1541H22.8663C23.529 8.3323 24.0662 8.8696 24.0662 9.53229V29.8477V29.8977H24.1162H26.6161ZM1.49994 22.5228H6.49968C7.16241 22.5228 7.69962 23.06 7.69962 23.7228V31.0977C7.69962 31.7604 7.16241 32.2977 6.49968 32.2977H1.49994C0.837213 32.2977 0.3 31.7604 0.3 31.0977V23.7228C0.3 23.06 0.837213 22.5228 1.49994 22.5228ZM12.0453 15.1479H17.0451C17.7078 15.1479 18.245 15.6851 18.245 16.3478V31.0977C18.245 31.7604 17.7078 32.2977 17.0451 32.2977H12.0453C11.3826 32.2977 10.8454 31.7604 10.8454 31.0977V16.3478C10.8454 15.6851 11.3826 15.1479 12.0453 15.1479Z\" fill=\"#252A31\" stroke=\"#FFF5F5\" stroke-width=\"0.1\"></path>\n</svg>"
+          }
+        },
+        "db80d430-9fce-4f55-82c6-60cf15c7ab20": {
+          "type": "text",
+          "settings": {
+            "text": "Regulates moods",
+            "text-description": "<p>Manage mood swings and restore your natural resilience all month long.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false,
+            "icon_svg": "<svg width=\"38\" height=\"38\" viewbox=\"0 0 38 38\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15.9648 15.5375C15.4617 14.068 14.0803 13.0808 12.5271 13.0808C10.973 13.0808 9.59087 14.0692 9.08849 15.5399M29.5988 15.5375C29.0957 14.068 27.7143 13.0808 26.1611 13.0808C24.607 13.0808 23.2249 14.0692 22.7225 15.5399M25.8311 24.7732C24.4685 27.0601 22.0028 28.4612 19.3407 28.4612C16.6852 28.4612 14.2246 27.067 12.8598 24.7891M19.3408 36.6815C28.8917 36.6815 36.6815 28.8917 36.6815 19.3408C36.6815 9.78982 28.8917 2 19.3408 2C9.78982 2 2 9.78982 2 19.3408C2 28.8917 9.78982 36.6815 19.3408 36.6815Z\" stroke=\"#252A31\" stroke-width=\"2.3\" stroke-miterlimit=\"22.926\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>"
+          }
+        },
+        "4cc4e29d-51f5-4bb7-a0d2-4f52032be12c": {
+          "type": "text",
+          "settings": {
+            "text": "Physical wellness",
+            "text-description": "<p>Keep your body in shape from the inside out, preserving radiant skin and hair glow.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false,
+            "icon_svg": "<svg width=\"33\" height=\"43\" viewbox=\"0 0 33 43\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M24.2966 12.3365C26.1935 10.7857 27.4065 8.42839 27.4065 5.79288V4.56839H23.4754C22.2488 4.56839 21.0825 4.83141 20.0296 5.30357C19.6061 4.12602 18.9237 3.02145 17.9818 2.07957L16.25 0.347656L14.5183 2.07949C13.5764 3.02145 12.894 4.12594 12.4706 5.30349C11.4177 4.83133 10.2514 4.56831 9.02478 4.56831H5.09351V5.7928C5.09351 8.42831 6.30649 10.7856 8.20339 12.3364C3.45041 15.1135 0.25 20.2702 0.25 26.161C0.25 34.9834 7.42755 42.161 16.25 42.161C25.0724 42.161 32.25 34.9834 32.25 26.161C32.25 20.2703 29.0495 15.1136 24.2966 12.3365ZM23.4753 7.01737H24.8319C24.4597 8.80545 23.2886 10.3028 21.7108 11.1212C20.5753 10.7077 19.38 10.4199 18.1419 10.2735C19.1398 8.34162 21.1551 7.01737 23.4753 7.01737ZM16.25 3.81117C17.0726 4.63378 17.6196 5.62839 17.8937 6.68015C17.2522 7.24578 16.6965 7.9066 16.25 8.64088C15.8035 7.9066 15.2478 7.24578 14.6063 6.68015C14.8804 5.62831 15.4274 4.6337 16.25 3.81117ZM7.66812 7.01737H9.02469C11.3449 7.01737 13.3602 8.34162 14.3581 10.2735C13.12 10.42 11.9247 10.7077 10.7892 11.1212C9.21139 10.3028 8.0402 8.80545 7.66812 7.01737ZM2.69898 26.161C2.69898 21.579 4.98535 17.5215 8.47669 15.0677C7.93914 16.1907 7.63775 17.4474 7.63775 18.7733C7.63775 23.5221 11.5012 27.3855 16.25 27.3855C19.6484 27.3855 22.4133 30.1504 22.4133 33.5488C22.4133 36.9472 19.6484 39.7121 16.25 39.7121C8.77792 39.7121 2.69898 33.6331 2.69898 26.161ZM24.0233 37.2544C24.5609 36.1314 24.8622 34.8747 24.8622 33.5488C24.8622 28.8 20.9988 24.9366 16.25 24.9366C12.8516 24.9366 10.0867 22.1717 10.0867 18.7733C10.0867 15.3748 12.8516 12.61 16.25 12.61C23.7221 12.61 29.801 18.689 29.801 26.161C29.801 30.7431 27.5147 34.8006 24.0233 37.2544Z\" fill=\"#252A31\"></path>\n<path d=\"M16.25 29.8753C14.2244 29.8753 12.5765 31.5232 12.5765 33.5488C12.5765 35.5743 14.2244 37.2223 16.25 37.2223C18.2756 37.2223 19.9235 35.5743 19.9235 33.5488C19.9235 31.5232 18.2756 29.8753 16.25 29.8753ZM16.25 34.7733C15.5748 34.7733 15.0255 34.224 15.0255 33.5488C15.0255 32.8736 15.5748 32.3243 16.25 32.3243C16.9252 32.3243 17.4745 32.8736 17.4745 33.5488C17.4745 34.224 16.9252 34.7733 16.25 34.7733Z\" fill=\"#252A31\"></path>\n<path d=\"M16.25 15.0998C14.2244 15.0998 12.5765 16.7477 12.5765 18.7733C12.5765 20.7988 14.2244 22.4468 16.25 22.4468C18.2756 22.4468 19.9235 20.7988 19.9235 18.7733C19.9235 16.7477 18.2756 15.0998 16.25 15.0998ZM16.25 19.9978C15.5748 19.9978 15.0255 19.4485 15.0255 18.7733C15.0255 18.0981 15.5748 17.5488 16.25 17.5488C16.9252 17.5488 17.4745 18.0981 17.4745 18.7733C17.4745 19.4485 16.9252 19.9978 16.25 19.9978Z\" fill=\"#252A31\"></path>\n</svg>"
+          }
+        },
+        "template--19546142867803__8e3628a4-7391-4178-9d00-ce7089f845ca-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop now",
+            "button_link": "shopify://products/hormonal-test",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19546142867803__8e3628a4-7391-4178-9d00-ce7089f845ca-heading-1",
+        "template--19546142867803__8e3628a4-7391-4178-9d00-ce7089f845ca-text-1",
+        "d7900906-9e57-436e-8a33-eced5f5ac00d",
+        "5b2fcc52-75c6-4ad0-9309-d10a82f311b4",
+        "db80d430-9fce-4f55-82c6-60cf15c7ab20",
+        "4cc4e29d-51f5-4bb7-a0d2-4f52032be12c",
+        "template--19546142867803__8e3628a4-7391-4178-9d00-ce7089f845ca-button-1"
+      ],
+      "custom_css": [
+        "h2 {font-weight: 500;}",
+        ".image-with-text__grid {justify-content: center;}",
+        ".media--adapt .image-fit {position: relative;}",
+        "@media screen and (min-width: 750px) {.image-with-text .image-with-text__content {padding: 0 0 0 5rem !important; } .media-wrapper img {max-width: 550px; height: auto; float: right; }}",
+        "@media screen and (max-width: 749px) {.media--adapt .image-fit {position: absolute; } .media-wrapper img {min-width: 100%; }}",
+        ".image-with-text-custom,.image-with-text-custom .grid__item {}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Stirring.png",
+        "image_position": "center center",
+        "layout": "image_first",
+        "text_box_position": "top",
+        "text_alignment": "left",
+        "image_ratio": "adapt",
+        "enlarge_content": false,
+        "full_width": false,
+        "show_divider": false,
+        "image_mobile": "shopify://shop_images/Stirring.png",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "adapt",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#fff5f5",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "2efd0700-ffe2-4142-9cba-fcbf7ac1154c": {
+      "type": "pricing-horm",
+      "custom_css": [
+        ".pricing {background-color: #b8cdd9;}",
+        ".pricing-subtitle,.pricing-title h2 {color: #252a31;}",
+        ".product-img img {height: auto; width: auto; max-width: 100%;}",
+        ".product-content h2 {margin: 0;}",
+        ".check-list li {line-height: 1.6em;}",
+        ".product-content .disclaimer {line-height: 1.5em;}"
+      ],
+      "settings": {
+        "title": "Unlock your best self with Monthlies",
+        "text": "Your daily dose combines 30+ personalised ingredients to boost hormonal balance and improve menstrual wellness.",
+        "product1_description": "BEST VALUE",
+        "product1_image": "shopify://shop_images/Hormone_Combo.png",
+        "product1_step": "COMBO",
+        "product1_title": "Subscription",
+        "product1_price": "6590",
+        "product1_compare_at_price": "14080",
+        "product1_price_tag": "FREE HORMONE TEST",
+        "product1_supply": "",
+        "product1_bullets_title": "Get the combo deal on your Hormone Test + Personal Powder",
+        "product1_bullet1": "1 Comprehensive at-home saliva test",
+        "product1_bullet2": "Personal hormone report",
+        "product1_bullet3": "1:1 Expert consultation",
+        "product1_bullet4": "Personal exercise & nutrition recommendations",
+        "product1_bullet5": "30 servings per month of your Personal Monthlies Powder",
+        "product1_bullet6": "Unlimited expert guidance on cycle care",
+        "disclaimer": "90-day money back guarantee. No questions asked. Flexible no-risk subscription, cancel any time.",
+        "product2_description": "",
+        "product2_image": "shopify://shop_images/Monthlies_Refill_a77a3a14-5f23-43fe-b1ce-34b5569d217d.png",
+        "product2_step": "Step 2/2",
+        "product2_title": "Personal Powder",
+        "product2_price": "6590.00",
+        "product2_compare_at_price": "",
+        "product2_supply": "€2,19 Per Serving",
+        "product2_bullets_title": "Get your Personal Powder based on your Hormone Test results",
+        "product2_bullet1": "30 Servings of your Personal Monthlies Powder",
+        "product2_bullet2": "Exercise & nutrition recommendations",
+        "product2_bullet3": "1:1 Expert consultation",
+        "product2_bullet4": "",
+        "product2_bullet5": "",
+        "product2_bullet6": "",
+        "disclaimer2": "90-day money back guarantee. No questions asked.",
+        "product3_description": "Most Popular",
+        "product3_image": "shopify://shop_images/Frame_40092.webp",
+        "product3_step": "STEP 1/2",
+        "product3_title": "Hormone Test",
+        "product3_price": "7490",
+        "product3_compare_at_price": "",
+        "product3_supply": "",
+        "product3_bullets_title": "Test your hormones to get to the root cause of your menstrual pain",
+        "product3_bullet1": "1 Comprehensive at-home saliva test",
+        "product3_bullet2": "Personal hormone report",
+        "product3_bullet3": "Personal exercise & nutrition recommendations",
+        "product3_bullet4": "1:1 Expert consultation",
+        "product3_bullet5": "",
+        "product3_bullet6": "",
+        "product_disclaimer_text": "Decide later to get your Personal Powder based on your results.",
+        "selected_variant1": "47050221879643",
+        "selected_variant2": "47050221879643",
+        "selected_variant3": "47050221879643",
+        "selling_plan": "689069883739",
+        "disclaimer3": "90-day money back guarantee. No questions asked.",
+        "button_id": "cta-",
+        "start_now_text": "Shop now"
+      }
+    },
+    "a4140ade-0e60-4436-baca-62c3ab3c4d77": {
+      "type": "steps",
+      "custom_css": [
+        ".usp {max-width: 210px; color: #fff;}",
+        ".usp h4 {color: #fff !important;}",
+        ".usp-holder,.usp-holder h3 {background: #252a31; color: #fff;}",
+        ".usp img {width: 60px; height: 60px;}",
+        ".usp-list {gap: 50px;}"
+      ],
+      "settings": {
+        "title": "The easiest way to bring menstrual wellness into your morning ritual",
+        "title_1": "1. Scoop",
+        "text_1": "One convenient daily morning dose",
+        "title_2": "2. Mix",
+        "text_2": "Stir in a glass of water",
+        "title_3": "3. Enjoy",
+        "text_3": "Drink your unique blend every day",
+        "title_4": "4. Thrive",
+        "text_4": "Feel results month after month"
+      }
+    },
+    "e6e7ea76-b0f3-474d-b479-5ffd94602344": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/bg_image.jpg",
+        "image_position": "center center",
+        "text_box_position": "top-center",
+        "text_alignment": "center",
+        "image_ratio": "400px",
+        "show_text_box": false,
+        "full_width": true,
+        "show_divider": false,
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "250px",
+        "stack_images_on_mobile": true,
+        "show_text_below": false,
+        "colors_button_label": "#1a1b18",
+        "colors_button_background": "#ffffff",
+        "colors_text": "#ffffff",
+        "colors_overlay": "#000000",
+        "colors_overlay_opacity": 8,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "78adc6ce-4b35-4f59-bc4c-2b6249f42717": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19546142867803__78adc6ce-4b35-4f59-bc4c-2b6249f42717-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Powerful ingredients to address your hormonal needs and health goals",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "template--19546142867803__78adc6ce-4b35-4f59-bc4c-2b6249f42717-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Based on your hormone analysis, we'll curate a synergistic blend of vitamins, herbs, and nutrients that support healthy estrogen metabolism and promote hormone balance.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "template--19546142867803__78adc6ce-4b35-4f59-bc4c-2b6249f42717-button-1": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19546142867803__78adc6ce-4b35-4f59-bc4c-2b6249f42717-heading-1",
+        "template--19546142867803__78adc6ce-4b35-4f59-bc4c-2b6249f42717-text-1",
+        "template--19546142867803__78adc6ce-4b35-4f59-bc4c-2b6249f42717-button-1"
+      ],
+      "custom_css": [
+        "h2 {font-weight: 500;}"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "narrow": false,
+        "show_divider": false,
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "007ccb1b-4b93-42d3-9798-df124e7ace3a": {
+      "type": "tab-collage",
+      "blocks": {
+        "template--19546142867803__007ccb1b-4b93-42d3-9798-df124e7ace3a-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ingredients.webp",
+            "image_position": "center center",
+            "heading": "Minerals",
+            "description": "<p>Magnesium</p><ul><li>Reduces irritability</li><li>Regulates mood</li><li>Relaxes muscles reducing anxiety</li></ul><p><br/>Calcium</p><ul><li>Supports with mood balance, nerves and muscles</li><li>Vitamin D3 enrichment regulates moods</li></ul><p><br/>And many others</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        },
+        "2e21bc2d-ab0c-44f0-9498-a7bf876e4799": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ingredients.webp",
+            "image_position": "center center",
+            "heading": "Vitamins",
+            "description": "<p>Vitamin A</p><ul><li>Supports skin cell regeneration and repair</li><li>Nourishes the scalp and promotes healthy hair growth</li></ul><p><br/>Vitamin B6</p><ul><li>Regulates serotonin production, improving mood</li><li>Helps reduce premenstrual mood symptoms such as depression and irritability</li><li>Aids chemical pathways that support brain health</li></ul><p><br/>And many others</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        },
+        "3b526cac-03e5-43ff-86b7-a07e0d805087": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ingredients.webp",
+            "image_position": "center center",
+            "heading": "Nutrients",
+            "description": "<p>Choline</p><ul><li>Supports healthy neurotransmitter function, contributing to mood balance</li><li>Supports mood regulation</li></ul><p><br/>Powdered Omega (Omega-3 fatty acids)</p><ul><li>Promotes efficient nutrient exchange and energy production</li><li>Reduces inflammation, supporting muscle recovery</li></ul><p><br/>And many others</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        },
+        "0291273a-1ba4-4512-8420-3955523b8e30": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ingredients.webp",
+            "image_position": "center center",
+            "heading": "Plant Extracts",
+            "description": "<p>Ashwagandha</p><ul><li>Reduces cortisol levels, alleviating stress and anxiety</li><li>Supports neurotransmitter balance</li><li>Enhances cognitive function</li></ul><p><br/>Ginger flower</p><ul><li>Stimulates the body's metabolic rate, providing a natural energy lift</li><li>Reduces oxidative stress</li></ul><p><br/>Vitex (chasteberry)</p><ul><li>Regulates hormonal fluctuations</li><li>Reduces PMS Symptoms</li><li>Helps normalize ovulation</li></ul><p><br/>And many others</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        },
+        "f1b9fc6d-1153-42a4-bd77-412eef300a50": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ingredients.webp",
+            "image_position": "center center",
+            "heading": "Other ingredients",
+            "description": "<ul><li>Broccoli extract</li><li>Flaxseed</li><li>Licorice</li><li>Inositol</li><li>Reishi mushroom</li><li>Vitamin C</li><li>Vitamin D</li><li>Vitamin K</li><li>Vitamin B1 (Thiamine)</li><li>Vitamin B2 (Riboflavin)</li><li>Vitamin B5 (Pantothenic Acid)</li><li>Vitamin B7 (Biotin)</li><li>Vitamin B9 (Folate or Folic Acid)</li><li>Vitamin B12 (Cobalamin)</li><li>Curcumin (a compound found in turmeric)</li><li>Maca (possibly \"Macca\" is a typo)</li></ul><p><br/>And many others</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        },
+        "dd1cb414-473e-45b1-a937-75f6460b7099": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ingredients.webp",
+            "image_position": "center center",
+            "heading": "Learn about the science behind the ingredients",
+            "description": "",
+            "button_label": "Browse research by ingredient",
+            "button_link": "https://cdn.shopify.com/s/files/1/0708/7462/8371/files/scientific_evidence_by_ingredient_-_EN.pdf?v=1694013346",
+            "button_size": "large",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19546142867803__007ccb1b-4b93-42d3-9798-df124e7ace3a-image-1",
+        "2e21bc2d-ab0c-44f0-9498-a7bf876e4799",
+        "3b526cac-03e5-43ff-86b7-a07e0d805087",
+        "0291273a-1ba4-4512-8420-3955523b8e30",
+        "f1b9fc6d-1153-42a4-bd77-412eef300a50",
+        "dd1cb414-473e-45b1-a937-75f6460b7099"
+      ],
+      "custom_css": [
+        ".tab-collage[data-accordion] .tab-collage__desc {padding: 0.8rem 1rem 2.8rem 0rem;}",
+        ".tab-collage__desc ul {padding-inline-start: 20px;}",
+        "h2 {font-weight: 500;}",
+        ".tab-collage[data-accordion] .tab-collage__heading {font-weight: 500; font-size: 1.9rem;}"
+      ],
+      "settings": {
+        "layout": "text_first",
+        "text_box_position": "top",
+        "text_alignment": "left",
+        "image_ratio": "adapt",
+        "make_collapsible_rows": true,
+        "full_width": false,
+        "show_divider": false,
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "button_label": "Shop now",
+        "button_link": "shopify://products/hormonal-powder",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "adapt",
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#252a31",
+        "colors_border": "#d2d5d9",
+        "colors_background": "#fff5f5",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "b0e6cfbe-f358-4303-a16d-2db18ba28dda": {
+      "type": "pricing",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "title": "Unlock your best self with Monthlies",
+        "text": "Your daily dose combines 30+ personalised ingredients to boost hormonal balance and improve menstrual wellness",
+        "product1_description": "Default description",
+        "product1_title": "Default title",
+        "product1_price": "0.00",
+        "product1_compare_at_price": "0.00",
+        "product1_price_tag": "SALE",
+        "product1_supply": "Default supply",
+        "product1_bullets_title": "Your default title here.",
+        "product1_bullet1": "",
+        "product1_bullet2": "",
+        "product1_bullet3": "",
+        "product1_bullet4": "",
+        "product1_bullet5": "",
+        "product1_bullet6": "",
+        "disclaimer": "90-day money back guarantee. No questions asked.",
+        "product2_description": "Default description",
+        "product2_title": "Default title",
+        "product2_price": "0.00",
+        "product2_compare_at_price": "0.00",
+        "product2_price_tag": "SALE",
+        "product2_supply": "Default supply",
+        "product2_bullets_title": "Your default title here.",
+        "product2_bullet1": "",
+        "product2_bullet2": "",
+        "product2_bullet3": "",
+        "product2_bullet4": "",
+        "product2_bullet5": "",
+        "product2_bullet6": "",
+        "disclaimer2": "90-day money back guarantee. No questions asked.",
+        "product3_description": "Default description",
+        "product3_title": "Default title",
+        "product3_price": "0.00",
+        "product3_compare_at_price": "0.00",
+        "product3_price_tag": "SALE",
+        "product3_supply": "Default supply",
+        "product3_bullets_title": "Your default title here.",
+        "product3_bullet1": "",
+        "product3_bullet2": "",
+        "product3_bullet3": "",
+        "product3_bullet4": "",
+        "product3_bullet5": "",
+        "product3_bullet6": "",
+        "selected_variant1": "47050221879643",
+        "selected_variant2": "47050221879643",
+        "selected_variant3": "47050221879643",
+        "selling_plan": "689069883739",
+        "disclaimer3": "90-day money back guarantee. No questions asked.",
+        "button_id": "cta-",
+        "start_now_text": "Start now",
+        "product1_icon_svg": "<svg>...Your default SVG here...</svg>",
+        "product2_icon_svg": "<svg>...Your default SVG here...</svg>",
+        "product3_icon_svg": "<svg>...Your default SVG here...</svg>"
+      }
+    },
+    "121530cd-73ef-43cd-9a1f-11115845b113": {
+      "type": "reviews-slider-powder",
+      "custom_css": [
+        "h2 {font-weight: 500;}"
+      ],
+      "settings": {
+        "title": "Don’t take our word for it, take hers!"
+      }
+    },
+    "37cf2536-d269-40de-8a92-4e12bf6ca4b7": {
+      "type": "quotes",
+      "blocks": {
+        "template--19546142867803__37cf2536-d269-40de-8a92-4e12bf6ca4b7-quote-1": {
+          "type": "quote",
+          "settings": {
+            "icon": "5",
+            "text": "<p>Add customer reviews and quotes to showcase your store's happy customers.</p>",
+            "author": "Author"
+          }
+        },
+        "template--19546142867803__37cf2536-d269-40de-8a92-4e12bf6ca4b7-quote-2": {
+          "type": "quote",
+          "settings": {
+            "icon": "5",
+            "text": "<p>Add customer reviews and quotes to showcase your store's happy customers.</p>",
+            "author": "Author"
+          }
+        },
+        "template--19546142867803__37cf2536-d269-40de-8a92-4e12bf6ca4b7-quote-3": {
+          "type": "quote",
+          "settings": {
+            "icon": "5",
+            "text": "<p>Add customer reviews and quotes to showcase your store's happy customers.</p>",
+            "author": "Author"
+          }
+        },
+        "4a739ac5-12bb-4d32-a574-2623adb0636f": {
+          "type": "quote",
+          "settings": {
+            "icon": "5",
+            "text": "<p>Add customer reviews and quotes to showcase your store's happy customers.</p>",
+            "author": "Author"
+          }
+        },
+        "acfd4dad-e2b7-41e8-a358-a1109cf5d1b5": {
+          "type": "quote",
+          "settings": {
+            "icon": "5",
+            "text": "<p>Add customer reviews and quotes to showcase your store's happy customers.</p>",
+            "author": "Author"
+          }
+        },
+        "e54ea8b6-fca5-484a-922b-ca9be8b6cb24": {
+          "type": "quote",
+          "disabled": true,
+          "settings": {
+            "icon": "5",
+            "text": "<p>Add customer reviews and quotes to showcase your store's happy customers.</p>",
+            "author": "Author"
+          }
+        }
+      },
+      "block_order": [
+        "template--19546142867803__37cf2536-d269-40de-8a92-4e12bf6ca4b7-quote-1",
+        "template--19546142867803__37cf2536-d269-40de-8a92-4e12bf6ca4b7-quote-2",
+        "template--19546142867803__37cf2536-d269-40de-8a92-4e12bf6ca4b7-quote-3",
+        "4a739ac5-12bb-4d32-a574-2623adb0636f",
+        "acfd4dad-e2b7-41e8-a358-a1109cf5d1b5",
+        "e54ea8b6-fca5-484a-922b-ca9be8b6cb24"
+      ],
+      "disabled": true,
+      "settings": {
+        "show_divider": false,
+        "heading": "Women testify",
+        "heading_size": "h1",
+        "heading_tag": "h2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "experts": {
+      "type": "experts",
+      "custom_css": [
+        "#cta-experts,.cta-play-video-expert {display: none !important;}",
+        "@media (max-width: 481px) {.expert img {width: 50%; }}",
+        "#cta-experts,.cta-play-video-expert {display: none !important;}",
+        ".experts {background: #c7e1b2;}",
+        ".expert-field {border-bottom: 1px solid #928f93; height: auto;}",
+        ".experts-wrapper {gap: 20px;}",
+        ".experts-container {gap: 20px;}"
+      ],
+      "settings": {
+        "title": "By women, for women",
+        "text": "<p>We're a female-led startup based in Germany, committed to addressing the hormone imbalances responsible for menstrual discomfort</p><p>Our approach revolves around a holistic and natural methodology that taps into the body's innate healing capacity, with the goal of restoring harmony throughout every phase of your cycle.</p>",
+        "url": "shopify://pages/cycle-assessment",
+        "label": "Take the quiz",
+        "name_1": "Dr. Ashley Florestal",
+        "field_1": "Licensed Naturopath",
+        "text_1": "Ashley focusses on women's health, hormones and fertility. She helps patients achieve hormonal balance, prepare for pregnancy, and optimize their health through her clinical practice and ongoing education.",
+        "name_2": "Dr. Cassandra Paiano",
+        "field_2": "Licensed Naturopath",
+        "text_2": "Cassandra uses an evidence-based approach to diagnose and treat disease. She holds a Doctor of Naturopathy degree from CCNM, Toronto, and has an undergraduate degree in Nutritional Sciences from Ryerson University.",
+        "name_3": "Melissa Mastroberardino",
+        "field_3": "Registered Holistic Nutritionist (RHN)",
+        "text_3": "Melissa specialises in hormonal and digestive health. She studied at the Canadian School of Natural Nutrition and helps women uncover imbalances and deficiencies to improve their overall well-being through customised protocols."
+      }
+    },
+    "2ab938cb-c13b-48d2-9e1d-4ceee27d975b": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--19546142867803__2ab938cb-c13b-48d2-9e1d-4ceee27d975b-column-1": {
+          "type": "column",
+          "settings": {
+            "title": "Ashley",
+            "title_size": "h3",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "template--19546142867803__2ab938cb-c13b-48d2-9e1d-4ceee27d975b-column-2": {
+          "type": "column",
+          "settings": {
+            "title": "Cassandra",
+            "title_size": "h3",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "template--19546142867803__2ab938cb-c13b-48d2-9e1d-4ceee27d975b-column-3": {
+          "type": "column",
+          "settings": {
+            "title": "Melissa",
+            "title_size": "h3",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "b96b00d3-b26c-4c09-bf7e-8ab1a7ef44e2": {
+          "type": "column",
+          "settings": {
+            "title": "Gynae",
+            "title_size": "h3",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19546142867803__2ab938cb-c13b-48d2-9e1d-4ceee27d975b-column-1",
+        "template--19546142867803__2ab938cb-c13b-48d2-9e1d-4ceee27d975b-column-2",
+        "template--19546142867803__2ab938cb-c13b-48d2-9e1d-4ceee27d975b-column-3",
+        "b96b00d3-b26c-4c09-bf7e-8ab1a7ef44e2"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_ratio": "landscape",
+        "image_position": "center center",
+        "text_alignment": "left",
+        "show_divider": false,
+        "heading": "Multicolumn",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "mobile_text_alignment": "left",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "usp-shorten": {
+      "type": "usp-shorten",
+      "disabled": true,
+      "settings": {
+        "title_1": "Easy to use saliva test",
+        "title_2": "Maximum precision",
+        "title_3": "Quick test results"
+      }
+    },
+    "1691007096c3a2f5e8": {
+      "type": "apps",
+      "blocks": {
+        "6e22ee8c-b6a4-4741-9b83-d5ff7bb7e72e": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "SvzxBK"
+          }
+        },
+        "9737f7ab-bc67-4aa3-8e27-3cd32679b846": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "WdGZ9Y"
+          }
+        }
+      },
+      "block_order": [
+        "6e22ee8c-b6a4-4741-9b83-d5ff7bb7e72e",
+        "9737f7ab-bc67-4aa3-8e27-3cd32679b846"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true,
+        "show_divider": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "3680e63a-fcac-4a34-9205-cc84f0c8e6f9": {
+      "type": "control-banner-hormonal",
+      "disabled": true,
+      "settings": {
+        "title": "Take control of your cycle today",
+        "label_1": "Order now",
+        "label_2": "",
+        "btn_url": ""
+      }
+    },
+    "0a241f58-774b-4dc9-b402-ebb3e6193972": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--17607372964115__0a241f58-774b-4dc9-b402-ebb3e6193972-16739655325d1e4dcf-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do contraceptive methods or fertility treatments impact the usage of both the hormonal test and the powder?",
+            "row_content": "<p>In case of taking a contraceptive methods...<br/><br/>While you can certainly take both the hormonal test and use the powder for potential benefits, it's important to note that hormonal contraceptives, such as implants and pills, can affect hormone levels. <br/><br/>Since hormonal contraceptives regulate your hormone balance, the effects observed in the hormone test might not be as distinct as in individuals not using hormonal birth control. <br/>Moreover, when assessing the efficacy of the powder, its impact could be influenced by the contraceptive method you are utilising.<br/><br/>In case of a fertility treatment...<br/><br/>Fertility treatments often involve precise hormone manipulation that can influence hormonal test results. <br/><br/>It's vital to recognise that introducing new supplements, including the personalised powder, should be done under the guidance of your healthcare provider. <br/><br/>The introduction of external supplements could potentially disrupt the intended hormonal adjustments of the treatment, emphasising the importance of professional consultation.</p>",
+            "page": ""
+          }
+        },
+        "template--17607372964115__0a241f58-774b-4dc9-b402-ebb3e6193972-16739655325d1e4dcf-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "If I have endometriosis, will the powder work for me?",
+            "row_content": "<p>Endometriosis is a medical condition that occurs when tissue resembling the uterine lining grows outside the womb, often in areas such as the ovaries or fallopian tubes. <br/>This condition can cause intense pain during a woman's menstrual cycle and, for some, even when they're not menstruating. <br/><br/>Diagnosis of endometriosis can be challenging, resulting in an average duration of 6-10 years before receiving an accurate diagnosis.<br/><br/>If you're diagnosed with endometriosis, then you're probably in more pain than our natural solutions can soothe all by themselves.<br/><br/>However,  the blend of ingredients aims to support overall hormone balance, potentially benefiting those with endometriosis. It's advisable to consult our experts to determine the best approach for your unique needs.</p>",
+            "page": ""
+          }
+        },
+        "template--17607372964115__0a241f58-774b-4dc9-b402-ebb3e6193972-16739655325d1e4dcf-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is the powder's blend compatible with any other supplements or vitamins that I might currently be taking?",
+            "row_content": "<p>If you're currently using any medication or have been prescribed supplements for specific vitamin deficiencies, it's essential to consult your healthcare provider before incorporating Monthlies into your daily regimen.<br/><br/>Your personalised blend will be crafted to provide a fundamental level of hormone support, aiming to fulfil your body's requirements. <br/><br/>This implies that you might not need to acquire extra vitamin and mineral supplements to address foundational hormone balance needs.<br/><br/>Let's dive deeper into your situation with one of our experts during a personalised 1:1 consultation (included in the Monthlies Combo). During this session, we'll unveil your customised formula along with the precise dosage of its ingredients.</p>",
+            "page": ""
+          }
+        },
+        "template--17607372964115__0a241f58-774b-4dc9-b402-ebb3e6193972-16739655325d1e4dcf-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Could you provide more details about the composition of the powder? Is it suitable for vegans? How does it taste?",
+            "row_content": "<p>The powder is carefully formulated with a curated selection of vitamins, minerals, extracts, and more, tailored to your hormone levels and cycle health objectives. <br/><br/>While the powder is currently suitable for vegetarians and 100% natural, it's important to note that it isn't suitable for vegans. <br/><br/>However, we are actively working towards making it suitable for vegans.In terms of flavour, we've dedicated careful attention to create a delightful orange taste, ensuring an enjoyable consumption experience. <br/><br/>If the taste poses a challenge, don't hesitate to reach out to us at info@withmonthlies.com. We're committed to finding a solution that suits your preferences!</p>",
+            "page": ""
+          }
+        },
+        "9d60fd2b-0408-4be6-8837-23a723f9e07d": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are there any extended benefits of Monthlies, such as improving skin issues?",
+            "row_content": "<p>Yes!, Monthlies is formulated to address hormonal imbalance, which can have positive effects on various aspects of health, including skin issues. <br/><br/>While the powder's primary focus is on hormone balance and menstrual symptoms, its comprehensive ingredients may contribute to overall well-being:</p><ul><li>Enhancing activity performance</li><li>Amplifying energy levels</li><li>Balancing your mood</li><li>Helping get a radiant skin and hair</li><li>And many more</li></ul>",
+            "page": ""
+          }
+        },
+        "d6395c54-3255-4e41-b45a-29f75568265e": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does it take to see results?",
+            "row_content": "<p>The effects of using the powder can differ from person to person, but as a common trend, many customers start noticing positive changes within the first month. </p><p>The most significant improvements are often experienced after consistently using the product for about 90 days.</p>",
+            "page": ""
+          }
+        },
+        "bf845a6b-ed70-4981-b487-257c64793082": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What's the recommended way to take the powder?",
+            "row_content": "<p>Taking the powder is easy – simply consume 1 scoop a day, every day, consistency is key for optimal results!<br/><br/>It’s recommended to take it with food during the morning.<br/><br/>Simply mix itwith approximately 250 ml of water, juice, or your preferred beverage.</p>",
+            "page": ""
+          }
+        },
+        "2c361192-22dd-47ad-a812-62a01548ce09": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I discuss my hormone test results with an expert?",
+            "row_content": "<p>Absolutely!   <br/><br/>The Monthlies Combo includes a free 1:1 expert consultation, where you can discuss your results with one of our experts. <br/><br/>They will help you understand your hormone test results, answer any questions you may have, and provide recommendations and guidance on how to take control of your hormonal health for a pain-free and balanced life.</p>",
+            "page": ""
+          }
+        },
+        "208c5a73-ee97-4d80-9369-a861c1222982": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is the shipping process included?",
+            "row_content": "<p>Yes, the shipping process is hassle-free for you. <br/><br/>We offer a mailing bag with prepaid shipping for the hormone test, so all you need to do is send the prepared envelope containing your saliva sample back to our partner laboratory.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17607372964115__0a241f58-774b-4dc9-b402-ebb3e6193972-16739655325d1e4dcf-0",
+        "template--17607372964115__0a241f58-774b-4dc9-b402-ebb3e6193972-16739655325d1e4dcf-2",
+        "template--17607372964115__0a241f58-774b-4dc9-b402-ebb3e6193972-16739655325d1e4dcf-1",
+        "template--17607372964115__0a241f58-774b-4dc9-b402-ebb3e6193972-16739655325d1e4dcf-3",
+        "9d60fd2b-0408-4be6-8837-23a723f9e07d",
+        "d6395c54-3255-4e41-b45a-29f75568265e",
+        "bf845a6b-ed70-4981-b487-257c64793082",
+        "2c361192-22dd-47ad-a812-62a01548ce09",
+        "208c5a73-ee97-4d80-9369-a861c1222982"
+      ],
+      "settings": {
+        "open_first_collapsible_row": false,
+        "narrow": false,
+        "show_divider": false,
+        "heading": "Here’s your top 10 questions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "85c6a02b-27fb-4283-9a72-51b81a96794a": {
+      "type": "offer-banner",
+      "settings": {
+        "title": "Take control of your cycle today",
+        "text": "Analyse your hormones to create your personalised daily food supplement. Alleviate menstrual symptoms and thrive all month long.",
+        "url_1": "shopify://products/hormonal-test",
+        "label_1": "Shop now"
+      }
+    }
+  },
+  "order": [
+    "ad8adf1e-18fd-4fc5-87a5-2b66d741c3df",
+    "hormonal-hero",
+    "491b4978-4906-4b6c-afe6-fcce17539edc",
+    "statistics",
+    "how-it-works-hormonal",
+    "549167e9-0c6d-4498-868c-05aadd06b5e0",
+    "14794aeb-1af0-4135-b938-d88af90914bb",
+    "8e3628a4-7391-4178-9d00-ce7089f845ca",
+    "2efd0700-ffe2-4142-9cba-fcbf7ac1154c",
+    "a4140ade-0e60-4436-baca-62c3ab3c4d77",
+    "e6e7ea76-b0f3-474d-b479-5ffd94602344",
+    "78adc6ce-4b35-4f59-bc4c-2b6249f42717",
+    "007ccb1b-4b93-42d3-9798-df124e7ace3a",
+    "b0e6cfbe-f358-4303-a16d-2db18ba28dda",
+    "121530cd-73ef-43cd-9a1f-11115845b113",
+    "37cf2536-d269-40de-8a92-4e12bf6ca4b7",
+    "experts",
+    "2ab938cb-c13b-48d2-9e1d-4ceee27d975b",
+    "usp-shorten",
+    "1691007096c3a2f5e8",
+    "3680e63a-fcac-4a34-9205-cc84f0c8e6f9",
+    "0a241f58-774b-4dc9-b402-ebb3e6193972",
+    "85c6a02b-27fb-4283-9a72-51b81a96794a"
+  ]
+}

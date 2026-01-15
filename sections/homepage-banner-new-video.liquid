@@ -1,0 +1,1033 @@
+<div class="monthlies-hero-wrapper">
+
+    <div class="trust-bar">
+        <div class="trust-bar-content">
+
+            <div class="trust-rating">
+                <div class="stars">
+
+                    {% if section.settings.review_profile_image != blank %}
+                    <div class="profile-pictures mob">
+                        <img src="{{ section.settings.review_profile_image | img_url: 'master' }}" alt="testimonial-image" class="testimonial-image" />
+                    </div>
+                    {% endif %}
+                    <div class="werappepr">
+                    {% if section.settings.review_star_image != blank %}
+                    <img src="{{ section.settings.review_star_image | img_url: 'master' }}" alt="Star" class="star" />
+                    {% endif %}
+
+                    {% if section.settings.review_rating_text != blank %}
+                    <span class="rating-text">{{ section.settings.review_rating_text }}</span>
+                    {% endif %}
+                     {% if section.settings.trust_statement != blank %}
+                    <p class="trust-statement">{{ section.settings.trust_statement }}</p>
+                    {% endif %}
+                    </div>
+                </div>
+
+               
+            </div>
+
+        </div>
+    </div>
+
+    <section class="hero-section">
+
+        <!-- Background Image -->
+        <div class="hero-background">
+            {% if section.settings.hero_background != blank %}
+            <img src="{{ section.settings.hero_background | img_url: 'master' }}" alt="Background" class="bg-image" />
+            {% endif %}
+            {% assign mp4 = section.settings.hero_background_video.sources | where: "mime_type", "video/mp4" | first %}
+            {% if mp4 %}
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
+                poster="{{ section.settings.hero_video_poster | image_url }}"
+              >
+                <source src="{{ mp4.url }}" type="video/mp4">
+              </video>
+            {% endif %}
+            
+                          
+              
+            <div class="dark-overlay"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="main-grid">
+
+                <div class="main-text">
+
+                    {% if section.settings.headline != blank %}
+                    <h1 class="headline">{{ section.settings.headline }}</h1>
+                    {% endif %}
+
+                    {% if section.settings.subheadline != blank %}
+                    <p class="subheadline">{{ section.settings.subheadline }}</p>
+                    {% endif %}
+
+                    {% if section.settings.cta_text != blank %}
+                    <div class="hero-cta-wrapper">
+                        <a href="{{ section.settings.cta_link }}" class="hero-cta-btn">
+                            {{ section.settings.cta_text }}
+                        </a>
+                    </div>
+                    {% endif %}
+                </div>
+
+                <!-- Badges Section -->
+                <div class="badges-container">
+                    {% if section.settings.badge_1 != blank %}
+                    <div class="badge badge-1">
+                        <img src="{{ section.settings.badge_1 | img_url: 'master' }}" alt="Vegan Badge" />
+                    </div>
+                    {% endif %}
+
+                    {% if section.settings.badge_2 != blank %}
+                    <div class="badge badge-2">
+                        <img src="{{ section.settings.badge_2 | img_url: 'master' }}" alt="Cruelty Free Badge" />
+                    </div>
+                    {% endif %}
+
+                    {% if section.settings.badge_3 != blank %}
+                    <div class="badge badge-3">
+                        <img src="{{ section.settings.badge_3 | img_url: 'master' }}" alt="GMP Badge" />
+                    </div>
+                    {% endif %}
+                </div>
+
+            </div>
+
+            <div class="bottom-sections">
+
+                <!-- Customer Review Section -->
+                <div class="review-section">
+
+                    {% if section.settings.review_profile_image != blank %}
+                    <div class="profile-pictures">
+                        <img src="{{ section.settings.review_profile_image | img_url: 'master' }}" alt="testimonial-image" class="testimonial-image" />
+                    </div>
+                    {% endif %}
+
+                    <div class="review-content">
+                        <div class="stars">
+
+                            {% if section.settings.review_star_image != blank %}
+                            <img src="{{ section.settings.review_star_image | img_url: 'master' }}" alt="Star" class="star" />
+                            {% endif %}
+
+                            {% if section.settings.review_rating_text != blank %}
+                            <span class="rating-text">{{ section.settings.review_rating_text }}</span>
+                            {% endif %}
+                        </div>
+
+                        {% if section.settings.review_trust_text != blank %}
+                        <p class="trust-text">{{ section.settings.review_trust_text }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <!-- Pharmacy Section -->
+                <div class="pharmacy-section">
+
+                    {% if section.settings.pharmacy_intro != blank %}
+                    <p class="pharmacy-intro">{{ section.settings.pharmacy_intro }}</p>
+                    {% endif %}
+
+                    {% if section.settings.pharmacy_docmorris != blank %}
+                    <div class="pharmacy-logo docmorris">
+                        <img src="{{ section.settings.pharmacy_docmorris | img_url: 'master' }}" alt="DocMorris" class="pharmacy-logo-img" />
+                    </div>
+                    {% endif %}
+
+                    {% if section.settings.pharmacy_shop != blank %}
+                    <div class="pharmacy-logo shopapotheke">
+                        <img src="{{ section.settings.pharmacy_shop | img_url: 'master' }}" alt="Shop Apotheke" class="pharmacy-logo-img" />
+                    </div>
+                    {% endif %}
+
+                    {% if section.settings.amazon_shop != blank %}
+                    <div class="amazon-logo shopapotheke">
+                        <img src="{{ section.settings.amazon_shop | img_url: 'master' }}" alt="Shop Apotheke" class="pharmacy-logo-img" />
+                    </div>
+                    {% endif %}
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<style>
+    .hero-video {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      
+      .hero-video.loaded {
+        opacity: 1;
+      }
+      
+    .cst-custom-homepage-new .monthlies-hero-wrapper .headline strong {
+        color: #fff;
+        font-style: italic;
+        font-family: 'Lora';
+    }
+   .cst-custom-homepage-new  .monthlies-hero-wrapper .badge {
+    height: auto;
+    background-color: transparent;
+    border: 0;
+}
+   .cst-custom-homepage-new  .monthlies-hero-wrapper {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+    
+   .cst-custom-homepage-new  .monthlies-hero-wrapper .hero-section {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        {% comment %} overflow: hidden; {% endcomment %}
+        height: 771px;
+    }
+    
+    .cst-custom-homepage-new .monthlies-hero-wrapper .hero-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    
+   .cst-custom-homepage-new  .monthlies-hero-wrapper .main-grid {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+    }
+    
+    .cst-custom-homepage-new .monthlies-hero-wrapper .bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-bottom-right-radius: 60px;
+    }
+    
+    
+    
+   .cst-custom-homepage-new  .monthlies-hero-wrapper .hero-content {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 80px 60px 0;
+        height: auto;
+    }
+    
+    /* Main Text Section */
+   .cst-custom-homepage-new  .monthlies-hero-wrapper .main-text {
+      max-width: 1095px;
+    padding-top: 60px;
+    z-index: 3;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    }
+    
+    .cst-custom-homepage-new .monthlies-hero-wrapper .headline {
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 1.15;
+        color: #ffffff;
+        margin-bottom: 24px;
+        letter-spacing: -0.5px;
+        text-align: center;
+        text-transform: none;
+        margin-bottom: 0;
+    }
+    
+.cst-custom-homepage-new .monthlies-hero-wrapper .subheadline {
+    font-size: 19px;
+    line-height: 1.6;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    max-width: 665px;
+    margin: 20px auto 0;
+}
+   .cst-custom-homepage-new  .monthlies-hero-wrapper .hero-cta-wrapper a {
+     display: inline-block;
+    padding: 9px 13px;
+    background: #CB342C;
+    color: #fff;
+    border-radius: 40px;
+    font-size: 16px;
+    line-height: 29px;
+    font-family: 'Quicksand';
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.5px;
+    box-shadow: none;
+    border: none;
+    transition: background 0.2s;
+    margin-top: 32px;
+    }
+    
+    /* Badges Container */
+   .cst-custom-homepage-new  .monthlies-hero-wrapper .badges-container {
+        grid-column: 2;
+        grid-row: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-end;
+        z-index: 3;
+        padding-top: 60px;
+        padding-left: 40px;
+    }
+    
+   .cst-custom-homepage-new  .monthlies-hero-wrapper .badge {
+        height: auto;
+    }
+    
+   .cst-custom-homepage-new  .monthlies-hero-wrapper .badge img {
+        width: 100%;
+        height: 130px;
+        max-width: 150px;
+        margin: 0 auto;
+        display: block;
+        object-fit: none;
+    }
+    
+    /* Bottom Sections */
+    .cst-custom-homepage-new .monthlies-hero-wrapper .bottom-sections {
+       display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: auto;
+    position: relative;
+    bottom: -80px;
+    }
+    
+    /* Review Section */
+    .cst-custom-homepage-new   .monthlies-hero-wrapper .review-section {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 24px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        max-width: 690px !important;
+        width: 100%;
+        box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.12);
+    }
+    
+   .cst-custom-homepage-new  .monthlies-hero-wrapper .profile-pictures {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+    }
+    
+    .cst-custom-homepage-new  .monthlies-hero-wrapper .profile-pic:nth-child(2),
+     .cst-custom-homepage-new  .monthlies-hero-wrapper .testimonial-image:nth-child(2) {
+        margin-left: -16px;
+        position: relative;
+        z-index: 2;
+    }
+    
+     .cst-custom-homepage-new  .monthlies-hero-wrapper .profile-pic:nth-child(3),
+      .cst-custom-homepage-new .monthlies-hero-wrapper .testimonial-image:nth-child(3) {
+        margin-left: -16px;
+        position: relative;
+        z-index: 1;
+    }
+    
+      .cst-custom-homepage-new  .monthlies-hero-wrapper .review-content {
+        flex: 1;
+        min-width: 0;
+    }
+    
+     .cst-custom-homepage-new  .monthlies-hero-wrapper .stars {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin-bottom: 0;
+        flex-wrap: wrap;
+    }
+    
+     .cst-custom-homepage-new  .monthlies-hero-wrapper .star {
+        color: #FFD700;
+        font-size: 18px;
+        line-height: 1;
+        display: inline-block;
+        width: auto;
+        height: auto;
+    }
+    
+      .cst-custom-homepage-new .monthlies-hero-wrapper .star img {
+        width: 18px;
+        height: 18px;
+        display: block;
+    }
+    
+     .cst-custom-homepage-new  .monthlies-hero-wrapper .rating-text {
+    font-size: 12px;
+    font-weight: 600;
+    color: #464646;
+    margin-left: 8px;
+    }
+    
+  .cst-custom-homepage-new  .monthlies-hero-wrapper .trust-text {
+    font-size: 15px;
+    color: #404040;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0;
+}
+    /* Pharmacy Section */
+    .cst-custom-homepage-new  .monthlies-hero-wrapper .pharmacy-section {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        max-width: 100%;
+        box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.12);
+        width: 100%;
+    }
+    
+  .cst-custom-homepage-new  .monthlies-hero-wrapper .pharmacy-intro {
+    font-size: 24px;
+    font-weight: 600;
+    color: #404040;
+    margin: 0;
+    font-family: 'Lora' !important;
+    letter-spacing: 0 !important;
+}
+    
+      .cst-custom-homepage-new  .monthlies-hero-wrapper .pharmacy-logos {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+     .cst-custom-homepage-new  .monthlies-hero-wrapper .pharmacy-logo {
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        transition: transform 0.2s;
+    }
+    
+      .cst-custom-homepage-new  .monthlies-hero-wrapper .pharmacy-logo:hover {
+        transform: translateY(-2px);
+    }
+    
+     .cst-custom-homepage-new  .monthlies-hero-wrapper .pharmacy-logo-img {
+        object-fit: contain;
+        display: block;
+    }
+    
+    /* Trust Bar */
+     .cst-custom-homepage-new  .monthlies-hero-wrapper .trust-bar {
+        display: none !important;
+    }
+    
+     .cst-custom-homepage-new  .monthlies-hero-wrapper .trust-bar-content {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    
+      .cst-custom-homepage-new  .monthlies-hero-wrapper .trust-profile-pictures {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+    }
+    
+     .cst-custom-homepage-new  .monthlies-hero-wrapper .trust-profile-pic {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #ffffff;
+        display: block;
+    }
+    
+     .cst-custom-homepage-new  .monthlies-hero-wrapper .trust-profile-pic:nth-child(1) {
+        position: relative;
+        z-index: 3;
+    }
+    
+     .cst-custom-homepage-new  .monthlies-hero-wrapper .trust-profile-pic:nth-child(2) {
+        margin-left: -10px;
+        position: relative;
+        z-index: 2;
+    }
+    
+   .cst-custom-homepage-new .monthlies-hero-wrapper .trust-profile-pic:nth-child(3) {
+    margin-left: -10px;
+    position: relative;
+    z-index: 1;
+}
+
+.cst-custom-homepage-new .monthlies-hero-wrapper .trust-rating {
+    flex: 1;
+    min-width: 0;
+}
+
+.cst-custom-homepage-new .monthlies-hero-wrapper .trust-stars {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-bottom: 2px;
+}
+
+.cst-custom-homepage-new .monthlies-hero-wrapper .trust-star {
+    color: #FFD700;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.cst-custom-homepage-new .monthlies-hero-wrapper .trust-rating-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #404040;
+    margin-left: 6px;;
+}
+
+.cst-custom-homepage-new .monthlies-hero-wrapper .trust-statement {
+    font-size: 14px;
+    color: #404040;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-top: 0;
+    margin-bottom:0;
+}
+
+html[lang="de"] .amazon-logo {
+    display: none;
+}
+html[lang="en"] .pharmacy-logo.shopapotheke {
+    display: none;
+}
+
+html[lang="en"] .pharmacy-logo.docmorris {
+    display: none;
+}
+{% comment %}  {% endcomment %}
+.cst-custom-homepage-new .monthlies-hero-wrapper .hero-background video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 0 0 60px 0 !important;
+    position: relative;
+}
+.cst-custom-homepage-new .monthlies-hero-wrapper .hero-background:before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+background: #00000070;
+width: 100%;
+height: 100%;
+z-index: 2;
+border-radius: 0 0 60px 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 1560px) {
+    .cst-custom-homepage-new .monthlies-hero-wrapper .pharmacy-intro {
+        font-size: 19px;
+        line-height: normal;
+    }
+    .cst-custom-homepage-new .monthlies-hero-wrapper .pharmacy-section {
+        padding: 20px;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .cst-custom-homepage-new .monthlies-hero-wrapper .hero-content {
+        padding: 80px 50px;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .badges-container {
+        padding-left: 30px;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .badge img {
+        max-width: 140px;
+        height: 120px;
+    }
+    .cst-custom-homepage-new .monthlies-hero-wrapper .bottom-sections {
+    bottom: -140px;
+}
+}
+
+@media (max-width: 1024px) {
+       .cst-custom-homepage-new .monthlies-hero-wrapper .main-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .cst-custom-homepage-new .monthlies-hero-wrapper .hero-content {
+        padding: 60px 40px;
+    }
+
+  .cst-custom-homepage-new .monthlies-hero-wrapper .main-text {
+    padding-top: 0;
+    text-align: left;
+    padding-left: 0;
+    width: 100%;
+    text-align:center;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .headline {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .subheadline {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .badges-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        padding-left: 0;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .badge img {
+           max-width: 120px;
+        height: 85px;
+        object-fit: contain;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .bottom-sections {
+          grid-template-columns: 1fr;
+        gap: 20px;
+        padding-top: 0;
+        display: grid;
+    }
+    .cst-custom-homepage-new .monthlies-hero-wrapper .review-section{
+               max-width: 100% !important;
+    }
+    .badge.badge-2.appco_bg {
+    order: 1;
+    }
+
+    .badge.badge-1.appco_bg {
+    order: 2;
+    }
+
+    .badge.badge-3.appco_bg {
+    order: 3;
+    }
+}
+
+@media (max-width: 768px) {
+    .cst-custom-homepage-new .monthlies-hero-wrapper .hero-section{
+    height: auto;
+}
+    .cst-custom-homepage-new .monthlies-hero-wrapper .profile-pictures.mob img {
+    max-width: 60px;
+}
+    .cst-custom-homepage-new .monthlies-hero-wrapper .hero-content {
+        padding: 40px 24px;
+        min-height: auto;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .main-grid {
+             padding-top: 80px;
+        display: block;
+    }
+
+
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .headline {
+        font-size: 36px;
+        margin-bottom: 16px;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .subheadline {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .badges-container {
+        padding-top: 24px;
+        gap: 8px;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .badge img {
+        max-width: 100px;
+        height: 90px;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .bottom-sections {
+        margin-top: 0;
+        gap: 16px;
+        bottom: -60px;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .review-section {
+       display:none;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .pharmacy-section {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: nowrap;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .profile-pic:nth-child(2),
+    .cst-custom-homepage-new .monthlies-hero-wrapper .profile-pic:nth-child(3),
+    .cst-custom-homepage-new .monthlies-hero-wrapper .testimonial-image:nth-child(2),
+    .cst-custom-homepage-new .monthlies-hero-wrapper .testimonial-image:nth-child(3) {
+        margin-left: -12px;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .star {
+        font-size: 16px;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .star img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .rating-text {
+        font-size: 14px;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .trust-text {
+        font-size: 13px;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .pharmacy-intro {
+        margin-bottom: 0;
+        text-align:center;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .pharmacy-logos {
+        gap: 10px;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .trust-bar {
+             position: relative;
+        z-index: 10;
+        background: #ECF1F4;
+        width: 100%;
+        padding: 12px 20px;
+        display: block !important;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .hero-cta-wrapper a {
+       margin-top:20px;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .trust-bar-content {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .trust-profile-pictures {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .trust-profile-pic {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #ffffff;
+        display: block;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .trust-profile-pic:nth-child(1) {
+        position: relative;
+        z-index: 3;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .trust-profile-pic:nth-child(2) {
+        margin-left: -10px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .trust-profile-pic:nth-child(3) {
+        margin-left: -10px;
+        position: relative;
+        z-index: 1;
+    }
+      .cst-custom-homepage-new  section.energieniveau {
+    padding-top: 77px !important;
+}
+}
+
+@media (max-width: 595px) {
+    .cst-custom-homepage-new section.energieniveau{
+            padding-top: 40px !important;
+        }
+.cst-custom-homepage-new .monthlies-hero-wrapper .subheadline{
+display:none;
+}
+
+.cst-custom-homepage-new .monthlies-hero-wrapper .pharmacy-section {
+    max-width: 378px;
+    margin: 0 auto;
+    justify-content:center;
+            flex-wrap: wrap;
+}
+.pharmacy-section {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+p.pharmacy-intro {
+    grid-column: 1 / -1;
+}
+.cst-custom-homepage-new .monthlies-hero-wrapper .bg-image {
+
+    object-position: 46% 100%;
+
+}
+
+html[lang="en"] .pharmacy-section {display: flex !important;flex-direction: column;}
+}
+@media (max-width: 480px) {
+    .cst-custom-homepage-new .monthlies-hero-wrapper .hero-content {
+        padding: 32px 20px;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .main-text {
+        padding-top: 24px;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .headline {
+        margin-bottom: 12px;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .subheadline {
+        font-size: 14px;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .badges-container {
+        padding-top: 20px;
+        gap: 6px;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .badge img {
+        max-width: 85px;
+        height: 80px;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .bottom-sections {
+        margin-top: 0;
+        gap: 12px;
+    }
+
+
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .pharmacy-section {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .star {
+        font-size: 14px;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .star img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .rating-text {
+        font-size: 13px;
+    }
+
+    .cst-custom-homepage-new .monthlies-hero-wrapper .trust-text {
+        font-size: 12px;
+    }
+    .cst-custom-homepage-new .monthlies-hero-wrapper .pharmacy-section {
+        grid-template-columns: 1fr 1fr;
+        }
+        .cst-custom-homepage-new .monthlies-hero-wrapper .pharmacy-section img {
+        width: 100%;
+        }
+
+}
+</style>
+{% schema %}
+{
+    "name": "Homepage Banner New Video",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "trust_profile_1",
+        "label": "Trust Bar Profile Image 1"
+      },
+      {
+        "type": "image_picker",
+        "id": "trust_profile_2",
+        "label": "Trust Bar Profile Image 2"
+      },
+      {
+        "type": "image_picker",
+        "id": "trust_profile_3",
+        "label": "Trust Bar Profile Image 3"
+      },
+      {
+        "type": "text",
+        "id": "trust_rating_text",
+        "label": "Trust Rating Text",
+        "default": "4.6 Sterne"
+      },
+      {
+        "type": "text",
+        "id": "trust_statement",
+        "label": "Trust Statement",
+        "default": "2.000+ Frauen vertrauen monthlies"
+      },
+      {
+        "type": "image_picker",
+        "id": "hero_background",
+        "label": "Hero Background Image"
+      },
+      {
+        "type": "video",
+        "id": "hero_background_video",
+        "label": "Hero Background Video"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "headline",
+        "label": "Headline",
+        "default": "Das natürliche Mittel gegen Periodenschmerzen, das wirkt"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "subheadline",
+        "label": "Subheadline",
+        "default": "26 wissenschaftlich geprüfte Inhaltsstoffe, die perfekt auf deinen Körper abgestimmt sind, um Menstruationsbeschwerden zu bekämpfen."
+      },
+      {
+        "type": "text",
+        "id": "cta_text",
+        "label": "CTA Text",
+        "default": "monthlies entdecken"
+      },
+      {
+        "type": "url",
+        "id": "cta_link",
+        "label": "CTA Link"
+      },
+      {
+        "type": "image_picker",
+        "id": "badge_1",
+        "label": "Badge 1 Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "badge_2",
+        "label": "Badge 2 Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "badge_3",
+        "label": "Badge 3 Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "review_profile_image",
+        "label": "Review Profile Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "review_star_image",
+        "label": "Review Star Image"
+      },
+      {
+        "type": "text",
+        "id": "review_rating_text",
+        "label": "Review Rating Text",
+        "default": "4.6 Sterne"
+      },
+      {
+        "type": "text",
+        "id": "review_trust_text",
+        "label": "Review Trust Text",
+        "default": "2.000+ Frauen vertrauen monthlies"
+      },
+      {
+        "type": "text",
+        "id": "pharmacy_intro",
+        "label": "Pharmacy Intro Text",
+        "default": "Du findest uns auch hier:"
+      },
+      {
+        "type": "image_picker",
+        "id": "amazon_shop",
+        "label": "Uk Logo"
+      },
+      {
+        "type": "image_picker",
+        "id": "pharmacy_docmorris",
+        "label": "Logo"
+      },
+      {
+        "type": "image_picker",
+        "id": "pharmacy_shop",
+        "label": "Logo"
+      }
+    ],
+  
+    "presets": [
+      {
+        "name": "Homepage Banner New Video",
+        "category": "Hero"
+      }
+    ]
+  }
+  
+{% endschema %}

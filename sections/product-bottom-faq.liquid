@@ -1,0 +1,156 @@
+<style>
+    .custom_faq .ingredients_content.tab_content { display: block !important; max-width: 1440px; margin: 0 auto; padding: 70px 70px; }
+    .custom_faq .ingredients_content.tab_content .card_wrapper { gap: 40px; max-width: 1440px; margin: 0 auto; }
+    .custom_faq .ingredients_content.tab_content .accordions { max-width: unset; }
+    .custom_faq h2.title.h1 strong { font-family: inherit; color: #CB342C; }
+    .custom_faq h2.title.h1 p{ font-size: 44px; font-family: Lora, sans-serif !important; font-weight: 600; text-align: center; letter-spacing: 0;text-align:center; }
+    .custom_faq h2.title.h1 , .custom_faq h2.title.h1 * { margin-top: 0; }
+    .custom_faq .ingredients_content .accordion_head { background-size: 20px;cursor: pointer; }
+    .custom_faq .ingredients_content .accordion_head { font-size: 18px; font-weight: 700; line-height: 1.15; padding: 14px 25px;background-position:97% center; }
+    .shopify-section.custom_faq > div { border-radius: 100px 0px 0 0; }
+    .shopify-section.custom_faq { background: #ecf1f4; }
+     .custom_faq .accordion_content p { margin-bottom: 10px !important; }
+    .custom_faq .ingredients_content .accordion { border-radius:15px; }
+    .custom_faq .ingredients_content .accordion { box-shadow:0 7px 28px #9191914d; }
+    .custom_faq .ingredients_content .accordion:hover {box-shadow: 0 7px 28px #919191cc;}
+    .custom_faq .ingredients_content .accordion:hover .accordion_head { color:#cb342c; }
+
+  /* .bottom_faq.ingredients_content .accordion.shown .accordion_content {
+      display: block;
+  }
+   */
+    .text-image-div.ultra_feacture.new a {
+      pointer-events: none;
+  }
+
+    @media screen and (min-width:989px) {
+      .custom_faq .ingredients_content .accordion_content {padding-left:25px;padding-right:25px;}
+    }
+
+    @media screen and (max-width:989px) {
+      .custom_faq .ingredients_content .accordion_head { padding: 14px 20px;}
+      body .custom_faq h2.title.h1 p {
+      font-size: 24px;
+  }
+  .custom_faq .ingredients_content .accordion_head {
+      padding: 14px 20px;
+  }
+  .custom_faq .ingredients_content .accordion_head {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.15;
+      padding: 14px 25px;
+      background-position: 97% center;
+  }
+  .custom_faq .ingredients_content .accordion_content p {
+      font-size: 16px;
+  }
+  body .custom_faq .ingredients_content.tab_content {
+      padding: 40px 16px;
+  }
+  .ingredients_content .card_wrapper {
+      display: block;
+  }
+     .bottom_faq .accordion.active .accordion_head {
+       padding-bottom: 15px;
+  }
+    }
+</style>
+<!-- Ingredients start -->
+<div style="background:#ABD0CD">
+  <div class="bottom_faq ingredients_content tab_content">
+    <h2 class="title h1">{{ section.settings.heading }}</h2>
+    <div class="card_wrapper">
+      <div class="accordions">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'left' -%}
+              <div class="accordion">
+                <div class="accordion_head">{{ block.settings.accordion_heading1 }}</div>
+                <div class="accordion_content">
+                  {{ block.settings.dsc1 }}
+                </div>
+              </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+
+      <div class="accordions">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'right' -%}
+              <div class="accordion">
+                <div class="accordion_head">{{ block.settings.accordion_heading }}</div>
+                <div class="accordion_content">
+                  {{ block.settings.dsc }}
+                </div>
+              </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Ingredients end -->
+
+<script type="lazyload_js">
+  $(document).ready(function(){
+    $('.bottom_faq .accordion').on('click', function(){
+      $(this).toggleClass('shown');
+      $(this).siblings().removeClass('shown');
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Product bottom faq",
+  "class":"custom_faq cst-product-faq",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading"
+    }
+  ],
+    "blocks": [
+  {
+    "type": "right",
+    "name": "right",
+    "settings": [
+      {
+        "type": "text",
+        "id": "accordion_heading",
+        "label": "Accordion Heading"
+      },
+      {
+        "type": "richtext",
+        "id": "dsc",
+        "label": "Accordion Description"
+      }
+    ]
+  },
+      {
+    "type": "left",
+    "name": "left",
+    "settings": [
+      {
+        "type": "text",
+        "id": "accordion_heading1",
+        "label": "Accordion Heading"
+      },
+      {
+        "type": "richtext",
+        "id": "dsc1",
+        "label": "Accordion Description"
+      }
+    ]
+  }
+   ],
+      "presets": [
+    {
+      "name": "Product bottom faq"
+    }
+  ]
+}
+{% endschema %}

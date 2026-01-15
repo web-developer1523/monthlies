@@ -1,0 +1,31 @@
+{% assign product = all_products['expert-main-box'] %}
+{% assign variant_id = product.variants.first.id %}
+
+<script type="lazyload_js" data-src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script type="lazyload_js">
+  (function($) {
+    let button = document.querySelector(".c74ddfee4431abdbca6785e687ad2f2fc430a16f2");
+
+    if (button) {
+      button.innerHTML = "VIEW CART";
+    };
+
+    let cartItems = {{ cart.items | json }};
+    let cartUpdates = { {{ variant_id }}: 1 };
+
+    let params = {
+      type: "POST",
+      url: "/cart/update.js",
+      data: {
+        updates: cartUpdates,
+      },
+      dataType: "json",
+      success: function(stuff) {
+        console.log(stuff);
+      },
+    };
+
+    $.ajax(params);
+  })(jQuery);
+</script>

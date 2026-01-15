@@ -1,0 +1,553 @@
+{%- assign text_direction = 'localization.text_direction_trigger' | t | downcase -%}
+<!doctype html>
+<html
+  class="no-js"
+  lang="{{ request.locale.iso_code }}"
+  {%- if text_direction == 'rtl' %}
+    dir="rtl"
+  {% endif -%}
+>
+  <head>
+    {% render 'elevateab' %}
+    {% render 'header-file' %}
+    {% render 'font-css' %}
+    {% render 'replo-head' %}
+
+    <!-- GMC verification code -->
+    <meta name="google-site-verification" content="yhNv4sUK5UC5WIU6cM6j5UB9mUPxlEOe1ThOm831PG8">
+    <meta name="facebook-domain-verification" content="2nvjja0m39jgh0ktakwtz9hw3i8xe0">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="">
+    <link rel="canonical" href="{{ canonical_url }}">
+
+    <link
+      rel="preconnect"
+      href="https://cdn.shopify.com"
+      crossorigin
+    >
+
+    {% if template contains 'cart' %}
+      <style>
+        .header__inline-menu {display: none!important;}
+        header-drawer{display:none!important;}
+      </style>
+    {% endif %}
+
+    {%- if settings.favicon != blank -%}
+      <link
+        rel="icon"
+        type="image/png"
+        href="{{ settings.favicon | image_url: width: 32, height: 32 }}"
+      >
+    {%- endif -%}
+
+    {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
+      <link
+        rel="preconnect"
+        href="https://fonts.shopifycdn.com"
+        crossorigin
+      >
+    {%- endunless -%}
+
+    <title>
+      {{ page_title }}
+      {%- if current_tags %}
+        &ndash; tagged "{{ current_tags | join: ', ' }}"
+      {%- endif -%}
+      {%- if current_page != 1 %}
+        &ndash; Page {{ current_page -}}
+      {%- endif -%}
+      {%- unless page_title contains shop.name %}
+        &ndash; {{ shop.name -}}
+      {%- endunless -%}
+    </title>
+
+    {%- if page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+
+    {% if request.page_type == 'collection' and collection and collection.id == 631386177883 %}
+      <meta name="robots" content="noindex, follow">
+    {% endif %}
+
+    {% render 'meta-tags' %}
+
+    <script type="lazyload_js" data-src="{{ 'vendor-v4.js' | asset_url | split: '?' | first }}" ></script>
+    <script type="lazyload_js" data-src="{{ 'global.js' | asset_url }}" ></script>
+
+    {%- if request.design_mode or template contains 'cart' or template contains 'checkout' -%}
+            {{ content_for_header }}
+    {%- else -%}
+            {% capture content_for_header2 %}{{ content_for_header }}{% endcapture %}
+            {{ content_for_header2 | replace: ' defer="defer" ', ' type="lazyload_js" ' | replace: " src=", " data-src="| replace: "DOMContentLoaded", "appco-DOMContentLoaded" | replace: "window.addEventListener('load', asyncLoad, false);", "window.addEventListener('appco-DOMContentLoaded', asyncLoad, false);" | replace: "addEventListener('load', prefetchAssets);", "addEventListener('appco-DOMContentLoaded', prefetchAssets);" | replace: "<script type='text/javascript' defer='defer'", "<script type='lazyload_js'"  | replace: '<script type="module"',  '<script type="lazyload_js" data-appco-type="module"' }}
+            <script>var trekkie=[];trekkie.integrations=!0;window.BOOMR={},window.BOOMR.version=true;</script>
+    {%- endif -%}
+
+
+{%- liquid
+  render 'css-variables'
+-%}
+
+{% comment %} {% render 'themepage-css' %} {% endcomment %}
+
+<link rel="stylesheet"   href="{{ 'base.css' | asset_url }}">
+
+{%- if text_direction == 'rtl' -%}
+  <link rel="stylesheet" href="{{ 'rtl.css' | asset_url }}">
+{%- endif -%}
+
+
+    {%- if settings.predictive_search_enabled -%}
+      <link      
+        rel="stylesheet"   
+        href="{{ 'component-predictive-search.css' | asset_url }}"
+      >
+    {%- endif -%}
+    {%- if settings.quick_view_enabled -%}
+      <link
+        rel="stylesheet"
+        href="{{ 'component-quick-view.css' | asset_url }}"
+        media="print"
+        onload="this.media='all'"
+      >
+    {%- endif -%}
+    {%- if settings.color_swatches_enabled -%}
+      <link
+        rel="stylesheet"
+        href="{{ 'component-color-swatches.css' | asset_url }}"
+        media="print"
+        onload="this.media='all'"
+      >
+    {%- endif -%}
+    {%- if linklists['gift-wrapping'].links != blank
+      and linklists['gift-wrapping'].links.first.type == 'product_link'
+    -%}
+      <link
+        rel="stylesheet"
+        href="{{ 'component-gift-wrapping.css' | asset_url }}"
+        media="print"
+        onload="this.media='all'"
+      >
+      <noscript>{{ 'component-gift-wrapping.css' | asset_url | stylesheet_tag }}</noscript>
+    {%- endif -%}
+
+    <script>
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    </script>
+
+    <link rel="stylesheet"  href="{{ 'custom.css' | asset_url }}" >
+    <link rel="stylesheet"  href="{{ 'custom2.css' | asset_url }}">
+
+    
+    <link rel="stylesheet"  href="{{ 'product-page.css' | asset_url }}">
+    <link rel="stylesheet"  href="{{ 'app.css' | asset_url }}" >
+    <link rel="stylesheet"  href="{{ 'german.css' | asset_url }}" >
+    <link rel="stylesheet"  href="{{ 'swiper-bundle.min.css' | asset_url }}">
+
+    <script type="lazyload_js" data-src="{{ 'jquery.min.js' | asset_url }}"></script>
+    <script type="lazyload_js" data-src="{{ 'swiper-bundle.min.js' | asset_url }}"></script>
+    <link rel="stylesheet" href="{{'slick.css' | asset_url }}">
+ 
+    <script type="lazyload_js">
+      fetch("https://api.ipify.org?format=json").then(e=>e.json()).then(e=>fetch(`https://ipapi.co/${e.ip}/json/`)).then(e=>e.json()).then(e=>{let o=e.country;"GB"===o?(document.querySelectorAll(".GBP").forEach(e=>e.style.display="block"),document.querySelectorAll(".euro").forEach(e=>e.style.display="none")):(document.querySelectorAll(".GBP").forEach(e=>e.style.display="none"),document.querySelectorAll(".euro").forEach(e=>e.style.display="block"))}).catch(e=>console.error("Error fetching location:",e));
+    </script>
+
+    <script type="lazyload_js">
+  // Only run this on first visit with a discount code in the path
+  !function(){let t=window.location.pathname,o=t.match(/^\/discount\/([^/?#]+)/),n=o?o[1]:null;n&&!sessionStorage.getItem("discountPopupShown")&&(sessionStorage.setItem("discountPopupShown","true"),alert(`Discount code "${n}" has been applied to your cart!`))}();
+    </script>
+    {% render 'app-block' %}
+    {% render 'custom-css' %}
+    {%if product.handle == "female-hormone-test-kit" or product.handle == "monthlies-zyklusbegleiter" %}
+    <link rel="stylesheet"  href="{{ 'product-hormone-test-kit.css' | asset_url }}">
+    {% endif %}
+    {%if page.handle == "homepage-new" or shop.url %}
+    <link rel="stylesheet"  href="{{ 'homepage-new.css' | asset_url }}">
+    {% endif %}
+
+    <!-- Full Page Loader -->
+<div id="page-loader">
+  <div class="loader-line"></div>
+</div>
+<style>
+  .template-product .scrolling-promotion{margin-top:60px}#page-loader{position:fixed;top:0;left:0;width:100%;height:100%;background-color:#8cbfbd;display:flex;align-items:center;justify-content:center;z-index:9999}.loader-line{width:150px;height:4px;background-color:#fff;border-radius:2px;animation:1s ease-in-out infinite growShrink}@keyframes growShrink{0%,100%{transform:scaleX(0)}50%{transform:scaleX(1)}}
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded",function(){let e=document.getElementById("page-loader");e&&(e.style.transition="opacity 0.8s ease",e.style.opacity="0",setTimeout(()=>{e.style.display="none"},1200))});
+  
+</script>
+<script src="https://t.contentsquare.net/uxa/ea9dc98d38a46.js"></script>
+  </head>
+
+  <body
+    class="{{ product.title | downcase | append: '-' | append: product.id }} {{ page_title }} {{ template | replace: '.', '-' }} template-{{ request.page_type }}{% if request.design_mode %} shopify-design-mode{% endif %} {% if template == 'product' and product.tags contains 'uk-template' %} template_uk {% endif %} {%if page.handle == "homepage-new" or shop.url %}cst-custom-homepage-new{% endif %}"
+    {%- if settings.image_zoom_effect_enabled %}
+      data-animate-image
+    {% endif -%}
+    {%- if settings.image_loading_bar_enabled %}
+      data-lazy-image
+    {% endif -%}
+    {%- if settings.heading_capitalize %}
+      data-heading-capitalize
+    {% endif -%}
+    {%- if settings.heading_center %}
+      data-heading-center
+    {% endif -%}
+    {%- if settings.price_superscript %}
+      data-price-superscript
+    {% endif -%}
+    {%- if settings.button_corner_radius > 0 %}
+      data-button-round
+    {% endif -%}
+  >
+    <!-- SLIDE CART EDITS - START -->
+    <!-- TSH -->
+
+    <script type="lazyload_js">
+      let scAnnouncementInterval;window.SLIDECART_OPENED=function(){scAnnouncementInterval=setInterval(function(){let n=document.querySelector("#slidecarthq .announcements .slick-next");n&&n.click()},4e3)},window.SLIDECART_CLOSED=function(){scAnnouncementInterval&&(clearInterval(scAnnouncementInterval),scAnnouncementInterval=null)};
+    </script>
+
+    <!-- TSH END -->
+    <style>
+      #slidecarthq .slidecarthq.right{text-align:left!important}#slidecarthq .item .title{margin-top:0;margin-bottom:0;display:flex!important}#slidecarthq .slidecarthq{opacity:1!important}#slidecarthq section.free-gifts{display:none}#slidecarthq .items{margin-bottom:auto}
+    </style>
+    <script type="lazyload_js">
+      function scAutoAddBxgyGift () {
+        let scIntervalCounter = 0;
+
+        const scInterval = setInterval(() => {
+          scIntervalCounter++;
+          const giftAvailable = document.querySelector('#slidecarthq section.free-gifts .free-gifts-item .upsell-add button');
+
+
+          if (giftAvailable) {
+            clearInterval(scInterval);
+
+            const giftHasMultipleVariants = document.querySelector('#slidecarthq section.free-gifts .free-gifts-item .footer-flex-1:not(.hidden) .free-gifts-options');
+
+            if (!giftHasMultipleVariants) {
+              giftAvailable.click();
+            }
+          } else if (scIntervalCounter >= 12) {
+            clearInterval(scInterval);
+          }
+        }, 250);
+      }
+        {% raw %}
+          const customSlideCartTranslations = {
+            de: {
+                // Add the same amount of rewards as set in the app dashboard
+                rewards: [{
+                        tier: 1,
+                        label: "Kostenloser Versand",
+                        pre_unlock_text: "Gib {{ amount }} mehr aus und erhalte {{ reward }}!",
+                        post_unlock_text: "Glückwunsch! Du erhältst {{ reward }}."
+                    }
+                ],
+                announcements: [
+                    "90-Tage Geld-zurück-Garantie",
+                    "Leitfaden zum Menstruationszyklus und Empfehlungen zu Sport und Ernährung in jeder Bestellung enthalten",
+                    "Kostenlose Beratung mit einer unserer Ärztinnen bei der Anmeldung",
+                    "Hast du Fragen? Nutze unseren Chat"
+                ]
+            }
+          }
+          {% endraw %}
+
+          const UPDATE_CURRENCY_RATE = false;
+
+          var BASE_REWARD_AMOUNT;
+          window.SLIDECART_LOADED = (cart) => {
+            BASE_REWARD_AMOUNT = SLIDECART_STATE()?.settings?.rewards_tiers.map(reward => reward.amount);
+
+            setTimeout(window.SLIDECART_UPDATE, 1200)
+          }
+
+          function translateRewardsSC(lang) {
+            let rewardsTexts = customSlideCartTranslations[lang]?.rewards;
+            let currencyRate = parseFloat(Shopify?.currency?.rate);
+
+            if(!rewardsTexts) return console.log("Rewards Translations didn't found for this lang", lang);
+
+            SLIDECART_STATE()?.settings?.rewards_tiers.forEach((reward, indx) => {
+              let currentRewardTexts = rewardsTexts[indx];
+
+              reward.label = currentRewardTexts.label;
+              reward.post_unlock_text = currentRewardTexts.post_unlock_text;
+              reward.pre_unlock_text = currentRewardTexts.pre_unlock_text;
+
+              if(currentRewardTexts.amount) {
+                reward.amount = currentRewardTexts.amount;
+              } else if (UPDATE_CURRENCY_RATE && currencyRate && BASE_REWARD_AMOUNT) {
+                reward.amount = BASE_REWARD_AMOUNT[indx] * currencyRate;
+              }
+            });
+          }
+
+          function translateAnnouncementsSC(lang) {
+            let annoucementTexts = customSlideCartTranslations[lang]?.announcements;
+
+            if(!annoucementTexts) return console.log("Announcements didn't found for this lang", lang);
+
+            SLIDECART_STATE()?.announcements?.forEach((announcement, idx) => {
+              announcement.text = annoucementTexts[idx];
+            });
+          }
+
+          function translateCustomElementsSC(lang) {
+            let customElements = customSlideCartTranslations[lang]?.customElements;
+
+            if(!customElements) return console.log("Custom Elements Translations didn't found for this lang", lang);
+
+            customElements.forEach(({ selector, textToReplace, translation }) => {
+              let htmlElemt = document.querySelector(selector);
+
+              if(!htmlElemt) return console.log("HTML elemt didn't found", selector);
+
+              if(textToReplace) {
+                htmlElemt.textContent = htmlElemt.textContent.replace(textToReplace, translation);
+              } else {
+                htmlElemt.textContent = translation;
+              }
+            })monthlies-cycle-companion
+          }
+
+          window.SLIDECART_UPDATED = (cart) => {
+             /* Update Langugage */
+            let customerLenguage = window.Shopify?.locale;
+
+            translateRewardsSC(customerLenguage);
+            translateAnnouncementsSC(customerLenguage);
+            translateCustomElementsSC(customerLenguage);
+            scAutoAddBxgyGift();
+          }
+    </script>
+    <!-- SLIDE CART EDITS - END -->
+
+    <a class="skip-to-content-link button button--small visually-hidden" href="#MainContent">
+      {{ 'accessibility.skip_to_text' | t }}
+    </a>
+
+    {% render 'transition-cover' %}
+
+    <div class="transition-body">
+      {% section 'announcement-bar' %}
+      {% section 'header' %}
+
+      <div class="transition-content cst-layout-point">
+        <main
+          id="MainContent"
+          class="content-for-layout focus-none shopify-section"
+          role="main"
+          tabindex="-1"
+        >
+          {{ content_for_layout }}
+        </main>
+
+        {% section 'footer' %}
+      </div>
+
+      {% section 'mobile-dock' %}
+    </div>
+
+    {% section 'popup' %}
+    {% section 'cookie-banner' %}
+    {% section 'age-verifier' %}
+
+    <ul hidden>
+      <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
+    </ul>
+
+    <script>
+
+      window.routes = {
+        root_url: '{{ routes.root_url }}',
+        cart_url: '{{ routes.cart_url }}',
+        cart_add_url: '{{ routes.cart_add_url }}',
+        cart_change_url: '{{ routes.cart_change_url }}',
+        cart_update_url: '{{ routes.cart_update_url }}',
+        predictive_search_url: '{{ routes.predictive_search_url }}'
+      };
+
+      window.cartStrings = {
+        error: `{{ 'sections.cart.cart_error' | t }}`,
+        quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t: quantity: '[quantity]' }}`
+      };
+
+      window.variantStrings = {
+        addToCart: `{{ 'products.product.add_to_cart' | t }}`,
+        soldOut: `{{ 'products.product.sold_out' | t }}`,
+        unavailable: `{{ 'products.product.unavailable' | t }}`,
+        preOrder: `{{ 'products.product.pre_order' | t }}`
+      };
+
+      window.accessibilityStrings = {
+        imageAvailable: `{{ 'products.product.media.image_available' | t: index: '[index]' }}`,
+        shareSuccess: `{{ 'general.share.success_message' | t }}`
+      }
+
+      window.dateStrings = {
+        d: `{{ 'general.date.d' | t }}`,
+        day: `{{ 'general.date.day' | t }}`,
+        days: `{{ 'general.date.days' | t }}`,
+        hour: `{{ 'general.date.hour' | t }}`,
+        hours: `{{ 'general.date.hours' | t }}`,
+        minute: `{{ 'general.date.minute' | t }}`,
+        minutes: `{{ 'general.date.minutes' | t }}`,
+        second: `{{ 'general.date.second' | t }}`,
+        seconds: `{{ 'general.date.seconds' | t }}`
+      };
+
+      window.shopSettings = {
+        moneyFormat: {{ shop.money_format | json }},
+        isoCode: {{ cart.currency.iso_code | json }},
+        cartDrawer: {{ settings.cart_drawer_enabled }}
+      };
+
+      (function() {
+
+        // Fixed: Largest Contentful Paint image was lazily loaded
+        const first_image = document.querySelector('#MainContent .shopify-section .media img');
+        if (first_image) 
+          first_image.setAttribute('loading', 'auto');
+      })();
+    </script>
+
+    {%- if settings.image_loading_bar_enabled %}
+      <script type="lazyload_js" data-src="{{ 'lazyimage.js' | asset_url }}" async></script>
+    {% endif -%}
+    {%- if settings.predictive_search_enabled -%}
+      <script type="lazyload_js" data-src="{{ 'predictive-search.js' | asset_url }}" ></script>
+    {%- endif -%}
+    {%- if settings.quick_view_enabled -%}
+      <script type="lazyload_js" data-src="{{ 'quick-view.js' | asset_url }}" ></script>
+    {%- endif -%}
+    {%- if settings.color_swatches_enabled -%}
+      <script type="lazyload_js" data-src="{{ 'color-swatches.js' | asset_url }}" ></script>
+    {%- endif -%}
+    {%- if linklists['gift-wrapping'].links != blank
+      and linklists['gift-wrapping'].links.first.type == 'product_link'
+    -%}
+      <script type="lazyload_js" data-src="{{ 'gift-wrapping.js' | asset_url }}" ></script>
+    {%- endif -%}
+
+    {% render 'cart-add-on' %}
+
+    <script type="lazyload_js" data-src="{{'slick.min.js' | asset_url}}"></script>
+
+    <script type="lazyload_js" >
+      $(document).ready(function(){$(".product-media-modal .product-media-modal__content").slick({slidesToShow:1,slidesToScroll:1,autoplay:!0,autoplaySpeed:2e3,centerMode:!0,centerPadding:"0",arrows:!0,prevArrow:'<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-arrow" fill="none" viewBox="0 0 14 10"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor"></path></svg></button>',nextArrow:'<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-arrow" fill="none" viewBox="0 0 14 10"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor"></path></svg></button>'})});
+    </script>
+
+    <script type="lazyload_js" >
+      document.addEventListener('DOMContentLoaded', function() {
+        $(".accordion").on("click",function(){$(this).toggleClass("active"),$(this).find(".accordion_content").slideToggle(),$(this).siblings().removeClass("active"),$(this).siblings().find(".accordion_content").slideUp()});
+      });
+
+      $("#cta-buynowben1").on("click",function(c){c.preventDefault(),$("#mountHere").toggle()}),$(".image-with-collapsible .accordion-tab.accordion").click(function(){$(this).addClass("active").siblings().removeClass("active")});
+
+       $(".main_div_icon").click(function(){var s=$(this).attr("data-target");$(".accordions_faq .accordionfaq").each(function(t){var a=$(this).attr("id");s==a?($(this).addClass("teste"),$(this).siblings().removeClass("active")):$(this).removeClass("teste")}),$(".accordions_faq1 .accordionfaq1").each(function(t){var a=$(this).attr("id");s==a?($(this).addClass("teste"),$(this).siblings().removeClass("active")):($(this).removeClass("teste"),$(this).siblings().removeClass("active"))})});
+
+      $(".accordions_faq .accordionfaq").click(function(){$(this).toggleClass("active"),$(this).siblings().removeClass("active"),$(this).removeClass("teste"),$(this).siblings().removeClass("teste")});
+
+      $(".accordions_faq1 .accordionfaq1").click(function(){$(this).toggleClass("active"),$(this).siblings().removeClass("active"),$(this).removeClass("teste"),$(this).siblings().removeClass("teste")});
+
+      document.addEventListener('DOMContentLoaded', function() {
+          var tags = {{ product.tags | json }};
+          if (tags.includes('uk-template')) {
+              document.body.classList.add('template_uk');
+          }
+      });
+
+      $(document).on("click",".bundle_swatches.One-time.payment",function(){$(".subscription.single-purchase.single_product_box").addClass("active"),$(".subscription.bundle_product_box").removeClass("active")});
+      $(document).on("click","label.bundle_swatches.Black.Friday.Bundle",function(){$(".subscription.bundle_product_box").addClass("active"),$(".subscription.active.single_product_box").removeClass("active")});
+
+      $("label.bundle_swatches.Single.Product").click(function(){$(".subscription.single_product_box").addClass("active"),$(".subscription.bundle_product_box").removeClass("active")}),$("label.bundle_swatches.Bundle.Product").click(function(){$(".subscription.bundle_product_box").addClass("active"),$(".subscription.active.single_product_box").removeClass("active")}),$(document).ready(function(){$("label.bundle_swatches.Black.Friday.Bundle").click()});
+
+
+      const config = {
+        productId: '9601108050267', // Required
+        injectionParent: '.product-form__input.variant-input-wrapper', // The node that will have the widget injected in
+        injectionMethod: 'prepend', // How will the widget be injected
+        injectFn: (node, target) => {}, // Runs a custom injection function
+        selectors: {
+          price: ['.price .price__sale'], // the selectors that will be updated based on subscription
+          variant: ['.variant-input-wrapper'] // The variants to watch for to update the subscription prices
+        }
+      };
+      window.ReChargeWidget.createWidget(config);
+
+      // Example of rendering a specific product to a page that doesn't provide the productId in the DOM
+      window.ReChargeWidget.createWidget({ productId: 9601108050267 });
+
+      // Example of rendering a specific product to a page that has a custom injection point
+      window.ReChargeWidget.createWidget({ productId: 9601108050267, injectionParent: '.product-form__input.variant-input-wrapper' });
+
+      // Example of rendering a specific product to a page that has a special price selector
+      window.ReChargeWidget.createWidget({ productId: 9601108050267, selectors: { price: ['.price .price__sale'] } });
+    </script>
+<script>
+      !function(){let t=!1;function e(n){if(t)return;let r=n.target.closest("#onetrust-accept-btn-handler,#onetrust-reject-all-handler,#onetrust-pc-btn-handler");r&&(0===n.button||"click"===n.type)&&function n(){if(t)return;t=!0;let r=document.createElement("style");r.setAttribute("data-oneTrust-overlay-fix","true"),r.textContent=`
+        body:has(button#onetrust-accept-btn-handler)::before,
+        body:has(button#onetrust-reject-all-handler)::before,
+        body:has(button#onetrust-pc-btn-handler)::before {
+          content: none !important;
+          display: none !important;
+          pointer-events: none !important;
+        }
+      `,document.head.appendChild(r),document.removeEventListener("click",e,!0)}()}document.addEventListener("click",e,!0),"loading"===document.readyState&&document.addEventListener("DOMContentLoaded",()=>{})}();
+</script>
+
+<script type="lazyload_js" >
+  document.addEventListener("DOMContentLoaded",function(){document.body.classList.add("overlay-active"),["#onetrust-accept-btn-handler","#onetrust-reject-all-handler","#onetrust-pc-btn-handler"].forEach(e=>{let t=document.querySelector(e);t&&t.addEventListener("click",()=>{document.body.classList.remove("overlay-active")})})});
+  function initializeSlick(){var i=$(".your-journey-accordion .accordions_faq1");i.hasClass("slick-initialized")||(i.slick({dots:!1,arrows:!1,slidesToShow:4,slidesToScroll:1,autoplay:!0,autoplaySpeed:2e3,centerMode:!0,centerPadding:"0px",focusOnSelect:!0,responsive:[{breakpoint:1024,settings:{slidesToShow:2,slidesToScroll:2,centerPadding:"30px"}},{breakpoint:600,settings:{slidesToShow:1,slidesToScroll:1,centerMode:!1}},{breakpoint:480,settings:{slidesToShow:1,slidesToScroll:1,centerMode:!1}}]}),setSlideVisibility(),i.on("afterChange",function(){setSlideVisibility()}))}function setSlideVisibility(){console.log("Setting slide visibility after change.")}$(document).ready(function(){initializeSlick()}),window.addEventListener("resize",function(){initializeSlick()});
+</script>
+
+    {% if canonical_url contains '/pages/experiences' %}
+    <script type="lazyload_js" data-src="{{ 'loox.js' | asset_url }}"></script>
+    {% endif %}
+
+    {% render 'footer-file' %}
+
+  {% comment %} redirection code {% endcomment %}
+<style>
+  .product-custom-subscription-uk .product .product__info-container .product__text{background:#abd0cd;padding:10px;width:35%;display:flex;justify-content:center;align-items:center;margin-left:40px;border-radius:10px}body:not(.overlay-active)::before{content:none}form#HeaderCountryForm{display:none}
+</style>
+   
+<script>
+window.Shopify&&Shopify.designMode?console.log("Shopify editor detected – geo redirects skipped"):function(){let e="https://shop.withmonthlies.com",t=window.location.pathname+window.location.search,r="preferredLang",o="preferredLangTimestamp",i="manualLangOverride";function n(e){console.log("Redirecting →",e),window.location.replace(e)}function a(){try{return"1"===sessionStorage.getItem(i)}catch(e){return!1}}async function s(){try{let i=function e(){let t=localStorage.getItem(o);if(!t)return localStorage.removeItem(r),null;let i=(Date.now()-parseInt(t,10))/36e5;if(i>24)return localStorage.removeItem(r),localStorage.removeItem(o),null;let n=localStorage.getItem(r);return n?n.toUpperCase():null}();if(console.log("readSavedLang()",i,"sessionOverride:",a()),"EN"===i){console.log("User previously chose EN → skipping geo redirects");return}if("DE"===i){console.log("User previously chose DE → skipping geo redirects");return}if(a()){console.log("Session override present → skipping geo redirect this load");return}let s=await fetch("https://ipinfo.io/json?token=86b9f2ed42f9e7");if(!s.ok)throw Error("ipwho.is fetch failed: "+s.status);let l=await s.json();console.log("ipwho.is ->",l);let d=(l.country||"").toUpperCase();if(console.log("Detected country:",d),"DE"===d){console.log("Visitor from Germany"),t.startsWith("/de")?console.log("Already on /de — no redirect"):n(`${e}/de${t}`);return}if(t.startsWith("/de")){n(e+t.replace(/^\/de/,""));return}console.log("No redirect required for country:",d)}catch(c){console.error("Geo error:",c)}}document.addEventListener("DOMContentLoaded",()=>{let a=document.querySelectorAll("#HeaderLanguageList a[data-value]");a.forEach(a=>{a.addEventListener("click",s=>{s.preventDefault();let l=(a.dataset.value||"").toUpperCase();if(console.log("Language link clicked:",l),function e(t){if(!t)return;let n=t.toUpperCase();localStorage.setItem(r,n),localStorage.setItem(o,Date.now().toString());try{sessionStorage.setItem(i,"1")}catch(a){}console.log("Saved language:",n)}(l),"DE"===l&&!t.startsWith("/de")){n(`${e}/de${t}`);return}if("EN"===l&&t.startsWith("/de")){n(e+t.replace(/^\/de/,""));return}})})}),s()}();
+</script>
+
+{% comment %} <script>
+  document.addEventListener("DOMContentLoaded",function(){let e=new MutationObserver((e,t)=>{let r=document.getElementById("HeaderCountryList");r&&(!function e(){let t=document.getElementById("HeaderCountryList");if(!t)return;let r=window.location.pathname.includes("/de")?"DE":"GB",i=t.querySelector(`a[data-value="${r}"]`);i&&(t.querySelectorAll("a.disclosure__link").forEach(e=>{e.classList.remove("disclosure__link--active"),e.removeAttribute("aria-current")}),i.classList.add("disclosure__link--active"),i.setAttribute("aria-current","true"),console.log(`Triggered country: ${r}`))}(),t.disconnect())});e.observe(document.body,{childList:!0,subtree:!0})});
+</script> {% endcomment %}
+<style>
+.template-product .buy_button-wrapper div[data-essential-upsell-element="container"] {
+    display: none !important;
+}
+.page-replo-0870da06-003d-4644-90b8-530d083ca6a1 #replo-fullpage-element p, .page-replo-0870da06-003d-4644-90b8-530d083ca6a1 #replo-fullpage-element span, .page-replo-0870da06-003d-4644-90b8-530d083ca6a1 #replo-fullpage-element strong {
+    font-family: 'Lora' !important;
+}
+.page-replo-0870da06-003d-4644-90b8-530d083ca6a1 #replo-fullpage-element button p{
+      font-family: 'Poppins' !important;
+}
+.page-replo-0870da06-003d-4644-90b8-530d083ca6a1 #replo-fullpage-element em {
+    color: #3F2F22FF !important;
+    font-style: italic;
+}
+.page-replo-0870da06-003d-4644-90b8-530d083ca6a1.scrolled section.black-friday-offer-section.appco_bg {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.periodease-10267364491611 form#HeaderLanguageForm{
+  display:none;
+}
+</style>
+
+  </body>
+</html>

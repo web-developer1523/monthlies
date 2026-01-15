@@ -1,0 +1,83 @@
+{{ 'section-science.css' | asset_url | stylesheet_tag }}
+
+<div class="science">
+  <div class="page-width">
+    <div class="science-container">
+      <img src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Frame_332.png?v=1681288706" alt="Visual">
+
+      <div class="science-content">
+        <h2>{{ section.settings.title }}</h2>
+        <p>{{ section.settings.text }}</p>
+
+        <div class="science-buttons">
+          <a href="{{ section.settings.url_2 }}" id="cta-ingredients"class="button button--black">
+            {{ section.settings.label_2 }}
+            <svg
+              width="7"
+              height="12"
+              viewBox="0 0 7 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.679688 1.15234L5.67969 6.15234L0.679688 11.1523"
+                stroke="white"
+                stroke-width="1.5" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "science",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Label",
+        "default": "SCIENCE - BACKED",
+        "id": "label"
+      },
+      {
+        "type": "text",
+        "label": "Title",
+        "default": "Premium Natural Formulas",
+        "id": "title"
+      },
+      {
+        "type": "richtext",
+        "label": "Text",
+        "default": "<p>At Monthlies we believe in the power of nature and clean ingredients to promote a healthy and active lifestyle. Experience the benefits of our nature-based approach to menstrual cycle wellness.</p>",
+        "id": "text"
+      },
+      {
+        "type": "url",
+        "label": "Primary button - URL",
+        "id": "url_1"
+      }, {
+        "type": "text",
+        "label": "Primary button - Label",
+        "default": "Take the quiz",
+        "id": "label_1"
+      }, {
+        "type": "url",
+        "label": "Secondary button - URL",
+        "id": "url_2"
+      }, {
+        "type": "text",
+        "label": "Secondary button - Label",
+        "default": "Discover all products",
+        "id": "label_2"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Science"
+      }
+    ]
+  }
+{% endschema %}

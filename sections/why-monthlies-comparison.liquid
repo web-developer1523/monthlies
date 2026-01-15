@@ -1,0 +1,481 @@
+<section class="warum-monthlies">
+  <div class="container">
+    <div class="warum-monthlies-container">
+      <div class="warum-monthlies-inner">
+        <!-- Section Title -->
+        <div class="warum-monthlies-content">
+          <h2>{{ section.settings.title }}</h2>
+          {% if section.settings.text != blank %}
+            <p>{{ section.settings.text }}</p>
+          {% endif %}
+        </div>
+
+        <!-- ========================= -->
+        <!-- COMPARE BOX 1 -->
+        <!-- ========================= -->
+        <div class="compare-box bg-1">
+          
+            <div class="row">
+              <!-- Monthlies Logo + Product -->
+              <div class="col-lg-4">
+                <div class="logo-inner-monthlies">
+                  {% if section.settings.monthlies_logo != blank %}
+                    <img src="{{ section.settings.monthlies_logo | img_url: 'master' }}" alt="">
+                  {% endif %}
+
+                  <div class="product-inner-monthlies">
+                    {% if section.settings.monthlies_product != blank %}
+                      <img src="{{ section.settings.monthlies_product | img_url: 'master' }}" alt="">
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+
+              <!-- Monthlies Feature Blocks -->
+              {% for block in section.blocks %}
+                {% if block.type == 'monthlies_feature' %}
+                  <div class="col-lg-2">
+                    <div class="ursachenbek-box">
+                      <div class="ursachenbek-icon">
+                        {% if block.settings.icon != blank %}
+                          <img src="{{ block.settings.icon | img_url: 'master' }}" alt="">
+                        {% endif %}
+                      </div>
+                      <div class="ursachenbek-text">
+                        <h3>
+                          {{ block.settings.heading }}
+                          <span>{{ block.settings.subtext }}</span>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          
+        </div>
+
+        <!-- ========================= -->
+        <!-- COMPARE BOX 2 -->
+        <!-- ========================= -->
+        <div class="compare-box bg-2">
+          <div class="row">
+            <!-- Other Brands Product -->
+            <div class="col-lg-4">
+              <div class="logo-inner-monthlies product-monthlies-2">
+                {% if section.settings.other_brands_product != blank %}
+                  <img src="{{ section.settings.other_brands_product | img_url: 'master' }}" alt="">
+                {% endif %}
+                <div class="product-inner-monthlies-2">
+                  <h3>{{ section.settings.other_brands_title }}</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Other Brands Feature Blocks -->
+            {% for block in section.blocks %}
+              {% if block.type == 'other_feature' %}
+                <div class="col-lg-2">
+                  <div class="ursachenbek-box">
+                    <div class="ursachenbek-icon">
+                      {% if block.settings.icon != blank %}
+                        <img src="{{ block.settings.icon | img_url: 'master' }}" alt="">
+                      {% endif %}
+                    </div>
+                    <div class="ursachenbek-text">
+                      <h3>
+                        {{ block.settings.heading }}
+                        <span>{{ block.settings.subtext }}</span>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+
+.warum-monthlies {
+    padding: 40px 0;
+}
+
+/* Title */
+.warum-monthlies-content {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.warum-monthlies-content p {
+    color: #404040;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.warum-monthlies-content h2 {
+    color: #404040;
+    text-align: center;
+    font-family: "Lora", serif !important;
+    font-size: 44px;
+    line-height: 57.2px;
+    letter-spacing: 0.6px;
+    font-weight: 600;
+}
+
+/* Logo + Product (First Compare Box) */
+.logo-inner-monthlies {
+    position: relative;
+    max-width: 344px;
+    width: 100%;
+}
+
+.logo-inner-monthlies img {
+    width: 100%;
+    height: auto;
+}
+
+.product-inner-monthlies {
+    position: absolute;
+    top: 53%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+}
+
+.product-inner-monthlies img {
+    width: 180px;
+    height: 149px;
+    object-fit: contain;
+}
+
+/* Compare Box Styling */
+.compare-box {
+    background: #fafcfe;
+    border-radius: 20px;
+    padding: 54px 0;
+    min-height: 189px;
+    overflow: hidden;
+}
+
+.compare-box .row {
+    align-items: center;
+}
+
+/* Feature Icons */
+.ursachenbek-icon {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.ursachenbek-icon img {
+    max-width: 20px;
+}
+
+/* Feature Text */
+.ursachenbek-text h3 {
+    color: #404040;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.ursachenbek-text h3 span {
+    font-weight: 600;
+}
+
+/* Compare Box 2 (Other Brands) */
+.bg-2 {
+    margin-top: 8px;
+    background-color: rgba(202, 57, 49, 0.07);
+    padding: 12px 0;
+}
+
+/* Other Brands Image + Title */
+.product-monthlies-2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 52px;
+    max-width: 100%;
+}
+
+.product-monthlies-2 img {
+    width: auto;
+    height: 149px;
+    object-fit: contain;
+}
+
+.warum-monthlies-content h2 strong {
+    color: #cb342c;
+    font-style: italic;
+}
+
+.product-inner-monthlies-2 h3 {
+    color: #404040;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+/* ==============================
+               FAQ (Unchanged)
+               ============================== */
+
+.faq-item {
+    background: #fff;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.faq-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 16px 16px 16px 24px;
+    align-items: center;
+}
+
+.faq-header span {
+    color: #404040;
+    text-align: left;
+    font-family: "Quicksand", sans-serif;
+    font-size: 17px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.faq-header i {
+    width: 44px;
+    height: 44px;
+    background: #ecf1f4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-header .icon {
+    transition: 0.3s ease;
+    font-size: 18px;
+}
+
+.faq-item.active .icon {
+    transform: rotate(358deg);
+}
+
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 20px;
+}
+
+.faq-content p {
+    margin: 15px 0;
+    color: #7e7b7b;
+    font-family: "Quicksand-Regular", sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+@media (max-width:991px) {
+
+    .warum-monthlies .container,
+    .warum-monthlies .container-fluid {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
+    .warum-monthlies-content h2 {
+        font-size: 24px;
+        line-height: 30px !important;
+    }
+
+    .warum-monthlies-content p {
+
+        font-size: 16px;
+
+    }
+
+    .compare-box .row {
+        display: grid;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 12px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        grid-template-columns: auto;
+    }
+
+    .compare-box .row::-webkit-scrollbar {
+        display: none;
+        /* hide scrollbar (Chrome/Safari) */
+    }
+
+    .compare-box .row .col-lg-4,
+    .compare-box .row .col-lg-2 {
+        flex: 0 0 auto;
+        width: 320px;
+    }
+
+    .product-monthlies-2 {
+
+        padding-left: 0 !important;
+
+    }
+
+    .product-inner-monthlies-2 h3 {
+        font-size: 21px;
+    }
+
+    .compare-box .row {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 200px;
+        gap: 12px;
+        overflow-x: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .product-inner-monthlies img {
+        height: 109px !important;
+
+    }
+
+    .compare-box {
+        min-height: 160px;
+    }
+
+    .compare-box {
+        padding: 12px 0 !important;
+    }
+
+    .logo-inner-monthlies.product-monthlies-2 img {
+        height: 109px;
+        padding-left: 38px;
+    }
+
+    .compare-box {
+
+        width: calc(100% - -70px);
+    }
+}
+</style>
+{% schema %}
+{
+  "name": "Why Monthlies comparison",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Warum monthlies?"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "text",
+      "label": "Section Text"
+    },
+
+    /* FIRST COMPARE BOX – MONTHLIES */
+    {
+      "type": "header",
+      "content": "Monthlies Box (BG-1)"
+    },
+    {
+      "type": "image_picker",
+      "id": "monthlies_logo",
+      "label": "Monthlies Logo Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "monthlies_product",
+      "label": "Monthlies Product Image"
+    },
+
+    /* SECOND COMPARE BOX – OTHER BRANDS */
+    {
+      "type": "header",
+      "content": "Other Brands Box (BG-2)"
+    },
+    {
+      "type": "image_picker",
+      "id": "other_brands_product",
+      "label": "Other Brand Product Image"
+    },
+    {
+      "type": "text",
+      "id": "other_brands_title",
+      "label": "Other Brand Title",
+      "default": "Andere Marken"
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "monthlies_feature",
+      "name": "Monthlies Feature",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Feature Icon"
+        },
+        {
+          "type": "richtext",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "subtext",
+          "label": "Subtext"
+        }
+      ]
+    },
+
+    {
+      "type": "other_feature",
+      "name": "Other Brand Feature",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Feature Icon"
+        },
+        {
+          "type": "richtext",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "subtext",
+          "label": "Subtext"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Why Monthlies comparison",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,807 @@
+{% doc %}
+  @prompt
+    Add a “For mums and teens” block.
+    Include:
+    “Safe for ages 13+” 
+    “Loved by mums supporting daughters with painful periods and hormonal symptoms”
+    1 to 2 short and strong real customer reviews from mums
+    And a final reassurance line: “created by women’s health professionals”, make the section fit the whole design of the page. Matching the background and the style. 
+    Add a space for one or two pictures of daughters. Make the section look trustworthy, so add a badge or icons of trust, the mobile section needs to look shorter, so re design the mobile block for it. All the mobile content needs to be available in one scroll , enhanced a bit the design so it looks a bit more unique, remove the shadow on the clinically tested ingredients and below, include the created by womens health professionals as one of the badges and remove the family one, remove the shadow on the badges, make them visible, remove the trust badges and only keep the created by womens health professional, make the badge appealing and noteworthy, change the part of created by womens health professionals. make it look like one line, with a trusted badge. keep the section short 
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-mums-teens-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    padding: 60px 20px;
+    background-color: {{ block.settings.background_color }};
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ai-mums-teens-{{ ai_gen_id }}::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: {{ block.settings.accent_color }};
+    opacity: 0.05;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .ai-mums-teens-{{ ai_gen_id }}::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -5%;
+    width: 400px;
+    height: 400px;
+    background: {{ block.settings.accent_color }};
+    opacity: 0.04;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .ai-mums-teens-container-{{ ai_gen_id }} {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .ai-mums-teens-header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .ai-mums-teens-badge-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, {{ block.settings.badge_bg_color }} 0%, {{ block.settings.badge_bg_color | color_darken: 10 }} 100%);
+    color: {{ block.settings.badge_text_color }};
+    border-radius: 40px;
+    font-size: {{ block.settings.badge_size }}px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(37, 42, 49, 0.1);
+  }
+
+  .ai-mums-teens-badge-icon-{{ ai_gen_id }} {
+    width: 20px;
+    height: 20px;
+  }
+
+  .ai-mums-teens-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.text_color }};
+    margin: 0 0 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    position: relative;
+    display: inline-block;
+  }
+
+  .ai-mums-teens-title-{{ ai_gen_id }}::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: {{ block.settings.accent_color }};
+    border-radius: 2px;
+  }
+
+  .ai-mums-teens-subtitle-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subtitle_size }}px;
+    color: {{ block.settings.text_color }};
+    margin: 20px auto 0;
+    max-width: 700px;
+    line-height: 1.6;
+  }
+
+  .ai-mums-teens-content-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 990px) {
+    .ai-mums-teens-content-{{ ai_gen_id }} {
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+    }
+  }
+
+  .ai-mums-teens-images-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    position: relative;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-mums-teens-images-{{ ai_gen_id }} {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .ai-mums-teens-image-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    overflow: hidden;
+    aspect-ratio: 3 / 4;
+    background-color: #f3f3f3;
+    box-shadow: 0 8px 24px rgba(37, 42, 49, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .ai-mums-teens-image-wrapper-{{ ai_gen_id }}:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(37, 42, 49, 0.12);
+  }
+
+  .ai-mums-teens-image-wrapper-{{ ai_gen_id }}::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(37, 42, 49, 0.02) 100%);
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .ai-mums-teens-image-wrapper-{{ ai_gen_id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-mums-teens-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f9f9f9 0%, #f3f3f3 100%);
+  }
+
+  .ai-mums-teens-image-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-mums-teens-reviews-section-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .ai-mums-teens-review-{{ ai_gen_id }} {
+    background: {{ block.settings.review_bg_color }};
+    padding: 28px;
+    border-radius: {{ block.settings.review_border_radius }}px;
+    box-shadow: 0 4px 16px rgba(37, 42, 49, 0.06);
+    border-left: 4px solid {{ block.settings.accent_color }};
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .ai-mums-teens-review-{{ ai_gen_id }}:hover {
+    transform: translateX(4px);
+    box-shadow: 0 6px 20px rgba(37, 42, 49, 0.1);
+  }
+
+  .ai-mums-teens-review-{{ ai_gen_id }}::before {
+    content: '"';
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    font-size: 48px;
+    color: {{ block.settings.accent_color }};
+    opacity: 0.15;
+    font-family: Georgia, serif;
+    line-height: 1;
+  }
+
+  .ai-mums-teens-review-stars-{{ ai_gen_id }} {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .ai-mums-teens-review-stars-{{ ai_gen_id }} svg {
+    width: 20px;
+    height: 20px;
+    fill: {{ block.settings.star_color }};
+  }
+
+  .ai-mums-teens-review-text-{{ ai_gen_id }} {
+    font-size: {{ block.settings.review_text_size }}px;
+    color: {{ block.settings.text_color }};
+    line-height: 1.7;
+    margin: 0 0 16px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .ai-mums-teens-review-author-{{ ai_gen_id }} {
+    font-size: {{ block.settings.author_size }}px;
+    color: {{ block.settings.text_color }};
+    font-weight: 600;
+    margin: 0;
+    opacity: 0.8;
+    position: relative;
+    z-index: 1;
+  }
+
+  .ai-mums-teens-professional-badge-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 32px;
+    padding: 12px 28px;
+    background: {{ block.settings.professional_badge_bg }};
+    border-radius: 50px;
+    border: 2px solid {{ block.settings.accent_color }};
+    position: relative;
+  }
+
+  .ai-mums-teens-professional-icon-{{ ai_gen_id }} {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-mums-teens-professional-icon-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    fill: {{ block.settings.accent_color }};
+  }
+
+  .ai-mums-teens-professional-text-{{ ai_gen_id }} {
+    font-size: {{ block.settings.professional_text_size }}px;
+    color: {{ block.settings.professional_text_color }};
+    font-weight: 600;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-mums-teens-{{ ai_gen_id }} {
+      padding: 32px 16px;
+    }
+
+    .ai-mums-teens-{{ ai_gen_id }}::before,
+    .ai-mums-teens-{{ ai_gen_id }}::after {
+      width: 300px;
+      height: 300px;
+    }
+
+    .ai-mums-teens-header-{{ ai_gen_id }} {
+      margin-bottom: 24px;
+    }
+
+    .ai-mums-teens-badge-{{ ai_gen_id }} {
+      padding: 6px 16px;
+      font-size: calc({{ block.settings.badge_size }}px * 0.9);
+      margin-bottom: 12px;
+    }
+
+    .ai-mums-teens-badge-icon-{{ ai_gen_id }} {
+      width: 16px;
+      height: 16px;
+    }
+
+    .ai-mums-teens-title-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.title_size }}px * 0.6);
+      margin-bottom: 10px;
+    }
+
+    .ai-mums-teens-title-{{ ai_gen_id }}::after {
+      width: 40px;
+      height: 2px;
+      bottom: -6px;
+    }
+
+    .ai-mums-teens-subtitle-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.subtitle_size }}px * 0.9);
+      line-height: 1.5;
+    }
+
+    .ai-mums-teens-content-{{ ai_gen_id }} {
+      gap: 20px;
+    }
+
+    .ai-mums-teens-images-{{ ai_gen_id }} {
+      display: flex;
+      gap: 12px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      margin: 0 -16px;
+      padding: 0 16px;
+    }
+
+    .ai-mums-teens-images-{{ ai_gen_id }}::-webkit-scrollbar {
+      display: none;
+    }
+
+    .ai-mums-teens-image-wrapper-{{ ai_gen_id }} {
+      flex: 0 0 45%;
+      scroll-snap-align: start;
+      aspect-ratio: 2 / 3;
+    }
+
+    .ai-mums-teens-reviews-section-{{ ai_gen_id }} {
+      gap: 16px;
+    }
+
+    .ai-mums-teens-review-{{ ai_gen_id }} {
+      padding: 18px;
+    }
+
+    .ai-mums-teens-review-{{ ai_gen_id }}::before {
+      font-size: 36px;
+      top: 12px;
+      left: 12px;
+    }
+
+    .ai-mums-teens-review-stars-{{ ai_gen_id }} {
+      margin-bottom: 10px;
+    }
+
+    .ai-mums-teens-review-stars-{{ ai_gen_id }} svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .ai-mums-teens-review-text-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.review_text_size }}px * 0.9);
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    .ai-mums-teens-review-author-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.author_size }}px * 0.9);
+    }
+
+    .ai-mums-teens-professional-badge-{{ ai_gen_id }} {
+      margin-top: 20px;
+      padding: 10px 20px;
+      gap: 8px;
+    }
+
+    .ai-mums-teens-professional-icon-{{ ai_gen_id }} {
+      width: 20px;
+      height: 20px;
+    }
+
+    .ai-mums-teens-professional-text-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.professional_text_size }}px * 0.85);
+      white-space: normal;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-mums-teens-{{ ai_gen_id }} {
+      padding: 28px 16px;
+    }
+  }
+{% endstyle %}
+
+<ai-mums-teens-{{ ai_gen_id }} class="ai-mums-teens-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-mums-teens-container-{{ ai_gen_id }}">
+    <div class="ai-mums-teens-header-{{ ai_gen_id }}">
+      {% if block.settings.badge_text != blank %}
+        <div class="ai-mums-teens-badge-{{ ai_gen_id }}">
+          <span class="ai-mums-teens-badge-icon-{{ ai_gen_id }}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </span>
+          {{ block.settings.badge_text }}
+        </div>
+      {% endif %}
+
+      {% if block.settings.title != blank %}
+        <h2 class="ai-mums-teens-title-{{ ai_gen_id }}">
+          {{ block.settings.title }}
+        </h2>
+      {% endif %}
+
+      {% if block.settings.subtitle != blank %}
+        <p class="ai-mums-teens-subtitle-{{ ai_gen_id }}">
+          {{ block.settings.subtitle }}
+        </p>
+      {% endif %}
+    </div>
+
+    <div class="ai-mums-teens-content-{{ ai_gen_id }}">
+      <div class="ai-mums-teens-images-{{ ai_gen_id }}">
+        <div class="ai-mums-teens-image-wrapper-{{ ai_gen_id }}">
+          {% if block.settings.image_1 %}
+            <img
+              src="{{ block.settings.image_1 | image_url: width: 600 }}"
+              alt="{{ block.settings.image_1.alt | escape }}"
+              loading="lazy"
+              width="600"
+              height="800"
+            >
+          {% else %}
+            <div class="ai-mums-teens-image-placeholder-{{ ai_gen_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+        </div>
+
+        {% if block.settings.show_second_image %}
+          <div class="ai-mums-teens-image-wrapper-{{ ai_gen_id }}">
+            {% if block.settings.image_2 %}
+              <img
+                src="{{ block.settings.image_2 | image_url: width: 600 }}"
+                alt="{{ block.settings.image_2.alt | escape }}"
+                loading="lazy"
+                width="600"
+                height="800"
+              >
+            {% else %}
+              <div class="ai-mums-teens-image-placeholder-{{ ai_gen_id }}">
+                {{ 'image' | placeholder_svg_tag }}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="ai-mums-teens-reviews-section-{{ ai_gen_id }}">
+        {% if block.settings.review_1_text != blank %}
+          <div class="ai-mums-teens-review-{{ ai_gen_id }}">
+            <div class="ai-mums-teens-review-stars-{{ ai_gen_id }}">
+              {% for i in (1..5) %}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+              {% endfor %}
+            </div>
+            <p class="ai-mums-teens-review-text-{{ ai_gen_id }}">
+              {{ block.settings.review_1_text }}
+            </p>
+            {% if block.settings.review_1_author != blank %}
+              <p class="ai-mums-teens-review-author-{{ ai_gen_id }}">
+                {{ block.settings.review_1_author }}
+              </p>
+            {% endif %}
+          </div>
+        {% endif %}
+
+        {% if block.settings.review_2_text != blank %}
+          <div class="ai-mums-teens-review-{{ ai_gen_id }}">
+            <div class="ai-mums-teens-review-stars-{{ ai_gen_id }}">
+              {% for i in (1..5) %}
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+              {% endfor %}
+            </div>
+            <p class="ai-mums-teens-review-text-{{ ai_gen_id }}">
+              {{ block.settings.review_2_text }}
+            </p>
+            {% if block.settings.review_2_author != blank %}
+              <p class="ai-mums-teens-review-author-{{ ai_gen_id }}">
+                {{ block.settings.review_2_author }}
+              </p>
+            {% endif %}
+          </div>
+        {% endif %}
+
+        {% if block.settings.show_professional_badge %}
+          <div class="ai-mums-teens-professional-badge-{{ ai_gen_id }}">
+            <span class="ai-mums-teens-professional-icon-{{ ai_gen_id }}">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+            </span>
+            <p class="ai-mums-teens-professional-text-{{ ai_gen_id }}">
+              {{ block.settings.professional_badge_text }}
+            </p>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</ai-mums-teens-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class AiMumsTeens{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.setupAccessibility();
+      }
+
+      setupAccessibility() {
+        const reviews = this.querySelectorAll('.ai-mums-teens-review-{{ ai_gen_id }}');
+        reviews.forEach((review) => {
+          review.setAttribute('role', 'article');
+          review.setAttribute('aria-label', 'Customer review');
+        });
+      }
+    }
+
+    customElements.define('ai-mums-teens-{{ ai_gen_id }}', AiMumsTeens{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "For mums and teens",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Badge"
+    },
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge text",
+      "default": "Safe for ages 13+"
+    },
+    {
+      "type": "range",
+      "id": "badge_size",
+      "label": "Badge text size",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 13
+    },
+    {
+      "type": "color",
+      "id": "badge_bg_color",
+      "label": "Badge background",
+      "default": "#252a31"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Badge text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "For mums and teens"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Title size",
+      "min": 24,
+      "max": 64,
+      "step": 2,
+      "unit": "px",
+      "default": 42
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Loved by mums supporting daughters with painful periods and hormonal symptoms"
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "label": "Subtitle size",
+      "min": 14,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 17
+    },
+    {
+      "type": "header",
+      "content": "Images"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Image 1"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_second_image",
+      "label": "Show second image",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image 2"
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "label": "Image border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Review 1"
+    },
+    {
+      "type": "textarea",
+      "id": "review_1_text",
+      "label": "Review text",
+      "default": "My daughter's cramps have improved so much since starting Monthlies. As a mum, it's such a relief to see her feeling better during her period."
+    },
+    {
+      "type": "text",
+      "id": "review_1_author",
+      "label": "Author name",
+      "default": "Sarah M."
+    },
+    {
+      "type": "header",
+      "content": "Review 2"
+    },
+    {
+      "type": "textarea",
+      "id": "review_2_text",
+      "label": "Review text",
+      "default": "Finally something natural that actually works for my teenage daughter. Her mood swings and pain are so much better. Highly recommend for young women!"
+    },
+    {
+      "type": "text",
+      "id": "review_2_author",
+      "label": "Author name",
+      "default": "Emma L."
+    },
+    {
+      "type": "header",
+      "content": "Review style"
+    },
+    {
+      "type": "range",
+      "id": "review_text_size",
+      "label": "Review text size",
+      "min": 13,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "author_size",
+      "label": "Author name size",
+      "min": 11,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "review_bg_color",
+      "label": "Review background",
+      "default": "#f9f9f9"
+    },
+    {
+      "type": "range",
+      "id": "review_border_radius",
+      "label": "Review border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "star_color",
+      "label": "Star color",
+      "default": "#ffb503"
+    },
+    {
+      "type": "header",
+      "content": "Professional badge"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_professional_badge",
+      "label": "Show professional badge",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "professional_badge_text",
+      "label": "Badge text",
+      "default": "Created by women's health professionals"
+    },
+    {
+      "type": "range",
+      "id": "professional_text_size",
+      "label": "Text size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "professional_badge_bg",
+      "label": "Badge background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "professional_text_color",
+      "label": "Text color",
+      "default": "#252a31"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#252a31"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent",
+      "default": "#abd0cd"
+    }
+  ],
+  "presets": [
+    {
+      "name": "For mums and teens"
+    }
+  ]
+}
+{% endschema %}

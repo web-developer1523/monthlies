@@ -1,0 +1,154 @@
+.expert-video-wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 50px;
+    padding: 120px 0;
+}
+
+.expert-video-left {
+    max-width: 360px;
+    height: 460px;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+    background-color: black;
+}
+
+.expert-video-left img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 5;
+    opacity: .8;
+    transition: ease-in-out 200ms;
+}
+
+.expert-video-left:hover img {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.expert-video-content {
+    display: flex;
+    gap: 20px;
+    padding: 0px 23px 23px 23px;
+    position: relative;
+    z-index: 10;
+}
+
+.expert-video-content h4 {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.expert-video-content p {
+    font-size: 14px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.expert-video-right h2 {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.expert-video-right p {
+    font-size: 16px;
+}
+
+.expert-video-btn {
+    border: 2px solid black;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 8px 16px;
+    gap: 12px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.expert-video-popup {
+    background-color: rgba(0, 0, 0, .8);
+    top: -100vh;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    transition: ease-in-out 500ms;
+    opacity: 0;
+    display: flex;
+}
+
+.expert-video-popup.active-video {
+    top: 0;
+    opacity: 1;
+}
+
+.expert-video-popup video {
+    width: 300px;
+}
+
+.expert-video-popup .section--padding {
+    width: 100%;
+}
+
+.expert-video-popup .page-width {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.expert-video-popup-close {
+    position: absolute;
+    right: 30px;
+    top: 0px;
+    width: 40px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+   .expert-video-wrapper {
+        flex-direction: column;
+        padding: 80px 0;
+   }
+
+    .expert-video-left {
+        height: 400px;
+        max-width: none;
+        width: 100%;
+    }
+
+    .expert-video-content {
+        gap: 10px;
+    }
+
+    .expert-video-left svg {
+        width: 40px;
+    }
+
+    .expert-video-wrapper h2 {
+        font-size: 28px;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,336 @@
+<section class="expertinnen-slider">
+  <div class="container">
+    <div class="expertinnen-slider-inner">
+      <div class="testimonial-slider">
+        {% for block in section.blocks %}
+          <div class="slide">
+            <div class="slide-wrapper">
+              <div class="left-image desktop-only">
+                <img
+                  src="{{ block.settings.expert_image | img_url: '400x' }}"
+                  alt="{{ block.settings.slide_author }}"
+                >
+              </div>
+
+              <div class="slide-right">
+                <div class="desktop-view">
+                  <h2>
+                    {{ block.settings.slide_heading }}
+                  </h2>
+
+                  <p>{{ block.settings.slide_text }}</p>
+
+                  <span class="author">{{ block.settings.slide_author }}</span>
+                </div>
+                <div class="mob-view">
+                  <h2>
+                    {{ block.settings.slide_heading }}
+                  </h2>
+                  <div class="mon-list">
+                    <div class="descri">
+                      <p>{{ block.settings.slide_text }}</p>
+                    </div>
+                    <div class="auth-w">
+                      <img
+                        src="{{ block.settings.mobile_expert_image | img_url: '400x' }}"
+                        alt="{{ block.settings.slide_author }}"
+                      >
+                      <span class="author">{{ block.settings.slide_author }}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <div class="fixed-arrows">
+        <div class="arrow-btn prev">
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="17" viewBox="0 0 10 17" fill="none">
+            <path d="M8.91016 0.35791L0.715034 8.35791L8.91016 16.3579" stroke="#404040"/>
+          </svg>
+        </div>
+        <div class="arrow-btn next">
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="17" viewBox="0 0 10 17" fill="none">
+            <path d="M0.347656 16.3579L8.54278 8.35791L0.347656 0.35791" stroke="#404040"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .expertinnen-slider-inner .slick-list.draggable {
+    border-radius: 20px;
+}
+  .slide-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items:center;
+}
+
+.expertinnen-slider {
+    padding: 60px 0;
+}
+
+.expertinnen-slider-inner {
+    position: relative;
+}
+
+.left-image img {
+    width: 100%;
+    height: 614px;
+    object-fit: contain;
+}
+
+.fixed-arrows {
+    position: absolute;
+    display: flex;
+    gap: 12px;
+    z-index: 10;
+    width: 100%;
+    justify-content: center;
+    top: 88%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+}
+
+.arrow-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid #8cbfbd;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s;
+    user-select: none;
+}
+
+.arrow-btn:hover {
+    background: #8cbfbd;
+    color: #fff;
+}
+
+.slide-right h2 {
+    color: #404040;
+    text-align: left;
+    font-family: "Lora", serif;
+    font-size: 40px;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+    width: 100%;
+    max-width: 505px;
+    
+}
+
+.slide-right p {
+    color: #404040;
+    text-align: left;
+    font-family: "Quicksand", sans-serif;
+    font-size: 19px;
+    line-height: 140%;
+    font-weight: 400;
+}
+
+.author {
+    color: #7e7b7b;
+    text-align: center;
+    font-family: "Quicksand-Bold", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 700;
+}
+
+.arrow-btn:hover svg path {
+    stroke: #fff;
+}
+
+
+.mob-view {
+    display: none;
+}
+html[lang="en"] .fixed-arrows {
+    top: 70%;
+}
+/* responsive css*/
+
+@media (max-width: 1400px) {
+    .fixed-arrows {
+        top: 70%;
+
+    }
+}
+
+@media (max-width: 1200px) {
+    .fixed-arrows {
+        top: 77%;
+        left: 57%;
+    }
+}
+
+
+@media (max-width: 1023px) {
+    .slide-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .fixed-arrows {
+        bottom: 0;
+        left: 57%;
+        top: auto;
+    }
+
+    .left-image img {
+        height: 400px;
+    }
+
+    .expertinnen-slider-inner {
+        padding-bottom: 90px;
+    }
+}
+
+@media (max-width: 767px) {
+    .left-image.desktop-only {
+        display: none;
+    }
+
+    .desktop-view {
+        display: none;
+    }
+
+    .mob-view {
+        display: block;
+    }
+
+    .mob-view h2 {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .fixed-arrows {
+        bottom: 0;
+        left: 14%;
+        top: auto;
+    }
+    html[lang="en"] .fixed-arrows {
+    top: auto;
+}
+
+    .auth-w {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .auth-w img {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+    }
+
+    .mon-list {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 16px;
+        box-shadow: 0px 7.07px 28.29px rgba(146, 147, 147, 0.3);
+    }
+
+    .slide-right p {
+        font-size: 16px;
+
+    }
+}
+
+</style>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+  jQuery(document).ready(function ($) {
+    var slider = $('.testimonial-slider');
+
+    slider.slick({
+      arrows: false,
+      dots: false,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      infinite: true,
+      speed: 500,
+    });
+
+    // FIXED BUTTONS OUTSIDE SLIDER
+    $('.next').click(function () {
+      slider.slick('slickNext');
+    });
+
+    $('.prev').click(function () {
+      slider.slick('slickPrev');
+    });
+  });
+</script>
+<!-- Slick CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+{% schema %}
+{
+  "name": "What Expert Say",
+  "settings": [
+    {
+      "type": "text",
+      "id": "global_heading",
+      "label": "Global Heading (optional)",
+      "default": "Das sagen unsere Expertinnen"
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "expert_image",
+          "label": "Expert Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_expert_image",
+          "label": "Mobile Expert Image"
+        },
+        {
+          "type": "text",
+          "id": "slide_heading",
+          "label": "Slide Heading",
+          "default": "Das sagen unsere Expertinnen"
+        },
+        {
+          "type": "textarea",
+          "id": "slide_text",
+          "label": "Testimonial Text",
+          "default": "Zitat oder Testimonial Text eingeben."
+        },
+        {
+          "type": "text",
+          "id": "slide_author",
+          "label": "Author Name",
+          "default": "Expertin Name"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "What Expert Say",
+      "category": "Testimonials"
+    }
+  ]
+}
+{% endschema %}

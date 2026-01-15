@@ -1,0 +1,106 @@
+.hormonal-hero {
+    background-color: #D1BEE4;
+    position: relative;
+    padding: 90px 0 60px 0;
+}
+
+.hormonal-hero-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hormonal-hero--content {
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.hormonal-hero--content img {
+    width: 73px;
+}
+
+.hormonal-hero--content h1 {
+    font-size: 40px;
+    line-height: 110%;
+    margin: 46px 0 20px 0;
+}
+
+.hormonal-hero--text {
+    margin: 0 0 32px 0;
+    font-size: 24px;
+    line-height: 140%;
+}
+
+.hormonal-hero--bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: 0;
+}
+
+.hormonal-hero--visual {
+    width: 560px;
+    position: relative;
+    z-index: 10;
+}
+.hormonal-hero--visual-top{display:none;}
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+@media (max-width: 921px) {
+    .hormonal-hero {
+        padding: 0 0 10px 0;
+    }
+
+    .hormonal-hero-wrapper {
+        flex-direction: column;
+    }
+
+    .hormonal-hero--content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: none;
+        text-align: left;
+    }
+    
+    .hormonal-hero--content h1 {
+        font-size: 32px;
+    }
+    
+    .hormonal-hero--text {
+        margin: 0 0 32px 0;
+        font-size: 20px;
+        line-height: 140%;
+    }
+    .hero-logo{
+      display:none;
+    }
+    .hormonal-hero--visual {
+        display:none;
+    }
+      .hormonal-hero--visual-top {
+        margin-top:20px;
+        display:block;
+        max-height:350px;
+        width: auto;
+        position: relative;
+    }
+    .hero-buttons {
+        flex-direction: column; /* Stack the buttons vertically on small screens */
+    }
+
+    .hero-buttons .button {
+        width: 100%; /* Full width buttons on small screens */
+    }
+  .hormonal-hero--content img {
+    max-height: 300px;
+    width:auto;
+  }
+}
