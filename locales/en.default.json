@@ -16,110 +16,59 @@
       "login_form_password_placeholder": "Your password",
       "login_form_error": "Wrong password!",
       "login_form_submit": "Enter",
-      "modal": "Password modal",
-      "admin_link_html": "Are you the store owner? <a href=\"/admin\" class=\"link link--underline\">Log in here</a>",
-      "powered_by_shopify_html": "Powered by shopify html"
+      "admin_link_html": "Are you the store owner? <a href=\"/admin\" class=\"link underlined-link\">Log in here</a>",
+      "powered_by_shopify_html": "This shop will be powered by {{ shopify }}"
     },
     "social": {
       "alt_text": {
-        "share_on_facebook": "Share",
-        "share_on_twitter": "Tweet",
-        "share_on_pinterest": "Pin it",
-        "share_on_whatsapp": "Share",
-        "share_on_telegram": "Share",
-        "share_by_email": "Email"
+        "share_on_facebook": "Share on Facebook",
+        "share_on_twitter": "Share on X",
+        "share_on_pinterest": "Pin on Pinterest"
       },
       "links": {
-        "twitter": "Twitter",
+        "twitter": "X (Twitter)",
         "facebook": "Facebook",
         "pinterest": "Pinterest",
         "instagram": "Instagram",
         "tumblr": "Tumblr",
-        "linkedin": "LinkedIn",
         "snapchat": "Snapchat",
         "youtube": "YouTube",
         "vimeo": "Vimeo",
         "tiktok": "TikTok"
       }
     },
-    "continue_shopping": "Return to shop",
+    "continue_shopping": "Continue shopping",
     "pagination": {
       "label": "Pagination",
       "page": "Page {{ number }}",
-      "next": "Next ›",
-      "previous": "‹ Prev",
-      "show_more": "Show more"
+      "next": "Next page",
+      "previous": "Previous page"
     },
     "search": {
-      "search": "Search our site",
-      "placeholder": "Search",
-      "clear": "Clear"
+      "search": "Search",
+      "reset": "Clear search term"
     },
     "cart": {
-      "view": "View cart",
-      "item_added": "Item added to your cart",
-      "note": {
-        "title": "Note",
-        "caption": "Order special instructions",
-        "button": "Apply"
-      },
-      "gift_note": {
-        "title": "Message",
-        "caption": "Add a personalized message to your order",
-        "button": "Apply"
-      },
-      "discount": {
-        "title": "Coupon",
-        "caption": "Add a discount code",
-        "tooltip": "Discount will be applied at checkout",
-        "button": "Apply"
-      },
-      "shipping_calculator": {
-        "title": "Shipping",
-        "caption": "Estimate shipping rates",
-        "tooltip": "Shipping & taxes will be calculated at checkout",
-        "button": "Calculate"
-      },
-      "free_shipping": {
-        "remaining_html": "Spend {{ remaining_amount }} more to reach free shipping",
-        "congratulations_html": "You are eligible for free shipping."
-      }
+      "view": "View cart ({{ count }})",
+      "view_empty_cart": "View cart",
+      "item_added": "Item added to your cart"
     },
     "share": {
-      "share": "Share now",
       "close": "Close share",
       "copy_to_clipboard": "Copy link",
-      "share_url": "Copy link",
-      "success_message": "Link copied to clipboard!"
+      "share_url": "Link",
+      "success_message": "Link copied to clipboard"
     },
     "slider": {
       "of": "of",
       "next_slide": "Slide right",
-      "previous_slide": "Slide left"
-    },
-    "date": {
-      "d": "D",
-      "day": "Day",
-      "days": "Days",
-      "hour": "Hour",
-      "hours": "Hours",
-      "minute": "Min",
-      "minutes": "Mins",
-      "second": "Sec",
-      "seconds": "Secs"
-    },
-    "breadcrumbs": {
-      "home": "Home",
-      "home_link_title": "Back to the frontpage"
+      "previous_slide": "Slide left",
+      "name": "Slider"
     }
   },
-  "date_formats": {
-    "month_year": "%B %Y",
-    "month_day_year": "%B %d, %Y"
-  },
   "newsletter": {
-    "label": "Enter email here",
-    "success": "Thanks for sharing your email. We'll notify you when the app goes live!",
+    "label": "Email",
+    "success": "Thanks for subscribing",
     "button_label": "Subscribe"
   },
   "accessibility": {
@@ -143,9 +92,7 @@
   "blogs": {
     "article": {
       "blog": "Blog",
-      "all_tags": "All",
       "read_more_title": "Read more: {{ title }}",
-      "read_more": "Read more",
       "comments": {
         "one": "{{ count }} comment",
         "other": "{{ count }} comments"
@@ -156,7 +103,7 @@
       "email": "Email",
       "message": "Comment",
       "post": "Post comment",
-      "back_to_blog": "Back to {{ title }}",
+      "back_to_blog": "Back to blog",
       "share": "Share this article",
       "success": "Your comment was posted successfully! Thank you!",
       "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated."
@@ -164,18 +111,21 @@
   },
   "onboarding": {
     "product_title": "Example product title",
-    "collection_title": "Your collection's name",
-    "no_content": "This section doesn't currently include any content. Add content to this section using the sidebar."
+    "collection_title": "Your collection's name"
   },
   "products": {
     "product": {
-      "color_swatch_trigger": "Color",
-      "size_chart_trigger": "Size",
-      "size_chart": "Help about your size",
-      "add_to_cart": "Add To Cart",
-      "add_set_to_cart": "Add set to cart",
+      "add_to_cart": "Add to cart",
+      "choose_options": "Choose options",
+      "choose_product_options": "Choose options for {{ product_name }}",
       "description": "Description",
-      "quick_view": "Quick view",
+      "inventory_in_stock": "In stock",
+      "inventory_in_stock_show_count": "{{ quantity }} in stock",
+      "inventory_low_stock": "Low stock",
+      "inventory_low_stock_show_count": "Low stock: {{ quantity }} left",
+      "inventory_out_of_stock": "Out of stock",
+      "inventory_out_of_stock_continue_selling": "In stock",
+      "sku": "SKU",
       "on_sale": "Sale",
       "product_variants": "Product variants",
       "media": {
@@ -188,11 +138,27 @@
         "play_model": "Play 3D Viewer",
         "play_video": "Play video"
       },
+      "nested_label": "{{ title }} for {{ parent_title }}",
       "quantity": {
         "label": "Quantity",
         "input_label": "Quantity for {{ product }}",
         "increase": "Increase quantity for {{ product }}",
-        "decrease": "Decrease quantity for {{ product }}"
+        "decrease": "Decrease quantity for {{ product }}",
+        "minimum_of": "Minimum of {{ quantity }}",
+        "maximum_of": "Maximum of {{ quantity }}",
+        "multiples_of": "Increments of {{ quantity }}",
+        "min_of": "Min {{ quantity }}",
+        "max_of": "Max {{ quantity }}",
+        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}</span> in cart",
+        "in_cart_aria_label": "Quantity ({{ quantity }} in cart)",
+        "note": "View quantity rules"
+      },
+      "volume_pricing": {
+        "title": "Volume Pricing",
+        "note": "Volume pricing available",
+        "minimum": "{{ quantity }}+",
+        "price_at_each_html": "at {{ price }}/ea",
+        "price_range": "{{ minimum }} - {{ maximum }}"
       },
       "pickup_availability": {
         "view_store_info": "View store information",
@@ -209,50 +175,41 @@
         "sale_price": "Sale price",
         "unit_price": "Unit price"
       },
-      "inventory": {
-        "in_stock_label": "In stock, ready to ship",
-        "stock_label_html": {
-          "one": "Hurry, only <strong>{{ count }}</strong> item left in stock!",
-          "other": "Hurry, only <strong>{{ count }}</strong> items left in stock!"
-        },
-        "will_not_ship_until": "Ready to ship {{ date }}",
-        "will_be_in_stock_after": "Back in stock {{ date }}",
-        "waiting_for_stock": "Inventory on the way"
-      },
       "share": "Share this product",
-      "view": "View product",
       "sold_out": "Sold out",
       "unavailable": "Unavailable",
-      "pre_order": "Pre-order",
       "vendor": "Vendor",
+      "value_unavailable": "{{ option_value }} - Unavailable",
+      "variant_sold_out_or_unavailable": "Variant sold out or unavailable",
       "video_exit_message": "{{ title }} opens full screen video in same window.",
       "view_full_details": "View full details",
-      "view_info": "More information",
-      "view_images": "View images",
       "xr_button": "View in your space",
       "xr_button_label": "View in your space, loads item in augmented reality window",
-      "include_taxes": "Tax included.",
-      "shipping_policy_html": "Free shipping.",
-      "choose_options": "Choose options",
-      "choose_product_options": "Choose options for {{ product_name }}"
+      "taxes_included": "Taxes included.",
+      "duties_included": "Duties included.",
+      "duties_and_taxes_included": "Duties and taxes included.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout."
     },
     "modal": {
       "label": "Media gallery"
     },
     "facets": {
+      "filter_and_operator_subtitle": "Match all",
       "apply": "Apply",
       "clear": "Clear",
-      "clear_all": "Clear all",
+      "clear_all": "Remove all",
       "from": "From",
       "filter_and_sort": "Filter and sort",
-      "filter_by_label": "Filter",
+      "filter_by_label": "Filter:",
       "filter_button": "Filter",
       "filters_selected": {
         "one": "{{ count }} selected",
         "other": "{{ count }} selected"
       },
+      "filter_selected_accessibility": "{{ type }} ({{ count }} filters selected)",
+      "show_more": "Show more",
+      "show_less": "Show less",
       "max_price": "The highest price is {{ price }}",
-      "price_html": "Price: {{ price_min }} &ndash; {{ price_max }}",
       "product_count": {
         "one": "{{ product_count }} of {{ count }} product",
         "other": "{{ product_count }} of {{ count }} products"
@@ -263,39 +220,66 @@
       },
       "reset": "Reset",
       "sort_button": "Sort",
-      "sort_by_label": "Sort by",
+      "sort_by_label": "Sort by:",
       "to": "To",
-      "clear_filter": "Clear filter",
-      "show_more": "Show more",
-      "show_less": "Show less"
+      "clear_filter": "Remove filter"
     }
+  },
+  "ingredients": {
+    "amount_per_serving_html": "<strong>Amount per Serving:</strong> {{amount}}",
+    "info_titles": {
+      "benefits": "Benefits",
+      "evidence": "Evidence",
+      "source": "Source",
+      "percent_rda": "Percent RDA",
+      "sub_ingredient": "Sub ingredient"
+    },
+    "ingredient_slider_fraction_html": "Ingredient <span class='ingredients-info-modal__pagination-element'></span>",
+    "conjunction": "for"
   },
   "templates": {
     "search": {
-      "empty": "No results found",
-      "use_fewer_filters_html": "Use fewer filters or <a class=\"{{ class }}\" href=\"{{ link }}\">clear all</a>",
-      "no_results": "No results found for “{{ terms }}”",
-      "check_the_spelling": "Check the spelling or use a different word or phrase",
+      "no_results": "No results found for “{{ terms }}”. Check the spelling or use a different word or phrase.",
       "page": "Page",
       "products": "Products",
+      "results_pages_with_count": {
+        "one": "{{ count }} page",
+        "other": "{{ count }} pages"
+      },
+      "results_suggestions_with_count": {
+        "one": "{{ count }} suggestion",
+        "other": "{{ count }} suggestions"
+      },
+      "results_products_with_count": {
+        "one": "{{ count }} product",
+        "other": "{{ count }} products"
+      },
       "results_with_count": {
+        "one": "{{ count }} result",
+        "other": "{{ count }} results"
+      },
+      "results_with_count_and_term": {
         "one": "{{ count }} result found for “{{ terms }}”",
         "other": "{{ count }} results found for “{{ terms }}”"
       },
       "title": "Search results",
-      "search_for": "Search for “{{ terms }}”"
+      "search_for": "Search for “{{ terms }}”",
+      "suggestions": "Suggestions",
+      "pages": "Pages"
     },
     "cart": {
       "cart": "Cart"
     },
     "contact": {
       "form": {
+        "title": "Contact form",
         "name": "Name",
         "email": "Email",
         "phone": "Phone number",
         "comment": "Comment",
-        "send": "Send message",
-        "post_success": "Thanks for contacting us. We'll get back to you as soon as possible."
+        "send": "Send",
+        "post_success": "Thanks for contacting us. We'll get back to you as soon as possible.",
+        "error_heading": "Please adjust the following:"
       }
     },
     "404": {
@@ -304,6 +288,21 @@
     }
   },
   "sections": {
+    "new_main_product": {
+      "flavor_heading": "Flavor:",
+      "purchase_options_heading": "Choose an option:",
+      "purchase_cta_button": "Add to cart",
+      "placeholder_title": "Product content placeholder",
+      "placeholder_text": "Right column content will be built next."
+    },
+    "announcements": {
+      "previous_announcement": "Previous announcement",
+      "next_announcement": "Next announcement",
+      "carousel": "Carousel",
+      "announcement": "Announcement",
+      "announcement_bar": "Announcement bar"
+    },
+
     "header": {
       "announcement": "Announcement",
       "menu": "Menu",
@@ -313,33 +312,58 @@
       }
     },
     "cart": {
-      "title": "Cart",
+      "title": "Your cart",
       "caption": "Cart items",
       "remove_title": "Remove {{ title }}",
-      "subtotal": "Subtotal",
-      "new_subtotal": "New subtotal",
-      "note": "Add a note to your order",
-      "note_placeholder": "How can we help you?",
+      "estimated_total": "Estimated total",
+      "new_estimated_total": "New estimated total",
+      "note": "Order special instructions",
       "checkout": "Check out",
-      "empty": "Your cart is currently empty",
+      "empty": "Your cart is empty",
       "cart_error": "There was an error while updating your cart. Please try again.",
       "cart_quantity_error_html": "You can only add {{ quantity }} of this item to your cart.",
-      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping</a> calculated at checkout",
-      "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout",
-      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
-      "taxes_and_shipping_at_checkout": "Taxes and shipping calculated at checkout",
+      "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Duties and taxes included. Discounts and <a href=\"{{ link }}\">shipping</a> calculated at checkout.",
+      "duties_and_taxes_included_shipping_at_checkout_without_policy": "Duties and taxes included. Discounts and shipping calculated at checkout.",
+      "taxes_included_shipping_at_checkout_with_policy_html": "Taxes included. Discounts and <a href=\"{{ link }}\">shipping</a> calculated at checkout.",
+      "taxes_included_shipping_at_checkout_without_policy": "Taxes included. Discounts and shipping calculated at checkout.",
+      "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Duties included. Taxes, discounts and <a href=\"{{ link }}\">shipping</a> calculated at checkout.",
+      "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "Duties included. Taxes, discounts and shipping calculated at checkout.",
+      "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Taxes, discounts and <a href=\"{{ link }}\">shipping</a> calculated at checkout.",
+      "taxes_at_checkout_shipping_at_checkout_without_policy": "Taxes, discounts and shipping calculated at checkout.",
       "headings": {
         "product": "Product",
         "price": "Price",
         "total": "Total",
-        "quantity": "Quantity"
+        "quantity": "Quantity",
+        "image": "Product image"
+      },
+      "servings_label": "Size:",
+      "servings_value": "{{ servings }} servings",
+      "drawer": {
+        "notice": "Great choice - do your body some good!",
+        "plan_tag_no_minimum": "no minimum term",
+        "savings": "You save {{ percent }}%",
+        "subscription_heading": "FREE included in your monthlies subscription:",
+        "subscription_item_1_title": "+ 45-minute personal online consultation",
+        "subscription_item_1_subtitle": "with one of our health experts",
+        "subscription_info_label": "More info",
+        "subscription_item_2_html": "<strong>Cycle guide</strong> to understand your menstrual cycle",
+        "subscription_item_3_html": "<strong>Tips and recommendations</strong> for fitness & nutrition during your cycle",
+        "shipping_title": "Shipping",
+        "shipping_subtitle": "In stock - delivered in 2-3 days",
+        "shipping_value": "Free",
+        "total_title": "Total",
+        "total_subtitle": "incl. VAT",
+        "checkout": "Proceed to checkout",
+        "guarantee": "90-day money-back guarantee"
       },
       "update": "Update",
-      "gift_wrapping_html": "For {{ price }} please wrap the products in this order.",
-      "gift_note_placeholder": "Gift message (free and optional)"
+      "login": {
+        "title": "Have an account?",
+        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Log in</a> to check out faster."
+      }
     },
     "footer": {
-      "social_placeholder": "Follow us on social media!",
       "payment": "Payment methods"
     },
     "featured_blog": {
@@ -355,21 +379,59 @@
       "view_all": "View all"
     },
     "collection_template": {
-      "title": "Collection",
-      "no_products": "Sorry, there are no products in this collection",
       "empty": "No products found",
-      "use_fewer_filters_html": "Use fewer filters or <a class=\"{{ class }}\" href=\"{{ link }}\">clear all</a>"
+      "title": "Collection",
+      "use_fewer_filters_html": "Use fewer filters or <a class=\"{{ class }}\" href=\"{{ link }}\">remove all</a>"
     },
     "video": {
       "load_video": "Load video: {{ description }}"
+    },
+    "slideshow": {
+      "load_slide": "Load slide",
+      "previous_slideshow": "Previous slide",
+      "next_slideshow": "Next slide",
+      "pause_slideshow": "Pause slideshow",
+      "play_slideshow": "Play slideshow",
+      "carousel": "Carousel",
+      "slide": "Slide"
+    },
+    "page": {
+      "title": "Page title"
+    },
+    "quick_order_list": {
+      "product_total": "Product subtotal",
+      "view_cart": "View cart",
+      "each": "{{ money }}/ea",
+      "product": "Product",
+      "variant": "Variant",
+      "variant_total": "Variant total",
+      "items_added": {
+        "one": "{{ quantity }} item added",
+        "other": "{{ quantity }} items added"
+      },
+      "items_removed": {
+        "one": "{{ quantity }} item removed",
+        "other": "{{ quantity }} items removed"
+      },
+      "product_variants": "Product variants",
+      "total_items": "Total items",
+      "remove_all_single_item_confirmation": "Remove 1 item from your cart?",
+      "remove_all_items_confirmation": "Remove all {{ quantity }} items from your cart?",
+      "remove_all": "Remove all",
+      "cancel": "Cancel",
+      "min_error": "This item has a minimum of {{ min }}",
+      "max_error": "This item has a maximum of {{ max }}",
+      "step_error": "You can only add this item in increments of {{ step }}"
     }
   },
   "localization": {
     "country_label": "Country/region",
-    "update_country": "Update country/region",
     "language_label": "Language",
     "update_language": "Update language",
-    "text_direction_trigger": "LTR"
+    "update_country": "Update country/region",
+    "search": "Search",
+    "popular_countries_regions": "Popular countries/regions",
+    "country_results_count": "{{ count }} countries/regions found"
   },
   "customer": {
     "account": {
@@ -410,7 +472,7 @@
       "delete": "Delete",
       "delete_confirm": "Are you sure you wish to delete this address?"
     },
-    "log_in": "Log in",
+    "log_in": "Login",
     "log_out": "Log out",
     "login_page": {
       "cancel": "Cancel",
@@ -423,8 +485,7 @@
       "title": "Login",
       "sign_in": "Sign in",
       "submit": "Submit",
-      "dont_have_account": "Don't have an account yet?",
-      "return": "Return to Store"
+      "alternate_provider_separator": "or"
     },
     "order": {
       "title": "Order {{ name }}",
@@ -443,6 +504,7 @@
       "price": "Price",
       "quantity": "Quantity",
       "total": "Total",
+      "total_refunded": "Refunded",
       "fulfilled_at_html": "Fulfilled {{ date }}",
       "track_shipment": "Track shipment",
       "tracking_url": "Tracking link",
@@ -467,13 +529,12 @@
       "success": "We've sent you an email with a link to update your password."
     },
     "register": {
-      "title": "Create Account",
+      "title": "Create account",
       "first_name": "First name",
       "last_name": "Last name",
       "email": "Email",
       "password": "Password",
-      "submit": "Create",
-      "return": "Return to Store"
+      "submit": "Create"
     },
     "reset_password": {
       "title": "Reset account password",
@@ -485,38 +546,34 @@
   },
   "gift_cards": {
     "issued": {
-      "title": "Here's your {{ value }} gift card for {{ shop }}!",
+      "how_to_use_gift_card": "Use the gift card code online or QR code in-store",
+      "title": "Here's your {{ value }} gift card balance for {{ shop }}!",
       "subtext": "Your gift card",
       "gift_card_code": "Gift card code",
-      "shop_link": "Return to shop",
-      "remaining_html": "Remaining {{ balance }}",
+      "shop_link": "Visit online store",
       "add_to_apple_wallet": "Add to Apple Wallet",
       "qr_image_alt": "QR code — scan to redeem gift card",
-      "copy_code": "Copy code",
-      "expired": "Expired",
+      "copy_code": "Copy gift card code",
+      "expiration_date": "Expires {{ expires_on }}",
       "copy_code_success": "Code copied successfully",
-      "print_gift_card": "Print"
+      "expired": "Expired"
     }
   },
-  "shopify": {
-    "subscriptions": {
-      "buyer_consent_cart": "If you register for a subscription, you authorise monthlies to charge every saved payment method every 30 days at the current price. Your subscription will be automatically extended until you cancel it, which you can do at any time before your next billing date in your member account or by contacting customer service."
-    },
-    "checkout": {
-      "payment": {
-        "subscription_agreement_label": "If you register for a subscription, you authorise monthlies to charge every saved payment method every 30 days at the current price. Your subscription will be automatically extended until you cancel it, which you can do at any time before your next billing date in your member account or by contacting customer service.",
-        "purchase_options_agreement_label": "One or more items in your cart is a deferred or recurring purchase. By continuing with your payment, you agree that your payment method will automatically be charged at the price and frequency listed on this page until it ends or you cancel. All cancellations are subject to the {{ cancellation_policy_label}}. When you sign up for a subscription, you authorise monthlies to charge any payment method on file every 30 days at the then current rate. Your subscription will automatically renew until you cancel it, which you can do at any time before your next billing date in your member account or by contacting customer service."
-      }
+  "recipient": {
+    "form": {
+      "checkbox": "I want to send this as a gift",
+      "expanded": "Gift card recipient form expanded",
+      "collapsed": "Gift card recipient form collapsed",
+      "email_label": "Recipient email",
+      "email_label_optional_for_no_js_behavior": "Recipient email (optional)",
+      "email": "Email",
+      "name_label": "Recipient name (optional)",
+      "name": "Name",
+      "message_label": "Message (optional)",
+      "message": "Message",
+      "max_characters": "{{ max_chars }} characters max",
+      "send_on": "YYYY-MM-DD",
+      "send_on_label": "Send on (optional)"
     }
-  },
-  "ingredients": {
-    "ingredient": "Ingredient",
-    "amount_per_serving": "Amount per serving",
-    "percent_rda": "% against RDA",
-    "absorbability_comments": "Absorbability comments",
-    "benefits": "Benefits",
-    "evidence": "Evidence",
-    "back_link": "Back to Ingredients",
-    "link": "/pages/all-ingredients"
   }
 }

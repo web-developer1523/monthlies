@@ -1,0 +1,368 @@
+.cycle-progress {
+  background: var(--cycle-progress-bg, #ffffff);
+  position: relative;
+}
+
+.cycle-progress-section+* {
+  z-index: 1;
+  position: relative;
+}
+
+.cycle-progress__inner {
+  position: relative;
+  padding-block: var(--cycle-progress-padding-top) var(--cycle-progress-padding-bottom)
+}
+
+.cycle-progress__grid {
+  display: grid;
+  gap: 32px;
+  align-items: center;
+}
+
+.cycle-progress__card-wrap {
+  display: grid;
+  gap: 110px;
+  position: relative;
+  z-index: 2;
+  width: 60%;
+}
+
+.cycle-progress__card {
+  background: var(--cycle-progress-card-bg, #ffffff);
+  border-radius: var(--cycle-progress-card-radius, 24px);
+  padding: var(--cycle-progress-card-padding, 32px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+  display: grid;
+  gap: 56px;
+}
+
+.cycle-progress__tabs {
+  position: relative;
+  border-radius: 999px;
+  padding: 4px;
+  background: var(--cycle-progress-tabs-bg, #e6f1ef);
+  width: fit-content;
+}
+
+.cycle-progress__track {
+  position: absolute;
+  inset: 6px;
+  border-radius: 999px;
+  background: var(--cycle-progress-tabs-track, #dbe7e5);
+  pointer-events: none;
+}
+
+.cycle-progress__track-fill {
+  position: absolute;
+  inset: 0;
+  width: var(--cycle-progress-fill, var(--cycle-progress-value, 0%));
+  background: var(--cycle-progress-tabs-fill, #b9d6d3);
+  border-radius: 999px;
+  transition: width 0.3s ease;
+  z-index: 2;
+  padding-left: 12px;
+
+  display: flex;
+  align-items: center;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.cycle-progress__track-indicator {
+  position: absolute;
+  top: 50%;
+  left: var(--cycle-progress-indicator, var(--cycle-progress-value, 0%));
+  transform: translate(-100%, -50%);
+  width: var(--cycle-progress-indicator-size, 40px);
+  height: var(--cycle-progress-indicator-size, 40px);
+  border-radius: 999px;
+  background: var(--cycle-progress-indicator-bg, #a9cfc9);
+  color: var(--cycle-progress-indicator-color, #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading-family);
+  font-size: 24px;
+  font-weight: 600;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  transition: left 0.3s ease;
+  z-index: 2;
+}
+
+.cycle-progress__tab-list {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 4px;
+}
+
+.cycle-progress__tab {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--cycle-progress-tab-text, #5b5b5b);
+  font-size: var(--cycle-progress-tab-size, 13px);
+  font-weight: 500;
+  font-family: inherit;
+  padding: 8px 12px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.cycle-progress__tab:first-child {
+  padding-inline: 30px;
+}
+
+.cycle-progress__tab.is-active {
+  color: var(--cycle-progress-tab-active-text, #3b3b3b);
+  font-weight: 600;
+}
+
+.cycle-progress__panels {
+  display: grid;
+  gap: 20px;
+}
+
+.cycle-progress__panel {
+  display: none;
+  gap: 16px;
+}
+
+.cycle-progress__panel.is-active {
+  display: grid;
+}
+
+.cycle-progress__panel-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cycle-progress__panel-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.cycle-progress__panel-title {
+  font-family: var(--font-heading-family);
+  font-weight: 600;
+  font-size: var(--cycle-progress-heading-size, 26px);
+  color: var(--cycle-progress-heading-color, #3b3b3b);
+  margin: 0;
+  letter-spacing: -0.48px;
+}
+
+.cycle-progress__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cycle-progress__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 8px;
+  border-radius: var(--cycle-progress-chip-radius, 24px);
+  background: var(--cycle-progress-chip-bg, #d8ebe8);
+  border: 1px solid var(--cycle-progress-chip-border, #d8ebe8);
+  color: var(--cycle-progress-chip-color, #4a4a4a);
+  font-size: var(--cycle-progress-chip-size, 13px);
+  line-height: 1.4;
+}
+
+.cycle-progress__chip-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.cycle-progress__chip-icon-image {
+  width: 1.1em;
+  height: 1.1em;
+  object-fit: contain;
+  display: block;
+}
+
+.cycle-progress__stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 56px 24px;
+  padding-top: 40px;
+}
+
+.cycle-progress__stats-heading {
+  color: var(--cycle-progress-stats-heading-color, var(--cycle-progress-stat-text-color, #7a7a7a));
+  font-size: var(--cycle-progress-stats-heading-size, 13px);
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 8px;
+  letter-spacing: -0.8px;
+  font-family: var(--font-heading-family);
+  margin-top: 56px;
+}
+
+.cycle-progress__stat-value {
+  color: var(--cycle-progress-stat-value-color, #a9cfc9);
+  font-size: var(--cycle-progress-stat-value-size, 24px);
+  font-weight: 600;
+  line-height: 1.1;
+  font-family: var(--font-heading-family);
+}
+
+.cycle-progress__stat-text {
+  color: var(--cycle-progress-stat-text-color, #7a7a7a);
+  font-size: var(--cycle-progress-stat-text-size, 13px);
+  line-height: 1.4;
+}
+
+.cycle-progress__footnote {
+  color: var(--cycle-progress-note-color, #7a7a7a);
+  font-size: var(--cycle-progress-note-size, 12px);
+  line-height: 1.5;
+  padding-inline: 43px 72px;
+}
+
+.cycle-progress__footnote p {
+  margin: 0;
+  display: inline;
+}
+
+.cycle-progress__footnote-link {
+  color: var(--cycle-progress-note-link-color, #d13a2f);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+.cycle-progress__media {
+  grid-area: media;
+  margin-inline: -1.5rem;
+}
+
+.cycle-progress__media-inner {
+  background: var(--cycle-progress-image-bg, #f1f1f1);
+  border-top-left-radius: var(--cycle-progress-image-radius, 32px);
+}
+
+.cycle-progress__media-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cycle-progress__media-image--placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+}
+
+@media screen and (max-width: 989px) {
+  .cycle-progress__grid {
+    grid-template-areas:
+      'media'
+      'card';
+  }
+
+  .cycle-progress__card-wrap {
+    margin-top: calc(var(--cycle-progress-card-overlap-mobile, 0px) * -1);
+    width: 100%;
+    grid-area: card;
+    gap: 16px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .cycle-progress__grid {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .cycle-progress__media {
+    grid-area: media;
+    margin-inline: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .cycle-progress__inner {
+    padding-block: var(--cycle-progress-padding-top-mobile) var(--cycle-progress-padding-bottom-mobile)
+  }
+
+  .cycle-progress__card {
+    padding: var(--cycle-progress-card-padding-mobile, 24px);
+    gap: 32px;
+  }
+
+  .cycle-progress__tabs {
+    width: 100%;
+    gap: 0;
+  }
+
+  .cycle-progress__tab {
+    font-size: var(--cycle-progress-tab-size-mobile, 12px);
+    padding: 8px;
+  }
+
+  .cycle-progress__track-indicator {
+    width: var(--cycle-progress-indicator-size-mobile, 32px);
+    height: var(--cycle-progress-indicator-size-mobile, 32px);
+  }
+
+  .cycle-progress__panel-title {
+    font-size: var(--cycle-progress-heading-size-mobile, 24px);
+  }
+
+  .cycle-progress__chip {
+    font-size: var(--cycle-progress-chip-size-mobile, 12px);
+  }
+
+  .cycle-progress__stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 24px;
+    padding-top: 16px;
+  }
+
+  .cycle-progress__stats-heading {
+    font-size: var(--cycle-progress-stats-heading-size-mobile, 12px);
+    margin-top: 32px;
+  }
+
+  .cycle-progress__stat-value {
+    font-size: var(--cycle-progress-stat-value-size-mobile, 22px);
+  }
+
+  .cycle-progress__stat-text {
+    font-size: var(--cycle-progress-stat-text-size-mobile, 12px);
+  }
+
+  .cycle-progress__footnote {
+    font-size: var(--cycle-progress-note-size-mobile, 12px);
+    text-align: center;
+    padding-inline: 0;
+    padding-top: 20px;
+  }
+
+  .cycle-progress__footnote p {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .cycle-progress__tab {
+    padding: 8px 4px;
+  }
+}

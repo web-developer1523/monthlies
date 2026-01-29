@@ -1,0 +1,110 @@
+.custom-hero-banner {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border-radius: 0 120px 0 0;
+}
+
+.custom-hero-banner__media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.custom-hero-banner__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+
+.custom-hero-banner__container {
+  display: flex;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.custom-hero-banner__content {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.custom-hero-banner__title {
+  font-weight: 600;
+  font-size: clamp(19px,5vw,40px);
+  line-height: normal;
+  letter-spacing: -1px;
+  vertical-align: middle;
+  margin: 25px 0 0 0;
+  color: var(--text-color);
+}
+
+.custom-hero-banner__reviews {
+  line-height: 0;
+  max-width: 410px;
+}
+
+.custom-hero-banner__reviews-img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.custom-hero-banner__button {
+  display: inline-block;
+  font-weight: 600;
+  font-size: clamp(14px,3vw,16px);
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 32px;
+  background-color: var(--button-background);
+  color: var(--button-color);
+  border-radius: var(--button-radius);
+  padding: 10px 36px;
+  text-decoration: none;
+  transition: background-color .3s ease;
+}
+
+.custom-hero-banner__button:hover {
+  background-color: #982d27;
+}
+
+@media screen and (min-width: 1439px) {
+  .custom-hero-banner__container {
+      padding-left: 163px;
+      padding-right: 163px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .custom-hero-banner {
+    border-radius: 0 60px 0 0;
+  }
+  .custom-hero-banner__button {
+      padding: 10px 16px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .custom-hero-banner__content {
+      max-width: 270px;
+  }
+  .custom-hero-banner__title {
+      max-width: 248px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .custom-hero-banner__title {
+      max-width: 175px;
+  }
+}

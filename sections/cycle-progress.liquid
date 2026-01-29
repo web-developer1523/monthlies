@@ -1,0 +1,1271 @@
+{{ 'section-cycle-progress.css' | asset_url | stylesheet_tag }}
+
+{%- capture section_style -%}
+  --cycle-progress-padding-top: {{ section.settings.padding_top }}px;
+  --cycle-progress-padding-bottom: {{ section.settings.padding_bottom }}px;
+  --cycle-progress-padding-top-mobile: {{ section.settings.padding_top_mobile }}px;
+  --cycle-progress-padding-bottom-mobile: {{ section.settings.padding_bottom_mobile }}px;
+  --cycle-progress-bg: {{ section.settings.background_color }};
+  --cycle-progress-card-bg: {{ section.settings.card_background }};
+  --cycle-progress-card-radius: {{ section.settings.card_radius }}px;
+  --cycle-progress-card-padding: {{ section.settings.card_padding }}px;
+  --cycle-progress-card-padding-mobile: {{ section.settings.card_padding_mobile }}px;
+  --cycle-progress-card-overlap-mobile: {{ section.settings.card_overlap_mobile }}px;
+  --cycle-progress-tabs-bg: {{ section.settings.tabs_bg }};
+  --cycle-progress-tabs-track: {{ section.settings.tabs_track }};
+  --cycle-progress-tabs-fill: {{ section.settings.tabs_fill }};
+  --cycle-progress-tab-text: {{ section.settings.tab_text_color }};
+  --cycle-progress-tab-active-text: {{ section.settings.tab_active_text_color }};
+  --cycle-progress-tab-size: {{ section.settings.tab_text_size }}px;
+  --cycle-progress-tab-size-mobile: {{ section.settings.tab_text_size_mobile }}px;
+  --cycle-progress-indicator-bg: {{ section.settings.indicator_bg }};
+  --cycle-progress-indicator-color: {{ section.settings.indicator_color }};
+  --cycle-progress-indicator-size: {{ section.settings.indicator_size }}px;
+  --cycle-progress-indicator-size-mobile: {{ section.settings.indicator_size_mobile }}px;
+  --cycle-progress-heading-color: {{ section.settings.heading_color }};
+  --cycle-progress-heading-size: {{ section.settings.heading_size }}px;
+  --cycle-progress-heading-size-mobile: {{ section.settings.heading_size_mobile }}px;
+  --cycle-progress-chip-bg: {{ section.settings.chip_bg }};
+  --cycle-progress-chip-color: {{ section.settings.chip_color }};
+  --cycle-progress-chip-border: {{ section.settings.chip_border }};
+  --cycle-progress-chip-radius: {{ section.settings.chip_radius }}px;
+  --cycle-progress-chip-size: {{ section.settings.chip_text_size }}px;
+  --cycle-progress-chip-size-mobile: {{ section.settings.chip_text_size_mobile }}px;
+  --cycle-progress-stat-value-color: {{ section.settings.stat_value_color }};
+  --cycle-progress-stat-text-color: {{ section.settings.stat_text_color }};
+  --cycle-progress-stat-value-size: {{ section.settings.stat_value_size }}px;
+  --cycle-progress-stat-value-size-mobile: {{ section.settings.stat_value_size_mobile }}px;
+  --cycle-progress-stat-text-size: {{ section.settings.stat_text_size }}px;
+  --cycle-progress-stat-text-size-mobile: {{ section.settings.stat_text_size_mobile }}px;
+  --cycle-progress-note-color: {{ section.settings.note_text_color }};
+  --cycle-progress-note-link-color: {{ section.settings.note_link_color }};
+  --cycle-progress-note-size: {{ section.settings.note_text_size }}px;
+  --cycle-progress-note-size-mobile: {{ section.settings.note_text_size_mobile }}px;
+  --cycle-progress-image-radius: {{ section.settings.image_radius }}px;
+  --cycle-progress-image-bg: {{ section.settings.image_background }};
+{%- endcapture -%}
+
+<cycle-progress-section
+  class="cycle-progress section-{{ section.id }}--padding"
+  style="{{ section_style | strip_newlines }}"
+  data-cycle-progress
+  data-default-index="{{ section.settings.default_tab | minus: 1 }}"
+>
+  <div class="cycle-progress__inner page-width">
+    <div class="cycle-progress__grid">
+      <div class="cycle-progress__card-wrap">
+        <div class="cycle-progress__card">
+          {%- assign tabs_label = section.settings.tabs_label | strip -%}
+          {%- if tabs_label == blank -%}
+            {%- assign tabs_label = 'Tabs' -%}
+          {%- endif -%}
+          <div
+            class="cycle-progress__tabs"
+            role="tablist"
+            aria-label="{{ tabs_label | escape }}"
+          >
+            <div class="cycle-progress__track" aria-hidden="true">
+              <span class="cycle-progress__track-fill">
+                {{ tabs_label | escape }}
+              </span>
+              {%- assign first_indicator = 1 -%}
+              {%- if section.blocks.size > 0 -%}
+                {%- assign first_indicator = section.blocks.first.settings.tab_indicator | default: 1 -%}
+              {%- endif -%}
+              <span class="cycle-progress__track-indicator" data-cycle-indicator>
+                {{ first_indicator | escape }}
+              </span>
+            </div>
+            <div class="cycle-progress__tab-list">
+              {%- for block in section.blocks -%}
+                {%- assign is_active = forloop.first -%}
+                {%- assign indicator_value = block.settings.tab_indicator | default: forloop.index -%}
+                {%- assign tab_label = block.settings.tab_label | strip -%}
+                {%- if tab_label == blank -%}
+                  {%- assign tab_label = 'Tab ' | append: forloop.index -%}
+                {%- endif -%}
+                {%- assign tab_id = 'CycleProgressTab-' | append: section.id | append: '-' | append: forloop.index0 -%}
+                {%- assign panel_id = 'CycleProgressPanel-' | append: section.id | append: '-' | append: forloop.index0 -%}
+                <button
+                  class="cycle-progress__tab{% if is_active %} is-active{% endif %}"
+                  type="button"
+                  id="{{ tab_id }}"
+                  role="tab"
+                  aria-selected="{% if is_active %}true{% else %}false{% endif %}"
+                  aria-controls="{{ panel_id }}"
+                  data-cycle-tab="{{ forloop.index0 }}"
+                  data-indicator="{{ indicator_value | escape }}"
+                >
+                  <span class="cycle-progress__tab-label">{{ tab_label | escape }}</span>
+                </button>
+              {%- endfor -%}
+            </div>
+          </div>
+
+          <div class="cycle-progress__panels">
+            {%- for block in section.blocks -%}
+              {%- assign is_active = forloop.first -%}
+              {%- assign tab_id = 'CycleProgressTab-' | append: section.id | append: '-' | append: forloop.index0 -%}
+              {%- assign panel_id = 'CycleProgressPanel-' | append: section.id | append: '-' | append: forloop.index0 -%}
+              {%- capture panel_style -%}
+                {%- if block.settings.chip_bg != blank -%}--cycle-progress-chip-bg: {{ block.settings.chip_bg }};{%- endif -%}
+                {%- if block.settings.chip_color != blank -%}--cycle-progress-chip-color: {{ block.settings.chip_color }};{%- endif -%}
+                {%- if block.settings.chip_border != blank -%}--cycle-progress-chip-border: {{ block.settings.chip_border }};{%- endif -%}
+                {%- if block.settings.stat_value_color != blank -%}--cycle-progress-stat-value-color: {{ block.settings.stat_value_color }};{%- endif -%}
+                {%- if block.settings.stat_text_color != blank -%}--cycle-progress-stat-text-color: {{ block.settings.stat_text_color }};{%- endif -%}
+                {%- if block.settings.stats_heading_color != blank -%}--cycle-progress-stats-heading-color: {{ block.settings.stats_heading_color }};{%- endif -%}
+                {%- if block.settings.stats_heading_size != blank -%}--cycle-progress-stats-heading-size: {{ block.settings.stats_heading_size }}px;{%- endif -%}
+                {%- if block.settings.stats_heading_size_mobile != blank -%}--cycle-progress-stats-heading-size-mobile: {{ block.settings.stats_heading_size_mobile }}px;{%- endif -%}
+              {%- endcapture -%}
+              {%- assign panel_style = panel_style | strip_newlines | strip -%}
+              <div
+                class="cycle-progress__panel{% if is_active %} is-active{% endif %}"
+                role="tabpanel"
+                data-cycle-panel="{{ forloop.index0 }}"
+                id="{{ panel_id }}"
+                aria-labelledby="{{ tab_id }}"
+                {% unless is_active %}hidden{% endunless %}
+                {% if panel_style != blank %}style="{{ panel_style }}"{% endif %}
+                {{ block.shopify_attributes }}
+              >
+                {%- assign heading_icon = block.settings.heading_icon -%}
+                {%- assign heading_text = block.settings.heading_text | strip -%}
+                {%- if heading_icon != blank or heading_text != blank -%}
+                  <div class="cycle-progress__panel-heading">
+                    {%- if heading_icon != blank -%}
+                      {{
+                        heading_icon
+                        | image_url: width: 96
+                        | image_tag:
+                          class: 'cycle-progress__panel-icon',
+                          loading: 'lazy',
+                          sizes: '32px',
+                          widths: '32, 48, 64, 96',
+                          alt: heading_icon.alt
+                      }}
+                    {%- endif -%}
+                    {%- if heading_text != blank -%}
+                      <h3 class="cycle-progress__panel-title">
+                        {{ heading_text | escape }}
+                      </h3>
+                    {%- endif -%}
+                  </div>
+                {%- endif -%}
+
+                {%- capture chips_markup -%}
+                  {%- for i in (1..10) -%}
+                    {%- assign chip_text_key = 'chip_' | append: i | append: '_text' -%}
+                    {%- assign chip_icon_key = 'chip_' | append: i | append: '_icon' -%}
+                    {%- assign chip_custom_key = 'chip_' | append: i | append: '_use_custom_colors' -%}
+                    {%- assign chip_bg_key = 'chip_' | append: i | append: '_bg_color' -%}
+                    {%- assign chip_text_color_key = 'chip_' | append: i | append: '_text_color' -%}
+                    {%- assign chip_border_color_key = 'chip_' | append: i | append: '_border_color' -%}
+                    {%- assign chip_text = block.settings[chip_text_key] | strip -%}
+                    {%- assign chip_icon = block.settings[chip_icon_key] -%}
+                    {%- assign chip_use_custom = block.settings[chip_custom_key] -%}
+                    {%- if chip_text != blank -%}
+                      {%- capture chip_style -%}
+                        {%- if chip_use_custom and block.settings[chip_bg_key] != blank -%}
+                          --cycle-progress-chip-bg: {{ block.settings[chip_bg_key] }};
+                        {%- endif -%}
+                        {%- if chip_use_custom and block.settings[chip_text_color_key] != blank -%}
+                          --cycle-progress-chip-color: {{ block.settings[chip_text_color_key] }};
+                        {%- endif -%}
+                        {%- if chip_use_custom and block.settings[chip_border_color_key] != blank -%}
+                          --cycle-progress-chip-border: {{ block.settings[chip_border_color_key] }};
+                        {%- endif -%}
+                      {%- endcapture -%}
+                      {%- assign chip_style = chip_style | strip_newlines | strip -%}
+                      <span
+                        class="cycle-progress__chip{% if chip_use_custom %} is-custom{% endif %}"
+                        {% if chip_style != blank %}style="{{ chip_style }}"{% endif %}
+                      >
+                        {%- if chip_icon != blank -%}
+                          <span class="cycle-progress__chip-icon">
+                            {{
+                              chip_icon
+                              | image_url: width: 32
+                              | image_tag:
+                                class: 'cycle-progress__chip-icon-image',
+                                loading: 'lazy',
+                                sizes: '16px',
+                                widths: '16, 24, 32',
+                                alt: chip_icon.alt
+                            }}
+                          </span>
+                        {%- endif -%}
+                        <span class="cycle-progress__chip-text">{{ chip_text | escape }}</span>
+                      </span>
+                    {%- endif -%}
+                  {%- endfor -%}
+                {%- endcapture -%}
+                {%- if chips_markup != blank -%}
+                  <div class="cycle-progress__chips">
+                    {{ chips_markup }}
+                  </div>
+                {%- endif -%}
+
+                {%- assign stats_heading = block.settings.stats_heading_text | strip -%}
+                {%- capture stats_markup -%}
+                  {%- for i in (1..10) -%}
+                    {%- assign stat_value_key = 'stat_' | append: i | append: '_value' -%}
+                    {%- assign stat_text_key = 'stat_' | append: i | append: '_text' -%}
+                    {%- assign stat_value = block.settings[stat_value_key] | strip -%}
+                    {%- assign stat_text = block.settings[stat_text_key] | strip -%}
+                    {%- if stat_value != blank or stat_text != blank -%}
+                      <div class="cycle-progress__stat">
+                        {%- if stat_value != blank -%}
+                          <div class="cycle-progress__stat-value">{{ stat_value | escape }}</div>
+                        {%- endif -%}
+                        {%- if stat_text != blank -%}
+                          <div class="cycle-progress__stat-text">{{ stat_text | escape }}</div>
+                        {%- endif -%}
+                      </div>
+                    {%- endif -%}
+                  {%- endfor -%}
+                {%- endcapture -%}
+                {%- assign stats_markup = stats_markup | strip -%}
+                {%- if stats_heading != blank or stats_markup != blank -%}
+                  {%- if stats_heading != blank -%}
+                    <div class="cycle-progress__stats-heading">{{ stats_heading | escape }}</div>
+                  {%- endif -%}
+                  {%- if stats_markup != blank -%}
+                    <div class="cycle-progress__stats">
+                      {{ stats_markup }}
+                    </div>
+                  {%- endif -%}
+                {%- endif -%}
+              </div>
+            {%- endfor -%}
+          </div>
+        </div>
+
+        {%- if section.settings.note_text != blank or section.settings.note_link_label != blank -%}
+          <div class="cycle-progress__footnote">
+            {%- if section.settings.note_text != blank -%}
+              {{ section.settings.note_text }}
+            {%- endif -%}
+            {%- if section.settings.note_link_label != blank and section.settings.note_link_url != blank -%}
+              <a class="cycle-progress__footnote-link" href="{{ section.settings.note_link_url }}">
+                {{ section.settings.note_link_label | escape }}
+              </a>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      </div>
+
+      <div class="cycle-progress__media">
+        <div class="cycle-progress__media-inner">
+          {%- if section.settings.image != blank or section.settings.image_mobile != blank -%}
+            <picture>
+              {%- if section.settings.image_mobile != blank -%}
+                <source
+                  media="(max-width: 749px)"
+                  srcset="{{ section.settings.image_mobile | image_url: width: 900 }}"
+                >
+              {%- endif -%}
+              {%- if section.settings.image != blank -%}
+                {{
+                  section.settings.image
+                  | image_url: width: 1600
+                  | image_tag:
+                    class: 'cycle-progress__media-image',
+                    loading: 'lazy',
+                    sizes: '(min-width: 990px) 50vw, 100vw',
+                    widths: '540, 720, 900, 1200, 1600',
+                    alt: section.settings.image.alt
+                }}
+              {%- else -%}
+                {{
+                  section.settings.image_mobile
+                  | image_url: width: 1200
+                  | image_tag:
+                    class: 'cycle-progress__media-image',
+                    loading: 'lazy',
+                    sizes: '100vw',
+                    widths: '540, 720, 900, 1200',
+                    alt: section.settings.image_mobile.alt
+                }}
+              {%- endif -%}
+            </picture>
+          {%- else -%}
+            {{ 'image' | placeholder_svg_tag: 'cycle-progress__media-image cycle-progress__media-image--placeholder' }}
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</cycle-progress-section>
+
+<script src="{{ 'section-cycle-progress.js' | asset_url }}" defer></script>
+
+{% schema %}
+{
+  "name": "Section cycle progress",
+  "tag": "section",
+  "class": "cycle-progress-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding top",
+      "min": 0,
+      "max": 160,
+      "step": 2,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding bottom",
+      "min": 0,
+      "max": 160,
+      "step": 2,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding top (Mobile)",
+      "min": 0,
+      "max": 160,
+      "step": 2,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding bottom (Mobile)",
+      "min": 0,
+      "max": 160,
+      "step": 2,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "header",
+      "content": "Background"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Section background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Card"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Card background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "card_radius",
+      "label": "Card radius",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "card_padding",
+      "label": "Card padding (Desktop)",
+      "min": 16,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "card_padding_mobile",
+      "label": "Card padding (Mobile)",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "card_overlap_mobile",
+      "label": "Card overlap on mobile",
+      "min": 0,
+      "max": 140,
+      "step": 4,
+      "unit": "px",
+      "default": 64
+    },
+    {
+      "type": "header",
+      "content": "Tabs"
+    },
+    {
+      "type": "text",
+      "id": "tabs_label",
+      "label": "Tabs label (Accessibility)",
+      "default": "Zyklus Fortschritt"
+    },
+    {
+      "type": "range",
+      "id": "default_tab",
+      "label": "Default tab index",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "default": 1
+    },
+    {
+      "type": "color",
+      "id": "tabs_bg",
+      "label": "Tabs background",
+      "default": "#e6f1ef"
+    },
+    {
+      "type": "color",
+      "id": "tabs_track",
+      "label": "Tabs track",
+      "default": "#dbe7e5"
+    },
+    {
+      "type": "color",
+      "id": "tabs_fill",
+      "label": "Tabs fill",
+      "default": "#b9d6d3"
+    },
+    {
+      "type": "color",
+      "id": "tab_text_color",
+      "label": "Tab text color",
+      "default": "#5b5b5b"
+    },
+    {
+      "type": "color",
+      "id": "tab_active_text_color",
+      "label": "Active tab text color",
+      "default": "#3b3b3b"
+    },
+    {
+      "type": "range",
+      "id": "tab_text_size",
+      "label": "Tab text size (Desktop)",
+      "min": 10,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "default": 13
+    },
+    {
+      "type": "range",
+      "id": "tab_text_size_mobile",
+      "label": "Tab text size (Mobile)",
+      "min": 10,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "indicator_bg",
+      "label": "Indicator background",
+      "default": "#a9cfc9"
+    },
+    {
+      "type": "color",
+      "id": "indicator_color",
+      "label": "Indicator color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "indicator_size",
+      "label": "Indicator size (Desktop)",
+      "min": 28,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "indicator_size_mobile",
+      "label": "Indicator size (Mobile)",
+      "min": 24,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "header",
+      "content": "Heading"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#3b3b3b"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size (Desktop)",
+      "min": 18,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 26
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "label": "Heading size (Mobile)",
+      "min": 18,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "header",
+      "content": "Chips"
+    },
+    {
+      "type": "color",
+      "id": "chip_bg",
+      "label": "Chip background",
+      "default": "#d8ebe8"
+    },
+    {
+      "type": "color",
+      "id": "chip_color",
+      "label": "Chip text color",
+      "default": "#4a4a4a"
+    },
+    {
+      "type": "color",
+      "id": "chip_border",
+      "label": "Chip border",
+      "default": "#d8ebe8"
+    },
+    {
+      "type": "range",
+      "id": "chip_radius",
+      "label": "Chip radius",
+      "min": 10,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "chip_text_size",
+      "label": "Chip text size (Desktop)",
+      "min": 10,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "default": 13
+    },
+    {
+      "type": "range",
+      "id": "chip_text_size_mobile",
+      "label": "Chip text size (Mobile)",
+      "min": 10,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Stats"
+    },
+    {
+      "type": "color",
+      "id": "stat_value_color",
+      "label": "Value color",
+      "default": "#a9cfc9"
+    },
+    {
+      "type": "color",
+      "id": "stat_text_color",
+      "label": "Text color",
+      "default": "#7a7a7a"
+    },
+    {
+      "type": "range",
+      "id": "stat_value_size",
+      "label": "Value size (Desktop)",
+      "min": 16,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "stat_value_size_mobile",
+      "label": "Value size (Mobile)",
+      "min": 14,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "default": 22
+    },
+    {
+      "type": "range",
+      "id": "stat_text_size",
+      "label": "Text size (Desktop)",
+      "min": 10,
+      "max": 70,
+      "step": 1,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "stat_text_size_mobile",
+      "label": "Text size (Mobile)",
+      "min": 10,
+      "max": 70,
+      "step": 1,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "header",
+      "content": "Footnote"
+    },
+    {
+      "type": "richtext",
+      "id": "note_text",
+      "label": "Footnote text",
+      "default": "<p>*Diese Aussagen basieren auf wissenschaftlichen Untersuchungen zur Menstruationsgesundheit, zur Wirksamkeit der Inhaltsstoffe und auf von der EFSA genehmigten oder noch nicht genehmigten Angaben.</p>"
+    },
+    {
+      "type": "text",
+      "id": "note_link_label",
+      "label": "Footnote link label",
+      "default": "mehr über diese Studie"
+    },
+    {
+      "type": "url",
+      "id": "note_link_url",
+      "label": "Footnote link"
+    },
+    {
+      "type": "color",
+      "id": "note_text_color",
+      "label": "Footnote text color",
+      "default": "#7a7a7a"
+    },
+    {
+      "type": "color",
+      "id": "note_link_color",
+      "label": "Footnote link color",
+      "default": "#d13a2f"
+    },
+    {
+      "type": "range",
+      "id": "note_text_size",
+      "label": "Footnote text size (Desktop)",
+      "min": 10,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "note_text_size_mobile",
+      "label": "Footnote text size (Mobile)",
+      "min": 10,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image (Desktop)"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Image (Mobile)"
+    },
+    {
+      "type": "color",
+      "id": "image_background",
+      "label": "Image background",
+      "default": "#f1f1f1"
+    },
+    {
+      "type": "range",
+      "id": "image_radius",
+      "label": "Image radius",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cycle_tab",
+      "name": "Cycle tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_label",
+          "label": "Tab label",
+          "default": "Zyklus"
+        },
+        {
+          "type": "text",
+          "id": "tab_indicator",
+          "label": "Indicator text",
+          "default": "1"
+        },
+        {
+          "type": "text",
+          "id": "heading_text",
+          "label": "Heading",
+          "default": "Dein Energieniveau steigt"
+        },
+        {
+          "type": "image_picker",
+          "id": "heading_icon",
+          "label": "Heading icon"
+        },
+        {
+          "type": "header",
+          "content": "Chips"
+        },
+        {
+          "type": "color",
+          "id": "chip_bg",
+          "label": "Chip background"
+        },
+        {
+          "type": "color",
+          "id": "chip_color",
+          "label": "Chip text color"
+        },
+        {
+          "type": "color",
+          "id": "chip_border",
+          "label": "Chip border"
+        },
+        {
+          "type": "text",
+          "id": "chip_1_text",
+          "label": "Chip 1 text",
+          "default": "Weniger Blähungen"
+        },
+        {
+          "type": "image_picker",
+          "id": "chip_1_icon",
+          "label": "Chip 1 icon"
+        },
+        {
+          "type": "checkbox",
+          "id": "chip_1_use_custom_colors",
+          "label": "Chip 1 custom colors",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "chip_1_bg_color",
+          "label": "Chip 1 background"
+        },
+        {
+          "type": "color",
+          "id": "chip_1_text_color",
+          "label": "Chip 1 text color"
+        },
+        {
+          "type": "color",
+          "id": "chip_1_border_color",
+          "label": "Chip 1 border color"
+        },
+        {
+          "type": "text",
+          "id": "chip_2_text",
+          "label": "Chip 2 text",
+          "default": "Nährstoffaufnahme"
+        },
+        {
+          "type": "image_picker",
+          "id": "chip_2_icon",
+          "label": "Chip 2 icon"
+        },
+        {
+          "type": "checkbox",
+          "id": "chip_2_use_custom_colors",
+          "label": "Chip 2 custom colors",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "chip_2_bg_color",
+          "label": "Chip 2 background"
+        },
+        {
+          "type": "color",
+          "id": "chip_2_text_color",
+          "label": "Chip 2 text color"
+        },
+        {
+          "type": "color",
+          "id": "chip_2_border_color",
+          "label": "Chip 2 border color"
+        },
+        {
+          "type": "text",
+          "id": "chip_3_text",
+          "label": "Chip 3 text",
+          "default": "Energieaufbau"
+        },
+        {
+          "type": "image_picker",
+          "id": "chip_3_icon",
+          "label": "Chip 3 icon"
+        },
+        {
+          "type": "checkbox",
+          "id": "chip_3_use_custom_colors",
+          "label": "Chip 3 custom colors",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "chip_3_bg_color",
+          "label": "Chip 3 background"
+        },
+        {
+          "type": "color",
+          "id": "chip_3_text_color",
+          "label": "Chip 3 text color"
+        },
+        {
+          "type": "color",
+          "id": "chip_3_border_color",
+          "label": "Chip 3 border color"
+        },
+        {
+          "type": "text",
+          "id": "chip_4_text",
+          "label": "Chip 4 text",
+          "default": "Mehr Energie"
+        },
+        {
+          "type": "image_picker",
+          "id": "chip_4_icon",
+          "label": "Chip 4 icon"
+        },
+        {
+          "type": "checkbox",
+          "id": "chip_4_use_custom_colors",
+          "label": "Chip 4 custom colors",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "chip_4_bg_color",
+          "label": "Chip 4 background"
+        },
+        {
+          "type": "color",
+          "id": "chip_4_text_color",
+          "label": "Chip 4 text color"
+        },
+        {
+          "type": "color",
+          "id": "chip_4_border_color",
+          "label": "Chip 4 border color"
+        },
+        {
+          "type": "text",
+          "id": "chip_5_text",
+          "label": "Chip 5 text",
+          "default": "Besserer Schlaf"
+        },
+        {
+          "type": "image_picker",
+          "id": "chip_5_icon",
+          "label": "Chip 5 icon"
+        },
+        {
+          "type": "checkbox",
+          "id": "chip_5_use_custom_colors",
+          "label": "Chip 5 custom colors",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "chip_5_bg_color",
+          "label": "Chip 5 background"
+        },
+        {
+          "type": "color",
+          "id": "chip_5_text_color",
+          "label": "Chip 5 text color"
+        },
+        {
+          "type": "color",
+          "id": "chip_5_border_color",
+          "label": "Chip 5 border color"
+        },
+        {
+          "type": "text",
+          "id": "chip_6_text",
+          "label": "Chip 6 text"
+        },
+        {
+          "type": "image_picker",
+          "id": "chip_6_icon",
+          "label": "Chip 6 icon"
+        },
+        {
+          "type": "checkbox",
+          "id": "chip_6_use_custom_colors",
+          "label": "Chip 6 custom colors",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "chip_6_bg_color",
+          "label": "Chip 6 background"
+        },
+        {
+          "type": "color",
+          "id": "chip_6_text_color",
+          "label": "Chip 6 text color"
+        },
+        {
+          "type": "color",
+          "id": "chip_6_border_color",
+          "label": "Chip 6 border color"
+        },
+        {
+          "type": "text",
+          "id": "chip_7_text",
+          "label": "Chip 7 text"
+        },
+        {
+          "type": "image_picker",
+          "id": "chip_7_icon",
+          "label": "Chip 7 icon"
+        },
+        {
+          "type": "checkbox",
+          "id": "chip_7_use_custom_colors",
+          "label": "Chip 7 custom colors",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "chip_7_bg_color",
+          "label": "Chip 7 background"
+        },
+        {
+          "type": "color",
+          "id": "chip_7_text_color",
+          "label": "Chip 7 text color"
+        },
+        {
+          "type": "color",
+          "id": "chip_7_border_color",
+          "label": "Chip 7 border color"
+        },
+        {
+          "type": "text",
+          "id": "chip_8_text",
+          "label": "Chip 8 text"
+        },
+        {
+          "type": "image_picker",
+          "id": "chip_8_icon",
+          "label": "Chip 8 icon"
+        },
+        {
+          "type": "checkbox",
+          "id": "chip_8_use_custom_colors",
+          "label": "Chip 8 custom colors",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "chip_8_bg_color",
+          "label": "Chip 8 background"
+        },
+        {
+          "type": "color",
+          "id": "chip_8_text_color",
+          "label": "Chip 8 text color"
+        },
+        {
+          "type": "color",
+          "id": "chip_8_border_color",
+          "label": "Chip 8 border color"
+        },
+        {
+          "type": "text",
+          "id": "chip_9_text",
+          "label": "Chip 9 text"
+        },
+        {
+          "type": "image_picker",
+          "id": "chip_9_icon",
+          "label": "Chip 9 icon"
+        },
+        {
+          "type": "checkbox",
+          "id": "chip_9_use_custom_colors",
+          "label": "Chip 9 custom colors",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "chip_9_bg_color",
+          "label": "Chip 9 background"
+        },
+        {
+          "type": "color",
+          "id": "chip_9_text_color",
+          "label": "Chip 9 text color"
+        },
+        {
+          "type": "color",
+          "id": "chip_9_border_color",
+          "label": "Chip 9 border color"
+        },
+        {
+          "type": "text",
+          "id": "chip_10_text",
+          "label": "Chip 10 text"
+        },
+        {
+          "type": "image_picker",
+          "id": "chip_10_icon",
+          "label": "Chip 10 icon"
+        },
+        {
+          "type": "checkbox",
+          "id": "chip_10_use_custom_colors",
+          "label": "Chip 10 custom colors",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "chip_10_bg_color",
+          "label": "Chip 10 background"
+        },
+        {
+          "type": "color",
+          "id": "chip_10_text_color",
+          "label": "Chip 10 text color"
+        },
+        {
+          "type": "color",
+          "id": "chip_10_border_color",
+          "label": "Chip 10 border color"
+        },
+        {
+          "type": "header",
+          "content": "Stats"
+        },
+        {
+          "type": "text",
+          "id": "stats_heading_text",
+          "label": "Stats heading"
+        },
+        {
+          "type": "color",
+          "id": "stats_heading_color",
+          "label": "Stats heading color"
+        },
+        {
+          "type": "range",
+          "id": "stats_heading_size",
+          "label": "Stats heading size (Desktop)",
+          "min": 10,
+          "max": 60,
+          "step": 1,
+          "unit": "px",
+          "default": 40
+        },
+        {
+          "type": "range",
+          "id": "stats_heading_size_mobile",
+          "label": "Stats heading size (Mobile)",
+          "min": 10,
+          "max": 60,
+          "step": 1,
+          "unit": "px",
+          "default": 32
+        },
+        {
+          "type": "color",
+          "id": "stat_value_color",
+          "label": "Value color"
+        },
+        {
+          "type": "color",
+          "id": "stat_text_color",
+          "label": "Text color"
+        },
+        {
+          "type": "text",
+          "id": "stat_1_value",
+          "label": "Stat 1 value",
+          "default": "91%"
+        },
+        {
+          "type": "text",
+          "id": "stat_1_text",
+          "label": "Stat 1 text",
+          "default": "bemerken eine erste positive Veränderung*"
+        },
+        {
+          "type": "text",
+          "id": "stat_2_value",
+          "label": "Stat 2 value",
+          "default": "84%"
+        },
+        {
+          "type": "text",
+          "id": "stat_2_text",
+          "label": "Stat 2 text",
+          "default": "berichten von weniger Regelschmerzen und -krämpfen*"
+        },
+        {
+          "type": "text",
+          "id": "stat_3_value",
+          "label": "Stat 3 value",
+          "default": "78%"
+        },
+        {
+          "type": "text",
+          "id": "stat_3_text",
+          "label": "Stat 3 text",
+          "default": "brauchen weniger Schmerzmittel*"
+        },
+        {
+          "type": "text",
+          "id": "stat_4_value",
+          "label": "Stat 4 value"
+        },
+        {
+          "type": "text",
+          "id": "stat_4_text",
+          "label": "Stat 4 text"
+        },
+        {
+          "type": "text",
+          "id": "stat_5_value",
+          "label": "Stat 5 value"
+        },
+        {
+          "type": "text",
+          "id": "stat_5_text",
+          "label": "Stat 5 text"
+        },
+        {
+          "type": "text",
+          "id": "stat_6_value",
+          "label": "Stat 6 value"
+        },
+        {
+          "type": "text",
+          "id": "stat_6_text",
+          "label": "Stat 6 text"
+        },
+        {
+          "type": "text",
+          "id": "stat_7_value",
+          "label": "Stat 7 value"
+        },
+        {
+          "type": "text",
+          "id": "stat_7_text",
+          "label": "Stat 7 text"
+        },
+        {
+          "type": "text",
+          "id": "stat_8_value",
+          "label": "Stat 8 value"
+        },
+        {
+          "type": "text",
+          "id": "stat_8_text",
+          "label": "Stat 8 text"
+        },
+        {
+          "type": "text",
+          "id": "stat_9_value",
+          "label": "Stat 9 value"
+        },
+        {
+          "type": "text",
+          "id": "stat_9_text",
+          "label": "Stat 9 text"
+        },
+        {
+          "type": "text",
+          "id": "stat_10_value",
+          "label": "Stat 10 value"
+        },
+        {
+          "type": "text",
+          "id": "stat_10_text",
+          "label": "Stat 10 text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Section cycle progress",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "cycle_tab"
+        },
+        {
+          "type": "cycle_tab"
+        },
+        {
+          "type": "cycle_tab"
+        },
+        {
+          "type": "cycle_tab"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

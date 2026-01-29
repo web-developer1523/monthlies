@@ -1,0 +1,28 @@
+{% comment %}
+  Creates slider instance by adding attributes to element using Swiper.js.
+
+  Accepts:
+  - config: {String} Adds slider configuration from local variable by {% capture slider_config %} tag. Important: Do not use any other quotes than "" in the configuration.
+  - is_mobile_only: {Boolean} Creates slider on mobile devices only. (optional)
+  - is_observable: {Boolean} Creates a slider when it appears in view. (optional)
+
+  Usage:
+  {%- render 'slider-attribute', 
+    config: 'Your settings for slider', 
+    is_mobile_only: true,
+    is_observable: true
+  -%}
+{% endcomment %}
+
+{% liquid 
+    if config == blank
+        break
+    endif
+
+    assign is_mobile_only = is_mobile_only | default: false
+    assign is_observable = is_observable | default: false
+%}
+
+{% if config != blank %}
+    data-slider-selector data-config='{{- config -}}' data-mobile="{{- is_mobile_only -}}" data-observer="{{- is_observable -}}"     
+{% endif %}
