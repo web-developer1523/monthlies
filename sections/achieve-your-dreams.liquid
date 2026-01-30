@@ -1,0 +1,874 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    --section-padding-top: {{ section.settings.padding_top }}px;
+    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+    {%- if section.settings.image != blank %}
+      --image-ratio-percent: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
+      --image-position: {{ section.settings.image_position }};
+    {% endif -%}
+    {%- if section.settings.use_custom_colors %}
+      --gradient-background: {% if section.settings.gradient_background != blank %}{{ section.settings.gradient_background }}{% else %}{{ section.settings.colors_background }}{% endif %};
+      --color-background: {{ section.settings.colors_background.red }}, {{ section.settings.colors_background.green }}, {{ section.settings.colors_background.blue }};
+      --color-foreground: {{ section.settings.colors_text.red }}, {{ section.settings.colors_text.green }}, {{ section.settings.colors_text.blue }};
+      --color-link: var(--color-foreground);
+      --color-border: var(--color-foreground);
+      --color-heading: var(--color-foreground);
+      --color-button-background: {{ section.settings.colors_button_background.red }}, {{ section.settings.colors_button_background.green }}, {{ section.settings.colors_button_background.blue }};
+      --color-button-text: {{ section.settings.colors_button_label.red }}, {{ section.settings.colors_button_label.green }}, {{ section.settings.colors_button_label.blue }};
+      --color-button-border: var(--color-button-background);
+      --color-shadow: var(--color-foreground);
+    {% endif -%}
+    --shadow-opacity: 0.3;
+  }
+  {%- if section.settings.image_mobile != blank and section.settings.mobile_image_ratio == 'adapt' %}
+    @media screen and (max-width: 749px) {
+      #shopify-section-{{ section.id }} {
+        --image-ratio-percent: {{ 1 | divided_by: section.settings.image_mobile.aspect_ratio | times: 100 }}%;
+      }
+    }
+  {% endif -%}
+{%- endstyle -%}
+
+{{ 'section-image-with-text.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign grid_class = 'image-with-text__grid'
+  if section.settings.layout == 'text_first'
+    assign grid_class = grid_class | append: ' image-with-text__grid--reverse'
+  endif
+
+  if section.settings.mobile_layout == 'text_first'
+    assign grid_class = grid_class | append: ' image-with-text__grid-mobile--reverse'
+  endif
+
+  if section.settings.mobile_layout == 'no_image'
+    assign grid_class = grid_class | append: ' image-with-text__grid-mobile--no-image'
+  endif
+
+  if section.settings.mobile_layout == 'overlap'
+    assign grid_class = grid_class | append: ' image-with-text__grid-mobile--overlap'
+  endif
+-%}
+
+<div class="{{ section.settings.custom_class }}  section--padding{% if section.settings.show_divider %} section--divider{% endif %}">
+  <div class="image-with-text{% if section.settings.use_custom_colors and section.settings.colors_background != settings.colors_background %} image-with-text--colored{% else %} image-with-text--alt{% endif %}{% if section.settings.enlarge_content %} image-with-text--enlarge{% endif %} page-width{% if section.settings.full_width %} page-width--full-width{% endif %}">
+    <div class="{{ grid_class }} grid grid--gapless grid--1-col grid--2-col-tablet">
+      <div class="grid__item desktop">
+        <use-animate data-animate="zoom-fade" class="media-wrapper">
+          <div class="image-animate media--{{ section.settings.image_ratio }} media-mobile--{{ section.settings.mobile_image_ratio }} {% if section.settings.image != blank %}media{% else %}media--placeholder{% endif %}">
+            {%- if section.settings.image != blank -%}
+              {%- capture sizes -%}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 1 }}px, (min-width: 750px) calc((100vw - 10rem) / 2), {% if section.settings.full_width %} 100vw{% else %} calc(100vw - 3rem){% endif %}{%- endcapture -%}
+              {%- liquid
+                if section.settings.image_mobile == blank
+                  echo section.settings.image | image_url: width: 1500 | image_tag: loading: 'lazy', class: 'image-fit', sizes: sizes, widths: '165, 360, 535, 750, 1100, 1500, 2000, 3000', is: 'lazy-image'
+                else
+                  echo section.settings.image_mobile | image_url: width: 3000 | image_tag: loading: 'lazy', class: 'image-fit medium-hide large-up-hide', sizes: sizes, widths: '165, 360, 535, 750, 1100, 1500, 2000, 3000', is: 'lazy-image'
+                  echo section.settings.image | image_url: width: 3000 | image_tag: loading: 'lazy', class: 'image-fit small-hide', sizes: sizes, widths: '165, 360, 535, 750, 1100, 1500, 2000, 3000', is: 'lazy-image'
+                endif
+              -%}
+            {%- else -%}
+              {{ 'image' | placeholder_svg_tag: 'placeholder' }}
+            {%- endif -%}
+          </div>
+        </use-animate>
+        <img class="small_attachment" src="{{ section.settings.attachment | img_url: '210 x 210' }}" width="" height="">
+      </div>
+      <div class="grid__item">
+        <div class="image-with-text__content {{ section.settings.text_box_position }} {{ section.settings.text_alignment }} mobile-{{ section.settings.mobile_text_alignment }}">
+          {%- for block in section.blocks -%}
+            {% case block.type %}
+              {%- when 'heading' -%}
+                <div class="top_content">
+                  <{{ block.settings.heading_tag }}
+                    class="image-with-text__heading {{ block.settings.heading_size }}"
+                    {{ block.shopify_attributes }}
+                  >
+                    {{- block.settings.heading -}}
+                  </{{ block.settings.heading_tag }}>
+                  <p class="description {{ block.settings.subheading_size }}" {{ block.shopify_attributes }}>
+                    {{ block.settings.subheading }}
+                  </p>
+
+                  <div class="grid__item_mobile mobile">
+                    <div class="image-animate">
+                      <img src="{{ block.settings.mobile_img | img_url:'' }}" width="" height="">
+                    </div>
+                    <img
+                      class="small_attachment"
+                      src="{{ block.settings.attachment_mobile | img_url: '210 x 210' }}"
+                      width=""
+                      height=""
+                    >
+                  </div>
+                </div>
+              {%- when 'subheading' -%}
+                <p
+                  class="image-with-text__subheading{% if block.settings.secondary_color %} image-with-text__subheading--colored{% endif %} {{ block.settings.subheading_size }}"
+                  {{ block.shopify_attributes }}
+                >
+                  {{ block.settings.subheading | escape }}
+                </p>
+              {%- when 'text' -%}
+                <div
+                  class="image-with-text__text{% if block.settings.secondary_color %} image-with-text__text--colored{% endif %} {{ block.settings.text_size }} rte"
+                  {{ block.shopify_attributes }}
+                >
+                  {{ block.settings.text }}
+                </div>
+              {%- when 'custom_liquid' -%}
+                <div class="image-with-text__text rte" {{ block.shopify_attributes }}>
+                  {{ block.settings.custom_liquid }}
+                </div>
+
+              {%- when 'Newsletter' -%}
+                <div class="newsletter_col" id="newsletter">
+                  <h4 class="red">{{ block.settings.newsletter_heading }}</h4>
+                  <h4>{{ block.settings.newsletter_subheading }}</h4>
+                  {% form 'customer', class: 'newsletter-form' %}
+                    <input type="hidden" name="contact[tags]" value="newsletter">
+                    <div class="newsletter-form__field-wrapper">
+                      <div class="field">
+                        <input
+                          id="NewsletterForm--{{ section.id }}"
+                          type="email"
+                          name="contact[email]"
+                          class="field__input required{% if form.errors %} invalid{% endif %}"
+                          value="{{ form.email }}"
+                          aria-required="true"
+                          autocorrect="off"
+                          autocapitalize="off"
+                          autocomplete="email"
+                          {% if form.errors %}
+                            autofocus
+                            aria-invalid="true"
+                            aria-describedby="Newsletter-error--{{ section.id }}"
+                          {% elsif form.posted_successfully? %}
+                            aria-describedby="Newsletter-success--{{ section.id }}"
+                          {% endif %}
+                          placeholder="{{ 'newsletter.label' | t }}"
+                          required
+                        >
+                        <label class="visually-hidden" for="NewsletterForm--{{ section.id }}">
+                          {{- 'newsletter.label' | t -}}
+                        </label>
+                        <button
+                          type="submit"
+                          class="button button--arrow field__button animate-arrow"
+                          name="commit"
+                          aria-label="{{ 'newsletter.button_label' | t }}"
+                        >
+                          Notify Me
+                        </button>
+                      </div>
+                      {%- if form.errors -%}
+                        <small class="form__message errors" id="Newsletter-error--{{ section.id }}">
+                          {% render 'icon', icon: 'error' %}
+                          {{ form.errors.translated_fields.email | capitalize }}
+                          {{ form.errors.messages.email }}
+                        </small>
+                      {%- endif -%}
+                    </div>
+                    {%- if form.posted_successfully? -%}
+                      <p class="form__message h3" id="Newsletter-success--{{ section.id }}" tabindex="-1" autofocus>
+                        {% render 'icon', icon: 'success' %}
+                        {{ 'newsletter.success' | t }}
+                      </p>
+                    {%- endif -%}
+                  {% endform %}
+                  <p class="short_msg">{{ block.settings.newsletter_msg }}</p>
+                </div>
+
+              {%- when 'button' -%}
+                {%- if block.settings.button_label != blank -%}
+                  {%- if block.settings.button_style_secondary -%}
+                    <a
+                      target="_blank"
+                      class="button button--cta button--{{ block.settings.button_size }}"
+                      {% if block.settings.button_link != blank %}
+                        href="{{ block.settings.button_link }}"
+                      {% else %}
+                        role="link" aria-disabled="true"
+                      {% endif %}
+                      {{ block.shopify_attributes }}
+                    >
+                      <span class="label">{{ block.settings.button_label | escape }}</span>
+                      {% render 'icon', icon: 'arrow' %}
+                    </a>
+                  {%- else -%}
+                    <a
+                      target="_blank"
+                      class="button button--{{ block.settings.button_size }}"
+                      {% if block.settings.button_link != blank %}
+                        href="{{ block.settings.button_link }}"
+                      {% else %}
+                        role="link" aria-disabled="true"
+                      {% endif %}
+                      {{ block.shopify_attributes }}
+                    >
+                      {{ block.settings.button_label | escape }}
+                    </a>
+                  {%- endif -%}
+                {%- endif -%}
+            {%- endcase -%}
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Achieve Your Dream",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+     {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom Class"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "attachment",
+      "label": "Attachment"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "options": [
+        {
+          "value": "20% 0",
+          "label": "top left"
+        },
+        {
+          "value": "top center",
+          "label": "top center"
+        },
+        {
+          "value": "80% 0",
+          "label": "top right"
+        },
+        {
+          "value": "20% 50%",
+          "label": "left"
+        },
+        {
+          "value": "center center",
+          "label": "center"
+        },
+        {
+          "value": "80% 50%",
+          "label": "right"
+        },
+        {
+          "value": "20% 100%",
+          "label": "bottom left"
+        },
+        {
+          "value": "bottom center",
+          "label": "bottom center"
+        },
+        {
+          "value": "80% 100%",
+          "label": "bottom right"
+        }
+      ],
+      "default": "center center",
+      "label": "Image focal point",
+      "info": "Used to keep the subject of your image in view."
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "options": [
+        {
+          "value": "image_first",
+          "label": "Image first"
+        },
+        {
+          "value": "text_first",
+          "label": "Image second"
+        }
+      ],
+      "default": "image_first",
+      "label": "Image first"
+    },
+    {
+      "type": "select",
+      "id": "text_box_position",
+      "options": [
+        {
+          "value": "top",
+          "label": "Top"
+        },
+        {
+          "value": "middle",
+          "label": "Middle"
+        },
+        {
+          "value": "bottom",
+          "label": "Bottom"
+        }
+      ],
+      "default": "middle",
+      "label": "Middle"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "left"
+        },
+        {
+          "value": "center",
+          "label": "center"
+        },
+        {
+          "value": "right",
+          "label": "right"
+        }
+      ],
+      "default": "left",
+      "label": "left"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "label": "Adapat to image",
+          "value": "adapt"
+        },
+        {
+          "label": "400",
+          "value": "400px"
+        },
+        {
+          "label": "450",
+          "value": "450px"
+        },
+        {
+          "label": "500",
+          "value": "500px"
+        },
+        {
+          "label": "550",
+          "value": "550px"
+        },
+        {
+          "label": "600",
+          "value": "600px"
+        },
+        {
+          "label": "650",
+          "value": "650px"
+        },
+        {
+          "label": "700",
+          "value": "700px"
+        },
+        {
+          "label": "750",
+          "value": "750px"
+        },
+        {
+          "label": "100",
+          "value": "100vh"
+        }
+      ],
+      "default": "650px",
+      "label": "650"
+    },
+    {
+      "type": "checkbox",
+      "id": "enlarge_content",
+      "default": false,
+      "label": "Enlarge content"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "default": false,
+      "label": "Make section full width"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_divider",
+      "default": false,
+      "label": "Show section divider"
+    },
+    {
+      "type": "header",
+      "content": "Mobile layout"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Mobile image"
+    },
+    {
+      "type": "select",
+      "id": "mobile_layout",
+      "options": [
+        {
+          "value": "image_first",
+          "label": "Image First"
+        },
+        {
+          "value": "text_first",
+          "label": "Image Second"
+        },
+        {
+          "value": "no_image",
+          "label": "No Image"
+        },
+        {
+          "value": "overlap",
+          "label": "Overlap"
+        }
+      ],
+      "default": "image_first",
+      "label": "Image First"
+    },
+    {
+      "type": "select",
+      "id": "mobile_text_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left",
+      "label": "Mobile content alignment"
+    },
+    {
+      "type": "select",
+      "id": "mobile_image_ratio",
+      "options": [
+        {
+          "label": "Auto",
+          "value": "auto"
+        },
+        {
+          "label": "200",
+          "value": "200px"
+        },
+        {
+          "label": "250",
+          "value": "250px"
+        },
+        {
+          "label": "300",
+          "value": "300px"
+        },
+        {
+          "label": "400",
+          "value": "400px"
+        },
+        {
+          "label": "500",
+          "value": "500px"
+        },
+        {
+          "label": "600",
+          "value": "600px"
+        },
+        {
+          "label": "100",
+          "value": "100vh"
+        },
+        {
+          "label": "Adapt to image",
+          "value": "adapt"
+        }
+      ],
+      "default": "auto",
+      "label": "Mobile height"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_custom_colors",
+      "default": false,
+      "label": "Use custom colors"
+    },
+    {
+      "type": "color",
+      "id": "colors_button_label",
+      "label": "Solid button label",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "colors_button_background",
+      "label": "Solid button background",
+      "default": "#1a1b18"
+    },
+    {
+      "type": "color",
+      "id": "colors_text",
+      "label": "Text",
+      "default": "#212326"
+    },
+    {
+      "type": "color",
+      "id": "colors_background",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color_background",
+      "id": "gradient_background",
+      "label": "Background gradient"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "1",
+      "label": "Padding Top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "1",
+      "label": "Padding Bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "heading",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "default": "Image with text",
+          "label": "Heading"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "Small"
+            },
+            {
+              "value": "h1",
+              "label": "Medium"
+            },
+            {
+              "value": "h0",
+              "label": "Large"
+            }
+          ],
+          "default": "h1",
+          "label": "Heading size"
+        },
+        {
+          "type": "select",
+          "id": "heading_tag",
+          "options": [
+            {
+              "value": "h1",
+              "label": "h1"
+            },
+            {
+              "value": "h2",
+              "label": "h2"
+            },
+            {
+              "value": "h3",
+              "label": "h3"
+            },
+            {
+              "value": "h4",
+              "label": "h4"
+            },
+            {
+              "value": "h5",
+              "label": "h5"
+            },
+            {
+              "value": "h6",
+              "label": "h6"
+            },
+            {
+              "value": "div",
+              "label": "div"
+            },
+            {
+              "value": "span",
+              "label": "span"
+            },
+            {
+              "value": "p",
+              "label": "p"
+            }
+          ],
+          "default": "h2",
+          "label": "Heading tag",
+          "info": "Specify heading code types for SEO and search engines for crawling purposes."
+        },
+        {
+          "type": "header",
+          "content": "Subheading"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "subheading",
+          "default": "Add a tagline",
+          "label": "Subheading"
+        },
+        {
+          "type": "select",
+          "id": "subheading_size",
+          "options": [
+            {
+              "value": "h5",
+              "label": "Small"
+            },
+            {
+              "value": "h4",
+              "label": "Medium"
+            },
+            {
+              "value": "h3",
+              "label": "Large"
+            }
+          ],
+          "default": "h5",
+          "label": "Subheading size"
+        },
+        {
+          "type": "checkbox",
+          "id": "secondary_color",
+          "default": false,
+          "label": "Enable secondary color"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_img",
+          "label": "Image For Mobile"
+        },
+        {
+          "type": "image_picker",
+          "id": "attachment_mobile",
+          "label": "Image For Mobile"
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "name": "subheading",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "text",
+          "id": "subheading",
+          "default": "Add a tagline",
+          "label": "Subheading"
+        },
+        {
+          "type": "select",
+          "id": "subheading_size",
+          "options": [
+            {
+              "value": "h5",
+              "label": "Small"
+            },
+            {
+              "value": "h4",
+              "label": "Medium"
+            },
+            {
+              "value": "h3",
+              "label": "Large"
+            }
+          ],
+          "default": "h5",
+          "label": "Subheading size"
+        },
+        {
+          "type": "checkbox",
+          "id": "secondary_color",
+          "default": false,
+          "label": "Enable secondary color"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+          "label": "Description"
+        },
+        {
+          "type": "select",
+          "id": "text_size",
+          "options": [
+            {
+              "value": "typeset",
+              "label": "Small"
+            },
+            {
+              "value": "typeset2",
+              "label": "Medium"
+            },
+            {
+              "value": "typeset3",
+              "label": "Large"
+            }
+          ],
+          "default": "typeset2",
+          "label": "Description size"
+        },
+        {
+          "type": "checkbox",
+          "id": "secondary_color",
+          "default": false,
+          "label": "Enable secondary color"
+        }
+      ]
+    },
+    {
+      "type": "Newsletter",
+      "name": "Newsletter",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "newsletter_heading",
+          "label": "Newsletter Heading"
+        },
+         {
+          "type": "inline_richtext",
+          "id": "newsletter_subheading",
+          "label": "Newsletter Subheading"
+        },
+         {
+          "type": "inline_richtext",
+          "id": "newsletter_msg",
+          "label": "Newsletter Short Message"
+        },
+        {
+          "type": "text",
+          "id": "newsletter_button_link",
+          "label": "Newsletter"
+        }
+      ]
+    },
+    {
+      "type": "custom_liquid",
+      "name": "t:sections.custom-liquid.name",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "custom_liquid",
+          "label": "t:sections.custom-liquid.settings.custom_liquid.label",
+          "info": "t:sections.custom-liquid.settings.custom_liquid.info"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "t:sections.image-with-text.blocks.button.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "Button label",
+          "label": "Button label",
+          "info": "Leave the label blank to hide the button."
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        },
+        {
+          "type": "select",
+          "id": "button_size",
+          "options": [
+            {
+              "value": "small",
+              "label": "small"
+            },
+            {
+              "value": "medium",
+              "label": "medium"
+            },
+            {
+              "value": "large",
+              "label": "large"
+            }
+          ],
+          "default": "medium",
+          "label": "Button size"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_style_secondary",
+          "default": false,
+          "label": "Use underline button style"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Achieve Your Dream",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "button"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
