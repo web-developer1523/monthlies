@@ -260,11 +260,11 @@
     {{ 'custom2.css' | asset_url | stylesheet_tag }}
     {{ 'new-custom.css' | asset_url | stylesheet_tag }}
     {{ 'base-ui-kit.css' | asset_url | stylesheet_tag }}
-     <link rel="stylesheet"  href="{{ 'swiper-bundle.min.css' | asset_url }}">
+     {% comment %} <link rel="stylesheet"  href="{{ 'swiper-bundle.min.css' | asset_url }}">
     <script type="lazyload_js" data-src="{{ 'jquery.min.js' | asset_url }}"></script>
     <script type="lazyload_js" data-src="{{ 'swiper-bundle.min.js' | asset_url }}"></script>
     {% comment %} <link rel="stylesheet" href="{{'slick.css' | asset_url }}">  {% endcomment %}
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" /> {% endcomment %}
 
 
     <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -315,6 +315,8 @@
       <link rel="stylesheet"  href="{{ 'product-hormone-test-kit.css' | asset_url }}">
     {% endif %}
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet"  href="{{ 'swiper-bundle.min.css' | asset_url }}">
+    <script src="{{ 'swiper-bundle.min.js' | asset_url }}"></script>
   </head>
 
   <body class="{{ product.title | downcase | append: '-' | append: product.id }} {{ page_title }} {{ template | replace: '.', '-' }} template-{{ request.page_type }} gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %} {% if template == 'product' and product.tags contains 'uk-template' %} template_uk {% endif %} {%if page.handle == "homepage-new" or shop.url %}cst-custom-homepage-new{% endif %}">

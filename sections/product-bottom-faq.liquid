@@ -15,10 +15,22 @@
     .custom_faq .ingredients_content .accordion:hover {box-shadow: 0 7px 28px #919191cc;}
     .custom_faq .ingredients_content .accordion:hover .accordion_head { color:#cb342c; }
 
-  /* .bottom_faq.ingredients_content .accordion.shown .accordion_content {
-      display: block;
-  }
-   */
+    /* Accordion: closed by default, smooth open/close */
+    .bottom_faq .accordion .accordion_content {
+      max-height: 0;
+      overflow: hidden;
+      padding-top: 0;
+      padding-bottom: 0;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+    }
+    .bottom_faq .accordion.shown .accordion_content {
+      max-height: 800px;
+      padding-bottom: 20px;
+      padding-top: 2px;
+    }
+    .bottom_faq .accordion .accordion_head {
+      transition: color 0.2s ease;
+    }
     .text-image-div.ultra_feacture.new a {
       pointer-events: none;
   }
@@ -93,13 +105,29 @@
 </div>
 <!-- Ingredients end -->
 
-<script type="lazyload_js">
-  $(document).ready(function(){
-    $('.bottom_faq .accordion').on('click', function(){
-      $(this).toggleClass('shown');
-      $(this).siblings().removeClass('shown');
-    });
-  });
+<script>
+  (function() {
+    function initBottomFaqAccordions() {
+      var container = document.querySelector('.bottom_faq');
+      if (!container) return;
+      var heads = container.querySelectorAll('.accordion_head');
+      heads.forEach(function(head) {
+        head.addEventListener('click', function() {
+          var accordion = this.closest('.accordion');
+          if (!accordion) return;
+          var wasShown = accordion.classList.contains('shown');
+          var siblings = accordion.parentElement.querySelectorAll('.accordion');
+          siblings.forEach(function(sib) { sib.classList.remove('shown'); });
+          if (!wasShown) accordion.classList.add('shown');
+        });
+      });
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initBottomFaqAccordions);
+    } else {
+      initBottomFaqAccordions();
+    }
+  })();
 </script>
 
 {% schema %}
