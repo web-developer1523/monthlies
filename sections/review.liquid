@@ -68,35 +68,6 @@
         "label": "Title",
         "default": "Don't take our word for it, take hers!",
         "id": "title"
-    } else {
-      // If Swiper isn't loaded yet, try again in 100ms
-      setTimeout(initializeSwiper, 100);
-    }
-  }
-
-  // Initialize when DOM is ready
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initializeSwiper);
-  } else {
-    initializeSwiper();
-  }
-</script> 
-
-{% schema %}
-  {
-    "name": "Reviews",
-    "presets": [
-      {
-        "name": "Reviews",
-        "category": "section"
-      }
-    ],
-    "settings": [
-      {
-        "type": "inline_richtext",
-        "label": "Title",
-        "default": "Don't take our word for it, take hers!",
-        "id": "title"
       },
       {
         "type": "url",
