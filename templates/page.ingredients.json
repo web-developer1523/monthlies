@@ -13,79 +13,211 @@
       "type": "main-page",
       "disabled": true,
       "settings": {
-        "narrow": true,
-        "padding_top": 60,
-        "padding_bottom": 72
+        "padding_top": 28,
+        "padding_bottom": 28
       }
     },
-    "8d48bbf2-49ab-40de-b17d-bcdccac87476": {
-      "type": "reviews-slider",
-      "settings": {
-        "title": "Don’t take our word for it, take hers!"
-      }
-    },
-    "image_with_text_DBAXAc": {
-      "type": "image-with-text",
+    "banner_QXHeyd": {
+      "type": "banner",
       "blocks": {
-        "heading_6dDKXW": {
-          "type": "heading",
+        "icon_text_secondary_NWzjny": {
+          "type": "icon-text-secondary",
           "settings": {
-            "heading": "Personalised cycle support at your fingertips.",
-            "heading_size": "h1",
-            "heading_tag": "h2"
+            "text": "Nut-free",
+            "icon": "shopify://shop_images/Frame.svg"
           }
         },
-        "text_bLXVPJ": {
-          "type": "text",
+        "icon_text_secondary_WULbhP": {
+          "type": "icon-text-secondary",
           "settings": {
-            "text": "<p>Track your cycle and combine your supplement intake with personalised guidance to <strong>help reduce your  menstrual symptoms.</strong></p>",
-            "text_size": "typeset2",
-            "secondary_color": false
+            "text": "Gluten-free",
+            "icon": "shopify://shop_images/Frame.svg"
           }
         },
-        "button_hJwdbR": {
-          "type": "button",
+        "icon_text_secondary_jp8kWe": {
+          "type": "icon-text-secondary",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_size": "medium",
-            "button_style_secondary": false
+            "text": "Vegan",
+            "icon": "shopify://shop_images/Frame.svg"
+          }
+        },
+        "icon_text_main_QAnG3G": {
+          "type": "icon-text-main",
+          "settings": {
+            "text": "without artificial flavours",
+            "icon": "shopify://shop_images/Frame_1073714271_1.svg"
+          }
+        },
+        "icon_text_main_BakQeT": {
+          "type": "icon-text-main",
+          "settings": {
+            "text": "without artificial colours or preservatives",
+            "icon": "shopify://shop_images/Frame_1073714271_1.svg"
           }
         }
       },
       "block_order": [
-        "heading_6dDKXW",
-        "text_bLXVPJ",
-        "button_hJwdbR"
+        "icon_text_secondary_NWzjny",
+        "icon_text_secondary_WULbhP",
+        "icon_text_secondary_jp8kWe",
+        "icon_text_main_QAnG3G",
+        "icon_text_main_BakQeT"
       ],
+      "name": "Banner",
       "settings": {
-        "custom_class": "",
-        "image": "shopify://shop_images/Hero_section.png",
-        "image_position": "center center",
-        "layout": "text_first",
-        "text_box_position": "middle",
-        "text_alignment": "left",
-        "image_ratio": "650px",
-        "enlarge_content": false,
-        "full_width": false,
-        "show_divider": false,
-        "mobile_layout": "image_first",
-        "mobile_text_alignment": "left",
-        "mobile_image_ratio": "auto",
-        "use_custom_colors": false,
-        "colors_button_label": "#ffffff",
-        "colors_button_background": "#1a1b18",
-        "colors_text": "#212326",
-        "colors_background": "#ffffff",
-        "gradient_background": "",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "bg_image": "shopify://shop_images/Picture2_ed159db2-c0da-478e-a2c5-a2dc206d5134_700x.png_1.svg",
+        "bg_image_mobile": "shopify://shop_images/IMG_7398_3_2.png",
+        "title": "Trusted ingredients,\na science backed formula and efficient targeting.",
+        "image": "shopify://shop_images/IMG_7398_3_1.png"
+      }
+    },
+    "ingredients_78fHHN": {
+      "type": "ingredients",
+      "blocks": {
+        "category_E7AFpg": {
+          "type": "category",
+          "settings": {
+            "display_name": "Vitamins",
+            "handle": "Vitamin profile"
+          }
+        },
+        "category_TkBMUH": {
+          "type": "category",
+          "settings": {
+            "display_name": "Minerals",
+            "handle": "Minerals profile"
+          }
+        },
+        "category_kRaVny": {
+          "type": "category",
+          "settings": {
+            "display_name": "Nutrients",
+            "handle": "Nutrients profile"
+          }
+        },
+        "category_H3ndbb": {
+          "type": "category",
+          "settings": {
+            "display_name": "Amino Acids",
+            "handle": "Amino acid"
+          }
+        },
+        "category_jLNwQw": {
+          "type": "category",
+          "settings": {
+            "display_name": "Plant Extracts",
+            "handle": "Plant Extract"
+          }
+        },
+        "category_83yw3q": {
+          "type": "category",
+          "settings": {
+            "display_name": "Other Ingredients",
+            "handle": "Other ingredient"
+          }
+        }
+      },
+      "block_order": [
+        "category_E7AFpg",
+        "category_TkBMUH",
+        "category_kRaVny",
+        "category_H3ndbb",
+        "category_jLNwQw",
+        "category_83yw3q"
+      ],
+      "name": "Ingredients",
+      "settings": {
+        "all_categories_text": "Alle Ingredients",
+        "bottom_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 30
+      }
+    },
+    "custom_blocks_with_image_n4KLWx": {
+      "type": "custom-blocks-with-image",
+      "blocks": {
+        "slide_BajtzT": {
+          "type": "Slide",
+          "settings": {
+            "image": "shopify://shop_images/281024_SteffixMonthlies8345-2_1_2_274e10f5-2b41-4511-975e-bd9b77ca7b9d.png",
+            "text": "<h3>Dr. Ashley Florestal</h3><p>B. Comm, ND, Canadian College of Naturopathic Medicine, Concordia University </p>"
+          }
+        },
+        "slide_Bg7qp7": {
+          "type": "Slide",
+          "settings": {
+            "image": "shopify://shop_images/281024_SteffixMonthlies8345-2_1_3_b988b787-2682-428d-bb4f-5802267b5d60.png",
+            "text": "<h3>Dr. Cassandra Paiano</h3><p>BSc, ND </p>"
+          }
+        },
+        "slide_tPcBBR": {
+          "type": "Slide",
+          "settings": {
+            "image": "shopify://shop_images/281024_SteffixMonthlies8345-2_1_4.png",
+            "text": "<h3>Geneva Carrington</h3><p>DipNT, mANP, The College of Naturopathic Medicine</p>"
+          }
+        },
+        "slide_zFwBLw": {
+          "type": "Slide",
+          "settings": {
+            "image": "shopify://shop_images/281024_SteffixMonthlies8345-2_1_5.png",
+            "text": "<h3>Geneva Carrington</h3><p>MD, Esp, IFMCP- Los Andes University </p>"
+          }
+        },
+        "slide_8izY8B": {
+          "type": "Slide",
+          "settings": {
+            "image": "shopify://shop_images/281024_SteffixMonthlies8345-2_1_6.png",
+            "text": "<h3>Geneva Carrington</h3><p>RHN, ND, Canada College of Natural Nutrition, Concordia University</p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_BajtzT",
+        "slide_Bg7qp7",
+        "slide_tPcBBR",
+        "slide_zFwBLw",
+        "slide_8izY8B"
+      ],
+      "name": "Block with image",
+      "settings": {
+        "heading": "<em>Enwickelt von Expertinnen </em>für Frauengesundheit.",
+        "background_color": "#ffffff",
+        "text_color": "#404040",
+        "heading_alignment": "center",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_mobile": 56,
+        "padding_bottom_mobile": 56
+      }
+    },
+    "custom_guarantee_87hWpb": {
+      "type": "custom-guarantee",
+      "name": "Guarantee Banner",
+      "settings": {
+        "title": "Our 90 DaysMoney-back Guarantee",
+        "highlight_text": "- no questions asked, really!",
+        "description": "<p><strong>No-risk trial:</strong> Try monthlies completely risk-free: test our product for 90 days. If you don’t feel a difference, you’ll get your money back - no questions asked. </p><p>If you’ve used monthlies as directed for 90 days and you’re not satisfied with your results, we’ll refund the full amount of your last three orders.</p>",
+        "button_label": "Details about the guarantee",
+        "button_link": "",
+        "main_image": "shopify://shop_images/281024_SteffixMonthlies8345-2_1_1_6a3d3935-1fdb-4c2b-bfbd-03e8e7aedf28.png",
+        "badge_image": "shopify://shop_images/Vector_16.svg",
+        "main_text_color": "#333333",
+        "accent_color": "#b35e4d",
+        "padding_top": 0,
+        "padding_bottom": 96,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
       }
     }
   },
   "order": [
     "main",
-    "8d48bbf2-49ab-40de-b17d-bcdccac87476",
-    "image_with_text_DBAXAc"
+    "banner_QXHeyd",
+    "ingredients_78fHHN",
+    "custom_blocks_with_image_n4KLWx",
+    "custom_guarantee_87hWpb"
   ]
 }

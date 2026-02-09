@@ -1,0 +1,83 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "icon": "shopify://shop_images/Group_513065.svg",
+            "text": "90-day money-back guarantee",
+            "link": ""
+          }
+        },
+        "country_icon_UXxzcr": {
+          "type": "country-icon",
+          "settings": {
+            "icon": "shopify://shop_images/DE.svg",
+            "country_name": "DE"
+          }
+        },
+        "country_icon_nXyw78": {
+          "type": "country-icon",
+          "settings": {
+            "icon": "shopify://shop_images/GB.svg",
+            "country_name": "GB"
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0",
+        "country_icon_UXxzcr",
+        "country_icon_nXyw78"
+      ],
+      "settings": {
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "color_scheme": "scheme-1",
+        "show_line_separator": false,
+        "show_social": false,
+        "enable_country_selector": true,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "drawer_image": "shopify://shop_images/Group_513250_54252177-d5ea-4121-b4ca-16b4a9857346.png",
+        "drawer_text": "A natural period pain supplement that works",
+        "cta_text": "order monthlies",
+        "cta_link": "https://shop.withmonthlies.com/products/monthlies-periodease-uk?country=gb",
+        "logo_position": "middle-center",
+        "mobile_logo_position": "center",
+        "menu": "new-header-menu-de",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "color_scheme": "scheme-1",
+        "menu_color_scheme": "scheme-1",
+        "enable_country_selector": true,
+        "enable_language_selector": false,
+        "enable_customer_avatar": false,
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

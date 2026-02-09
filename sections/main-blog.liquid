@@ -1,73 +1,45 @@
-{%- style -%}
-  #shopify-section-{{ section.id }} {
-    --section-padding-top: {{ section.settings.padding_top }}px;
-    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
-    --image-position: {{ section.settings.image_position }};
-  }
-{%- endstyle -%}
-
 {{ 'component-article-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
 
-{%- paginate blog.articles by section.settings.per_page -%}
-  <div class="main-blog page-width section--padding">
-    <header class="blog-header">
-      <h1 class="title--primary">{{ blog.title | escape }}</h1>
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
 
-      {%- if section.settings.show_tag_filter and blog.tags.size > 0 -%}
-        <div class="small-hide medium-hide">
-          <ul class="list-unstyled blog-filter">
-            <li><a href="/blogs/{{ blog.handle }}" class="link{% if current_tags == blank %} is-selected{% endif %}">{{ 'blogs.article.all_tags' | t }}</a></li>
-            {%- for tag in blog.all_tags -%}
-              {%- liquid
-                if tag contains "_"
-                  assign tag_starts_with = tag | slice: 0
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
 
-                  if tag_starts_with == "_"
-                    if tag_count
-                      assign tag_count = tag_count | minus: 1 | at_least: 0
-                    endif
+{%- paginate blog.articles by 6 -%}
+  <div class="main-blog page-width section-{{ section.id }}-padding">
+    <h1 class="title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+      {{ blog.title | escape }}
+    </h1>
 
-                    continue
-                  endif
-                endif
-              -%}
-              <li><a href="/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="link{% if current_tags contains tag %} is-selected{% endif %}">{{ tag }}</a></li>
-            {%- endfor -%}
-          </ul>
-        </div>
-        <div class="large-up-hide">
-          <blog-filter class="select">
-            <select class="select__select">
-              <option value="/blogs/{{ blog.handle }}">{{ 'blogs.article.all_tags' | t }}</option>
-              {%- for tag in blog.all_tags -%}
-                {%- liquid
-                  if tag contains "_"
-                    assign tag_starts_with = tag | slice: 0
-  
-                    if tag_starts_with == "_"
-                      if tag_count
-                        assign tag_count = tag_count | minus: 1 | at_least: 0
-                      endif
-  
-                      continue
-                    endif
-                  endif
-                -%}
-                <option value="/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" {% if current_tags contains tag %}selected{% endif %}>{{ tag }}</option>
-              {%- endfor -%}
-            </select>
-            {% render 'icon', icon: 'caret' %}
-          </blog-filter>
-        </div>
-      {%- endif -%}
-    </header>
-
-    <div class="blog-articles grid grid--1-col grid--2-col-tablet grid--3-col-desktop grid--one-third-max">
+    <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
       {%- for article in blog.articles -%}
-        <div class="blog-articles__article article grid__item">
-          {%- render 'card-article', article: article, show_image: section.settings.show_image, image_ratio: section.settings.image_ratio -%}
+        <div
+          class="blog-articles__article article{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          {% if settings.animations_reveal_on_scroll %}
+            data-cascade
+            style="--animation-order: {{ forloop.index }};"
+          {% endif %}
+        >
+          {%- render 'article-card',
+            article: article,
+            media_height: section.settings.image_height,
+            media_aspect_ratio: article.image.aspect_ratio,
+            show_image: section.settings.show_image,
+            show_date: section.settings.show_date,
+            show_author: section.settings.show_author,
+            show_excerpt: true
+          -%}
         </div>
       {%- endfor -%}
     </div>
@@ -78,8 +50,6 @@
   </div>
 {%- endpaginate -%}
 
-<script src="{{ 'blog.js' | asset_url }}" defer="defer"></script>
-
 {% schema %}
 {
   "name": "t:sections.main-blog.name",
@@ -87,23 +57,20 @@
   "class": "section",
   "settings": [
     {
-      "type": "header",
-      "content": "t:sections.main-blog.settings.header.content"
-    },
-    {
-      "type": "range",
-      "id": "per_page",
-      "min": 6,
-      "max": 48,
-      "step": 3,
-      "label": "t:sections.main-blog.settings.per_page.label",
-      "default": 15
-    },
-    {
-      "type": "checkbox",
-      "id": "show_tag_filter",
-      "default": true,
-      "label": "t:sections.main-blog.settings.show_tag_filter.label"
+      "type": "select",
+      "id": "layout",
+      "options": [
+        {
+          "value": "grid",
+          "label": "t:sections.main-blog.settings.layout.options__1.label"
+        },
+        {
+          "value": "collage",
+          "label": "t:sections.main-blog.settings.layout.options__2.label"
+        }
+      ],
+      "default": "collage",
+      "label": "t:sections.main-blog.settings.layout.label"
     },
     {
       "type": "checkbox",
@@ -113,85 +80,43 @@
     },
     {
       "type": "select",
-      "id": "image_ratio",
+      "id": "image_height",
       "options": [
         {
           "value": "adapt",
-          "label": "t:sections.all.card_image_ratio.options__1.label"
+          "label": "t:sections.main-blog.settings.image_height.options__1.label"
         },
         {
-          "value": "square",
-          "label": "t:sections.all.card_image_ratio.options__2.label"
+          "value": "small",
+          "label": "t:sections.main-blog.settings.image_height.options__2.label"
         },
         {
-          "value": "portrait",
-          "label": "t:sections.all.card_image_ratio.options__3.label"
+          "value": "medium",
+          "label": "t:sections.main-blog.settings.image_height.options__3.label"
         },
         {
-          "value": "landscape",
-          "label": "t:sections.all.card_image_ratio.options__4.label"
-        },
-        {
-          "value": "wide",
-          "label": "t:sections.all.card_image_ratio.options__5.label"
+          "value": "large",
+          "label": "t:sections.main-blog.settings.image_height.options__4.label"
         }
       ],
-      "default": "landscape",
-      "label": "t:sections.all.card_image_ratio.label",
-      "info": "t:sections.main-blog.settings.image_ratio.info"
+      "default": "medium",
+      "label": "t:sections.main-blog.settings.image_height.label"
     },
     {
-      "type": "select",
-      "id": "image_position",
-      "options": [
-        {
-          "value": "20% 0",
-          "label": "t:sections.all.image_position.options__1.label"
-        },
-        {
-          "value": "top center",
-          "label": "t:sections.all.image_position.options__2.label"
-        },
-        {
-          "value": "80% 0",
-          "label": "t:sections.all.image_position.options__3.label"
-        },
-        {
-          "value": "20% 50%",
-          "label": "t:sections.all.image_position.options__4.label"
-        },
-        {
-          "value": "center center",
-          "label": "t:sections.all.image_position.options__5.label"
-        },
-        {
-          "value": "80% 50%",
-          "label": "t:sections.all.image_position.options__6.label"
-        },
-        {
-          "value": "20% 100%",
-          "label": "t:sections.all.image_position.options__7.label"
-        },
-        {
-          "value": "bottom center",
-          "label": "t:sections.all.image_position.options__8.label"
-        },
-        {
-          "value": "80% 100%",
-          "label": "t:sections.all.image_position.options__9.label"
-        }
-      ],
-      "default": "center center",
-      "label": "t:sections.all.image_position.label",
-      "info": "t:sections.all.image_position.info"
+      "type": "checkbox",
+      "id": "show_date",
+      "default": true,
+      "label": "t:sections.main-blog.settings.show_date.label"
     },
     {
-      "type": "paragraph",
-      "content": "t:sections.main-blog.settings.paragraph.content"
+      "type": "checkbox",
+      "id": "show_author",
+      "default": false,
+      "label": "t:sections.main-blog.settings.show_author.label"
     },
     {
       "type": "header",
-      "content": "t:sections.all.padding.header.content"
+      "content": "t:sections.all.padding.section_padding_heading"
     },
     {
       "type": "range",
@@ -199,9 +124,9 @@
       "min": 0,
       "max": 100,
       "step": 4,
-      "unit": "t:sections.all.padding.padding_top.unit",
-      "label": "t:sections.all.padding.padding_top.label",
-      "default": 60
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
     },
     {
       "type": "range",
@@ -209,46 +134,9 @@
       "min": 0,
       "max": 100,
       "step": 4,
-      "unit": "t:sections.all.padding.padding_bottom.unit",
-      "label": "t:sections.all.padding.padding_bottom.label",
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
       "default": 36
-    }
-  ],
-  "blocks": [
-    {
-      "type": "title",
-      "name": "t:sections.main-blog.blocks.title.name",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "checkbox",
-          "id": "show_date",
-          "default": true,
-          "label": "t:sections.main-blog.blocks.title.settings.show_date.label"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_author",
-          "default": false,
-          "label": "t:sections.main-blog.blocks.title.settings.show_author.label"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_comment_count",
-          "default": false,
-          "label": "t:sections.main-blog.blocks.title.settings.show_comment_count.label"
-        }
-      ]
-    },
-    {
-      "type": "summary",
-      "name": "t:sections.main-blog.blocks.summary.name",
-      "limit": 1
-    },
-    {
-      "type": "read_more",
-      "name": "t:sections.main-blog.blocks.read_more.name",
-      "limit": 1
     }
   ]
 }

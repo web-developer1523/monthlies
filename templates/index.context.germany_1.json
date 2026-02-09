@@ -8,38 +8,16 @@
  * ------------------------------------------------------------
  */
 {
-  "parent": "index.json",
-  "context": {
-    "market": "germany"
-  },
   "sections": {
-    "homepage_banner_new_9Qpe43": {
+    "product_presentation_banner_KyCzzp": {
       "settings": {
-        "cta_link": "/products/monthlies-periodease-de"
-      },
-      "blocks": {}
-    },
-    "what_inside_new_tD4XyM": {
-      "settings": {
-        "card1_link": "/de/pages/lemon-balm",
-        "card2_link": "/de/pages/magnesium",
-        "card3_link": "/de/pages/vitamin-b2",
-        "card4_link": "/de/pages/vitamin-c",
-        "cta_link": "/de/pages/all-ingredients"
-      },
-      "blocks": {}
-    },
-    "experience_yourself_new_FLtMFy": {
-      "settings": {
-        "cta_link": "/products/monthlies-periodease-de"
-      },
-      "blocks": {}
-    },
-    "experience_manageable_CYRBwG": {
-      "settings": {
-        "button_link": "/products/monthlies-periodease-de"
+        "button_url": "shopify://products/monthlies-periodease-de"
       },
       "blocks": {}
     }
-  }
+  },
+  "context": {
+    "market": "germany"
+  },
+  "parent": "index.json"
 }

@@ -1,906 +1,906 @@
 
 .product-hormone-test-kit .product .rating_count strong {
-     position: relative;
+    position: relative;
 }
 .product-hormone-test-kit .product .rating_count strong:nth-of-type(2):before {
-    content: "";
-    background-image: url(/cdn/shop/files/Frame_514009.svg?v=1759907240);
-    position: absolute;
-    top: 2px;
-    left: 50%;
-    transform: translate(-35px);
-    bottom: 0;
-    background-repeat: no-repeat;
-    width: 11px;
+   content: "";
+   background-image: url(/cdn/shop/files/Frame_514009.svg?v=1759907240);
+   position: absolute;
+   top: 2px;
+   left: 50%;
+   transform: translate(-35px);
+   bottom: 0;
+   background-repeat: no-repeat;
+   width: 11px;
 }
 .product-hormone-test-kit .product .rating_count strong:nth-of-type(2) {
-    margin-left: 20px;
+   margin-left: 20px;
 }
 .product-hormone-test-kit div#shopify-block-ATDlzK3lIY281c09WW__recharge_subscriptions_subscription_widget_v2_9DVm7F{
-    display:none !important;
+   display:none !important;
 }
 .product-hormone-test-kit div#shopify-section-template--26661018468699__image_below_section_ieRz8K {
-    background-color: #ecf1f4 ;
+   background-color: #ecf1f4 ;
 }
 .product-hormone-test-kit .faq_insta {
-    display: none;
+   display: none;
 }
 .product-hormone-test-kit .custom_faq .ingredients_content .accordion {
-    box-shadow: none;
-    border-right: .1rem solid rgb(var(--color-border));
-    border-left: .1rem solid rgb(var(--color-border));
-    border-top: .1rem solid rgb(var(--color-border));
+   box-shadow: none;
+   border-right: .1rem solid rgb(var(--color-border));
+   border-left: .1rem solid rgb(var(--color-border));
+   border-top: .1rem solid rgb(var(--color-border));
 }
 .product-hormone-test-kit .custom_faq .ingredients_content.tab_content{
-     padding: 80px 20px 0;
+    padding: 80px 20px 0;
 }
 .product-hormone-test-kit .shopify-section.custom_faq > div {
-    border-radius: 100px 0px 0 0;
-    background: #fff !important;
+   border-radius: 100px 0px 0 0;
+   background: #fff !important;
 }
 .product-hormone-test-kit .wrapper-point-ul {
-    background: #b7d7d5;
-    padding: 25px;
-    border-radius: 30px;
-    max-width: 650px;
+   background: #b7d7d5;
+   padding: 25px;
+   border-radius: 30px;
+   max-width: 650px;
 }
 .product-hormone-test-kit .wrapper-point-ul ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-left: 0;
-    margin-top: 0;
-    gap:3px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   padding-left: 0;
+   margin-top: 0;
+   gap:3px;
 }
 .product-hormone-test-kit .wrapper-point-ul li::before {
-    display: none;
+   display: none;
 }
- .h2.only-for-this-product {
-    display: none;
+.h2.only-for-this-product {
+   display: none;
 }
 .product-hormone-test-kit .h2.only-for-this-product {
-    display: block;
+   display: block;
 }
 .product-hormone-test-kit .product__heading {
-        display: none;
+       display: none;
 }
 .product-hormone-test-kit .wrapper-point-ul ul li {
-    font-weight: 500 ;
+   font-weight: 500 ;
 }
 .product-hormone-test-kit .text-image-data.appco_bg p {
-   font-size: 15px;
-    font-weight: 400;
-    margin: 0;
-    max-width: 650px;
-    line-height: normal;
-    font-family: 'Lora' !important;
-    font-style: normal;
+  font-size: 15px;
+   font-weight: 400;
+   margin: 0;
+   max-width: 650px;
+   line-height: normal;
+   font-family: 'Lora' !important;
+   font-style: normal;
 }
 .product-hormone-test-kit .text-image-div.ultra_feacture.new .main_div_icon.appco_bg:first-child {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translate(-50%,-50%);
-    background: #fff;
-    padding: 10px 20px;
-    max-width: max-content;
+   position: absolute;
+   left: 50%;
+   top: 0;
+   transform: translate(-50%,-50%);
+   background: #fff;
+   padding: 10px 20px;
+   max-width: max-content;
 }
 
 .product-hormone-test-kit .text-image-div.ultra_feacture.new .main_div_icon.appco_bg:first-child p {
-    margin: 0;
-    font-size: 18px;
-    font-weight: 600;
-    color: #2A2A2A;
+   margin: 0;
+   font-size: 18px;
+   font-weight: 600;
+   color: #2A2A2A;
 }
 .product-hormone-test-kit .text-image-div.ultra_feacture.new {
-    align-items: baseline;
-    position: relative;
-    border: 2px solid #ECF1F4;
-    width: calc(100% - 40px)!important;
-    max-width: 735px;
-    margin: 20px auto 0;
-    padding: 20px;
-    border-radius: 15px;
-    gap: 20px !important;
+   align-items: baseline;
+   position: relative;
+   border: 2px solid #ECF1F4;
+   width: calc(100% - 40px)!important;
+   max-width: 735px;
+   margin: 20px auto 0;
+   padding: 20px;
+   border-radius: 15px;
+   gap: 20px !important;
 }
 
 .product-hormone-test-kit .text-image-div.ultra_feacture.new .text-image-data {
-    width: 100%;
-    max-width: 200px;
-    margin: 0 auto;
-    text-align: center;
+   width: 100%;
+   max-width: 200px;
+   margin: 0 auto;
+   text-align: center;
 }
 .product-hormone-test-kit .wrapper-point-ul strong {
-    color: #cb342c;
-    background: #fff;
-    padding: 6px;
-    border-radius: 11px;
-    margin-bottom: 8px;
-    display: inline-block;
+   color: #cb342c;
+   background: #fff;
+   padding: 6px;
+   border-radius: 11px;
+   margin-bottom: 8px;
+   display: inline-block;
 }
 
 .product-hormone-test-kit .cst-custom-hormone-reviews {
-    overflow: hidden;
+   overflow: hidden;
 }
-   .product-hormone-test-kit .cst-custom-hormone-reviews .swiper-wrapper .swiper-slide {
-        background: #fff;
-    }
-  .product-hormone-test-kit .health_expert h2 strong {
-    color: #CB342C;
-    font-family: 'Lora';
+  .product-hormone-test-kit .cst-custom-hormone-reviews .swiper-wrapper .swiper-slide {
+       background: #fff;
+   }
+ .product-hormone-test-kit .health_expert h2 strong {
+   color: #CB342C;
+   font-family: 'Lora';
 }
-  .product-hormone-test-kit .health_expert p.multicolumn-card__title.h3{
-    text-align:left;
+ .product-hormone-test-kit .health_expert p.multicolumn-card__title.h3{
+   text-align:left;
 }
 
 .product-hormone-test-kit .cst-custom-how-it-work-section {
-    background-color: #ecf1f4;
-    border-radius: 0 100px 0 0;
-    padding-top: 80px;
+   background-color: #ecf1f4;
+   border-radius: 0 100px 0 0;
+   padding-top: 80px;
 }
 .product-hormone-test-kit .product-form__buttons {
-    flex-direction: row;
-    flex-wrap: unset;
-    align-items: center;
-    margin-top:15px;
+   flex-direction: row;
+   flex-wrap: unset;
+   align-items: center;
+   margin-top:15px;
 }
 
 .product-hormone-test-kit .cst-custom-how-it-work-section slider-component ul.multicolumn-list li {
-    width: calc(25% - var(--grid-horizontal-spacing) * 2 / 2);
-    max-width: calc(25% - var(--grid-horizontal-spacing) * 2 / 3) !important;
+   width: calc(25% - var(--grid-horizontal-spacing) * 2 / 2);
+   max-width: calc(25% - var(--grid-horizontal-spacing) * 2 / 3) !important;
 }
 
 .product-hormone-test-kit .cst-custom-how-it-work-section slider-component ul.multicolumn-list {
-   counter-reset: list;
-    margin-top: 60px;
+  counter-reset: list;
+   margin-top: 60px;
 }
 
 .product-hormone-test-kit .cst-custom-how-it-work-section .multicolumn-card__info {
-    text-align: left;
+   text-align: left;
 }
 
 .product-hormone-test-kit .cst-custom-how-it-work-section .multicolumn-card__title {
-    font-family: Quicksand;
-    font-weight: 600;
-    font-size: 26px !important;
-    line-height: 100%;
-    position: relative;
-    display: flex;
-    gap: 10px;
+   font-family: Quicksand;
+   font-weight: 600;
+   font-size: 26px !important;
+   line-height: 100%;
+   position: relative;
+   display: flex;
+   gap: 10px;
 }
 
 .product-hormone-test-kit .cst-custom-how-it-work-section .multicolumn-card__title::before {
-    counter-increment: list;
-    content: counter(list) ".";
+   counter-increment: list;
+   content: counter(list) ".";
 }
 .product-hormone-test-kit  .product__info-container .product__description {
-    padding-right: 40px;
+   padding-right: 40px;
 }
 .product-hormone-test-kit .cst-custom-how-it-work-section p {
-    font-family: Quicksand !important;
-    font-weight: 400;
-    font-size: 18px !important;
-    line-height: 140%;
+   font-family: Quicksand !important;
+   font-weight: 400;
+   font-size: 18px !important;
+   line-height: 140%;
 }
 
 .product-hormone-test-kit .cst-custom-how-it-work-section .multicolumn-card .media--square {
-    padding: 0;
-    margin-bottom: 40px;
+   padding: 0;
+   margin-bottom: 40px;
 }
 .product-hormone-test-kit .cst-custom-how-it-work-section .multicolumn-card .media--square img {
-    position: static;
-    height: 290px;
-    object-fit: contain;
+   position: static;
+   height: 290px;
+   object-fit: contain;
 }
 .product-hormone-test-kit .cst-custom-how-it-work-section .multicolumn-card .media--square img {
-    position: static;
+   position: static;
 }
 .product-hormone-test-kit  .cst-custom-how-it-work-section h2  strong{
-    font-family: 'Lora';
-    color: #CB342C;
+   font-family: 'Lora';
+   color: #CB342C;
 }
 .product-hormone-test-kit .cst-custom-why-do-we-test {
-    background-color: #ECF1F4;
-    padding: 80px 0;
+   background-color: #ECF1F4;
+   padding: 80px 0;
 }
 
 .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text {
-   width: calc(100% - 40px);
-    max-width: 1440px;
-    margin: 0 auto;
+  width: calc(100% - 40px);
+   max-width: 1440px;
+   margin: 0 auto;
 }
 
 .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text__grid {
-    box-shadow: 0 7.07px 28.29px #9293934d;
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 20px;
-    align-items: center;
+   box-shadow: 0 7.07px 28.29px #9293934d;
+   background-color: #fff;
+   padding: 40px;
+   border-radius: 20px;
+   align-items: center;
 }
 .product-hormone-test-kit .cst-custom-why-do-we-test use-animate.media-wrapper .image-animate {
-    height: auto;
-    padding: 0;
+   height: auto;
+   padding: 0;
 }
 .product-hormone-test-kit .cst-product-review-sec {
-    background-color: #ABD0CD;
+   background-color: #ABD0CD;
 }
 .product-hormone-test-kit input[id*=Quantity-buy_buttons] {
-    font-size: 24px;
+   font-size: 24px;
 }
 .product-hormone-test-kit .product-form__quantity {
-      border: 3px solid #D9D9D9;
-    padding: 6px;
-    border-radius: 20px;
+     border: 3px solid #D9D9D9;
+   padding: 6px;
+   border-radius: 20px;
 }
 .product-hormone-test-kit .cst-subscription-temp .svg-logo-image img {
-    height: 35px;
-    width: 35px;
+   height: 35px;
+   width: 35px;
 }
 .product-hormone-test-kit .h2 strong{
-        font-family: 'Lora';
-    color: #CB342C;
+       font-family: 'Lora';
+   color: #CB342C;
 }
 .product-hormone-test-kit .product-form__quantity button.quantity__button {
-    background: transparent !important;
-    box-shadow: none;
+   background: transparent !important;
+   box-shadow: none;
 }
 .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text__content {
-    padding: 0;
+   padding: 0;
 }
 .product-hormone-test-kit .cst-meet-our-women-health:before {
-    opacity: 0;
+   opacity: 0;
 }
 
 
 .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text__grid .grid__item {
-    width: calc(40% - var(--grid-horizontal-spacing) / 2);
+   width: calc(40% - var(--grid-horizontal-spacing) / 2);
 }
 .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text__grid .grid__item:first-child {
-    width: calc(60% - var(--grid-horizontal-spacing) / 2);
+   width: calc(60% - var(--grid-horizontal-spacing) / 2);
 }
 .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text__grid img.mobile-only-image {
-    display: none;
+   display: none;
 }
 
 .product-hormone-test-kit .included-section .included-image .mobile-only.image {
-    display: none;
+   display: none;
 }
 .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text__grid .grid__item:first-child .media--adapt img {
-    position: static;
-    object-fit: contain;
-    max-width: max-content;
-    margin-left: auto;
+   position: static;
+   object-fit: contain;
+   max-width: max-content;
+   margin-left: auto;
 }
 .product-hormone-test-kit .cst-subscription-temp::before {
-    display: none;
+   display: none;
 }
 .product-hormone-test-kit .cst-subscription-temp {
-    padding-bottom: 80px;
+   padding-bottom: 80px;
 }
 .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text__content .image-with-text__heading {
-    font-weight: 600;
-    font-size: 44px;
-    line-height: 140%;
-    width: 100%;
-    max-width: 460px;
+   font-weight: 600;
+   font-size: 44px;
+   line-height: 140%;
+   width: 100%;
+   max-width: 460px;
 }
 .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text__content .image-with-text__heading strong {
-    color: #CB342C;
-    font-family:Lora !important;
+   color: #CB342C;
+   font-family:Lora !important;
 }
 
 .product-hormone-test-kit .included-heading strong {
-    color: #CB342C;
-        font-family:Lora !important;
+   color: #CB342C;
+       font-family:Lora !important;
 }
 .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text__content .image-with-text__heading span {
-    color: #CB342C;
+   color: #CB342C;
 }
 
 .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text__content p {
-    font-size: 26px;
-    color: #2A2A2A;
-    line-height: 120%;
-    font-weight: 400;
-    width: 100%;
-    max-width: 360px;
+   font-size: 26px;
+   color: #2A2A2A;
+   line-height: 120%;
+   font-weight: 400;
+   width: 100%;
+   max-width: 360px;
 }
 .product-hormone-test-kit .included-section {
-    background-color: #FAFCFE;
-    width: 100%;
-    max-width: 100%;
-    border: 0;
-    text-align: center;
-    padding: 60px 20px;
-    border-radius: 120px 0 0 0;
+   background-color: #FAFCFE;
+   width: 100%;
+   max-width: 100%;
+   border: 0;
+   text-align: center;
+   padding: 60px 20px;
+   border-radius: 120px 0 0 0;
 }
 
 .product-hormone-test-kit .included-heading {
-    font-weight: 600;
-    font-size: 44px;
-    line-height: 100%;
-    text-align: center;
-    margin: 0;
+   font-weight: 600;
+   font-size: 44px;
+   line-height: 100%;
+   text-align: center;
+   margin: 0;
 }
 .product-hormone-test-kit .included-section p {
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 100%;
-    text-align: center;
-    line-height:normal;
+   font-weight: 400;
+   font-size: 26px;
+   line-height: 100%;
+   text-align: center;
+   line-height:normal;
 }
 
 .product-hormone-test-kit p:empty {
-    display: none;
+   display: none;
 }
 
 .product-hormone-test-kit .included-section .included-image {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
+   width: 100%;
+   max-width: 1440px;
+   margin: 0 auto;
 }
 
 .product-hormone-test-kit .included-section .included-image img {
-    max-width: 100%;
+   max-width: 100%;
 }
 .product-hormone-test-kit .cst-custom-how-it-work-section .title {
-    font-weight: 600;
-    font-size: 44px;
-    line-height: 100%;
-    text-align: center;
+   font-weight: 600;
+   font-size: 44px;
+   line-height: 100%;
+   text-align: center;
 }
 
 .product-hormone-test-kit .cst-custom-how-it-work-section .title strong {
-    color: #cb342c;
+   color: #cb342c;
 }
 .product-hormone-test-kit  section.reviews-section::before {
-    background: #ecf1f4;
+   background: #ecf1f4;
 }
 .product-hormone-test-kit  .reviews-section{
-      background:#ecf1f4;
+     background:#ecf1f4;
 }
 .product-hormone-test-kit div#shopify-section-template--26661018468699__hormone_review_th9XCh {
-    background-color: #ecf1f4;
-    border-radius: 0;
+   background-color: #ecf1f4;
+   border-radius: 0;
 }
 
 .product-hormone-test-kit.template-product .new_product_temp .title_wrapper_box{
-    width:100%;
+   width:100%;
 }
 .product-hormone-test-kit.template-product .cst-meet-our-women-health .health_expert {
-    border-radius: 0 120px 0  0;
+   border-radius: 0 120px 0  0;
 }
 
 
 .product-hormone-test-kit.template-product .cst-meet-our-women-health {
-    background: #fafcfe!important;
+   background: #fafcfe!important;
 }
 .product-hormone-test-kit .hormones-start .image-wrappper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 18px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 18px;
 }
 .product-hormone-test-kit .hormones-start .trust-score {
-    font-size: 16px;
+   font-size: 16px;
 }
 
 .product-hormone-test-kit .hormones-start .trust-score b {
-    font-weight: bold;
+   font-weight: bold;
 }
 .product-hormone-test-kit  .cst-custom-hormone-reviews .title-container h2 {
-    max-width: max-content;
-    margin: 0;
-    padding: 0 50px;
+   max-width: max-content;
+   margin: 0;
+   padding: 0 50px;
 }
 .product-hormone-test-kit .hormones-start .trust-score p {
-    margin-bottom: 0;
+   margin-bottom: 0;
 }
 .cst-hasslegrid-main {
-    background-color: #c4dedc;
-    border-radius: 15px;
-    padding: 30px 17px;
-    max-width: 650px;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0;
+   background-color: #c4dedc;
+   border-radius: 15px;
+   padding: 30px 17px;
+   max-width: 650px;
+   margin: 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 0;
 }
 .product-hormone-test-kit .cst-product-img-temp .text-image-data p strong {
-    font-weight: 400 !important;
-    font-style: normal;
+   font-weight: 400 !important;
+   font-style: normal;
 }
 .cst-hasslegrid-main .cst-hassle-item {
-  text-align: center;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
+ text-align: center;
+ flex: 1;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 10px;
 }
 .customized-section-for-hormonal-test-kit li::marker {
-    color: #cb342c;
+   color: #cb342c;
 }
 .cst-test-kit .accordion-header {
-  color: #000 !important;
-  -webkit-text-fill-color: #000 !important;
-  text-decoration: none !important;
+ color: #000 !important;
+ -webkit-text-fill-color: #000 !important;
+ text-decoration: none !important;
 }
 .cst-hasslegrid-main .cst-hassle-item img {
-    object-fit: contain;
-    height: 32px;
+   object-fit: contain;
+   height: 32px;
 }
 
 .cst-hasslegrid-main .cst-hassle-item p {
-  font-size: 16px;
-  line-height: 1.2;
-  color: #2a2a2a;
-  margin: 0;
-  text-wrap: balance;
-  letter-spacing: 0.5px;
-  font-weight: 500;
-  padding-bottom:0 !important;
+ font-size: 16px;
+ line-height: 1.2;
+ color: #2a2a2a;
+ margin: 0;
+ text-wrap: balance;
+ letter-spacing: 0.5px;
+ font-weight: 500;
+ padding-bottom:0 !important;
 }
- .cst-hassle-head h4 {
-    font-size: 18px;
-    font-family: 'Quicksand' !important;
-    font-weight: 700;
-    color: #CB342C;
-    margin: 12px;
+.cst-hassle-head h4 {
+   font-size: 18px;
+   font-family: 'Quicksand' !important;
+   font-weight: 700;
+   color: #CB342C;
+   margin: 12px;
 }
 .product-hormone-test-kit .product__info-container .product__description ul li {
-    font-weight: 400;
+   font-weight: 400;
 }
 .product-hormone-test-kit .product__description.rte > * strong {
-    color: #CB342C;
-        font-size: 18px;
+   color: #CB342C;
+       font-size: 18px;
 }
 .customized-section-for-hormonal-test-kit {
-    border: 2px solid #cb342c;
-    border-radius: 15px;
-    padding: 16px 20px;
-    position: relative;
+   border: 2px solid #cb342c;
+   border-radius: 15px;
+   padding: 16px 20px;
+   position: relative;
 margin: 40px;
 margin-right:0;
 width:100%;
 max-width:650px;
 }
 .product-hormone-test-kit .text-image-div .text-image-data h4 {
-    font-size: 20px;
+   font-size: 20px;
 }
 .product-hormone-test-kit.cst-subscription-temp .cst-richtext-block-area {
-    margin-right: 0;
-    width: 100%;
+   margin-right: 0;
+   width: 100%;
 }
 .customized-section-for-hormonal-test-kit .pro-limited-offer {
-    font-size: 13px;
-    background: #F79763;
-    font-weight: 600;
-    color: #fff;
-    border-radius: 7px;
-    max-width: 150px;
-    padding: 4px 7px;
-    margin-left: auto;
-    letter-spacing: .5px;
-    text-align: center;
-    position: absolute;
-    top: -18px;
-    right: 20px;
+   font-size: 13px;
+   background: #F79763;
+   font-weight: 600;
+   color: #fff;
+   border-radius: 7px;
+   max-width: 150px;
+   padding: 4px 7px;
+   margin-left: auto;
+   letter-spacing: .5px;
+   text-align: center;
+   position: absolute;
+   top: -18px;
+   right: 20px;
 }
 .bottom_part_desc .customized-section-for-hormonal-test-kit product-form.product-form {
-    padding: 0;
+   padding: 0;
 }
 .customized-section-for-hormonal-test-kit .pro-price.appco_bg {
-    font-size: 24px;
-    color: #000;
-    font-weight: 600;
-    font-family: 'Lora';
-    border-bottom: 2px solid #B7D7D5;
+   font-size: 24px;
+   color: #000;
+   font-weight: 600;
+   font-family: 'Lora';
+   border-bottom: 2px solid #B7D7D5;
 }
 
 .customized-section-for-hormonal-test-kit hr {
-    display: none;
+   display: none;
 }
 
 .customized-section-for-hormonal-test-kit li {
-    font-size: 12px;
-    font-weight: 500;
-    color: #2A2A2A;
+   font-size: 12px;
+   font-weight: 500;
+   color: #2A2A2A;
 }
 
 
 .customized-section-for-hormonal-test-kit ul {
-    padding-left: 18px;
-    margin-top: 6px;
-    margin-bottom:0;
+   padding-left: 18px;
+   margin-top: 6px;
+   margin-bottom:0;
 }
 .customized-section-for-hormonal-test-kit span.compare-price-only-price{
-    font-size: 20px;
-    font-family: 'Lora';
-    color: #A7A8A9;
-    font-weight: 400;
-            text-decoration: line-through;
-    text-decoration-thickness: 3px;
-    text-decoration-color: #cb342c;
+   font-size: 20px;
+   font-family: 'Lora';
+   color: #A7A8A9;
+   font-weight: 400;
+           text-decoration: line-through;
+   text-decoration-thickness: 3px;
+   text-decoration-color: #cb342c;
 }
 div#shopify-section-template--26661018468699__what_we_test_section_RXp7hn {
-    background: #ecf1f4;
+   background: #ecf1f4;
 }
-  .product-hormone-test-kit .quantity {
-    width: 11rem;
+ .product-hormone-test-kit .quantity {
+   width: 11rem;
 }
 /* MEDIA QUERIES */
 @media screen and (max-width: 1500px){
-    .cst-hasslegrid-main{
-            padding: 22px 14px;
-    }
-    .cst-hasslegrid-main .cst-hassle-item p {
-    font-size: 15px;
+   .cst-hasslegrid-main{
+           padding: 22px 14px;
+   }
+   .cst-hasslegrid-main .cst-hassle-item p {
+   font-size: 15px;
 }
 }
 @media screen and (max-width:1440px){
-         .cst-hasslegrid-main .cst-hassle-item p {
-    font-size: 14px;
+        .cst-hasslegrid-main .cst-hassle-item p {
+   font-size: 14px;
 }
 }
 @media screen and (max-width: 1200px){
-    .customized-section-for-hormonal-test-kit li {
-    font-size: 13px;
-    line-height: 28px;
+   .customized-section-for-hormonal-test-kit li {
+   font-size: 13px;
+   line-height: 28px;
 }
 .cst-hasslegrid-main .cst-hassle-item p {
-        font-size: 13px;
-        letter-spacing: 0;
-    }
-    .product-hormone-test-kit .cst-custom-how-it-work-section .multicolumn-card__title {
-    font-size: 20px !important;
-    }
+       font-size: 13px;
+       letter-spacing: 0;
+   }
+   .product-hormone-test-kit .cst-custom-how-it-work-section .multicolumn-card__title {
+   font-size: 20px !important;
+   }
 .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text__content p {
-    width: 100%;
-    max-width: 100%;
+   width: 100%;
+   max-width: 100%;
 }
 .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text__grid .grid__item {
-    width: calc(50% - var(--grid-horizontal-spacing) / 2);
+   width: calc(50% - var(--grid-horizontal-spacing) / 2);
 }
 .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text__grid .grid__item:first-child {
-    width: calc(50% - var(--grid-horizontal-spacing) / 2);
+   width: calc(50% - var(--grid-horizontal-spacing) / 2);
 }    
 }
 @media screen and (max-width:1180px){
 /* .product-hormone-test-kit .page-width.section--padding.new_product_temp {
-    padding: 0 40px;
+   padding: 0 40px;
 } */
 }
 @media screen and (max-width:1080px){
-    .product-hormone-test-kit .text-image-data.appco_bg p {
-    font-size: 14px;
+   .product-hormone-test-kit .text-image-data.appco_bg p {
+   font-size: 14px;
 }
 .product-hormone-test-kit .wrapper-point-ul ul li {
-    font-size: 16px;
+   font-size: 16px;
 }
 }
 @media screen and (max-width:1024px){
-    .customized-section-for-hormonal-test-kit{
-                 margin: 40px auto;
-        max-width: 431px;
-    }
-    .new_product_temp.cst-subscription-temp .cst-richtext-block-area{
-        margin-left:0;
-    }
-    .product-hormone-test-kit .cst-subscription-temp .text-image-div{
-        padding-left:0;
-    }
-    .product-hormone-test-kit .page-width.section--padding.new_product_temp {
+   .customized-section-for-hormonal-test-kit{
+                margin: 40px auto;
+       max-width: 431px;
+   }
+   .new_product_temp.cst-subscription-temp .cst-richtext-block-area{
+       margin-left:0;
+   }
+   .product-hormone-test-kit .cst-subscription-temp .text-image-div{
+       padding-left:0;
+   }
+   .product-hormone-test-kit .page-width.section--padding.new_product_temp {
 padding: 20px 20px 80px !important;
-    }
-    .product-hormone-test-kit .wrapper-point-ul ul{
-        grid-template-columns: 1fr;
-    }
-    .product-hormone-test-kit .text-image-div.ultra_feacture.new {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 17px;
-    row-gap: 0;
+   }
+   .product-hormone-test-kit .wrapper-point-ul ul{
+       grid-template-columns: 1fr;
+   }
+   .product-hormone-test-kit .text-image-div.ultra_feacture.new {
+   grid-template-columns: 1fr 1fr;
+   column-gap: 17px;
+   row-gap: 0;
 }
 
 }
 @media screen and (max-width:989px){
-        .customized-section-for-hormonal-test-kit li {
-        line-height: 20px;
-    }
-    .customized-section-for-hormonal-test-kit {
-    margin: 30px auto;
+       .customized-section-for-hormonal-test-kit li {
+       line-height: 20px;
+   }
+   .customized-section-for-hormonal-test-kit {
+   margin: 30px auto;
 }
-    .cst-hasslegrid-main {
-        flex-direction: column;
-        align-items: baseline;
-        gap: 16px;
-        padding: 30px;
-        max-width:100%;
-    }
+   .cst-hasslegrid-main {
+       flex-direction: column;
+       align-items: baseline;
+       gap: 16px;
+       padding: 30px;
+       max-width:100%;
+   }
 
-  .cst-hasslegrid-main .cst-hassle-item {
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
-    gap: 20px;
-  }
-    .product-hormone-test-kit .product .rating_count strong:nth-of-type(2):before {
-    top: 0;
-    left: 50%;
-    transform: translate(-30px);
+ .cst-hasslegrid-main .cst-hassle-item {
+   flex-direction: row;
+   align-items: center;
+   text-align: left;
+   gap: 20px;
+ }
+   .product-hormone-test-kit .product .rating_count strong:nth-of-type(2):before {
+   top: 0;
+   left: 50%;
+   transform: translate(-30px);
 }
-       .product-hormone-test-kit #shopify-section-footer .policies {
-    flex-wrap: wrap;
-    gap: 0;
+      .product-hormone-test-kit #shopify-section-footer .policies {
+   flex-wrap: wrap;
+   gap: 0;
 }
-    .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text__grid {
-        gap: 40px;
+   .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text__grid {
+       gap: 40px;
 }
 .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text__grid .grid__item {
-        width: 100%;
+       width: 100%;
 }
 .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text__grid .grid__item:first-child {
-    width: 100%;
-    order: 2;
+   width: 100%;
+   order: 2;
 }
 
 .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text__grid .grid__item:first-child .media--adapt img {
-    max-width: 100%;
+   max-width: 100%;
 }    
-       .product-hormone-test-kit .test_products span.rating_count {
-    font-size: 12px;
+      .product-hormone-test-kit .test_products span.rating_count {
+   font-size: 12px;
 }
-   .product-hormone-test-kit .new_product_temp .review_star {
-    width: 100%;
+  .product-hormone-test-kit .new_product_temp .review_star {
+   width: 100%;
 }
-   .product-hormone-test-kit .cst-custom-how-it-work-section slider-component ul.multicolumn-list li {
-        max-width: unset !important;
-    }
-    .product-hormone-test-kit .cst-custom-how-it-work-section slider-component ul.multicolumn-list li .multicolumn-card {
-        flex-direction: row;
-    }
-    .product-hormone-test-kit .cst-custom-how-it-work-section slider-component ul.multicolumn-list li .multicolumn-card {
-        flex-direction: row;
-        align-items: center;
-        gap: 20px;
-    }
-        .product-hormone-test-kit .cst-custom-how-it-work-section slider-component ul.multicolumn-list li .multicolumn-card use-animate.media-wrapper {
-        flex-shrink: 0;
-    }
-       .product-hormone-test-kit .cst-custom-how-it-work-section slider-component ul.multicolumn-list li {
-        max-width: unset!important;
-        width: 90% !important;
-    }    
+  .product-hormone-test-kit .cst-custom-how-it-work-section slider-component ul.multicolumn-list li {
+       max-width: unset !important;
+   }
+   .product-hormone-test-kit .cst-custom-how-it-work-section slider-component ul.multicolumn-list li .multicolumn-card {
+       flex-direction: row;
+   }
+   .product-hormone-test-kit .cst-custom-how-it-work-section slider-component ul.multicolumn-list li .multicolumn-card {
+       flex-direction: row;
+       align-items: center;
+       gap: 20px;
+   }
+       .product-hormone-test-kit .cst-custom-how-it-work-section slider-component ul.multicolumn-list li .multicolumn-card use-animate.media-wrapper {
+       flex-shrink: 0;
+   }
+      .product-hormone-test-kit .cst-custom-how-it-work-section slider-component ul.multicolumn-list li {
+       max-width: unset!important;
+       width: 90% !important;
+   }    
 }
 
 
 @media screen and (max-width:767px){
-    .product-hormone-test-kit .cst-custom-hormone-reviews .title-container h2{
-        margin:0 auto;
-    }
-    .product-hormone-test-kit .cst-custom-how-it-work-section{
-        padding-top:60px;
-    }
-    .product-hormone-test-kit .new_product_temp .product__info-container{
-    padding-right:0;
+   .product-hormone-test-kit .cst-custom-hormone-reviews .title-container h2{
+       margin:0 auto;
+   }
+   .product-hormone-test-kit .cst-custom-how-it-work-section{
+       padding-top:60px;
+   }
+   .product-hormone-test-kit .new_product_temp .product__info-container{
+   padding-right:0;
 }
 .product-hormone-test-kit .cst-custom-why-do-we-test{
-        padding: 40px 0;
+       padding: 40px 0;
 }
 }
 @media screen and (max-width:749px){
-    .cst-hasslegrid-main .cst-hassle-item p{
-                font-weight: 600;
-    }
-    .product-hormone-test-kit .page-width.section--padding.new_product_temp {
-    padding: 0 !important;
+   .cst-hasslegrid-main .cst-hassle-item p{
+               font-weight: 600;
+   }
+   .product-hormone-test-kit .page-width.section--padding.new_product_temp {
+   padding: 0 !important;
 }
-    .product-hormone-test-kit .bottom_part_desc.producticonsecto.appco_bg {
-    padding: 0 20px;
+   .product-hormone-test-kit .bottom_part_desc.producticonsecto.appco_bg {
+   padding: 0 20px;
 }
-         .customized-section-for-hormonal-test-kit, .new_product_temp.cst-subscription-temp .cst-richtext-block-area {
-        max-width: 100%;
-    }
-    .cst-hasslegrid-main {
-    max-width: 100%;
-    margin: 0;
+        .customized-section-for-hormonal-test-kit, .new_product_temp.cst-subscription-temp .cst-richtext-block-area {
+       max-width: 100%;
+   }
+   .cst-hasslegrid-main {
+   max-width: 100%;
+   margin: 0;
 }
 .product-hormone-test-kit .wrapper-point-ul{
-    width:100%;
-    max-width:100%;
+   width:100%;
+   max-width:100%;
 }
-    .product-hormone-test-kit .wrapper-point-ul ul:last-child {
-    margin-bottom: 0;
+   .product-hormone-test-kit .wrapper-point-ul ul:last-child {
+   margin-bottom: 0;
 }
-    .product-hormone-test-kit .new_product_temp .product__description.rte {
-    padding-bottom: 30px !important;
+   .product-hormone-test-kit .new_product_temp .product__description.rte {
+   padding-bottom: 30px !important;
 }
-    .product-hormone-test-kit.template-product .new_product_temp .title_wrapper_box{
-        margin-right:15px;
-    }
-    .product-hormone-test-kit .included-section p{
-        font-size:20px;
-    }
-    body.product-hormone-test-kit div[id*="shopify-section"] .reviews-section{
-    padding-bottom:40px !important;
+   .product-hormone-test-kit.template-product .new_product_temp .title_wrapper_box{
+       margin-right:15px;
+   }
+   .product-hormone-test-kit .included-section p{
+       font-size:20px;
+   }
+   body.product-hormone-test-kit div[id*="shopify-section"] .reviews-section{
+   padding-bottom:40px !important;
 }
-    .product-hormone-test-kit .cst-subscription-temp .text-image-div {
-          text-align: left;
-        padding: 0 ;
+   .product-hormone-test-kit .cst-subscription-temp .text-image-div {
+         text-align: left;
+       padding: 0 ;
 }
-       .product-hormone-test-kit.template-product .ultra_feacture.new .main_div_icon p {
-        font-size: 16px;
-        }
-       .product-hormone-test-kit .text-image-div.ultra_feacture.new {
-        display: block;
-        /* padding: 20px 20px 0 !important; */
-    }
-        .product-hormone-test-kit   .new_product_temp .ultra_feacture .main_div_icon:nth-child(3) ~ div {
-        display: block;
-    }
+      .product-hormone-test-kit.template-product .ultra_feacture.new .main_div_icon p {
+       font-size: 16px;
+       }
+      .product-hormone-test-kit .text-image-div.ultra_feacture.new {
+       display: block;
+       /* padding: 20px 20px 0 !important; */
+   }
+       .product-hormone-test-kit   .new_product_temp .ultra_feacture .main_div_icon:nth-child(3) ~ div {
+       display: block;
+   }
 .product-hormone-test-kit .new_product_temp .title_wrapper_box {
-    padding: 15px;
-    border: 2px solid #ECF1F4;
-    border-radius: 15px;
-    margin-bottom: -20px;
-    z-index: 99;
-    background: #fff;
+   padding: 15px;
+   border: 2px solid #ECF1F4;
+   border-radius: 15px;
+   margin-bottom: -20px;
+   z-index: 99;
+   background: #fff;
 }
 .product-hormone-test-kit .cst-custom-hormone-info-section{
-          margin: 0;
-    }
+         margin: 0;
+   }
 
 .product-hormone-test-kit .text-image-div {
-    text-align: center;
+   text-align: center;
 }
 
 
 .product-hormone-test-kit .text-image-div .main_div_icon:first-child {
-    margin-bottom: 28px;
+   margin-bottom: 28px;
 }
 
 .product-hormone-test-kit .text-image-div .main_div_icon:not(:first-child) {
-    display: inline-block !important;
-    vertical-align: top;
-    width: 30%;
-    margin: 0 1%;
-    text-align: center;
+   display: inline-block !important;
+   vertical-align: top;
+   width: 30%;
+   margin: 0 1%;
+   text-align: center;
 }
 
 .product-hormone-test-kit .text-image-div .svg-logo-image img {
-    margin-bottom: 10px;
+   margin-bottom: 10px;
 }
 
 .template-product .new_product_temp .text-image-div.ultra_feacture.new {
-    margin: 40px auto 20px;
-    width: calc(100% + 70px);
-    padding:30px 20px 20px;
+   margin: 40px auto 20px;
+   width: calc(100% + 70px);
+   padding:30px 20px 20px;
 }
 
 }
 @media screen and (max-width: 575px){
-   .custom_faq .ingredients_content.tab_content  .accordion_content {
-    padding: 5px 15px;
+  .custom_faq .ingredients_content.tab_content  .accordion_content {
+   padding: 5px 15px;
 }
-    .cst-custom-hormone-info-section .symptoms-content {
-    padding: 0 15px;
+   .cst-custom-hormone-info-section .symptoms-content {
+   padding: 0 15px;
 }
-    .cst-test-kit h3 {
-    margin-top: 10px;
+   .cst-test-kit h3 {
+   margin-top: 10px;
 }
-    .cst-custom-hormone-info-section .symptoms {
-    padding: 16px !important;
+   .cst-custom-hormone-info-section .symptoms {
+   padding: 16px !important;
 }
-    .cst-hasslegrid-main {
-    padding: 12px 19px;
+   .cst-hasslegrid-main {
+   padding: 12px 19px;
 }
-    .product-hormone-test-kit .h2.only-for-this-product{
-        font-size:24px;
-    }
+   .product-hormone-test-kit .h2.only-for-this-product{
+       font-size:24px;
+   }
 .customized-section-for-hormonal-test-kit span.compare-price-only-price{
-    color:#2a2a2a;
-    font-size:18px;
+   color:#2a2a2a;
+   font-size:18px;
 }
-    .product-hormone-test-kit .text-image-div .text-image-data h4 {
-    font-size: 16px;
+   .product-hormone-test-kit .text-image-div .text-image-data h4 {
+   font-size: 16px;
 }
-    .customized-section-for-hormonal-test-kit{
-            padding: 16px 12px;
-    }
-    .cst-hasslegrid-main .cst-hassle-item p{
-        font-weight:600;
-        line-height:40px;
-    }
-    .customized-section-for-hormonal-test-kit .pro-price.appco_bg {
-    font-size: 20px;
-    /* color: #a7a8a9; */
+   .customized-section-for-hormonal-test-kit{
+           padding: 16px 12px;
+   }
+   .cst-hasslegrid-main .cst-hassle-item p{
+       font-weight:600;
+       line-height:40px;
+   }
+   .customized-section-for-hormonal-test-kit .pro-price.appco_bg {
+   font-size: 20px;
+   /* color: #a7a8a9; */
 }
-    .product-hormone-test-kit .included-section .included-image .mobile-only.image {
-        display: block;
-        width: 100%;
+   .product-hormone-test-kit .included-section .included-image .mobile-only.image {
+       display: block;
+       width: 100%;
 }
 .product-hormone-test-kit .included-section {
-    padding: 60px 0;
+   padding: 60px 0;
 }
- .product-hormone-test-kit .included-section .included-image .desktop-only-image {
-    display: none;
+.product-hormone-test-kit .included-section .included-image .desktop-only-image {
+   display: none;
 }
-    .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text__grid img.mobile-only-image {
-    display: block;
+   .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text__grid img.mobile-only-image {
+   display: block;
 }
 .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text__grid img.desktop-only-image{
-    display: none;
+   display: none;
 }
-    .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text__grid{
-        padding:20px;
-    }
-    .product-hormone-test-kit .cst-custom-how-it-work-section slider-component ul.multicolumn-list li {
-    padding-top: 20px;
+   .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text__grid{
+       padding:20px;
+   }
+   .product-hormone-test-kit .cst-custom-how-it-work-section slider-component ul.multicolumn-list li {
+   padding-top: 20px;
 }    
-    .product-hormone-test-kit .cst-custom-how-it-work-section slider-component ul.multicolumn-list li .multicolumn-card {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: 1fr 1.5fr;
-    }
-    .product-hormone-test-kit .cst-custom-how-it-work-section .multicolumn-card__title {
-        margin-top: 0;
-                margin-bottom: 34px;
-    }
-    .product-hormone-test-kit .cst-custom-how-it-work-section p {
-   font-size: 16px !important;
-    }
-        .product-hormone-test-kit .cst-custom-how-it-work-section .multicolumn-card .media--square {
-        margin-bottom: 0;
-    }
-    .product-hormone-test-kit .cst-custom-how-it-work-section slider-component ul.multicolumn-list {
-        margin-top: 20px;
-    }
-    .product-hormone-test-kit .product-form__buttons {
-          margin-top: 0;
-        gap: 15px
+   .product-hormone-test-kit .cst-custom-how-it-work-section slider-component ul.multicolumn-list li .multicolumn-card {
+       display: grid;
+       gap: 10px;
+       grid-template-columns: 1fr 1.5fr;
+   }
+   .product-hormone-test-kit .cst-custom-how-it-work-section .multicolumn-card__title {
+       margin-top: 0;
+               margin-bottom: 34px;
+   }
+   .product-hormone-test-kit .cst-custom-how-it-work-section p {
+  font-size: 16px !important;
+   }
+       .product-hormone-test-kit .cst-custom-how-it-work-section .multicolumn-card .media--square {
+       margin-bottom: 0;
+   }
+   .product-hormone-test-kit .cst-custom-how-it-work-section slider-component ul.multicolumn-list {
+       margin-top: 20px;
+   }
+   .product-hormone-test-kit .product-form__buttons {
+         margin-top: 0;
+       gap: 15px
 }
 .cst-hassle-head h4 , .product-hormone-test-kit .product__description.rte>* strong{
-    font-size:16px;
+   font-size:16px;
 }
 .customized-section-for-hormonal-test-kit li{
-    font-size:11px;
+   font-size:11px;
 }
- .cst-hasslegrid-main  .cst-hassle-item img {
-    width: 31px;
-    height: 31px;
-  }
- .product-hormone-test-kit .product-form__quantity {
-         border: 2px solid #ECF1F4;
-        line-height: 37px;
-        padding: 4px;
+.cst-hasslegrid-main  .cst-hassle-item img {
+   width: 31px;
+   height: 31px;
  }
-  .product-hormone-test-kit .quantity {
-    width: 9rem;
+.product-hormone-test-kit .product-form__quantity {
+        border: 2px solid #ECF1F4;
+       line-height: 37px;
+       padding: 4px;
+}
+ .product-hormone-test-kit .quantity {
+   width: 9rem;
 }
 .cst-subscription-temp .cst-product-img-temp .text-image-data p:last-child{
-    font-size:10px;
+   font-size:10px;
 }
 
 }
 @media screen and (max-width: 480px){
 .product-hormone-test-kit input[id*=Quantity-buy_buttons] {
-    font-size: 20px;
+   font-size: 20px;
 }
-    .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text__grid .grid__item:first-child .media--adapt img {
-        margin: 0 auto;
-    }
-    .product-hormone-test-kit .text-image-div.ultra_feacture.new {
-        padding: 20px !important;
-    }
-    .product-hormone-test-kit .cst-subscription-temp .text-image-div {
-    padding-top:10px;
+   .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text__grid .grid__item:first-child .media--adapt img {
+       margin: 0 auto;
+   }
+   .product-hormone-test-kit .text-image-div.ultra_feacture.new {
+       padding: 20px !important;
+   }
+   .product-hormone-test-kit .cst-subscription-temp .text-image-div {
+   padding-top:10px;
 }
-    .product-hormone-test-kit.template-product .ultra_feacture.new .main_div_icon p {
-        font-size: 14px;
-    }
-     .product-hormone-test-kit .text-image-div.ultra_feacture.new .main_div_icon.appco_bg:nth-child(1) .text-image-data p {
-    font-size: 16px;
+   .product-hormone-test-kit.template-product .ultra_feacture.new .main_div_icon p {
+       font-size: 14px;
+   }
+    .product-hormone-test-kit .text-image-div.ultra_feacture.new .main_div_icon.appco_bg:nth-child(1) .text-image-data p {
+   font-size: 16px;
 }
 
 

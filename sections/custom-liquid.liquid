@@ -1,144 +1,69 @@
 {%- style -%}
-  #shopify-section-{{ section.id }}{
-    --section-padding-top: {{ section.settings.padding_top }}
-    px;
-    --section-padding-bottom: {{ section.settings.padding_bottom }}
-    px;
+  .section-{{ section.id }}-padding {
+    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+    padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
   }
 {%- endstyle -%}
-
-{% if page.handle == "cycle-assessment" %}
-  {% if localization.language.iso_code == "de" %}
-    <div
-      class="octane-ai-quiz "
-      data-quiz-id="2i5d1K4XlvEQ0xN4"
-      data-embed-type="fullpage"
-      data-mobile-height="match_browser"
-      data-desktop-height="match_browser"></div>
-    <script
-      src="https://app.octaneai.com/j5p0x2vjnwcsfx1z/quiz.js"
-      async
-      defer></script>
-
-    <script>
-      document.addEventListener('octane.quiz.completed', function(e) {
-        localStorage.setItem("results", JSON.stringify(e.detail));
-        window.location.href = "/de/pages/results";
-      }, false);
-    </script>
-  {% else %}
-    <div
-      class="octane-ai-quiz "
-      data-quiz-id="eqz6spPyErm7T51Y"
-      data-embed-type="fullpage"
-      data-mobile-height="match_browser"
-      data-desktop-height="match_browser"></div>
-    <script
-      src="https://app.octaneai.com/j5p0x2vjnwcsfx1z/quiz.js"
-      async
-      defer></script>
-<!--
-    <script>
-      document.addEventListener('octane.quiz.completed', function(e) {
-        localStorage.setItem("results", JSON.stringify(e.detail));
-        window.location.href = "/pages/results";
-      }, false);
-    </script>
--->
-  {% endif %}
-{% else %}
-
-
-
-{% if page.handle == "hormone-assessment" %}
-  {% if localization.language.iso_code == "de" %}
-    <div
-      class="octane-ai-quiz "
-      data-quiz-id="FMpuFgzcx0Fg4aZW"
-      data-embed-type="fullpage"
-      data-mobile-height="match_browser"
-      data-desktop-height="match_browser"></div>
-    <script
-      src="https://app.octaneai.com/j5p0x2vjnwcsfx1z/quiz.js"
-      async
-      defer>
-    </script>
-
-  {% else %}
-    <div
-      class="octane-ai-quiz "
-      data-quiz-id="5VHVyvZMJLzPVASv"
-      data-embed-type="fullpage"
-      data-mobile-height="match_browser"
-      data-desktop-height="match_browser"></div>
-    <script
-      src="https://app.octaneai.com/j5p0x2vjnwcsfx1z/quiz.js"
-      async
-      defer>
-    </script>
-    
-  {% endif %}
-{% endif %}
-{% else %}
-  
-  <div class="section--padding{% if section.settings.show_divider %} section--divider{% endif %}">
-    <div class="page-width{% if section.settings.full_width %} page-width--full-width{% endif %}">
-      {{ section.settings.custom_liquid }}
-    </div>
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="section-{{ section.id }}-padding">
+    {{ section.settings.custom_liquid }}
   </div>
-{% endif %}
+</div>
 
 {% schema %}
-  {
-    "name": "t:sections.custom-liquid.name",
-    "tag": "section",
-    "class": "section",
-    "settings": [
-      {
-        "type": "liquid",
-        "id": "custom_liquid",
-        "label": "t:sections.custom-liquid.settings.custom_liquid.label",
-        "info": "t:sections.custom-liquid.settings.custom_liquid.info"
-      },
-      {
-        "type": "checkbox",
-        "id": "full_width",
-        "default": false,
-        "label": "t:sections.all.full_width.label"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_divider",
-        "default": false,
-        "label": "t:sections.all.show_divider.label"
-      },
-      {
-        "type": "header",
-        "content": "t:sections.all.padding.header.content"
-      }, {
-        "type": "range",
-        "id": "padding_top",
-        "min": 0,
-        "max": 100,
-        "step": 4,
-        "unit": "t:sections.all.padding.padding_top.unit",
-        "label": "t:sections.all.padding.padding_top.label",
-        "default": 36
-      }, {
-        "type": "range",
-        "id": "padding_bottom",
-        "min": 0,
-        "max": 100,
-        "step": 4,
-        "unit": "t:sections.all.padding.padding_bottom.unit",
-        "label": "t:sections.all.padding.padding_bottom.label",
-        "default": 36
-      }
-    ],
-    "presets": [
-      {
-        "name": "t:sections.custom-liquid.presets.name"
-      }
-    ]
-  }
+{
+  "name": "t:sections.custom-liquid.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "liquid",
+      "id": "custom_liquid",
+      "label": "t:sections.custom-liquid.settings.custom_liquid.label",
+      "info": "t:sections.custom-liquid.settings.custom_liquid.info"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.custom-liquid.presets.name"
+    }
+  ]
+}
 {% endschema %}

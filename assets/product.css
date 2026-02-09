@@ -1,0 +1,240 @@
+/*Product-female-hormonekit-page-css-start*/
+div#shopify-section-template--27937691959643__what_we_test_section_BbYDtR {
+    background: #ecf1f4;
+}
+body.product-hormone-test-kit .media-slider__frame .slider-button {
+    position: inherit;
+        border: none;
+    color: #000;
+    background-color: #abd0cd;
+    cursor: pointer;
+    width: 4.4rem;
+    height: 4.4rem;
+    padding: 0;
+    text-align: start;
+    transition: color var(--duration-default) ease;
+}
+
+
+body.product-hormone-test-kit .media-slider__frame  .media-slider__icon {
+    left: 13px;
+    position: relative;
+}
+body.product-hormone-test-kit  .customized-section-for-hormonal-test-kit{
+    margin: 40px 0 40px 0;
+}
+body.product-hormone-test-kit .img-txt-container.over-block {
+    width: 100% !important;
+    max-width: max-content;
+    justify-content: left !important;
+    position: relative;
+    gap: 10px;
+    background: #abd0cd;
+    padding: 7px;
+    align-items: center;
+    margin-left: 0;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 12px;
+}
+body.product-hormone-test-kit .img-txt-container.over-block img {
+    height: 22px;
+    width: 22px;
+}
+body.product-hormone-test-kit  .img-txt-container {
+    display: flex;
+    gap: 9px;
+}
+body.product-hormone-test-kit .new-main-product__text p:nth-child(1) {
+    margin-bottom: 9px;
+}
+body.product-hormone-test-kit .new-main-product__heading {
+    font-size: 26px;
+}
+
+.cst-quant-cart-btn {
+display: flex;
+grid-column-gap: 2rem;
+grid-row-gap: 2rem;
+flex-direction: row;
+flex-wrap: unset;
+margin-top: 15px;
+align-items: baseline;
+}
+.cst-quant-cart-btn  button.product-form__submit.button {
+    color: #fff;
+    box-shadow: 0 7px 28px #9191914d;
+    background: #cb342c;
+    font-size: 18px;
+    font-family: Quicksand;
+    min-width: max-content;
+    border-radius: 30px;
+    max-width: 100%;
+    width: 100%;
+}
+.cst-quant-cart-btn div:nth-child(2) {
+    width: 100%;
+}
+
+.cst-quant-cart-btn .form__label {
+display: none;
+}
+
+.product-hormone-test-kit .cst-quant-cart-btn .product-form__quantity {
+    padding: 0;
+}
+
+.cst-quant-cart-bt .button:before {
+display: none;
+}
+body .cst-custom-hormone-info-section .symptoms-card-content img {
+    height: unset;
+}
+
+
+ .cst-custom-why-do-we-test .image-with-text__media--adapt.background-transparent {
+    border: 0;
+    padding: 0 !important;
+}
+ .cst-custom-why-do-we-test .image-with-text__media--adapt.media img{
+      position: static;
+    object-fit: contain;
+    max-width: max-content;
+    margin-left: auto;  
+}
+ .cst-custom-why-do-we-test use-animate.media-wrapper .image-animate{
+         height: auto;
+    padding: 0;
+ }
+ body  .cst-custom-hormone-reviews  .swiper-reviews .swiper-slide{
+        margin-right: 16px;
+ }
+.bottom_faq .accordion_head {
+    background: url('https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Arrows_c1666dd5-de58-42b1-884f-c7dbbd661ff3.png?v=1724759786');
+    background-repeat: no-repeat;
+    background-position: 95% center;
+}
+
+body.product-hormone-test-kit .cst-custom-how-it-work-section .multicolumn-card__title{
+    display:unset;
+}
+body.product-hormone-test-kit .cst-custom-how-it-work-section .multicolumn-card__info {
+    padding: 0;
+}
+body.product-hormone-test-kit .ingredients_content .accordion {
+    margin-bottom: 16px !important;
+}
+body.product-hormone-test-kit .custom_faq .ingredients_content .accordion{
+    box-shadow: none;
+   border: .1rem solid #d2d5d9;
+}
+body.product-hormone-test-kit .custom_faq .accordion_content p {
+    margin-bottom: 10px !important;
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.4;
+    font-size: 18px;
+}
+body.product-hormone-test-kit .custom_faq .ingredients_content .accordion:hover {
+    box-shadow: 0 7px 28px #919191cc;
+}
+body .health_expert.product_health_team .multicolumn-list.grid li.grid__item .image-animate.media {
+    padding-bottom: 0;
+    width: 100%;
+}
+body .health_expert.product_health_team .multicolumn-list.grid li.grid__item .image-animate.media img {
+    width: 100%;
+    position: static;
+    transform: unset;
+    max-width: 250px;
+    height: 200px;
+    object-fit: contain;
+}
+ .health_expert.product_health_team  .multicolumn-list.grid {
+    padding: 0;
+}
+.product-hormone-test-kit.template-product .cst-meet-our-women-health .health_expert {
+    padding: 60px 0 40px 0 !important;
+}
+.product-hormone-test-kit .new-main-product__text p {
+    margin-bottom: 16px;
+}
+.product-hormone-test-kit .new-main-product__text p strong {
+    color: #cb342c;
+}
+.product-hormone-test-kit .wrapper-point-ul ul li {
+    list-style: none;
+}
+
+.product-hormone-test-kit .new-main-product__wrapper .img-txt-container p {
+    margin: 0;
+}
+
+.cst-we-test .hormone-item p {
+    padding-bottom: 15px;
+}
+
+.contact  label.field__label {
+    display: none;
+}
+.contact__button .button {
+    background: #cb342c;
+    border-radius: 30px;
+}
+/*Product-female-hormonekit-page-css-end*/
+
+    @media screen and (max-width: 1920px) and (min-width: 1350px) {
+.product-hormone-test-kit .cst-custom-hormone-info-section .diagram img{
+    object-fit:none;
+}
+}
+@media screen and (max-width: 1200px) {
+   .cst-we-test {
+    padding: 70px 0;
+}
+    body .health_expert.product_health_team .multicolumn.page-width {
+    padding: 0 30px;
+}
+.health_expert.product_health_team  .multicolumn-card__info{
+padding-top:0;
+padding-bottom:0;
+}
+
+
+}
+
+@media screen and (max-width: 989px) {
+    .product-hormone-test-kit  .customized-section-for-hormonal-test-kit{
+          max-width:100%;
+    }
+    .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text__media--adapt.media img , body.product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text{
+        max-width:100%;
+        width:100% !important;
+    }
+    body .cst-custom-how-it-work-section slider-component ul.multicolumn-list li .multicolumn-card {
+        display: flex;
+    }
+    body.product-hormone-test-kit .wrapper-point-ul {
+    max-width: 100%;
+}
+}
+@media screen and (max-width: 767px) {
+    body .health_expert.product_health_team .multicolumn.page-width{
+        padding:0;
+    }
+}
+@media screen and (max-width: 749px) {
+body .new-main-product__text, body .cst-hassle-head h4 {
+    font-size:16px;
+}
+body.product-hormone-test-kit .new-main-product__expert-card{
+    margin-bottom: 30px;
+}
+}
+
+@media screen and (max-width: 575px) {
+ .product-hormone-test-kit .cst-custom-why-do-we-test .image-with-text__grid img.mobile-only-image {
+    margin: 0 auto;
+    max-width: 100%;
+}
+}

@@ -9,10 +9,10 @@
  */
 {
   "markets": {
-    "uk": {
+    "germany": {
       "parent": "@default"
     },
-    "germany": {
+    "uk": {
       "parent": "@default"
     }
   }

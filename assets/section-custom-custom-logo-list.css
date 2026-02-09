@@ -1,0 +1,113 @@
+.custom-logo-list {
+  width: 100%;
+  position: relative;
+}
+
+.custom-logo-list::before,
+.custom-logo-list::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.custom-logo-list::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.custom-logo-list::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.custom-logo-list__wrapper {
+  position: relative;
+}
+
+.custom-logo-list__items {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 48px;
+  flex-wrap: nowrap;
+  /* overflow-x: scroll; */
+}
+
+.custom-logo-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 calc((100% - 144px) / 4);
+}
+
+.custom-logo-list__image {
+  max-height: 48px;
+  width: auto;
+  object-fit: contain;
+}
+@media screen and (min-width: 1440px) {
+  .custom-logo-list::before,
+  .custom-logo-list::after {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .custom-logo-list::before,
+  .custom-logo-list::after {
+    width: 90px;
+  }
+  .custom-logo-list__wrapper.page-width {
+    padding: 0;
+  }
+  
+.custom-logo-list__items {
+  overflow-x: scroll;
+}
+.custom-logo-list__items {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 6px; /* gives scrollbar some breathing room */
+}
+
+/* scrollbar height */
+.custom-logo-list__items::-webkit-scrollbar {
+  height: 6px;
+}
+
+/* scrollbar track */
+.custom-logo-list__items::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* scrollbar thumb (the draggable pill) */
+.custom-logo-list__items::-webkit-scrollbar-thumb {
+  background-color: #9ca3af; /* gray */
+  border-radius: 999px;
+}
+
+/* optional hover effect */
+.custom-logo-list__items::-webkit-scrollbar-thumb:hover {
+  background-color: #6b7280;
+}
+
+}
+
+@media screen and (max-width: 425px) {
+  .custom-logo-list__image {
+    max-height: 25px;
+  }
+}

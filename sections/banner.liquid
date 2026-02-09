@@ -1,0 +1,149 @@
+{{ 'section-banner.css' | asset_url | stylesheet_tag }}
+
+{% assign mainIcons = section.blocks | where: 'type', 'icon-text-main' %}
+{% assign secondaryIcons = section.blocks | where: 'type', 'icon-text-secondary' %}
+
+<style>
+  @media screen and (min-width: 991px) {
+    #section-{{ section.id }} {
+      background: url("{{ section.settings.bg_image | img_url: 'master' }}") center center/cover no-repeat;
+    }
+  }
+</style>
+
+<section class="c-banner" id="section-{{ section.id }}">
+{% if section.settings.bg_image_mobile != blank %}
+  <div class="c-banner__image-mobile absolute-img">
+   {{
+    section.settings.bg_image_mobile
+    | image_url: width: 990
+    | image_tag:
+      width: section.settings.bg_image_mobile.width,
+      sizes: '(min-width: 750px) 50vw, 100vw',
+      widths: '320, 550, 767, 990',
+      alt: section.settings.bg_image_mobile.alt
+  }}
+  </div>
+{% endif %}
+  <div class="c-container">
+    <div class="c-banner__wrapper">
+      <div class="c-banner__content">
+        <div class="c-banner__content-left">
+          {% if section.settings.title != blank %}
+            <h2 class="c-banner__title">
+              {{ section.settings.title | newline_to_br }}
+            </h2>
+          {% endif %}
+          {% if mainIcons.size > 0 %}
+            <div class="c-banner__icons">
+              {% for item in mainIcons %}
+                {% if item.settings.text != blank %}
+                  <div class="c-banner__icon-main c-banner__icon">
+                    {% if item.settings.icon != blank %}
+                      <img src="{{ item.settings.icon | image_url: width: 34, height: 34 }}" alt="{{ item.settings.icon.alt }}" width="17" height="17" loading="lazy">
+                    {% endif %}
+                    <span>{{ item.settings.text }}</span>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+        {% if secondaryIcons.size > 0 %}
+          <div class="c-banner__content-right">
+            {% for item in secondaryIcons %}
+              {% if item.settings.text != blank %}
+                <div class="c-banner__icon-secondary c-banner__icon">
+                  {% if item.settings.icon != blank %}
+                    <img src="{{ item.settings.icon | image_url: width: 34, height: 34 }}" alt="{{ item.settings.icon.alt }}" width="17" height="17" loading="lazy">
+                  {% endif %}
+                  <span>{{ item.settings.text }}</span>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+      {% if section.settings.image != blank %}
+        <div class="c-banner__image">
+          {{
+            section.settings.image
+            | image_url: width: 652
+            | image_tag:
+              width: section.settings.image.width,
+              sizes: '(min-width: 750px) 50vw, 100vw',
+              widths: '750, 990, 1024, 1360, 1440, 1920',
+              alt: section.settings.image.alt
+          }}
+        </div>
+      {% endif %} 
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Banner",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "bg_image",
+        "label": "Background image"
+      },
+      {
+        "type": "image_picker",
+        "id": "bg_image_mobile",
+        "label": "Background image mobile"
+      },
+      {
+        "type": "textarea",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "icon-text-main",
+        "name": "Icon/text primary",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Text"
+          },
+          {
+            "type": "image_picker",
+            "id": "icon",
+            "label": "Icon"
+          }
+        ]
+      },
+      {
+        "type": "icon-text-secondary",
+        "name": "Icon/text secondary",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Text"
+          },
+          {
+            "type": "image_picker",
+            "id": "icon",
+            "label": "Icon"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Banner"
+      }
+    ]
+  }
+{% endschema %}

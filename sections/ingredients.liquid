@@ -1,0 +1,284 @@
+{% liquid
+  assign padding_top = section.settings.padding_top
+  assign padding_bottom = section.settings.padding_bottom
+  assign padding_top_mobile = section.settings.padding_top_mobile
+  assign padding_bottom_mobile = section.settings.padding_bottom_mobile
+%}
+
+{% render 'section-paddings-v3',
+  padding_top: padding_top,
+  padding_bottom: padding_bottom,
+  padding_top_mobile: padding_top_mobile,
+  padding_bottom_mobile: padding_bottom_mobile
+%}
+
+{{ 'section-ingredients.css' | asset_url | stylesheet_tag }}
+{{ 'component-ingredient.css' | asset_url | stylesheet_tag }}
+{{ 'component-ingredient-popup.css' | asset_url | stylesheet_tag }}
+
+{% assign categories_blocks = section.blocks | where: 'type', 'category' %}
+{% assign categories_string = '' %}
+
+{%- for item in categories_blocks -%}
+  {%- if item.settings.handle != blank -%}
+    {%- assign categories_string = categories_string | append: item.settings.handle | append: ',' -%}
+  {%- endif -%}
+{%- endfor -%}
+{% assign categories_string = categories_string | split: ',' %}
+
+<section class="ingredients section-{{ section.id }}--padding">
+  <div class="c-container">
+    <div class="ingredients__wrapper">
+      <div class="ingredients__categories-wrapper">
+        <div class="ingredients__categories">
+          <div class="ingredients__category is--selected" data-handle="all-categories">
+            {{ section.settings.all_categories_text }}
+          </div>
+          {% for item in categories_blocks %}
+            <div class="ingredients__category" data-handle="{{ item.settings.handle }}">
+              {{ item.settings.display_name }}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="ingredients__items-wrapper">
+        <div class="ingredients__items-container" data-handle="all-categories">
+          {%- assign all_categories_index = 0 -%}
+          {% for category in categories_string %}
+            {% assign category_handle = category | downcase | escape | replace: ' ', '_' %}
+            {% assign metaobject_group = shop.metaobjects[category_handle] %}
+            {% if metaobject_group != blank %}
+              {% for item in metaobject_group.values %}
+                {%- assign modal = '#slider_modal_all_' | append: section.id -%}
+                {% render 'ingredient-item', item: item, index: all_categories_index, modal: modal, category: category %}
+                {%- assign all_categories_index = all_categories_index | plus: 1 -%}
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+        </div>
+
+        {% for category in categories_string %}
+          {% assign category_handle = category | downcase | escape | replace: ' ', '_' %}
+          {% assign metaobject_group = shop.metaobjects[category_handle] %}
+          {% if metaobject_group != blank %}
+            <div class="ingredients__items-container is--hide" data-handle="{{ category }}">
+              {% for item in metaobject_group.values %}
+                {%- assign modal = '#slider_modal_' | append: category_handle | append: '_' | append: section.id -%}
+                {% render 'ingredient-item', item: item, index: forloop.index0, modal: modal, category: category %}
+              {% endfor %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      {% if section.settings.bottom_text != blank %}
+        <div class="ingredients__bottom-text">{{ section.settings.bottom_text }}</div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<script src="{{ 'ingredients.js' | asset_url }}" defer></script>
+
+{%- capture slider_modal_settings -%}
+  {
+    "slidesPerView": "auto",
+    "mousewheel": {
+      "enabled": true,
+      "releaseOnEdges": true,
+      "forceToAxis": true
+    },
+    "navigation": {
+      "nextEl": ".ingredients-info-modal-all-{{ section.id }} .ingredients-info-modal__button--next",
+      "prevEl": ".ingredients-info-modal-all-{{ section.id }} .ingredients-info-modal__button--previous"
+    },
+    "pagination": {
+      "el": ".ingredients-info-modal-all-{{ section.id }} .ingredients-info-modal__pagination-element",
+      "type": "fraction",
+      "currentClass": "ingredients-info-modal__current",
+      "totalClass": "ingredients-info-modal__total"
+    }
+  }
+{%- endcapture -%}
+
+<slider-modal
+  class="ingredients-info-modal ingredients-info-modal-all-{{ section.id }}"
+  id="slider_modal_all_{{ section.id }}"
+>
+  <div class="ingredients-info-modal__inner">
+    <div
+      class="swiper ingredients-info-modal__slider"
+      {%- render 'slider-attribute', config: slider_modal_settings, is_observable: false -%}
+    >
+      <div class="swiper-wrapper">
+        {% for category in categories_string %}
+          {% assign category_handle = category | downcase | escape | replace: ' ', '_' %}
+          {% assign metaobject_group = shop.metaobjects[category_handle] %}
+          {% if metaobject_group != blank %}
+            {%- for item in metaobject_group.values -%}
+              <div class="swiper-slide ingredients-info-modal__slide">
+                {%- render 'ingredient-popup-info', ingredient: item -%}
+              </div>
+            {%- endfor -%}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="ingredients-info-modal__footer">
+      <div class="ingredients-info-modal__navigation">
+        <div class="ingredients-info-modal__button--previous">
+          {%- render 'icon', icon: 'slider-arrow-prev' -%}
+        </div>
+        <div class="ingredients-info-modal__button--next">
+          {%- render 'icon', icon: 'slider-arrow-next' -%}
+        </div>
+      </div>
+      <div class="ingredients-info-modal__pagination" style="--conjunction: '{{ 'ingredients.conjunction' | t }} '">
+        {{ 'ingredients.ingredient_slider_fraction_html' | t }}
+      </div>
+    </div>
+  </div>
+</slider-modal>
+
+{% for category in categories_string %}
+  {% assign category_handle = category | downcase | escape | replace: ' ', '_' %}
+  {% assign metaobject_group = shop.metaobjects[category_handle] %}
+  {% if metaobject_group != blank %}
+    {%- capture slider_modal_settings -%}
+      {
+        "slidesPerView": "auto",
+        "mousewheel": {
+          "enabled": true,
+          "releaseOnEdges": true,
+          "forceToAxis": true
+        },
+        "navigation": {
+          "nextEl": ".ingredients-info-modal-{{ category_handle }}-{{ section.id }} .ingredients-info-modal__button--next",
+          "prevEl": ".ingredients-info-modal-{{ category_handle }}-{{ section.id }} .ingredients-info-modal__button--previous"
+        },
+        "pagination": {
+          "el": ".ingredients-info-modal-{{ category_handle }}-{{ section.id }} .ingredients-info-modal__pagination-element",
+          "type": "fraction",
+          "currentClass": "ingredients-info-modal__current",
+          "totalClass": "ingredients-info-modal__total"
+        }
+      }
+    {%- endcapture -%}
+    <slider-modal
+      class="ingredients-info-modal ingredients-info-modal-{{ category_handle }}-{{ section.id }}"
+      id="slider_modal_{{category_handle}}_{{ section.id }}"
+    >
+      <div class="ingredients-info-modal__inner">
+        <div
+          class="swiper ingredients-info-modal__slider"
+          {%- render 'slider-attribute', config: slider_modal_settings, is_observable: false -%}
+        >
+          <div class="swiper-wrapper">
+            {%- for item in metaobject_group.values -%}
+              <div class="swiper-slide ingredients-info-modal__slide">
+                {%- render 'ingredient-popup-info', ingredient: item -%}
+              </div>
+            {%- endfor -%}
+          </div>
+        </div>
+        <div class="ingredients-info-modal__footer">
+          <div class="ingredients-info-modal__navigation">
+            <div class="ingredients-info-modal__button--previous">
+              {%- render 'icon', icon: 'slider-arrow-prev' -%}
+            </div>
+            <div class="ingredients-info-modal__button--next">
+              {%- render 'icon', icon: 'slider-arrow-next' -%}
+            </div>
+          </div>
+          <div class="ingredients-info-modal__pagination" style="--conjunction: '{{ 'ingredients.conjunction' | t }} '">
+            {{ 'ingredients.ingredient_slider_fraction_html' | t }}
+          </div>
+        </div>
+      </div>
+    </slider-modal>
+  {% endif %}
+{% endfor %}
+
+{% schema %}
+{
+  "name": "Ingredients",
+  "settings": [
+    {
+      "type": "text",
+      "id": "all_categories_text",
+      "label": "All categoriest text"
+    },
+    {
+      "type": "text",
+      "id": "bottom_text",
+      "label": "Bottom text"
+    },
+    {
+      "type": "header",
+      "content": "Paddings"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 120
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 90
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding top mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 66
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding bottom mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Category",
+      "settings": [
+        {
+          "type": "text",
+          "id": "display_name",
+          "label": "Display name"
+        },
+        {
+          "type": "text",
+          "id": "handle",
+          "label": "Handle"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ingredients"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,87 @@
+.collapsible-content {
+    width: 100%;
+    background: #fff;
+    border-radius: 16px;
+}
+
+.collapsible-content__label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 16px 16px 24px;
+    gap: 20px;
+    color: var(--text-primary, #404040);
+    font-family: var(--font-body-family);
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.collapsible-content__label input {
+    display: none;
+}
+
+.collapsible-content__label svg {
+    display: block;
+    flex-shrink: 0;
+    transition: .3s ease;
+    width: 44px;
+    height: 44px;
+}
+
+.collapsible-content__label:has(input:checked) svg {
+    transform: rotate(90deg);
+}
+
+.collapsible-content__content-wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    padding: 0px 24px;
+    transition: .3s ease;
+}
+
+.collapsible-content:has(input:checked) .collapsible-content__content-wrapper {
+    grid-template-rows: 1fr;
+    padding: 16px 24px;
+}
+
+.collapsible-content__content {
+    overflow: hidden;
+    color: #000;
+    font-family: var(--font-body-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.6px;
+}
+
+.collapsible-content__content p {
+    margin: 0;
+}
+
+.collapsible-content__content p:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 749px) {
+    .collapsible-content__label {
+        padding: 12px 16px 12px 24px;
+        gap: 8px;
+        font-size: 16px;
+    }
+
+    .collapsible-content__label svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .collapsible-content:has(input:checked) .collapsible-content__content-wrapper {
+        padding: 12px 24px;
+    }
+
+    .collapsible-content__content {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

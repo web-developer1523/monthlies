@@ -1,0 +1,38 @@
+{% comment %}
+  Renders a stylesheet tag contains top/bottom padding within section for mobile/desktop devices.
+
+  Accepts:
+  - padding_top: {Number} Adds a number in px for padding above the section.
+  - padding_bottom: {Number} Adds a number in px for padding under the section.
+  - padding_top_mobile: {Number} Adds a number in px for padding above the section on mobile devices. (optional)
+  - padding_bottom_mobile: {Number} Adds a number in px for padding above the section on mobile devices. (optional)
+
+  Usage:
+  {% render 'section-paddings',
+    padding_top: padding_top,
+    padding_bottom: padding_bottom,
+    padding_top_mobile: padding_top_mobile,
+    padding_bottom_mobile: padding_bottom_mobile
+  %}
+{% endcomment %}
+
+{%- liquid
+  assign padding_top = padding_top | append: 'px'
+  assign padding_bottom = padding_bottom | append: 'px'
+  assign padding_top_mobile = padding_top_mobile | default: padding_top | append: 'px'
+  assign padding_bottom_mobile = padding_bottom_mobile | default: padding_bottom | append: 'px'
+-%}
+
+{%- style -%}
+  .section-{{ section.id }}--padding {
+    padding-top: {{ padding_top }};
+    padding-bottom: {{ padding_bottom }};
+  }
+
+  @media(max-width: 749px) {
+    .section-{{ section.id }}--padding {
+      padding-top: {{ padding_top_mobile }};
+      padding-bottom: {{ padding_bottom_mobile }};
+    }
+  }
+{%- endstyle -%}
