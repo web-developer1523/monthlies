@@ -1,0 +1,160 @@
+{{ 'section-hormonal-hero.css' | asset_url | stylesheet_tag }}
+
+<div class="hormonal-hero">
+  <div class="page-width hormonal-hero-wrapper">
+    <div class="hormonal-hero--content">
+      
+    <img class="hero-logo" src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/monthlies-icon.png?v=1687180779" alt="icon">
+    <img src="{{ section.settings.dynamic_hero_image | img_url: 'master' }}" alt="hero-visual" class="hormonal-hero--visual-top">
+      
+    <h1>{{ section.settings.title }}</h1>
+    <p class="hormonal-hero--text">{{ section.settings.text }}</p>
+
+     {% comment %} 
+        <a href="{{ section.settings.btn_url }}" id="cta-hero-horm" class="button button--black">
+          {{ section.settings.btn }}
+          <svg
+            width="7"
+            height="12"
+            viewBox="0 0 7 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.679688 1.15234L5.67969 6.15234L0.679688 11.1523"
+              stroke="white"
+              stroke-width="1.5" />
+          </svg>
+        </a>
+    {% endcomment %}
+
+
+      <div class="hero-buttons">
+
+        <a id="cta-orderhero" href="{{ section.settings.btn_url }}" class="button button--black">
+    {{ section.settings.btn }}
+    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.679688 1.15234L5.67969 6.15234L0.679688 11.1523" stroke="white" stroke-width="1.5"></path>
+    </svg>
+    <use href="#icon-cart"></use>
+</a>
+
+        
+       <!-- <add-to-cart id="cta-orderhero" class="button button--black" data-variant-id="46864087187803">
+      
+      {{ section.settings.btn }}
+        <svg
+          width="7"
+          height="12"
+          viewBox="0 0 7 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0.679688 1.15234L5.67969 6.15234L0.679688 11.1523"
+            stroke="white"
+            stroke-width="1.5" />
+        </svg>
+        <use href="#icon-cart"></svg>
+      </add-to-cart> -->
+          
+<!--
+       <a href="{{ section.settings.btn_url }}" id="cta-quizhero" class="button button--inverted-white">
+            {{ section.settings.btn2 }}
+            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.679688 1.15234L5.67969 6.15234L0.679688 11.1523" stroke="white" stroke-width="1.5"></path>
+            </svg>
+       </a>
+    -->      
+        </div>
+          
+      <p>{{ section.settings.satisfaction }}</p>
+    </div>
+<!--
+<img
+      src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/hormonal-test.webp?v=1694013990"
+      alt="hero-visual"
+      class="hormonal-hero--visual"> -->
+     <img src="{{ section.settings.dynamic_hero_image | img_url: 'master' }}" alt="hero-visual" class="hormonal-hero--visual">
+     
+<!--
+    <img
+      class="hormonal-hero--bg"
+      src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Vector_ea5846bd-c161-4268-962d-a5051243b711.png?v=1687261862"
+      alt="bg-icon">
+  </div>-->
+</div>
+
+{% schema %}
+  {
+    "name": "hormonal-hero",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Title",
+        "id": "title",
+        "default": "Get to the root cause of your menstrual pain"
+      }, 
+       {
+      "type": "image_picker",
+      "id": "dynamic_hero_image",
+      "label": "Hero Image"
+    }
+      ,{
+        "type": "text",
+        "label": "Text",
+        "id": "text",
+        "default": "Eliminate the guesswork and take control of your well-being with our at-home hormone saliva self-test with personalised recommendations to tackle any underlying issues."
+      }, {
+        "type": "text",
+        "label": "Button",
+        "id": "btn",
+        "default": "Order now"
+      },{
+        "type": "text",
+        "label": "Button",
+        "id": "btn2",
+        "default": "Take the Quiz"
+      },{
+        "type": "url",
+        "label": "Button URL",
+        "id": "btn_url"
+      }, {
+        "type": "text",
+        "label": "Satisfaction",
+        "id": "satisfaction",
+        "default": "★★★★☆ 80% of customer satisfaction"
+      }
+    ],
+    "presets": [
+      {
+        "name": "hormonal-hero"
+      }
+    ]
+  }
+{% endschema %}
+
+<script>
+  function clearCartAndCheckout(variantId) {
+    $.ajax({
+      type: 'POST',
+      url: '/cart/clear.js',
+      dataType: 'json',
+      success: function() {
+        addToCartAndCheckout(variantId);
+      }
+    });
+  }
+
+  function addToCartAndCheckout(variantId) {
+    $.ajax({
+      type: 'POST',
+      url: '/cart/add.js',
+      data: { quantity: 1, id: variantId },
+      dataType: 'json',
+      success: function() {
+        window.location.href = '/checkout';
+      }
+    });
+  }
+</script>

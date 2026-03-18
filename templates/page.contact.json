@@ -9,25 +9,127 @@
  */
 {
   "sections": {
+    "image-banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Contact Us",
+            "heading_size": "h0",
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Got questions, feedback, or a revolutionary idea that could help us improve our services?</p><p>Whatever it is,<strong> we would love to hear from you!</strong></p>",
+            "text_size": "typeset3",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "custom_class": "contact_banner",
+        "video": "",
+        "bg-image": "shopify://shop_images/contact_header.png",
+        "image": "shopify://shop_images/Untitled_design.png",
+        "image_position": "center center",
+        "text_box_position": "bottom-right",
+        "text_alignment": "left",
+        "image_ratio": "400px",
+        "show_text_box": false,
+        "full_width": true,
+        "show_divider": false,
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "250px",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "colors_button_label": "#d72c0d",
+        "colors_button_background": "#ffffff",
+        "colors_text": "#ffffff",
+        "colors_overlay": "#000000",
+        "colors_overlay_opacity": 4,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36
+        "narrow": false,
+        "padding_top": 60,
+        "padding_bottom": 72
       }
     },
     "form": {
       "type": "contact-form",
+      "blocks": {
+        "contact-0": {
+          "type": "contact",
+          "settings": {
+            "heading": "Information",
+            "text": "hi@withmonthlies.com",
+            "link": "mailto:hi@withmonthlies.com"
+          }
+        },
+        "contact-1": {
+          "type": "contact",
+          "settings": {
+            "heading": "Orders & Returns",
+            "text": "returns@withmonthlies.com",
+            "link": "mailto:support@withmonthlies.com"
+          }
+        },
+        "contact-2": {
+          "type": "contact",
+          "settings": {
+            "heading": "Partnerships",
+            "text": "partners@withmonthlies.com",
+            "link": "mailto:partners@withmonthlies.com"
+          }
+        },
+        "contact-3": {
+          "type": "contact",
+          "disabled": true,
+          "settings": {
+            "heading": "Press",
+            "text": "press@yourstore.com",
+            "link": "mailto:press@yourstore.com"
+          }
+        },
+        "media": {
+          "type": "media",
+          "settings": {
+            "heading": "Follow Us"
+          }
+        }
+      },
+      "block_order": [
+        "contact-0",
+        "contact-1",
+        "contact-2",
+        "contact-3",
+        "media"
+      ],
       "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "color_scheme": "scheme-1",
-        "padding_top": 0,
+        "show_phone": true,
+        "show_divider": false,
+        "heading": "Get in Touch",
+        "heading_size": "h2",
+        "heading_tag": "h2",
+        "padding_top": 36,
         "padding_bottom": 0
       }
     }
   },
   "order": [
+    "image-banner",
     "main",
     "form"
   ]

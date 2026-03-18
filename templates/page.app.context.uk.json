@@ -1,0 +1,38 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "context": {
+    "market": "uk"
+  },
+  "parent": "page.app.json",
+  "sections": {
+    "review_jCa6Cg": {
+      "settings": {},
+      "blocks": {
+        "reviews_TK8ACK": {
+          "disabled": true,
+          "settings": {}
+        },
+        "reviews_gQdLqU": {
+          "disabled": true,
+          "settings": {}
+        },
+        "reviews_AdM7QQ": {
+          "disabled": true,
+          "settings": {}
+        },
+        "reviews_rWLqQ6": {
+          "disabled": true,
+          "settings": {}
+        }
+      }
+    }
+  }
+}

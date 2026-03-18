@@ -26,7 +26,30 @@
     {% endif %}
   </div>
 </section>
- 
+
+<script type="lazyload_js">
+  // Wait for Swiper to be available
+  function initializeSwiper() {
+    if (typeof Swiper !== 'undefined') {
+      new Swiper(".swiper-reviews", {
+        slidesPerView: "auto",
+        loop: false,
+        spaceBetween: 16
+      });
+    } else {
+      // If Swiper isn't loaded yet, try again in 100ms
+      setTimeout(initializeSwiper, 100);
+    }
+  }
+
+  // Initialize when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeSwiper);
+  } else {
+    initializeSwiper();
+  }
+</script>
+
 {% schema %}
   {
     "name": "Hormone Reviews",

@@ -4,7 +4,7 @@
     <div class="title-container">
       <h2 class="title h1">{{ section.settings.title }}</h2>
     </div>
-    <div class="swiper swiper-reviews">
+    <div class="swiper swiper-reviews !overflow-visible">
       <div class="swiper-wrapper">
         {%- for block in section.blocks -%}
           <div class="swiper-slide">
@@ -26,18 +26,14 @@
   </div>
 </section>
 
- <script type="lazyload_js">
+<script type="lazyload_js">
   // Wait for Swiper to be available
   function initializeSwiper() {
     if (typeof Swiper !== 'undefined') {
       new Swiper(".swiper-reviews", {
-        slidesPerView: 1,
+        slidesPerView: "auto",
         loop: false,
-        spaceBetween: 16,
-        centeredSlides: true,
-        centeredSlidesBounds: true,
-        speed: 300,
-        resistanceRatio: 0
+        spaceBetween: 16
       });
     } else {
       // If Swiper isn't loaded yet, try again in 100ms
@@ -51,7 +47,7 @@
   } else {
     initializeSwiper();
   }
-</script> 
+</script>
 
 {% schema %}
   {

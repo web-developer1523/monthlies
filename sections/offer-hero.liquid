@@ -1,0 +1,70 @@
+{{ 'section-offer-hero.css' | asset_url | stylesheet_tag }}
+
+<section>
+    <div class="hero-wrapper">
+        <div class="page-width">
+            <h2>{{ section.settings.title }}</h2>
+        </div>
+        <img src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/offer-hero.png?v=1688543128" alt="offer-hero">
+    </div>
+
+    <div class="hero-title">
+        <div class="page-width">
+            <h4>{{ section.settings.title2 }}</h4>
+        </div>
+    </div>
+
+    <div class="hero-images">
+        <img src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Mask_group_685507ed-4b5e-45fa-8b8e-bd87166966ad.png?v=1688543225" alt="offer-img">
+        <img src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Mask_group-1_77bb2b34-a75e-4e49-900f-b622b3ab260d.png?v=1688543224" alt="offer-img">
+        <img src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Mask_group-2_9f87a817-0a38-45ee-8969-9064db1e1fd7.png?v=1688543225" alt="offer-img">
+    </div>
+
+    <div class="hero-personalised">
+        <div class="page-width">
+            <div class="personalised-title">
+                <img src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/icon-monthlies.png?v=1688544183" alt="monthlies-icon">
+                <h4>{{ section.settings.title3 }}</h4>
+            </div>
+
+            <p>{{ section.settings.text }}</p>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+    {
+      "name": "offer-hero",
+      "tag": "section",
+      "class": "section",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Title",
+          "id": "title",
+          "default": "Your personalised solution"
+        },
+        {
+          "type": "text",
+          "label": "Title 2",
+          "id": "title2",
+          "default": "At Monthlies, we believe in a holistic approach to menstrual health, beyond just products."
+        }, {
+            "type": "text",
+            "label": "Title 3",
+            "id": "title3",
+            "default": "Your personalised solution"
+        }, {
+            "type": "text",
+            "label": "Text",
+            "id": "text",
+            "default": "Our solutions are holistic and personalised, combining all-natural products, expert guidance and lifestyle tips to give you the instant and long-term symptom relief you need."
+        }
+      ],
+      "presets": [
+        {
+          "name": "offer-hero"
+        }
+      ]
+    }
+  {% endschema %}

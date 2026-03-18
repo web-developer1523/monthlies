@@ -1,0 +1,535 @@
+{{ 'better-input.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="{{ 'slick-slider.css' | asset_url }}">
+
+<!--
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+-->
+<style>
+    .main_img_desk img   {
+      max-width: 257px;
+      padding
+  }
+      .main_img_mobile img {
+      max-width: 257px;
+      padding: 35px;
+      margin-top: 21px;
+  }
+    @media screen and (max-width:989px) {
+      .trigger_slider .action_image { position: relative; text-align: center; max-width: 400px; margin: 0 auto; }
+      .trigger_slider .action { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
+      .trigger_slider img.mobile_hover_img { display: none; }
+      .trigger_slider .card { padding: 24px; position: relative; width: 100%; height: 100%; text-align: left; transition: transform 0.6s; transform-style: preserve-3d; background: #fff; border-radius: 20px; border: 2px solid transparent; height: 200px; }
+      .trigger_slider .card.slick-slide.slick-current.slick-active.slick-center { border: 2px solid #CB342C; }
+      .trigger_slider .slick-slide { margin: 0 8px; }
+      .trigger_slider .card h2 { margin-top: 0; margin-bottom: 10px; font-size: 16px; font-weight: 700; font-family: 'Quicksand' !important;letter-spacing:0; }
+      .trigger_slider .card p { margin-top: 10px;line-height:1.2;letter-spacing:0; }
+      .trigger_slider a[class*="slide"] { display: inline-block; position: absolute; }
+      .trigger_slider a[class*="slide"] { width: 85px; height: 90px; display: flex; align-items: center; justify-content: space-around; }
+      .trigger_slider .action_image { margin: 60px auto 30px; }
+      .trigger_slider a.slide1 { left: 27%; top: -10%; }
+      .trigger_slider a.slide2 { right: 31%; top: -2%; }
+      .trigger_slider a.slide3 { bottom: 40%; right: 10%; }
+      .trigger_slider a.slide4 { bottom: 2%; right: 16%; }
+      .trigger_slider a.slide5 { bottom: -7%; left: 40%; }
+      .trigger_slider a.slide6 { bottom: 16%; left: 28%; }
+      .trigger_slider a.slide7 { left: 14%; bottom: 50%; }
+      .trigger_slider a.active img.mobile_not_hover { display: none !important; }
+      .trigger_slider a.active img.mobile_hover_img { display: block !important; }
+      section[id*="better_input"] .page-width { padding: 0; }
+      section[id*="better_input"] p.description {padding-left:20px;padding-right:20px;}
+      /* stars new position css start */
+      .trigger_slider a.slide3 { bottom: 40%; right: 20%; }
+      .trigger_slider a.slide2 { right: 33%; top: 0%; }
+      .trigger_slider a.slide1 { left: 28%; top: 0%; }
+      .trigger_slider a.slide7 { left: 18%; bottom: 50%; }
+      .trigger_slider a.slide4 { bottom: 6%; right: 16%; }
+      /* stars new position css end */
+    }
+    @media screen and (min-width:989px) {
+      .card.active { visibility: visible; }
+      .card.active img.not_hover { visibility: hidden; display: none; }
+      .card.active img.hover_img { visibility: visible; display: block; }
+    }
+  @media screen and (max-width:380px) {
+    .trigger_slider .card {padding:20px;}
+  }
+</style>
+
+<div id="better_input_output" class="page-width{% if section.settings.narrow %} page-width--inner{% endif %}">
+  <div class="rich-text section--padding {{ section.settings.custom_class }}">
+    <div class="heading ">
+      <h2>{{ section.settings.Title }}</h2>
+      <p class="description">{{ section.settings.section_description }}</p>
+    </div>
+
+    <div class="desktop better_input_container d-flex">
+      <div class="left_side">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'Slide' -%}
+              <div class="card">
+                <h5 class="card_heading">
+                  {{ block.settings.heading }}
+                  <span class="absolute">
+                    <span class="red_line"></span>
+                    <img
+                      class="not_hover"
+                      data-class="LazyLoad" 
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                      data-src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/white_star.png?v=1723612522"
+                    >
+                    <img
+                      class="hover_img"
+                      data-class="LazyLoad"
+                      data-src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/hover-star.png?v=1723612499"
+                    >
+                  </span>
+                </h5>
+                <div class="dsc">{{ block.settings.dsc }}</div>
+              </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+      <div class="main_img_desk">
+        <img 
+          data-class="LazyLoad"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+          data-src="{{ section.settings.image | img_url: 'master' }}">
+      </div>
+      <div class="right_side">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'Slide1' -%}
+              <div class="card">
+                <h5 class="card_heading">
+                  {{ block.settings.heading }}
+                  <span class="absolute">
+                    <span class="red_line"></span>
+                    <img                      
+                      class="not_hover"
+                      data-class="LazyLoad"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" 
+                      data-src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/white_star.png?v=1723612522"
+                    >
+                    <img
+                      class="hover_img"
+                      data-class="LazyLoad" 
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                      data-src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/hover-star.png?v=1723612499"
+                    >
+                  </span>
+                </h5>
+                <div class="dsc">{{ block.settings.dsc }}</div>
+              </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+
+    <div class="note_for_content">
+      <p>{{ section.settings.note }}</p>
+    </div>
+
+    <div class="swiper-container_supl better_input_slider mobile">
+      <div class="trigger_slider">
+        <div class="action_image">
+          <div class="main_img_mobile">
+            <img 
+              data-class="LazyLoad"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+              data-src="{{ section.settings.image | img_url: 'master' }}"></div>
+          <div class="action">
+            <a href="#" data-slide="1" class="slide1 active">
+              <img
+                class="mobile_not_hover"
+                data-class="LazyLoad"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                data-src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/white_star.png?v=1723612522"
+              >
+              <img
+                class="mobile_hover_img"
+                data-class="LazyLoad" 
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" 
+                data-src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/hover-star.png?v=1723612499"
+              >
+            </a>
+            <a href="#" data-slide="2" class="slide2">
+              <img
+                class="mobile_not_hover"
+                 data-class="LazyLoad" 
+                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" 
+                 data-src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/white_star.png?v=1723612522"
+              >
+              <img
+                class="mobile_hover_img"
+                data-class="LazyLoad" 
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" 
+                data-src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/hover-star.png?v=1723612499"
+              >
+            </a>
+            <a href="#" data-slide="3" class="slide3">
+              <img
+                class="mobile_not_hover"
+                data-class="LazyLoad" 
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" 
+                data-src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/white_star.png?v=1723612522"
+              >
+              <img
+                class="mobile_hover_img"
+                data-class="LazyLoad"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" 
+                data-src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/hover-star.png?v=1723612499"
+              >
+            </a>
+            <a href="#" data-slide="4" class="slide4">
+              <img
+                class="mobile_not_hover"
+                data-class="LazyLoad"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                data-src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/white_star.png?v=1723612522"
+              >
+              <img
+                class="mobile_hover_img"
+                data-class="LazyLoad"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                data-src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/hover-star.png?v=1723612499"
+              >
+            </a>
+            <a href="#" data-slide="5" class="slide5">
+              <img
+                class="mobile_not_hover"
+                data-class="LazyLoad"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                data-src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/white_star.png?v=1723612522"
+              >
+              <img
+                class="mobile_hover_img"
+                data-class="LazyLoad"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                data-src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/hover-star.png?v=1723612499"
+              >
+            </a>
+            <a href="#" data-slide="6" class="slide6">
+              <img
+                class="mobile_not_hover"
+                data-class="LazyLoad"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                data-src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/white_star.png?v=1723612522"
+              >
+              <img
+                class="mobile_hover_img"
+                data-class="LazyLoad"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                data-src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/hover-star.png?v=1723612499"
+              >
+            </a>
+            <a href="#" data-slide="7" class="slide7">
+              <img
+                class="mobile_not_hover"
+                data-class="LazyLoad"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                data-src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/white_star.png?v=1723612522"
+              >
+              <img
+                class="mobile_hover_img"
+                data-class="LazyLoad"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                data-src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/hover-star.png?v=1723612499"
+              >
+            </a>
+          </div>
+        </div>
+        <div class="better_slider en">
+          <div class="card">
+            <h2>Science meets Clinical Expertise</h2>
+            <p>Our formula <b>merges</b> science-backed ingredients with clinical expert knowledge.</p>
+          </div>
+          <div class="card">
+            <h2>Single Supplement Solution</h2>
+            <p>
+              A thoughtful blend of <b>26+ ingredients, </b>with vitamins, minerals, plant extracts & nutrients - no
+              need for multiple supplements.
+            </p>
+          </div>
+          <div class="card">
+            <h2>Premium Ingredients for Optimal Absorption</h2>
+            <p><b>Individually and carefully curated </b>to ensure your body absorbs and utilizes them with ease.</p>
+          </div>
+          <div class="card">
+            <h2>Tested Quality for All Dietary Preferences</h2>
+            <p>Third-party tested and for all types of eaters: <b>vegan, dairy-free, nut-free, and gluten-free.</b></p>
+          </div>
+          <div class="card">
+            <h2>Going Beyond Period Pain</h2>
+            <p>Packed with natural ingredients, <b>supporting your body’s overall health,</b> not just your period.</p>
+          </div>
+          <div class="card">
+            <h2>All-in-One Women's Health Support</h2>
+            <p><b>All you need as a woman </b> for health and hormone wellness - packed in one scoop.</p>
+          </div>
+          <div class="card">
+            <h2>Formulated by Women’s Health Experts</h2>
+            <p>
+              Designed by <b>female health experts</b> with years of experience, because they understand women’s bodies
+              and needs.
+            </p>
+          </div>
+        </div>
+
+        <!-- Germane mobile content -->
+
+        <div class="better_slider german">
+          <div class="card">
+            <h2>Wissenschaft trifft auf klinische Expertise</h2>
+            <p>Unsere Formel vereint wissenschaftlich fundierte Inhaltsstoffe mit medizinischem Fachwissen.</p>
+          </div>
+          <div class="card">
+            <h2>Rundum-Lösung in einem Supplement</h2>
+            <p>
+              Eine Mischung aus <b> über 26 sorgfältig ausgewählten Zutaten</b> - Vitamine, Mineralien, Pflanzenextrakte
+              und Nährstoffe. Mehrere Nahrungsergänzungsmittel? Nicht nötig
+            </p>
+          </div>
+          <div class="card">
+            <h2>Hochwertige Inhaltsstoffe für optimale Aufnahme</h2>
+            <p>
+              <b> Individuell und sorgfältig ausgewählt </b>, damit dein Körper sie problemlos aufnehmen und verwerten
+              kann.
+            </p>
+          </div>
+          <div class="card">
+            <h2>Geprüfte Qualität für alle Ernährungsweisen</h2>
+            <p>
+              Unabhängig getestet und für alle Ernährungsweisen geeignet:
+              <b>vegan, laktosefrei, nussfrei und glutenfrei.</b>
+            </p>
+          </div>
+          <div class="card">
+            <h2>Über Periodenschmerzen hinaus</h2>
+            <p>
+              Vollgepackt mit natürlichen Inhaltsstoffen, die die Gesundheit <b> deines Körpers allgemein stärken </b> ,
+              nicht nur während der Periode.
+            </p>
+          </div>
+          <div class="card">
+            <h2>All-in-One Gesundheitsunterstützung für Frauen</h2>
+            <p>
+              <b> Alles, was du als </b> Frau für Gesundheit und hormonelles Wohnbefinden <b> brauchst </b> – gebündelt
+              in einem Löffel.
+            </p>
+          </div>
+          <div class="card">
+            <h2>Entwickelt von Fachärzten für Frauengesundheit</h2>
+            <p>
+              Von <b> erfahrenen Ärztinnen </b> entwickelt, die den weiblichen Körper und seine Bedürfnisse genau
+              verstehen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Better Input",
+  "tag": "section",
+  "class": "section cst-better-inputs-sec",
+  "settings": [
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom Class"
+    },
+    {
+      "type": "richtext",
+      "id": "Title",
+      "label": "Heading"
+    },
+     {
+      "type": "richtext",
+      "id": "note",
+      "label": "Add Note"
+    },
+     {
+      "type": "inline_richtext",
+      "id": "section_description",
+      "label": "Description"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.header.content"
+    }, {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "t:sections.all.padding.padding_top.unit",
+      "label": "t:sections.all.padding.padding_top.label",
+      "default": 36
+    }, {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "t:sections.all.padding.padding_bottom.unit",
+      "label": "t:sections.all.padding.padding_bottom.label",
+      "default": 36
+    },
+     {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      }
+  ],
+   "blocks": [
+  {
+    "type": "Slide",
+    "name": "Slide",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "dsc",
+        "label": "dsc"
+      }
+    ]
+  },
+      {
+    "type": "Mobileslide",
+    "name": "Mobileslide",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "dsc",
+        "label": "dsc"
+      }
+    ]
+  },
+   {
+    "type": "Slide1",
+    "name": "Slide1",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "dsc",
+        "label": "dsc"
+      }
+    ]
+  }
+],
+  "presets": [
+    {
+      "name": "Better Input"
+    }
+  ]
+}
+{% endschema %}
+
+<script type="lazyload_js" data-src="{{ 'jQuery.js' | asset_url }}" ></script>
+<script type="lazyload_js" data-src="{{ 'slick-js.js' | asset_url }}" ></script>
+<!--
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+-->
+
+<script type="lazyload_js">
+      jQuery(document).ready(function() {
+      // Function to initialize the slider
+      function initializeSlider() {
+          // Get the viewport width using window.innerWidth
+          var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+
+          // Check if the screen width is mobile (<= 768px)
+          if (viewportWidth <= 768) {
+              // If the slider has already been initialized, un-slick it first
+              if (jQuery('.better_slider').hasClass('slick-initialized')) {
+                  jQuery('.better_slider').slick('unslick');
+              }
+
+              // Now, initialize the slider with your settings for mobile
+              jQuery('.better_slider').slick({
+                  centerMode: true,
+                  centerPadding: '54px', // Default for smaller screens
+                  slidesToShow: 1,       // Only show 1 slide on mobile
+                  arrows: false,
+                  responsive: [
+                      {
+                          breakpoint: 768, // Mobile specific settings
+                          settings: {
+                              arrows: false,
+                              centerMode: true,
+                              centerPadding: '40px',
+                              slidesToShow: 1  // Show 1 slide on mobile
+                          }
+                      },
+                      {
+                          breakpoint: 480, // Smaller mobile screens (if needed)
+                          settings: {
+                              arrows: false,
+                              centerMode: true,
+                              centerPadding: '40px',
+                              slidesToShow: 1  // Still show 1 slide
+                          }
+                      }
+                  ]
+              });
+          }
+      }
+
+      // Initialize the slider on page load
+      initializeSlider();
+
+      // Reinitialize slider when the window is resized (with explicit check for mobile)
+      jQuery(window).resize(function() {
+          initializeSlider();
+      });
+
+      // Set up click functionality for slide navigation
+      jQuery('a[data-slide]').click(function (e) {
+          e.preventDefault();
+          var slideno = jQuery(this).data('slide');
+          jQuery('.better_slider').slick('slickGoTo', slideno - 1);
+          jQuery(this).addClass('active');
+          jQuery(this).siblings().removeClass('active');
+      });
+
+      // Update 'active' class on afterChange event
+      jQuery('.better_slider').on('afterChange', function(event, slick, currentSlide) {
+          // Remove 'active' class from all anchors
+          jQuery('a[data-slide]').removeClass('active');
+
+          // Add 'active' class to the anchor corresponding to the current slide
+          jQuery('a[data-slide="' + (currentSlide + 1) + '"]').addClass('active');
+      });
+
+      // Add 'active' class to the second card on the left side
+      jQuery('.left_side .card:nth-of-type(2)').addClass('active');
+
+      // Hover effect to add/remove 'active' class on cards
+      jQuery('.card').on('mouseenter', function() {
+          jQuery('.card').removeClass('active');
+      });
+
+      jQuery('.card').on('mouseleave', function() {
+          jQuery(this).addClass('active');
+      });
+  });
+</script>

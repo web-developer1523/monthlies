@@ -1,0 +1,275 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blocks_rLJgg": {
+      "type": "_blocks",
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "ai_gen_block_5b5d6e3_icQnx": {
+          "type": "ai_gen_block_5b5d6e3",
+          "disabled": false,
+          "settings": {
+            "header-251c14be91af3aeacb18188d2c7fd46c": null,
+            "badge_text": "Safe for ages 13+",
+            "badge_size": 13,
+            "badge_bg_color": "#252a31",
+            "badge_text_color": "#ffffff",
+            "header-0ac391a2fb0a501e271adb5b3688dffe": null,
+            "title": "For mums and teens",
+            "title_size": 42,
+            "subtitle": "Loved by mums who have tried everything for her teen´s period symptoms",
+            "subtitle_size": 17,
+            "header-ae46ca7833338bae0f4eff3245b1712c": null,
+            "image_1": "shopify://shop_images/WhatsApp_Image_2026-01-12_at_18.54.36_5d0f2cbc-6117-49c0-bbda-7aa552b9ccd9.jpg",
+            "show_second_image": true,
+            "image_2": "shopify://shop_images/Background_f1013c11-a6f0-4358-82c7-bad9fb2dc55c.png",
+            "image_border_radius": 20,
+            "header-0ae2a1372f3b7d8b77de3608886fe829": null,
+            "review_1_text": "My daughter's cramps have improved so much since starting Monthlies. As a mum, it's such a relief to see her feeling better during her period.",
+            "review_1_author": "Sarah M.",
+            "header-d27b1aac0bec9ddd8b302cf4535acbe1": null,
+            "review_2_text": "Finally something natural that actually works for my teenage daughter. Her mood swings and pain are so much better. Highly recommend for young women!",
+            "review_2_author": "Emma L.",
+            "header-fe9cb5a14fef2ce386721c0ffa471bdd": null,
+            "review_text_size": 15,
+            "author_size": 14,
+            "review_bg_color": "#f9f9f9",
+            "review_border_radius": 20,
+            "star_color": "#ffb503",
+            "header-3ad3756e56f694dce8676d7298bbbcaf": null,
+            "show_professional_badge": true,
+            "professional_badge_text": "Created by women's health professionals",
+            "professional_text_size": 14,
+            "professional_badge_bg": "#ffffff",
+            "professional_text_color": "#252a31",
+            "header-acf9f5be492ae13c18dc987bdd6affcd": null,
+            "background_color": "#ffffff",
+            "text_color": "#252a31",
+            "accent_color": "#abd0cd"
+          }
+        }
+      },
+      "block_order": [
+        "ai_gen_block_5b5d6e3_icQnx"
+      ],
+      "name": "For mums and teens"
+    },
+    "new_custom_product_pizi8Y": {
+      "settings": {},
+      "blocks": {
+        "richtext_block_JRp7fh": {
+          "settings": {
+            "richtext_block": "<ul><li>Designed for teens and young women (safe from age 13+)</li><li>Gentle daily formula, not an emergency fix</li><li>Helps with cramps, mood & energy across the whole cycle</li><li>Created by women´s health professionals & approved by NHS doctors</li><li>Trusted by thousands of women and mums across the UK</li></ul>"
+          }
+        },
+        "image_with_text_TeaNEx": {
+          "settings": {
+            "desc": "<p><em><strong>“Because \"it´s normal\" doesn´t feel like an answer”</strong></em></p>",
+            "desc2": "<p>If you are watching your daughter miss school, retreat to her room, or dread her period every month, you are not alone. monthlies was created to support her cycle gently, every day.</p>"
+          }
+        },
+        "review_quote_block_YDW7mc": {
+          "settings": {
+            "review_quote": "<strong>“Another mum in our school group recommended this, and it´s the first thing that has actually helped”</strong>",
+            "review_author": "<strong>- Emma, mum of a 15-year-old .</strong>"
+          }
+        }
+      },
+      "block_order": [
+        "reviews_strip_YAFdUb",
+        "title_N3RJFa",
+        "richtext_block_JRp7fh",
+        "image_with_text_TeaNEx",
+        "collapsible_tab_4CLMBp",
+        "image_text_EUi9N8",
+        "sale_FzUqDK",
+        "custom_liquid_y8wHwi",
+        "recharge_subscriptions_subscription_widget_v2_UNkKAF",
+        "price_tzJDWA",
+        "image_with_text_PQaRWf",
+        "image_text_B6pVDL",
+        "buy_buttons_WhHijP",
+        "image_AhXjD7",
+        "guarantee_block_zm7BR7",
+        "review_quote_block_YDW7mc",
+        "image_text_mkNza7",
+        "collapsible_tab_DBKUPd",
+        "collapsible_tab_B7PLmJ",
+        "collapsible_tab_9T4drG",
+        "collapsible_tab_XTwE9B",
+        "collapsible_tab_gcPtQM",
+        "collapsible_tab_LEWync",
+        "guarantee_block_WVLkAR"
+      ]
+    },
+    "why_monthlies_comparison_HRUbng": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {}
+    },
+    "carefully_selected_ingredients_Rgby7L": {
+      "settings": {},
+      "blocks": {
+        "faq_tB4TFc": {
+          "disabled": true,
+          "settings": {}
+        },
+        "faq_ayjtAN": {
+          "disabled": true,
+          "settings": {}
+        },
+        "faq_qCHMa8": {
+          "disabled": true,
+          "settings": {}
+        },
+        "faq_8jtp9e": {
+          "disabled": true,
+          "settings": {}
+        }
+      }
+    },
+    "monthlies_vs_others_Uk4N7k": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {}
+    },
+    "monthlies_vs_others_aFWE7E": {
+      "settings": {
+        "subtitle": "Because painkillers and waiting it out are not enough"
+      },
+      "blocks": {
+        "left_item_d8CRJA": {
+          "settings": {
+            "text": "<p>Made in the UK</p>"
+          }
+        }
+      }
+    },
+    "energy_level_new_KrjknR": {
+      "settings": {},
+      "blocks": {
+        "tab_block_TGxjwC": {
+          "settings": {
+            "percent_text": "noticed positive changes in their symptoms*",
+            "percent_text1": "reported less period pain*",
+            "percent_text2": "reduced their use of painkillers*",
+            "percent3": "90%",
+            "percent_text3": "reduction of daily PMS*"
+          }
+        },
+        "tab_block_LEz3DW": {
+          "settings": {
+            "percent": "Cramps",
+            "percent_text": "that lingered accross several days dropped by half*",
+            "percent1": "Bloating",
+            "percent_text1": "eased significantly with a reduction of 45%*",
+            "percent2": "PMS",
+            "percent_text2": "pain and energy-related symptoms were reduced by more than half*",
+            "percent3": "Mood swings",
+            "percent_text3": "were improved by 91%*"
+          }
+        },
+        "tab_block_xUYDxE": {
+          "settings": {
+            "percent": "85%",
+            "percent_text": "reduction of cramps*",
+            "percent1": "94%",
+            "percent_text1": "reported feelings like themselves again*",
+            "percent2": "97%",
+            "percent_text2": "improvement in mood swings*",
+            "percent_text3": "visibly improved skin breakouts, hair and nails*"
+          }
+        }
+      }
+    },
+    "monthlies_vs_others_fytFx3": {
+      "disabled": false,
+      "settings": {
+        "title": "Painkillers aren´t the only answer",
+        "subtitle": "Designed for long-term, daily support for teens"
+      },
+      "blocks": {}
+    },
+    "take_monthly_tablets_6NKEm9": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {}
+    },
+    "why_monthlies_comparison_aMFV6P": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {}
+    },
+    "health_expert_new_tAJFVp": {
+      "settings": {},
+      "blocks": {
+        "column_9hReBp": {
+          "settings": {
+            "text": "<p>Naturopathic Doctor</p>"
+          }
+        },
+        "column_jHBqia": {
+          "settings": {
+            "text": "<p>Naturopathic Doctor</p>"
+          }
+        },
+        "column_HdmdDr": {
+          "settings": {
+            "text": "<p>Nutritional Therapist</p>"
+          }
+        },
+        "column_zY7nyy": {
+          "settings": {
+            "text": "<p>Medical Doctor</p>"
+          }
+        },
+        "column_pjKw7U": {
+          "settings": {
+            "text": "<p>Naturopathic Doctor</p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_9hReBp",
+        "column_zY7nyy",
+        "column_jHBqia",
+        "column_HdmdDr",
+        "column_pjKw7U"
+      ]
+    }
+  },
+  "context": {
+    "market": "uk"
+  },
+  "parent": "product.eab-JUpbBBX78F.json",
+  "order": [
+    "new_custom_product_pizi8Y",
+    "blocks_rLJgg",
+    "energy_level_tMpykK",
+    "energy_level_new_KrjknR",
+    "monthlies_vs_others_fytFx3",
+    "why_monthlies_comparison_HRUbng",
+    "monthlies_vs_others_Uk4N7k",
+    "carefully_selected_ingredients_Rgby7L",
+    "monthlies_vs_others_aFWE7E",
+    "what_experts_say_nMVkdi",
+    "health_expert_new_tAJFVp",
+    "why_monthlies_comparison_aMFV6P",
+    "take_monthly_tablets_6NKEm9",
+    "take_monthly_tablets_new_xmMEae",
+    "money_back_guarantee_EKy6Gq",
+    "custom_text_NywnH6",
+    "17636317918613a4c9",
+    "main",
+    "product-recommendations"
+  ]
+}

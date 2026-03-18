@@ -1,0 +1,347 @@
+{%- comment -%}
+Oath coloured section
+{%- endcomment -%}
+
+{%- style -%}
+/* Zero out the section's default container padding if the theme is forcing it. */
+#shopify-section-{{ section.id }} {
+  margin: 0;
+  padding: 0;
+  background-color: {{ section.settings.background_color | default: '#A6D0CD' }} !important;
+  /* Corner radius, etc. if you still want them on the outer container. */
+  border-top-left-radius: {{ section.settings.border_radius_top_left | default: 0 }}px;
+  border-top-right-radius: {{ section.settings.border_radius_top_right | default: 0 }}px;
+  border-bottom-right-radius: {{ section.settings.border_radius_bottom_right | default: 0 }}px;
+  border-bottom-left-radius: {{ section.settings.border_radius_bottom_left | default: 0 }}px;
+  
+  {% if section.settings.enable_next_section_overlap %}
+    margin-bottom: -80px;
+  {% endif %}
+}
+
+/* Now apply all your padding to .oath-coloured-section */
+#shopify-section-{{ section.id }} .oath-coloured-section {
+  text-align: center;
+  
+  /* Horizontal padding = 20px; adjustable top/bottom padding */
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: {{ section.settings.padding_top | default: 72 }}px;
+  padding-bottom: {{ section.settings.padding_bottom | default: 72 }}px;
+}
+
+/* The "inner" container */
+#shopify-section-{{ section.id }} .oath-coloured-section-inner {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Only apply the box layout if enabled */
+{% if section.settings.enable_box_layout %}
+#shopify-section-{{ section.id }} .oath-coloured-section-inner {
+  position: relative;
+  border-radius: 25px;
+  padding: 1.5em 1.5em 3.5em; /* "box" style padding */
+  background-color: #fff;
+  box-shadow: rgba(145, 145, 145, 0.3) 0px 7px 28px 0px;
+}
+
+#shopify-section-{{ section.id }} .oath-coloured-button {
+  position: absolute;
+  left: 50%;
+  bottom: -20px; /* float partially outside the box */
+  transform: translateX(-50%);
+  z-index: 2;
+}
+{% endif %}
+
+/* Base header styles */
+#shopify-section-{{ section.id }} .oath-coloured-header-text {
+  font-family: Lora, serif;
+  font-weight: 600;
+}
+
+#shopify-section-{{ section.id }} .oath-coloured-header-text strong,
+#shopify-section-{{ section.id }} .oath-coloured-header-text b {
+  font-family: Lora, serif;
+  font-weight: 600 !important;
+  color: #CB342C !important;
+}
+
+#shopify-section-{{ section.id }} .oath-coloured-header-text em,
+#shopify-section-{{ section.id }} .oath-coloured-header-text i {
+  font-family: Lora, serif;
+  text-decoration: underline;
+}
+
+/* Simple button styling */
+#shopify-section-{{ section.id }} .oath-coloured-button a {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  font-weight:600;
+  font-size:18px;
+}
+
+@media (max-width: 481px) {
+  .button {
+    width: 80% !important;
+  }
+}
+
+#shopify-section-{{ section.id }} .oath-coloured-button:hover {
+  box-shadow: 0px 4px 13px hwb(0deg 0% 100% / 25%) !important;
+  font-weight: 700 !important;
+  white-space: nowrap;
+}
+#shopify-section-{{ section.id }} .oath-coloured-button:hover a{
+  font-weight: 700 !important;
+}
+
+/* Default button color class */
+#shopify-section-{{ section.id }} .button {
+  background-color: #CB342C;
+  border-radius:20px;
+}
+{%- endstyle -%}
+
+<style>
+.multicolumn p, .expert-video-right p {
+    font-size: 20px!important;
+}
+  .image-animate.media--400px.media-mobile--auto.media {
+    border-top-right-radius: 100px;
+}
+      #shopify-section-template--25161061106011__image_with_text_yehC8J .grid__item {
+    padding-top: 20px;
+}
+  
+  .image-animate.media--500px.media-mobile--auto.media {
+    border-top-left-radius: 100px;
+}
+
+  .multicolumn h2, .multicolumn p {
+    text-align: center !important;
+}
+
+  video.expert-video-player {
+    width: 80%!important;
+}
+
+  .multicolumn p {
+    margin-top: 0px;
+}
+  
+  @media only screen and (max-width:750px) { 
+	.multicolumn p, .expert-video-right p {
+    font-size: 18px!important;
+}
+  .image-animate.media--400px.media-mobile--auto.media {
+    border-top-right-radius: 50px;
+}
+      .image-animate.media--500px.media-mobile--auto.media {
+    border-top-left-radius: 50px;
+}
+      video.expert-video-player {
+    width: 100%!important;
+}
+}
+</style>
+
+<div id="shopify-section-{{ section.id }}" class="oath-coloured-section">
+  <div class="oath-coloured-section-inner">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'image' %}
+          <div class="oath-coloured-image" {{ block.shopify_attributes }}>
+            {% if block.settings.image != blank %}
+              <img
+                src="{{ block.settings.image | img_url: 'master' }}"
+                alt="{{ block.settings.image.alt | escape }}"
+              >
+            {% endif %}
+          </div>
+        {% when 'header' %}
+          <div class="oath-coloured-header" {{ block.shopify_attributes }}>
+            <h2 class="oath-coloured-header-text">
+              {{ block.settings.header
+                 | richtext
+                 | replace: "<p>", ""
+                 | replace: "</p>", ""
+              }}
+            </h2>
+          </div>
+        {% when 'text' %}
+          <!-- Added the .typeset2 class here -->
+          <div class="oath-coloured-text rte typeset2" {{ block.shopify_attributes }}>
+            {{ block.settings.text }}
+          </div>
+        {% when 'button' %}
+          {% if block.settings.button_text != blank and block.settings.button_link != blank %}
+            <div class="oath-coloured-button button button--medium" {{ block.shopify_attributes }}>
+              <a href="{{ block.settings.button_link }}">
+                {{ block.settings.button_text }}
+              </a>
+            </div>
+          {% endif %}
+      {% endcase %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Oath coloured",
+  "tag": "section",
+  "class": "section",
+  "max_blocks": 4,
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#A6D0CD"
+    },
+    {
+      "type": "range",
+      "id": "border_radius_top_left",
+      "label": "Top left corner radius (px)",
+      "default": 0,
+      "min": 0,
+      "max": 100
+    },
+    {
+      "type": "range",
+      "id": "border_radius_top_right",
+      "label": "Top right corner radius (px)",
+      "default": 0,
+      "min": 0,
+      "max": 100
+    },
+    {
+      "type": "range",
+      "id": "border_radius_bottom_right",
+      "label": "Bottom right corner radius (px)",
+      "default": 0,
+      "min": 0,
+      "max": 100
+    },
+    {
+      "type": "range",
+      "id": "border_radius_bottom_left",
+      "label": "Bottom left corner radius (px)",
+      "default": 0,
+      "min": 0,
+      "max": 100
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding (px)",
+      "default": 72,
+      "min": 0,
+      "max": 300,
+      "step": 3
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding (px)",
+      "default": 72,
+      "min": 0,
+      "max": 300,
+      "step": 3
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_next_section_overlap",
+      "label": "Next section overlap",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_box_layout",
+      "label": "Enable box layout",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "name": "Header",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "header",
+          "label": "Header text",
+          "default": "<p>Sample header</p>"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Body text",
+          "default": "<p>Sample text</p>"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Button",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text",
+          "default": "Click Here"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Oath coloured",
+      "blocks": [
+        {
+          "type": "image"
+        },
+        {
+          "type": "header"
+        },
+        {
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+

@@ -1,0 +1,59 @@
+{{ 'section-pricetesting-bulk.css' | asset_url | stylesheet_tag }}
+
+
+<a href="your-link-url-1" class="container">
+    <div class="column">
+        <!-- Content for first column -->
+    </div>
+    <div class="column">
+        <span class="prod_title">30 days supply</span>
+    </div>
+    <div class="column">
+        <span class="prod_price">€ 59.95</span>
+        <span class="prod_months">per month</span>
+    </div>
+</a>
+
+<a href="your-link-url-2" class="container">
+    <div class="column">
+        <!-- Content for first column -->
+    </div>
+    <div class="column">
+        <span class="prod_subtitle">Full effect</span>
+        <span class="prod_title">90 days supply</span>
+        <span class="prod_savetitle">save 20%</span>
+    </div>
+    <div class="column">
+        <span class="prod_price">€ 59.95</span>
+        <span class="prod_months">per month</span>
+        <span class="prod_payment">€ 143,88/quarter</span>
+    </div>
+</a>
+
+<a href="your-link-url-3" class="container">
+    <div class="column">
+        <!-- Content for first column -->
+    </div>
+    <div class="column">
+        <span class="prod_title">180 days supply</span>
+    </div>
+    <div class="column">
+        <span class="prod_price">€ 38.97</span>
+        <span class="prod_months">per month</span>
+        <span class="prod_payment">€ 234,00/half year</span>
+    </div>
+</a>
+
+{% schema %}
+{
+  "name": "Price Testing Bulk",
+  "presets": [{
+        "name": "Price Testing Bulk",
+        "category": "Text"
+      }],
+  "settings": [
+
+    
+  ]
+}
+{% endschema %}

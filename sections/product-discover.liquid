@@ -1,0 +1,266 @@
+<!-- Tabs Navigation -->
+<div class="tabs">
+  <button class="tab-button active" data-tab="supplement">Supplement Details</button>
+  <button class="tab-button" data-tab="ingredient">Discover Ingredient</button>
+</div>
+
+<!-- Tab Contents -->
+<div class="tab-content" id="supplement">
+  <div class="page-width{% if section.settings.narrow %} page-width--inner{% endif %}">
+    <div id="painkiller" class="rich-text section--padding {{ section.settings.custom_class }}">
+      <div class="heading ">
+        <h2> {{ section.settings.Title }}</h2>
+        <p class="description"> {{ section.settings.section_description }} </p>
+      </div>
+      <div class="swiper-container_supl">
+        <div class="swiper-wrapper">
+          {%- for block in section.blocks -%}
+            <div class="swiper-slide"> 
+              <div class="inner_swiper">
+                <div class="supplement_details_wrapper front">
+                  <img src="{{ block.settings.image | img_url : 'master' }}">
+                  <h5 class="title"> {{ block.settings.heading }}</h5>
+                  <p class="dsc"> {{ block.settings.dsc }} </p>
+                  <div class="swiper-supl-button-next"> <span> How? </span><img src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Flip.png?v=1722924073" /></div>   
+                </div>
+                <div class="supplement_details_wrapper back">
+                  <img src="{{ block.settings.image | img_url : 'master' }}">
+                  <h5 class="title"> {{ block.settings.back_heading }}</h5>
+                  <p class="dsc"> {{ block.settings.back_dsc }} </p>
+                  <div class="swiper-supl-button-next"> <img src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Flip_arrows.png?v=1722924104" /></div>
+                </div>
+              </div>
+            </div>  
+          {%- endfor -%}
+        </div>
+        <div class="swiper-supl-button-prev"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="tab-content" id="ingredient" style="display: none;">
+  <div class="discover-ingredient page-width{% if section.settings.narrow %} page-width--inner{% endif %}">
+    <div class="rich-text section--padding {{ section.settings.custom_class }}">
+      <div class="heading ">
+        <img src="{{ section.settings.image | img_url: 'master' }}">
+        <h2> {{ section.settings.Title }}</h2>
+        <span>{{ section.settings.dsc }}</span>
+      </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          {%- for block in section.blocks -%}
+            <div class="swiper-slide">
+              <div class="discover-ingredient_wrapper">
+                <span class="title"> {{ block.settings.heading }}</span>
+                <span class="dsc"> {{ block.settings.dsc }}</span>
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Product Discover",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "custom_class",
+        "label": "Custom Class"
+      },
+      {
+        "type": "richtext",
+        "id": "Title",
+        "label": "Heading"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "section_description",
+        "label": "Description"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.all.padding.header.content"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "t:sections.all.padding.padding_top.unit",
+        "label": "t:sections.all.padding.padding_top.label",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "t:sections.all.padding.padding_bottom.unit",
+        "label": "t:sections.all.padding.padding_bottom.label",
+        "default": 36
+      }
+    ],
+    "blocks": [
+      {
+        "type": "Slide",
+        "name": "Slide",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "dsc",
+            "label": "Description"
+          },
+          {
+            "type": "text",
+            "id": "back_heading",
+            "label": "Back Face Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "back_dsc",
+            "label": "Back Face Description"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product Discover"
+      }
+    ]
+  }
+{% endschema %}
+
+<style>
+  .tabs {
+    display: flex;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .tab-button {
+    background: #f1f1f1;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 5px;
+  }
+  
+  .tab-button.active {
+    background: #fff;
+    border-bottom: 2px solid #fff;
+  }
+  
+  .tab-content {
+    padding: 20px;
+  }
+  
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    box-sizing: border-box;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-container_supl .swiper-slide {
+    width: 81% !important;
+  }
+
+  .discover-ingredient .swiper-slide {
+    width: 70% !important;
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    color: #000;
+  }
+</style>
+
+<script>
+  $(document).ready(function() {
+    // Initialize Swiper for both sections
+    var swiperSupp;
+    var swiperIngr;
+
+    function initSwipers() {
+      if (!swiperSupp) {
+        swiperSupp = new Swiper('.swiper-container_supl', {
+          slidesPerView: 'auto',
+          spaceBetween: 16,
+          navigation: {
+            nextEl: '.swiper-supl-button-next',
+            prevEl: '.swiper-supl-button-prev',
+          }
+        });
+      }
+
+      if (!swiperIngr) {
+        swiperIngr = new Swiper('.swiper-container', {
+          slidesPerView: 'auto',
+          spaceBetween: 16,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          }
+        });
+      }
+    }
+
+    initSwipers();
+
+    $('.tab-button').click(function() {
+      var tabId = $(this).data('tab');
+      
+      // Switch tabs
+      $('.tab-button').removeClass('active');
+      $(this).addClass('active');
+      
+      $('.tab-content').hide();
+      $('#' + tabId).show();
+    });
+
+    // Event for rotating the supplement details
+    $('.swiper-supl-button-next').on('click', function() {
+      $(this).closest('.inner_swiper').toggleClass('rotate');
+    });
+
+    $('.inner_swiper').hover(
+      function() {
+        $(this).addClass('rotate');
+      },
+      function() {
+        $(this).removeClass('rotate');
+      }
+    );
+  });
+</script>

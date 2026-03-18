@@ -83,7 +83,7 @@
                   >
                     <img 
                       data-class="LazyLoad" 
-                       src="{{ block.settings.image | img_url: 'master' }}" 
+                       src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" 
                       data-src="{{ block.settings.image | image_url }}" 
                       data-mob-src="{{ block.settings.image | image_url}}" 
                       sizes="{{ sizes }}"
@@ -151,7 +151,7 @@
 
 {% schema %}
 {
-  "name": "Multicolumn",
+  "name": "t:sections.multicolumn.name",
   "tag": "section",
   "class": "section cst-product-review-sec",
   "settings": [
@@ -166,27 +166,27 @@
       "options": [
         {
           "value": "adapt",
-          "label": "Adapt to image"
+          "label": "t:sections.all.card_image_ratio.options__1.label"
         },
         {
           "value": "square",
-          "label": "Square"
+          "label": "t:sections.all.card_image_ratio.options__2.label"
         },
         {
           "value": "portrait",
-          "label": "Portrait"
+          "label": "t:sections.all.card_image_ratio.options__3.label"
         },
         {
           "value": "landscape",
-          "label": "Landscape"
+          "label": "t:sections.all.card_image_ratio.options__4.label"
         },
         {
           "value": "wide",
-          "label": "Wide"
+          "label": "t:sections.all.card_image_ratio.options__5.label"
         }
       ],
       "default": "landscape",
-      "label": "Image ratio"
+      "label": "t:sections.all.card_image_ratio.label"
     },
     {
       "type": "select",
@@ -194,44 +194,44 @@
       "options": [
         {
           "value": "20% 0",
-          "label": "Top left"
+          "label": "t:sections.all.image_position.options__1.label"
         },
         {
           "value": "top center",
-          "label": "Top center"
+          "label": "t:sections.all.image_position.options__2.label"
         },
         {
           "value": "80% 0",
-          "label": "Top right"
+          "label": "t:sections.all.image_position.options__3.label"
         },
         {
           "value": "20% 50%",
-          "label": "Left"
+          "label": "t:sections.all.image_position.options__4.label"
         },
         {
           "value": "center center",
-          "label": "Center"
+          "label": "t:sections.all.image_position.options__5.label"
         },
         {
           "value": "80% 50%",
-          "label": "Right"
+          "label": "t:sections.all.image_position.options__6.label"
         },
         {
           "value": "20% 100%",
-          "label": "Bottom left"
+          "label": "t:sections.all.image_position.options__7.label"
         },
         {
           "value": "bottom center",
-          "label": "Bottom center"
+          "label": "t:sections.all.image_position.options__8.label"
         },
         {
           "value": "80% 100%",
-          "label": "Bottom right"
+          "label": "t:sections.all.image_position.options__9.label"
         }
       ],
       "default": "center center",
-      "label": "Image focal point",
-      "info": "Used to keep the subject of your image in view."
+      "label": "t:sections.all.image_position.label",
+      "info": "t:sections.all.image_position.info"
     },
     {
       "type": "select",
@@ -239,35 +239,35 @@
       "options": [
         {
           "value": "left",
-          "label": "Left"
+          "label": "t:sections.all.text_alignment.options__1.label"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "t:sections.all.text_alignment.options__2.label"
         },
         {
           "value": "right",
-          "label": "Right"
+          "label": "t:sections.all.text_alignment.options__3.label"
         }
       ],
       "default": "left",
-      "label": "Desktop content alignment"
+      "label": "t:sections.all.text_alignment.label"
     },
     {
       "type": "checkbox",
       "id": "show_divider",
       "default": false,
-      "label": "Show section divider"
+      "label": "t:sections.all.show_divider.label"
     },
     {
       "type": "header",
-      "content": "Heading"
+      "content": "t:sections.all.heading.label"
     },
     {
       "type": "inline_richtext",
       "id": "heading",
       "default": "Multicolumn",
-      "label": "Heading"
+      "label": "t:sections.all.heading.label"
     },
     {
       "type": "richtext",
@@ -280,36 +280,36 @@
       "options": [
         {
           "value": "h2",
-          "label": "Small"
+          "label": "t:sections.all.heading_size.options__1.label"
         },
         {
           "value": "h1",
-          "label": "Medium"
+          "label": "t:sections.all.heading_size.options__2.label"
         },
         {
           "value": "h0",
-          "label": "Large"
+          "label": "t:sections.all.heading_size.options__3.label"
         }
       ],
       "default": "h1",
-      "label": "Heading size"
+      "label": "t:sections.all.heading_size.label"
     },
     {
       "type": "select",
       "id": "heading_alignment",
-      "label": "Heading alignment",
+      "label": "t:sections.all.heading_alignment.label",
       "options": [
         {
           "value": "left",
-          "label": "Left"
+          "label": "t:sections.all.heading_alignment.options__1.label"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "t:sections.all.heading_alignment.options__2.label"
         },
         {
           "value": "right",
-          "label": "Right"
+          "label": "t:sections.all.heading_alignment.options__3.label"
         }
       ],
       "default": "left"
@@ -320,44 +320,44 @@
       "options": [
         {
           "value": "h1",
-          "label": "H1"
+          "label": "t:sections.all.heading_tag.options__1.label"
         },
         {
           "value": "h2",
-          "label": "H2"
+          "label": "t:sections.all.heading_tag.options__2.label"
         },
         {
           "value": "h3",
-          "label": "H3"
+          "label": "t:sections.all.heading_tag.options__3.label"
         },
         {
           "value": "h4",
-          "label": "H4"
+          "label": "t:sections.all.heading_tag.options__4.label"
         },
         {
           "value": "h5",
-          "label": "H5"
+          "label": "t:sections.all.heading_tag.options__5.label"
         },
         {
           "value": "h6",
-          "label": "H6"
+          "label": "t:sections.all.heading_tag.options__6.label"
         },
         {
           "value": "div",
-          "label": "Div"
+          "label": "t:sections.all.heading_tag.options__7.label"
         },
         {
           "value": "span",
-          "label": "Span"
+          "label": "t:sections.all.heading_tag.options__8.label"
         },
         {
           "value": "p",
-          "label": "P"
+          "label": "t:sections.all.heading_tag.options__9.label"
         }
       ],
       "default": "h2",
-      "label": "Heading tag",
-      "info": "Specify heading code types for SEO and search engines for crawling purposes."
+      "label": "t:sections.all.heading_tag.label",
+      "info": "t:sections.all.heading_tag.info"
     },
     {
       "type": "text",
@@ -379,19 +379,19 @@
       "options": [
         {
           "value": "left",
-          "label": "Left"
+          "label": "t:sections.all.mobile_layout.mobile_text_alignment.options__1.label"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "t:sections.all.mobile_layout.mobile_text_alignment.options__2.label"
         },
         {
           "value": "right",
-          "label": "Right"
+          "label": "t:sections.all.mobile_layout.mobile_text_alignment.options__3.label"
         }
       ],
       "default": "left",
-      "label": "Mobile layout"
+      "label": "t:sections.all.mobile_layout.mobile_text_alignment.label"
     },
     {
       "type": "select",
@@ -399,25 +399,25 @@
       "options": [
         {
           "value": "1",
-          "label": "1 Column"
+          "label": "t:sections.all.mobile_layout.columns_mobile.options__1.label"
         },
         {
           "value": "2",
-          "label": "2 Columns"
+          "label": "t:sections.all.mobile_layout.columns_mobile.options__2.label"
         }
       ],
       "default": "1",
-      "label": "Mobile content alignment"
+      "label": "t:sections.all.mobile_layout.columns_mobile.label"
     },
     {
       "type": "checkbox",
       "id": "swipe_on_mobile",
       "default": false,
-      "label": "Enable swipe on mobile"
+      "label": "t:sections.all.mobile_layout.swipe_on_mobile.label"
     },
     {
       "type": "header",
-      "content": "Section padding"
+      "content": "t:sections.all.padding.header.content"
     },
     {
       "type": "range",
@@ -425,8 +425,8 @@
       "min": 0,
       "max": 100,
       "step": 4,
-      "unit": "px",
-      "label": "Top padding",
+      "unit": "t:sections.all.padding.padding_top.unit",
+      "label": "t:sections.all.padding.padding_top.label",
       "default": 36
     },
     {
@@ -435,8 +435,8 @@
       "min": 0,
       "max": 100,
       "step": 4,
-      "unit": "px",
-      "label": "Bottom padding",
+      "unit": "t:sections.all.padding.padding_bottom.unit",
+      "label": "t:sections.all.padding.padding_bottom.label",
       "default": 36
     }
   ],
@@ -448,13 +448,13 @@
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Image"
+          "label": "t:sections.all.image.label"
         },
         {
           "type": "text",
           "id": "title",
           "default": "Column",
-          "label": "Heading"
+          "label": "t:sections.all.heading.label"
         },
         {
           "type": "select",
@@ -462,50 +462,50 @@
           "options": [
             {
               "value": "h4",
-              "label": "Small"
+              "label": "t:sections.all.heading_size.options__1.label"
             },
             {
               "value": "h3",
-              "label": "Medium"
+              "label": "t:sections.all.heading_size.options__2.label"
             },
             {
               "value": "h2",
-              "label": "Large"
+              "label": "t:sections.all.heading_size.options__3.label"
             }
           ],
           "default": "h3",
-          "label": "Heading size"
+          "label": "t:sections.all.heading_size.label"
         },
         {
           "type": "richtext",
           "id": "text",
           "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-          "label": "Description"
+          "label": "t:sections.all.text.label"
         },
         {
           "type": "text",
           "id": "button_label",
           "default": "Button label",
-          "label": "Button label",
-          "info": "Leave the label blank to hide the button."
+          "label": "t:sections.all.button_label.label",
+          "info": "t:sections.all.button_label.info"
         },
         {
           "type": "url",
           "id": "button_link",
-          "label": "Button link"
+          "label": "t:sections.all.button_link.label"
         },
         {
           "type": "checkbox",
           "id": "button_style_secondary",
           "default": false,
-          "label": "Use underline button style"
+          "label": "t:sections.all.button_style_secondary.label"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Multicolumn",
+      "name": "t:sections.multicolumn.presets.name",
       "blocks": [
         {
           "type": "column"

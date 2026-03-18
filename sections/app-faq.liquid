@@ -23,13 +23,11 @@
   .insta_col h2.title.h1, .insta_col h2.title.h1 * {margin-bottom:10px;}
   .faq_insta .ingredients_content .accordion_content , .custom_faq .ingredients_content .accordion_content { padding-bottom: 2px !important; }
   .faq_insta .ingredients_content .accordion_content p ,.custom_faq .ingredients_content .accordion_content p {line-height:1.4;}
-  .faq_insta .ingredients_content .accordion_content { display: block !important; max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
-  .faq_insta .ingredients_content .accordion .accordion_head { transition: color 0.2s ease; }
   .instafeeds .ingredients_content .accordion { box-shadow:0 7px 28px #9191914d; }
   .instafeeds .ingredients_content .accordion:hover { box-shadow: 0 7px 28px #919191cc; }
   .instafeeds .ingredients_content .accordion:hover .accordion_head { color:#cb342c; }
     .instafeeds .ingredients_content .accordion .accordion_content {padding-right:25px;padding-left:25px;}
-.instafeeds .ingredients_content .accordion .accordion_content {padding-top:1px;}
+.instafeeds .ingredients_content .accordion .accordion_content {padding-top:10px;}
    
 
    /* ingredients start*/
@@ -194,39 +192,7 @@ body .instafeeds .insta_col::before { display: none; }
       </div>
        </div>
        <!-- Ingredients end  -->
-<script>
-      (function() {
-        function initFaqAccordions() {
-          var container = document.querySelector('.faq_insta .ingredients_content');
-          if (!container) return;
-          var accordions = container.querySelectorAll('.accordion');
-          accordions.forEach(function(accordion) {
-            accordion.addEventListener('click', function() {
-              var content = this.querySelector('.accordion_content');
-              var isActive = this.classList.contains('active');
-              accordions.forEach(function(acc) {
-                acc.classList.remove('active');
-                var c = acc.querySelector('.accordion_content');
-                if (c) c.style.maxHeight = '0';
-              });
-              if (!isActive) {
-                this.classList.add('active');
-                if (content) {
-                  content.style.maxHeight = content.scrollHeight + 'px';
-                }
-              } else if (content) {
-                content.style.maxHeight = '0';
-              }
-            });
-          });
-        }
-        if (document.readyState === 'loading') {
-          document.addEventListener('DOMContentLoaded', initFaqAccordions);
-        } else {
-          initFaqAccordions();
-        }
-      })();
-    </script>
+
 {% schema %}
   {
     "name": "App Faq",
@@ -315,3 +281,7 @@ body .instafeeds .insta_col::before { display: none; }
     ]
   }
 {% endschema %}
+
+<script>
+ 
+</script>

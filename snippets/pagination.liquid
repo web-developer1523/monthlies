@@ -9,24 +9,29 @@
   Accepts:
   - paginate: {Object}
   - anchor: {String} (optional) This can be added so that on page reload it takes you to wherever you've placed your anchor tag.
+  - pagination: {String} (optional) How additional pages of products are navigated
 {% endcomment %}
 
-{{ 'component-pagination.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="{{ 'component-pagination.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'component-pagination.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- if paginate.parts.size > 0 -%}
-  <div class="pagination-wrapper" data-page="{{ paginate.current_page }}">
-    <nav class="pagination" role="navigation" aria-label="{{ 'general.pagination.label' | t }}">
-      <ul class="pagination__list list-unstyled" role="list">
+  <div class="pagination-wrapper">
+    {%- if pagination == 'infinite' or pagination == 'click' -%}
+      {%- if paginate.next -%}
+        <div class="center">
+          <infinite-scroll class="infinite-scroll button button--tertiary" data-url="{{ paginate.next.url }}" data-trigger="{{ pagination }}">
+            {{ 'general.pagination.show_more' | t }}
+          </infinite-scroll>
+        </div>
+      {%- endif -%}
+    {%- else -%}
+      <nav class="pagination" role="navigation" aria-label="{{ 'general.pagination.label' | t }}">
+        <ul class="pagination__list list-unstyled" role="list">
         {%- if paginate.previous -%}
           <li>
-            <a
-              href="{{ paginate.previous.url }}{{ anchor }}"
-              class="pagination__item pagination__item--next pagination__item-arrow link motion-reduce"
-              aria-label="{{ 'general.pagination.previous' | t }}"
-            >
-              <span class="svg-wrapper">
-                {{- 'icon-caret.svg' | inline_asset_content -}}
-              </span>
+            <a href="{{ paginate.previous.url }}{{ anchor }}" class="pagination__item pagination__item--next motion-reduce" aria-label="{{ 'general.pagination.previous' | t }}">
+              {{ 'general.pagination.previous' | t }}
             </a>
           </li>
         {%- endif -%}
@@ -34,24 +39,10 @@
         {%- for part in paginate.parts -%}
           <li>
             {%- if part.is_link -%}
-              <a
-                href="{{ part.url }}{{ anchor }}"
-                class="pagination__item link"
-                aria-label="{{ 'general.pagination.page' | t: number: part.title }}"
-              >
-                {{- part.title -}}
-              </a>
+              <a href="{{ part.url }}{{ anchor }}" class="pagination__item" aria-label="{{ 'general.pagination.page' | t: number: part.title }}">{{ part.title }}</a>
             {%- else -%}
               {%- if part.title == paginate.current_page -%}
-                <a
-                  role="link"
-                  aria-disabled="true"
-                  class="pagination__item pagination__item--current light"
-                  aria-current="page"
-                  aria-label="{{ 'general.pagination.page' | t: number: part.title }}"
-                >
-                  {{- part.title -}}
-                </a>
+                <span class="pagination__item pagination__item--current" aria-current="page" aria-label="{{ 'general.pagination.page' | t: number: part.title }}">{{ part.title }}</span>
               {%- else -%}
                 <span class="pagination__item">{{ part.title }}</span>
               {%- endif -%}
@@ -61,18 +52,13 @@
 
         {%- if paginate.next -%}
           <li>
-            <a
-              href="{{ paginate.next.url }}{{ anchor }}"
-              class="pagination__item pagination__item--prev pagination__item-arrow link motion-reduce"
-              aria-label="{{ 'general.pagination.next' | t }}"
-            >
-              <span class="svg-wrapper">
-                {{- 'icon-caret.svg' | inline_asset_content -}}
-              </span>
+            <a href="{{ paginate.next.url }}{{ anchor }}" class="pagination__item pagination__item--prev motion-reduce" aria-label="{{ 'general.pagination.next' | t }}" >
+              {{ 'general.pagination.next' | t }}
             </a>
           </li>
         {%- endif -%}
-      </ul>
-    </nav>
+        </ul>
+      </nav>
+    {%- endif -%}
   </div>
 {%- endif -%}

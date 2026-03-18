@@ -1,0 +1,94 @@
+.steroids {
+    background-color: #D1BEE4;
+    padding: 120px 0;
+}
+
+.steroids-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.steroids-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.steroids-item {
+    max-width: 280px;
+}
+
+.steroids-item p {
+    margin-top: 10px;
+    margin-bottom: 0;
+    line-height: 130%;
+    opacity: .5;
+}
+
+.steroids-text {
+    max-width: 480px;
+}
+
+.steroids-text h2 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 110%;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.steroids-text p {
+    font-size: 20px;
+    line-height: 130%;
+    margin-top: 0;
+    margin-bottom: 72px;
+}
+
+.download-item {
+    padding: 23px 30px;
+    border-radius: 30px;
+    background-color: #FFF;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.download {
+    display: flex;
+    text-decoration: underline;
+    color: black;
+    font-weight: 500;
+    align-items: center;
+    gap: 6px;
+}
+
+@media (max-width: 921px) {
+    .steroids {
+        padding: 60px 0;
+    }
+
+    .steroids-text h2 {
+        font-size: 24px;
+    }
+    
+    .steroids-text p {
+        font-size: 16px;
+    }
+
+    .download {
+        font-size: 10px;
+    }
+
+    .steroids-item {
+        max-width: none;
+        width: 100%;
+    }
+
+    .download-item {
+        width: 100%;
+    }
+}

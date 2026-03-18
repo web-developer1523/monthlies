@@ -1,0 +1,338 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "new_custom_product_pizi8Y": {
+      "settings": {
+        "enable": true,
+        "doctor_qualification": "",
+        "doctor_quote": "“The formula unfolds its full effect from the 4th cycle onwards\""
+      },
+      "blocks": {
+        "reviews_strip_YAFdUb": {
+          "settings": {
+            "sub_text": "Trusted by thousands of women"
+          }
+        },
+        "title_N3RJFa": {
+          "settings": {
+            "tagline": "<strong>Feel like yourself again. Every day of your cycle.</strong>"
+          }
+        },
+        "richtext_block_JRp7fh": {
+          "settings": {
+            "richtext_block": "<ul><li>Don’t let your periods run your life.</li><li>Designed for every phase of your cycle, not just period week.</li><li>All-In-One daily drink. </li><li>90-day money-back guarantee and cancel anytime.</li></ul><p></p>"
+          }
+        },
+        "image_with_text_TeaNEx": {
+          "disabled": true,
+          "settings": {
+            "desc": "<p><em><strong>“Told the pill was your only option?”</strong></em></p>",
+            "desc2": "<p>Many women are offered quick fixes, like the pill, that mask symptoms and come with side effects instead of supporting full cycle health. monthlies is designed to balance your body across your whole cycle, so changes build over time.</p>"
+          }
+        },
+        "guarantee_block_zm7BR7": {
+          "settings": {
+            "guarantee_text": "Try it for 90 days. If you don’t feel a difference, you don’t pay.",
+            "guarantee_link_text": "Information"
+          }
+        },
+        "review_quote_block_YDW7mc": {
+          "disabled": false,
+          "settings": {
+            "review_quote": "<strong>“Another mum in our school group recommended this, and it´s the first thing that has actually helped”</strong>",
+            "review_author": "<strong>- Emma, mum of a 15-year-old. </strong>",
+            "sub_review_text": "+ Thousands of women trust monthlies",
+            "review_photo_1": "shopify://shop_images/b4rpqhgtu7vjr1ahcabx_e28f1961-b207-465f-b4a7-9cdb04734c62.webp",
+            "review_photo_4": "shopify://shop_images/Background_f72df9d7-8967-4060-82ad-91390a666b7d.png"
+          }
+        },
+        "collapsible_tab_DBKUPd": {
+          "settings": {
+            "content": "<p>Your cycle is more than just your period. It influences how you sleep, how you eat, your mood, your performance, and the energy you wake up with. So when things feel “off”, it’s rarely just one thing. It’s your body trying to tell you it needs support.</p><p>Many women experience period pain and menstrual symptoms because of the pain triangle -<strong> hormonal imbalance, increased prostaglandins, and nutrient gaps</strong> that quietly build up over time.This is often why symptoms return month after month.</p><p>This is where monthlies truly stands apart.</p><p>Our daily formula brings together 26 vitamins, minerals and plant extracts, that help support hormonal balance, regulate prostaglandin production, and replenish nutrient stores your body relies on throughout the month.</p><p>The result is a gentle, sustainable approach that helps you feel more supported throughout your cycle.</p>"
+          }
+        },
+        "collapsible_tab_9T4drG": {
+          "settings": {
+            "content": "<p>We’ve created monthlies to be a no-nonsense formula, with every ingredient chosen for a clear purpose. Our formula brings together extensively studied vitamins, minerals, nutrients and plant extracts that are backed by scientific research. Each ingredient contributes to a specific function that helps your body feel supported throughout the month.</p><p></p><ul><li><strong>Support steady energy levels:</strong> Magnesium, B vitamins and iron aid normal energy production and help reduce fatigue*.</li><li>Anise seed and flax seed are trusted and traditionally used to promote healthier digestion*.</li><li><strong>Maintain healthy blood sugar levels:</strong> Chromium contributes to the maintenance of normal blood glucose levels.</li><li><strong>Support hair, skin and nails:</strong> Vitamin A, vitamin C, biotin and zinc support healthy skin, hair and nail function*.</li><li><strong>Support immune resilience:</strong> Vitamin C, selenium and zinc contribute to the normal function of the immune system*.</li><li>Ginger and turmeric contain active compounds that may support the health of joints and bones*.</li><li>Antioxidants: Lemon balm and flaxseed may possess antioxidant properties*</li></ul><p>If you'd like to explore every ingredient, how it works and why we chose it, you can find the full breakdown here: <a href=\"https://shop.withmonthlies.com/pages/all-ingredients\" target=\"_blank\">All 26 Ingredients</a></p>"
+          }
+        }
+      }
+    },
+    "blocks_ewPLAH": {
+      "settings": {},
+      "blocks": {
+        "ai_gen_block_5b5d6e3_bcq7Mg": {
+          "settings": {
+            "subtitle": "Loved by mums supporting daughters with their cycle",
+            "review_1_text": "",
+            "review_1_author": "",
+            "review_2_text": "",
+            "review_2_author": "",
+            "show_professional_badge": false
+          }
+        }
+      }
+    },
+    "energy_level_new_KrjknR": {
+      "disabled": true,
+      "settings": {
+        "bottom_disclaimer": "<p>*Based on an independent study of 105 women (20 to 45) using the monthlies supplement.</p>"
+      },
+      "blocks": {
+        "tab_block_TGxjwC": {
+          "settings": {
+            "percent_text": "noticed positive changes in their symptoms*",
+            "percent_text1": "reported less period pain*",
+            "percent_text2": "reduced their use of painkillers*",
+            "percent3": "90%",
+            "percent_text3": "reduction felt of daily PMS*"
+          }
+        },
+        "tab_block_LEz3DW": {
+          "settings": {
+            "percent": "Cramps",
+            "percent_text": "that lingered accross several days were reported to be dropped by half*",
+            "percent1": "Bloating",
+            "percent_text1": "eased significantly, with a perceived reduction of 45%",
+            "percent2": "PMS",
+            "percent_text2": "pain and energy-related symptoms were reported to be reduced by more than half*",
+            "percent3": "Mood swings",
+            "percent_text3": "reported to be improved by 91%*"
+          }
+        },
+        "tab_block_xUYDxE": {
+          "settings": {
+            "percent": "85%",
+            "percent_text": "perceived reduction of cramps*",
+            "percent1": "94%",
+            "percent_text1": "reported feeling like themselves again*",
+            "percent2": "97%",
+            "percent_text2": "perceived improvement in mood swings*",
+            "percent_text3": "visibly improved skin breakouts, hair and nails*"
+          }
+        },
+        "tab_block_y4676W": {
+          "settings": {
+            "btn1": "Minimal cramps & bloating & PMS",
+            "btn2": "No more 2pm slush",
+            "btn3": "No more feeling \"out of balance\"",
+            "btn4": "Improved athletic performance",
+            "btn5": "Glowing skin, hair & nails",
+            "btn6": "Sustained energy accross all cycle",
+            "btn7": "Everything feels easier to manage"
+          }
+        }
+      }
+    },
+    "monthlies_vs_others_Uk4N7k": {
+      "disabled": false,
+      "settings": {
+        "subtitle": "Many women spend £100+ per month on 10 to 16 different supplements. monthlies combines cycle-support nutrients into one daily drink, with a 90-day guarantee:"
+      },
+      "blocks": {
+        "left_item_KjhWgp": {
+          "settings": {
+            "text": "<p>Expert-picked dosages & ingredients</p>"
+          }
+        },
+        "right_item_jkkMNG": {
+          "settings": {
+            "text": "<p>Inconvenient</p>"
+          }
+        },
+        "right_item_93mxnF": {
+          "settings": {
+            "text": "<p>Expensive or low quality</p>"
+          }
+        }
+      }
+    },
+    "carefully_selected_ingredients_Rgby7L": {
+      "settings": {},
+      "blocks": {
+        "faq_ayjtAN": {
+          "settings": {
+            "faq_text": "<p>We design every product with female health experts, using research-driven formulation to meet your unique needs. Our approach prioritises  effectiveness, and innovation.</p>"
+          }
+        },
+        "faq_qCHMa8": {
+          "settings": {
+            "faq_text": "<p>Proudly manufactured in the UK, in a GMP-certified facility, and third-party tested for purity. Every step reflects our commitment to excellence and transparency.</p>"
+          }
+        },
+        "faq_8jtp9e": {
+          "settings": {
+            "faq_text": "<p>Our formulation uses highly bioavailable, pre-activated nutrient forms that your body absorbs easily. Many vitamins and minerals must be converted into their active forms before the body can use them - a process that can be inefficient for many people. By using pre-activated forms, we bypass this step, improve absorption, and ensure more of each nutrient actually reaches where it’s needed.</p><p>This results in:</p><ul><li>better effectiveness, because more active nutrients reach your bloodstream and tissues.</li><li>faster results, as optimally absorbed nutrients begin working sooner.</li><li>highly absorbable forms</li><li>ideal for sensitive individuals.</li></ul><p>Everything we include is chosen with intention for the best tolerance, maximum effectiveness, and meaningful support for your body.</p>"
+          }
+        },
+        "ingredient_yGx4Wc": {
+          "settings": {
+            "ingredient_title": "Lemon Balm"
+          }
+        },
+        "ingredient_N7rceT": {
+          "settings": {
+            "ingredient_title": "Magnesium"
+          }
+        },
+        "ingredient_XhiMVE": {
+          "settings": {
+            "ingredient_title": "Vitamin C"
+          }
+        },
+        "ingredient_7emUEV": {
+          "settings": {
+            "ingredient_title": "Broccoli Sprouts"
+          }
+        }
+      }
+    },
+    "monthlies_vs_others_aFWE7E": {
+      "settings": {
+        "title": "Why monthlies vs other supplements?",
+        "subtitle": ""
+      },
+      "blocks": {
+        "left_item_QidQCE": {
+          "disabled": true,
+          "settings": {}
+        },
+        "left_item_d8CRJA": {
+          "disabled": true,
+          "settings": {
+            "text": "<p>Made in the UK</p>"
+          }
+        },
+        "left_item_WFL83w": {
+          "disabled": true,
+          "settings": {}
+        },
+        "right_item_KR86Gc": {
+          "disabled": true,
+          "settings": {}
+        },
+        "right_item_d73B9A": {
+          "disabled": true,
+          "settings": {}
+        },
+        "right_item_aqB3D9": {
+          "disabled": true,
+          "settings": {
+            "text": "<p>Not tested in a 3 months study</p>"
+          }
+        }
+      }
+    },
+    "health_expert_new_tAJFVp": {
+      "settings": {
+        "heading": "<em><strong>Developed </strong></em>by experts."
+      },
+      "blocks": {
+        "column_9hReBp": {
+          "settings": {
+            "title": "Ashley Florestal",
+            "text": ""
+          }
+        },
+        "column_zY7nyy": {
+          "settings": {
+            "title": "Maria Obando",
+            "text": ""
+          }
+        },
+        "column_jHBqia": {
+          "settings": {
+            "title": "Cassandra Paiano",
+            "text": ""
+          }
+        },
+        "column_HdmdDr": {
+          "settings": {
+            "text": ""
+          }
+        },
+        "column_pjKw7U": {
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_9hReBp",
+        "column_zY7nyy",
+        "column_jHBqia",
+        "column_HdmdDr",
+        "column_pjKw7U"
+      ]
+    },
+    "monthlies_vs_others_fytFx3": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {}
+    },
+    "take_monthly_tablets_6NKEm9": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {}
+    },
+    "take_monthly_tablets_new_xmMEae": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "faq_item_hGckQx": {
+          "disabled": true,
+          "settings": {
+            "answer": "<p>Yes, you can take monthlies if you have endometriosis. While monthlies is not a treatment for endometriosis, it’s designed to support menstrual well-being. However, we always recommend you to check with your doctor before adding any new supplements to your routine, and check for possible interactions with medications.</p>"
+          }
+        },
+        "faq_item_h8Pwh3": {
+          "disabled": true,
+          "settings": {}
+        },
+        "faq_item_qYDzPX": {
+          "settings": {
+            "answer": "<p>You can take monthlies while on birth control or hormonal contraceptive pills;<br/>however, it’s essential to understand that the effectiveness of monthlies may<br/>vary. Additionally, monthlies<br/>could potentially interact with your hormonal birth control. To ensure safety,<br/>it’s always best to consult your doctor before adding any new supplements to<br/>your routine.</p>"
+          }
+        },
+        "faq_item_Xii6DA": {
+          "settings": {
+            "answer": "<p>Yes, you can take monthlies while you’re trying to conceive. While it isn’t a prenatal supplement.  However, it’s important to stop taking monthlies as soon as you find out you’re pregnant.</p>"
+          }
+        }
+      }
+    }
+  },
+  "context": {
+    "market": "uk"
+  },
+  "parent": "product.new-custom-product.json",
+  "order": [
+    "new_custom_product_pizi8Y",
+    "energy_level_tMpykK",
+    "blocks_ewPLAH",
+    "energy_level_new_KrjknR",
+    "why_monthlies_comparison_HRUbng",
+    "monthlies_vs_others_Uk4N7k",
+    "carefully_selected_ingredients_Rgby7L",
+    "monthlies_vs_others_aFWE7E",
+    "what_experts_say_nMVkdi",
+    "health_expert_new_tAJFVp",
+    "why_monthlies_comparison_aMFV6P",
+    "monthlies_vs_others_fytFx3",
+    "take_monthly_tablets_6NKEm9",
+    "take_monthly_tablets_new_xmMEae",
+    "money_back_guarantee_EKy6Gq",
+    "custom_text_NywnH6",
+    "17636317918613a4c9",
+    "main",
+    "product-recommendations"
+  ]
+}

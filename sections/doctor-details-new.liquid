@@ -1,0 +1,742 @@
+<section class="cst-purpose-global">
+    <section class="global-team-section">
+        <div class="global-team-container">
+        
+            <div class="text-content">
+            <div class="purpose-wrap">
+                <h1 class="main-heading">
+                    {% if section.settings.main_heading != blank %}
+                      {{ section.settings.main_heading }}
+                    {% endif %}
+                  </h1>
+                  <h2 class="sub-heading">
+                    {% if section.settings.sub_heading != blank %}
+                      {{ section.settings.sub_heading }}
+                    {% endif %}
+                  </h2>
+                  <p class="description">
+                    {% if section.settings.description != blank %}
+                      {{ section.settings.description }}
+                    {% endif %}
+                  </p>
+                </div>
+        
+                <!-- CARD STACK -->
+                <div class="card-flex">
+                <div class="card-container">
+                    <div class="cards-wrapper">
+                        {% for block in section.blocks %}
+                            <div class="team-card" data-index="{{ forloop.index0 }}">
+                          
+                                {% if block.settings.profile_image != blank %}
+                                <img src="{{ block.settings.profile_image | img_url: 'master' }}" class="profile-image">
+                                {% endif %}
+                          
+                                {% if block.settings.name != blank %}
+                                <h3 class="card-name">{{ block.settings.name }}</h3>
+                                {% endif %}
+                          
+                                {% if block.settings.role != blank %}
+                                <p class="card-role">{{ block.settings.role }}</p>
+                                {% endif %}
+                          
+                                {% if block.settings.short_description != blank %}
+                                <p class="card-description">{{ block.settings.short_description }}</p>
+                                {% endif %} 
+                          
+                                <a class="learn-more-link" onclick="toggleDetail(event,{{ forloop.index0 }})">{{block.settings.learn_more }}</a>
+                          
+                            </div>
+                            {% endfor %}
+                    </div>
+                    <div class="stars-navigation">
+                        <div onclick="switchCard(0)"><img src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/greenstar_430x.png" alt="Star 1"></div>
+                        <div onclick="switchCard(1)"><img src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/greenstar_430x.png" alt="Star 2"></div>
+                        <div onclick="switchCard(2)"><img src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/greenstar_430x.png" alt="Star 3"></div>
+                    </div>
+                </div>
+                </div>
+        
+                <!-- STAR NAVIGATION -->
+             
+            </div>
+        
+            <div class="image-section">
+                {% if section.settings.right_image != blank %}
+                    <img src="{{ section.settings.right_image | img_url: 'master' }}" class="group-image desktop-image">
+                {% endif %}
+    
+                {% if section.settings.mobile_right_image != blank %}
+                    <img src="{{ section.settings.mobile_right_image | img_url: 'master' }}" class="group-image mobile_image">
+                {% endif %}
+            </div>
+        
+        </div>
+        </section>
+        </section>
+    
+    
+        <div id="detailPopup" class="detail-popup">
+            <div id="detailContent" class="detail-content">
+              <span class="close-popup" onclick="closeDetailPopup()">&times;</span>
+          
+              {% for block in section.blocks %}
+                <div class="popup-item" data-popup="{{ forloop.index0 }}" style="display:none;">
+                  
+                  {% if block.settings.short_description != blank %}
+                    <p>{{ block.settings.short_description }}</p>
+                  {% endif %}
+                  
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+    <script>
+      /* =========================
+          DYNAMIC TEAM DATA (FROM LIQUID)
+          ========================= */
+      const teamMembers = [
+        {% for block in section.blocks %}
+          {
+            name: {{ block.settings.name | json }},
+            role: {{ block.settings.role | json }},
+            // short and full may contain newlines or HTML — json keeps them safe as JS strings
+            short: {{ block.settings.short_description | json }},
+            full: {{ block.settings.full_description | json }},
+            image: {{ block.settings.profile_image | img_url: 'master' | json }}
+          }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ];
+      
+      /* =========================
+          STATE
+          ========================= */
+      let currentCardIndex = 0;
+      
+      /* =========================
+          UTIL: safe convert text -> HTML (preserve newlines)
+          If the text already contains HTML tags they will render. We only convert newlines.
+          ========================= */
+      function textToHtml(s){
+        if(!s && s !== "") return "";
+        // s is already a JS string (from json). Replace \n with <br>
+        return String(s).replace(/\r\n/g,'\n').replace(/\r/g,'\n').replace(/\n/g,'<br>');
+      }
+      
+      /* =========================
+          STAR ACTIVE HIGHLIGHT
+          ========================= */
+      function updateStarActive() {
+          const stars = document.querySelectorAll(".stars-navigation div");
+          if(!stars || stars.length === 0) return;
+          stars.forEach((s, index) => {
+              s.classList.remove("active");
+              const img = s.querySelector("img");
+              if(img) img.src = "https://cdn.shopify.com/s/files/1/0708/7462/8371/files/greenstar_430x.png";
+          });
+      
+          const idx = Math.max(0, Math.min(currentCardIndex, stars.length - 1));
+          const activeStar = stars[idx];
+          if(activeStar){
+              activeStar.classList.add("active");
+              const img = activeStar.querySelector("img");
+              if(img) img.src = "https://cdn.shopify.com/s/files/1/0708/7462/8371/files/redstar_430x.png";
+          }
+      }
+      
+      /* =========================
+          UPDATE STACK ORDER (works with any number of cards)
+          ========================= */
+      function updateStackOrder(noRotate = false) {
+          const cards = Array.from(document.querySelectorAll('.team-card'));
+          if(!cards || cards.length === 0) return;
+      
+          // reset classes
+          cards.forEach(c => {
+            c.className = "team-card";
+          });
+      
+          const len = cards.length;
+          // ensure currentCardIndex is valid
+          currentCardIndex = ((currentCardIndex % len) + len) % len;
+      
+          // always set active (front)
+          cards[currentCardIndex].classList.add("active");
+      
+          // set behind classes for next two cards if they exist
+          if(len > 1){
+            const c2 = (currentCardIndex + 1) % len;
+            cards[c2].classList.add("behind-1");
+            if(noRotate) cards[c2].classList.add("no-rotate");
+          }
+          if(len > 2){
+            const c3 = (currentCardIndex + 2) % len;
+            cards[c3].classList.add("behind-2");
+            if(noRotate) cards[c3].classList.add("no-rotate");
+          }
+      
+          updateStarActive();
+      }
+      
+      /* =========================
+          SWITCH CARD (called by your star nav)
+          ========================= */
+      function switchCard(index) {
+          const cards = document.querySelectorAll('.team-card');
+          if(!cards || cards.length === 0) return;
+          currentCardIndex = Math.max(0, Math.min(index, cards.length - 1));
+          updateStackOrder(true); // no rotation on manual switch
+      }
+      
+      /* =========================
+          POPUP: fully dynamic rendering
+          - uses teamMembers[] built from Liquid
+          - preserves newlines as <br>
+          ========================= */
+      function toggleDetail(e, i){
+          if(e && e.preventDefault) e.preventDefault();
+      
+          // guard
+          if(!teamMembers || !teamMembers[i]) {
+            console.warn("No team data for index", i);
+            return;
+          }
+      
+          const data = teamMembers[i];
+      
+          // build HTML safely (data.* are JS strings from json)
+          const shortHTML = textToHtml(data.short || "");
+          const fullHTML  = textToHtml(data.full || "");
+          const roleHTML  = textToHtml(data.role || "");
+          const nameHTML  = textToHtml(data.name || "");
+          const imageHTML = data.image ? `<img src="${data.image}" alt="${(data.name||'')}" class="popup-profile-image" style="max-width:120px;display:block;margin-bottom:12px;">` : "";
+      
+          const detailContent = document.getElementById("detailContent");
+          if(!detailContent) return;
+      
+          detailContent.innerHTML = `
+              <span class='close-popup' onclick='closeDetailPopup()'>&times;</span>
+              <div class="popup-inner" style="padding:12px;">
+                ${imageHTML}
+                <h2 style="margin:0 0 6px 0;">${nameHTML}</h2>
+                ${roleHTML ? `<p style="margin:0 0 10px 0;"><strong>${roleHTML}</strong></p>` : ''}
+                ${shortHTML ? `<div class="popup-short" style="margin-top:8px;">${shortHTML}</div>` : ''}
+                ${fullHTML ? `<div class="popup-full" style="margin-top:0;">${fullHTML}</div>` : ''}
+              </div>
+          `;
+      
+          document.getElementById("detailPopup").classList.add("show");
+      }
+      
+      /* =========================
+          CLOSE POPUP
+          ========================= */
+      function closeDetailPopup(){
+          const popup = document.getElementById("detailPopup");
+          if(!popup) return;
+          popup.classList.remove("show");
+      
+          // optionally clear content (keeps DOM small)
+          const detailContent = document.getElementById("detailContent");
+          if(detailContent){
+            // restore the close button area so DOM structure doesn't break in case other code expects it
+            detailContent.innerHTML = `<span class='close-popup' onclick='closeDetailPopup()'>&times;</span>`;
+          }
+      }
+      
+      /* =========================
+          INIT
+          ========================= */
+      document.addEventListener("DOMContentLoaded", () => {
+          // ensure any existing inline markup uses the first card as active
+          const cards = document.querySelectorAll('.team-card');
+          if(cards && cards.length > 0){
+            // if you want to match the order of teamMembers array to DOM cards, ensure blocks are output in the same order (they are)
+            currentCardIndex = 0;
+          }
+      
+          updateStackOrder(true);
+          updateStarActive();
+      
+          // close popup on background click (optional but useful)
+          const popup = document.getElementById("detailPopup");
+          if(popup){
+            popup.addEventListener('click', function(e){
+              // close when clicking outside the content area
+              if(e.target === popup) closeDetailPopup();
+            });
+          }
+      
+          // bind escape key to close popup
+          document.addEventListener('keydown', function(e){
+            if(e.key === "Escape") closeDetailPopup();
+          });
+      });
+      </script>
+      
+
+      <script>
+        /* =========================
+           TOUCH SWIPE SUPPORT (MOBILE)
+           ========================= */
+        let touchStartX = 0;
+        let touchStartY = 0;
+        let touchEndX = 0;
+        let touchEndY = 0;
+        
+        const swipeThreshold = 50; // minimum swipe distance
+        
+        function handleSwipe() {
+          const diffX = touchEndX - touchStartX;
+          const diffY = touchEndY - touchStartY;
+        
+          // horizontal swipe
+          if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > swipeThreshold) {
+            if (diffX < 0) {
+              // swipe left → next card
+              nextCard();
+            } else {
+              // swipe right → previous card
+              prevCard();
+            }
+          }
+        
+          // vertical swipe (optional but nice on mobile)
+          if (Math.abs(diffY) > Math.abs(diffX) && Math.abs(diffY) > swipeThreshold) {
+            if (diffY < 0) {
+              // swipe up → next card
+              nextCard();
+            } else {
+              // swipe down → previous card
+              prevCard();
+            }
+          }
+        }
+        
+        function nextCard() {
+          const cards = document.querySelectorAll('.team-card');
+          if (!cards.length) return;
+        
+          currentCardIndex = (currentCardIndex + 1) % cards.length;
+          updateStackOrder();
+        }
+        
+        function prevCard() {
+          const cards = document.querySelectorAll('.team-card');
+          if (!cards.length) return;
+        
+          currentCardIndex =
+            (currentCardIndex - 1 + cards.length) % cards.length;
+          updateStackOrder();
+        }
+        
+        document.addEventListener("DOMContentLoaded", () => {
+          const swipeArea = document.querySelector(".card-container");
+          if (!swipeArea) return;
+        
+          swipeArea.addEventListener("touchstart", (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+            touchStartY = e.changedTouches[0].screenY;
+          }, { passive: true });
+        
+          swipeArea.addEventListener("touchend", (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            touchEndY = e.changedTouches[0].screenY;
+            handleSwipe();
+          }, { passive: true });
+        });
+        </script>
+    <style>
+        
+      /* SECTION */
+      .card-container {
+        touch-action: pan-y;
+      }
+      .popup-full {
+    font-size: 15px;
+    line-height: 19px;
+    color: #000;
+}
+      .cst-purpose-global .mobile_image {
+        display: none;
+    }
+      div#shopify-section-template--27370168484187__doctor_details_new_yz34BT {
+        background: #abd0cd;
+    }
+      .cst-purpose-global {
+        background: #ECF1F4;
+        border-top-left-radius: 120px;
+    }
+      .global-team-section {
+        padding: 52px 73px 38px !important;
+        max-width: 1440px !important;
+        margin: auto;
+    }
+      
+      .global-team-container {
+           display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: normal;
+    }
+    .image-section img {
+        border-radius: 16px;
+        height: 100%;
+        object-fit: cover;
+        max-width: 100%;
+    }
+    .image-section{
+      height: auto;
+      object-fit: cover;
+      width: 100%;
+    }
+    
+      /* TEXT */
+      .text-content {
+        display: flex;
+        flex-direction: column;
+        gap:52px;
+        padding-top:40px;
+    }
+      
+      .main-heading {
+        font-size: 40px;
+        font-weight: 600;
+        color: #404040;
+    }
+    .sub-heading {
+      font-size: 24px;
+      font-weight: 600;
+      color: #CB342C;
+      margin: 10px 0 25px;
+    }
+    .description {
+      font-size: 18px;
+      color: #404040;
+      line-height: 1.6;
+      font-weight: 400;
+      max-width: 507px;
+    }
+      
+      /* CARD STACK CONTAINER */
+      .card-container {
+          position: relative;
+          height: 500px;
+          margin-top: 32px;
+          overflow: visible;
+          display: flex;
+          align-items: center;
+          gap: 50px;
+      }
+      .cards-wrapper {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          top:30px;
+      }
+      
+      /* CARD BASE */
+      .team-card {
+        background: #FFF;
+        border-radius: 16px;
+        padding: 36px 28px;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        max-width: 417px;
+        min-height: 440px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform .4s ease, opacity .4s ease;
+        box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.12);
+    }
+      
+      /* FRONT CARD */
+      .team-card.active {
+          transform: translateY(0px) rotate(0deg) !important;
+          opacity: 1;
+          z-index: 3;
+      }
+      
+      /* SECOND CARD */
+      .team-card.behind-1 {
+          opacity: 0.9;
+          transform: translate(18px, -25px) rotate(0deg); /* no rotation */
+          z-index: 2;
+      }
+      
+      /* THIRD CARD */
+      .team-card.behind-2 {
+          transform: translate(20px, 16px) rotate(6deg);
+          opacity: 0.75;
+          z-index: 1;
+          min-height: 390px;
+      }
+      
+      /* CARD CONTENT */
+      .profile-image {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-bottom: 20px;
+      }
+      
+      .card-name {
+        font-size: 40px;
+        font-weight: 600;
+        color: #404040;
+    }
+    .card-role {
+      font-size: 19px;
+      font-weight: 400;
+      color: #CB342C;
+      margin: 0;
+    }
+    
+    .card-description {
+      font-size: 16px;
+      color: #404040;
+      margin-bottom: 10px;
+        font-weight: 400;
+    }
+      .learn-more-link { text-decoration: underline; cursor: pointer; }
+      
+      /* STARS */
+      .stars-navigation {
+          display: flex;
+        gap: 32px;
+        justify-content: left;
+        width: 25%;
+        flex-direction: column;
+      }
+      .stars-navigation div {
+          cursor: pointer;
+          transition: 0.2s;
+      }
+    
+      
+      /* POPUP */
+      .detail-popup {
+          display: none;
+          position: fixed;
+          z-index: 9999;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0,0,0,.5);
+          justify-content: center;
+          align-items: center;
+      }
+      .detail-popup.show { display: flex; }
+      .detail-content {
+        background: #FFF;
+        padding: 40px 20px;
+        max-width: 650px;
+        width: 100%;
+        border-radius: 16px;
+        border: 2px solid #CB342C;
+        position: relative;
+        text-align: left;
+        animation: popupFade 0.25s ease;
+    }
+      
+      .close-popup {
+         position: absolute;
+    right: 16px;
+    top: 18px;
+    cursor: pointer;
+    font-size: 32px;
+    font-weight: bold;
+      }
+      
+      @keyframes popupFade {
+          from {opacity: 0; transform: scale(0.95);}
+          to   {opacity: 1; transform: scale(1);}
+      }
+      @media screen and (max-width:1440px){
+      .global-team-section {
+        padding: 52px 40px 38px !important;
+    }
+      }
+       @media screen and (max-width:1200px){
+      .global-team-section {
+        padding: 52px 20px 38px !important;
+    }
+    .global-team-container{
+    gap: 30px;
+    }
+      }
+      @media screen and (max-width:1024px){
+        .main-heading {
+          font-size: 34px;
+        }
+      }
+        @media screen and (max-width:991px){
+          .cst-purpose-global .mobile_image {
+        display: block;
+    }
+    .cst-purpose-global .desktop-image {
+        display: none;
+    }
+          .global-team-container {
+            display: flex;
+            gap:0;
+            flex-direction: column-reverse;
+                align-items:center;
+        }
+        .cst-purpose-global{
+          border-top-left-radius: 0;
+        }
+         .image-section img {
+            height: auto;
+            width: 100%;
+            border-radius:0;
+        }
+        .cards-wrapper{
+        top:unset;
+        }
+        .team-card{
+            max-width: 100%;
+        }
+        .global-team-section {
+            padding: 0 !important;
+        }
+           .text-content {
+                   padding: 50px 50px 0 ;
+            align-items: center;
+            width: 100%;
+            background: #ecf1f4;
+            border-top-left-radius: 120px;
+            position: relative;
+            bottom: 93px;
+        }
+    .card-flex{
+            width: 100%;
+    }
+        .card-container {
+            flex-direction: column;
+            margin-top: 0;
+        }
+        .stars-navigation {
+            flex-direction: row;
+            justify-content: center;
+        }
+    .purpose-wrap {
+        text-align: center;
+    }
+    .description {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+        }
+         @media screen and (max-width:595px){
+            .text-content {
+            padding: 50px 30px 0;
+            }
+                .main-heading , .card-name{
+            font-size: 24px;
+        }
+        .sub-heading {
+        font-size: 19px;
+            margin: 10px 0;
+    }
+    .description  , .card-role{
+        font-size: 16px;
+    }
+    .card-description{
+        font-size: 14px;
+    }
+                .team-card {
+            max-width: 94%;
+        }
+        }
+          @media screen and (max-width:480px){
+        .text-content{
+                  bottom: 50px;
+        }
+      </style>
+    {% schema %}
+    {
+      "name": "Doctor Details New",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "main_heading",
+          "label": "Main Heading",
+          "default": "A global team, one purpose"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "sub_heading",
+          "label": "Sub Heading",
+          "default": "Created by women, for women."
+        },
+        {
+          "type": "inline_richtext",
+          "id": "description",
+          "label": "Description",
+          "default": "Three women from three different continents..."
+        },
+        {
+          "type": "image_picker",
+          "id": "right_image",
+          "label": "Right Side Main Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_right_image",
+          "label": "Mobile Right Side Main Image"
+        }
+      ],
+    "blocks": [
+      {
+        "type": "team",
+        "name": "Team Member",
+        "settings": [
+          {
+            "type": "inline_richtext",
+            "id": "name",
+            "label": "Name"
+          },
+          {
+            "type": "inline_richtext",
+            "id": "role",
+            "label": "Role"
+          },
+          {
+            "type": "image_picker",
+            "id": "profile_image",
+            "label": "Profile Image"
+          },
+          {
+            "type": "inline_richtext",
+            "id": "learn_more",
+            "label": "Learn more text"
+          },
+          {
+            "type": "inline_richtext",
+            "id": "short_description",
+            "label": "Short Description"
+          },
+          {
+            "type": "textarea",
+            "id": "full_description",
+            "label": "Full Description"
+          }
+        ]
+      }
+    ],
+      "max_blocks": 10,
+      "presets": [
+        {
+          "name": "Doctor Details New"
+        }
+      ]
+    }
+    {% endschema %}
+    

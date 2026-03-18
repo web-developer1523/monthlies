@@ -1,0 +1,230 @@
+<section class="problem-section">
+  <div class="container-fluid">
+    <h1 class="main-title">{{ section.settings.heading }}</h1>
+    <div class="quote">
+      {{ section.settings.description }}
+    </div>
+    <div class="description">
+      {{ section.settings.paragraph }}
+    </div>
+    <div class="bg-image-container"><img src="{{ section.settings.image | img_url: 'master' }}" alt=""></div>
+    <div class="triggers">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {%- when 'problem' -%}
+            <div class="trigger-card">
+              <div class="icon_idn">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Group_513823.png?v=1747390133"
+                  width="13"
+                  height="26"
+                  alt=""
+                >
+                {{ block.settings.problem_heading }}
+              </div>
+              {{ block.settings.problem_subheading }}
+              <div class="cst-problem-flex">
+                {{ block.settings.problem_text }}
+              </div>
+            </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<style>
+          /* PROBLEM SECTION STYLING START */
+      .cst-problem-flex {
+        display: flex  ;
+        flex-direction: column;
+        gap: 50px;
+        padding-top: 20px;
+    }
+    .cst-problem-flex p:nth-child(2) {
+        font-family: "Lora" !important;
+    font-size: 17px;
+    line-height: 20px;
+  }
+          .main-title {
+          text-align: center;
+          color: #cb342c;
+          font-weight: 600;
+          font-size: 44px;
+          font-family: "Lora";
+          margin: 0 0 20px;
+          line-height: normal;
+          }
+
+          .quote {
+          font-size: 26px;
+          text-align: center;
+          color: #2a2a2a;
+          max-width: 1300px;
+          margin: 0 auto;
+          line-height: normal;
+          padding: 0 10px;
+          }
+          .description {
+          font-size: 18px;
+          text-align: center;
+          color: #2a2a2a;
+          padding: 0 10px;
+          }
+          .triggers {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 41px;
+          width: 100%;
+          max-width: 1500px;
+          margin: -320px auto 0;
+          padding: 0 20px;
+          }
+          .trigger-card {
+          background: #fff;
+          border-radius: 20px;
+          padding: 20px;
+          text-align: center;
+          box-shadow: 0 7.07px 28.29px #9293934d;
+          }
+          .icon_idn span {
+          font-size: 18px;
+          color: #2a2a2a;
+          }
+          .trigger-card h3 {
+          font-size: 18px;
+          color: #cb342c;
+          font-family: "Quicksand" !important;
+          font-weight: 600;
+          padding: 5px 0 14px;
+          border-bottom: 2px solid #ecf1f4;
+          margin: 0;
+          }
+         .bg-image-container img {
+            width: 100%;
+            object-fit: fill;
+            height: 420px;
+        }
+          .trigger-card p {
+          font-size: 19px;
+          font-family: "Quicksand" !important;
+          color: #2a2a2a;
+          margin: 0;
+                line-height: normal;
+          }
+          .trigger-card .source {
+          font-size: 16px;
+          font-family: "Lora" !important;
+          }
+          .problem-section {
+          background: #ecf1f4;
+          padding: 80px 0px 0px;
+          border-radius: 120px 0 0;
+          }
+          .icon_idn {
+          display: flex;
+          justify-content: center;
+          align-items: end;
+          gap: 5px;
+          }
+          /* PROBLEM SECTION STYLING END */
+          @media(max-width:767px){
+            .cst-problem-flex{
+              gap:25px;
+            }
+              .problem-section {
+        padding: 40px 0;
+        border-radius: 70px 0 0;
+      }
+             .triggers {
+            grid-template-columns: 1fr !important;
+            margin: -50px 0 ;
+                   gap: 20px;
+        }
+            .bg-image-container img {
+          object-fit: cover;
+          height: auto;
+      }
+          }
+          @media(max-width:575px){
+            .trigger-card{
+                  padding: 13px 10px;
+            }
+           body .trigger-card p {
+            font-size: 16px;
+            line-height: 25px;
+        }
+               body .quote {
+            font-size: 16px;
+            line-height: 23px;
+        }
+      .trigger-card .source {
+        font-size: 12px;
+      }
+           .problem-section .description {
+          font-size: 16px;
+            line-height: 23px;
+          }
+</style>
+
+{% schema %}
+{
+    "name": "Other Problems",
+    "class": "cst-other-problem",
+    "settings": [
+        {
+            "type": "text",
+            "id": "custom_class",
+            "label": "Custom class"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+        },
+        {
+            "type": "richtext",
+            "id": "description",
+            "label": "Description"
+        },
+        {
+            "type": "richtext",
+            "id": "paragraph",
+            "label": "Paragraph"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Background Image"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "problem",
+            "name": "Problem",
+            "settings": [
+                {
+                    "type": "richtext",
+                    "id": "problem_heading",
+                    "label": "Heading"
+                },
+                {
+                    "type": "richtext",
+                    "id": "problem_subheading",
+                    "label": "Subheading"
+                },
+                {
+                    "type": "richtext",
+                    "id": "problem_text",
+                    "label": "Text"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Other Problems"
+        }
+    ]
+}
+{% endschema %}

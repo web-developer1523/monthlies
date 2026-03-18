@@ -13,14 +13,15 @@
       "type": "main-page",
       "disabled": true,
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+        "narrow": true,
+        "padding_top": 60,
+        "padding_bottom": 72
       }
     },
-    "image_banner_xXJeXY": {
+    "image_banner_mpkVjh": {
       "type": "image-banner",
       "blocks": {
-        "heading_tzBtyM": {
+        "heading_7zWpJy": {
           "type": "heading",
           "settings": {
             "heading": "<strong>Personalised</strong> <em>cycle support</em> at your fingertips<em>.</em>",
@@ -28,7 +29,7 @@
             "heading_tag": "h2"
           }
         },
-        "text_xXY4Ue": {
+        "text_ykbJmM": {
           "type": "text",
           "settings": {
             "text": "<p>Track your cycle and combine your supplement intake with personalised guidance to <strong>help reduce your  menstrual symptoms.</strong></p>",
@@ -36,12 +37,12 @@
             "secondary_color": false
           }
         },
-        "button_jHhMmk": {
+        "button_JhhkTT": {
           "type": "button",
           "settings": {
             "button_label": "Download Now",
             "button_link": "https://apps.apple.com/gb/app/monthlies/id6737126845",
-            "button_label1": "",
+            "button_label1": "Personalise your app",
             "button_link1": "#",
             "button_size": "medium",
             "button_style_secondary": false
@@ -49,15 +50,14 @@
         }
       },
       "block_order": [
-        "heading_tzBtyM",
-        "text_xXY4Ue",
-        "button_jHhMmk"
+        "heading_7zWpJy",
+        "text_ykbJmM",
+        "button_JhhkTT"
       ],
-      "name": "t:sections.image-banner.presets.name",
       "settings": {
         "custom_class": "backgrond_class app_hero",
         "video": "",
-        "bg-image": "shopify://shop_images/Hero_section_700x_e23e7ac7-b30f-495a-9b0d-f5b35609381b.webp",
+        "bg-image": "shopify://shop_images/Hero_section_c91346eb-bb6c-45d4-9c87-ce2d814f5727.png",
         "mobile_image_one": "shopify://shop_images/Welcome_Screen_52c040f2-acf2-4ab6-ae5b-40c97872cbfa.png",
         "image_2": "shopify://shop_images/Welcome_Screen_52c040f2-acf2-4ab6-ae5b-40c97872cbfa.png",
         "image": "shopify://shop_images/mobile_image.png",
@@ -81,10 +81,10 @@
         "padding_bottom": 36
       }
     },
-    "app_feacture_FVBFCA": {
+    "app_feacture_Fhg8hQ": {
       "type": "app-feacture",
       "blocks": {
-        "heading_wzaC4T": {
+        "heading_86PRjL": {
           "type": "heading",
           "settings": {
             "heading": "Discover all app <strong>features</strong><em>.</em>",
@@ -92,7 +92,7 @@
             "heading_tag": "h2"
           }
         },
-        "text_7gJTmF": {
+        "text_faDghF": {
           "type": "text",
           "settings": {
             "text": "<ul><li><strong>Get nutrition & lifestyle guidance</strong> to balance your hormones</li><li><strong>Track</strong> your periods and symptoms</li><li><strong>Track</strong> your Monthlies supplement<br/></li><li><strong>Set</strong> your daily supplement reminder <br/></li><li>Receive <strong>personalised analytics & recommendations</strong><br/></li><li><strong>Access research-backed</strong> wellness plans, book appointments with experts, & learn all about your hormonal health </li></ul>",
@@ -100,7 +100,7 @@
             "secondary_color": false
           }
         },
-        "custom_liquid_fGxGYi": {
+        "custom_liquid_wLeD7d": {
           "type": "custom_liquid",
           "settings": {
             "small_image": "shopify://shop_images/en_1.svg",
@@ -110,11 +110,10 @@
         }
       },
       "block_order": [
-        "heading_wzaC4T",
-        "text_7gJTmF",
-        "custom_liquid_fGxGYi"
+        "heading_86PRjL",
+        "text_faDghF",
+        "custom_liquid_wLeD7d"
       ],
-      "name": "App feacture",
       "settings": {
         "custom_class": "app_feacture",
         "image": "shopify://shop_images/pexels-tim-samuel-6697318_2.png",
@@ -139,10 +138,10 @@
         "padding_bottom": 36
       }
     },
-    "health_expert_YbRygV": {
+    "health_expert_g9Mwh4": {
       "type": "health-expert",
       "blocks": {
-        "column_WjEHeC": {
+        "column_xBfcj8": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Mask_group_51c61ace-f92c-4c03-89a7-e0900be94aeb.png",
@@ -154,7 +153,7 @@
             "button_style_secondary": false
           }
         },
-        "column_wXUYHx": {
+        "column_hHeLtH": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Mask_group_f7bd1080-63b8-4edd-908d-bd703b73708d.png",
@@ -166,7 +165,7 @@
             "button_style_secondary": false
           }
         },
-        "column_FkeMEb": {
+        "column_XwXwFG": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Mask_group_7c446263-c740-4377-ab80-d2ea2f2ab069.png",
@@ -178,7 +177,7 @@
             "button_style_secondary": false
           }
         },
-        "column_xPAApg": {
+        "column_Dzn6AU": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Geneva_rounded.png",
@@ -190,7 +189,7 @@
             "button_style_secondary": false
           }
         },
-        "column_9mJWhh": {
+        "column_qqff7t": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Image_1_e286a779-ad68-4924-b755-3087d82765ea.png",
@@ -204,13 +203,12 @@
         }
       },
       "block_order": [
-        "column_WjEHeC",
-        "column_wXUYHx",
-        "column_FkeMEb",
-        "column_xPAApg",
-        "column_9mJWhh"
+        "column_xBfcj8",
+        "column_hHeLtH",
+        "column_XwXwFG",
+        "column_Dzn6AU",
+        "column_qqff7t"
       ],
-      "name": "Health Expert",
       "settings": {
         "products_to_show": 5,
         "custom_class": "health_expert",
@@ -230,10 +228,20 @@
         "padding_bottom": 36
       }
     },
-    "review_eAnYtt": {
+    "reviews_slider_powder_aVd6Cg": {
+      "type": "reviews-slider-powder",
+      "disabled": true,
+      "settings": {
+        "title": "Don’t take our word for it, <strong>take hers!</strong>",
+        "link": "shopify://pages/experiences",
+        "btn": "",
+        "class": ""
+      }
+    },
+    "review_jCa6Cg": {
       "type": "review",
       "blocks": {
-        "reviews_aMWLaa": {
+        "reviews_TK8ACK": {
           "type": "reviews",
           "settings": {
             "rating": "4",
@@ -242,7 +250,7 @@
             "age": "37"
           }
         },
-        "reviews_a8UWtR": {
+        "reviews_DKYFWQ": {
           "type": "reviews",
           "settings": {
             "rating": "5",
@@ -251,7 +259,7 @@
             "age": "29"
           }
         },
-        "reviews_pj9x9h": {
+        "reviews_WQmdbq": {
           "type": "reviews",
           "settings": {
             "rating": "4",
@@ -260,7 +268,7 @@
             "age": "36"
           }
         },
-        "reviews_aRK6Yj": {
+        "reviews_gQdLqU": {
           "type": "reviews",
           "settings": {
             "rating": "4",
@@ -269,7 +277,7 @@
             "age": "43"
           }
         },
-        "reviews_86nEm9": {
+        "reviews_AdM7QQ": {
           "type": "reviews",
           "settings": {
             "rating": "5",
@@ -278,7 +286,7 @@
             "age": "29"
           }
         },
-        "reviews_iLFYGm": {
+        "reviews_KPRtNe": {
           "type": "reviews",
           "settings": {
             "rating": "5",
@@ -287,7 +295,7 @@
             "age": "42"
           }
         },
-        "reviews_fyM4NB": {
+        "reviews_MWcbnM": {
           "type": "reviews",
           "settings": {
             "rating": "5",
@@ -296,7 +304,7 @@
             "age": "46"
           }
         },
-        "reviews_fDb8dV": {
+        "reviews_9KHRA3": {
           "type": "reviews",
           "settings": {
             "rating": "4",
@@ -305,7 +313,7 @@
             "age": "32"
           }
         },
-        "reviews_nh3DUM": {
+        "reviews_rWLqQ6": {
           "type": "reviews",
           "settings": {
             "rating": "4",
@@ -314,7 +322,7 @@
             "age": "22"
           }
         },
-        "reviews_J9MMt6": {
+        "reviews_bU8kL7": {
           "type": "reviews",
           "settings": {
             "rating": "4",
@@ -325,18 +333,17 @@
         }
       },
       "block_order": [
-        "reviews_aMWLaa",
-        "reviews_a8UWtR",
-        "reviews_pj9x9h",
-        "reviews_aRK6Yj",
-        "reviews_86nEm9",
-        "reviews_iLFYGm",
-        "reviews_fyM4NB",
-        "reviews_fDb8dV",
-        "reviews_nh3DUM",
-        "reviews_J9MMt6"
+        "reviews_TK8ACK",
+        "reviews_DKYFWQ",
+        "reviews_WQmdbq",
+        "reviews_gQdLqU",
+        "reviews_AdM7QQ",
+        "reviews_KPRtNe",
+        "reviews_MWcbnM",
+        "reviews_9KHRA3",
+        "reviews_rWLqQ6",
+        "reviews_bU8kL7"
       ],
-      "name": "Reviews",
       "settings": {
         "title": "Don’t take our word for it, <strong>take hers!</strong>",
         "link": "shopify://pages/experiences",
@@ -344,10 +351,47 @@
         "class": "review-home-sec"
       }
     },
-    "app_faq_6XEWBm": {
+    "faq_insta_baaWrU": {
+      "type": "Faq-insta",
+      "blocks": {
+        "socialicons_nEUnmt": {
+          "type": "Socialicons",
+          "settings": {
+            "social_image": "shopify://shop_images/Instagram.png",
+            "soical_text": "Connect on Instagram",
+            "social_link": ""
+          }
+        },
+        "socialicons_qUUbBb": {
+          "type": "Socialicons",
+          "settings": {
+            "social_image": "shopify://shop_images/tiktok.png",
+            "soical_text": "Connect on TikTok",
+            "social_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "socialicons_nEUnmt",
+        "socialicons_qUUbBb"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "<p>FAQs<em>.</em></p>",
+        "sub_heading": "<p>Life with Monthlies. <strong>Join</strong> our community.</p>",
+        "left_sub_heading": "",
+        "left_description": "",
+        "insta_feed": "shopify://shop_images/Images.png",
+        "insta_component_img": "shopify://shop_images/Vector_352_5eae4503-b8e9-4030-abe1-aec92fbf3c64.png",
+        "button_label": "Button label",
+        "button_link": "",
+        "description": "We've carefully chosen <strong>premium ingredients</strong> that work in harmony, offering a complete and holistic solution to <strong>enhance women's health</strong> while addressing every facet of menstrual well-being."
+      }
+    },
+    "app_faq_pYYDBK": {
       "type": "app-faq",
       "blocks": {
-        "socialicons_zm6Nb4": {
+        "socialicons_QnUHGk": {
           "type": "Socialicons",
           "settings": {
             "social_image": "shopify://shop_images/Instagram.png",
@@ -355,7 +399,7 @@
             "social_link": "https://www.instagram.com/withmonthlies"
           }
         },
-        "socialicons_WtHzx8": {
+        "socialicons_AEDCry": {
           "type": "Socialicons",
           "settings": {
             "social_image": "shopify://shop_images/tiktok.png",
@@ -365,10 +409,9 @@
         }
       },
       "block_order": [
-        "socialicons_zm6Nb4",
-        "socialicons_WtHzx8"
+        "socialicons_QnUHGk",
+        "socialicons_AEDCry"
       ],
-      "name": "App Faq",
       "settings": {
         "heading": "<p>FAQs</p>",
         "sub_heading": "<p>Life with Monthlies. <strong>Join</strong> our community<em>.</em></p>",
@@ -381,10 +424,10 @@
         "description": "We've carefully chosen <strong>premium ingredients</strong> that work in harmony, offering a complete and holistic solution to <strong>enhance women's health</strong> while addressing every facet of menstrual well-being."
       }
     },
-    "achieve_your_dreams_6mLUhq": {
-      "type": "achieve-your-dreams",
+    "achieve_your_dream_GztzCi": {
+      "type": "achieve-your-dream",
       "blocks": {
-        "heading_BxR7HN": {
+        "heading_URrdwE": {
           "type": "heading",
           "settings": {
             "heading": "Your period shouldn’t get in the way of you <em>achieving your dreams.</em>",
@@ -397,7 +440,16 @@
             "attachment_mobile": "shopify://shop_images/Group_34952.png"
           }
         },
-        "button_GXUiUa": {
+        "subheading_VxCHzU": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Download our app on AppStore",
+            "subheading_size": "h5",
+            "secondary_color": false
+          }
+        },
+        "button_68cD7d": {
           "type": "button",
           "settings": {
             "button_label": "Download Now",
@@ -405,13 +457,24 @@
             "button_size": "medium",
             "button_style_secondary": false
           }
+        },
+        "newsletter_QXEkwY": {
+          "type": "Newsletter",
+          "disabled": true,
+          "settings": {
+            "newsletter_heading": "<em>COMING SOON</em>",
+            "newsletter_subheading": "Get notified when we launch.",
+            "newsletter_msg": "*Don’t worry we will not spam you :)",
+            "newsletter_button_link": "dont worrry"
+          }
         }
       },
       "block_order": [
-        "heading_BxR7HN",
-        "button_GXUiUa"
+        "heading_URrdwE",
+        "subheading_VxCHzU",
+        "button_68cD7d",
+        "newsletter_QXEkwY"
       ],
-      "name": "Achieve Your Dream",
       "settings": {
         "custom_class": "achieve_dreams",
         "image": "shopify://shop_images/brandbird-iphone-15-3_1_42802c81-2a39-4eea-bc62-b79dd2daef34.png",
@@ -420,7 +483,7 @@
         "layout": "text_first",
         "text_box_position": "middle",
         "text_alignment": "left",
-        "image_ratio": "650px",
+        "image_ratio": "adapt",
         "enlarge_content": false,
         "full_width": false,
         "show_divider": false,
@@ -440,11 +503,13 @@
   },
   "order": [
     "main",
-    "image_banner_xXJeXY",
-    "app_feacture_FVBFCA",
-    "health_expert_YbRygV",
-    "review_eAnYtt",
-    "app_faq_6XEWBm",
-    "achieve_your_dreams_6mLUhq"
+    "image_banner_mpkVjh",
+    "app_feacture_Fhg8hQ",
+    "health_expert_g9Mwh4",
+    "reviews_slider_powder_aVd6Cg",
+    "review_jCa6Cg",
+    "faq_insta_baaWrU",
+    "app_faq_pYYDBK",
+    "achieve_your_dream_GztzCi"
   ]
 }

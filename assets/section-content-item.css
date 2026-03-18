@@ -1,0 +1,122 @@
+.content-item {
+    display: flex;
+    margin: 120px 0;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 110px;
+}
+
+.content-item--reverse {
+    flex-direction: row-reverse;
+}
+
+.content-side {
+    max-width: 500px;
+    min-width: 500px;
+}
+
+.content-side-free {
+    background-color: #6FB06A;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 100%;
+    padding: 10px;
+    border-radius: 42px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34px;
+    margin-left: 14px;
+}
+
+.content-side-title {
+    display: flex;
+}
+
+.content-side-title h4 {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+    line-height: 110%;
+}
+
+.content-side-text-wrapper {
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.content-side-text--bold {
+    font-weight: 500;
+}
+
+.visual-side {
+    width: 100%;
+    max-width: 600px;
+}
+
+.content-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.download-button {
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    color: inherit;
+    font-weight: 500;
+    font-size: 20px;
+    gap: 10px;
+}
+
+.content-side-items {
+    padding: 40px 0;
+    border-top: 1px solid #E9D3D3;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+}
+
+.content-side-item-title {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.content-side-item p {
+    margin: 8px 0 0 0;
+    opacity: .5;
+    line-height: 130%;
+}
+
+@media (max-width: 961px) {
+    .content-item {
+        flex-direction: column;
+        margin: 60px 0;
+        gap: 40px;
+    }
+
+    .content-side {
+        max-width: auto !important;
+        min-width: auto !important;
+    }
+
+    .content-side p {
+        font-size: 16px;
+    }
+
+    .content-side h4 {
+        font-size: 28px;
+    }
+
+    .content-buttons {
+        flex-direction: column;
+    }
+}

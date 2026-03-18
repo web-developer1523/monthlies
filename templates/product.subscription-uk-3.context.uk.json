@@ -1,0 +1,341 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "product.subscription-uk-3.json",
+  "context": {
+    "market": "uk"
+  },
+  "sections": {
+    "tested_result_3fiydt": {
+      "type": "tested-result",
+      "disabled": false,
+      "settings": {
+        "custom_class": "cst-custom-tested-result",
+        "heading": "<p>Quality you can trust: <strong>Our tested results.</strong></p>",
+        "description": "<p>Based on an independent study of 105 women aged 20 to 45 using the monthlies supplement for 60-90 days</p>",
+        "paragraph": "",
+        "image": "shopify://shop_images/Group_513899.png"
+      },
+      "blocks": {
+        "problem_RVUUT": {
+          "type": "problem",
+          "disabled": false,
+          "settings": {
+            "problem_heading": "<p>94%</p>",
+            "problem_text": "<p>experienced more balanced hormones and smoother cycles<br/><br/></p>"
+          }
+        },
+        "problem_JxxbA": {
+          "type": "problem",
+          "disabled": false,
+          "settings": {
+            "problem_heading": "<p>84%</p>",
+            "problem_text": "<p>experienced fewer and less painful cramps each month</p><p></p>"
+          }
+        },
+        "problem_YABRk": {
+          "type": "problem",
+          "disabled": false,
+          "settings": {
+            "problem_heading": "<p>90%</p>",
+            "problem_text": "<p>reported better digestion and less bloating<br/><br/></p>"
+          }
+        },
+        "problem_iKYMr": {
+          "type": "problem",
+          "disabled": false,
+          "settings": {
+            "problem_heading": "<p>94%</p>",
+            "problem_text": "<p>gained greater self-confidence and body comfort<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "problem_RVUUT",
+        "problem_JxxbA",
+        "problem_YABRk",
+        "problem_iKYMr"
+      ],
+      "name": "Tested Result"
+    },
+    "1761924973125607e1": {
+      "type": "apps",
+      "disabled": false,
+      "settings": {
+        "include_margins": true,
+        "show_divider": false,
+        "header-fd1c220e9a16feebf669d1be1784d107": null,
+        "padding_top": 36,
+        "padding_bottom": 36
+      },
+      "blocks": {
+        "loox_reviews_loox_dynamic_section_UwXr3": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "disabled": false,
+          "settings": {
+            "only_photos": false,
+            "aggregated": true,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080,
+            "is_sample": true,
+            "paragraph-4f62b2561a595f528fdeba77b0ac8b5a": null,
+            "paragraph-8bd61318a98f406846f2cc7cdd507cb5": null
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_UwXr3"
+      ]
+    },
+    "empty_space_jWbMn": {
+      "type": "empty-space",
+      "disabled": false,
+      "settings": {
+        "desktop_height": 40,
+        "mobile_height": 28
+      },
+      "blocks": {},
+      "block_order": [],
+      "name": "t:sections.empty-space.presets.name"
+    },
+    "empty_space_J7FCc": {
+      "type": "empty-space",
+      "disabled": false,
+      "settings": {
+        "desktop_height": 40,
+        "mobile_height": 28
+      },
+      "blocks": {},
+      "block_order": [],
+      "name": "t:sections.empty-space.presets.name"
+    },
+    "new_main_product_HmJCx8": {
+      "settings": {},
+      "blocks": {
+        "title_zRkdmm": {
+          "settings": {
+            "tagline": "All you need <strong>for health and hormones</strong> in 1 easy scoop.",
+            "star_img": "shopify://shop_images/Stars.png"
+          }
+        },
+        "image_text_KaLR3m": {
+          "settings": {
+            "text_image": "<p><a href=\"/pages/all-ingredients\" target=\"_blank\" title=\"All Ingredients\">See ingredients</a></p>"
+          }
+        },
+        "image_text_hUV8DA": {
+          "disabled": true,
+          "settings": {}
+        }
+      }
+    },
+    "scrolling_promotion_mUxyWz": {
+      "disabled": false,
+      "settings": {
+        "speed": 2.1,
+        "padding_top": 0,
+        "padding_bottom": 0
+      },
+      "blocks": {
+        "image_iH66gm": {
+          "type": "image",
+          "disabled": false,
+          "settings": {
+            "image": "shopify://shop_images/1b733a50-39d3-4503-8607-2f4b7951c58c.png",
+            "height": 60,
+            "link": ""
+          }
+        },
+        "image_rTTCMW": {
+          "settings": {
+            "height": 92
+          }
+        }
+      },
+      "block_order": [
+        "image_aPWBkW",
+        "announcement_UTydV3",
+        "image_qQEaHn",
+        "image_iH66gm",
+        "image_ricDwp",
+        "image_rTTCMW"
+      ]
+    },
+    "1730556966706fff07": {
+      "disabled": true,
+      "settings": {
+        "show_divider": true,
+        "padding_bottom": 24
+      },
+      "blocks": {
+        "loox_reviews_loox_snippets_widget_bbmD3": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-snippets-widget/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "disabled": false,
+          "settings": {
+            "alignment": "center",
+            "max-width": "",
+            "color-scheme": "default",
+            "shadow": "",
+            "header-6665bd6e1823641e38293aa3653881de": null,
+            "paragraph-ec016913c66b9da20707d54a4848d5eb": null,
+            "show-rating": true,
+            "show-image": true,
+            "hide-arrows-mobile": false,
+            "font-size": 14,
+            "header-738d06c2d6f9f936a6d31ffcb62337cf": null,
+            "show-border": false,
+            "border-radius": 16,
+            "header-5fdbb49376213b145d23d0ddc3b482ca": null,
+            "background-color": "#ebebeb",
+            "text-color": "",
+            "name-color": "",
+            "rating-icon-color": "",
+            "border-color": "",
+            "shadow-color": "rgba(0,0,0,0)",
+            "header-c298b4a38376c8220908e8f49254f7e0": null,
+            "reviews-limit": 10,
+            "paragraph-6b207fb2c9c5820472f484a73fea689c": null
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_snippets_widget_bbmD3"
+      ]
+    },
+    "product_faqnw_Q9aDqy": {
+      "settings": {},
+      "blocks": {
+        "left_YicdU": {
+          "type": "left",
+          "disabled": false,
+          "settings": {
+            "acc_id1": "",
+            "accordion_heading1": "What is The Pain Triangle?",
+            "dsc1": "<p><strong>The Pain Triangle: 3 Causes of Period Cramps</strong></p><p><strong>1. Hormonal Imbalance</strong></p><p>Too much estrogen hormone raises prostaglandin levels - the “cramp messengers” that tell your uterus to contract.</p><p><strong>2. Excess Prostaglandins (Cramp Messengers)</strong><br/>In healthy amounts, prostaglandins help the uterus shed its lining during your period. When levels spike, cramps become more intense and painful.<br/></p><p><strong>3. Micronutrient Gaps</strong><br/>Your body needs nutrients like magnesium, calcium, zinc and vitamin D to stay balanced. Without enough, cramps can hit harder.</p><p><strong>How does monthlies help?</strong></p><p>Painkillers only mask cramps once they’ve started. . monthlies strengthens your foundation by addressing the root causes of <em>The Pain Triangle</em>, supporting a healthier cycle from within.</p><p><br/>90% of women reported a significant improvement in their period pain and cramps after just 60 days using monthlies**.</p>"
+          }
+        },
+        "left_mn7V8h": {
+          "disabled": true,
+          "settings": {}
+        },
+        "left_XkhVmH": {
+          "settings": {
+            "dsc1": "<p>Women of reproductive age often need a range of <strong>essential nutrients to maintain hormonal balance and general wellness</strong>, yet clinical data shows that many adult women are deficient in key nutrients like Folate, Choline, Vitamin D, and Iron. </p><p>monthlies not only helps replenish these critical nutrients, but also includes a blend of<strong> clinically-backed ingredients in high absorbable forms </strong>such as Zinc, Chromium, Magnesium, Choline, Vitamin B6, Calcium, Inositol, Ginger, Turmeric, Lemon Balm etc to support menstrual health. </p><p>monthlies is a one-of-a-kind supplement solution, specifically designed to support your menstrual cycle and overall health. </p><p>This powerful formula is crafted to support menstrual pain and other symptoms, reduce bloating, improve sleep, boost energy, manage stress, improve mood, support blood sugar regulation, support digestion, enhance skin and hair health giving you comprehensive care in one supplement*. </p><p> Even more reasons to choose monthlies! </p><ul><li><span style=\"text-decoration:underline\">All you need: </span>26+ ingredients combined in 1 scoop per day, so no need to invest in multiple supplements for the same benefits </li><li><span style=\"text-decoration:underline\">Highly absorbable ingredients</span>: We've used vitamins like Folate, B6, B12 in their active (methylated) forms for superior absorption and quality </li><li><span style=\"text-decoration:underline\">Superior sourcing:</span> We have partnered with UK labs that have transparent and trusted sourcing </li><li><span style=\"text-decoration:underline\">CGMP Certified: </span>We only work with CGMP certified supplier and manufacturers </li><li><span style=\"text-decoration:underline\">Natural ingredients:</span> We strive to always use natural ingredients with as little additives as possible </li><li><span style=\"text-decoration:underline\">Designed by experts: </span>Created by a diverse team of female health experts with 10+ years of clinical knowledge and experience of helping over 2,500 women </li><li><span style=\"text-decoration:underline\">Science meets clinical expertise: </span>Our formula merges science-backed ingredients with clinical expert knowledge </li><li><span style=\"text-decoration:underline\">Third- party tested:</span> for all dietary preferences: vegan, dairy- free, nut-free, soy-free, gluten-free </li></ul>"
+          }
+        },
+        "right_EGfUr": {
+          "type": "right",
+          "disabled": false,
+          "settings": {
+            "acc_id": "",
+            "accordion_heading": "Shipping & Returns",
+            "dsc": "<p><strong>Shipping</strong></p><ul><li>We offer free shipping on all orders</li><li>Orders ship within <strong>1–2 business days</strong>.</li><li>Delivery takes <strong>2–5 days</strong> (UK & DE).</li><li>You’ll receive a tracking link once shipped.</li></ul><p><strong>Returns</strong></p><ul><li>Not happy? Return unopened bottles within <strong>30 days</strong> for a full refund.</li><li>Just email <a href=\"mailto:support@withmonthlies.com\"><strong>returns@withmonthlies.com</strong></a> with your order number.</li></ul><p><strong>Damaged Orders</strong></p><p>If your order arrives damaged or incorrect, contact us within <strong>7 days</strong> and we’ll send a replacement.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "left_YicdU",
+        "left_mn7V8h",
+        "left_p6Eh8w",
+        "left_XkhVmH",
+        "right_w3eznD",
+        "right_4JyJAQ",
+        "right_fmXVBa",
+        "right_EGfUr"
+      ]
+    },
+    "multicolumn_rKFPgm": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {
+        "column_jHeQA7": {
+          "settings": {
+            "image": "shopify://shop_images/Frame_513453.png"
+          }
+        },
+        "column_TCqdUn": {
+          "settings": {
+            "image": "shopify://shop_images/stars-5.png"
+          }
+        },
+        "column_pR68Va": {
+          "settings": {
+            "image": "shopify://shop_images/stars-5.png"
+          }
+        }
+      }
+    },
+    "why_powder_accordions_4drMDW": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {}
+    },
+    "ingredients_section_CPjTwa": {
+      "settings": {
+        "description": "<p>Hormones require a steady supply of essential nutrients to function at their best. Learn how our science-backed ingredients work.</p>"
+      },
+      "blocks": {
+        "ingredient_wwwrcK": {
+          "settings": {
+            "description": "Lemon Balm has been scientifically proven to reduce mild anxiety symptoms by up to 36% .\nIts ability to alleviate menstrual cramps and bloating makes it a powerful natural remedy for period pain. \nIt also improves mood, digestion, and cognitive function, providing holistic support during PMS and beyond."
+          }
+        },
+        "ingredient_p83ndd": {
+          "settings": {
+            "description": "A carbohydrate essential for hormonal balance, cell signalling, and metabolic health. Inositol plays a vital role in improving ovarian health and menstrual regularity. Extensively studied for its effectiveness in individuals with PCOS, it reduces androgen levels, enhances ovulatory function, and shortens irregular cycle lengths."
+          }
+        },
+        "ingredient_xGewkY": {
+          "settings": {
+            "description": "Supports liver detoxification by enhancing the metabolism and excretion of excess hormones, reducing estrogen dominance, and alleviating PMS symptoms.\nWith its strong anti-inflammatory and antioxidant effects, studies show it can reduce oxidative stress by 60-70%, making it essential for balancing hormones and supporting overall well-being."
+          }
+        },
+        "ingredient_3haPnD": {
+          "settings": {
+            "description": "Rich in phytoestrogens (lignans) and omega-3 fatty acids, Flaxseed helps balance estrogen levels to ease symptoms of PMS, PCOS, and menopause.\n\nThe omega-3s reduce inflammation and support hormone production, while its high fiber content promotes bowel regularity and aids in the excretion of excess hormones."
+          }
+        }
+      }
+    },
+    "rich_text_ijzttN": {
+      "settings": {
+        "padding_top": 36
+      },
+      "blocks": {}
+    }
+  },
+  "order": [
+    "new_main_product_HmJCx8",
+    "scrolling_promotion_mUxyWz",
+    "main",
+    "1730556966706fff07",
+    "product-recommendations",
+    "product_faqnw_Q9aDqy",
+    "multicolumn_t4LVkm",
+    "tested_result_3fiydt",
+    "multicolumn_rKFPgm",
+    "timeline_section_AaRkbb",
+    "image_collaps_tab_4JPKBc",
+    "why_powder_accordions_4drMDW",
+    "ingredients_section_CPjTwa",
+    "why_powder_VbAN7k",
+    "1761924973125607e1",
+    "product_bottom_faq_hhq647",
+    "multicolumn_AiWN47",
+    "health_expert_HamgKV",
+    "ucg_create_section_PCrKtw",
+    "multicolumn_UWAWLP",
+    "faq_insta_TBNxY9",
+    "empty_space_jWbMn",
+    "empty_space_J7FCc",
+    "rich_text_ijzttN"
+  ]
+}

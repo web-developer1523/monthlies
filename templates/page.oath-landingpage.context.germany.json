@@ -1,0 +1,55 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "page.oath-landingpage.json",
+  "context": {
+    "market": "germany"
+  },
+  "sections": {
+    "oath_text_TDa47P": {
+      "settings": {},
+      "blocks": {
+        "button_4BgxWQ": {
+          "settings": {
+            "button_link": "shopify://products/monthlies"
+          }
+        }
+      }
+    },
+    "image_with_text_DBAXAc": {
+      "settings": {
+        "image": "shopify://shop_images/German_Report_Image.png"
+      },
+      "blocks": {
+        "button_hJwdbR": {
+          "settings": {
+            "button_link": "https://cdn.shopify.com/s/files/1/0708/7462/8371/files/monthlies_-_Breaking_the_Cycle_Report_DE_07.04_Final.pdf?v=1744278986"
+          }
+        }
+      }
+    },
+    "oath_video_MNFFnG": {
+      "settings": {
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/16e5997d593d47ccb68e33018a9c5f87.mp4"
+      },
+      "blocks": {}
+    },
+    "image_banner_m4pt34": {
+      "settings": {},
+      "blocks": {
+        "button_GtpP6F": {
+          "settings": {
+            "button_link": "https://cdn.shopify.com/s/files/1/0708/7462/8371/files/monthlies_-_Breaking_the_Cycle_Report_DE_07.04_Final.pdf?v=1744278986"
+          }
+        }
+      }
+    }
+  }
+}

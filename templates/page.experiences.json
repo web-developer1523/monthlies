@@ -1,0 +1,267 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "narrow": true,
+        "padding_top": 60,
+        "padding_bottom": 72
+      }
+    },
+    "image_with_text_AiEtLT": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_XkTLAh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover what monthlies customers are <em>saying.</em></p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "custom_liquid_HF6iAr": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<div class=\"tabs_wrapper\">\n    <div class=\"total_rating\">\n        <div class=\"d-flex\">\n            <h2 class=\"en\"> Total Rating </h2>\n            <h2 class=\"german\"> Gesamtbewertung </h2>\n            <div> 4.5 <img src=\"https://cdn.shopify.com/s/files/1/0708/7462/8371/files/ReviewStars_1.png?v=1725014026\" /> <span></span> </div>\n        </div>\n    </div>\n    <div class=\"sort_by\">\n     <div class=\"d-flex\">\n        <h2 class=\"en\"> Sort by </h2>\n        <h2 class=\"german\"> Sortieren nach </h2>\n        <div class=\"tabs en\">\n            <button class=\"tab-button active\" onclick=\"showTab('high-rated')\">Highest Rated</button>\n            <button class=\"tab-button\" onclick=\"showTab('lowest-rated')\">Lowest Rated</button>\n        </div>\n        <div class=\"tabs german\">\n            <button class=\"tab-button active\" onclick=\"showTab('high-rated')\">Höchste</button>\n            <button class=\"tab-button\" onclick=\"showTab('lowest-rated')\">Niedrigste</button>\n        </div>\n    </div>\n    </div>\n</div>"
+          }
+        }
+      },
+      "block_order": [
+        "text_XkTLAh",
+        "custom_liquid_HF6iAr"
+      ],
+      "settings": {
+        "custom_class": "expereince_image_text",
+        "image": "shopify://shop_images/DSC00316_copy_a77b7901-fa16-434e-a38f-c6850356586f.png",
+        "image_position": "center center",
+        "layout": "text_first",
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "650px",
+        "enlarge_content": false,
+        "full_width": false,
+        "show_divider": false,
+        "image_mobile": "shopify://shop_images/DSC00316_copy_9df6e22f-c445-4176-9321-8d67a22880e3.png",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "175881995754506fcf": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_agg_section_yb4BwV": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-agg-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "hide_thumbnails": false,
+            "product_handle": "",
+            "aggregated": true,
+            "data-limit": 20,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_agg_section_yb4BwV"
+      ],
+      "settings": {
+        "include_margins": true,
+        "show_divider": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "review_exp_z4YiAV": {
+      "type": "review-exp",
+      "blocks": {
+        "reviews_jVLCgA": {
+          "type": "reviews",
+          "settings": {
+            "rating": "4",
+            "dsc": "<p>\"After three months of Monthlies powder I feel energized, less debloated and ready to keep going\"</p>",
+            "name": "Alexandra",
+            "age": "37"
+          }
+        },
+        "reviews_inmh9q": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>\"Monthlies has truly been a game changer. It’s been 1 month and I feel that my energy levels have gone really up\"</p>",
+            "name": "Mel",
+            "age": "29"
+          }
+        },
+        "reviews_hpgFxK": {
+          "type": "reviews",
+          "settings": {
+            "rating": "4",
+            "dsc": "<p>\"1 month trying Monthlies and I still have some minor symptoms, but the energy boost was mind blowing\"</p>",
+            "name": "Jessica",
+            "age": "36"
+          }
+        },
+        "reviews_je46jN": {
+          "type": "reviews",
+          "settings": {
+            "rating": "4",
+            "dsc": "<p>\"I've been taking the powder for 2 weeks now, I feel energised and my cramps are still there but so much less painful.\"</p>",
+            "name": "Johanna",
+            "age": "43"
+          }
+        },
+        "reviews_xbP3WY": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>\"I cannot express how IMPRESSED I am about my period pain reduction.\"</p>",
+            "name": "Maria",
+            "age": "29"
+          }
+        },
+        "reviews_PwKzyJ": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>\"Thoroughly impressed! From the moment I received the package, I knew I was in for a treat.\"</p>",
+            "name": "Mia",
+            "age": "42"
+          }
+        },
+        "reviews_JxaRNK": {
+          "type": "reviews",
+          "settings": {
+            "rating": "5",
+            "dsc": "<p>\"I took Monthlies for one month and my physical symptoms were significantly reduced.\"</p>",
+            "name": "Morganne",
+            "age": "46"
+          }
+        },
+        "reviews_xKCcMM": {
+          "type": "reviews",
+          "settings": {
+            "rating": "4",
+            "dsc": "<p>\"At first I was sceptical, but after just two months, my period has been more manageable\"</p>",
+            "name": "Naira",
+            "age": "32"
+          }
+        },
+        "reviews_NkqrGz": {
+          "type": "reviews",
+          "settings": {
+            "rating": "4",
+            "dsc": "<p>\"Just 1 day of period pain instead of 4 and way less disturbing during the day! Incredibly happy :)\"</p>",
+            "name": "Robin",
+            "age": "22"
+          }
+        },
+        "reviews_fKN3gF": {
+          "type": "reviews",
+          "settings": {
+            "rating": "4",
+            "dsc": "<p>\"Thanks to Monthlies, I no longer feel held back. I’ve never felt better.\"</p>",
+            "name": "Stefanie",
+            "age": "44"
+          }
+        }
+      },
+      "block_order": [
+        "reviews_jVLCgA",
+        "reviews_inmh9q",
+        "reviews_hpgFxK",
+        "reviews_je46jN",
+        "reviews_xbP3WY",
+        "reviews_PwKzyJ",
+        "reviews_JxaRNK",
+        "reviews_xKCcMM",
+        "reviews_NkqrGz",
+        "reviews_fKN3gF"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "link": "",
+        "btn": "",
+        "class": "exp-review-sec"
+      }
+    },
+    "rich_text_ACWtbA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_t6R7k8": {
+          "type": "heading",
+          "settings": {
+            "heading": "of your cycle today.",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_KMcQ3z": {
+          "type": "text",
+          "settings": {
+            "text": "<p>90-day money back guarantee. No questions asked.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "button_Y9kVxC": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "shopify://products/monthlies",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_t6R7k8",
+        "text_KMcQ3z",
+        "button_Y9kVxC"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "mobile_text_alignment": "center",
+        "horizontal_content": false,
+        "narrow": false,
+        "show_divider": false,
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_AiEtLT",
+    "175881995754506fcf",
+    "review_exp_z4YiAV",
+    "rich_text_ACWtbA"
+  ]
+}

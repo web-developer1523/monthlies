@@ -11,6 +11,9 @@
   "sections": {
     "main": {
       "type": "main-404",
+      "custom_css": [
+        ".page-404 a{display:none;}"
+      ],
       "settings": {}
     }
   },

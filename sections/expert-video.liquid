@@ -1,0 +1,181 @@
+{{ 'expert-video.css' | asset_url | stylesheet_tag }}
+
+{% assign videoUrl = "https://cdn.shopify.com/videos/c/o/v/5a30ac11ccee4962b8c2faecea0f29bc.mp4" %}
+
+{% if localization.language.iso_code == "fr" %}
+  {% assign videoUrl = "https://cdn.shopify.com/videos/c/o/v/6b9d24fdbeb04b468ab3800402e71bca.mp4" %}
+{% elsif localization.language.iso_code == "de" %}
+  {% assign videoUrl = "https://cdn.shopify.com/videos/c/o/v/ecd1b4a1c055485ba7fbd69f7d09b5ce.mp4" %}
+{% endif %}
+
+<div class="section--padding">
+  <div class="page-width page-width--inner">
+    <div class="expert-video-wrapper">
+      <a
+        href="javascript:;"
+        class="expert-video-left open-video"
+        id="expert-video-card">
+        <div class="expert-video-content">
+          <svg
+            width="62"
+            height="61"
+            viewBox="0 0 62 61"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_3317_33726)">
+              <path d="M52.9884 24.9797C52.6193 13.4211 43.2761 4.07817 31.718 3.70905C25.4288 3.50951 19.5449 5.90339 15.1964 10.3931C11.016 14.7092 8.81949 20.3992 9.01162 26.4157C9.38042 37.974 18.7236 47.3173 30.2817 47.6861C30.5223 47.6938 30.7608 47.6975 30.9998 47.6975C37.0089 47.6975 42.6213 45.3197 46.8033 41.002C50.9837 36.6863 53.1805 30.9959 52.9884 24.9797ZM43.4754 37.7788C40.174 41.1874 35.7434 43.0645 30.9998 43.0645C30.8102 43.0645 30.6205 43.0614 30.4293 43.0555C21.3074 42.7643 13.9337 35.3905 13.6421 26.2681C13.4904 21.5168 15.2242 17.0237 18.5243 13.6166C21.8257 10.2081 26.2563 8.33095 30.9998 8.33095C31.1895 8.33095 31.3792 8.33404 31.5704 8.3399C40.6923 8.63119 48.066 16.005 48.3576 25.1274C48.5093 29.8787 46.7752 34.3718 43.4754 37.7788Z" fill="#FFF5F5" />
+              <path d="M38.2157 24.4194L28.4599 17.4243C27.4193 16.678 25.9706 17.4218 25.9706 18.7025V32.693C25.9706 33.9736 27.4193 34.7174 28.4599 33.9711L38.2154 26.9757C39.0908 26.3484 39.0908 25.047 38.2157 24.4194Z" fill="#FFF5F5" />
+            </g>
+            <defs>
+              <filter
+                id="filter0_d_3317_33726"
+                x="0.605742"
+                y="0.0999699"
+                width="60.7885"
+                height="60.7885"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha" />
+                <feOffset dy="4.79672" />
+                <feGaussianBlur stdDeviation="4.19713" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                <feBlend
+                  mode="normal"
+                  in2="BackgroundImageFix"
+                  result="effect1_dropShadow_3317_33726" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_dropShadow_3317_33726"
+                  result="shape" />
+              </filter>
+            </defs>
+          </svg>
+
+          <div class="expert-video-left-text">
+            <h4>{{ section.settings.video_title }}</h4>
+            <p>{{ section.settings.video_text }}</p>
+          </div>
+        </div>
+
+        <img src="https://cdn.shopify.com/s/files/1/0728/7423/0078/files/AshFlorestal_Edited-7_d33748b0-f77e-46ee-ba64-b34b34c80d56.jpg?v=1684486952" alt="Thumbnail">
+      </a>
+
+      <div class="expert-video-right">
+        <h2>{{ section.settings.title }}</h2>
+        <p>{{ section.settings.text }}</p>
+
+        <a
+          class="expert-video-btn open-video"
+          href="javascript:;"
+          id="expert-video-btn">
+          <svgw
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M24.44 11.5545C24.2421 5.35986 19.2349 0.352691 13.0405 0.154868C9.66994 0.0479275 6.51656 1.33088 4.18608 3.73705C1.94565 6.05017 0.768494 9.09963 0.87146 12.3241C1.06912 18.5185 6.07639 23.5258 12.2707 23.7235C12.3997 23.7276 12.5275 23.7296 12.6556 23.7296C15.8761 23.7296 18.8839 22.4553 21.1252 20.1413C23.3656 17.8284 24.5429 14.7787 24.44 11.5545ZM19.3416 18.4139C17.5723 20.2407 15.1978 21.2467 12.6556 21.2467C12.554 21.2467 12.4523 21.245 12.3499 21.2419C7.46113 21.0857 3.50935 17.1339 3.35308 12.2449C3.2718 9.69857 4.20098 7.29058 5.96961 5.46465C7.73891 3.63788 10.1134 2.63188 12.6556 2.63188C12.7573 2.63188 12.8589 2.63354 12.9614 2.63668C17.8501 2.79279 21.8019 6.74462 21.9582 11.6336C22.0395 14.18 21.1101 16.588 19.3416 18.4139Z" fill="#252A31" />
+            <path d="M16.5228 11.2542L11.2944 7.50529C10.7367 7.10534 9.9603 7.50397 9.9603 8.19031V15.6882C9.9603 16.3746 10.7367 16.7732 11.2944 16.3732L16.5227 12.6242C16.9918 12.288 16.9918 11.5906 16.5228 11.2542Z" fill="#252A31" />
+          </svg>
+
+          {{ section.settings.button }}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="expert-video-popup">
+  <svg
+    class="expert-video-popup-close"
+    fill="#FFFFFF"
+    width="100pt"
+    height="100pt"
+    version="1.1"
+    viewBox="0 0 100 100"
+    xmlns="http://www.w3.org/2000/svg">
+    <path d="m70.508 29.492c-1.9531-1.9531-5.1172-1.9531-7.0703 0l-13.434 13.434-13.434-13.434c-1.9531-1.9531-5.1172-1.9531-7.0703 0-1.9531 1.9531-1.9531 5.1172 0 7.0703l13.434 13.434-13.434 13.434c-1.9531 1.9531-1.9531 5.1172 0 7.0703s5.1172 1.9531 7.0703 0l13.434-13.434 13.434 13.434c1.9531 1.9531 5.1172 1.9531 7.0703 0 1.9531-1.9531 1.9531-5.1172 0-7.0703l-13.434-13.434 13.434-13.434c1.9531-1.9531 1.9531-5.1172 0-7.0703z" />
+  </svg>
+
+  <div class="section--padding">
+    <div class="page-width">
+      <video controls class="expert-video-player">
+        <source src="{{ videoUrl }}">
+      </video>
+    </div>
+  </div>
+</div>
+
+<script>
+  const openButtons = document.querySelectorAll(".open-video");
+  const videoPopupWrapper = document.querySelector(".expert-video-popup");
+  const closeVideoPopup = document.querySelector(".expert-video-popup-close");
+  const videoPlayer = document.querySelector(".expert-video-player");
+
+  openButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      videoPopupWrapper.classList.add("active-video");
+      videoPlayer.play();
+    });
+  });
+
+  closeVideoPopup.addEventListener("click", () => {
+    videoPopupWrapper.classList.remove("active-video");
+    videoPlayer.pause();
+    videoPlayer.currentTime = 0;
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "expert-video",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Dr Ashley explains"
+      },
+      {
+        "type": "text",
+        "id": "text",
+        "label": "Text",
+        "default": "Take our cycle quiz that is designed like a consultation with a naturopathic doctor. You get your personal results right away!"
+      },
+      {
+        "type": "text",
+        "id": "button",
+        "label": "Button",
+        "default": "Play video"
+      },
+      {
+        "type": "text",
+        "id": "video_title",
+        "label": "Video title",
+        "default": "Monthlies in 60 seconds"
+      }, {
+        "type": "text",
+        "id": "video_text",
+        "label": "Video text",
+        "default": "Dr Ashley - Naturopathic Doctor"
+      }, {
+        "type": "text",
+        "id": "video_url",
+        "label": "Video URL",
+        "default": "https://cdn.shopify.com/videos/c/o/v/07427d28cb9442b995fa2f2e5ce53dc3.mp4"
+      }
+    ],
+    "presets": [
+      {
+        "name": "expert-video"
+      }
+    ]
+  }
+{% endschema %}

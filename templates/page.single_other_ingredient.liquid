@@ -1,0 +1,147 @@
+{% assign other_ingredient = page.metafields.custom.other_ingredient_profile.value %}
+<section class="ingredients-sec">
+  <div class="container">
+    <div class="ingredients-inner">
+      <a href="{{ 'ingredients.link' | t }}" class="back-link">← {{ 'ingredients.back_link' | t }}</a>
+      <div class="ingredients-row">
+        <div class="ingredients-col">
+          <div class="">
+            {{
+              other_ingredient.other_ingredient_name
+              | metafield_tag
+              | replace: '<p>', '<h3>'
+              | replace: '</p>', '</h3>'
+            }}
+          </div>
+        </div>
+        <div class="ingredients-col">
+          {% if other_ingredient.image %}
+            <img src="{{ other_ingredient.image | image_url }}" width="auto" height="auto">
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="benefits-inner mobile-desgin">
+      <div class="lef-ingredient">
+        <p>{{ 'ingredients.ingredient' | t }}</p>
+        <span>{{ other_ingredient.sub_ingredient }}</span>
+        <p>{{ 'ingredients.amount_per_serving' | t }}</p>
+        <span>{{ other_ingredient.amount_per_serving }}</span>
+        <p>{{ 'ingredients.percent_rda' | t }}</p>
+        <span>{{ other_ingredient.percent_rda }}</span>
+        <p>{{ 'ingredients.absorbability_comments' | t }}</p>
+        <span>{{ other_ingredient.absorbability_comments }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="benefits">
+  <div class="container">
+    <div class="benefits-inner">
+      <div class="lef-ingredient">
+        <p>{{ 'ingredients.ingredient' | t }}:</p>
+        <p>{{ 'ingredients.amount_per_serving' | t }}:</p>
+        <p>{{ 'ingredients.percent_rda' | t }}:</p>
+        <p>{{ 'ingredients.absorbability_comments' | t }}:</p>
+      </div>
+      <div class="right-ingredient">
+        <p>{{ other_ingredient.sub_ingredient }}</p>
+        <p>{{ other_ingredient.amount_per_serving }}</p>
+        <p>{{ other_ingredient.percent_rda }}</p>
+        <p>{{ other_ingredient.absorbability_comments }}</p>
+      </div>
+    </div>
+
+    <div class="benefits-grid">
+      <div class="benefits-col">
+        <h3>{{ 'ingredients.benefits' | t }}</h3>
+        <p>
+          {{ other_ingredient.benefits | metafield_text | replace: '<p>', '' | replace: '</p>', '' }}
+        </p>
+        {% comment %} <div class="btn-container">
+        <a class="btn de-german" target="_blank" href="{{ settings.btn_link_de }}">
+      {{ settings.btn }}
+    </a>
+        <a class="btn en-uk" target="_blank" href="{{ settings.btn_link_en }}">
+      {{ settings.btn }}
+    </a>
+  </div> {% endcomment %}
+      </div>
+      <div class="evidence">
+        <h3>{{ 'ingredients.evidence' | t }}</h3>
+        {{ other_ingredient.evidence_list | metafield_tag }}
+        <p>
+          {{ other_ingredient.source_reference }}
+        </p>
+      </div>
+    </div>
+     <!-- ✅ Vitamin Navigation (Previous / Next) -->
+     <div id="vitamin-navigation"></div>
+  </div>
+</section>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Define vitamin pages in order (no locale prefix, no trailing slash)
+    const vitaminPages = [
+      "/pages/malic-acid",
+      "/pages/citric-acid",
+      "/pages/natural-beetroot-colour",
+      "/pages/stevia-glycosides",
+      "/pages/erythritol"
+    ].map(path => path.replace(/\/$/, "")); // strip trailing slash just in case
+
+    // Current path
+    let currentPath = window.location.pathname;
+
+    // Remove trailing slash if exists
+    currentPath = currentPath.replace(/\/$/, "");
+
+    // Extract locale prefix (e.g. /de, /en, /fr) if present
+    let localePrefix = "";
+    const localeMatch = currentPath.match(/^\/[a-zA-Z]{2}(-[a-zA-Z]{2})?\//);
+    if (localeMatch) {
+      localePrefix = localeMatch[0].slice(0, -1); // "/de"
+      currentPath = currentPath.replace(localeMatch[0], "/"); // normalize to /pages/...
+    }
+
+    // Find current index
+    const currentIndex = vitaminPages.indexOf(currentPath);
+
+    if (currentIndex !== -1) {
+      let navHtml = '<div class="vitamin-navigation" style="margin-top:40px; display:flex; justify-content:space-between;">';
+
+      // Previous button
+      if (currentIndex > 0) {
+        navHtml += `<a href="${localePrefix}${vitaminPages[currentIndex - 1]}" class="prev-btn"></a>`;
+      } else {
+        navHtml += `<span></span>`;
+      }
+
+      // Next button
+      if (currentIndex < vitaminPages.length - 1) {
+        navHtml += `<a href="${localePrefix}${vitaminPages[currentIndex + 1]}" class="next-btn"></a>`;
+      }
+
+      navHtml += '</div>';
+
+      document.getElementById("vitamin-navigation").innerHTML = navHtml;
+    } else {
+      console.warn("Vitamin page not found in list:", currentPath);
+    }
+  });
+</script>
+
+
+<style>
+  .vitamin-navigation a {
+    padding: 10px 18px;
+    background: #f2f2f2;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+  .vitamin-navigation a:hover {
+    background: #ddd;
+  }
+</style>

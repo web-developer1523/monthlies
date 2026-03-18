@@ -1,0 +1,217 @@
+{% assign reviews = shop.metaobjects.review_powder.values %}
+
+{{ 'section-reviews-slider.css' | asset_url | stylesheet_tag }}
+
+<section class="reviews-section {{ section.settings.class }}">
+  <div class="control_width page-width">
+  <div class="title-container">
+    <h2 class="title h1">{{ section.settings.title }}</h2>
+  </div>
+
+  <div class="swiper swiper-reviews !overflow-visible">
+      <div id="high-rated" class="tab-content vv active"> 
+         <div class="swiper-wrapper">
+           
+      {% for review_powder in reviews %}
+        {% if review_powder.rating.value == 5 %}
+        <div class="swiper-slide">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/ReviewStars-{{review_powder.rating.value}}.png?v=1686223477"
+            alt="Stars"
+            class="stars">
+          <p>"{{ review_powder.text.value }}"</p>
+          <span class="name">{{ review_powder.name.value }}, {{ review_powder.age.value }}</span>
+           <span class="date"> January, 2023 </span>
+        </div>
+          {% endif %}
+      {% endfor %}
+           {% for review_powder in reviews %}
+        {% if review_powder.rating.value == 4 %}
+        <div class="swiper-slide">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/ReviewStars-{{review_powder.rating.value}}.png?v=1686223477"
+            alt="Stars"
+            class="stars">
+          <p>"{{ review_powder.text.value }}"</p>
+          <span class="name">{{ review_powder.name.value }}, {{ review_powder.age.value }}</span>
+           <span class="date"> January, 2023 </span>
+        </div>
+          {% endif %}
+      {% endfor %}
+           {% for review_powder in reviews %}
+        {% if review_powder.rating.value == 3 %}
+        <div class="swiper-slide">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/ReviewStars-{{review_powder.rating.value}}.png?v=1686223477"
+            alt="Stars"
+            class="stars">
+          <p>"{{ review_powder.text.value }}"</p>
+          <span class="name">{{ review_powder.name.value }}, {{ review_powder.age.value }}</span>
+           <span class="date"> January, 2023 </span>
+        </div>
+          {% endif %}
+      {% endfor %}
+           {% for review_powder in reviews %}
+        {% if review_powder.rating.value == 2 %}
+        <div class="swiper-slide">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/ReviewStars-{{review_powder.rating.value}}.png?v=1686223477"
+            alt="Stars"
+            class="stars">
+          <p>"{{ review_powder.text.value }}"</p>
+          <span class="name">{{ review_powder.name.value }}, {{ review_powder.age.value }}</span>
+           <span class="date"> January, 2023 </span>
+        </div>
+          {% endif %}
+      {% endfor %}
+           {% for review_powder in reviews %}
+        {% if review_powder.rating.value == 1 %}
+        <div class="swiper-slide">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/ReviewStars-{{review_powder.rating.value}}.png?v=1686223477"
+            alt="Stars"
+            class="stars">
+          <p>"{{ review_powder.text.value }}"</p>
+          <span class="name">{{ review_powder.name.value }}, {{ review_powder.age.value }}</span>
+           <span class="date"> January, 2023 </span>
+        </div>
+          {% endif %}
+      {% endfor %}
+           
+         </div>
+      </div>
+
+      <div id="lowest-rated" class="tab-content">
+         <div class="swiper-wrapper">
+            {% for review_powder in reviews %}
+        {% if review_powder.rating.value == 1 %}
+        <div class="swiper-slide">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/ReviewStars-{{review_powder.rating.value}}.png?v=1686223477"
+            alt="Stars"
+            class="stars">
+          <p>"{{ review_powder.text.value }}"</p>
+          <span class="name">{{ review_powder.name.value }}, {{ review_powder.age.value }}</span>
+           <span class="date"> January, 2023 </span>
+        </div>
+          {% endif %}
+      {% endfor %}
+            {% for review_powder in reviews %}
+        {% if review_powder.rating.value == 2 %}
+        <div class="swiper-slide">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/ReviewStars-{{review_powder.rating.value}}.png?v=1686223477"
+            alt="Stars"
+            class="stars">
+          <p>"{{ review_powder.text.value }}"</p>
+          <span class="name">{{ review_powder.name.value }}, {{ review_powder.age.value }}</span>
+           <span class="date"> January, 2023 </span>
+        </div>
+          {% endif %}
+      {% endfor %}
+
+            {% for review_powder in reviews %}
+        {% if review_powder.rating.value == 3 %}
+        <div class="swiper-slide">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/ReviewStars-{{review_powder.rating.value}}.png?v=1686223477"
+            alt="Stars"
+            class="stars">
+          <p>"{{ review_powder.text.value }}"</p>
+          <span class="name">{{ review_powder.name.value }}, {{ review_powder.age.value }}</span>
+           <span class="date"> January, 2023 </span>
+        </div>
+          {% endif %}
+      {% endfor %}
+
+            {% for review_powder in reviews %}
+        {% if review_powder.rating.value == 4 %}
+        <div class="swiper-slide">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/ReviewStars-{{review_powder.rating.value}}.png?v=1686223477"
+            alt="Stars"
+            class="stars">
+          <p>"{{ review_powder.text.value }}"</p>
+          <span class="name">{{ review_powder.name.value }}, {{ review_powder.age.value }}</span>
+           <span class="date"> January, 2023 </span>
+        </div>
+          {% endif %}
+      {% endfor %}
+
+            {% for review_powder in reviews %}
+        {% if review_powder.rating.value == 5 %}
+        <div class="swiper-slide">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/ReviewStars-{{review_powder.rating.value}}.png?v=1686223477"
+            alt="Stars"
+            class="stars">
+          <p>"{{ review_powder.text.value }}"</p>
+          <span class="name">{{ review_powder.name.value }}, {{ review_powder.age.value }}</span>
+           <span class="date"> January, 2023 </span>
+        </div>
+          {% endif %}
+      {% endfor %}
+         </div>
+      
+    </div>
+  </div>
+    
+  </div>
+</section>
+
+<script>
+function showTab(tabId) {
+  // Hide all tab contents
+  const contents = document.querySelectorAll('.tab-content');
+  contents.forEach(content => {
+    content.classList.remove('active');
+  });
+
+  // Remove active class from all buttons
+  const buttons = document.querySelectorAll('.tab-button');
+  buttons.forEach(button => {
+    button.classList.remove('active');
+  });
+
+  // Show the selected tab content
+  document.getElementById(tabId).classList.add('active');
+
+  // Add active class to the clicked button
+  const activeButton = Array.from(buttons).find(button => button.getAttribute('onclick').includes(tabId));
+  if (activeButton) {
+    activeButton.classList.add('active');
+  }
+}
+
+// Initialize the first tab as active
+document.addEventListener('DOMContentLoaded', () => {
+  showTab('high-rated');
+});
+</script>
+
+
+
+{% schema %}
+  {
+    "name": "Experience Reviews",
+    "presets": [
+      {
+        "name": "Experience Reviews",
+        "category": "section"
+      }
+    ],
+    "settings": [
+      {
+        "type": "text",
+        "label": "Title",
+        "default": "Don’t take our word for it, take hers!",
+        "id": "title"
+      },
+      {
+        "type": "text",
+        "label": "Add Custom Class",
+        "id": "class"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,184 @@
+{{ 'section-how-it-works.css' | asset_url | stylesheet_tag }}
+
+<div class="steps-section page-width">
+  <h2 class="h1">{{ section.settings.title }}</h2>
+
+  <div class="steps-wrapper">
+    <div class="step">
+      <img src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Group_299_3951a7df-ca6b-4a8b-a067-acfbf3eef063.png?v=1681466790" alt="Step">
+
+      <h4>{{ section.settings.title_1 }}</h4>
+      <p>{{ section.settings.text_1 }}</p>
+
+      <div class="step-disclaimer">{{ section.settings.disclaimer_1 }}</div>
+    </div>
+
+    <div class="step">
+      <img src="https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Group_300_86e79c79-69a4-440b-9097-c131189e6e3e.png?v=1681472508" alt="Step">
+
+      <h4>{{ section.settings.title_2 }}</h4>
+      <p>{{ section.settings.text_2 }}</p>
+
+
+      <div class="step-disclaimer">{{ section.settings.disclaimer_2 }}</div>
+    </div>
+
+    <div class="step">
+      <img src="https://cdn.shopify.com/s/files/1/0728/7423/0078/files/Group_299.png?v=1684496396" alt="Step">
+
+      <h4>{{ section.settings.title_3 }}</h4>
+      <p>{{ section.settings.text_3 }}</p>
+
+      <div class="step-disclaimer">{{ section.settings.disclaimer_3 }}</div>
+    </div>
+  </div>
+  <div class="how-it-works-buttons">
+    <p>{{ section.settings.button_cta }}</p>
+    <a
+      href="{{ section.settings.url }}"
+      id="cta-how-it-works-main"
+      class="button button--black">
+      {{ section.settings.label }}
+
+      <svg
+        width="7"
+        height="12"
+        viewBox="0 0 7 12"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0.679688 1.15234L5.67969 6.15234L0.679688 11.1523"
+          stroke="white"
+          stroke-width="1.5" />
+      </svg>
+    </a>
+  </div>
+  <div class="video-popup">
+    <svg
+      fill="#FFFFFF"
+      width="100pt"
+      height="100pt"
+      version="1.1"
+      class="video-close"
+      viewBox="0 0 100 100"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="m73.336 22.422-23.336 23.336-23.336-23.336-4.2422 4.2422 23.336 23.336-23.336 23.336 4.2422 4.2422 23.336-23.336 23.336 23.336 4.2422-4.2422-23.336-23.336 23.336-23.336z" />
+    </svg>
+
+    {% assign videoUrl = "https://cdn.shopify.com/videos/c/o/v/5a30ac11ccee4962b8c2faecea0f29bc.mp4" %}
+
+    {% if localization.language.iso_code == "fr" %}
+      {% assign videoUrl = "https://cdn.shopify.com/videos/c/o/v/6b9d24fdbeb04b468ab3800402e71bca.mp4" %}
+    {% elsif localization.language.iso_code == "de" %}
+      {% assign videoUrl = "https://cdn.shopify.com/videos/c/o/v/ecd1b4a1c055485ba7fbd69f7d09b5ce.mp4" %}
+    {% endif %}
+
+    <video
+      width="320"
+      controls
+      class="video">
+      <source src="{{ videoUrl }}" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+<script>
+  const videoBtn = document.querySelector(".cta-play-video");
+  const videoPopup = document.querySelector(".video-popup");
+  const videoClose = document.querySelector(".video-close");
+  const video = document.querySelector(".video");
+
+  videoBtn.addEventListener("click", () => {
+    videoPopup.style.display = "flex";
+    video.play();
+  });
+
+  videoClose.addEventListener("click", () => {
+    videoPopup.style.display = "none";
+    video.pause();
+    video.currentTime = 0;
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "how-it-works",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Title",
+        "default": "How it works",
+        "id": "title"
+      },
+      {
+        "type": "text",
+        "label": "Step 1 - Title",
+        "default": "1. Tell us about your symptoms",
+        "id": "title_1"
+      },
+      {
+        "type": "text",
+        "label": "Step 1 - Text",
+        "default": "Take our cycle quiz, is designed like a consultation with a naturopathic doctor. You get your personal results right away!",
+        "id": "text_1"
+      },
+      {
+        "type": "text",
+        "label": "Step 1 - Disclaimer",
+        "default": "Our algorithm uses past customer data and expert know-how",
+        "id": "disclaimer_1"
+      }, {
+        "type": "text",
+        "label": "Step 2 - Title",
+        "default": "2. Get your Monthlies box",
+        "id": "title_2"
+      }, {
+        "type": "text",
+        "label": "Step 2 - Text",
+        "default": "Your personalised Monthlies box includes your cycle guide,lifestyle tips and a one month supply of products that work for you. Customise to your liking.",
+        "id": "text_2"
+      }, {
+        "type": "text",
+        "label": "Step 2 - Disclaimer",
+        "default": "Each box is one month supply",
+        "id": "disclaimer_2"
+      }, {
+        "type": "text",
+        "label": "Step 3 - Title",
+        "default": "3. Optional expert consultation",
+        "id": "title_3"
+      }, {
+        "type": "text",
+        "label": "Step 3 - Text",
+        "default": "Check in with one of our experts  after one month to see how we can improve your box.",
+        "id": "text_3"
+      }, {
+        "type": "text",
+        "label": "Step 3 - Disclaimer",
+        "default": "You can plan a chat or a call on a moment of choice",
+        "id": "disclaimer_3"
+      }, {
+        "type": "url",
+        "label": "Button URL",
+        "id": "url"
+      }, {
+        "type": "text",
+        "label": "Button CTA",
+        "id": "button_cta",
+        "default": "Take the quiz to personalise your solution."
+      }, {
+        "type": "text",
+        "label": "Button label",
+        "id": "label",
+        "default": "Take the quiz"
+      }
+    ],
+    "presets": [
+      {
+        "name": "How it works"
+      }
+    ]
+  }
+{% endschema %}

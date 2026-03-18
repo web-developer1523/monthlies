@@ -1,0 +1,351 @@
+<section class="cst-custom-all_ingrediants page-width">
+  <div class="ingredient-tabs">
+    <ul class="tabs-nav">
+      {% assign tab_keys = 'all,vitamin,mineral,nutrient,amino_acid,plant_extract,other_ingredient' | split: ',' %}
+      {% assign tab_labels = section.settings.all
+        | append: ',' 
+        | append: section.settings.tab1
+        | append: ',' 
+        | append: section.settings.tab2
+        | append: ',' 
+        | append: section.settings.tab3
+        | append: ',' 
+        | append: section.settings.tab4
+        | append: ',' 
+        | append: section.settings.tab5
+        | append: ',' 
+        | append: section.settings.tab6
+        | split: ','
+      %}
+
+      {% for tab in tab_keys %}
+        <li class="tab-link {% if forloop.first %}active{% endif %}" data-tab="{{ tab }}">
+          {{ tab_labels[forloop.index0] }}
+        </li>
+      {% endfor %}
+    </ul>
+
+    <div class="tabs-content">
+{% for tab in tab_keys %}
+  <div class="tab-content {% if forloop.first %}active{% endif %}" id="{{ tab }}">
+    <h1>{{ tab_labels[forloop.index0] }}</h1>
+    <div class="ingredient-grid">
+      {% for block in section.blocks %}
+        {% if tab == 'all' or block.type == tab %}
+          <div class="ingredient-card">
+            {% if block.settings.image %}
+              <div class="ingredient-image">
+                <a href="{{ block.settings.button_link }}">
+                  <img src="{{ block.settings.image | image_url }}">
+                </a>
+              </div>
+            {% endif %}
+            <div class="ingredient-info">
+              <a href="{{ block.settings.button_link }}">
+                <h3>{{ block.settings.title }}</h3>
+              </a>
+              <p>{{ block.settings.description }}</p>
+              <div class="plus-icon">
+                <a class="btn" href="{{ block.settings.button_link }}">
+                  Read more
+                </a>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="btn-container">
+      <a class="btn de-german" target="_blank" href="{{ settings.btn_link_de }}">
+        {{ settings.btn }}
+      </a>
+      <a class="btn en-uk" target="_blank" href="{{ settings.btn_link_en }}">
+        {{ settings.btn }}
+      </a>
+    </div>
+  </div>
+{% endfor %}
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "All Ingredients",
+  "class": "ingredient-section-allingredients-pagesec",
+  "settings": [
+    {
+    "type": "header",
+    "content": "Tabs Heading"
+    },
+    {
+      "type": "text",
+      "id": "all",
+      "label": "All"
+    },
+    {
+      "type": "text",
+      "id": "tab1",
+      "label": "Tab 1"
+    },
+    {
+      "type": "text",
+      "id": "tab2",
+      "label": "Tab 2"
+    },
+    {
+      "type": "text",
+      "id": "tab3",
+      "label": "Tab 3"
+    },
+    {
+      "type": "text",
+      "id": "tab4",
+      "label": "Tab 4"
+    },
+    {
+      "type": "text",
+      "id": "tab5",
+      "label": "Tab 5"
+    },
+    {
+      "type": "text",
+      "id": "tab6",
+      "label": "Tab 6"
+    }
+
+  ],
+  "blocks": [
+    {
+      "type": "vitamin",
+      "name": "Vitamin",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Ingredient Image"
+        },
+        {
+          "type": "html",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        }
+      ]
+    },
+    {
+      "type": "mineral",
+      "name": "Mineral",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Ingredient Image"
+        },
+        {
+          "type": "html",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        }
+      ]
+    },
+    {
+      "type": "nutrient",
+      "name": "Nutrient",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Ingredient Image"
+        },
+        {
+          "type": "html",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        }
+      ]
+    },
+    {
+      "type": "amino_acid",
+      "name": "Amino Acid",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Ingredient Image"
+        },
+        {
+          "type": "html",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        }
+      ]
+    },
+    {
+      "type": "plant_extract",
+      "name": "Plant Extract",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Ingredient Image"
+        },
+        {
+          "type": "html",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        }
+      ]
+    },
+    {
+      "type": "other_ingredient",
+      "name": "Other Ingredient",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Ingredient Image"
+        },
+        {
+          "type": "html",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "All Ingredients",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+  /* Optional CSS scoped for section (or you can move this to theme CSS file) */
+      .tabs-nav {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+    .tab-link {
+      padding: 10px 20px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      border-radius: 20px;
+      background: #f0f0f0;
+    }
+    .tab-link.active {
+      background: #e94545;
+      color: white;
+      border-color: #e94545;
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .ingredient-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .ingredient-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      width: calc(25% - 20px);
+      box-sizing: border-box;
+    }
+    .ingredient-image img {
+      max-width: 100%;
+      height: auto;
+      aspect-ratio: 295 / 119;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+{% endstylesheet %}
+
+{% javascript %}
+  /* Optional: You can include inline JS here or load externally */
+      document.addEventListener('DOMContentLoaded', function () {
+      const tabLinks = document.querySelectorAll('.tab-link');
+      const tabContents = document.querySelectorAll('.tab-content');
+
+      tabLinks.forEach(link => {
+        link.addEventListener('click', function () {
+          const target = this.getAttribute('data-tab');
+
+          tabLinks.forEach(l => l.classList.remove('active'));
+          tabContents.forEach(c => c.classList.remove('active'));
+
+          this.classList.add('active');
+          document.getElementById(target).classList.add('active');
+        });
+      });
+    });
+{% endjavascript %}

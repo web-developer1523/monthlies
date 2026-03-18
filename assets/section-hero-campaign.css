@@ -1,0 +1,178 @@
+.hero {
+  height: 670px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background: #e76464;
+}
+
+.hero .page-width {
+  width: 100%;
+}
+
+.hero-icon {
+  width: 72px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+}
+
+.hero-visual img {
+  max-width: 400px;
+  position: relative;
+  z-index: 5;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 530px;
+  color: white;
+}
+
+.hero-content h1 {
+  color: white;
+  margin: 24px 0 24px 0;
+}
+
+.hero-content p {
+  margin: 0 0 40px 0;
+  font-size: 20px;
+  line-height: 130%;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.hero::after {
+  background-image: url("https://cdn.shopify.com/s/files/1/0708/7462/8371/files/Monthlies_hero_drinking.png?v=1691100038");
+  background-size: cover;
+  width: 40%;
+  height: 100%;
+  content: "";
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+
+@media (min-width: 481px) and (max-width: 961px) {
+  .hero {
+    height: auto;
+    padding: 0 0 80px 0;
+    background: url('https://cdn.shopify.com/s/files/1/0708/7462/8371/files/hero_mobile_drinking.jpg?v=1691100282');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    background-color: #e76464;
+  }
+
+  .hero-container {
+    flex-direction: column;
+  }
+
+  .hero-visual {
+    order: -1;
+  }
+.hero-visual img{
+  margin-top:50px;
+}
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    margin-bottom: 14px;
+  }
+
+  .hero-content p {
+    margin-top: 0px;
+  }
+  .hero-icon{display:none;}
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero::after {
+    display: none;
+  }
+}
+
+@media (max-width: 481px) {
+  .hero {
+    height: auto;
+    padding: 0 0 30px 0;
+    background: url('https://cdn.shopify.com/s/files/1/0708/7462/8371/files/hero_mobile_drinking.jpg?v=1691100282');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    background-color: #e76464;
+  }
+
+  .hero-container {
+    flex-direction: column;
+  }
+  .hero-icon {
+    display: none;
+  }
+  .hero-buttons {
+    width: 100%;
+  }
+
+  .hero .button {
+    width: 100% !important;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-visual {
+    max-height: 350px;
+    margin-top:60px;
+    margin-bottom: -50px;
+    order: -1;
+  }
+  .hero-visual img {
+    max-height: 300px;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    margin-bottom: 14px;
+  }
+
+  .hero-content p {
+    margin-top: 0px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero::after {
+    height: 100%;
+    width: 20%;
+    top: auto;
+    bottom: 0;
+    display: none;
+  }
+}

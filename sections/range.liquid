@@ -1,0 +1,630 @@
+<style>
+  .range {
+  position: relative;
+ pointer-events: auto;
+}
+
+.range__input,
+.range__input-fill,
+.range__counter {
+pointer-events: auto;
+}
+  span.range__counter {
+    pointer-events: auto;
+}
+  
+  
+.range__input-fill {
+    transition: width 0.1s ease; /* Adjust the duration as needed */
+}
+
+.range__counter {
+    transition: left 0.1s ease; 
+  z-index:10;
+}
+   .range:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .range input[type=range],
+        .range input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none; 
+        }
+
+        .range input[type=range],
+        .range__input-fill {
+            border-radius: 0.25em;
+            height: 0.5em;
+          width:100%;
+        }
+
+        .range input[type=range] {
+            background-color: #cee8e8;
+            display: block;
+            margin: 0.5em 0;
+            padding: 0;
+        }
+
+        .range input[type=range]:focus {
+            outline: transparent;
+        }
+
+        .range input[type=range]::-webkit-slider-thumb {
+            background-color: #a6d0cd;
+            border: 0;
+            border-radius: 50%;
+            cursor: pointer;
+            position: relative;
+            transition: background 0.1s linear;
+            width: 57px;
+            height: 57px;
+            z-index: 99;
+            box-shadow:none;
+            outline:none;
+            opacity:0;
+        }
+
+        .range input[type=range]::-moz-range-thumb {
+            background-color:#a6d0cd;
+          box-shadow:none;
+          outline:none;
+            border: 0;
+            border-radius: 50%;
+            cursor: pointer;
+            position: relative;
+            transform: translateZ(1px);
+            transition: background-color 0.1s linear;
+            width: 57px;
+            height: 57px;
+            z-index: 99;
+            opacity:0;
+        }
+
+        .range input[type=range]::-moz-focus-outer {
+            border: 0;
+        }
+
+        .range__input,
+        .range__input-fill {
+            display: block;
+        }
+
+        .range__input {
+              position: relative;
+        }
+
+        .range__input:active input[type=range]::-webkit-slider-thumb,
+        .range input[type=range]:focus::-webkit-slider-thumb,
+        .range input[type=range]::-webkit-slider-thumb:hover {
+            background-color: var(--handleDownBg);
+        }
+
+        .range__input:active input[type=range]::-moz-range-thumb,
+        .range input[type=range]:focus::-moz-range-thumb,
+        .range input[type=range]::-moz-range-thumb:hover {
+            background-color: var(--handleDownBg);
+        }
+
+        .range__input-fill,
+        .range__counter {
+            left: 0;
+            pointer-events: none;
+            position: absolute;
+        }
+
+        .range__input-fill {
+            background-color: var(--handleTrackBg);
+            top: calc(50% - 0.25em);
+        }
+
+.range__counter {
+    line-height: 1.8;
+    height: 57px;
+    width: 57px;
+    background: #a6d0cd; 
+    border-radius: 50%;
+    font-size: 30px;
+    top: -13px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Lora';
+}
+        .range__input-fill {
+            top: 0;
+        }
+
+        .range input[type=range],
+        .range__input-fill {
+            border-radius: 20px;
+            height: 31px;
+        }
+
+        .range__counter {
+            line-height: 2;
+        }
+
+        .range__input-fill {
+            background-color: #8CBFBD;
+            top: 0;
+        }
+.range-container .input_wrapper { padding-left: 80px; position: relative; }
+  .range-container .input_wrapper::before { content: "Month"; background: #8CBFBD; color: #fff; padding-left: 10px; border-radius: 20px 0 0 20px; position: absolute; left: 0;z-index:9; width: 100px; height: 100%; line-height: 1.8; font-size: 18px; }
+        /* Dark mode */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #2e3138;
+                --bgT: #2e313800;
+                --fg: #e3e4e8;
+                --fgT: #e3e4e800;
+                --inputBg: #17181c;
+            }
+        }
+
+  @media screen and (max-width:989px) {
+    .range__counter { 
+    height: 41px;
+    width: 41px; 
+      font-size:24px;
+      line-height:1.7;
+      top:-8px;
+}
+      .range input[type=range],
+        .range__input-fill {
+            border-radius: 20px;
+            height:25px;
+        }
+.range-container .input_wrapper::before {font-size:11px;font-family:'Lora';line-height:2;width:70px;}
+    .range-container .input_wrapper {
+    padding-left: 55px;
+    position: relative;
+}
+  .range input[type=range]::-webkit-slider-thumb {
+             width: 41px;
+            height: 41px; 
+        }
+
+        .range input[type=range]::-moz-range-thumb {
+             width: 41px;
+            height: 41px; 
+        }
+    
+  }
+</style>
+
+
+<!-- sections/range-slider.liquid -->
+
+<div class="full_width_range"> 
+<div class="range-container">
+  <!-- <label for="rangeSlider">Range:</label> -->
+  <div class="content_col">
+   <h2 class="title"> {{ section.settings.heading }} </h2>
+   <p class="description"> {{ section.settings.description }} </p>
+  </div>
+  <div class="input_col">
+    <div class="input_wrapper"> 
+       
+      <form>
+        <input type="range" id="floors" name="floors" min="{{ section.settings.range_min }}" max="{{ section.settings.range_max }}" step="{{ section.settings.range_step }}" value="{{ section.settings.range_value }}">
+        <!-- <input id="floors" name="floors" type="range" min="1" max="3" value="1" step="1"> -->
+      </form> 
+    </div>
+    <div class="dynamic_val"> <p id="rangeText">  {{ section.settings.range_text }}</p> </div>
+     
+    
+  </div>
+ </div>
+</div>
+
+{% schema %}
+{
+  "name": "Single Range Slider",
+  "class": "cst-why-three-months",
+  "settings": [
+     {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading", 
+    },
+    {
+      "type": "inline_richtext",
+      "id": "description",
+      "label": "Description", 
+    },
+    {
+      "type": "range",
+      "id": "range_min",
+      "label": "Minimum Value",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "range_max",
+      "label": "Maximum Value",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "range_step",
+      "label": "Step",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "default": 1
+    },
+    {
+      "type": "number",
+      "id": "range_value",
+      "label": "Default Value",
+      "default": 50
+    },
+    {
+      "type": "text",
+      "id": "range_text",
+      "label": "Text for Range"
+    },
+    {
+      "type": "header",
+      "content": "UK Range Text"
+    },
+     {
+      "type": "text",
+      "id": "en_title1",
+      "label": "UK Title Text for Range"
+    },
+     {
+      "type": "text",
+      "id": "en_content1",
+      "label": "UK Content Text for Range"
+    },
+     {
+      "type": "text",
+      "id": "en_title2",
+      "label": "UK Title Text for Range"
+    },
+     {
+      "type": "text",
+      "id": "en_content2",
+      "label": "UK Content Text for Range"
+    },
+     {
+      "type": "text",
+      "id": "en_title3",
+      "label": "UK Title Text for Range"
+    },
+     {
+      "type": "text",
+      "id": "en_content3",
+      "label": "UK Content Text for Range"
+    },
+     {
+      "type": "header",
+      "content": "DE Range Text"
+    },
+         {
+      "type": "text",
+      "id": "de_title1",
+      "label": "DE Title Text for Range"
+    },
+     {
+      "type": "text",
+      "id": "de_content1",
+      "label": "DE Content Text for Range"
+    },
+     {
+      "type": "text",
+      "id": "de_title2",
+      "label": "DE Title Text for Range"
+    },
+     {
+      "type": "text",
+      "id": "de_content2",
+      "label": "DE Content Text for Range"
+    },
+     {
+      "type": "text",
+      "id": "de_title3",
+      "label": "DE Title Text for Range"
+    },
+     {
+      "type": "text",
+      "id": "de_content3",
+      "label": "DE Content Text for Range"
+    },
+  ],
+  "presets": [
+    {
+      "name": "Single Range Slider"
+    }
+  ]
+}
+{% endschema %}
+
+
+
+
+<script type="lazyload_js">
+  window.addEventListener("DOMContentLoaded", () => {
+    new FloorRange("#floors", "#rangeText");
+  });
+
+  class FloorRange {
+    constructor(id, textId) {
+      this.el = document.querySelector(id);
+      this.fill = document.querySelector(".range__input-fill");
+      this.counter = document.querySelector(".range__counter");
+      this.elWithCSSVar = document.documentElement;
+      this.textEl = document.querySelector(textId);
+      this.hasAnimated = false; // Flag to ensure animation runs only once
+
+      if (this.el) {
+        this.buildSlider();
+        this.el.addEventListener("input", this.changeValue.bind(this));
+        this.el.addEventListener("change", this.changeValue.bind(this));
+        this.counter.addEventListener("mousedown", this.startDragging.bind(this));
+        this.counter.addEventListener("touchstart", this.startDragging.bind(this));
+
+        // Set up the IntersectionObserver
+        this.setupIntersectionObserver();
+      }
+    }
+
+    buildSlider() {
+      // Your existing buildSlider code
+      let rangeWrap = document.createElement("div");
+      rangeWrap.className = "range";
+      this.el.parentElement.insertBefore(rangeWrap, this.el);
+
+      let rangeInput = document.createElement("span");
+      rangeInput.className = "range__input";
+      rangeWrap.appendChild(rangeInput);
+
+      let rangeFill = document.createElement("span");
+      rangeFill.className = "range__input-fill";
+      rangeInput.appendChild(this.el);
+      rangeInput.appendChild(rangeFill);
+      this.fill = rangeFill;
+
+      let counter = document.createElement("span");
+      counter.className = "range__counter";
+      counter.textContent = "0";
+      rangeInput.appendChild(counter);
+      this.counter = counter;
+
+      let maxFloorOvershoot = 3;
+      this.elWithCSSVar.style.setProperty("--maxFloors", +this.el.max + maxFloorOvershoot);
+      this.changeValue();
+    }
+
+    changeValue() {
+      if (+this.el.value > this.el.max) this.el.value = this.el.max;
+      else if (+this.el.value < this.el.min) this.el.value = this.el.min;
+
+      this.elWithCSSVar.style.setProperty("--floors", +this.el.value);
+
+      let pct = (this.el.value - this.el.min) / (this.el.max - this.el.min),
+          fillWidth = pct * 100;
+
+      if (this.counter) {
+        let adjLeftEm = 2 * pct;
+        this.counter.textContent = this.el.value;
+        this.counter.style.left = `calc(${fillWidth}% - ${adjLeftEm}rem*2)`;
+      }
+      if (this.fill) {
+        let thumbEm = 1 - pct;
+        this.fill.style.width = `calc(${fillWidth}% + ${thumbEm}em)`;
+      }
+
+      let values = parseFloat(this.el.value);
+      let roundedValue = values < 1.5 ? Math.floor(values) : Math.ceil(values);
+
+      this.counter.textContent = roundedValue;
+      this.updateText(roundedValue);
+    }
+
+    updateText(roundedValue) {
+      if (roundedValue == 1) {
+        this.textEl.innerHTML = '<p class="en"> <span class="title"> {{ section.settings.en_title1 }} </span> <span> {{ section.settings.en_content1 }} </span></p><p class="german"> <span class="title"> {{ section.settings.de_title1 }} </span> <span> {{ section.settings.de_content1 }}</span></p>';
+      } else if (roundedValue == 2) {
+        this.textEl.innerHTML = '<p class="en"> <span class="title"> {{ section.settings.en_title2 }}</span> <span> {{ section.settings.en_content2 }} </span></p><p class="german"> <span class="title"> {{ section.settings.de_title2 }}  </span>  <span> {{ section.settings.de_content2 }}</span></p> ';
+      } else if (roundedValue == 3) {
+        this.textEl.innerHTML = '<p class="en"> <span class="title"> {{ section.settings.en_title3 }}</span> <span> {{ section.settings.en_content3 }} </span></p> <p class="german"> <p class="german"> <span class="title"> {{ section.settings.de_title3 }} </span> <span> {{ section.settings.de_content3 }}</span></p>';
+      } 
+
+      // Trigger animation only if not already done
+      if (!this.hasAnimated) {
+        this.animateCounter();
+        this.hasAnimated = true;
+      }
+    }
+
+    animateCounter() {
+      jQuery('.count').each(function () {
+        jQuery(this).prop('Counter', 0).animate({
+          Counter: jQuery(this).text()
+        }, {
+          duration: 1000,
+          easing: 'swing',
+          step: function (now) {
+            jQuery(this).text(Math.ceil(now));
+          }
+        });
+      });
+    }
+
+    startDragging(event) {
+      event.preventDefault();
+      const onMove = (e) => this.dragMove(e);
+      const onEnd = () => {
+        document.removeEventListener("mousemove", onMove);
+        document.removeEventListener("mouseup", onEnd);
+        document.removeEventListener("touchmove", onMove);
+        document.removeEventListener("touchend", onEnd);
+      };
+
+      document.addEventListener("mousemove", onMove);
+      document.addEventListener("mouseup", onEnd);
+      document.addEventListener("touchmove", onMove);
+      document.addEventListener("touchend", onEnd);
+
+      this.dragMove(event);
+    }
+
+    dragMove(event) {
+      const rect = this.el.parentElement.getBoundingClientRect();
+      const offsetX = (event.clientX || event.touches[0].clientX) - rect.left;
+      const pct = Math.max(0, Math.min(1, offsetX / rect.width));
+      const step = parseFloat(this.el.step);
+      const newValue = Math.round((pct * (this.el.max - this.el.min) + +this.el.min) / step) * step;
+
+      this.el.value = newValue;
+      this.changeValue();
+    }
+
+    setupIntersectionObserver() {
+      const observerOptions = {
+        root: null, // Use viewport as the root
+        rootMargin: '0px',
+        threshold: 0.1 // Trigger when 10% of the section is visible
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !this.hasAnimated) {
+            this.changeValue(); // Ensure it updates the text for the first time
+          }
+        });
+      }, observerOptions);
+
+      const section = document.querySelector('#slider-section');
+      if (section) {
+        observer.observe(section);
+      }
+    }
+  }
+</script>
+
+
+  
+<script type="lazyload_js">
+ function observeSection() {
+    // Function to handle adding the class when the section comes into view
+    function handleIntersection(entries) {
+        entries.forEach(entry => {
+            console.log('Entry:', entry); // Log entry details for debugging
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                console.log('Element is in view:', entry.target); // Log when element comes into view
+            } else {
+                entry.target.classList.remove('in-view');
+                console.log('Element is out of view:', entry.target); // Log when element goes out of view
+            }
+        });
+    }
+
+    // Create an Intersection Observer
+    const observer = new IntersectionObserver(handleIntersection, {
+        threshold: 1 // Adjust as needed
+    });
+
+    // Target the sections you want to observe
+    const targetSections = document.getElementsByClassName('range-container');
+
+    // Ensure targetSections is not empty
+    if (targetSections.length === 0) {
+        console.error('No elements found with class "range-container"');
+    }
+
+    // Convert HTMLCollection to an array and observe each element
+    Array.from(targetSections).forEach(section => {
+        console.log('Observing:', section); // Log each element being observed
+        observer.observe(section);
+    });
+}
+
+// Call observeSection after the DOM content has loaded
+document.addEventListener('DOMContentLoaded', () => {
+    observeSection();
+});
+
+
+
+</script>
+<script type="lazyload_js">
+        // Get references to the slider and the display element
+        const slider = document.getElementById('floors');
+        const valueDisplay = document.getElementById('valueDisplay');
+
+        // Function to update the display with the slider's value
+        function updateValue() {
+              let calculatedValue = 60 + slider.value * 10;
+        
+        // Limit the value to be no more than 85
+        if (calculatedValue > 85) {
+            calculatedValue = 85;
+        }
+        
+        // Update the display with the limited value
+        valueDisplay?.textContent = calculatedValue;
+        }
+
+        // Set up an event listener for the 'input' event
+        slider.addEventListener('input', updateValue);
+        
+        // Initial update in case the page is loaded with a value
+        updateValue();
+
+
+
+  
+    </script>
+
+<!-- <script>
+   document.addEventListener('DOMContentLoaded', function() {
+  jQuery('.count').each(function () {
+    jQuery(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 3000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+  });
+</script> -->
+
+<!-- <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const rangeSlider = document.getElementById('floors');
+    const rangeText = document.getElementById('rangeText');
+
+    function updateText(value) {
+      // Example logic to update text based on slider value
+      if (value < 33) {
+        rangeText.innerHTML = '<p> 70% <span> of women <b>felt improvements</b> in just one month.</span> </p>';
+      } else if (value < 66) {
+        rangeText.innerHTML = '<p> 80% <span> of women <b> reduced their painkiller consumption sign.</b> after two months.</span> </p>';
+      } else {
+        rangeText.innerHTML = '<p> 85% <span> of women <b> felt a reduction in symptoms </b> after three months. </span> </p>';
+      }
+    }
+
+    rangeSlider.addEventListener('input', function() {
+      updateText(this.value);
+    });
+
+    // Initialize text on page load
+    updateText(rangeSlider.value);
+  });
+</script>
+ -->

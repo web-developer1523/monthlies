@@ -1,0 +1,321 @@
+<section class="unsere-90-tage-garantie">
+  <div class="container">
+    <div class="unsere-90-tage-garantie-inner">
+      <div class="row">
+        <div class="col-md-6 tage-col">
+          
+          <div class="unsere-90-tage-garantie-content">
+            <div class="tags-img mobile-tag">
+              {% if section.settings.tag_image %}
+                <img src="{{ section.settings.tag_image | img_url: 'medium' }}" alt="">
+              {% endif %}
+            </div>
+            <div class="redmark-flex">
+              <div class="tags-img">
+                {% if section.settings.tag_image %}
+                  <img src="{{ section.settings.tag_image | img_url: 'medium' }}" alt="">
+                {% endif %}
+              </div>
+            <h2>{{ section.settings.heading }}</h2>
+          </div>
+          <span>{{ section.settings.sub_heading }}</span>
+            {{ section.settings.content_1 }}
+            {{ section.settings.content_2 }}
+
+            {% if section.settings.button_text != blank %}
+              <a href="{{ section.settings.button_link }}">
+                {{ section.settings.button_text }}
+              </a>
+            {% endif %}
+          </div>
+        </div>
+
+        <div class="col-md-6 garantie-col">
+          <div class="unsere-90-tage-garantie-image">
+            {% if section.settings.main_image %}
+              <img class="desktop-image" src="{{ section.settings.main_image | img_url: 'large' }}" alt="">
+            {% endif %}
+            {% if section.settings.main_image_mobile %}
+              <img class="mobile-image" src="{{ section.settings.main_image_mobile | img_url: 'large' }}" alt="">
+            {% endif %}
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .redmark-flex {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: baseline;
+}
+  .unsere-90-tage-garantie {
+      position:relative;
+  }
+  .tags-img.mobile-tag {
+      display: none;
+  }
+  .unsere-90-tage-garantie-inner {
+      border-radius: 20px;
+  }
+  .unsere-90-tage-garantie-inner .tage-col {
+    box-shadow: 0px 7.07px 28.29px 0px #9293934D;
+    padding: 38px !important;
+    border-radius: 20px;
+    max-width: 950px;
+    z-index: 2;
+    background: #fff;
+}
+  .unsere-90-tage-garantie-content h2 {
+    color: #404040;
+    text-align: left;
+    font-family: "Lora", serif;
+    font-size: 40px;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+    font-style: italic;
+    max-width: 423px;
+  }
+
+  .unsere-90-tage-garantie-content span {
+      color: #cb342c;
+      text-align: left;
+      font-family: "Lora", serif;
+      font-size: 24px;
+      letter-spacing: -0.02em;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 16px;
+  }
+
+  .unsere-90-tage-garantie-content p {
+      color: #404040;
+      text-align: left;
+      font-family: "Quicksand", sans-serif;
+      font-size: 16px;
+      line-height: 140%;
+      font-weight: 400;
+      width: 100%;
+      max-width: 526px;
+  }
+  .unsere-90-tage-garantie-content a {
+    border-radius: 999px;
+    border-style: solid;
+    border-color: #CB342C;
+    border-width: 1px;
+    padding: 12px 16px;
+    color: #CB342C;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    margin-top: 6px;
+}
+  .unsere-90-tage-garantie-content a:hover {
+      background: #CB342C;
+      color: #fff;
+  }
+  .unsere-90-tage-garantie-inner .row {
+    align-items: center;
+}
+
+.unsere-90-tage-garantie-image>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    object-fit: cover;
+    aspect-ratio: 574.41 / 553.76;
+        position: relative;
+    right: 30px;
+}
+{% comment %} .unsere-90-tage-garantie-inner .col-md-6 {
+    padding: 0 !important;
+} {% endcomment %}
+.unsere-90-tage-garantie .container {
+  max-width: 1440px;
+  padding:56px 20px !important;
+}
+  .tags-img img {
+      height: 100%;
+      object-fit: contain;
+  }
+  .tags-img {
+    text-align: end;
+}
+
+
+  @media (max-width: 1199px) {
+      .unsere-90-tage-garantie-content h2 {
+          font-size: 24px;
+      }
+
+   
+  }
+
+  @media (max-width:992px) {
+    .unsere-90-tage-garantie-content span{
+        font-size: 22px;
+    }
+    .unsere-90-tage-garantie img.mobile-image {
+    display: none;
+}
+
+.unsere-90-tage-garantie img.desktop-image {
+         display: block;
+        height: 100%;
+        min-height: 512px;
+        border-top-left-radius: 42px;
+        right: 0;
+}
+.unsere-90-tage-garantie-inner .tage-col {
+    padding: 32px 23px 23px !important;
+}
+.unsere-90-tage-garantie-content a {
+    margin-top: 22px;
+}
+
+  }
+  @media (max-width:767px) {
+    .tags-img img {
+      height: 100%;
+      object-fit: cover;
+      width: 114px;
+  }
+    .redmark-flex {
+      align-items: center;
+  }
+.tags-img {
+    text-align: end;
+    max-width: max-content;
+    position: relative;
+    margin-top: -87px;
+    z-index: 2;
+    margin-left: auto;
+}
+    .unsere-90-tage-garantie .row {
+      flex-direction: column-reverse;
+  }
+  
+  .unsere-90-tage-garantie-image {
+      width: 100%;
+      right:0;
+  }
+  
+  .unsere-90-tage-garantie-image>img {
+     width: 100%;
+          height: 100%;
+  }
+  div#tab1 .tags-item:first-child span img {
+    filter: unset;
+}
+  .unsere-90-tage-garantie-inner .tage-col {
+        width: 100%;
+        max-width: 100% !important;
+        margin: 0 auto;
+        border-top-right-radius: 100px !important;
+        border-radius: 0;
+        z-index: 1;
+        box-shadow: none;
+        padding-bottom: 0;
+        margin-top: -40px;
+}
+  
+  .unsere-90-tage-garantie-inner .col-md-5 {
+      width: 100%;
+  }
+  
+  .unsere-90-tage-garantie .container {
+        padding: 0 0 50px 0 !important;
+  }
+  .unsere-90-tage-garantie img.mobile-image {
+    display: block;
+    height: auto;
+    right: 0;
+    aspect-ratio: unset;
+}
+.unsere-90-tage-garantie img.desktop-image {
+display: none;
+}
+.unsere-90-tage-garantie-content span{
+    font-size: 16px;
+}
+}
+
+  @media and (max-width:600px){
+    .tags-img {
+      margin-top: -127px;
+    }
+  }
+
+</style>
+{% schema %}
+{
+  "name": "Money Back Guarantee",
+  "settings": [
+    {
+      "type": "html",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Unsere 90 Tage Geld-zurück-Garantie"
+    },
+    {
+      "type": "text",
+      "id": "sub_heading",
+      "label": "Sub Heading",
+      "default": "- ohne wenn und aber!"
+    },
+    {
+      "type": "richtext",
+      "id": "content_1",
+      "label": "Paragraph 1",
+      "default": "<p><strong>Ohne Risiko testen: </strong> Probiere unser Produkt 90 Tage lang aus. Solltest du keinen Unterschied bemerken, bekommst du dein Geld zurück – ohne Angabe von Gründen.</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "content_2",
+      "label": "Paragraph 2",
+      "default": "<p>Wenn du unser Produkt 90 Tage lang wie angegeben verwendet hast und mit den Ergebnissen nicht zufrieden bist, erstatten wir dir den vollen Betrag deiner letzten 3 Bestellungen.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Details zur Geld-zurück-Garantie"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "main_image",
+      "label": "Main Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "main_image_mobile",
+      "label": "Main Image Mobile"
+    },
+    {
+      "type": "image_picker",
+      "id": "tag_image",
+      "label": "Tag Floating Image"
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Money Back Guarantee"
+    }
+  ]
+}
+{% endschema %}
+

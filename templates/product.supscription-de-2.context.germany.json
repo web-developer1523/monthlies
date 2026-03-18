@@ -1,0 +1,129 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "product.supscription-de-2.json",
+  "context": {
+    "market": "germany"
+  },
+  "sections": {
+    "empty_space_NXimw": {
+      "type": "empty-space",
+      "disabled": false,
+      "settings": {
+        "desktop_height": 40,
+        "mobile_height": 28
+      },
+      "blocks": {},
+      "block_order": [],
+      "name": "t:sections.empty-space.presets.name"
+    },
+    "rich_text_CTeEw": {
+      "type": "rich-text",
+      "disabled": false,
+      "settings": {
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "narrow": false,
+        "show_divider": false,
+        "header-5ede182a6302b3718c616f7378d62f82": null,
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "header-4d5956bc686a0d04e259f291bafdaed5": null,
+        "padding_top": 36,
+        "padding_bottom": 36
+      },
+      "blocks": {
+        "text_dpMCg": {
+          "type": "text",
+          "disabled": false,
+          "settings": {
+            "text": "<p>*Diese Behauptungen basieren auf wissenschaftlichen Untersuchungen zur Menstruationsgesundheit, zur Wirksamkeit der Inhaltsstoffe und zu den von der EFSA genehmigten oder noch ausstehenden Angaben. Referenzen / Studien <a href=\"https://cdn.shopify.com/s/files/1/0708/7462/8371/files/studies_final.pdf?v=1731106438\">hier. </a></p><p>**Basierend auf einer unabhängigen Studie mit 105 Frauen im Alter von 20 bis 45 Jahren, die das monthlies Nahrungsergänzungsmittel verwenden</p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "text_dpMCg"
+      ],
+      "name": "t:sections.rich-text.presets.name"
+    },
+    "new_main_product_HmJCx8": {
+      "settings": {},
+      "blocks": {
+        "title_zRkdmm": {
+          "settings": {
+            "tagline": "All you need <strong>for health and hormones</strong> in 1 easy scoop. <strong>Trusted by more than 1k women</strong>"
+          }
+        },
+        "image_text_KaLR3m": {
+          "settings": {
+            "text_image": "<p><a href=\"/pages/all-ingredients\" target=\"_blank\" title=\"All Ingredients\">See ingredients</a></p>"
+          }
+        }
+      }
+    },
+    "multicolumn_e6fpUb": {
+      "settings": {
+        "heading": "Quality you can trust: <em>Our tested in women like you</em>"
+      },
+      "blocks": {
+        "column_7tCq68": {
+          "settings": {
+            "text": "<p>said their <strong>mood swings, digestion, self-confidence, mental health, hormonal balance & energy levels have positively changed</strong> after taking monthlies</p>"
+          }
+        },
+        "column_3UQW3N": {
+          "settings": {
+            "text": "<p>reported feeling<strong> less period cramps, pain & a better overall cycle</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_7tCq68",
+        "column_3UQW3N",
+        "column_f9nzLP"
+      ]
+    },
+    "product_faqnw_Q9aDqy": {
+      "settings": {},
+      "blocks": {
+        "left_mn7V8h": {
+          "settings": {
+            "dsc1": "<ul><li><strong>Wondering \"why do I have to suffer from painful cramps every month?\"</strong></li></ul><p>Period pain, also known as dysmenorrhea, is normally caused by prostaglandins - hormone-like chemicals found all over the body. The prostaglandins in the female reproductive tract help to regulate ovulation, menstruation, and labour. Prostaglandins cause the muscles of the uterus to contract - and this causes the pain you experience just before, and during your period. Those who have more prostaglandins usually experience more period pain. <strong>You can lower it by supporting your body with nutrient supplementation, diet and lifestyle changes, improving your period pain for good! </strong> </p><p></p><ul><li><strong>Factors Contributing:</strong> </li></ul><p>In today’s world, we are faced with heightened stress, hormone-disrupting chemicals, and nutrient-depleted food - f<strong>actors that can contribute to hormonal imbalances causing period pain and related symptoms </strong>such as cramps, bloating, mood swings, low energy, etc. </p><p>When pain begins, it's often too late to act naturally; which is why women have traditionally turned to painkillers that offer <strong>only</strong> temporary relief. </p><p><strong>We, however, refuse to accept that women should rely on quick fixes for life—or that menstrual pain should be seen as \"normal</strong>\". Our goal was to create a natural solution that addresses the root causes, offering long-term relief and empowering women to take control of their cycle and invest in their next period. </p><p>Created by five female doctors and women’s health professionals after personally helping over 2,500 women escape period pain at their clinics, monthlies brings together 26 of the most advanced natural ingredients to help tackle period cramps, replenish nutrient stores, support hormonal balance, and promote overall well-being.</p>"
+          }
+        }
+      }
+    }
+  },
+  "order": [
+    "new_main_product_HmJCx8",
+    "main",
+    "product_faqnw_Q9aDqy",
+    "product-recommendations",
+    "multicolumn_e6fpUb",
+    "image_collaps_tab_4JPKBc",
+    "ingredients_section_BBcRRW",
+    "multicolumn_FzEeNn",
+    "timeline_section_BMXLi4",
+    "multicolumn_AiWN47",
+    "health_expert_JjA4J9",
+    "multicolumn_UWAWLP",
+    "product_bottom_faq_hhq647",
+    "faq_insta_TBNxY9",
+    "empty_space_NXimw",
+    "rich_text_CTeEw"
+  ]
+}

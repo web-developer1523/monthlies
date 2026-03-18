@@ -1,0 +1,785 @@
+<section class="monthliesconsultation-cst">
+    <div class="container ">
+        <div>
+            <div class="promo-container">
+                <div class="promo-grid">
+
+                    <!-- LEFT COLUMN -->
+                    <div class="promo-left">
+                        {% if section.settings.title != blank %}
+                        <h1>{{ section.settings.title }}</h1>
+                        {% endif %}
+
+                        {% if section.settings.subtext != blank %}
+                        <p class="subtext">{{ section.settings.subtext }}</p>
+                        {% endif %}
+
+                        {% if section.settings.cta_text != blank %}
+                        <a href="{{ section.settings.cta_link }}" class="cta-btn cta-btn-desktop">{{ section.settings.cta_text }}</a>
+                        {% endif %}
+                    </div>
+
+                    <!-- RIGHT COLUMN -->
+                    <div class="promo-right">
+                        <div class="product-image">
+                            {% if section.settings.product_image != blank %}
+                            <img class="desktop-image" src="{{ section.settings.product_image | img_url: 'master' }}" alt="Product">
+                            {% endif %}
+                            {% if section.settings.product_image_mobile != blank %}
+                            <img class="mobile-image" src="{{ section.settings.product_image_mobile | img_url: 'master' }}" alt="Product">
+                            {% endif %}
+                           
+                        </div>
+
+                        <div class="price-info">
+                            <div class="temp-info">
+                                <ul class="price-list">
+
+                                    {% if section.settings.price_item_1_label != blank %}
+                                    <li>
+                                        <span>{{ section.settings.price_item_1_label }}</span>
+                                        <span>
+                                            <span class="strike">{{ section.settings.price_item_1_strike }}</span>
+                                            <strong>{{ section.settings.price_item_1_value }}</strong>
+                                        </span>
+                                    </li>
+                                    {% endif %}
+
+                                    {% if section.settings.price_item_2_label != blank %}
+                                    <li>
+                                        <span>{{ section.settings.price_item_2_label }}</span>
+                                        <span>
+                                            <span class="strike">{{ section.settings.price_item_2_strike }}</span>
+                                            <strong>{{ section.settings.price_item_2_value }}</strong>
+                                        </span>
+                                    </li>
+                                    {% endif %}
+
+                                    {% if section.settings.price_item_3_label != blank %}
+                                    <li>
+                                        <span>{{ section.settings.price_item_3_label }}</span>
+                                        <span>
+                                            <span class="strike">{{ section.settings.price_item_3_strike }}</span>
+                                            <strong>{{ section.settings.price_item_3_value }}</strong>
+                                        </span>
+                                    </li>
+                                    {% endif %}
+
+                                    {% if section.settings.price_item_4_label != blank %}
+                                    <li>
+                                        <span>{{ section.settings.price_item_4_label }}</span>
+                                        <span>
+                                            <span class="strike">{{ section.settings.price_item_4_strike }}</span>
+                                            <strong>{{ section.settings.price_item_4_value }}</strong>
+                                        </span>
+                                    </li>
+                                    {% endif %}
+
+                                </ul>
+
+                                {% if section.settings.monthly_price != blank %}
+                                <div class="price-bottom">
+                                    {{ section.settings.monthly_price }}
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                {% if section.settings.cta_text_mobile != blank %}
+                <a href="{{ section.settings.cta_link }}" class="cta-btn cta-btn-mobile">{{ section.settings.cta_text_mobile }}</a>
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style>
+ /* Container */
+.promo-container {
+padding: 60px 20px;
+font-family: "Inter", sans-serif;
+}
+.monthliesconsultation-cst {
+    background: #ecf1f4;
+    border-top-right-radius: 120px;
+}
+/* GRID */
+.promo-left h1 span {
+    font-family: 'Lora';
+    color: #CB342C;
+    font-style: italic;
+}
+.promo-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    align-items: center;
+}
+.promo-right {
+    display: flex;
+    position: relative;
+    gap: 20px;
+}
+
+.price-info {
+    flex: 1;
+    position: relative;
+    padding-left: 40px;
+}
+/* LEFT SIDE */
+.promo-left h1 {
+    font-size: 40px;
+    line-height: 1.3;
+    color: #222;
+    font-weight: 600;
+}
+
+.highlight {
+    color: #d6453d;
+}
+
+.subtext {
+    margin: 20px 0 30px;
+    color: #404040;
+    font-weight:500;
+    font-size: 16px;
+    max-width: 480px;
+    line-height: 1.4;
+}
+
+.cta-btn {
+    background: #CB342C;
+    padding: 14px 28px;
+    border-radius: 40px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight:600;
+    cursor: pointer;
+    box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-decoration:none;
+}
+
+.cta-btn-mobile {
+    display: none;
+}
+
+/* RIGHT SIDE */
+.product-image{
+    width: 100%;
+    max-width: 50%;
+    position: relative;
+}
+.product-image img {
+    max-width: 480px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* PRICE LIST */
+.price-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    width: 100%;
+    
+}
+
+.price-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.4;
+    flex-wrap: nowrap !important;
+}
+
+.strike {
+    text-decoration: line-through;
+    color: #404040;
+    margin-left: 10px;
+    text-decoration-color: #d6453d;
+    text-decoration-thickness: 2px;
+}
+.price-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 12px;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: right;
+}
+.price-list strong {
+    padding-left: 10px;
+    color: #404040;
+}
+
+/* SAVINGS BADGE */
+.savings-badge {
+    position: absolute;
+    top: 350px;
+    right: -150px;
+    width: 140px;
+    height: 140px;
+    background: #d6453d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: 0 4px 12px rgba(214, 69, 61, 0.3);
+    transform: rotate(8deg);
+    z-index: 10;
+}
+.savings-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.savings-label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.savings-amount {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.savings-subtext {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 4px;
+}
+.temp-info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin-top: 59px;
+}
+.price-span {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.temp-info span {
+    display: flex;
+        font-size: 16px;
+    font-weight: 500;
+    color:#404040;
+}
+.cst-custom-homepage-new .mobile-image {
+    display: none;
+}
+/* RESPONSIVE */
+@media (max-width: 1399px) {
+    .promo-container {
+    padding: 50px 20px;
+    }
+    
+    .promo-left h1 {
+    font-size: 36px;
+    }
+    
+
+    
+.savings-badge {
+    width: 100px;
+    height: 100px;
+    top: 184px;
+    right: 15px;
+}
+
+    
+    .savings-amount {
+    font-size: 25px;
+    }
+}
+
+@media (max-width:1300px) {
+   .product-image img {
+    max-width: 410px;
+}
+  .promo-left h1 {
+    font-size: 28px;
+    }
+}
+
+@media (max-width: 1200px) {
+ .promo-container {
+    padding: 50px 0;
+    }
+}
+@media (max-width: 1024px) {
+.cta-btn {
+    padding: 14px 22px;
+}
+    .promo-grid {
+    gap: 30px;
+    }
+    
+  
+    .subtext {
+    margin: 18px 0 25px;
+    }
+    
+
+    
+.savings-badge {
+    /* width: 120px; */
+    /* height: 120px; */
+    /* top: 15px; */
+    right: -45px;
+}
+    
+    .savings-amount {
+    font-size: 28px;
+    }
+    
+    .savings-label {
+    font-size: 13px;
+    }
+    
+    .savings-subtext {
+    font-size: 11px;
+    }
+    
+    .price-list li {
+    font-size: 15px;
+    }
+    
+    .price-bottom {
+    font-size: 17px;
+    }
+}
+
+@media (max-width: 991px) {
+    .cta-btn{
+    display:none;
+    }
+    .cta-btn-mobile{
+          margin: 0 auto;
+    text-align: center;
+    display: table;
+    }
+    .promo-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    }
+    
+    .promo-left {
+    text-align: center;
+    }
+    
+   
+    
+    .subtext {
+    max-width: 100%;
+    margin: 20px auto 25px;
+    }
+    
+    .promo-right {
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    }
+    
+    .product-image {
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .product-image img {
+    max-width: 100%;
+    margin:0 auto;
+    }
+    
+    .price-info {
+    max-width: 100%;
+    }
+    
+    .savings-badge {
+    top: 255px;
+    right: -55px;
+    width: 110px;
+    height: 110px;
+    transform: rotate(8deg);
+}
+    
+    .temp-info {
+    margin-top: 0;
+    }
+    
+    .price-list li {
+    font-size: 14px;
+    margin-bottom: 15px;
+    }
+    
+    .price-bottom {
+    font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    
+    .promo-grid {
+    gap: 30px;
+    }
+    
+    .promo-left {
+    text-align: left;
+    }
+    
+    .promo-left h1 {
+    font-size: 24px !important;
+    line-height: 1.2;
+    text-align: center;
+}
+    
+.subtext {
+    font-size: 14px;
+    margin: 15px 0 20px;
+    text-align: center;
+}
+    
+    .cta-btn-desktop {
+    display: none;
+    }
+    
+    .cta-btn-mobile {
+    display: block;
+    width: 100%;
+    padding: 16px 28px;
+    font-size: 15px;
+    margin-top: 30px;
+    }
+    
+    .promo-right {
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+    }
+    
+    .product-image {
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    }
+    
+    .product-image img {
+    {% comment %} width: 100%; {% endcomment %}
+    max-width: 100%;
+    height: auto;
+    }
+    
+    .price-info {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    }
+    
+    .temp-info {
+    margin-top: 0;
+    }
+    
+    .price-list {
+    margin: 0;
+    }
+    
+    .price-list li {
+    font-size: 14px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    }
+    
+    .price-list li span:first-child {
+    width: 100%;
+    margin-bottom: 4px;
+    }
+    
+    .price-bottom {
+    font-size: 16px;
+    text-align: left;
+    margin-top: 15px;
+    }
+    
+    .savings-badge {
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    }
+    
+    .savings-label {
+    font-size: 11px;
+    margin-bottom: 2px;
+    }
+    
+    .savings-amount {
+    font-size: 24px;
+    }
+    
+    .savings-subtext {
+    font-size: 10px;
+    margin-top: 2px;
+    }
+    .price-info {
+    
+    padding-left: 0;
+}
+}
+
+@media (max-width: 575px) {
+    
+    .promo-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    }
+    
+    .promo-left {
+        padding: 0 10px;
+    }
+    
+    
+    .subtext {
+    font-size: 14px;
+    margin: 15px 0 20px;
+    max-width: 100%;
+    }
+    
+    .cta-btn-desktop {
+    display: none;
+    }
+    
+    .cta-btn-mobile {
+    width: 100%;
+    padding: 16px 28px;
+    font-size: 15px;
+    margin-top: 30px;
+    }
+    
+    .promo-right {
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+    }
+    
+    .product-image {
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    }
+    
+    .product-image img {
+    width: 100%;
+    max-width: 403px;
+    height: auto;
+}
+    
+    .price-info {
+    width: 100%;
+    position: relative;
+    }
+    
+    .temp-info {
+    margin-top: 0;
+    }
+    
+    .price-list {
+    margin: 0;
+    }
+    
+    .price-list li {
+    font-size: 14px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    }
+    
+    .price-list li span:first-child {
+    width: 100%;
+    margin-bottom: 4px;
+    }
+    
+    .price-bottom {
+    font-size: 16px;
+    text-align: right;
+    margin-top: 15px;
+    }
+    
+    .savings-badge {
+    top: -20px;
+    right: -10px;
+    width: 100px;
+    height: 100px;
+}
+.price-info {
+    
+    padding-left: 0;
+}
+    
+    .savings-label {
+    font-size: 11px;
+    margin-bottom: 2px;
+    }
+    
+    .savings-amount {
+    font-size: 24px;
+    }
+    
+    .savings-subtext {
+    font-size: 10px;
+    margin-top: 2px;
+    }
+}
+</style>
+{% schema %}
+{
+  "name": "Experience Yourself New",
+  "settings": [
+    {
+      "type": "html",
+      "id": "title",
+      "label": "Main Title",
+    },
+    {
+      "type": "textarea",
+      "id": "subtext",
+      "label": "Subtext",
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Button Text (Desktop)",
+    },
+    {
+      "type": "text",
+      "id": "cta_text_mobile",
+      "label": "CTA Button Text (Mobile)",
+    },
+    {
+        "type": "url",
+        "id": "cta_link",
+        "label": "CTA Button Url",
+    },
+    {
+      "type": "image_picker",
+      "id": "product_image",
+      "label": "Product Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_image_mobile",
+      "label": "Product Image Mobile"
+    },
+    {
+      "type": "text",
+      "id": "savings_label",
+      "label": "Savings Label",
+    },
+    {
+      "type": "text",
+      "id": "savings_amount",
+      "label": "Savings Amount",
+    },
+    {
+      "type": "text",
+      "id": "savings_subtext",
+      "label": "Savings Subtext",
+    },
+
+    {
+      "type": "header",
+      "content": "Price List Items"
+    },
+
+    {
+      "type": "text",
+      "id": "price_item_1_label",
+      "label": "Price Row 1 Label",
+    },
+    {
+      "type": "text",
+      "id": "price_item_1_strike",
+      "label": "Price Row 1 Strike Price",
+    },
+    {
+      "type": "text",
+      "id": "price_item_1_value",
+      "label": "Price Row 1 Value",
+    },
+
+    {
+      "type": "text",
+      "id": "price_item_2_label",
+      "label": "Price Row 2 Label",
+    },
+    {
+      "type": "text",
+      "id": "price_item_2_strike",
+      "label": "Price Row 2 Strike Price",
+    },
+    {
+      "type": "text",
+      "id": "price_item_2_value",
+      "label": "Price Row 2 Value",
+    },
+
+    {
+      "type": "text",
+      "id": "price_item_3_label",
+      "label": "Price Row 3 Label",
+    },
+    {
+      "type": "text",
+      "id": "price_item_3_strike",
+      "label": "Price Row 3 Strike Price",
+    },
+    {
+      "type": "text",
+      "id": "price_item_3_value",
+      "label": "Price Row 3 Value",
+    },
+
+    {
+      "type": "text",
+      "id": "price_item_4_label",
+      "label": "Price Row 4 Label",
+    },
+    {
+      "type": "text",
+      "id": "price_item_4_strike",
+      "label": "Price Row 4 Strike Price",
+    },
+    {
+      "type": "text",
+      "id": "price_item_4_value",
+      "label": "Price Row 4 Value",
+    },
+
+    {
+      "type": "html",
+      "id": "monthly_price",
+      "label": "Monthly Price",
+    }
+  ],
+  "presets": [
+    {
+      "name": "Experience Yourself New"
+    }
+  ]
+}
+{% endschema %}

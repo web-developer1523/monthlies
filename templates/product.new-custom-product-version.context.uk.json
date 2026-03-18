@@ -1,0 +1,49 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "context": {
+    "market": "uk"
+  },
+  "parent": "product.new-custom-product-version.json",
+  "sections": {
+    "new_custom_product_pizi8Y": {
+      "settings": {},
+      "blocks": {
+        "reviews_strip_YAFdUb": {
+          "settings": {
+            "sub_text": "Trusted by thousands of women"
+          }
+        },
+        "title_N3RJFa": {
+          "settings": {
+            "tagline": "<strong>Feel like yourself again. Every day of your cycle.</strong>"
+          }
+        },
+        "richtext_block_JRp7fh": {
+          "settings": {
+            "richtext_block": "<ul><li>Tackles cramps, reduces bloating, steadier moods and more energy</li><li>Supports painful periods plus brain fog, fatigue and breakouts.</li><li>Designed for every phase of your cycle, not just period week.</li><li>One daily drink. No pill or painkillers.</li><li>90-day money-back guarantee and cancel anytime.</li></ul>"
+          }
+        },
+        "image_with_text_TeaNEx": {
+          "settings": {
+            "desc": "<p><em><strong>“Told the pill was your only option?”</strong></em></p>",
+            "desc2": "<p>Many women are offered quick fixes, like the pill, that mask symptoms and come with side effects instead of supporting full cycle health. monthlies is designed to balance your body across your whole cycle, so changes build over time.</p>"
+          }
+        },
+        "guarantee_block_zm7BR7": {
+          "settings": {
+            "guarantee_text": "Try it for 90 days. If you don’t feel a difference, you don’t pay.",
+            "guarantee_link_text": "Information"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,289 @@
+<!-- tabs-slider.liquid -->
+
+
+
+<div class="subscription-tabs {{ section.settings.custom_class }}">
+
+   <div class="heading ">
+       <h2> {{ section.settings.Title }}</h2>
+        <span>{{ section.settings.dsc }}</span>
+      </div>
+  <!-- Tabs Navigation -->
+  <div class="tabs-navigation">
+    <button class="tab-button active" data-tab="tab1">{{ section.settings.tab1_title }}</button>
+    <button class="tab-button" data-tab="tab2">{{ section.settings.tab2_title }}</button>
+  </div>
+
+  <!-- Tabs Content -->
+  <div class="tabs-content">
+    <!-- Tab 1 Content -->
+    <div id="tab1" class="tab-content active">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          {% for block in section.blocks %}
+            {% if block.settings.tab == 'tab1' %}
+              <div class="swiper-slide">
+                <div class="subscription-tab_wrapper">
+                  <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.heading }}">
+                  <div class="content_part">
+                   <span class="title">{{ block.settings.heading }}</span>
+                  <span class="price">{{ block.settings.price }}</span>
+                   {% if block.settings.offprice != blank %}
+                  <span class="offprice">{{ block.settings.offprice }}</span>
+                  {% endif %}
+                  <span class="dsc">{{ block.settings.dsc }}</span>
+                  <span class="list">{{ block.settings.list }}</span>
+                  {% if block.settings.list1 != blank %}
+                  <span class="list1">{{ block.settings.list1 }}</span>
+                  {% endif %}
+                   <a href="{{ block.settings.button_link }}" id="cta-buynowben" class="button button--black">
+                     {{ block.settings.button_label | escape }} 
+                  </a>
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <!-- Navigation buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <!-- Tab 2 Content -->
+    <div id="tab2" class="tab-content">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          {% for block in section.blocks %}
+            {% if block.settings.tab == 'tab2' %}
+              <div class="swiper-slide">
+                <div class="subscription-tab_wrapper">
+                  <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.heading }}">
+                   <span class="title">{{ block.settings.heading }}</span>
+                  <span class="price">{{ block.settings.price }}</span>
+                   {% if block.settings.offprice != blank %}
+                  <span class="offprice">{{ block.settings.offprice }}</span>
+                  {% endif %}
+                  <span class="dsc">{{ block.settings.dsc }}</span>
+                  <span class="list">{{ block.settings.list }}</span>
+                  {% if block.settings.list1 != blank %}
+                  <span class="list1">{{ block.settings.list1 }}</span>
+                  {% endif %}
+                   <a href="{{ block.settings.button_link }}" id="cta-buynowben" class="button button--black">
+                     {{ block.settings.button_label | escape }} 
+                  </a>
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <!-- Navigation buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Subscription Tabs",
+  "settings": [
+      {
+        "type": "text",
+        "id": "custom_class",
+        "label": "Custom Class"
+      },
+      {
+        "type": "richtext",
+        "id": "Title",
+        "label": "Heading"
+      },
+      {
+        "type": "richtext",
+        "id": "dsc",
+        "label": "Description"
+      },
+    {
+      "type": "text",
+      "id": "tab1_title",
+      "label": "Tab 1 Title",
+      "default": "Tab 1"
+    },
+    {
+      "type": "text",
+      "id": "tab2_title",
+      "label": "Tab 2 Title",
+      "default": "Tab 2"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "select",
+          "id": "tab",
+          "label": "Tab",
+          "options": [
+            {
+              "value": "tab1",
+              "label": "Tab 1"
+            },
+            {
+              "value": "tab2",
+              "label": "Tab 2"
+            }
+          ],
+          "default": "tab1"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "text",
+          "id": "price",
+          "label": "price"
+        },
+        {
+          "type": "text",
+          "id": "offprice",
+          "label": "Off Price"
+        },
+         {
+          "type": "richtext",
+          "id": "dsc",
+          "label": "Description"
+        },
+        {
+          "type": "richtext",
+          "id": "list",
+          "label": "Point"
+        },
+         {
+          "type": "richtext",
+          "id": "list1",
+          "label": "negative Point"
+        },
+         {
+          "type": "text",
+          "id": "button_label",
+          "default": "Button label",
+          "label": "t:sections.all.button_label.label",
+          "info": "t:sections.all.button_label.info"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "t:sections.all.button_link.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Subscription Tabs"
+    }
+  ]
+}
+{% endschema %}
+
+<!-- Include Swiper CSS and JS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script type="lazyload_js" data-src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Inline CSS and JS for Swiper -->
+<style>
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tabs-navigation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .tab-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #f0f0f0;
+    border: none;
+    margin: 0 5px;
+  }
+
+  .tab-button.active {
+    background: #fff;
+    border-bottom: 2px solid #000;
+  }
+
+  .tabs-content .tab-content {
+    display: none;
+  }
+
+  .tabs-content .tab-content.active {
+    display: block;
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    color: #000;
+  }
+</style>
+
+<script type="lazyload_js">
+  $(document).ready(function() {
+    var swiper1 = new Swiper('#tab1 .swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 16,
+      navigation: {
+        nextEl: '#tab1 .swiper-button-next',
+        prevEl: '#tab1 .swiper-button-prev',
+      },
+      breakpoints: {
+        768: {
+          spaceBetween: 16,
+        }
+      }
+    });
+
+    var swiper2 = new Swiper('#tab2 .swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 16,
+      navigation: {
+        nextEl: '#tab2 .swiper-button-next',
+        prevEl: '#tab2 .swiper-button-prev',
+      },
+      breakpoints: {
+        768: {
+          spaceBetween: 16,
+        }
+      }
+    });
+
+    $('.tab-button').click(function() {
+      var tabId = $(this).data('tab');
+
+      $('.tab-button').removeClass('active');
+      $(this).addClass('active');
+
+      $('.tab-content').removeClass('active');
+      $('#' + tabId).addClass('active');
+    });
+  });
+</script>

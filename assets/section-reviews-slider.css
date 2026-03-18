@@ -2,8 +2,7 @@
 .stars { width: 120px; margin-bottom: 8px; } 
 .swiper-reviews .swiper-slide p { margin: 0; font-size: 18px; color: #2a2a2a; line-height: normal; } 
 .swiper-reviews .swiper-slide .name { font-weight: 700!important ; font-size: 22px; display:block; margin-top:10px; } 
-.swiper.swiper-reviews { padding: 35px 70px; overflow: hidden; width: 100%; box-sizing: border-box; }
-.reviews-section .swiper-reviews .swiper-slide { width: 100%; box-sizing: border-box; }
+.swiper.swiper-reviews { padding: 35px 70px; }
 @media (max-width: 989px) { 
 .reviews-section h2 { font-size: 28px !important; } 
 .swiper-reviews .swiper-slide p{font-size:16px;}

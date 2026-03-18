@@ -8,9 +8,193 @@
  * ------------------------------------------------------------
  */
 {
-  "sections": {},
+  "parent": "index.json",
   "context": {
     "market": "uk"
   },
-  "parent": "index.json"
+  "sections": {
+    "homepage_banner_new_video_qDUfW9": {
+      "settings": {
+        "headline": "A natural supplement for your cycle care",
+        "subheadline": "",
+        "cta_link": "/products/monthlies-periodease-uk?country=gb",
+        "review_trust_text": "",
+        "pharmacy_intro": "Thousands of women trust monthlies",
+        "amazon_shop": "shopify://shop_images/Frame_bdbb670d-519e-4f55-a632-6811291846de.svg"
+      },
+      "blocks": {}
+    },
+    "energy_level_new_6jDpKB": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {
+        "tab_block_gkKzzm": {
+          "settings": {
+            "percent_text3": "reduction perceived of daily PMS*"
+          }
+        },
+        "tab_block_bP7R7P": {
+          "settings": {
+            "percent_text": "that lingered accross several days were reported to be dropped by half*",
+            "percent_text1": "eased significantly, with a perceived reduction of 45%*",
+            "percent_text2": "pain and energy-related symptoms were reported to be reduced by more than half*",
+            "percent_text3": "reported to be improved by 91%*"
+          }
+        },
+        "tab_block_fDnVYR": {
+          "settings": {
+            "percent_text": "perceived reduction of cramps*",
+            "percent_text2": "perceived improvement in mood swings*"
+          }
+        }
+      }
+    },
+    "what_inside_new_tD4XyM": {
+      "settings": {
+        "card1_benefit": "Lemon Balm",
+        "card2_benefit": "Magnesium",
+        "card3_benefit": "Vitamin B",
+        "card4_benefit": "Vitamin C"
+      },
+      "blocks": {}
+    },
+    "take_monthly_tablets_new_zg7tG4": {
+      "settings": {},
+      "blocks": {
+        "faq_item_WF9b6J": {
+          "settings": {
+            "answer": "<p>You can take monthlies while on birth control or hormonal contraceptive pills;<br/>however, it’s essential to understand that the effectiveness of monthlies may<br/>vary. Additionally, monthlies<br/>could potentially interact with your hormonal birth control. To ensure safety,<br/>it’s always best to consult your doctor before adding any new supplements to<br/>your routine.</p>"
+          }
+        },
+        "faq_item_T4z76H": {
+          "disabled": false,
+          "settings": {
+            "answer": "<p>Yes, you can take monthlies while you’re trying to conceive. While it isn’t a prenatal supplement. However, it’s important to stop taking monthlies as soon as you find out you’re pregnant.</p>"
+          }
+        },
+        "faq_item_gYNgDg": {
+          "disabled": true,
+          "settings": {}
+        },
+        "faq_item_anTznT": {
+          "disabled": true,
+          "settings": {
+            "answer": "<p>Yes, you can take monthlies if you have endometriosis. While monthlies is not a treatment for endometriosis. However, we always recommend you to check with your doctor before adding any new supplements to your routine, and check for possible interactions with medications.</p>"
+          }
+        }
+      }
+    },
+    "doctor_details_new_yz34BT": {
+      "settings": {},
+      "blocks": {
+        "team_cBaUEW": {
+          "settings": {
+            "name": "Ashley",
+            "learn_more": "Learn more about Ash",
+            "short_description": "Helped thousands of women",
+            "full_description": ""
+          }
+        },
+        "team_RTqkwh": {
+          "settings": {
+            "full_description": "Detailed info about Maria:\nI moved from Spain to Germany eight years ago for my master’s and have spent most of my career building and scaling ventures. For me, monthlies is deeply personal. I have lived with period pain for most of my life and was frustrated by how widely neglected this issue has been. I wanted to use my business experience to create a solution that truly works. monthlies is about building more than a product. It is about shaping a brand that empowers women."
+          }
+        }
+      },
+      "block_order": [
+        "team_cBaUEW",
+        "team_RTqkwh",
+        "team_pMQwcC"
+      ]
+    },
+    "health_expert_new_hEKCQr": {
+      "settings": {
+        "heading": "<em><strong>Developed </strong></em>by experts."
+      },
+      "blocks": {
+        "column_HC4WXW": {
+          "settings": {
+            "title": "Ashley Florestal",
+            "text": ""
+          }
+        },
+        "column_A4KDbV": {
+          "settings": {
+            "title": "Maria Obando",
+            "text": ""
+          }
+        },
+        "column_RD9DgR": {
+          "settings": {
+            "title": "Cassandra Paiano",
+            "text": ""
+          }
+        },
+        "column_eWy8qd": {
+          "settings": {
+            "text": ""
+          }
+        },
+        "column_Nffb3P": {
+          "settings": {
+            "title": "Melissa Mastroberardino",
+            "text": ""
+          }
+        }
+      }
+    },
+    "custom_text_km84zG": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {}
+    },
+    "1765445861184d8475": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {}
+    },
+    "experience_manageable_CYRBwG": {
+      "settings": {
+        "hero_heading": "Try it risk-free. 90 days money back guaranteed."
+      },
+      "blocks": {}
+    },
+    "homepage_banner_new_9Qpe43": {
+      "settings": {
+        "subheadline": "Doctor-developed cycle supplement for all your symptoms.",
+        "pharmacy_intro": "Approved by NHS doctors",
+        "amazon_shop": "shopify://shop_images/Frame_ffbbb5ee-41dc-45c8-9888-d1fffa4a9019.svg"
+      },
+      "blocks": {}
+    },
+    "natural_ingredients_section_new_D83nbx": {
+      "settings": {
+        "benefit_title": "Your body goes through a lot each month",
+        "benefit_text_4": "Cravings you can´t control"
+      },
+      "blocks": {}
+    },
+    "carefully_selected_ingredients_new_cPWKEE": {
+      "settings": {},
+      "blocks": {
+        "faq_LYAENj": {
+          "settings": {
+            "faq_text": "<p>Many vitamins and minerals need to be converted into a “bioactive” form before your body can use them effectively. For some people, this natural process isn’t always efficient.</p><p>We use pre-activated nutrients that are already in their active forms, so your body can absorb them more readily. This supports better bioavailability - meaning more of the nutrient reaches your system in a form your body can actually use, minimising wastage.</p>"
+          }
+        },
+        "faq_FHWJ83": {
+          "settings": {
+            "faq_text": "<p>Efficient absorption allows nutrients to begin working sooner.<br/>This can translate into earlier support such as Magnesium supports energy production  and Vitamin B6 supports hormonal balance by contributing to the regulation of hormonal activity.</p>"
+          }
+        },
+        "faq_TtPdyP": {
+          "disabled": true,
+          "settings": {
+            "faq_title": "Formula",
+            "faq_text": "<p>Nutrients that are difficult for the body to absorb can place unnecessary strain on digestion.<br/>Our highly absorbable forms require making them gentler and more suitable for individuals with sensitive stomachs.</p>"
+          }
+        }
+      }
+    }
+  }
 }

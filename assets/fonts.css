@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Twentieth Century";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//shop.withmonthlies.com/cdn/fonts/twentieth_century/twentiethcentury_n4.48ebd653562e91243c0f899d9c922982d8ddd22f.woff2?h1=bW9udGhsaWVzLWVzc2l0eS5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=d2l0aG1vbnRobGllcy5teXNob3BpZnkuY29t&h3=d2l0aG1vbnRobGllcy5jb20&h4=ZGUud2l0aG1vbnRobGllcy5jb20&h5=ZnIud2l0aG1vbnRobGllcy5jb20&hmac=2f9eb4a4f588e7b2caed0e685e3021ed071c9f91f7c7a13d1dff9cf15e853700") format("woff2"),
+       url("//shop.withmonthlies.com/cdn/fonts/twentieth_century/twentiethcentury_n4.38e09a73dbcdbe5b7e2798bdaa9ea50254535201.woff?h1=bW9udGhsaWVzLWVzc2l0eS5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=d2l0aG1vbnRobGllcy5teXNob3BpZnkuY29t&h3=d2l0aG1vbnRobGllcy5jb20&h4=ZGUud2l0aG1vbnRobGllcy5jb20&h5=ZnIud2l0aG1vbnRobGllcy5jb20&hmac=d92c0bdf71b569e0b0f03dbd59fdf238a09905796e9d2092cac5532346da11b9") format("woff");
+}
+
+  @font-face {
+  font-family: "Twentieth Century";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("//shop.withmonthlies.com/cdn/fonts/twentieth_century/twentiethcentury_n6.789830bc99d8acad6666e9a35c6ebb019e739a37.woff2?h1=bW9udGhsaWVzLWVzc2l0eS5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=d2l0aG1vbnRobGllcy5teXNob3BpZnkuY29t&h3=d2l0aG1vbnRobGllcy5jb20&h4=ZGUud2l0aG1vbnRobGllcy5jb20&h5=ZnIud2l0aG1vbnRobGllcy5jb20&hmac=8b6368600ea0de7795119fcf1ac75be7ed31e2a9cb9d0219f8a3b4118d5b7e0e") format("woff2"),
+       url("//shop.withmonthlies.com/cdn/fonts/twentieth_century/twentiethcentury_n6.522cfb095bcc87e2091bbfeb9a3d31b531361044.woff?h1=bW9udGhsaWVzLWVzc2l0eS5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=d2l0aG1vbnRobGllcy5teXNob3BpZnkuY29t&h3=d2l0aG1vbnRobGllcy5jb20&h4=ZGUud2l0aG1vbnRobGllcy5jb20&h5=ZnIud2l0aG1vbnRobGllcy5jb20&hmac=3f4da0f7b1ed0ff4756f113a129d4057cbd9538460b536eb36b82b954813a078") format("woff");
+}
+
+  
+  
+  @font-face {
+  font-family: "Gill Sans Nova";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//shop.withmonthlies.com/cdn/fonts/gill_sans_nova/gillsansnova_n4.2da9dee74f0a63d7b2be6f6817ac5c94c1e2aee8.woff2?h1=bW9udGhsaWVzLWVzc2l0eS5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=d2l0aG1vbnRobGllcy5teXNob3BpZnkuY29t&h3=d2l0aG1vbnRobGllcy5jb20&h4=ZGUud2l0aG1vbnRobGllcy5jb20&h5=ZnIud2l0aG1vbnRobGllcy5jb20&hmac=0db1ab9344537abd11e5b1ececd1982bfc674f54f3ba521e23ffd26ca5e9652b") format("woff2"),
+       url("//shop.withmonthlies.com/cdn/fonts/gill_sans_nova/gillsansnova_n4.c4257becd7a2d5ca05128b3506a72db6d464cf84.woff?h1=bW9udGhsaWVzLWVzc2l0eS5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=d2l0aG1vbnRobGllcy5teXNob3BpZnkuY29t&h3=d2l0aG1vbnRobGllcy5jb20&h4=ZGUud2l0aG1vbnRobGllcy5jb20&h5=ZnIud2l0aG1vbnRobGllcy5jb20&hmac=deff7ff9c85e93462228b310220666c4c25ae11760630e2927c8280c2c43129d") format("woff");
+}
+
+  @font-face {
+  font-family: "Gill Sans Nova";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("//shop.withmonthlies.com/cdn/fonts/gill_sans_nova/gillsansnova_n6.f099c653bf93fc680be1e5edb773165d7606d3e9.woff2?h1=bW9udGhsaWVzLWVzc2l0eS5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=d2l0aG1vbnRobGllcy5teXNob3BpZnkuY29t&h3=d2l0aG1vbnRobGllcy5jb20&h4=ZGUud2l0aG1vbnRobGllcy5jb20&h5=ZnIud2l0aG1vbnRobGllcy5jb20&hmac=3d28f7c3ef7847b3ec2ffc101221ecf8c75c9b178ee863f8fccdcba61862ab9b") format("woff2"),
+       url("//shop.withmonthlies.com/cdn/fonts/gill_sans_nova/gillsansnova_n6.607f525c417e2bc515c48448810a3be69b5bb727.woff?h1=bW9udGhsaWVzLWVzc2l0eS5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=d2l0aG1vbnRobGllcy5teXNob3BpZnkuY29t&h3=d2l0aG1vbnRobGllcy5jb20&h4=ZGUud2l0aG1vbnRobGllcy5jb20&h5=ZnIud2l0aG1vbnRobGllcy5jb20&hmac=e2b39ce9363ab79b3315f8675f632c8c1c1a852fc1811a54ade20ecb59bddb44") format("woff");
+}
